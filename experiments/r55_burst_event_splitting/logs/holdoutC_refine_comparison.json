@@ -1,0 +1,13 @@
+{
+ "matched": 51,
+ "n_oracle": 68,
+ "err_ms_median": 0.0,
+ "abs_err_ms_p95": 54.29999999999979,
+ "gate_coverage_of_oracle": 0.7647058823529411,
+ "gate_coverage_strong": 0.7941176470588235,
+ "n_auto_used": 110,
+ "false_windows": {
+  "count": 19,
+  "total_s": 6.22
+ }
+}

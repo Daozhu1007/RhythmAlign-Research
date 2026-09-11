@@ -1,0 +1,44 @@
+{
+ "phase": "R5-FIX PART 2 corrected C1 regeneration",
+ "envelope": "FIXED: entry 0->1 (10 ms), interior 1, exit 1->0 (60 ms), merge max",
+ "window_policy": "pre 15 ms / post 150 ms (unchanged frozen C1 policy)",
+ "final_mix_convention": "0.5 * pristine aligned reference + 0.5 * interaction (no limiter/compressor/normalization)",
+ "builds": {
+  "golden_oracle": {
+   "tag": "golden_oracle_C1_fixed",
+   "n_events": 84,
+   "n_spans_after_merge": 40,
+   "mean_env": 0.6470291666666667,
+   "nonzero_env_fraction": 0.7402513888888889,
+   "final_mix_arith_max_err_prewrite": 0.0,
+   "final_mix_arith_max_err_readback": 2.9802322387695312e-08,
+   "interaction": "golden_oracle_C1_fixed_interaction.wav",
+   "final_mix": "golden_oracle_C1_fixed_final_mix.wav",
+   "source": "R4 contacts_refined.json (84 build events, unchanged)"
+  },
+  "holdoutD_E0": {
+   "tag": "holdoutD_E0_C1_fixed",
+   "n_events": 123,
+   "n_spans_after_merge": 41,
+   "mean_env": 0.750966435185185,
+   "nonzero_env_fraction": 0.83059375,
+   "final_mix_arith_max_err_prewrite": 0.0,
+   "final_mix_arith_max_err_readback": 2.9802322387695312e-08,
+   "interaction": "holdoutD_E0_C1_fixed_interaction.wav",
+   "final_mix": "holdoutD_E0_C1_fixed_final_mix.wav",
+   "source": "R5.5 frozen E0 predictions as saved in r56 outputs/holdoutD_contacts_auto_refined.json (strong/present/weak -> 123 windows)"
+  },
+  "holdoutD_oracle": {
+   "tag": "holdoutD_oracle_C1_fixed",
+   "n_events": 72,
+   "n_spans_after_merge": 45,
+   "mean_env": 0.5103831018518519,
+   "nonzero_env_fraction": 0.5977789351851852,
+   "final_mix_arith_max_err_prewrite": 0.0,
+   "final_mix_arith_max_err_readback": 2.9802322387695312e-08,
+   "interaction": "holdoutD_oracle_C1_fixed_interaction.wav",
+   "final_mix": "holdoutD_oracle_C1_fixed_final_mix.wav",
+   "source": "Holdout-D video-first oracle as saved in r56 outputs/holdoutD_oracle_refined.json (72 window-opening events)"
+  }
+ }
+}

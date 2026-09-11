@@ -1,0 +1,6 @@
+events used: 84 | t_audio - t_video median 0.300 ms (empirical region offset; 17.625 ms A/V residual absorbed by refinement)
+D0: spans 40 | coverage 0.647
+D1: spans 24 | coverage 0.800
+D2: spans 32 | coverage 0.725
+D3: spans 14 | coverage 0.834
+saved stems, final mixes, envelopes, work/build_diag.json

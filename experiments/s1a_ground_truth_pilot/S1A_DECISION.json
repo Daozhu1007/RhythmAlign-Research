@@ -1,0 +1,37 @@
+{
+  "stage": "S1a — Ground-Truth Acquisition Pilot + Representation Feasibility",
+  "date": "2026-09-10",
+  "decision": "PENDING",
+  "decision_label": "PENDING. CAPTURE REQUIRED",
+  "questions": {
+    "Q1_capture_feasibility": {
+      "status": "PENDING",
+      "reason": "No real pilot recording exists in experiments/s1a_ground_truth_pilot/raw/.",
+      "tooling_ready": true,
+      "protocol_ready": true,
+      "acquisition_problem_found": false
+    },
+    "Q2_representation_feasibility": {
+      "status": "PENDING",
+      "reason": "Oracle machinery is implemented and unit-validated (all six Part-15 synthetic cases pass; STFT/ISTFT verified against the actual torchlibrosa modules to ~1e-6). No real-T2 evidence exists, so no A/B verdict is possible.",
+      "bounded_mask_verdict_on_real_data": "unknown",
+      "synthetic_fixture_note": "The 12-case SYNTHETIC_FIXTURE panel exercises the full pipeline and produces sensible numbers, but carries no real-acoustic feasibility meaning."
+    }
+  },
+  "next_action": {
+    "owner": "user",
+    "action": "Record the one-session pilot per ACQUISITION_PROTOCOL.md / CAPTURE_CHECKLIST.md and place files in raw/ per CAPTURE_REQUIRED.md",
+    "then": "Run scripts 01-09; the decision becomes exactly one of A/B/C/D on real data"
+  },
+  "explicitly_not_done": [
+    "No model training or fine-tuning of any kind (Part 16 respected)",
+    "No historical file modified; Holdout-D erratum recorded in s0_research_reframing/ERRATUM.md",
+    "No oracle or gain parameter tuned after seeing any output",
+    "No real-data claim derived from synthetic fixtures",
+    "S1b not started"
+  ],
+  "stop_conditions": {
+    "all_clear_on_available_artifacts": true,
+    "details_in": "PILOT_MANIFEST.json"
+  }
+}

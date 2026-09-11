@@ -1,0 +1,12 @@
+{
+  "run": "audiosep_a2_p2",
+  "recipe": "0.5*ref_warp_fixed + 0.5*target(32k->48k mono->stereo)",
+  "final_mix": "D:\\Code\\RhythmAlign\\experiments\\r2_target_separation\\outputs\\audiosep_a2_p2_final_mix.wav",
+  "rms_db": {
+    "ref": -11.427522659301758,
+    "target": -24.886211395263672,
+    "final_mix": -17.257789611816406,
+    "raw_recording": -20.119441986083984
+  },
+  "target_vs_raw_level_deviation_db": -4.7667694091796875
+}

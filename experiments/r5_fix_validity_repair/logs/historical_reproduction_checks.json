@@ -1,0 +1,100 @@
+{
+ "r4_C1": {
+  "n_events": 84,
+  "n_spans_after_merge": 40,
+  "max_abs_err_interaction_vs_saved_wav": 0.0,
+  "max_abs_err_final_mix_vs_saved_wav": 0.0,
+  "mean_env": 0.6470291666666667
+ },
+ "r4_C2": {
+  "max_abs_err_interaction_vs_saved_wav": 2.7755575615628914e-17
+ },
+ "holdoutD": {
+  "rest_6_8": {
+   "E0": {
+    "nonzero_mono_seconds": 1.423604,
+    "energy_change_vs_raw_db": -1.7671112232033972
+   },
+   "E2": {
+    "nonzero_mono_seconds": 1.745604,
+    "energy_change_vs_raw_db": -0.8537228746794595
+   },
+   "oracle": {
+    "nonzero_mono_seconds": 0.0,
+    "energy_change_vs_raw_db": null
+   }
+  },
+  "E0_envelope_provenance": {
+   "n_window_times": 123,
+   "n_spans_after_merge": 41,
+   "max_abs_err_vs_saved_wav": 0.0,
+   "mean_env": 0.7509664351851854
+  }
+ },
+ "matching": {
+  "E0": {
+   "33ms": {
+    "greedy_matches": 40,
+    "max_cardinality_matches": 40,
+    "n_pred": 150,
+    "n_oracle": 86
+   },
+   "50ms": {
+    "greedy_matches": 63,
+    "max_cardinality_matches": 63,
+    "n_pred": 150,
+    "n_oracle": 86
+   },
+   "80ms": {
+    "greedy_matches": 78,
+    "max_cardinality_matches": 80,
+    "n_pred": 150,
+    "n_oracle": 86
+   }
+  },
+  "E2": {
+   "33ms": {
+    "greedy_matches": 41,
+    "max_cardinality_matches": 41,
+    "n_pred": 154,
+    "n_oracle": 86
+   },
+   "50ms": {
+    "greedy_matches": 64,
+    "max_cardinality_matches": 64,
+    "n_pred": 154,
+    "n_oracle": 86
+   },
+   "80ms": {
+    "greedy_matches": 78,
+    "max_cardinality_matches": 80,
+    "n_pred": 154,
+    "n_oracle": 86
+   }
+  }
+ },
+ "expected_from_review": {
+  "r4_C1_max_abs_err": 0.0,
+  "r4_C2_max_abs_err": 2.78e-17,
+  "rest_nonzero_s": {
+   "E0": 1.423604,
+   "E2": 1.745604,
+   "oracle": 0.0
+  },
+  "E0_envelope_provenance_max_abs_err": 0.0,
+  "greedy_matches": {
+   "E0": {
+    "33": 40,
+    "50": 63,
+    "80": 78
+   },
+   "E2": {
+    "33": 41,
+    "50": 64,
+    "80": 78
+   }
+  },
+  "max_card_matches_80ms": 80
+ },
+ "all_checks_pass": true
+}

@@ -1,0 +1,384 @@
+{
+  "generated_utc": "2026-09-09T20:47:12.928617Z",
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "torch": "2.14.0+cu126",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "transformers": "4.57.6",
+    "diffusers": "0.30.0",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "librosa": "0.11.0",
+    "soundfile": "0.14.0",
+    "note": "All S1E model runs used experiments/r2_target_separation/.venv (Python 3.12.13), which r2 created for R2/R3; S1E added laion_clap, silero-vad, diffusers==0.30.0, einops, alias-free-torch, descript-audio-codec, vector-quantize-pytorch, loralib, imageio-ffmpeg, resampy to that venv. The RhythmAlign production .venv was not touched."
+  },
+  "output_inventory": [
+    {
+      "file": "outputs\\audio\\audiosep_p2_c1_speech_npc_a_residual.wav",
+      "bytes": 1024080,
+      "sha256": "db62dffcdf76e798c9039aca609a501eab478df240d43db726c0dd6d0e487ec2"
+    },
+    {
+      "file": "outputs\\audio\\audiosep_p2_c1_speech_npc_a_target.wav",
+      "bytes": 1024080,
+      "sha256": "dd0b861564b1c652187f19ee9dfa9219ba3a9c72c621cb7b7983bf0a2040e493"
+    },
+    {
+      "file": "outputs\\audio\\audiosep_p2_c2_speech_npc_b_residual.wav",
+      "bytes": 1024080,
+      "sha256": "089a839142ccfd33e8d0e20c04161f2ba093c210e745e44232f33734da8d47db"
+    },
+    {
+      "file": "outputs\\audio\\audiosep_p2_c2_speech_npc_b_target.wav",
+      "bytes": 1024080,
+      "sha256": "f4a09b3f30522db89885ed7ed6b88c94e091490b8f86b52d5275f1534d440e4e"
+    },
+    {
+      "file": "outputs\\audio\\audiosep_p2_c3_taiko_prompt_residual.wav",
+      "bytes": 640080,
+      "sha256": "f1fa17a26a297ee69ba20ce8a907c6491427a6be9bbc92ffa87579e7369f9537"
+    },
+    {
+      "file": "outputs\\audio\\audiosep_p2_c3_taiko_prompt_target.wav",
+      "bytes": 640080,
+      "sha256": "6e2847eeda6c3803f7f9e0a41c24ac9d05226b9ae65d35392ebce6122b2b4885"
+    },
+    {
+      "file": "outputs\\audio\\audiosep_p2_c6_dense_golden_residual.wav",
+      "bytes": 1920080,
+      "sha256": "3146f10fe77a361cb1de212d15a54ae106760d9b9dd23a9557d163494a6fa4af"
+    },
+    {
+      "file": "outputs\\audio\\audiosep_p2_c6_dense_golden_target.wav",
+      "bytes": 1920080,
+      "sha256": "f7979fe15319fc3ac73696d229789934ad2568416d1f4433906d59c405487dd7"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c1_speech_npc_a_residual.wav",
+      "bytes": 1024080,
+      "sha256": "492825f4116ebbee16a1b21e36060fd1c8ce2f6b86b864bb3641a0e7f05d8525"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c1_speech_npc_a_target.wav",
+      "bytes": 1024080,
+      "sha256": "d936cf6a83ce2d904a2aea5bf8e15e4d34994f03f7659b44a78edd6ce8d69f66"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c2_speech_npc_b_residual.wav",
+      "bytes": 1024080,
+      "sha256": "12d3dd72e233ef76d71897c7595746d19ea014ba0252d748be0b4abe91849d35"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c2_speech_npc_b_target.wav",
+      "bytes": 1024080,
+      "sha256": "61399d1347bb9cfaa907c65c8fae7a08fe40044a3c02b002e4640d53b1cf7aba"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c3_taiko_prompt_residual.wav",
+      "bytes": 640080,
+      "sha256": "b9590ad5bf4510401d395baeb7f3aa95286d6c950b688c5ceeba8d811cc3c521"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c3_taiko_prompt_target.wav",
+      "bytes": 640080,
+      "sha256": "08c8a674e905eda4ceb563d7afe5a5d8140cbdd368bfa93fbef433a7a4476909"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c4_ambience_start_residual.wav",
+      "bytes": 768080,
+      "sha256": "f8bb65f9ab63d7e627df54de3d6fed1f9da136512dc047ec2803459a5f769e1c"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c4_ambience_start_target.wav",
+      "bytes": 768080,
+      "sha256": "93f747dfa4162bacbde9179eef5da088743800d8fd5312309512a99dbf79d66f"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c5_announcer_end_residual.wav",
+      "bytes": 896080,
+      "sha256": "1272ccb02b6ce028707450d8049ba310a69e04079d950d7b27c606da159fc642"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c5_announcer_end_target.wav",
+      "bytes": 896080,
+      "sha256": "917232f5e9f76c0c497a1ee5367075db69b6fe2c3194f0fce78202838eb975d9"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c6_dense_golden_residual.wav",
+      "bytes": 1920080,
+      "sha256": "cbbe69d93dc87fd50cfee6c38b18dfa9c6a5d8657149282dab60884002340f7f"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c6_dense_golden_target.wav",
+      "bytes": 1920080,
+      "sha256": "16ea5b2a028e247bbef0afc3d01203f4c824203c9c54370cbba985bf711ac900"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c7_weak_taps_residual.wav",
+      "bytes": 768080,
+      "sha256": "c3e7e965a073d4644605b14c001d19a67eff6a66c0bb3db3244775afc39b2889"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c7_weak_taps_target.wav",
+      "bytes": 768080,
+      "sha256": "9b0d99a8683b8bc7e29930d2fe96b2e9eda222b758efb1968001227a6639253a"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c8_slide_friction_residual.wav",
+      "bytes": 768080,
+      "sha256": "4fd143e11aa92dbf077b5f61294e96051b9f2c26782b81cea6bd07150b47baeb"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c8_slide_friction_target.wav",
+      "bytes": 768080,
+      "sha256": "7c160ada6cb30a6b6e6bfedf951883abd66c8664863984beef6f5b8074219c65"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_tx_c1_speech_npc_a_residual.wav",
+      "bytes": 1024080,
+      "sha256": "9ace8d1e343ab69354e80a6404ad5c5f5e874e5d3e38bde513b77758bbda3841"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_tx_c1_speech_npc_a_target.wav",
+      "bytes": 1024080,
+      "sha256": "ee10f16a389ebc9c9a77b6dc61aa156761eac38ad2195d1127e11af03cec2946"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_tx_c2_speech_npc_b_residual.wav",
+      "bytes": 1024080,
+      "sha256": "87ab1f99cec2821bc72a35c015a9420bad3624793732652af474da979da61328"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_tx_c2_speech_npc_b_target.wav",
+      "bytes": 1024080,
+      "sha256": "bf5cca64bac1e3e1b3dac14d3e22de305663d205cc3a6abf1efe75a3347a77e2"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_tx_c3_taiko_prompt_residual.wav",
+      "bytes": 640080,
+      "sha256": "6df5d048f4e8a3388550327726a6d9411638b07ca486288d146fc09f7a1719c0"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_tx_c3_taiko_prompt_target.wav",
+      "bytes": 640080,
+      "sha256": "a8f1cf86a95b664b9e75f82d2211a315f1cc66d803a1476d9cc04e0d61e969f7"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c1_speech_npc_a_target.wav",
+      "bytes": 768080,
+      "sha256": "da9dd6ae8afa7c82203ec3e001ebc666ac8c19f7927577a957382b9cf692e7d5"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c2_speech_npc_b_target.wav",
+      "bytes": 768080,
+      "sha256": "1819873ad111a5549cb97b67ee3267ea5f816d4affcf1de63a2e363c6902127c"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c3_taiko_prompt_target.wav",
+      "bytes": 480080,
+      "sha256": "2fd5e2b4e105dad79a2610aaabb83ec9b7a52e8cfb96ae7ba4cb172aabf4bb07"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c4_ambience_start_target.wav",
+      "bytes": 576080,
+      "sha256": "32c4f96063f73de4d1f561f52f95b3e891909ceff89bd7ffc1b2b013eab2e0e7"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c5_announcer_end_target.wav",
+      "bytes": 672080,
+      "sha256": "0e525ff5f6bfab73a1543ac52fce6c35e76149d61568f9be0ef5b37b2d277a6d"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c6_dense_golden_target.wav",
+      "bytes": 1440080,
+      "sha256": "122d58f3a62c905d9f69afcd529bee5ca8ba5bb6a1741fc0dbccf0c8702e1d57"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c7_weak_taps_target.wav",
+      "bytes": 576080,
+      "sha256": "091d1192ee466d890fb00718239b9bbef79a5a72fe7ca1ddc8dd1e559209b5aa"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c8_slide_friction_target.wav",
+      "bytes": 576080,
+      "sha256": "0e78c5b9c82998dcb18e9abc25e67768f47a5a73fcf4cd36774134308f27b16d"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_tx_c1_speech_npc_a_target.wav",
+      "bytes": 768080,
+      "sha256": "2dc2d334987cbab9f5bfa2b06ad947d37417555e8a2e6e529c3866c32c5bd6be"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_tx_c2_speech_npc_b_target.wav",
+      "bytes": 768080,
+      "sha256": "62699ad94fc55029fc4eb9b284d9aedd56230171736739e2c33dcfb808cd41a6"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_tx_c3_taiko_prompt_target.wav",
+      "bytes": 480080,
+      "sha256": "4c4be94d47cd1ba838c61deceff9a9b836dbd3f0fd3a806f66619e3a9d444587"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c1_speech_npc_a_target.wav",
+      "bytes": 1536080,
+      "sha256": "b7ce164b0421ffeae68c2511d58b4ca05d4f95ca68e485f1552eae5781e80ab7"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c1_speech_npc_a_target_32k.wav",
+      "bytes": 1024080,
+      "sha256": "1bdf51c14a3699e3393ab0a5ced37358c4cafc51e3ee815ebc1a6de2b7199590"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c2_speech_npc_b_target.wav",
+      "bytes": 1536080,
+      "sha256": "55280f690831abcfab98587cc23aa5f8837ebd7d06e05c04281c796e889a9cbd"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c2_speech_npc_b_target_32k.wav",
+      "bytes": 1024080,
+      "sha256": "58e3068faa15cf10095727e38b479d018a6176f7b23ecd1fe8a074ba44f4e94e"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c3_taiko_prompt_target.wav",
+      "bytes": 960080,
+      "sha256": "4514520757ad644af1d0ac6e4092764dd8f64cef2db5238be6a5344d5550f603"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c3_taiko_prompt_target_32k.wav",
+      "bytes": 640080,
+      "sha256": "6309d602816ab13c1b022810db9698cb308be5fd7965e327e632b24fb349db6d"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c4_ambience_start_target.wav",
+      "bytes": 1152080,
+      "sha256": "6d756757edbe2265db08293e32c4b18a7d388e18b1deb12ca675dfa301d426a2"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c4_ambience_start_target_32k.wav",
+      "bytes": 768080,
+      "sha256": "d991ec69860aac1d6182f95c84dc640e52acbf7a2f579d69224a2081ccda0a0b"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c5_announcer_end_target.wav",
+      "bytes": 1344080,
+      "sha256": "dc7a71618aa9aa0818fcfbc0d24bd9615349d319623b276dfa090d86a94164df"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c5_announcer_end_target_32k.wav",
+      "bytes": 896080,
+      "sha256": "8ed5de88b6236042dc298eca714cf09a89d19cf0a287c63e703339bc5528177f"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c6_dense_golden_target.wav",
+      "bytes": 2880080,
+      "sha256": "84930c7ed12f9d226a1537bca5872cc65bbf911cab73739d9ef9d395005f7d4e"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c6_dense_golden_target_32k.wav",
+      "bytes": 1920080,
+      "sha256": "4aec32d469cd46c8e58da81c77fd9896309f0d93b3d6f0aa35a6cafa67fd9760"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c7_weak_taps_target.wav",
+      "bytes": 1152080,
+      "sha256": "c64fe5ed38a3cf9ba267ab0095d57f777d3bc745c1c020240313f2a0c86c09b4"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c7_weak_taps_target_32k.wav",
+      "bytes": 768080,
+      "sha256": "d348ff3ac86fff4d73088e6cce5637f6230eaa7d1fcd7184cb4e114ee411c28e"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c8_slide_friction_target.wav",
+      "bytes": 1152080,
+      "sha256": "b3217baf02a10fa523436adc85d44cdbcda9e7555d0dcf94d95f2aa423e01185"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c8_slide_friction_target_32k.wav",
+      "bytes": 768080,
+      "sha256": "28be3253019d680620932e3b067ac3473d64c73cf9d9590467eb16b567c296c2"
+    },
+    {
+      "file": "clips\\audio\\c1_speech_npc_a_32k_mono.wav",
+      "bytes": 1024080,
+      "sha256": "a739861647e7fa0e20a731932efbb1f3340f3065535e0c664d465edefa01a2bd"
+    },
+    {
+      "file": "clips\\audio\\c1_speech_npc_a_48k_stereo.wav",
+      "bytes": 3072088,
+      "sha256": "cdea9ce5d3a1133f06dd93f7a85bd753ebea29b53c1be32ccdfdaa531771556c"
+    },
+    {
+      "file": "clips\\audio\\c2_speech_npc_b_32k_mono.wav",
+      "bytes": 1024080,
+      "sha256": "bc8393c5a16249d8214dad7fccdc7e891b597d6cfbac21f6adb9d2089b30037a"
+    },
+    {
+      "file": "clips\\audio\\c2_speech_npc_b_48k_stereo.wav",
+      "bytes": 3072088,
+      "sha256": "1ccb90985898d8f684e4aacb39f8b6c6e21a9a1d932a217c29854d1006688aac"
+    },
+    {
+      "file": "clips\\audio\\c3_taiko_prompt_32k_mono.wav",
+      "bytes": 640080,
+      "sha256": "aa591b509003033a6ad033a6f0985f623f8ecc728e26d7dc2e0dababa072c45f"
+    },
+    {
+      "file": "clips\\audio\\c3_taiko_prompt_48k_stereo.wav",
+      "bytes": 1920088,
+      "sha256": "507b070b16a2464eac7dd3ba61446d1396388483c6fed772c7aa8bb1ac6b973d"
+    },
+    {
+      "file": "clips\\audio\\c4_ambience_start_32k_mono.wav",
+      "bytes": 768080,
+      "sha256": "88991a3a72f0cc59cd69e65284e05a060e630d217a08ce032d3cab0037873717"
+    },
+    {
+      "file": "clips\\audio\\c4_ambience_start_48k_stereo.wav",
+      "bytes": 2304088,
+      "sha256": "7f2f676ace49f528f064390e1de757e81e7f12187bb2f00f9b0490f81090a514"
+    },
+    {
+      "file": "clips\\audio\\c5_announcer_end_32k_mono.wav",
+      "bytes": 896080,
+      "sha256": "6a17928992bf7b0fbc139f0bf8e63b884140fb824164f5a55014bc36f8a4fd80"
+    },
+    {
+      "file": "clips\\audio\\c5_announcer_end_48k_stereo.wav",
+      "bytes": 2688088,
+      "sha256": "6929f4c5c9ac60ca765c92f5c49b585b78de8f0578636607dd117c49014ad532"
+    },
+    {
+      "file": "clips\\audio\\c6_dense_golden_32k_mono.wav",
+      "bytes": 1920080,
+      "sha256": "65a19a8a71d09795aa184f2acb717df610c1d1e96d6ca9dfbcef6ba49ef931a9"
+    },
+    {
+      "file": "clips\\audio\\c6_dense_golden_48k_stereo.wav",
+      "bytes": 5760088,
+      "sha256": "a42f67736ea75528a859306238dcf9635579b301fd431936952bed618aba5cd1"
+    },
+    {
+      "file": "clips\\audio\\c7_weak_taps_32k_mono.wav",
+      "bytes": 768080,
+      "sha256": "7d8d31220b37869ed818132563c0a66cd3afb75d63d421917f257bd99e11c887"
+    },
+    {
+      "file": "clips\\audio\\c7_weak_taps_48k_stereo.wav",
+      "bytes": 2304088,
+      "sha256": "983fa62ed19b5da0f09aaea1a52c532f2337c7409b6a76688de5038914186520"
+    },
+    {
+      "file": "clips\\audio\\c8_slide_friction_32k_mono.wav",
+      "bytes": 768080,
+      "sha256": "8aba708890b7c338112705ec53bd599c48e841fda4c7138b7f6ee050292582e1"
+    },
+    {
+      "file": "clips\\audio\\c8_slide_friction_48k_stereo.wav",
+      "bytes": 2304088,
+      "sha256": "e8c1ec32cf2aaaab3d862659a465f867ec088097955b11830bf36edee7d67d8a"
+    }
+  ]
+}

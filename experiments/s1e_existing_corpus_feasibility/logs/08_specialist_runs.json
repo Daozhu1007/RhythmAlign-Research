@@ -1,0 +1,130 @@
+{
+  "params": {
+    "nfft": 2048,
+    "hop": 512,
+    "gain_floor_db": -18.0,
+    "lambda": 1.0,
+    "vad_gate_depth": 0.7,
+    "refine_span_ms": 10.0
+  },
+  "runs": [
+    {
+      "stages": [
+        "A_reference_wiener",
+        "B_vad_soft_gate"
+      ],
+      "mean_gain_A_db": -2.022459337067762,
+      "vad_gate_mean_gain_db": -0.06858539327224618,
+      "vad_max_prob": 0.08245423436164856,
+      "run": "specialist_c1_speech_npc_a",
+      "clip": "c1_speech_npc_a",
+      "mix_rms_db": -17.65728593224198,
+      "out_rms_db": -18.287286215791582,
+      "out_gain_dev_db": -0.6300002835496024,
+      "runtime_s": 8.402971506118774
+    },
+    {
+      "stages": [
+        "A_reference_wiener",
+        "B_vad_soft_gate"
+      ],
+      "mean_gain_A_db": -1.9129332772451433,
+      "vad_gate_mean_gain_db": -0.037974161475715904,
+      "vad_max_prob": 0.07032152265310287,
+      "run": "specialist_c2_speech_npc_b",
+      "clip": "c2_speech_npc_b",
+      "mix_rms_db": -19.407406959098363,
+      "out_rms_db": -20.048627903633264,
+      "out_gain_dev_db": -0.6412209445349006,
+      "runtime_s": 3.6658482551574707
+    },
+    {
+      "stages": [
+        "A_reference_wiener",
+        "B_vad_soft_gate"
+      ],
+      "mean_gain_A_db": -2.139473877484372,
+      "vad_gate_mean_gain_db": -0.07567567312719575,
+      "vad_max_prob": 0.21068598330020905,
+      "run": "specialist_c3_taiko_prompt",
+      "clip": "c3_taiko_prompt",
+      "mix_rms_db": -20.334133983740177,
+      "out_rms_db": -21.103005008725223,
+      "out_gain_dev_db": -0.7688710249850459,
+      "runtime_s": 3.2573742866516113
+    },
+    {
+      "stages": [
+        "A_skipped_no_reference",
+        "B_vad_soft_gate"
+      ],
+      "vad_gate_mean_gain_db": -0.07020678337330807,
+      "vad_max_prob": 0.31914222240448,
+      "run": "specialist_c4_ambience_start",
+      "clip": "c4_ambience_start",
+      "mix_rms_db": -19.96784065555547,
+      "out_rms_db": -20.060399165357616,
+      "out_gain_dev_db": -0.09255850980214575,
+      "runtime_s": 0.5862488746643066
+    },
+    {
+      "stages": [
+        "A_skipped_no_reference",
+        "B_vad_soft_gate"
+      ],
+      "vad_gate_mean_gain_db": -4.77543574267257,
+      "vad_max_prob": 0.9975743889808655,
+      "run": "specialist_c5_announcer_end",
+      "clip": "c5_announcer_end",
+      "mix_rms_db": -17.082287224266345,
+      "out_rms_db": -22.55224614209053,
+      "out_gain_dev_db": -5.4699589178241865,
+      "runtime_s": 0.62203049659729
+    },
+    {
+      "stages": [
+        "A_reference_wiener",
+        "B_vad_soft_gate"
+      ],
+      "mean_gain_A_db": -2.0043237669160727,
+      "vad_gate_mean_gain_db": -0.1302473852232171,
+      "vad_max_prob": 0.7252331376075745,
+      "run": "specialist_c6_dense_golden",
+      "clip": "c6_dense_golden",
+      "mix_rms_db": -20.31855966338838,
+      "out_rms_db": -21.135168457494228,
+      "out_gain_dev_db": -0.8166087941058464,
+      "runtime_s": 5.140368700027466
+    },
+    {
+      "stages": [
+        "A_reference_wiener",
+        "B_vad_soft_gate"
+      ],
+      "mean_gain_A_db": -1.841624730353428,
+      "vad_gate_mean_gain_db": -0.06171594741130537,
+      "vad_max_prob": 0.07824534922838211,
+      "run": "specialist_c7_weak_taps",
+      "clip": "c7_weak_taps",
+      "mix_rms_db": -17.984296664602056,
+      "out_rms_db": -18.690690936259287,
+      "out_gain_dev_db": -0.7063942716572313,
+      "runtime_s": 3.2665133476257324
+    },
+    {
+      "stages": [
+        "A_reference_wiener",
+        "B_vad_soft_gate"
+      ],
+      "mean_gain_A_db": -1.7650019481379777,
+      "vad_gate_mean_gain_db": -0.03269307098227054,
+      "vad_max_prob": 0.15305134654045105,
+      "run": "specialist_c8_slide_friction",
+      "clip": "c8_slide_friction",
+      "mix_rms_db": -16.842628073294264,
+      "out_rms_db": -17.669563870863627,
+      "out_gain_dev_db": -0.8269357975693623,
+      "runtime_s": 3.3441386222839355
+    }
+  ]
+}

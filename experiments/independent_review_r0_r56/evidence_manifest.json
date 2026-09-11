@@ -1,0 +1,751 @@
+[
+  {
+    "path": "experiments/r1_golden_sample/scripts/05_fine_align.py",
+    "exists": true,
+    "bytes": 14558,
+    "sha256_at_review": "0799bf0f07cfd4ca72e5591e1ef92db47b0dcef37bfa3ac6ba63b194e8449a9c",
+    "mtime_local": "2026-09-07T16:56:20.838470"
+  },
+  {
+    "path": "experiments/r1_golden_sample/scripts/06_cancel.py",
+    "exists": true,
+    "bytes": 6674,
+    "sha256_at_review": "37af4004ee7547a951f85eb69fa318457053ffc2ea8185ff58867d39b6d3db82",
+    "mtime_local": "2026-09-07T16:48:09.689185"
+  },
+  {
+    "path": "experiments/r1_golden_sample/scripts/07_audit.py",
+    "exists": true,
+    "bytes": 10882,
+    "sha256_at_review": "3724ec2035dc92f74c0b9b426a32cf58ee0ba24008392acb327dba6c1c0461ba",
+    "mtime_local": "2026-09-07T16:59:48.595872"
+  },
+  {
+    "path": "experiments/r1_golden_sample/scripts/08_stereo_and_gate.py",
+    "exists": true,
+    "bytes": 7546,
+    "sha256_at_review": "1d74467a5435399c01a50f4235f48351a80ba56224e80cf17ec44213864ef042",
+    "mtime_local": "2026-09-07T17:02:30.689200"
+  },
+  {
+    "path": "experiments/r1_golden_sample/work/audit_report.json",
+    "exists": true,
+    "bytes": 4705,
+    "sha256_at_review": "1243b92eaf0f2e972928627125fc40011441584b01d3bb5718d0775e39a91585",
+    "mtime_local": "2026-09-07T16:23:27.257510"
+  },
+  {
+    "path": "experiments/r1_golden_sample/work/audit_metrics.json",
+    "exists": true,
+    "bytes": 34641,
+    "sha256_at_review": "734ce573e74e2d988b46da5c2b2dabff2581f3195100d11d521842c4cd580404",
+    "mtime_local": "2026-09-07T17:01:11.417076"
+  },
+  {
+    "path": "experiments/r1_golden_sample/work/gate_diagnostics.json",
+    "exists": true,
+    "bytes": 18825,
+    "sha256_at_review": "34b21e76697aaae6de6f61a6f82e5d473a6b8ca5b36c34038197b94245182809",
+    "mtime_local": "2026-09-07T17:02:43.020909"
+  },
+  {
+    "path": "experiments/r1_golden_sample/work/cancellation_ceiling.json",
+    "exists": true,
+    "bytes": 91,
+    "sha256_at_review": "923968b11b43572a68d742d42f07ff0adadacafc85b0792b4409bb2ac6a75316",
+    "mtime_local": "2026-09-07T17:03:46.621653"
+  },
+  {
+    "path": "experiments/r1_golden_sample/outputs/alignment_diagnostics.json",
+    "exists": true,
+    "bytes": 5923,
+    "sha256_at_review": "cbe1668b0567d6832c4989040b6c93b7fa3e810c9e2efe8ad758d06842e5f26e",
+    "mtime_local": "2026-09-07T16:58:46.126010"
+  },
+  {
+    "path": "experiments/r1_golden_sample/work/golden_selection.json",
+    "exists": true,
+    "bytes": 6960,
+    "sha256_at_review": "4e7777c476ea2e057339db82ec4bac983f54bfdaffa3dd5f918343e9cfa65194",
+    "mtime_local": "2026-09-07T14:55:10.263416"
+  },
+  {
+    "path": "experiments/r1_golden_sample/work/golden_extract.json",
+    "exists": true,
+    "bytes": 315,
+    "sha256_at_review": "d8897b9b5e32e78af5a9f1580b416796e8d3681fd57dfb2ec6b289f39a6836ff",
+    "mtime_local": "2026-09-07T14:56:04.752357"
+  },
+  {
+    "path": "experiments/r1_golden_sample/outputs/golden_raw.wav",
+    "exists": true,
+    "bytes": 5760088,
+    "sha256_at_review": "6f50efa847af14a912866f047ba2bf69895fdb33d5977fc271c09d9dcdd5be0b",
+    "mtime_local": "2026-09-07T14:56:00.411973"
+  },
+  {
+    "path": "experiments/r1_golden_sample/outputs/golden_video.mp4",
+    "exists": true,
+    "bytes": 24076179,
+    "sha256_at_review": "f2566dba99ff8eca57dfa98195b0b3b3073463c237f87f83448ce9512706ca9c",
+    "mtime_local": "2026-09-07T14:56:04.528329"
+  },
+  {
+    "path": "experiments/r1_golden_sample/outputs/A2_residual.wav",
+    "exists": true,
+    "bytes": 5760088,
+    "sha256_at_review": "46418d09586059ec422e0ab7548b1c35c6a814755d4473f8dda31f5040e47c20",
+    "mtime_local": "2026-09-07T16:59:20.496672"
+  },
+  {
+    "path": "experiments/r1_golden_sample/work/ref_warp_fixed.wav",
+    "exists": true,
+    "bytes": 8064088,
+    "sha256_at_review": "bc3a1b71d764d288e292360fa7472a2a1c0ff185a4f298ba3988b0031f9769e0",
+    "mtime_local": "2026-09-07T16:58:46.111947"
+  },
+  {
+    "path": "experiments/r1_golden_sample/work/msc.png",
+    "exists": true,
+    "bytes": 37675,
+    "sha256_at_review": "0b0b9411f7a22923402699a92a4e3f7b5d0b7b0f8ea332cc0b438afbc006ef07",
+    "mtime_local": "2026-09-07T17:02:40.940343"
+  },
+  {
+    "path": "experiments/r2_target_separation/REPORT.md",
+    "exists": true,
+    "bytes": 6562,
+    "sha256_at_review": "a4c9d7e8c120305c4d399e2920e57b89284048b49958dc445f6d1cbdbc35b93e",
+    "mtime_local": "2026-09-07T18:32:28.779011"
+  },
+  {
+    "path": "experiments/r2_target_separation/scripts/11_evaluate.py",
+    "exists": true,
+    "bytes": 9305,
+    "sha256_at_review": "78f3130110443996b19d810e542f2d50d39770d61fe4d0fe3289c183384fbc38",
+    "mtime_local": "2026-09-07T18:30:03.708197"
+  },
+  {
+    "path": "experiments/r2_target_separation/logs/audiosep_runs.json",
+    "exists": true,
+    "bytes": 2455,
+    "sha256_at_review": "3e825814e9f8e5a41f25b9de7c7fe4435e794bff16bcb5e97cd9d47568c6a38d",
+    "mtime_local": "2026-09-07T18:26:21.521846"
+  },
+  {
+    "path": "experiments/r2_target_separation/third_party/AudioSep/config/audiosep_base.yaml",
+    "exists": true,
+    "bytes": 1009,
+    "sha256_at_review": "a0b92ef443530f520759f391752cc873b2b99efc3eb214b9a04d6cca15de27ff",
+    "mtime_local": "2026-09-07T17:53:54.375509"
+  },
+  {
+    "path": "experiments/r2_target_separation/logs/evaluation.json",
+    "exists": true,
+    "bytes": 10345,
+    "sha256_at_review": "46b4b04bfd187db5b61c7a3b5a38cf55aa90a1a3fac1c59c9f019402468b2d54",
+    "mtime_local": "2026-09-07T18:30:19.055025"
+  },
+  {
+    "path": "experiments/r2_target_separation/logs/audiosep_runs.json",
+    "exists": true,
+    "bytes": 2455,
+    "sha256_at_review": "3e825814e9f8e5a41f25b9de7c7fe4435e794bff16bcb5e97cd9d47568c6a38d",
+    "mtime_local": "2026-09-07T18:26:21.521846"
+  },
+  {
+    "path": "experiments/r2_target_separation/logs/prompt_selection.json",
+    "exists": true,
+    "bytes": 1145,
+    "sha256_at_review": "e6a6422179975ab332c945aae39fa139447a466e74e364be846daad8479ff7c3",
+    "mtime_local": "2026-09-07T18:26:19.463398"
+  },
+  {
+    "path": "experiments/r2_target_separation/outputs/audiosep_raw_p2_target.wav",
+    "exists": true,
+    "bytes": 1920080,
+    "sha256_at_review": "9d4018094ce39bb7e1f0280304557700aba473d6298e40e0096133c0e9a129c1",
+    "mtime_local": "2026-09-07T18:26:20.569335"
+  },
+  {
+    "path": "experiments/r2_target_separation/outputs/audiosep_raw_p2_final_mix.wav",
+    "exists": true,
+    "bytes": 5760088,
+    "sha256_at_review": "96a84b696a8db9e84ed431640c761e29bcb3f9c465c1f35c97d140d3cc6e1fe4",
+    "mtime_local": "2026-09-07T18:31:32.575898"
+  },
+  {
+    "path": "experiments/r2_target_separation/outputs/spec_audiosep_raw_p2.png",
+    "exists": true,
+    "bytes": 1372266,
+    "sha256_at_review": "81850912cd9ad24a34e7073b0bc8996dfe32102327274d05de7ed8fb91b0a9c8",
+    "mtime_local": "2026-09-07T18:30:19.049812"
+  },
+  {
+    "path": "experiments/r3_audio_query/REPORT.md",
+    "exists": true,
+    "bytes": 9526,
+    "sha256_at_review": "c8a62cd747ac48b95638d5494b829c50b9ad7733a2445c139fe889e66e9ca444",
+    "mtime_local": "2026-09-08T01:50:23.054948"
+  },
+  {
+    "path": "experiments/r3_audio_query/scripts/06_evaluate.py",
+    "exists": true,
+    "bytes": 10825,
+    "sha256_at_review": "f4e1861470ebad75ff18503de62b7de7b552a01e41d156fc72b4c03c62f52430",
+    "mtime_local": "2026-09-08T01:44:25.138898"
+  },
+  {
+    "path": "experiments/r3_audio_query/logs/00_env_audit.md",
+    "exists": true,
+    "bytes": 2702,
+    "sha256_at_review": "050d72821bf4378a1f1d66787ac2f6854f6c7a18ddcbc8ee83c7cf86e8256bd0",
+    "mtime_local": "2026-09-08T01:46:20.044064"
+  },
+  {
+    "path": "experiments/r3_audio_query/logs/04_clapsep_runs.json",
+    "exists": true,
+    "bytes": 1216,
+    "sha256_at_review": "676517dfb99c669352d700f8fcbaf9e08dbcd3bd6d3bc18a2f24ec67730f8367",
+    "mtime_local": "2026-09-08T01:35:21.846157"
+  },
+  {
+    "path": "experiments/r3_audio_query/logs/06_evaluation.json",
+    "exists": true,
+    "bytes": 8302,
+    "sha256_at_review": "015259f4fd298565eac72a742a06eb0fc00d26960ae25692eadf7531ff81db23",
+    "mtime_local": "2026-09-08T01:44:44.306807"
+  },
+  {
+    "path": "experiments/r3_audio_query/logs/04_clapsep_runs.json",
+    "exists": true,
+    "bytes": 1216,
+    "sha256_at_review": "676517dfb99c669352d700f8fcbaf9e08dbcd3bd6d3bc18a2f24ec67730f8367",
+    "mtime_local": "2026-09-08T01:35:21.846157"
+  },
+  {
+    "path": "experiments/r3_audio_query/queries/query_events.json",
+    "exists": true,
+    "bytes": 3075,
+    "sha256_at_review": "0d48e248c61f7ec58b54c5f2c648a2ac8c037522b272f06713a6b887f8372185",
+    "mtime_local": "2026-09-08T01:17:01.129511"
+  },
+  {
+    "path": "experiments/r3_audio_query/queries/query_q1.wav",
+    "exists": true,
+    "bytes": 43480,
+    "sha256_at_review": "89c424908d3b95b8df37cb55455d34d4056c322b9da32a8c744b073ea19922c5",
+    "mtime_local": "2026-09-08T01:17:01.121351"
+  },
+  {
+    "path": "experiments/r3_audio_query/queries/query_q2.wav",
+    "exists": true,
+    "bytes": 657880,
+    "sha256_at_review": "262cc6b4a9cbec8e4e888e84d3d09d658e0a759e54988fb7ce2cf8e741ba4371",
+    "mtime_local": "2026-09-08T01:17:01.127352"
+  },
+  {
+    "path": "experiments/r3_audio_query/outputs/clapsep_n1_target.wav",
+    "exists": true,
+    "bytes": 1920080,
+    "sha256_at_review": "4e28f4971b0712ea2a02a2187412cf74229ad2593fb51fefa60baa1bd38a46e6",
+    "mtime_local": "2026-09-08T01:41:01.548881"
+  },
+  {
+    "path": "experiments/r3_audio_query/outputs/clapsep_n1_final_mix.wav",
+    "exists": true,
+    "bytes": 5760088,
+    "sha256_at_review": "82f9320c9a1131bf5fc8cc3c6d31fc3f883260b322b8c4af93014207c2b6a46b",
+    "mtime_local": "2026-09-08T01:45:33.628198"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/REPORT.md",
+    "exists": true,
+    "bytes": 13099,
+    "sha256_at_review": "44f28bf75078a83f1e37ecf3e74c7df305bdff7d8f4d66a2bc286059dcf87494",
+    "mtime_local": "2026-09-08T14:00:55.830280"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/scripts/10_refine.py",
+    "exists": true,
+    "bytes": 5402,
+    "sha256_at_review": "75f9c084a6a7e1c69622bbecf83e8a618738b96b190b2f93cf5042bb70585921",
+    "mtime_local": "2026-09-08T03:16:01.048119"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/scripts/20_build.py",
+    "exists": true,
+    "bytes": 7297,
+    "sha256_at_review": "a4f659d361be69e45798eeb3e3d2d956fb3c20e1eaceb2e95225539eb73c5f4b",
+    "mtime_local": "2026-09-08T03:28:27.739636"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/scripts/30_evaluate.py",
+    "exists": true,
+    "bytes": 17260,
+    "sha256_at_review": "b5a50bf1c11ec18156e3d5d76d58cded4b403242fa0f1664aaeef4e07f335eb9",
+    "mtime_local": "2026-09-08T13:54:48.656164"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/outputs/contacts_oracle.json",
+    "exists": true,
+    "bytes": 18698,
+    "sha256_at_review": "2bcd8a15a1825f98b96f3c079ae89107340fe3dcf009fd36808559efcf965c72",
+    "mtime_local": "2026-09-08T03:14:12.543238"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/outputs/contacts_refined.json",
+    "exists": true,
+    "bytes": 37150,
+    "sha256_at_review": "304c7d6fde4dd505d9bc227f0faeb9819316cc736d50d0bcb848c5e8f2e87983",
+    "mtime_local": "2026-09-08T03:18:24.400368"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/logs/evaluation.json",
+    "exists": true,
+    "bytes": 25662,
+    "sha256_at_review": "3245aebededd999cd83a91e092e92df4606dffa400d8fdebc6320e71ae512620",
+    "mtime_local": "2026-09-08T13:56:33.044836"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/work/build_diag.json",
+    "exists": true,
+    "bytes": 12715,
+    "sha256_at_review": "c2484ccff4f515e9e6093e9a47bf5a418128dcf7f877c70ef099d00d8f1f25cd",
+    "mtime_local": "2026-09-08T03:28:39.819490"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/work/rolling_coverage.json",
+    "exists": true,
+    "bytes": 1346,
+    "sha256_at_review": "97614b134d2f95c458cdc79f1f4b926539ebf45c013552a16536d3caad36cf4d",
+    "mtime_local": "2026-09-08T13:58:27.235524"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/outputs/C1_interaction.wav",
+    "exists": true,
+    "bytes": 5760088,
+    "sha256_at_review": "1df1241a1dc5ee3018291051dab35536d3490461bbf81b33b27831684486126e",
+    "mtime_local": "2026-09-08T03:28:38.381989"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/outputs/C2_interaction.wav",
+    "exists": true,
+    "bytes": 5760088,
+    "sha256_at_review": "86cfb1435b9099d078bab694358b2d82511f63de754db45c49fc331a89381e40",
+    "mtime_local": "2026-09-08T03:28:39.690403"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/outputs/C3_interaction.wav",
+    "exists": true,
+    "bytes": 5760088,
+    "sha256_at_review": "64cc2d8d44a3b4a6bec77df347b821fd613928e93b7b4f6a82ecb640cb29cd06",
+    "mtime_local": "2026-09-08T03:28:39.797102"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/outputs/C1_final_mix.wav",
+    "exists": true,
+    "bytes": 5760088,
+    "sha256_at_review": "a5620cee97149ddf3f0cf4562fe7e4069c7048894b738e73e6b46bb8b7d1bf4b",
+    "mtime_local": "2026-09-08T03:28:38.400504"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/outputs/cmp_peak_retention.png",
+    "exists": true,
+    "bytes": 48986,
+    "sha256_at_review": "ffc0a72ec4487f4b7b32a72d56094a0c4bd23fe2656d78abb2d2a1857c8c080a",
+    "mtime_local": "2026-09-08T13:56:36.156158"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/REPORT.md",
+    "exists": true,
+    "bytes": 5062,
+    "sha256_at_review": "7455bb1bc42964060e5203b8bce28fde36b8d86dbc792fd4f9910ea3117c2337",
+    "mtime_local": "2026-09-09T01:06:13.546973"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/scripts/10_build.py",
+    "exists": true,
+    "bytes": 9681,
+    "sha256_at_review": "1cb88784b88a4635f2839886323f6aa926c22174eb04c5218d086f1252d99719",
+    "mtime_local": "2026-09-09T01:01:04.405162"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/logs/evaluation.json",
+    "exists": true,
+    "bytes": 18771,
+    "sha256_at_review": "546ba914e9625688f829eb7d00dc55a19270a4ae153d5cebb978bb5588168111",
+    "mtime_local": "2026-09-09T01:05:08.487293"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/logs/build_run.log",
+    "exists": true,
+    "bytes": 309,
+    "sha256_at_review": "726b4d4e89019d52c1e4d3ace45ef7f76eb6db8df314c9159bcb3608b147c718",
+    "mtime_local": "2026-09-09T01:01:11.248331"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/work/build_diag.json",
+    "exists": true,
+    "bytes": 1518,
+    "sha256_at_review": "9270ba92f6146ecf941b4fa4441645ee4a02dc881a3c1ebc60be73025d0e32cc",
+    "mtime_local": "2026-09-09T01:01:11.239819"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/work/env_D0.npy",
+    "exists": true,
+    "bytes": 5760128,
+    "sha256_at_review": "e6047904c6f34578502da1411f751c3908b6965b3c61b77e9b410904d38c4874",
+    "mtime_local": "2026-09-09T01:01:11.141010"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/work/env_D1.npy",
+    "exists": true,
+    "bytes": 5760128,
+    "sha256_at_review": "a83d7193d461df09411efc06a181ebc5bfae82c19db278c1002457dfb17ff798",
+    "mtime_local": "2026-09-09T01:01:11.171926"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/outputs/D0_interaction.wav",
+    "exists": true,
+    "bytes": 5760088,
+    "sha256_at_review": "ba082fb3b251e5fe17cdc4000a383977577fe640cf78bb90a24685aef07bdc67",
+    "mtime_local": "2026-09-09T01:01:11.127999"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/outputs/D1_interaction.wav",
+    "exists": true,
+    "bytes": 5760088,
+    "sha256_at_review": "83517329116633397b1e47c11e19b54445e0ed9cbfa0e21708b7b8fab41bb583",
+    "mtime_local": "2026-09-09T01:01:11.159513"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/outputs/D3_interaction.wav",
+    "exists": true,
+    "bytes": 5760088,
+    "sha256_at_review": "9b45df686423aa86d09c70b3388e8a79ff192e30e318f5eeb58555e76df8e7d0",
+    "mtime_local": "2026-09-09T01:01:11.222076"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/outputs/D3_final_mix.wav",
+    "exists": true,
+    "bytes": 5760088,
+    "sha256_at_review": "cae05100a14257dfd139c86420bcc0fda73d0d2cb51f029993f3744f3ee767e1",
+    "mtime_local": "2026-09-09T01:01:11.231075"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/REPORT.md",
+    "exists": true,
+    "bytes": 12546,
+    "sha256_at_review": "e7c5c47048bdae990cd377e63b80d4e3fac8db324c6a618e1805a863c631d2ab",
+    "mtime_local": "2026-09-09T03:20:04.140586"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/detector_config_frozen.json",
+    "exists": true,
+    "bytes": 1498,
+    "sha256_at_review": "5284f48e41ff34e61c32177281d4fbfd3065e950b8267308ffec95289f406918",
+    "mtime_local": "2026-09-09T02:35:00.135060"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/scripts/r5_common.py",
+    "exists": true,
+    "bytes": 15628,
+    "sha256_at_review": "50caf84c7fe78aa60b07a9ee1228903e59a70762440b64005af34fca362c0ca0",
+    "mtime_local": "2026-09-09T02:32:50.570637"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/logs/holdout_metrics.json",
+    "exists": true,
+    "bytes": 3965,
+    "sha256_at_review": "8a5f7a833226d3fb8886cb02474fcddb92a66b1a82f1e07fde00a435394063dd",
+    "mtime_local": "2026-09-09T03:10:03.794782"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/holdout_oracle_blind.json",
+    "exists": true,
+    "bytes": 18810,
+    "sha256_at_review": "136a780e32c923e1236010038d466adc0f3db5e8ac2f3b1cc33fae29cdb3175c",
+    "mtime_local": "2026-09-09T03:08:44.394291"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/holdout_oracle_refined.json",
+    "exists": true,
+    "bytes": 28162,
+    "sha256_at_review": "0df9678dbcd9d4887947aa6cd6666d8e76d2a14fc7d64c9eaa3e462e5eac65ea",
+    "mtime_local": "2026-09-09T03:12:24.058809"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/logs/holdout_audio_comparison.json",
+    "exists": true,
+    "bytes": 3959,
+    "sha256_at_review": "78db824e4b3d32b1fb13e66f1878f26c676488a43c3dc69b630c1ca0f1d3cfb0",
+    "mtime_local": "2026-09-09T03:14:40.283585"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/holdout_video.mp4",
+    "exists": true,
+    "bytes": 25629046,
+    "sha256_at_review": "21faee3c68d0ff740e03d092f0da9a178cd1f844e9e3a8e91efb0f8e2ebaa631",
+    "mtime_local": "2026-09-09T02:44:00.734437"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/holdout_raw.wav",
+    "exists": true,
+    "bytes": 3456044,
+    "sha256_at_review": "ee59d3bfa2b57152f8c3a2eb47e8d92ec704c0fe2cf0763cc9d64bd78b35d0de",
+    "mtime_local": "2026-09-09T02:43:50.762242"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/holdout_auto_C1_final_mix.wav",
+    "exists": true,
+    "bytes": 6912088,
+    "sha256_at_review": "e5c4d906d60de3c9e7da36de0d51d6ec14e61a3ea3e9d1dc4b81bba720e43eb3",
+    "mtime_local": "2026-09-09T03:12:24.128342"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/REPORT.md",
+    "exists": true,
+    "bytes": 14041,
+    "sha256_at_review": "94f61871cb8e58eb87b0ec26dcd865b980710ab0c0561ed37cf8e390dbbba466",
+    "mtime_local": "2026-09-09T04:18:27.002763"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/detector_config_r55_frozen.json",
+    "exists": true,
+    "bytes": 2656,
+    "sha256_at_review": "18e8874afead301c73809dd1680d0d0078d63c324eccc228b620a50148969a25",
+    "mtime_local": "2026-09-09T03:51:51.027562"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/scripts/common55.py",
+    "exists": true,
+    "bytes": 5090,
+    "sha256_at_review": "0ef1352222bd0d393290553c803d31fcbb60ba90dde179a602a6886008a1cb01",
+    "mtime_local": "2026-09-09T03:34:01.585343"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/scripts/detector55.py",
+    "exists": true,
+    "bytes": 7642,
+    "sha256_at_review": "8a5ce425fca75f204a0f2e28406a84514e09ebfa1d8d7bfd364de9f9d862542d",
+    "mtime_local": "2026-09-09T03:45:42.554869"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/scripts/12_rule_ceiling.py",
+    "exists": true,
+    "bytes": 5612,
+    "sha256_at_review": "23b593c18b31c39accffea643ef8d8514cd5da73c1d661f519a85f095db803de",
+    "mtime_local": "2026-09-09T03:41:54.334464"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/logs/phase1_audit_summary.json",
+    "exists": true,
+    "bytes": 3648,
+    "sha256_at_review": "4a31ea0bbb133aaee3e5c497f445ac295975b394f4ddb671b21f98a34e842c9c",
+    "mtime_local": "2026-09-09T03:36:26.590645"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/logs/phase1c_rule_ceiling.json",
+    "exists": true,
+    "bytes": 2223,
+    "sha256_at_review": "2b994bb3a0fa9d284bd6ddf7ea929ff682efa189a889e7e4c2f0f351f9c25aa1",
+    "mtime_local": "2026-09-09T03:41:55.596585"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/logs/holdoutC_metrics.json",
+    "exists": true,
+    "bytes": 18668,
+    "sha256_at_review": "7f94480cfb21f7c0b837b0120667f6cd376afdb52ef947cbec751d4a9eeeda5b",
+    "mtime_local": "2026-09-09T04:08:20.021227"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/logs/holdoutC_audio_comparison.json",
+    "exists": true,
+    "bytes": 2761,
+    "sha256_at_review": "21bf0450ff2971af26bdfc19071871539148e35616bf4a07a54c428851f2ff58",
+    "mtime_local": "2026-09-09T04:10:49.506050"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_oracle_blind.json",
+    "exists": true,
+    "bytes": 14641,
+    "sha256_at_review": "5ebb5bf2086a04e3648c169a2bb47a1f4462456f1ac69e044aeb41a3bb3073b8",
+    "mtime_local": "2026-09-09T04:06:48.806007"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_raw.wav",
+    "exists": true,
+    "bytes": 3456044,
+    "sha256_at_review": "9ef6fdba2bec01a9058ec409f7459f45d73b8cde526d5d2edec0d901a855fc59",
+    "mtime_local": "2026-09-09T03:55:46.319627"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_auto_C1_interaction.wav",
+    "exists": true,
+    "bytes": 6912088,
+    "sha256_at_review": "11b12cc0197d96733a03e035240ddb0f9737b82347eec62d13c6938bf2acc189",
+    "mtime_local": "2026-09-09T04:09:49.290635"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_auto_C1_final_mix.wav",
+    "exists": true,
+    "bytes": 6912088,
+    "sha256_at_review": "e6cc9876ef7f24d9df0a794a6698d724d84d93a85d3357b7db55e33dc8561dd7",
+    "mtime_local": "2026-09-09T04:09:49.320223"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/phase1_locked_avg.png",
+    "exists": true,
+    "bytes": 164643,
+    "sha256_at_review": "2ba0b2a2aeca0f5143b068c9acac0547b3254250713c553759be3ec1b1fb3323",
+    "mtime_local": "2026-09-09T03:36:32.620057"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/REPORT.md",
+    "exists": true,
+    "bytes": 14654,
+    "sha256_at_review": "74c8f625c423b72824d907b02061c71cc556c723e5efb824d4d1abf328558c82",
+    "mtime_local": "2026-09-09T13:54:42.950517"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/detector_config_r56_frozen.json",
+    "exists": true,
+    "bytes": 4940,
+    "sha256_at_review": "9e7dff58765969db5ef5d45dab2678dd19f859f47834e7fcea51894b27270b57",
+    "mtime_local": "2026-09-09T13:13:37.616780"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/scripts/common56.py",
+    "exists": true,
+    "bytes": 14644,
+    "sha256_at_review": "9464ed8a21c691e2106e5eb89e8a4baf5b206ddcfd5977e09157e70b47df6ca3",
+    "mtime_local": "2026-09-09T13:41:12.814709"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/scripts/70_holdoutD_run.py",
+    "exists": true,
+    "bytes": 13537,
+    "sha256_at_review": "1df09dd306c6ec69288820f7c1ab59b074c8c7f23502f4eda5e035aceb3e34ff",
+    "mtime_local": "2026-09-09T13:45:04.792820"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/scripts/64_write_oracle_d.py",
+    "exists": true,
+    "bytes": 10874,
+    "sha256_at_review": "824b500f8daf5a37f74e115e2d1630fb3faa6e3d91fd62e30921925e3f068fd3",
+    "mtime_local": "2026-09-09T13:39:05.648424"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/scripts/63_oracle_materials.py",
+    "exists": true,
+    "bytes": 2424,
+    "sha256_at_review": "2ad832c5723a2a12c7847c57d8a78b0e3bb7338c144fcf432c2fdf68dab0d1c5",
+    "mtime_local": "2026-09-09T13:30:34.695462"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/logs/dev_eval_E0_E1_E2.json",
+    "exists": true,
+    "bytes": 8375,
+    "sha256_at_review": "aac50d040958af5981cb717860244887732d1e8be116c1e67dc42ebcc870e21f",
+    "mtime_local": "2026-09-09T13:11:34.400915"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/logs/holdoutD_metrics.json",
+    "exists": true,
+    "bytes": 2027,
+    "sha256_at_review": "29aec36135801b7d64e08c76b513ba93e51b4262d14e773bf739d21a17023ff5",
+    "mtime_local": "2026-09-09T13:47:19.165693"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_oracle_blind.json",
+    "exists": true,
+    "bytes": 18732,
+    "sha256_at_review": "e16f4f1257b2c9593783935821262b5cc7d57c3418638770495f992f744d2c70",
+    "mtime_local": "2026-09-09T13:39:22.239365"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_oracle_refined.json",
+    "exists": true,
+    "bytes": 26232,
+    "sha256_at_review": "f02d09d9182fe56df20358200dcd68449ef84ed9925d7e514bf88bb8379e0467",
+    "mtime_local": "2026-09-09T13:47:16.894588"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_contacts_auto_visual.json",
+    "exists": true,
+    "bytes": 26016,
+    "sha256_at_review": "15ffa7e3399bdcf02a07a9be6385e3355fedd2531701319a109e4ad6d2695fe0",
+    "mtime_local": "2026-09-09T13:47:17.039468"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_contacts_auto_refined.json",
+    "exists": true,
+    "bytes": 41547,
+    "sha256_at_review": "1591397be8b6f9e65d83240dd0a6c80f50a3adf83f09832c96de5b900513e31f",
+    "mtime_local": "2026-09-09T13:47:17.046469"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/work/holdoutD_pass12_meta.json",
+    "exists": true,
+    "bytes": 138,
+    "sha256_at_review": "47431eb3805bad2e179e44320e63bc34dca7a9630672ccfbfb95d11a3292d2a1",
+    "mtime_local": "2026-09-09T13:21:19.099839"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_raw.wav",
+    "exists": true,
+    "bytes": 3456044,
+    "sha256_at_review": "e41fa2a8ff7e9f575f545e8db67c1a2f4a83e617a2f5cca1e170899ed6c8544d",
+    "mtime_local": "2026-09-09T13:20:27.365375"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_e0_C1_interaction.wav",
+    "exists": true,
+    "bytes": 6912088,
+    "sha256_at_review": "325654da4b8a6c7ca287208e6bde589656bac2360965a897364a309f45b31926",
+    "mtime_local": "2026-09-09T13:47:16.649521"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_auto_C1_interaction.wav",
+    "exists": true,
+    "bytes": 6912088,
+    "sha256_at_review": "bf11b6000330ff4364249816b57f1d0da750225cc683cd80b5aa1c835222a352",
+    "mtime_local": "2026-09-09T13:47:16.791792"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_oracle_C1_interaction.wav",
+    "exists": true,
+    "bytes": 6912088,
+    "sha256_at_review": "260c874098164c73802e3564e2c4b149ef012a33f395ff26b72f6777ed5477a8",
+    "mtime_local": "2026-09-09T13:47:16.974423"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_auto_C1_final_mix.wav",
+    "exists": true,
+    "bytes": 6912088,
+    "sha256_at_review": "39964411c4a96faff7544c6c24bf244595a1a9edebdc9a572708435a7926cdb7",
+    "mtime_local": "2026-09-09T13:47:16.837320"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_summary.png",
+    "exists": true,
+    "bytes": 33711,
+    "sha256_at_review": "22fc2a13418c30dbad514c0acec78e4bad5ad75b7292f80b00691793e52edf73",
+    "mtime_local": "2026-09-09T13:51:34.520515"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/work/hdp3_strip_003.jpg",
+    "exists": true,
+    "bytes": 280839,
+    "sha256_at_review": "ea1677bc0eaae2257b43dc319486196418f655b71d6e0f2b8287fbf9d39b1038",
+    "mtime_local": "2026-09-09T13:31:04.836301"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/work/holdoutD_comb.npy",
+    "exists": true,
+    "bytes": 3456128,
+    "sha256_at_review": "2176785c1680659ae0da77a0327103816994b1618248cb7d9447ee92e023bba3",
+    "mtime_local": "2026-09-09T13:47:16.209390"
+  }
+]

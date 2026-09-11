@@ -1,0 +1,101 @@
+{
+  "session": "session0001",
+  "target_channel": "phone",
+  "map_convention": "t_phone = a + b * t_aux",
+  "tolerance_s": 0.002,
+  "channels": {
+    "closemic": {
+      "status": "fitted",
+      "map": {
+        "a_s": 1.5382998862220619e-15,
+        "b_drift_ratio": 1.0000000000000002,
+        "drift_ppm": 2.220446049250313e-10,
+        "anchors_used": 2,
+        "residuals_s": [
+          -7.105427357601002e-15,
+          -1.6653345369377348e-15
+        ],
+        "residual_rms_s": 5.160447512283328e-15,
+        "max_abs_residual_s": 7.105427357601002e-15
+      },
+      "verdict": {
+        "validation_err_s": 7.105427357601002e-15,
+        "tolerance_s": 0.002,
+        "sync_ok": true
+      },
+      "anchor_details": {
+        "end_clap": {
+          "aux": {
+            "t": 35.2,
+            "peakiness": 87.43346123241176,
+            "peak_frame_rms": 0.38858841809269506
+          },
+          "target": {
+            "t": 35.2,
+            "peakiness": 92.96349484121042,
+            "peak_frame_rms": 0.3229374108614138
+          }
+        },
+        "start_clap": {
+          "aux": {
+            "t": 0.5,
+            "peakiness": 96.29848391690957,
+            "peak_frame_rms": 0.3801046976790531
+          },
+          "target": {
+            "t": 0.5,
+            "peakiness": 92.05876348133575,
+            "peak_frame_rms": 0.3193293178988824
+          }
+        }
+      }
+    },
+    "contact": {
+      "status": "fitted",
+      "map": {
+        "a_s": 1.5382998862220619e-15,
+        "b_drift_ratio": 1.0000000000000002,
+        "drift_ppm": 2.220446049250313e-10,
+        "anchors_used": 2,
+        "residuals_s": [
+          -7.105427357601002e-15,
+          -1.6653345369377348e-15
+        ],
+        "residual_rms_s": 5.160447512283328e-15,
+        "max_abs_residual_s": 7.105427357601002e-15
+      },
+      "verdict": {
+        "validation_err_s": 7.105427357601002e-15,
+        "tolerance_s": 0.002,
+        "sync_ok": true
+      },
+      "anchor_details": {
+        "end_clap": {
+          "aux": {
+            "t": 35.2,
+            "peakiness": 323180335057.2591,
+            "peak_frame_rms": 0.32318033505725907
+          },
+          "target": {
+            "t": 35.2,
+            "peakiness": 92.96349484121042,
+            "peak_frame_rms": 0.3229374108614138
+          }
+        },
+        "start_clap": {
+          "aux": {
+            "t": 0.5,
+            "peakiness": 319391581100.6426,
+            "peak_frame_rms": 0.3193915811008992
+          },
+          "target": {
+            "t": 0.5,
+            "peakiness": 92.05876348133575,
+            "peak_frame_rms": 0.3193293178988824
+          }
+        }
+      }
+    }
+  },
+  "session_sync_ok": true
+}

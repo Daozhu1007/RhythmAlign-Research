@@ -1,0 +1,29 @@
+{
+  "torch": "2.14.0+cu126",
+  "torchlibrosa": "0.1.0",
+  "tolerances": {
+    "stft_rel": 0.0001,
+    "recon_rel": 0.0001
+  },
+  "cases": [
+    {
+      "length": 8000,
+      "stft_rel_err": 4.795723141473282e-07,
+      "wav_reconstruct_rel_err": 2.4222555110579635e-07,
+      "ok": true
+    },
+    {
+      "length": 160000,
+      "stft_rel_err": 1.1796561197588546e-06,
+      "wav_reconstruct_rel_err": 3.788872168630528e-07,
+      "ok": true
+    },
+    {
+      "length": 160000,
+      "stft_rel_err": 1.4040832335837616e-06,
+      "wav_reconstruct_rel_err": 3.9345428006903036e-07,
+      "ok": true
+    }
+  ],
+  "all_ok": true
+}

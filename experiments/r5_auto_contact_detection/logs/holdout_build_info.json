@@ -1,0 +1,12 @@
+{
+ "auto": {
+  "n_events": 62,
+  "n_spans_after_merge": 35,
+  "coverage": 0.3890972222222222
+ },
+ "oracle": {
+  "n_events": 92,
+  "n_spans_after_merge": 42,
+  "coverage": 0.5619224537037038
+ }
+}

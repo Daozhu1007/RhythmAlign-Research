@@ -1,0 +1,257 @@
+{
+  "opt_iters": 60,
+  "runs": [
+    {
+      "id": "case01_tap_music",
+      "outputs": {
+        "RAW_MIXTURE": "work/representation/case01_tap_music/raw_mixture.wav",
+        "BOUNDED_REAL_MASK_ORACLE": "work/representation/case01_tap_music/bounded_real_mask_oracle.wav",
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": "work/representation/case01_tap_music/optimized_bounded_mask_oracle.wav",
+        "COMPLEX_RATIO_ORACLE": "work/representation/case01_tap_music/complex_ratio_oracle.wav",
+        "TRUE_TARGET_STFT_ROUNDTRIP": "work/representation/case01_tap_music/true_target_stft_roundtrip.wav",
+        "TRUE_TARGET": "work/representation/case01_tap_music/true_target.wav"
+      },
+      "optimizer": {
+        "loss_init": 1.6475672809037956,
+        "loss_final": 1.4116358330319954,
+        "n_iter": 60,
+        "n_feval": 62,
+        "converged": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+      },
+      "runtime_s": 6.21,
+      "loss_reduction_db": -0.6712048472082061
+    },
+    {
+      "id": "case02_tap_music",
+      "outputs": {
+        "RAW_MIXTURE": "work/representation/case02_tap_music/raw_mixture.wav",
+        "BOUNDED_REAL_MASK_ORACLE": "work/representation/case02_tap_music/bounded_real_mask_oracle.wav",
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": "work/representation/case02_tap_music/optimized_bounded_mask_oracle.wav",
+        "COMPLEX_RATIO_ORACLE": "work/representation/case02_tap_music/complex_ratio_oracle.wav",
+        "TRUE_TARGET_STFT_ROUNDTRIP": "work/representation/case02_tap_music/true_target_stft_roundtrip.wav",
+        "TRUE_TARGET": "work/representation/case02_tap_music/true_target.wav"
+      },
+      "optimizer": {
+        "loss_init": 1.146375742918322,
+        "loss_final": 0.9772000075447733,
+        "n_iter": 60,
+        "n_feval": 61,
+        "converged": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+      },
+      "runtime_s": 5.92,
+      "loss_reduction_db": -0.6934352624754179
+    },
+    {
+      "id": "case03_tap_music",
+      "outputs": {
+        "RAW_MIXTURE": "work/representation/case03_tap_music/raw_mixture.wav",
+        "BOUNDED_REAL_MASK_ORACLE": "work/representation/case03_tap_music/bounded_real_mask_oracle.wav",
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": "work/representation/case03_tap_music/optimized_bounded_mask_oracle.wav",
+        "COMPLEX_RATIO_ORACLE": "work/representation/case03_tap_music/complex_ratio_oracle.wav",
+        "TRUE_TARGET_STFT_ROUNDTRIP": "work/representation/case03_tap_music/true_target_stft_roundtrip.wav",
+        "TRUE_TARGET": "work/representation/case03_tap_music/true_target.wav"
+      },
+      "optimizer": {
+        "loss_init": 0.7607549769449692,
+        "loss_final": 0.6668864025130246,
+        "n_iter": 60,
+        "n_feval": 62,
+        "converged": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+      },
+      "runtime_s": 6.08,
+      "loss_reduction_db": -0.5719293978579928
+    },
+    {
+      "id": "case04_weak_music",
+      "outputs": {
+        "RAW_MIXTURE": "work/representation/case04_weak_music/raw_mixture.wav",
+        "BOUNDED_REAL_MASK_ORACLE": "work/representation/case04_weak_music/bounded_real_mask_oracle.wav",
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": "work/representation/case04_weak_music/optimized_bounded_mask_oracle.wav",
+        "COMPLEX_RATIO_ORACLE": "work/representation/case04_weak_music/complex_ratio_oracle.wav",
+        "TRUE_TARGET_STFT_ROUNDTRIP": "work/representation/case04_weak_music/true_target_stft_roundtrip.wav",
+        "TRUE_TARGET": "work/representation/case04_weak_music/true_target.wav"
+      },
+      "optimizer": {
+        "loss_init": 1.6978469277002914,
+        "loss_final": 1.4627378152813841,
+        "n_iter": 60,
+        "n_feval": 61,
+        "converged": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+      },
+      "runtime_s": 5.88,
+      "loss_reduction_db": -0.647320440181438
+    },
+    {
+      "id": "case05_palm_speech",
+      "outputs": {
+        "RAW_MIXTURE": "work/representation/case05_palm_speech/raw_mixture.wav",
+        "BOUNDED_REAL_MASK_ORACLE": "work/representation/case05_palm_speech/bounded_real_mask_oracle.wav",
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": "work/representation/case05_palm_speech/optimized_bounded_mask_oracle.wav",
+        "COMPLEX_RATIO_ORACLE": "work/representation/case05_palm_speech/complex_ratio_oracle.wav",
+        "TRUE_TARGET_STFT_ROUNDTRIP": "work/representation/case05_palm_speech/true_target_stft_roundtrip.wav",
+        "TRUE_TARGET": "work/representation/case05_palm_speech/true_target.wav"
+      },
+      "optimizer": {
+        "loss_init": 12.238942218436446,
+        "loss_final": 10.152453495466542,
+        "n_iter": 60,
+        "n_feval": 61,
+        "converged": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+      },
+      "runtime_s": 6.39,
+      "loss_reduction_db": -0.8117287560292383
+    },
+    {
+      "id": "case06_friction_music",
+      "outputs": {
+        "RAW_MIXTURE": "work/representation/case06_friction_music/raw_mixture.wav",
+        "BOUNDED_REAL_MASK_ORACLE": "work/representation/case06_friction_music/bounded_real_mask_oracle.wav",
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": "work/representation/case06_friction_music/optimized_bounded_mask_oracle.wav",
+        "COMPLEX_RATIO_ORACLE": "work/representation/case06_friction_music/complex_ratio_oracle.wav",
+        "TRUE_TARGET_STFT_ROUNDTRIP": "work/representation/case06_friction_music/true_target_stft_roundtrip.wav",
+        "TRUE_TARGET": "work/representation/case06_friction_music/true_target.wav"
+      },
+      "optimizer": {
+        "loss_init": 2.2130981217928793,
+        "loss_final": 1.7679673822612993,
+        "n_iter": 60,
+        "n_feval": 61,
+        "converged": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+      },
+      "runtime_s": 6.25,
+      "loss_reduction_db": -0.9752642127497151
+    },
+    {
+      "id": "case07_friction_music",
+      "outputs": {
+        "RAW_MIXTURE": "work/representation/case07_friction_music/raw_mixture.wav",
+        "BOUNDED_REAL_MASK_ORACLE": "work/representation/case07_friction_music/bounded_real_mask_oracle.wav",
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": "work/representation/case07_friction_music/optimized_bounded_mask_oracle.wav",
+        "COMPLEX_RATIO_ORACLE": "work/representation/case07_friction_music/complex_ratio_oracle.wav",
+        "TRUE_TARGET_STFT_ROUNDTRIP": "work/representation/case07_friction_music/true_target_stft_roundtrip.wav",
+        "TRUE_TARGET": "work/representation/case07_friction_music/true_target.wav"
+      },
+      "optimizer": {
+        "loss_init": 3.800815488771317,
+        "loss_final": 3.1917228845432333,
+        "n_iter": 60,
+        "n_feval": 61,
+        "converged": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+      },
+      "runtime_s": 6.04,
+      "loss_reduction_db": -0.7585160971841274
+    },
+    {
+      "id": "case08_dense_music",
+      "outputs": {
+        "RAW_MIXTURE": "work/representation/case08_dense_music/raw_mixture.wav",
+        "BOUNDED_REAL_MASK_ORACLE": "work/representation/case08_dense_music/bounded_real_mask_oracle.wav",
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": "work/representation/case08_dense_music/optimized_bounded_mask_oracle.wav",
+        "COMPLEX_RATIO_ORACLE": "work/representation/case08_dense_music/complex_ratio_oracle.wav",
+        "TRUE_TARGET_STFT_ROUNDTRIP": "work/representation/case08_dense_music/true_target_stft_roundtrip.wav",
+        "TRUE_TARGET": "work/representation/case08_dense_music/true_target.wav"
+      },
+      "optimizer": {
+        "loss_init": 0.7125701517967372,
+        "loss_final": 0.6161893219157598,
+        "n_iter": 60,
+        "n_feval": 61,
+        "converged": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+      },
+      "runtime_s": 5.9,
+      "loss_reduction_db": -0.6311345857053025
+    },
+    {
+      "id": "case09_weak_speech",
+      "outputs": {
+        "RAW_MIXTURE": "work/representation/case09_weak_speech/raw_mixture.wav",
+        "BOUNDED_REAL_MASK_ORACLE": "work/representation/case09_weak_speech/bounded_real_mask_oracle.wav",
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": "work/representation/case09_weak_speech/optimized_bounded_mask_oracle.wav",
+        "COMPLEX_RATIO_ORACLE": "work/representation/case09_weak_speech/complex_ratio_oracle.wav",
+        "TRUE_TARGET_STFT_ROUNDTRIP": "work/representation/case09_weak_speech/true_target_stft_roundtrip.wav",
+        "TRUE_TARGET": "work/representation/case09_weak_speech/true_target.wav"
+      },
+      "optimizer": {
+        "loss_init": 1.828854647862603,
+        "loss_final": 1.6076695672268297,
+        "n_iter": 60,
+        "n_feval": 61,
+        "converged": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+      },
+      "runtime_s": 6.21,
+      "loss_reduction_db": -0.5598239960675079
+    },
+    {
+      "id": "case10_button_impact",
+      "outputs": {
+        "RAW_MIXTURE": "work/representation/case10_button_impact/raw_mixture.wav",
+        "BOUNDED_REAL_MASK_ORACLE": "work/representation/case10_button_impact/bounded_real_mask_oracle.wav",
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": "work/representation/case10_button_impact/optimized_bounded_mask_oracle.wav",
+        "COMPLEX_RATIO_ORACLE": "work/representation/case10_button_impact/complex_ratio_oracle.wav",
+        "TRUE_TARGET_STFT_ROUNDTRIP": "work/representation/case10_button_impact/true_target_stft_roundtrip.wav",
+        "TRUE_TARGET": "work/representation/case10_button_impact/true_target.wav"
+      },
+      "optimizer": {
+        "loss_init": 0.43183218638167137,
+        "loss_final": 0.3477927428269453,
+        "n_iter": 60,
+        "n_feval": 62,
+        "converged": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+      },
+      "runtime_s": 5.97,
+      "loss_reduction_db": -0.9399449350152062
+    },
+    {
+      "id": "case11_composite",
+      "outputs": {
+        "RAW_MIXTURE": "work/representation/case11_composite/raw_mixture.wav",
+        "BOUNDED_REAL_MASK_ORACLE": "work/representation/case11_composite/bounded_real_mask_oracle.wav",
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": "work/representation/case11_composite/optimized_bounded_mask_oracle.wav",
+        "COMPLEX_RATIO_ORACLE": "work/representation/case11_composite/complex_ratio_oracle.wav",
+        "TRUE_TARGET_STFT_ROUNDTRIP": "work/representation/case11_composite/true_target_stft_roundtrip.wav",
+        "TRUE_TARGET": "work/representation/case11_composite/true_target.wav"
+      },
+      "optimizer": {
+        "loss_init": 2.448532703860544,
+        "loss_final": 1.9272340306867757,
+        "n_iter": 60,
+        "n_feval": 61,
+        "converged": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+      },
+      "runtime_s": 5.71,
+      "loss_reduction_db": -1.039714533159906
+    },
+    {
+      "id": "case12_composite_weak",
+      "outputs": {
+        "RAW_MIXTURE": "work/representation/case12_composite_weak/raw_mixture.wav",
+        "BOUNDED_REAL_MASK_ORACLE": "work/representation/case12_composite_weak/bounded_real_mask_oracle.wav",
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": "work/representation/case12_composite_weak/optimized_bounded_mask_oracle.wav",
+        "COMPLEX_RATIO_ORACLE": "work/representation/case12_composite_weak/complex_ratio_oracle.wav",
+        "TRUE_TARGET_STFT_ROUNDTRIP": "work/representation/case12_composite_weak/true_target_stft_roundtrip.wav",
+        "TRUE_TARGET": "work/representation/case12_composite_weak/true_target.wav"
+      },
+      "optimizer": {
+        "loss_init": 3.3488082654952516,
+        "loss_final": 2.936940151209077,
+        "n_iter": 60,
+        "n_feval": 62,
+        "converged": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+      },
+      "runtime_s": 5.67,
+      "loss_reduction_db": -0.5699518633128657
+    }
+  ]
+}

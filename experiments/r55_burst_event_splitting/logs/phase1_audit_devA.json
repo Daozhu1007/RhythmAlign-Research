@@ -1,0 +1,82 @@
+{
+ "n_contacts": 82,
+ "n_dense": 82,
+ "n_sparse": 0,
+ "r5_candidates": 113,
+ "r5_TP": 59,
+ "r5_FN": 23,
+ "r5_FP": 54,
+ "fn_ids": [
+  "e01",
+  "e02",
+  "e04",
+  "e06",
+  "e08",
+  "e10",
+  "e12",
+  "e13",
+  "e14",
+  "e18",
+  "e19",
+  "e22",
+  "e23",
+  "e30",
+  "e46",
+  "e47",
+  "e57",
+  "e64",
+  "e66",
+  "e67",
+  "e72",
+  "e78",
+  "e87"
+ ],
+ "fn_in_dense": 23,
+ "fn_score_at_median": 0.07056877110094559,
+ "fn_score_above_thr_frac": 0.043478260869565216,
+ "tp_score_at_median": 0.42669076486006885,
+ "channel_atomic_sweep_best": {
+  "jz_text": {
+   "h": 0.15,
+   "pr": 0.03,
+   "peaks_dense": 78,
+   "P": 0.462,
+   "R": 0.439,
+   "F1": 0.45
+  },
+  "jz_diff": {
+   "h": 0.1,
+   "pr": 0.03,
+   "peaks_dense": 103,
+   "P": 0.495,
+   "R": 0.622,
+   "F1": 0.551
+  },
+  "glass_bright": {
+   "h": 0.1,
+   "pr": 0.03,
+   "peaks_dense": 97,
+   "P": 0.546,
+   "R": 0.646,
+   "F1": 0.592
+  },
+  "hand_diff": {
+   "h": 0.1,
+   "pr": 0.03,
+   "peaks_dense": 101,
+   "P": 0.475,
+   "R": 0.585,
+   "F1": 0.525
+  }
+ },
+ "jz_diff_missed_dense_contacts": 37,
+ "of_those_glass_bright_hits": 17,
+ "hand_diff_norm_at_fp_median": 0.25283396420744114,
+ "hand_diff_norm_at_tp_median": 0.24968482959810914,
+ "dense_intercontact_ms": {
+  "n": 82,
+  "p10": 63.00000000000061,
+  "p25": 72.99999999999999,
+  "median": 116.00000000000054
+ }
+}

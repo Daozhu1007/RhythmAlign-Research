@@ -1,0 +1,67 @@
+{
+ "tests": [
+  {
+   "name": "T1_full_match",
+   "got": 2,
+   "expect": 2,
+   "pass": true
+  },
+  {
+   "name": "T2_optimal_beats_greedy",
+   "got_optimal": 2,
+   "got_greedy": 1,
+   "expect_optimal": 2,
+   "expect_greedy": 1,
+   "pass": true
+  },
+  {
+   "name": "T3_prf_hand",
+   "got": {
+    "matches": 1,
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1": 0.6667,
+    "unmatched_predictions": 1,
+    "unmatched_oracle_events": 0
+   },
+   "expect": {
+    "matches": 1,
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1": 0.6667,
+    "unmatched_predictions": 1,
+    "unmatched_oracle_events": 0
+   },
+   "pass": true
+  },
+  {
+   "name": "T4_prf_hand2",
+   "got": [
+    0.75,
+    0.5,
+    0.6
+   ],
+   "expect": [
+    0.75,
+    0.5,
+    0.6
+   ],
+   "pass": true
+  },
+  {
+   "name": "T5_gate_support",
+   "got_nonzero": 0.20996,
+   "expect_nonzero": 0.20995833333333333,
+   "pass": true
+  },
+  {
+   "name": "T6_partition",
+   "got_allowed": 0.05,
+   "got_rest": 0.1,
+   "expect_allowed": 0.05,
+   "expect_rest": 0.1,
+   "pass": true
+  }
+ ],
+ "all_pass": true
+}

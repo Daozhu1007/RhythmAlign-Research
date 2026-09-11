@@ -1,0 +1,105 @@
+{
+  "source": "D:\\Code\\RhythmAlign\\experiments\\r1_golden_sample\\outputs\\golden_raw.wav",
+  "window": {
+    "pre_s": 0.02,
+    "post_s": 0.15,
+    "fade_s": 0.005,
+    "gap_s": 0.03
+  },
+  "q1_event": {
+    "t": 14.907,
+    "type": "button_hit",
+    "confidence": "high",
+    "notes": "both hands press upper ring, PERFECT visible; lowest local music level (snr +3.0 dB)",
+    "start": 14.887,
+    "end": 15.0,
+    "timestamp": 14.907
+  },
+  "q2_events": [
+    {
+      "t": 0.389,
+      "type": "button_hit",
+      "confidence": "medium",
+      "notes": "glove at 6 o'clock ring edge in frames; clearest audio isolation (snr +0.8 dB), single hit",
+      "start": 0.369,
+      "end": 0.539,
+      "timestamp": 0.389
+    },
+    {
+      "t": 1.237,
+      "type": "button_hit",
+      "confidence": "high",
+      "notes": "right glove strikes 2 o'clock button, clear swing-in then contact; flux 4961",
+      "start": 1.217,
+      "end": 1.387,
+      "timestamp": 1.237
+    },
+    {
+      "t": 2.437,
+      "type": "palm_tap",
+      "confidence": "high",
+      "notes": "left palm slaps inner 8 o'clock; very clear hand contact; crowd 1",
+      "start": 2.417,
+      "end": 2.587,
+      "timestamp": 2.437
+    },
+    {
+      "t": 3.477,
+      "type": "button_hit",
+      "confidence": "high",
+      "notes": "both hands on ring (left 8 o'clock + right 12-1 o'clock), contact then retract",
+      "start": 3.457,
+      "end": 3.627,
+      "timestamp": 3.477
+    },
+    {
+      "t": 4.485,
+      "type": "button_hit",
+      "confidence": "high",
+      "notes": "right glove presses 1-2 o'clock button, CRITICAL BREAK judgment visible",
+      "start": 4.465,
+      "end": 4.635,
+      "timestamp": 4.485
+    },
+    {
+      "t": 10.187,
+      "type": "palm_slap",
+      "confidence": "high",
+      "notes": "left palm slap on 10-11 o'clock button, hand visibly on button at t=0 frame",
+      "start": 10.167,
+      "end": 10.337,
+      "timestamp": 10.187
+    },
+    {
+      "t": 12.96,
+      "type": "button_hit",
+      "confidence": "high",
+      "notes": "both hands press simultaneously, PERFECT judgment; zero other candidates within 0.35 s",
+      "start": 12.94,
+      "end": 13.11,
+      "timestamp": 12.96
+    },
+    {
+      "t": 14.571,
+      "type": "button_hit",
+      "confidence": "high",
+      "notes": "right hand retracts as left glove lands on 4-5 o'clock button (contact ~+40 ms)",
+      "start": 14.551,
+      "end": 14.721,
+      "timestamp": 14.571
+    },
+    {
+      "t": 14.907,
+      "type": "button_hit",
+      "confidence": "high",
+      "notes": "both hands press upper ring, PERFECT visible; lowest local music level (snr +3.0 dB)",
+      "start": 14.887,
+      "end": 15.0,
+      "timestamp": 14.907
+    }
+  ],
+  "rejected_examples": {
+    "5.131/5.488/7.733 region": "music too loud locally (snr -5..-11 dB), 5-9 candidates within 0.35 s"
+  },
+  "visual_evidence": "work/frames/strip_*.jpg (5 frames -80..+80 ms per candidate, 60 fps handcam)"
+}

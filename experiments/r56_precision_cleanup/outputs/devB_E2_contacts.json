@@ -1,0 +1,380 @@
+{
+ "experiment": "R5.6 E2 = E1 + burst-constrained strong-audio completion",
+ "window": "devB",
+ "e2_config": {
+  "min_peak": 0.35,
+  "min_ratio": 4.0,
+  "min_dist_s": 0.06,
+  "resid_sum_min": 1.2,
+  "hi1_min": 0.15,
+  "d_e1_min_ms": 90,
+  "d_e2_min_ms": 90
+ },
+ "e1_candidates": 80,
+ "n_added": 5,
+ "n_rejected": 43,
+ "added": [
+  {
+   "t": 1.675,
+   "peak": 2.701,
+   "ratio": 8.675,
+   "hand": 0.322,
+   "burst_edge_ms": 740.036,
+   "bass": 0.146,
+   "mid": 1.207,
+   "hi1": 0.846,
+   "hi2": 0.506
+  },
+  {
+   "t": 8.178,
+   "peak": 2.912,
+   "ratio": 7.618,
+   "hand": 0.212,
+   "burst_edge_ms": 1548.753,
+   "bass": 0.075,
+   "mid": 0.666,
+   "hi1": 1.169,
+   "hi2": 0.965
+  },
+  {
+   "t": 12.116,
+   "peak": 2.126,
+   "ratio": 5.479,
+   "hand": 0.309,
+   "burst_edge_ms": 1373.349,
+   "bass": 0.076,
+   "mid": 0.775,
+   "hi1": 0.916,
+   "hi2": 0.292
+  },
+  {
+   "t": 12.767,
+   "peak": 3.043,
+   "ratio": 6.916,
+   "hand": 0.192,
+   "burst_edge_ms": 757.192,
+   "bass": 0.3,
+   "mid": 1.407,
+   "hi1": 0.758,
+   "hi2": 0.699
+  },
+  {
+   "t": 16.679,
+   "peak": 3.458,
+   "ratio": 13.104,
+   "hand": 0.284,
+   "burst_edge_ms": 1325.476,
+   "bass": 0.083,
+   "mid": 1.084,
+   "hi1": 1.343,
+   "hi2": 0.879
+  }
+ ],
+ "rejected_sample": [
+  {
+   "t": 0.05,
+   "peak": 2.67,
+   "ratio": 7.11,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 0.17,
+   "peak": 2.08,
+   "ratio": 6.04,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 0.37,
+   "peak": 2.72,
+   "ratio": 7.08,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 0.55,
+   "peak": 2.98,
+   "ratio": 7.28,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 0.62,
+   "peak": 3.33,
+   "ratio": 7.88,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 0.71,
+   "peak": 2.96,
+   "ratio": 6.94,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 0.84,
+   "peak": 2.42,
+   "ratio": 5.34,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 1.01,
+   "peak": 2.98,
+   "ratio": 7.42,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 1.29,
+   "peak": 1.22,
+   "ratio": 4.24,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 2.42,
+   "peak": 1.44,
+   "ratio": 4.99,
+   "reason": "outside_burst"
+  },
+  {
+   "t": 2.62,
+   "peak": 2.83,
+   "ratio": 7.43,
+   "reason": "outside_burst"
+  },
+  {
+   "t": 2.98,
+   "peak": 3.08,
+   "ratio": 8.26,
+   "reason": "outside_burst"
+  },
+  {
+   "t": 3.96,
+   "peak": 3.23,
+   "ratio": 6.74,
+   "reason": "outside_burst"
+  },
+  {
+   "t": 4.29,
+   "peak": 2.89,
+   "ratio": 6.21,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 4.62,
+   "peak": 2.07,
+   "ratio": 6.14,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 4.94,
+   "peak": 2.06,
+   "ratio": 7.58,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 5.26,
+   "peak": 2.38,
+   "ratio": 7.96,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 6.91,
+   "peak": 2.76,
+   "ratio": 6.48,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 7.85,
+   "peak": 2.7,
+   "ratio": 6.32,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 7.91,
+   "peak": 2.13,
+   "ratio": 5.52,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 8.48,
+   "peak": 1.41,
+   "ratio": 4.53,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 9.17,
+   "peak": 2.19,
+   "ratio": 5.1,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 9.5,
+   "peak": 2.05,
+   "ratio": 5.16,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 9.75,
+   "peak": 3.46,
+   "ratio": 6.24,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 9.83,
+   "peak": 3.41,
+   "ratio": 6.99,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 12.45,
+   "peak": 2.25,
+   "ratio": 6.1,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 13.08,
+   "peak": 3.5,
+   "ratio": 7.06,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 13.43,
+   "peak": 3.8,
+   "ratio": 7.96,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 13.57,
+   "peak": 3.43,
+   "ratio": 8.42,
+   "reason": "outside_burst"
+  },
+  {
+   "t": 13.75,
+   "peak": 3.42,
+   "ratio": 8.73,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 14.06,
+   "peak": 2.29,
+   "ratio": 6.04,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 14.22,
+   "peak": 2.3,
+   "ratio": 5.67,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 14.39,
+   "peak": 2.84,
+   "ratio": 7.96,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 14.72,
+   "peak": 2.93,
+   "ratio": 9.42,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 15.05,
+   "peak": 2.74,
+   "ratio": 10.04,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 15.4,
+   "peak": 2.1,
+   "ratio": 9.16,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 15.72,
+   "peak": 2.11,
+   "ratio": 7.96,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 16.04,
+   "peak": 2.74,
+   "ratio": 9.17,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 16.18,
+   "peak": 3.04,
+   "ratio": 9.06,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 16.36,
+   "peak": 3.37,
+   "ratio": 10.4,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 16.95,
+   "peak": 1.09,
+   "ratio": 5.12,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 17.34,
+   "peak": 3.22,
+   "ratio": 12.08,
+   "reason": "near_existing_candidate"
+  },
+  {
+   "t": 17.66,
+   "peak": 2.45,
+   "ratio": 6.73,
+   "reason": "near_existing_candidate"
+  }
+ ],
+ "taiko_audit": [
+  {
+   "t": 1.675,
+   "d_music_onset_ms": 53.0,
+   "bass": 0.15,
+   "hi1": 0.85,
+   "resid_sum": 2.56,
+   "hand": 0.32,
+   "coincides_music<=30ms": false
+  },
+  {
+   "t": 8.178,
+   "d_music_onset_ms": 89.7,
+   "bass": 0.07,
+   "hi1": 1.17,
+   "resid_sum": 2.8,
+   "hand": 0.21,
+   "coincides_music<=30ms": false
+  },
+  {
+   "t": 12.116,
+   "d_music_onset_ms": 51.8,
+   "bass": 0.08,
+   "hi1": 0.92,
+   "resid_sum": 1.98,
+   "hand": 0.31,
+   "coincides_music<=30ms": false
+  },
+  {
+   "t": 12.767,
+   "d_music_onset_ms": 23.1,
+   "bass": 0.3,
+   "hi1": 0.76,
+   "resid_sum": 2.86,
+   "hand": 0.19,
+   "coincides_music<=30ms": true
+  },
+  {
+   "t": 16.679,
+   "d_music_onset_ms": 23.2,
+   "bass": 0.08,
+   "hi1": 1.34,
+   "resid_sum": 3.31,
+   "hand": 0.28,
+   "coincides_music<=30ms": true
+  }
+ ]
+}

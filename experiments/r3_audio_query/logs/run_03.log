@@ -1,0 +1,14 @@
+W0908 01:18:32.428000 28768 Lib\site-packages\torch\utils\flop_counter.py:113] triton not found; flop counting will not work for triton kernels
+D:\Code\RhythmAlign\experiments\r2_target_separation\.venv\Lib\site-packages\torch\functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\native\TensorShape.cpp:4223.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+D:\Code\RhythmAlign\experiments\r2_target_separation\.venv\Lib\site-packages\torchaudio\transforms\_transforms.py:590: UserWarning: Argument 'onesided' has been deprecated and has no influence on the behavior of this module.
+  warnings.warn(
+device: cuda | torch 2.14.0+cu126
+ckpt loaded: missing=0 unexpected=0
+q1: query 0.113s -> embedding shape (1, 512) norm 1.000
+  audiosep_aq_q1: target -23.4 dB vs mixture -20.3 dB (-3.0 dB) | residual -26.3 dB
+q2: query 1.713s -> embedding shape (1, 512) norm 1.000
+  audiosep_aq_q2: target -22.2 dB vs mixture -20.3 dB (-1.9 dB) | residual -31.4 dB
+done in 23.8s

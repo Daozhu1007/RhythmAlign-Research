@@ -1,0 +1,35 @@
+W0907 18:26:10.886000 35472 Lib\site-packages\torch\utils\flop_counter.py:113] triton not found; flop counting will not work for triton kernels
+D:\Code\RhythmAlign\experiments\r2_target_separation\.venv\Lib\site-packages\torch\functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\native\TensorShape.cpp:4223.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+D:\Code\RhythmAlign\experiments\r2_target_separation\.venv\Lib\site-packages\torchaudio\transforms\_transforms.py:590: UserWarning: Argument 'onesided' has been deprecated and has no influence on the behavior of this module.
+  warnings.warn(
+device: cuda | torch 2.14.0+cu126 | cuda avail True
+gpu: NVIDIA GeForce RTX 4060 Laptop GPU
+ckpt loaded: missing=0 unexpected=0
+prompt similarity ranking:
+  0.4004  percussive taps <== chosen
+  0.2819  finger taps and button presses on a rhythm game cabinet <== chosen
+  0.2674  arcade button presses
+  0.2364  tapping
+  0.2302  tapping sounds
+  0.2134  physical hand impacts on an arcade rhythm game machine
+  0.1707  hand hitting arcade game buttons
+  0.1585  clicking
+  0.1375  button clicks
+chosen prompts: p1='percussive taps' p2='finger taps and button presses on a rhythm game cabinet'
+
+=== input 'raw' golden_raw.wav | 15.00s @ 32000 Hz mono ===
+  audiosep_raw_p1: prompt='percussive taps'
+    mixture -20.3 dB | target -24.1 dB | residual -24.7 dB | peak 1.054
+  audiosep_raw_p2: prompt='finger taps and button presses on a rhythm game cabinet'
+    mixture -20.3 dB | target -24.8 dB | residual -23.9 dB | peak 1.052
+
+=== input 'a2' A2_residual.wav | 15.00s @ 32000 Hz mono ===
+  audiosep_a2_p1: prompt='percussive taps'
+    mixture -20.9 dB | target -24.3 dB | residual -25.0 dB | peak 1.061
+  audiosep_a2_p2: prompt='finger taps and button presses on a rhythm game cabinet'
+    mixture -20.9 dB | target -24.9 dB | residual -24.4 dB | peak 1.052
+
+done in 23.8s -> outputs/ + logs/audiosep_runs.json

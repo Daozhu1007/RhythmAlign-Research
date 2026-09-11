@@ -1,0 +1,2027 @@
+{
+ "generated": "2026-09-12",
+ "note": "Proposed and actual public file inventory for Daozhu1007/RhythmAlign-Research. Mirrors .gitignore. Raw media, checkpoints, vendored third-party trees, caches, the full local migration manifest and any secret-bearing files are intentionally absent; see PUBLIC_REPO_AUDIT.md for the audit behind these decisions.",
+ "file_count": 402,
+ "total_bytes": 53722432,
+ "total_human": "51.23 MB",
+ "checks": {
+  "no_file_over_25MB": true,
+  "no_file_over_10MB": true,
+  "no_audio_video": true,
+  "no_checkpoints": true,
+  "no_secrets_or_env": true,
+  "no_vendored_third_party": true
+ },
+ "files": [
+  {
+   "path": ".gitignore",
+   "size": 1318,
+   "category": "ignore rules"
+  },
+  {
+   "path": "LICENSE_STATUS.md",
+   "size": 1906,
+   "category": "root license decision"
+  },
+  {
+   "path": "PUBLIC_REPO_AUDIT.md",
+   "size": 8927,
+   "category": "root audit document"
+  },
+  {
+   "path": "README.md",
+   "size": 6221,
+   "category": "root README"
+  },
+  {
+   "path": "RESEARCH_WORKFLOW.md",
+   "size": 3153,
+   "category": "root workflow policy"
+  },
+  {
+   "path": "THIRD_PARTY.md",
+   "size": 3103,
+   "category": "root third-party documentation"
+  },
+  {
+   "path": "experiments/independent_review_r0_r56/C1_envelope_audit.png",
+   "size": 54900,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/independent_review_r0_r56/EVIDENCE_INDEX.md",
+   "size": 10932,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/independent_review_r0_r56/INDEPENDENT_REVIEW.md",
+   "size": 73427,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/independent_review_r0_r56/artifact_checks.json",
+   "size": 4739,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/independent_review_r0_r56/audio_metadata.json",
+   "size": 19292,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/independent_review_r0_r56/evidence_manifest.json",
+   "size": 29130,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/independent_review_r0_r56/matching_checks.json",
+   "size": 1164,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r1_golden_sample/outputs/alignment_diagnostics.json",
+   "size": 5923,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r1_golden_sample/scripts/01_audit.py",
+   "size": 2717,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r1_golden_sample/scripts/02_coarse_align.py",
+   "size": 1915,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r1_golden_sample/scripts/03_golden_select.py",
+   "size": 8476,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r1_golden_sample/scripts/04_golden_extract.py",
+   "size": 2041,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r1_golden_sample/scripts/05_fine_align.py",
+   "size": 14558,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r1_golden_sample/scripts/06_cancel.py",
+   "size": 6674,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r1_golden_sample/scripts/07_audit.py",
+   "size": 10882,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r1_golden_sample/scripts/08_stereo_and_gate.py",
+   "size": 7546,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r1_golden_sample/scripts/align_lib.py",
+   "size": 3365,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r1_golden_sample/scripts/r1_common.py",
+   "size": 5063,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r2_target_separation/REPORT.md",
+   "size": 6562,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/r2_target_separation/logs/00_env_audit.md",
+   "size": 3599,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/r2_target_separation/logs/audiosep_runs.json",
+   "size": 2455,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r2_target_separation/logs/evaluation.json",
+   "size": 10345,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r2_target_separation/logs/final_mix.json",
+   "size": 448,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r2_target_separation/logs/prompt_selection.json",
+   "size": 1145,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r2_target_separation/logs/run_10.log",
+   "size": 2392,
+   "category": "run log"
+  },
+  {
+   "path": "experiments/r2_target_separation/outputs/spec_audiosep_a2_p1.png",
+   "size": 1350417,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r2_target_separation/outputs/spec_audiosep_a2_p2.png",
+   "size": 1366453,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r2_target_separation/outputs/spec_audiosep_raw_p1.png",
+   "size": 1346938,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r2_target_separation/outputs/spec_audiosep_raw_p2.png",
+   "size": 1372266,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r2_target_separation/scripts/10_audiosep_run.py",
+   "size": 10069,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r2_target_separation/scripts/11_evaluate.py",
+   "size": 9305,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r2_target_separation/scripts/12_final_mix.py",
+   "size": 3067,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r3_audio_query/REPORT.md",
+   "size": 9526,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/r3_audio_query/logs/00_env_audit.md",
+   "size": 2702,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/r3_audio_query/logs/01_event_candidates.json",
+   "size": 10024,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r3_audio_query/logs/01_queries_spec.png",
+   "size": 275994,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r3_audio_query/logs/03_audiosep_audio_query_runs.json",
+   "size": 1024,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r3_audio_query/logs/04_clapsep_runs.json",
+   "size": 1216,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r3_audio_query/logs/05_clapsep_n1.json",
+   "size": 388,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r3_audio_query/logs/06_evaluation.json",
+   "size": 8302,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r3_audio_query/logs/07_final_mix.json",
+   "size": 970,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r3_audio_query/logs/run_03.log",
+   "size": 1425,
+   "category": "run log"
+  },
+  {
+   "path": "experiments/r3_audio_query/outputs/spec_audiosep_aq_q1_target.png",
+   "size": 1320535,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r3_audio_query/outputs/spec_audiosep_aq_q2_target.png",
+   "size": 1365599,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r3_audio_query/outputs/spec_audiosep_raw_p2_target.png",
+   "size": 1374349,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r3_audio_query/outputs/spec_clapsep_n1_target.png",
+   "size": 1368915,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r3_audio_query/outputs/spec_clapsep_q1_target.png",
+   "size": 1347458,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r3_audio_query/outputs/spec_clapsep_q2_target.png",
+   "size": 1374847,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r3_audio_query/queries/query_events.json",
+   "size": 3075,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r3_audio_query/scripts/01_select_events.py",
+   "size": 5483,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r3_audio_query/scripts/02_build_queries.py",
+   "size": 5554,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r3_audio_query/scripts/03_audiosep_audio_query.py",
+   "size": 5828,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r3_audio_query/scripts/04_clapsep_positive.py",
+   "size": 3237,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r3_audio_query/scripts/05_clapsep_negative.py",
+   "size": 3244,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r3_audio_query/scripts/06_evaluate.py",
+   "size": 10825,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r3_audio_query/scripts/07_final_mix.py",
+   "size": 2941,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r3_audio_query/scripts/clapsep_lib.py",
+   "size": 3269,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r45_conservative_windows/REPORT.md",
+   "size": 5062,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/r45_conservative_windows/logs/build_run.log",
+   "size": 309,
+   "category": "run log"
+  },
+  {
+   "path": "experiments/r45_conservative_windows/logs/evaluation.json",
+   "size": 18771,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r45_conservative_windows/logs/evaluation_run.log",
+   "size": 4453,
+   "category": "run log"
+  },
+  {
+   "path": "experiments/r45_conservative_windows/outputs/r45_gates_and_chop.png",
+   "size": 86077,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r45_conservative_windows/scripts/10_build.py",
+   "size": 9681,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r45_conservative_windows/scripts/20_evaluate.py",
+   "size": 14010,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/REPORT.md",
+   "size": 13099,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/logs/evaluation.json",
+   "size": 25662,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/logs/evaluation_run.log",
+   "size": 5120,
+   "category": "run log"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/outputs/cmp_coverage.png",
+   "size": 55206,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/outputs/cmp_final_mixes_spec.png",
+   "size": 1977452,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/outputs/cmp_peak_retention.png",
+   "size": 48986,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/outputs/contacts_oracle.json",
+   "size": 18698,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/outputs/contacts_refined.json",
+   "size": 37150,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/scripts/00_extract_frames.py",
+   "size": 2530,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/scripts/01_montage.py",
+   "size": 1443,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/scripts/02_detect.py",
+   "size": 3172,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/scripts/03_judge_detect.py",
+   "size": 1763,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/scripts/04_analyze.py",
+   "size": 2795,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/scripts/05_detection_full.py",
+   "size": 3402,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/scripts/06_candidates.py",
+   "size": 1998,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/scripts/10_refine.py",
+   "size": 5402,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/scripts/20_build.py",
+   "size": 7297,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r4_contact_reconstruction/scripts/30_evaluate.py",
+   "size": 17260,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/REPORT.md",
+   "size": 14041,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/logs/holdoutC_audio_comparison.json",
+   "size": 2761,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/logs/holdoutC_build_info.json",
+   "size": 207,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/logs/holdoutC_metrics.json",
+   "size": 18668,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/logs/holdoutC_r5baseline_audio.json",
+   "size": 155,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/logs/holdoutC_refine_comparison.json",
+   "size": 279,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/logs/phase1_audit_devA.json",
+   "size": 1393,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/logs/phase1_audit_devB.json",
+   "size": 1638,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/logs/phase1_audit_summary.json",
+   "size": 3648,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/logs/phase1b_lead_lag.json",
+   "size": 5507,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/logs/phase1c_rule_ceiling.json",
+   "size": 2223,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/logs/phase23_burst_and_rules.json",
+   "size": 4933,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/logs/phase4_dev_eval.json",
+   "size": 28736,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/logs/phase4_leakage.json",
+   "size": 248,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/detector_config_r55_frozen.json",
+   "size": 2656,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/devA_r55_contacts_visual.json",
+   "size": 12046,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/devA_r55auto_refined.json",
+   "size": 36224,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/devB_r55_contacts_visual.json",
+   "size": 11809,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/devB_r55auto_refined.json",
+   "size": 34858,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_contacts_auto_refined.json",
+   "size": 38196,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_contacts_auto_visual.json",
+   "size": 12524,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_contacts_r5baseline_visual.json",
+   "size": 7572,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_density_profile.png",
+   "size": 20342,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_fp_hist.png",
+   "size": 19485,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_oracle_blind.json",
+   "size": 14641,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_oracle_refined.json",
+   "size": 20793,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_r5baseline_refined.json",
+   "size": 30987,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_selection.json",
+   "size": 1946,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_timeline.png",
+   "size": 304201,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/phase1_audit_findings.md",
+   "size": 4950,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/phase1_locked_avg.png",
+   "size": 164643,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/phase1_traces_devA.png",
+   "size": 616774,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/phase1_traces_devB.png",
+   "size": 577560,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/outputs/r55_vs_r5_summary.png",
+   "size": 50364,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/10_trace_audit.py",
+   "size": 15262,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/11_lead_lag_audit.py",
+   "size": 6680,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/12_rule_ceiling.py",
+   "size": 5612,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/20_burst_and_rules.py",
+   "size": 5010,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/40_dev_eval.py",
+   "size": 11477,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/50_freeze.py",
+   "size": 2980,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/60_holdoutC_profile.py",
+   "size": 2294,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/61_holdoutC_extract.py",
+   "size": 7718,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/62_holdoutC_oracle_materials.py",
+   "size": 4393,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/63_write_oracle_c.py",
+   "size": 9224,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/70_holdoutC_run.py",
+   "size": 6425,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/71_holdoutC_audio.py",
+   "size": 5785,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/72_eval_audio_C.py",
+   "size": 4095,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/73_holdoutC_baseline_audio.py",
+   "size": 3659,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/80_plots.py",
+   "size": 4594,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/common55.py",
+   "size": 5090,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r55_burst_event_splitting/scripts/detector55.py",
+   "size": 7642,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/REPORT.md",
+   "size": 14654,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/logs/dev_eval_E0_E1_E2.json",
+   "size": 8375,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/logs/holdoutD_metrics.json",
+   "size": 2027,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/logs/phase1_audit_devA.json",
+   "size": 146805,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/logs/phase1_audit_devB.json",
+   "size": 146076,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/logs/phase1_audit_devC.json",
+   "size": 150967,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/logs/phase1_audit_summary.json",
+   "size": 9087,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/logs/phase3_completion_space_devA.json",
+   "size": 28597,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/logs/phase3_completion_space_devB.json",
+   "size": 20260,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/logs/phase3_completion_space_devC.json",
+   "size": 20345,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/detector_config_r56_frozen.json",
+   "size": 4940,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/devA_E1_contacts.json",
+   "size": 24150,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/devA_E1_refined.json",
+   "size": 28783,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/devA_E2_contacts.json",
+   "size": 8207,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/devB_E1_contacts.json",
+   "size": 23561,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/devB_E1_refined.json",
+   "size": 24024,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/devB_E2_contacts.json",
+   "size": 6569,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/devC_E1_contacts.json",
+   "size": 26568,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/devC_E1_refined.json",
+   "size": 26085,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/devC_E2_contacts.json",
+   "size": 6873,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/dev_summary.png",
+   "size": 70319,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/holdoutD_contacts_auto_refined.json",
+   "size": 41547,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/holdoutD_contacts_auto_visual.json",
+   "size": 26016,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/holdoutD_density_profile.png",
+   "size": 23067,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/holdoutD_oracle_blind.json",
+   "size": 18732,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/holdoutD_oracle_refined.json",
+   "size": 26232,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/holdoutD_selection.json",
+   "size": 1769,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/outputs/holdoutD_summary.png",
+   "size": 33711,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/10_phase1_audit.py",
+   "size": 12157,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/11_design_dig.py",
+   "size": 6864,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/12_weak_gate_grid.py",
+   "size": 3393,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/20_e1.py",
+   "size": 3431,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/30_completion_calibration.py",
+   "size": 5503,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/31_e2.py",
+   "size": 5819,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/40_dev_eval.py",
+   "size": 10877,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/50_freeze.py",
+   "size": 5457,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/60_holdoutD_profile.py",
+   "size": 2355,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/61_holdoutD_select_sheets.py",
+   "size": 1270,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/62_holdoutD_extract.py",
+   "size": 7941,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/63_oracle_materials.py",
+   "size": 2424,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/64_write_oracle_d.py",
+   "size": 10874,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/70_holdoutD_run.py",
+   "size": 13537,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/80_plots.py",
+   "size": 3036,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r56_precision_cleanup/scripts/common56.py",
+   "size": 14644,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/REPORT.md",
+   "size": 12546,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/logs/dev_audio_comparison.json",
+   "size": 3200,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/logs/dev_fp_distance.json",
+   "size": 1027,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/logs/dev_metrics_chosen.json",
+   "size": 5121,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/logs/dev_refine_comparison.json",
+   "size": 482,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/logs/dev_sweep_threshold.json",
+   "size": 55188,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/logs/dev_sweep_weights.json",
+   "size": 49910,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/logs/feature_audit_events.json",
+   "size": 19270,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/logs/feature_audit_sweep.json",
+   "size": 4420,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/logs/fp_fn_samples.json",
+   "size": 196,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/logs/holdout_audio_comparison.json",
+   "size": 3959,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/logs/holdout_build_info.json",
+   "size": 205,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/logs/holdout_metrics.json",
+   "size": 3965,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/logs/holdout_refine_comparison.json",
+   "size": 195,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/detector_config.json",
+   "size": 1312,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/detector_config_frozen.json",
+   "size": 1498,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/dev_contacts_auto_refined.json",
+   "size": 31304,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/dev_contacts_auto_visual.json",
+   "size": 7831,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/dev_feature_traces.png",
+   "size": 174414,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/dev_jz_crop.png",
+   "size": 510606,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/dev_jz_crop2.png",
+   "size": 285849,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/dev_refine_comparison.png",
+   "size": 59187,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/dev_timeline.png",
+   "size": 209775,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/diag_e30_warm.png",
+   "size": 201850,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/diag_e34_warm.png",
+   "size": 200879,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/diag_e72_warm.png",
+   "size": 186014,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/diag_jz_humps.png",
+   "size": 317869,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/diag_score_shape.png",
+   "size": 134903,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/holdout_contacts_auto_refined.json",
+   "size": 22218,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/holdout_contacts_auto_visual.json",
+   "size": 5606,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/holdout_mix_compare.png",
+   "size": 1733048,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/holdout_oracle_blind.json",
+   "size": 18810,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/holdout_oracle_refined.json",
+   "size": 28162,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/holdout_selection.json",
+   "size": 831,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/holdout_timeline.png",
+   "size": 187264,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/pr_dev_vs_holdout.png",
+   "size": 23863,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fn_00.png",
+   "size": 425911,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fn_01.png",
+   "size": 466866,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fn_02.png",
+   "size": 440722,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fn_03.png",
+   "size": 404940,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fn_04.png",
+   "size": 509469,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fn_05.png",
+   "size": 513220,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fn_06.png",
+   "size": 434136,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fn_07.png",
+   "size": 494830,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fp_00.png",
+   "size": 477315,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fp_01.png",
+   "size": 465959,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fp_02.png",
+   "size": 492703,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fp_03.png",
+   "size": 467223,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fp_04.png",
+   "size": 453532,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fp_05.png",
+   "size": 440772,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fp_06.png",
+   "size": 479159,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/outputs/strips_dev/fp_07.png",
+   "size": 459119,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/10_feature_audit.py",
+   "size": 7059,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/20_detector_dev.py",
+   "size": 7653,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/21_lag_diag.py",
+   "size": 1144,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/22_fp_fn_breakdown.py",
+   "size": 1839,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/23_strips.py",
+   "size": 3272,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/24_signed_err.py",
+   "size": 1592,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/25_freeze_dev.py",
+   "size": 3656,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/30_audio_refine_dev.py",
+   "size": 5843,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/35_build_c1_dev.py",
+   "size": 1853,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/36_eval_audio_dev.py",
+   "size": 4430,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/50_holdout_extract.py",
+   "size": 6410,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/60_holdout_oracle.py",
+   "size": 4709,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/62_write_oracle.py",
+   "size": 10204,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/70_holdout_run.py",
+   "size": 2656,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/75_holdout_audio.py",
+   "size": 5495,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/76_eval_audio_holdout.py",
+   "size": 4407,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/80_plots.py",
+   "size": 7831,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_auto_contact_detection/scripts/r5_common.py",
+   "size": 15628,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/HISTORICAL_BASELINE_MANIFEST.json",
+   "size": 7572,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/REPORT.md",
+   "size": 17625,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/corrected_C1_envelope_audit.png",
+   "size": 125988,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/corrected_C1_envelope_tests.json",
+   "size": 4522,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/corrected_comparison_matrix.json",
+   "size": 14576,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/listening_pack/LISTENING_INSTRUCTIONS.md",
+   "size": 2284,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/listening_pack/listening_key.json",
+   "size": 972,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/logs/evaluation_corrected.json",
+   "size": 305669,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/logs/evaluator_selftest.json",
+   "size": 1124,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/logs/historical_reproduction_checks.json",
+   "size": 2042,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/logs/part2_rebuild_summary.json",
+   "size": 1963,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/logs/part3_hpss_summary.json",
+   "size": 1218,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/logs/predeclared_controls.json",
+   "size": 1352,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/old_vs_corrected_C1_envelope.png",
+   "size": 271105,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/scripts/00_freeze_historical.py",
+   "size": 12235,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/scripts/10_envelope_tests.py",
+   "size": 13557,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/scripts/11_envelope_plots.py",
+   "size": 4740,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/scripts/20_rebuild_c1.py",
+   "size": 6079,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/scripts/30_hpss_fixed.py",
+   "size": 4892,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/scripts/45_evaluate_all.py",
+   "size": 13650,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/scripts/60_matrix.py",
+   "size": 11293,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/scripts/70_listening_pack.py",
+   "size": 3401,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/scripts/evaluator.py",
+   "size": 21462,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/scripts/fixenv.py",
+   "size": 4786,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/r5_fix_validity_repair/scripts/predeclare_controls.py",
+   "size": 2197,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s0_research_reframing/ARCHITECTURE_OPTIONS.md",
+   "size": 22403,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s0_research_reframing/DATA_AND_GROUND_TRUTH_PLAN.md",
+   "size": 28643,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s0_research_reframing/DELIVERABLE_QA.json",
+   "size": 2220,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s0_research_reframing/ERRATUM.md",
+   "size": 3023,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s0_research_reframing/EVIDENCE_AND_SCOPE.md",
+   "size": 6241,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s0_research_reframing/LITERATURE_MAP.md",
+   "size": 31519,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s0_research_reframing/MINIMAL_DECISIVE_EXPERIMENT.md",
+   "size": 25811,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s0_research_reframing/PAPER_DIRECTION_MEMO.md",
+   "size": 14495,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s0_research_reframing/S0_DECISION.json",
+   "size": 3118,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s0_research_reframing/S0_RESEARCH_STUDY.md",
+   "size": 44632,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s0_research_reframing/WORKSPACE_EVIDENCE_CHECKS.json",
+   "size": 5095,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s0_research_reframing/scripts/check_workspace_evidence.py",
+   "size": 3257,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s0_research_reframing/scripts/validate_deliverables.py",
+   "size": 4226,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/ACQUISITION_PROTOCOL.md",
+   "size": 5086,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/CAPTURE_CHECKLIST.md",
+   "size": 2240,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/CAPTURE_REQUIRED.md",
+   "size": 3231,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/LISTENING_INSTRUCTIONS.md",
+   "size": 2465,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/MIXTURE_RECIPES.json",
+   "size": 28139,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/PILOT_MANIFEST.json",
+   "size": 23373,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/QC_REPORT.md",
+   "size": 4923,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/README.md",
+   "size": 5155,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/REPRESENTATION_DIAGNOSTICS.md",
+   "size": 8114,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/REPRESENTATION_RESULTS.json",
+   "size": 181985,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/S1A_DECISION.json",
+   "size": 1751,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/S1A_PLAN.md",
+   "size": 9211,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/S1A_REPORT.md",
+   "size": 8503,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/SYNC_PROTOCOL.md",
+   "size": 4067,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/fixtures/fixture_mixtures_recipe.json",
+   "size": 15083,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/fixtures/session0001/anchors.csv",
+   "size": 180,
+   "category": "small tabular data"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/fixtures/session0001/session_notes.txt",
+   "size": 313,
+   "category": "small text note"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/listening_key.json",
+   "size": 2269,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/logs/env_audit.json",
+   "size": 2281,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/logs/oracle_runs.json",
+   "size": 12218,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/logs/stft_equivalence_check.json",
+   "size": 659,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/logs/synthetic_validation.json",
+   "size": 1627,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/manifests/media_inventory_fixtures.json",
+   "size": 4635,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/manifests/pcm_extraction_session0001.json",
+   "size": 3463,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/manifests/qc_audio_session0001.json",
+   "size": 4958,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/manifests/sync_map_session0001.json",
+   "size": 2806,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/raw/README.md",
+   "size": 2967,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/00_env_audit.py",
+   "size": 996,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/01_media_inventory.py",
+   "size": 2443,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/02_extract_pcm.py",
+   "size": 3648,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/03_qc_audio.py",
+   "size": 3232,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/04_sync_fit.py",
+   "size": 4358,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/05_build_mixtures.py",
+   "size": 7663,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/06_oracle_diagnostics.py",
+   "size": 2964,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/07_evaluate_representation.py",
+   "size": 6799,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/08_listening_pack.py",
+   "size": 3953,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/09_pilot_manifest.py",
+   "size": 3858,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/90_generate_synthetic_fixtures.py",
+   "size": 13422,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/91_run_synthetic_pipeline.py",
+   "size": 2940,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/92_stft_equivalence_check.py",
+   "size": 3006,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/common.py",
+   "size": 5488,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/evaluator.py",
+   "size": 9509,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/oracle_validation.py",
+   "size": 5674,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/stft_clapsep.py",
+   "size": 8665,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/scripts/sync_fit.py",
+   "size": 3054,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/tests/test_oracle_units.py",
+   "size": 657,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/tests/test_stft_clapsep.py",
+   "size": 3662,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1a_ground_truth_pilot/tests/test_sync_and_mixtures.py",
+   "size": 3079,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/.gitignore",
+   "size": 174,
+   "category": "stage-local ignore rules (historical)"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/CHALLENGE_CLIPS.md",
+   "size": 3706,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/FAILURE_CASES.md",
+   "size": 5650,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/MODEL_MATRIX.md",
+   "size": 4360,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/README.md",
+   "size": 5759,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/RESULTS.md",
+   "size": 8419,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/RUN_MANIFEST.json",
+   "size": 62926,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/S1E_DECISION.json",
+   "size": 5023,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/clips/clip_manifest.json",
+   "size": 5663,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/panel_c1_speech_npc_a.png",
+   "size": 1258793,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/panel_c3_taiko_prompt.png",
+   "size": 961607,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/panel_c5_announcer_end.png",
+   "size": 965396,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/panel_c6_dense_golden.png",
+   "size": 2293707,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/residual_scan.png",
+   "size": 114730,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/spec_strip_0_0_60.png",
+   "size": 1454244,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/spec_strip_1_55_115.png",
+   "size": 1455996,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/spec_strip_2_110_163.png",
+   "size": 1349154,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/taiko_residual_zoom.png",
+   "size": 1479913,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/timeline_overview.png",
+   "size": 326805,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/zoom_amb_start.png",
+   "size": 873239,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/zoom_golden.png",
+   "size": 1390678,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/zoom_npc_a1.png",
+   "size": 879802,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/zoom_npc_a2.png",
+   "size": 885166,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/zoom_npc_a3.png",
+   "size": 898668,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/zoom_post_end.png",
+   "size": 1298191,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/diagnostics/zoom_taiko_prompt.png",
+   "size": 700312,
+   "category": "small generated scientific plot"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/listening_pack/LISTENING_INSTRUCTIONS.md",
+   "size": 2672,
+   "category": "report/doc"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/listening_pack/listening_key.json",
+   "size": 7886,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/listening_pack/playback_order.json",
+   "size": 4048,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/01_extract_and_timeline.log",
+   "size": 389,
+   "category": "run log"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/02_region_zoom.log",
+   "size": 1964,
+   "category": "run log"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/03_residual_scan.log",
+   "size": 441,
+   "category": "run log"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/04_cut_clips.log",
+   "size": 461,
+   "category": "run log"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/05_clapsep.log",
+   "size": 28830,
+   "category": "run log"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/05_clapsep_runs.json",
+   "size": 5095,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/06_audiosep.log",
+   "size": 441,
+   "category": "run log"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/06_audiosep_runs.json",
+   "size": 1669,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/07_soloaudio.log",
+   "size": 744,
+   "category": "run log"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/07_soloaudio_runs.json",
+   "size": 4528,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/08_specialist.log",
+   "size": 735,
+   "category": "run log"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/08_specialist_runs.json",
+   "size": 4037,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/09_diagnostics.json",
+   "size": 18961,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/09_diagnostics.log",
+   "size": 4461,
+   "category": "run log"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/ckpt_hashes.json",
+   "size": 1443,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/logs/manifest_env_inventory.json",
+   "size": 15012,
+   "category": "metrics/decision/manifest JSON"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/scripts/01_extract_and_timeline.py",
+   "size": 6514,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/scripts/02_region_zoom.py",
+   "size": 7374,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/scripts/03_residual_scan.py",
+   "size": 4074,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/scripts/04_cut_clips.py",
+   "size": 3101,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/scripts/05_run_clapsep.py",
+   "size": 3371,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/scripts/06_run_audiosep.py",
+   "size": 5331,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/scripts/07_run_soloaudio.py",
+   "size": 6298,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/scripts/08_specialist.py",
+   "size": 7072,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/scripts/09_diagnostics.py",
+   "size": 6306,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/scripts/10_spectrograms.py",
+   "size": 2878,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/scripts/11_build_pack.py",
+   "size": 4470,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/scripts/align_cancel.py",
+   "size": 5932,
+   "category": "research script"
+  },
+  {
+   "path": "experiments/s1e_existing_corpus_feasibility/scripts/s1e_common.py",
+   "size": 2827,
+   "category": "research script"
+  },
+  {
+   "path": "migration/MIGRATION_MANIFEST.public.json",
+   "size": 1422248,
+   "category": "sanitized migration manifest"
+  },
+  {
+   "path": "migration/MIGRATION_NOTES.md",
+   "size": 4453,
+   "category": "migration notes"
+  },
+  {
+   "path": "migration/REPO_HYGIENE_AUDIT.md",
+   "size": 8589,
+   "category": "migration hygiene audit"
+  },
+  {
+   "path": "migration/REPO_HYGIENE_REPORT.md",
+   "size": 8974,
+   "category": "migration hygiene report"
+  },
+  {
+   "path": "migration/verify_copy.py",
+   "size": 5392,
+   "category": "migration verification script"
+  }
+ ]
+}

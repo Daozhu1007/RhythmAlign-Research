@@ -1,0 +1,44 @@
+{
+  "ranking": [
+    {
+      "prompt": "percussive taps",
+      "cosine_vs_golden_raw": 0.40035539865493774
+    },
+    {
+      "prompt": "finger taps and button presses on a rhythm game cabinet",
+      "cosine_vs_golden_raw": 0.28190770745277405
+    },
+    {
+      "prompt": "arcade button presses",
+      "cosine_vs_golden_raw": 0.2674224078655243
+    },
+    {
+      "prompt": "tapping",
+      "cosine_vs_golden_raw": 0.23635809123516083
+    },
+    {
+      "prompt": "tapping sounds",
+      "cosine_vs_golden_raw": 0.23024724423885345
+    },
+    {
+      "prompt": "physical hand impacts on an arcade rhythm game machine",
+      "cosine_vs_golden_raw": 0.21344617009162903
+    },
+    {
+      "prompt": "hand hitting arcade game buttons",
+      "cosine_vs_golden_raw": 0.17065779864788055
+    },
+    {
+      "prompt": "clicking",
+      "cosine_vs_golden_raw": 0.15848016738891602
+    },
+    {
+      "prompt": "button clicks",
+      "cosine_vs_golden_raw": 0.13751904666423798
+    }
+  ],
+  "chosen": {
+    "p1": "percussive taps",
+    "p2": "finger taps and button presses on a rhythm game cabinet"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "E0": {
+    "0.033": {
+      "stored_policy_matches": 40,
+      "maximum_cardinality_matches": 40,
+      "n_pred": 150,
+      "n_oracle": 86
+    },
+    "0.05": {
+      "stored_policy_matches": 63,
+      "maximum_cardinality_matches": 63,
+      "n_pred": 150,
+      "n_oracle": 86
+    },
+    "0.08": {
+      "stored_policy_matches": 78,
+      "maximum_cardinality_matches": 80,
+      "n_pred": 150,
+      "n_oracle": 86
+    }
+  },
+  "E2": {
+    "0.033": {
+      "stored_policy_matches": 41,
+      "maximum_cardinality_matches": 41,
+      "n_pred": 154,
+      "n_oracle": 86
+    },
+    "0.05": {
+      "stored_policy_matches": 64,
+      "maximum_cardinality_matches": 64,
+      "n_pred": 154,
+      "n_oracle": 86
+    },
+    "0.08": {
+      "stored_policy_matches": 78,
+      "maximum_cardinality_matches": 80,
+      "n_pred": 154,
+      "n_oracle": 86
+    }
+  },
+  "illustrative_Wilson_95_interval_18_of_21": [
+    0.6536350585077049,
+    0.950190782017865
+  ],
+  "interval_warning": "Illustrative independent-event binomial calculation only; temporal dependence makes it unsuitable as a generalization interval."
+}

@@ -1,0 +1,28 @@
+{
+ "phase": "R5-FIX PART 3 corrected HPSS control (single implementation, no sweep)",
+ "definition": {
+  "stft": {
+   "n_fft": 2048,
+   "hop": 512,
+   "library": "scipy.signal (as R4)"
+  },
+  "harmonic_estimate": "median_filter(|Z|, size=(1,31)) along TIME",
+  "percussive_estimate": "median_filter(|Z|, size=(31,1)) along FREQUENCY",
+  "mask": "M = P / (H + P + 1e-9)  [percussive estimate in numerator]",
+  "gain": "g = clip(0.35 + 0.65 * M^0.8, 0.35, 1.0)",
+  "composition": "C2_fixed = corrected_C1_envelope * percussive_blend(raw); final = 0.5*ref + 0.5*C2_fixed"
+ },
+ "historical_defect": "R4 C2 numerator was the TIME-axis median (harmonic estimate): the mask enhanced sustained structure instead of transients.",
+ "mask_gain_stats": {
+  "mean": 0.7318088324566546,
+  "min": 0.3688353611905925,
+  "max": 0.9998590722382503
+ },
+ "mean_env": 0.6470291666666667,
+ "final_mix_arith_max_err_readback_float32": 3.725290298461914e-08,
+ "outputs": [
+  "golden_C2_fixed_interaction.wav",
+  "golden_C2_fixed_final_mix.wav"
+ ],
+ "scope": "This experiment answers ONLY whether the corrected percussive HPSS control remains inferior to corrected C1. It does NOT revive the HPSS research branch."
+}

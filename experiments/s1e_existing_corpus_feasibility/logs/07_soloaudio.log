@@ -1,0 +1,15 @@
+  WeightNorm.apply(module, name, dim)
+  ai = processor(audios=[aud.squeeze().numpy()], sampling_rate=48000,
+attention mode is flash
+soloaudio_aq_c1_speech_npc_a: gain dev -30.0 dB (1s)
+soloaudio_tx_c1_speech_npc_a: gain dev -22.3 dB (1s)
+soloaudio_aq_c2_speech_npc_b: gain dev -29.3 dB (1s)
+soloaudio_tx_c2_speech_npc_b: gain dev -23.0 dB (1s)
+soloaudio_aq_c3_taiko_prompt: gain dev -23.8 dB (1s)
+soloaudio_tx_c3_taiko_prompt: gain dev -20.4 dB (1s)
+soloaudio_aq_c4_ambience_start: gain dev -18.0 dB (1s)
+soloaudio_aq_c5_announcer_end: gain dev -39.4 dB (1s)
+soloaudio_aq_c6_dense_golden: gain dev -87.3 dB (2s)
+soloaudio_aq_c7_weak_taps: gain dev -89.8 dB (1s)
+soloaudio_aq_c8_slide_friction: gain dev -14.2 dB (2s)
+done in 32s

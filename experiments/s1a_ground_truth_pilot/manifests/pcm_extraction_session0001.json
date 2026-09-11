@@ -1,0 +1,77 @@
+{
+  "root": "fixtures/session0001",
+  "workdir": "work/pcm_session0001",
+  "gain_convention": "fixed; no normalization at any point",
+  "entries": [
+    {
+      "native_pcm": "work/pcm_session0001/native/aux/closemic.wav",
+      "native_sr": 48000,
+      "working_pcm": "work/pcm_session0001/32k/aux/closemic.wav",
+      "working_sr": 32000,
+      "resampler": "scipy.resample_poly up=2 down=3 kaiser8 (zero-phase, DC gain 1); no normalization",
+      "peak_before": 1.0743885040283203,
+      "peak_after": 1.0772018485442703,
+      "source": "fixtures/session0001/aux/closemic.wav"
+    },
+    {
+      "native_pcm": "work/pcm_session0001/native/aux/contact.wav",
+      "native_sr": 48000,
+      "working_pcm": "work/pcm_session0001/32k/aux/contact.wav",
+      "working_sr": 32000,
+      "resampler": "scipy.resample_poly up=2 down=3 kaiser8 (zero-phase, DC gain 1); no normalization",
+      "peak_before": 0.8924306631088257,
+      "peak_after": 0.8951582406120686,
+      "source": "fixtures/session0001/aux/contact.wav"
+    },
+    {
+      "native_pcm": "work/pcm_session0001/native/phone/phone_audio.wav",
+      "native_sr": 48000,
+      "working_pcm": "work/pcm_session0001/32k/phone/phone_audio.wav",
+      "working_sr": 32000,
+      "resampler": "scipy.resample_poly up=2 down=3 kaiser8 (zero-phase, DC gain 1); no normalization",
+      "peak_before": 0.8890684843063354,
+      "peak_after": 0.8913909343424451,
+      "source": "fixtures/session0001/phone/phone_audio.wav"
+    },
+    {
+      "native_pcm": "work/pcm_session0001/native/phone/phone_noisy_gameplay.wav",
+      "native_sr": 48000,
+      "working_pcm": "work/pcm_session0001/32k/phone/phone_noisy_gameplay.wav",
+      "working_sr": 32000,
+      "resampler": "scipy.resample_poly up=2 down=3 kaiser8 (zero-phase, DC gain 1); no normalization",
+      "peak_before": 0.4074552655220032,
+      "peak_after": 0.4073120643410501,
+      "source": "fixtures/session0001/phone/phone_noisy_gameplay.wav"
+    },
+    {
+      "native_pcm": "work/pcm_session0001/native/phone/phone_playback_only.wav",
+      "native_sr": 48000,
+      "working_pcm": "work/pcm_session0001/32k/phone/phone_playback_only.wav",
+      "working_sr": 32000,
+      "resampler": "scipy.resample_poly up=2 down=3 kaiser8 (zero-phase, DC gain 1); no normalization",
+      "peak_before": 0.1258956342935562,
+      "peak_after": 0.12581188840324994,
+      "source": "fixtures/session0001/phone/phone_playback_only.wav"
+    },
+    {
+      "native_pcm": "work/pcm_session0001/native/pristine/fixture_rir_a.wav",
+      "native_sr": 48000,
+      "working_pcm": "work/pcm_session0001/32k/pristine/fixture_rir_a.wav",
+      "working_sr": 32000,
+      "resampler": "scipy.resample_poly up=2 down=3 kaiser8 (zero-phase, DC gain 1); no normalization",
+      "peak_before": 1.0,
+      "peak_after": 0.6612183442169371,
+      "source": "fixtures/session0001/pristine/fixture_rir_a.wav"
+    },
+    {
+      "native_pcm": "work/pcm_session0001/native/pristine/fixture_track_a.wav",
+      "native_sr": 48000,
+      "working_pcm": "work/pcm_session0001/32k/pristine/fixture_track_a.wav",
+      "working_sr": 32000,
+      "resampler": "scipy.resample_poly up=2 down=3 kaiser8 (zero-phase, DC gain 1); no normalization",
+      "peak_before": 0.5035825371742249,
+      "peak_after": 0.5032714149378226,
+      "source": "fixtures/session0001/pristine/fixture_track_a.wav"
+    }
+  ]
+}

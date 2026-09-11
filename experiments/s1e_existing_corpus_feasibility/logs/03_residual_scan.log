@@ -1,0 +1,9 @@
+chunk 10-35: local_delay=18916.67 ms ncc=-0.024  (4s)
+chunk 35-60: local_delay=18916.67 ms ncc=0.025  (8s)
+chunk 60-85: local_delay=10958.33 ms ncc=-0.017  (12s)
+chunk 85-110: local_delay=13562.50 ms ncc=0.011  (16s)
+chunk 110-135: local_delay=13562.50 ms ncc=-0.030  (20s)
+chunk 135-150: local_delay=13541.67 ms ncc=-0.043  (23s)
+saved residual_scan.png
+taiko zoom chunk: delay 13520.83 ms ncc -0.010
+saved taiko_residual_zoom.png

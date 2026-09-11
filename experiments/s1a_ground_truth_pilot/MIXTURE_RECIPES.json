@@ -1,0 +1,851 @@
+{
+  "stage": "s1a",
+  "sr": 32000,
+  "data_class": "SYNTHETIC_FIXTURE",
+  "gain_convention": "fixed; target stored at recorded gain; no normalization",
+  "level_definition": "rms(s|active)/rms(n_j|active) = 10^(level/20); active = annotated target events (else whole clip)",
+  "n_cases": 12,
+  "cases": [
+    {
+      "id": "case01_tap_music",
+      "truth_tier": "T2",
+      "duration_s": 5.0,
+      "sr": 32000,
+      "target": {
+        "path": "fixtures/session0001/phone/phone_audio.wav",
+        "sha256": "0f5d07b0bd50c4a7efddbe454f87fe78c1ecf4e3fdcfc1344f8ac4b901a1bb36",
+        "offset_s": 2.6,
+        "rms_active": 0.055985861308638814,
+        "events": [
+          {
+            "t0": 0.3999999999999999,
+            "t1": 0.52,
+            "label": "tap"
+          },
+          {
+            "t0": 1.9,
+            "t1": 2.02,
+            "label": "tap"
+          },
+          {
+            "t0": 3.4,
+            "t1": 3.5500000000000003,
+            "label": "button"
+          },
+          {
+            "t0": 4.9,
+            "t1": 5.0,
+            "label": "palm"
+          }
+        ],
+        "friction_intervals": []
+      },
+      "nuisances": [
+        {
+          "path": "fixtures/session0001/pristine/fixture_track_a.wav",
+          "sha256": "bde3ef664c8508ef64175fb75d8d594608bee3942e78d8c2af7008a24b3c8117",
+          "offset_s": 2.0,
+          "family": "music",
+          "requested_level_db": -10.0,
+          "applied_gain": 1.5388464741014007,
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          },
+          "rms_active_nuisance": 0.11504905881204086
+        }
+      ],
+      "requested_levels_db": [
+        -10.0
+      ],
+      "measured_levels_db": [
+        -10.000000000000002
+      ],
+      "active_convention": "events",
+      "rms_floor": 1e-08,
+      "files": {
+        "s": "fixtures/mixtures/s_case01_tap_music.wav",
+        "n": "fixtures/mixtures/n_case01_tap_music.wav",
+        "y": "fixtures/mixtures/y_case01_tap_music.wav"
+      },
+      "file_sha256": {
+        "s": "19e247ba28fe8b843aabb4f3b549ddf076a7db5d0b1c46edd0e5421ffd2d17d0",
+        "n": "1a89e28acf62729045393155763d1e3435c50b9738fc4abf24c4db9e5f4becff",
+        "y": "28244b530822d53cec92eb09846a5898bcd7f48e9aba3aae522c6cc5fff1f15d"
+      },
+      "stored_float32_sum_max_abs_err": 5.820766091346741e-08,
+      "sum_identity_ok": true
+    },
+    {
+      "id": "case02_tap_music",
+      "truth_tier": "T2",
+      "duration_s": 5.0,
+      "sr": 32000,
+      "target": {
+        "path": "fixtures/session0001/phone/phone_audio.wav",
+        "sha256": "0f5d07b0bd50c4a7efddbe454f87fe78c1ecf4e3fdcfc1344f8ac4b901a1bb36",
+        "offset_s": 2.6,
+        "rms_active": 0.055985861308638814,
+        "events": [
+          {
+            "t0": 0.3999999999999999,
+            "t1": 0.52,
+            "label": "tap"
+          },
+          {
+            "t0": 1.9,
+            "t1": 2.02,
+            "label": "tap"
+          },
+          {
+            "t0": 3.4,
+            "t1": 3.5500000000000003,
+            "label": "button"
+          },
+          {
+            "t0": 4.9,
+            "t1": 5.0,
+            "label": "palm"
+          }
+        ],
+        "friction_intervals": []
+      },
+      "nuisances": [
+        {
+          "path": "fixtures/session0001/pristine/fixture_track_a.wav",
+          "sha256": "bde3ef664c8508ef64175fb75d8d594608bee3942e78d8c2af7008a24b3c8117",
+          "offset_s": 2.0,
+          "family": "music",
+          "requested_level_db": 0.0,
+          "applied_gain": 0.48662598274797375,
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          },
+          "rms_active_nuisance": 0.11504905881204086
+        }
+      ],
+      "requested_levels_db": [
+        0.0
+      ],
+      "measured_levels_db": [
+        0.0
+      ],
+      "active_convention": "events",
+      "rms_floor": 1e-08,
+      "files": {
+        "s": "fixtures/mixtures/s_case02_tap_music.wav",
+        "n": "fixtures/mixtures/n_case02_tap_music.wav",
+        "y": "fixtures/mixtures/y_case02_tap_music.wav"
+      },
+      "file_sha256": {
+        "s": "19e247ba28fe8b843aabb4f3b549ddf076a7db5d0b1c46edd0e5421ffd2d17d0",
+        "n": "46a338a6766b1e8573b0d0a4a90b4c9c5add2199bd945e413e04c2dbfbaed4d9",
+        "y": "c6fec7343e2d60600db7e23246602d5fe6011b98a651652c81fbad475fedefaf"
+      },
+      "stored_float32_sum_max_abs_err": 2.7939677238464355e-08,
+      "sum_identity_ok": true
+    },
+    {
+      "id": "case03_tap_music",
+      "truth_tier": "T2",
+      "duration_s": 5.0,
+      "sr": 32000,
+      "target": {
+        "path": "fixtures/session0001/phone/phone_audio.wav",
+        "sha256": "0f5d07b0bd50c4a7efddbe454f87fe78c1ecf4e3fdcfc1344f8ac4b901a1bb36",
+        "offset_s": 2.6,
+        "rms_active": 0.055985861308638814,
+        "events": [
+          {
+            "t0": 0.3999999999999999,
+            "t1": 0.52,
+            "label": "tap"
+          },
+          {
+            "t0": 1.9,
+            "t1": 2.02,
+            "label": "tap"
+          },
+          {
+            "t0": 3.4,
+            "t1": 3.5500000000000003,
+            "label": "button"
+          },
+          {
+            "t0": 4.9,
+            "t1": 5.0,
+            "label": "palm"
+          }
+        ],
+        "friction_intervals": []
+      },
+      "nuisances": [
+        {
+          "path": "fixtures/session0001/pristine/fixture_track_a.wav",
+          "sha256": "bde3ef664c8508ef64175fb75d8d594608bee3942e78d8c2af7008a24b3c8117",
+          "offset_s": 2.0,
+          "family": "music",
+          "requested_level_db": 10.0,
+          "applied_gain": 0.15388464741014005,
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          },
+          "rms_active_nuisance": 0.11504905881204086
+        }
+      ],
+      "requested_levels_db": [
+        10.0
+      ],
+      "measured_levels_db": [
+        10.000000000000002
+      ],
+      "active_convention": "events",
+      "rms_floor": 1e-08,
+      "files": {
+        "s": "fixtures/mixtures/s_case03_tap_music.wav",
+        "n": "fixtures/mixtures/n_case03_tap_music.wav",
+        "y": "fixtures/mixtures/y_case03_tap_music.wav"
+      },
+      "file_sha256": {
+        "s": "d70eaf2516d505c5a770b616ad17a1613dd81f4bdd6653d4619e89837cee3986",
+        "n": "f0b8eb4fddf8f4684e7713385c69cd2c4a79799e54d7c702928f11ee17b8bbd1",
+        "y": "0144db37ef772282e7cf74bb983a8acaa690a212af1bee71ae15dd89c5cc73be"
+      },
+      "stored_float32_sum_max_abs_err": 1.4435499906539917e-08,
+      "sum_identity_ok": true
+    },
+    {
+      "id": "case04_weak_music",
+      "truth_tier": "T2",
+      "duration_s": 5.0,
+      "sr": 32000,
+      "target": {
+        "path": "fixtures/session0001/phone/phone_audio.wav",
+        "sha256": "0f5d07b0bd50c4a7efddbe454f87fe78c1ecf4e3fdcfc1344f8ac4b901a1bb36",
+        "offset_s": 1.0,
+        "rms_active": 0.02358492775410212,
+        "events": [
+          {
+            "t0": 0.5,
+            "t1": 0.56,
+            "label": "tap_weak"
+          },
+          {
+            "t0": 2.0,
+            "t1": 2.12,
+            "label": "tap"
+          },
+          {
+            "t0": 3.5,
+            "t1": 3.62,
+            "label": "tap"
+          }
+        ],
+        "friction_intervals": []
+      },
+      "nuisances": [
+        {
+          "path": "fixtures/session0001/pristine/fixture_track_a.wav",
+          "sha256": "bde3ef664c8508ef64175fb75d8d594608bee3942e78d8c2af7008a24b3c8117",
+          "offset_s": 2.0,
+          "family": "music",
+          "requested_level_db": -20.0,
+          "applied_gain": 1.1213694796930467,
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          },
+          "rms_active_nuisance": 0.21032254026173458
+        }
+      ],
+      "requested_levels_db": [
+        -20.0
+      ],
+      "measured_levels_db": [
+        -20.0
+      ],
+      "active_convention": "events",
+      "rms_floor": 1e-08,
+      "files": {
+        "s": "fixtures/mixtures/s_case04_weak_music.wav",
+        "n": "fixtures/mixtures/n_case04_weak_music.wav",
+        "y": "fixtures/mixtures/y_case04_weak_music.wav"
+      },
+      "file_sha256": {
+        "s": "4394ed025321c383b1e01ce29e91fe3f616d50ccc779c6425c97d5de5361b174",
+        "n": "9a332f1e6c44412e003d78f5c93864eb1e3b41141e11d661f43a2775594ba694",
+        "y": "db8c00b2de596395ddc6400b44a3296a30b69ade8e405fd8dd0130234cc51b92"
+      },
+      "stored_float32_sum_max_abs_err": 5.727633833885193e-08,
+      "sum_identity_ok": true
+    },
+    {
+      "id": "case05_palm_speech",
+      "truth_tier": "T2",
+      "duration_s": 5.0,
+      "sr": 32000,
+      "target": {
+        "path": "fixtures/session0001/phone/phone_audio.wav",
+        "sha256": "0f5d07b0bd50c4a7efddbe454f87fe78c1ecf4e3fdcfc1344f8ac4b901a1bb36",
+        "offset_s": 7.0,
+        "rms_active": 0.04139684080067293,
+        "events": [
+          {
+            "t0": 0.5,
+            "t1": 0.75,
+            "label": "palm"
+          },
+          {
+            "t0": 2.0,
+            "t1": 4.5,
+            "label": "friction_slow"
+          }
+        ],
+        "friction_intervals": [
+          {
+            "t0": 2.0,
+            "t1": 4.5
+          }
+        ]
+      },
+      "nuisances": [
+        {
+          "path": "fixtures/nuisance_speech.wav",
+          "sha256": "2db84838636bd8ce141b2c64ea24b5b92a472886da45562a0cab0a6b1ba879eb",
+          "offset_s": 1.0,
+          "family": "speech",
+          "requested_level_db": -10.0,
+          "applied_gain": 1.5422789849650465,
+          "path_transform": null,
+          "rms_active_nuisance": 0.08487978254367626
+        }
+      ],
+      "requested_levels_db": [
+        -10.0
+      ],
+      "measured_levels_db": [
+        -10.0
+      ],
+      "active_convention": "events",
+      "rms_floor": 1e-08,
+      "files": {
+        "s": "fixtures/mixtures/s_case05_palm_speech.wav",
+        "n": "fixtures/mixtures/n_case05_palm_speech.wav",
+        "y": "fixtures/mixtures/y_case05_palm_speech.wav"
+      },
+      "file_sha256": {
+        "s": "1345c3893c5e78d78f43bb2658d2bb4cb016bdc3a6b531cf796720d863abdfad",
+        "n": "454725757fd4963d75d47b143eeff2a8128a5a9d5c94737168a6f2304ba1652e",
+        "y": "19effe48c833f709e7a46a989f89ebef73a1143c5bb8516b2ef26627e2760d49"
+      },
+      "stored_float32_sum_max_abs_err": 2.2351741790771484e-08,
+      "sum_identity_ok": true
+    },
+    {
+      "id": "case06_friction_music",
+      "truth_tier": "T2",
+      "duration_s": 5.0,
+      "sr": 32000,
+      "target": {
+        "path": "fixtures/session0001/phone/phone_audio.wav",
+        "sha256": "0f5d07b0bd50c4a7efddbe454f87fe78c1ecf4e3fdcfc1344f8ac4b901a1bb36",
+        "offset_s": 8.6,
+        "rms_active": 0.04891923664986247,
+        "events": [
+          {
+            "t0": 0.40000000000000036,
+            "t1": 2.9000000000000004,
+            "label": "friction_slow"
+          },
+          {
+            "t0": 3.4000000000000004,
+            "t1": 4.6,
+            "label": "friction_fast"
+          }
+        ],
+        "friction_intervals": [
+          {
+            "t0": 0.40000000000000036,
+            "t1": 2.9000000000000004
+          },
+          {
+            "t0": 3.4000000000000004,
+            "t1": 4.6
+          }
+        ]
+      },
+      "nuisances": [
+        {
+          "path": "fixtures/session0001/pristine/fixture_track_a.wav",
+          "sha256": "bde3ef664c8508ef64175fb75d8d594608bee3942e78d8c2af7008a24b3c8117",
+          "offset_s": 2.0,
+          "family": "music",
+          "requested_level_db": 0.0,
+          "applied_gain": 0.44342877831563726,
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          },
+          "rms_active_nuisance": 0.11032039200451091
+        }
+      ],
+      "requested_levels_db": [
+        0.0
+      ],
+      "measured_levels_db": [
+        0.0
+      ],
+      "active_convention": "events",
+      "rms_floor": 1e-08,
+      "files": {
+        "s": "fixtures/mixtures/s_case06_friction_music.wav",
+        "n": "fixtures/mixtures/n_case06_friction_music.wav",
+        "y": "fixtures/mixtures/y_case06_friction_music.wav"
+      },
+      "file_sha256": {
+        "s": "20ca985aa605d6ca2b33ca3908924a70c2daf6d606be1199ca8228bcc41f163e",
+        "n": "e0e243c15586f3a39039e4e969d9c7f42a4831357c36f78f07a9c6abc6f61644",
+        "y": "30937834c2def62b71beac2bfa588777026749d0b981abe5d241a631d61caf37"
+      },
+      "stored_float32_sum_max_abs_err": 2.9802322387695312e-08,
+      "sum_identity_ok": true
+    },
+    {
+      "id": "case07_friction_music",
+      "truth_tier": "T2",
+      "duration_s": 5.0,
+      "sr": 32000,
+      "target": {
+        "path": "fixtures/session0001/phone/phone_audio.wav",
+        "sha256": "0f5d07b0bd50c4a7efddbe454f87fe78c1ecf4e3fdcfc1344f8ac4b901a1bb36",
+        "offset_s": 25.6,
+        "rms_active": 0.03404752547192945,
+        "events": [
+          {
+            "t0": 0.3999999999999986,
+            "t1": 3.8999999999999986,
+            "label": "friction_slow"
+          },
+          {
+            "t0": 4.899999999999999,
+            "t1": 4.959999999999997,
+            "label": "tap_weak"
+          }
+        ],
+        "friction_intervals": [
+          {
+            "t0": 0.3999999999999986,
+            "t1": 3.8999999999999986
+          }
+        ]
+      },
+      "nuisances": [
+        {
+          "path": "fixtures/session0001/pristine/fixture_track_a.wav",
+          "sha256": "bde3ef664c8508ef64175fb75d8d594608bee3942e78d8c2af7008a24b3c8117",
+          "offset_s": 2.0,
+          "family": "music",
+          "requested_level_db": -10.0,
+          "applied_gain": 1.0115644237415902,
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          },
+          "rms_active_nuisance": 0.10643684836765344
+        }
+      ],
+      "requested_levels_db": [
+        -10.0
+      ],
+      "measured_levels_db": [
+        -10.0
+      ],
+      "active_convention": "events",
+      "rms_floor": 1e-08,
+      "files": {
+        "s": "fixtures/mixtures/s_case07_friction_music.wav",
+        "n": "fixtures/mixtures/n_case07_friction_music.wav",
+        "y": "fixtures/mixtures/y_case07_friction_music.wav"
+      },
+      "file_sha256": {
+        "s": "39516e383adadf1f2a53b078b8467f091057793a4a9e01a3e31845db2abc045a",
+        "n": "923190f1a35d38165e8343fbc0e881a6802d8f600cfa968ca556c622b73d9634",
+        "y": "7adb0191503fd6e91d9e8fd0e3cea73a4d181fa1f688fb9c73e8d046fc65fd7f"
+      },
+      "stored_float32_sum_max_abs_err": 5.587935447692871e-08,
+      "sum_identity_ok": true
+    },
+    {
+      "id": "case08_dense_music",
+      "truth_tier": "T2",
+      "duration_s": 5.0,
+      "sr": 32000,
+      "target": {
+        "path": "fixtures/session0001/phone/phone_audio.wav",
+        "sha256": "0f5d07b0bd50c4a7efddbe454f87fe78c1ecf4e3fdcfc1344f8ac4b901a1bb36",
+        "offset_s": 22.6,
+        "rms_active": 0.03514345713047969,
+        "events": [
+          {
+            "t0": 0.3999999999999986,
+            "t1": 0.5199999999999996,
+            "label": "tap"
+          },
+          {
+            "t0": 1.0,
+            "t1": 1.1499999999999986,
+            "label": "button"
+          },
+          {
+            "t0": 1.5999999999999979,
+            "t1": 1.7199999999999989,
+            "label": "tap"
+          },
+          {
+            "t0": 2.1999999999999993,
+            "t1": 2.349999999999998,
+            "label": "button"
+          },
+          {
+            "t0": 3.3999999999999986,
+            "t1": 5.0,
+            "label": "friction_slow"
+          }
+        ],
+        "friction_intervals": [
+          {
+            "t0": 3.3999999999999986,
+            "t1": 5.0
+          }
+        ]
+      },
+      "nuisances": [
+        {
+          "path": "fixtures/session0001/pristine/fixture_track_a.wav",
+          "sha256": "bde3ef664c8508ef64175fb75d8d594608bee3942e78d8c2af7008a24b3c8117",
+          "offset_s": 2.0,
+          "family": "music",
+          "requested_level_db": 10.0,
+          "applied_gain": 0.10176137611494891,
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          },
+          "rms_active_nuisance": 0.10920977450154135
+        }
+      ],
+      "requested_levels_db": [
+        10.0
+      ],
+      "measured_levels_db": [
+        9.999999999999998
+      ],
+      "active_convention": "events",
+      "rms_floor": 1e-08,
+      "files": {
+        "s": "fixtures/mixtures/s_case08_dense_music.wav",
+        "n": "fixtures/mixtures/n_case08_dense_music.wav",
+        "y": "fixtures/mixtures/y_case08_dense_music.wav"
+      },
+      "file_sha256": {
+        "s": "e49bb0feba00420652470d2b835a63c2b5913bf0d1f269996624b12b6a698783",
+        "n": "1ff0a602958cb0ce0615b32b3c4095c21631a039b204ff0265f20858b864e094",
+        "y": "c9b8a28c4ad9768db650aa1b725859725a71a85e563f7fc7ceb936c0d6b899c5"
+      },
+      "stored_float32_sum_max_abs_err": 1.4901161193847656e-08,
+      "sum_identity_ok": true
+    },
+    {
+      "id": "case09_weak_speech",
+      "truth_tier": "T2",
+      "duration_s": 5.0,
+      "sr": 32000,
+      "target": {
+        "path": "fixtures/session0001/phone/phone_audio.wav",
+        "sha256": "0f5d07b0bd50c4a7efddbe454f87fe78c1ecf4e3fdcfc1344f8ac4b901a1bb36",
+        "offset_s": 15.8,
+        "rms_active": 0.05654207629941204,
+        "events": [
+          {
+            "t0": 0.3999999999999986,
+            "t1": 0.4599999999999973,
+            "label": "tap_weak"
+          },
+          {
+            "t0": 1.6999999999999993,
+            "t1": 1.9499999999999993,
+            "label": "palm"
+          }
+        ],
+        "friction_intervals": []
+      },
+      "nuisances": [
+        {
+          "path": "fixtures/nuisance_speech.wav",
+          "sha256": "2db84838636bd8ce141b2c64ea24b5b92a472886da45562a0cab0a6b1ba879eb",
+          "offset_s": 1.0,
+          "family": "speech",
+          "requested_level_db": 0.0,
+          "applied_gain": 0.531315328658539,
+          "path_transform": null,
+          "rms_active_nuisance": 0.10641905710149387
+        }
+      ],
+      "requested_levels_db": [
+        0.0
+      ],
+      "measured_levels_db": [
+        -9.643274665532871e-16
+      ],
+      "active_convention": "events",
+      "rms_floor": 1e-08,
+      "files": {
+        "s": "fixtures/mixtures/s_case09_weak_speech.wav",
+        "n": "fixtures/mixtures/n_case09_weak_speech.wav",
+        "y": "fixtures/mixtures/y_case09_weak_speech.wav"
+      },
+      "file_sha256": {
+        "s": "120b59a41d20bbd3e982f7d3b8835c4960abc5f75027948dbed8499976e07a8b",
+        "n": "6053aea6f9f86b5fe119fc12a40131859ab981afc3c69e6f02b3dc5891a7370c",
+        "y": "9f6a192d0ade20faa2435a4062129c36edb2bd58aa9e0b80a29103e744c9f270"
+      },
+      "stored_float32_sum_max_abs_err": 2.2351741790771484e-08,
+      "sum_identity_ok": true
+    },
+    {
+      "id": "case10_button_impact",
+      "truth_tier": "T2",
+      "duration_s": 5.0,
+      "sr": 32000,
+      "target": {
+        "path": "fixtures/session0001/phone/phone_audio.wav",
+        "sha256": "0f5d07b0bd50c4a7efddbe454f87fe78c1ecf4e3fdcfc1344f8ac4b901a1bb36",
+        "offset_s": 5.6,
+        "rms_active": 0.04334315660238459,
+        "events": [
+          {
+            "t0": 0.40000000000000036,
+            "t1": 0.5500000000000007,
+            "label": "button"
+          },
+          {
+            "t0": 1.9000000000000004,
+            "t1": 2.1500000000000004,
+            "label": "palm"
+          },
+          {
+            "t0": 3.4000000000000004,
+            "t1": 5.0,
+            "label": "friction_slow"
+          }
+        ],
+        "friction_intervals": [
+          {
+            "t0": 3.4000000000000004,
+            "t1": 5.0
+          }
+        ]
+      },
+      "nuisances": [
+        {
+          "path": "fixtures/nuisance_impacts.wav",
+          "sha256": "546febb41c7dc429909cf46909115239b877f3f62402ba2669bcd412f2cbd400",
+          "offset_s": 1.5,
+          "family": "impact",
+          "requested_level_db": 0.0,
+          "applied_gain": 5.257904414036298,
+          "path_transform": null,
+          "rms_active_nuisance": 0.008243428025560407
+        }
+      ],
+      "requested_levels_db": [
+        0.0
+      ],
+      "measured_levels_db": [
+        -9.643274665532871e-16
+      ],
+      "active_convention": "events",
+      "rms_floor": 1e-08,
+      "files": {
+        "s": "fixtures/mixtures/s_case10_button_impact.wav",
+        "n": "fixtures/mixtures/n_case10_button_impact.wav",
+        "y": "fixtures/mixtures/y_case10_button_impact.wav"
+      },
+      "file_sha256": {
+        "s": "8cf2c332dc63aab66c731559c0b5bb4f7f1cfac6599198d5704fffff569ff3b6",
+        "n": "647e1bef3c66fed54091f71e3ee417765f37023fae2523e0665f146f6605fa43",
+        "y": "bdb3a6301fc7930101e9d0bb94ef74defb029d1363868cfd7c73f1e814e03fbd"
+      },
+      "stored_float32_sum_max_abs_err": 5.78584149479866e-08,
+      "sum_identity_ok": true
+    },
+    {
+      "id": "case11_composite",
+      "truth_tier": "T2",
+      "duration_s": 5.0,
+      "sr": 32000,
+      "target": {
+        "path": "fixtures/session0001/phone/phone_audio.wav",
+        "sha256": "0f5d07b0bd50c4a7efddbe454f87fe78c1ecf4e3fdcfc1344f8ac4b901a1bb36",
+        "offset_s": 2.6,
+        "rms_active": 0.055985861308638814,
+        "events": [
+          {
+            "t0": 0.3999999999999999,
+            "t1": 0.52,
+            "label": "tap"
+          },
+          {
+            "t0": 1.9,
+            "t1": 2.02,
+            "label": "tap"
+          },
+          {
+            "t0": 3.4,
+            "t1": 3.5500000000000003,
+            "label": "button"
+          },
+          {
+            "t0": 4.9,
+            "t1": 5.0,
+            "label": "palm"
+          }
+        ],
+        "friction_intervals": []
+      },
+      "nuisances": [
+        {
+          "path": "fixtures/session0001/pristine/fixture_track_a.wav",
+          "sha256": "bde3ef664c8508ef64175fb75d8d594608bee3942e78d8c2af7008a24b3c8117",
+          "offset_s": 2.0,
+          "family": "music",
+          "requested_level_db": 0.0,
+          "applied_gain": 0.48662598274797375,
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          },
+          "rms_active_nuisance": 0.11504905881204086
+        },
+        {
+          "path": "fixtures/nuisance_ambience.wav",
+          "sha256": "22d68cc91630b27ce94f6bad47fc07656b96077b81d3089561752207f3f20b79",
+          "offset_s": 0.5,
+          "family": "ambience",
+          "requested_level_db": 0.0,
+          "applied_gain": 0.9069968389188974,
+          "path_transform": null,
+          "rms_active_nuisance": 0.06172663333134836
+        }
+      ],
+      "requested_levels_db": [
+        0.0,
+        0.0
+      ],
+      "measured_levels_db": [
+        0.0,
+        1.928654933106574e-15
+      ],
+      "active_convention": "events",
+      "rms_floor": 1e-08,
+      "files": {
+        "s": "fixtures/mixtures/s_case11_composite.wav",
+        "n": "fixtures/mixtures/n_case11_composite.wav",
+        "y": "fixtures/mixtures/y_case11_composite.wav"
+      },
+      "file_sha256": {
+        "s": "1089f4bc96fd7722f4e98feb2c5347c9d802139518b4df311f660540e81acb74",
+        "n": "03ce757609a8cbb19c85af197e63d8025e5ba04fab85047166a8a1c4efccd6bf",
+        "y": "e446f5ef5a6a602bd1b7a86019936064b46ebb2228dd9e283419a150710bb386"
+      },
+      "stored_float32_sum_max_abs_err": 2.8812792152166367e-08,
+      "sum_identity_ok": true
+    },
+    {
+      "id": "case12_composite_weak",
+      "truth_tier": "T2",
+      "duration_s": 5.0,
+      "sr": 32000,
+      "target": {
+        "path": "fixtures/session0001/phone/phone_audio.wav",
+        "sha256": "0f5d07b0bd50c4a7efddbe454f87fe78c1ecf4e3fdcfc1344f8ac4b901a1bb36",
+        "offset_s": 15.8,
+        "rms_active": 0.05654207629941204,
+        "events": [
+          {
+            "t0": 0.3999999999999986,
+            "t1": 0.4599999999999973,
+            "label": "tap_weak"
+          },
+          {
+            "t0": 1.6999999999999993,
+            "t1": 1.9499999999999993,
+            "label": "palm"
+          }
+        ],
+        "friction_intervals": []
+      },
+      "nuisances": [
+        {
+          "path": "fixtures/session0001/pristine/fixture_track_a.wav",
+          "sha256": "bde3ef664c8508ef64175fb75d8d594608bee3942e78d8c2af7008a24b3c8117",
+          "offset_s": 2.0,
+          "family": "music",
+          "requested_level_db": -10.0,
+          "applied_gain": 4.2484399364553,
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          },
+          "rms_active_nuisance": 0.04208644759383147
+        },
+        {
+          "path": "fixtures/nuisance_speech.wav",
+          "sha256": "2db84838636bd8ce141b2c64ea24b5b92a472886da45562a0cab0a6b1ba879eb",
+          "offset_s": 1.0,
+          "family": "speech",
+          "requested_level_db": 0.0,
+          "applied_gain": 0.531315328658539,
+          "path_transform": null,
+          "rms_active_nuisance": 0.10641905710149387
+        },
+        {
+          "path": "fixtures/nuisance_impacts.wav",
+          "sha256": "546febb41c7dc429909cf46909115239b877f3f62402ba2669bcd412f2cbd400",
+          "offset_s": 1.5,
+          "family": "impact",
+          "requested_level_db": 0.0,
+          "applied_gain": 2.712249688842296,
+          "path_transform": null,
+          "rms_active_nuisance": 0.020846928854675845
+        }
+      ],
+      "requested_levels_db": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "measured_levels_db": [
+        -10.000000000000002,
+        -9.643274665532871e-16,
+        -9.643274665532871e-16
+      ],
+      "active_convention": "events",
+      "rms_floor": 1e-08,
+      "files": {
+        "s": "fixtures/mixtures/s_case12_composite_weak.wav",
+        "n": "fixtures/mixtures/n_case12_composite_weak.wav",
+        "y": "fixtures/mixtures/y_case12_composite_weak.wav"
+      },
+      "file_sha256": {
+        "s": "1a98d7aecfca36bc0b0cdfe4bd5f2171bbf1c8cf0b9627cc5d8c676db988d78b",
+        "n": "de5b9524fde26b9d3634cf32c7729345b13856a5c734f57ab343b26157ca0676",
+        "y": "6dd05a06ec0b6a908bda435ecb70a7739ac66f32a08df1faa32451e4dbecf471"
+      },
+      "stored_float32_sum_max_abs_err": 2.3387838155031204e-07,
+      "sum_identity_ok": true
+    }
+  ]
+}

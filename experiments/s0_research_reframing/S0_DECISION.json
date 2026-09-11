@@ -1,0 +1,58 @@
+{
+  "program": "RhythmAlign S0",
+  "date": "2026-09-10",
+  "status": "study_complete_no_s1_training_performed",
+  "task_framing": "Context-conditioned target source-image extraction with selective evidence-supported output",
+  "feasibility": {
+    "choice": "A",
+    "verdict": "The grand goal is technically worth pursuing",
+    "boundary": "Selective recovery in supported conditions; no claim of unique exact recovery from arbitrary single-channel nonlinear mixtures"
+  },
+  "best_next_route": {
+    "id": "A",
+    "name": "Reference-conditioned pretrained discriminative target extractor",
+    "implementation": "Fine-tune the local CLAPSep decoder with a small temporal nuisance-reference adapter; pair with an equal-capacity null-reference arm",
+    "vision_in_s1": false,
+    "hard_visual_audio_gate": false
+  },
+  "need_for_new_model": {
+    "choice": "B",
+    "verdict": "Fine-tuning an existing architecture is the best next step",
+    "new_architecture_claim_established": false
+  },
+  "ground_truth_priority": "Capture quiet muted-playback real interactions at the actual phone microphone position, synchronized with close air microphone, contact microphone and video",
+  "minimal_experiment": {
+    "name": "S1 paired supervised adaptation with a randomized aligned-reference ablation",
+    "sessions": {"train": 4, "development": 2, "test": 4},
+    "nominal_scored_capture_minutes": 80,
+    "nominal_quiet_training_minutes": 16,
+    "arms": ["adapted_null_reference", "adapted_aligned_reference"],
+    "seeds_per_arm": 2,
+    "optimizer_updates_per_run": 5000,
+    "training_gpu_hour_cap": 48,
+    "primary_target_present_constructed_clips": 384,
+    "primary_target_absent_constructed_clips": 48,
+    "real_test_excerpts": 24,
+    "success_axes": ["target_preservation", "nuisance_suppression", "unsupported_output", "blind_listening"],
+    "learned_path_suppression_margin_db": 3.0,
+    "reference_increment_margin_db": 1.5,
+    "margins_status": "proposed_preregistered_feasibility_thresholds_not_observed_results",
+    "protocol": "MINIMAL_DECISIVE_EXPERIMENT.md"
+  },
+  "paper_outlook": {"choice": "B", "verdict": "Promising but application-first"},
+  "top_five_actions": [
+    "Acquire the quiet synchronized target-source-image pilot",
+    "Freeze source-disjoint splits, truth-tier labels and absence/counterfactual controls",
+    "Verify representation diagnostics and profile a differentiable local training forward",
+    "Run the bounded paired fine-tuning comparison against corrected and modern frozen baselines",
+    "Apply separate preservation/suppression and blind-listening gates before dataset/model expansion"
+  ],
+  "known_limits": [
+    "No exact isolated target truth for existing ordinary arcade excerpts",
+    "Mixture consistency alone cannot certify provenance",
+    "Close/contact microphones are imperfect target proxies",
+    "8 GB training feasibility and runtime require profiling",
+    "SAM Audio checkpoint access and compute are execution dependencies",
+    "Broad multimodal extraction and personalized reference cancellation already have substantial prior art"
+  ]
+}

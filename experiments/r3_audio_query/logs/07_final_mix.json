@@ -1,0 +1,26 @@
+[
+  {
+    "run": "clapsep_q1",
+    "recipe": "0.5*ref_warp_fixed + 0.5*target(32k->48k mono->stereo), fixed gain, no limiter",
+    "final_mix": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\outputs\\clapsep_q1_final_mix.wav",
+    "rms_db": {
+      "ref": -11.427522659301758,
+      "target": -24.009130477905273,
+      "final_mix": -17.202220916748047,
+      "raw_recording": -20.119441986083984
+    },
+    "target_vs_raw_level_deviation_db": -3.889688491821289
+  },
+  {
+    "run": "clapsep_n1",
+    "recipe": "0.5*ref_warp_fixed + 0.5*target(32k->48k mono->stereo), fixed gain, no limiter",
+    "final_mix": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\outputs\\clapsep_n1_final_mix.wav",
+    "rms_db": {
+      "ref": -11.427522659301758,
+      "target": -24.15831756591797,
+      "final_mix": -17.197750091552734,
+      "raw_recording": -20.119441986083984
+    },
+    "target_vs_raw_level_deviation_db": -4.038875579833984
+  }
+]

@@ -1,0 +1,139 @@
+{
+  "protocol": "official Space app.py via r3 clapsep_lib (32k mono, 10s chunks, peak-0.9 rescale undone), negative=zeros",
+  "q1_query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+  "text_prompt": "finger taps and button presses on a rhythm game cabinet",
+  "runs": [
+    {
+      "run": "clapsep_aq_c1_speech_npc_a",
+      "clip": "c1_speech_npc_a",
+      "condition": "aq",
+      "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+      "negative": "zeros",
+      "sr": 32000,
+      "mix_rms_db": -17.672550012375662,
+      "target_rms_db": -21.93472029760332,
+      "target_energy_ratio_db": -4.262170285227658,
+      "runtime_s": 0.15616202354431152
+    },
+    {
+      "run": "clapsep_tx_c1_speech_npc_a",
+      "clip": "c1_speech_npc_a",
+      "condition": "tx",
+      "query": "finger taps and button presses on a rhythm game cabinet",
+      "negative": "zeros",
+      "sr": 32000,
+      "mix_rms_db": -17.672550012375662,
+      "target_rms_db": -21.460438405527892,
+      "target_energy_ratio_db": -3.7878883931522296,
+      "runtime_s": 0.10115551948547363
+    },
+    {
+      "run": "clapsep_aq_c2_speech_npc_b",
+      "clip": "c2_speech_npc_b",
+      "condition": "aq",
+      "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+      "negative": "zeros",
+      "sr": 32000,
+      "mix_rms_db": -19.440051457001527,
+      "target_rms_db": -23.386409813926512,
+      "target_energy_ratio_db": -3.9463583569249856,
+      "runtime_s": 0.10668659210205078
+    },
+    {
+      "run": "clapsep_tx_c2_speech_npc_b",
+      "clip": "c2_speech_npc_b",
+      "condition": "tx",
+      "query": "finger taps and button presses on a rhythm game cabinet",
+      "negative": "zeros",
+      "sr": 32000,
+      "mix_rms_db": -19.440051457001527,
+      "target_rms_db": -24.076884586664704,
+      "target_energy_ratio_db": -4.636833129663177,
+      "runtime_s": 0.10858511924743652
+    },
+    {
+      "run": "clapsep_aq_c3_taiko_prompt",
+      "clip": "c3_taiko_prompt",
+      "condition": "aq",
+      "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+      "negative": "zeros",
+      "sr": 32000,
+      "mix_rms_db": -20.367178195535143,
+      "target_rms_db": -24.324613607095745,
+      "target_energy_ratio_db": -3.9574354115606027,
+      "runtime_s": 0.11682391166687012
+    },
+    {
+      "run": "clapsep_tx_c3_taiko_prompt",
+      "clip": "c3_taiko_prompt",
+      "condition": "tx",
+      "query": "finger taps and button presses on a rhythm game cabinet",
+      "negative": "zeros",
+      "sr": 32000,
+      "mix_rms_db": -20.367178195535143,
+      "target_rms_db": -24.40599215585579,
+      "target_energy_ratio_db": -4.038813960320649,
+      "runtime_s": 0.0922844409942627
+    },
+    {
+      "run": "clapsep_aq_c4_ambience_start",
+      "clip": "c4_ambience_start",
+      "condition": "aq",
+      "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+      "negative": "zeros",
+      "sr": 32000,
+      "mix_rms_db": -19.99909908550947,
+      "target_rms_db": -25.028104523168405,
+      "target_energy_ratio_db": -5.029005437658935,
+      "runtime_s": 0.09288716316223145
+    },
+    {
+      "run": "clapsep_aq_c5_announcer_end",
+      "clip": "c5_announcer_end",
+      "condition": "aq",
+      "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+      "negative": "zeros",
+      "sr": 32000,
+      "mix_rms_db": -17.085058611959962,
+      "target_rms_db": -20.17372234291717,
+      "target_energy_ratio_db": -3.088663730957208,
+      "runtime_s": 0.065673828125
+    },
+    {
+      "run": "clapsep_aq_c6_dense_golden",
+      "clip": "c6_dense_golden",
+      "condition": "aq",
+      "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+      "negative": "zeros",
+      "sr": 32000,
+      "mix_rms_db": -20.35219529404781,
+      "target_rms_db": -24.00078684583146,
+      "target_energy_ratio_db": -3.6485915517836496,
+      "runtime_s": 0.12590694427490234
+    },
+    {
+      "run": "clapsep_aq_c7_weak_taps",
+      "clip": "c7_weak_taps",
+      "condition": "aq",
+      "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+      "negative": "zeros",
+      "sr": 32000,
+      "mix_rms_db": -17.996469638176443,
+      "target_rms_db": -23.90256712016331,
+      "target_energy_ratio_db": -5.906097481986869,
+      "runtime_s": 0.07579946517944336
+    },
+    {
+      "run": "clapsep_aq_c8_slide_friction",
+      "clip": "c8_slide_friction",
+      "condition": "aq",
+      "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+      "negative": "zeros",
+      "sr": 32000,
+      "mix_rms_db": -16.863009767595646,
+      "target_rms_db": -20.960223670753514,
+      "target_energy_ratio_db": -4.0972139031578685,
+      "runtime_s": 0.06220555305480957
+    }
+  ]
+}

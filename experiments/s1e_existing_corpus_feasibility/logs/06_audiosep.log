@@ -1,0 +1,8 @@
+W0910 04:02:50.596000 26860 Lib\site-packages\torch\utils\flop_counter.py:113] triton not found; flop counting will not work for triton kernels
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+device: cuda | torch 2.14.0+cu126
+audiosep_p2_c1_speech_npc_a: ratio -4.7 dB
+audiosep_p2_c2_speech_npc_b: ratio -4.8 dB
+audiosep_p2_c3_taiko_prompt: ratio -4.4 dB
+audiosep_p2_c6_dense_golden: ratio -4.8 dB
+done in 26s

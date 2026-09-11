@@ -1,0 +1,54 @@
+{
+  "stage": "S1E — Existing-Corpus AI Extraction Feasibility",
+  "date": "2026-09-10",
+  "decision": "B",
+  "decision_label": "LEARNED EXTRACTION PROMISING, BUT ADAPTATION NEEDED (provisional — primary listening evidence pending)",
+  "provisionality": {
+    "status": "PROVISIONAL",
+    "reason": "The brief makes human blind listening the primary decision evidence. The 36-item anonymized pack is built and ready (listening_pack/), but no listening pass exists yet. All conclusions above are from fixed-gain waveform diagnostics, pristine-reference coherence proxies, VAD nuisance proxies, and spectrogram inspection.",
+    "finalize_by": "Owner completes listening_pack/LISTENING_INSTRUCTIONS.md, then applies the A/C/D gates below."
+  },
+  "primary_question": {
+    "strongly_suppress_obvious_nontarget": "NO — best system (CLAPSep) reaches ~9 dB relative music suppression and removes clear announcer speech (c5: 6.5 s -> 1.34 s VAD-active), but the 2:08-2:09 taiko system prompt and in-music NPC speech remain clearly present.",
+    "preserve_authentic_interaction": "YES (proxy level) — CLAPSep keeps click-band level within -0.1..-1.1 dB of raw on all 8 clips; relative transient emphasis +2.9..+5.2 dB. Perceptual naturalness awaits listening.",
+    "materially_better_than_raw_baseline": "NOT YET ESTABLISHED — attenuation is audible-but-partial; the listening pack exists precisely to answer this."
+  },
+  "evidence_highlights": {
+    "clapsep_selectivity_consistent": "rel_click +2.9..+5.2 dB on every clip; rel_music -8.6..-9.3 dB on c2/c3/c6 (logs/09_diagnostics.json)",
+    "clear_speech_removal_c5": "CLAPSep VAD speech-active 6.50 s -> 1.34 s (only event-level speech suppression observed in stage)",
+    "named_case_taiko_prompt": "No system materially suppressed the prompt (CLAPSep/AudioSep ~9-11 dB relative attenuation; SoloAudio deletion+invention; specialist -3 dB)",
+    "audiosep_replicates_r2": "uniform -4.4..-4.9 dB attenuated-copy on every clip",
+    "soloaudio_ood_failure": "outputs -14..-90 dB; c6/c7 digital silence; invented blobs (generative, disclosed, judged on fidelity)",
+    "reference_cancellation_dead": "waveform cancellation ceiling +0.41..+0.82 dB (phase-incoherent phone transfer; R1 ceiling 5.9% coherent share)",
+    "specialist_transparent_but_weak": "<=0.8 dB overall change; VAD gate cannot see masked NPC speech"
+  },
+  "why_B_and_not_A_or_C": {
+    "not_A": "No proxy shows a *clearly better* overall tradeoff yet: suppression is partial (~9 dB), and the brief explicitly requires listening evidence for 'clearly better on multiple real challenge cases'.",
+    "not_C": "CLAPSep shows genuine, repeatable source selectivity and event-level speech removal on c5 — 'no tested system provides a useful tradeoff' is not supported.",
+    "B_second_clause_reinterpreted": "The observed failure mode is insufficient nuisance suppression with well-preserved targets (rather than unacceptable target loss); the adaptation implication is the same: weak supervision/fine-tuning on domain data is the next lever."
+  },
+  "listening_gates": {
+    "upgrade_to_A": "On >= 3 of 8 clip groups the owner prefers a method item over raw AND rates interaction preservation >= raw AND hears audible nuisance reduction.",
+    "downgrade_to_C": "On >= 6 of 8 clip groups no method item is preferred over raw.",
+    "keep_B": "Anything in between; identify CLAPSep failure modes and proceed to the smallest practical fine-tuning/weak-supervision design using S0/S1a infrastructure."
+  },
+  "next_action_if_B": {
+    "owner": "Complete the blind listening pass (listening_pack/), unseal listening_key.json, record ratings.",
+    "then": "Design the smallest practical adaptation experiment: S1a's one-session capture provides exactly-matched target+nuisance pairs for supervised fine-tuning of the CLAPSep-class masker (bounded magnitude-mask representation already oracle-validated in S1a); no new model family needed.",
+    "blocked_prerequisites": "SAM-Audio access (gated) remains worth retrying before any capture campaign — its text/span interface is the strongest untested fit for this problem."
+  },
+  "explicitly_not_done": [
+    "No model training or fine-tuning (Phase 1 frozen-inference respected)",
+    "No vision, no chart-timing gating, no Holdout-D oracle rebuild",
+    "No fabricated ground truth; no SI-SDR or source-attenuation claims",
+    "No synthetic Foley added to outputs",
+    "No per-output normalization hiding deletion (pack peak-norm disclosed per item)",
+    "No historical experiment modified (R1/R2/R3 read-only)",
+    "Nothing committed or pushed; large audio excluded from staging via .gitignore"
+  ],
+  "access_failures_recorded": {
+    "SAM-Audio": "BLOCKED: gated(manual) checkpoint, anonymous resolve HTTP 401 re-verified 2026-09-10; no HF auth on machine; gate not bypassed",
+    "FlowSep": "BLOCKED: Zenodo (sole checkpoint host) unreachable from this network",
+    "FlowSep-2": "UNAVAILABLE: no code/checkpoint released (demo-only)"
+  }
+}

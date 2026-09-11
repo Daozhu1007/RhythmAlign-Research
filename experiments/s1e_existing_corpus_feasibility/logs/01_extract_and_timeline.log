@@ -1,0 +1,7 @@
+D:\Code\RhythmAlign\experiments\r2_target_separation\.venv\Lib\site-packages\torch\jit\_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+handcam 163.07s, ref 139.57s
+saved D:\Code\RhythmAlign\experiments\s1e_existing_corpus_feasibility\diagnostics\timeline_overview.png
+saved strip 0
+saved strip 1
+saved strip 2

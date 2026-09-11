@@ -1,0 +1,823 @@
+{
+ "experiment": "R5.6 Holdout-D oracle (VIDEO-FIRST blind annotation)",
+ "source_video": "outputs/holdoutD_video.mp4 (handcam-native 60.0-78.0 s)",
+ "video_timeline": {
+  "fps": 60.04,
+  "duration_s": 18.0,
+  "t_video": "seconds from holdout start (= handcam-native minus 60.0)"
+ },
+ "annotation_method": {
+  "pass1": "10 fps contact sheets, 8 sheets x 25 tiles, whole 18 s seen",
+  "pass2": "30 fps contact sheets, 18 sheets x 30 tiles (frame-level judgment-text / hit-effect timing)",
+  "pass3": "60 fps 5-frame zoom strips at 8 ambiguous/occluded moments",
+  "pass4_last": "audio-comb candidates (R4 family, med+4MAD, 55 ms merge) used ONLY as a gap check: 107 audio candidates; 18 dense-segment gaps each verified on a 60 fps strip -> 11 confirmed additions, 6 rejections, 1 merge; 13 rest-segment onsets REJECTED because video shows hands off the glass (music leakage through residual)",
+  "video_first": "the candidate universe comes from vision, not from any audio detector; audio could only ADD after visual verification",
+  "blind": "no detector prediction was viewed before this file was written; the frozen R5.6 detector has not been run on holdout-D"
+ },
+ "annotation_completed_utc": "2026-09-09 13:39:22",
+ "frozen_detector_at": "2026-09-09 13:13:37",
+ "events": [
+  {
+   "id": "d00",
+   "t_video": 0.0,
+   "status": "ok",
+   "type": "press",
+   "area": "NW-N",
+   "confidence": "med",
+   "evidence": "text fresh at window start, L hand pressing NW"
+  },
+  {
+   "id": "d01",
+   "t_video": 0.5,
+   "status": "ok",
+   "type": "press",
+   "area": "N-NW",
+   "confidence": "high",
+   "evidence": "fresh yellow text burst at NW, sparkle"
+  },
+  {
+   "id": "d02",
+   "t_video": 0.7,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "pink ring center, chevron trail N, R hand top"
+  },
+  {
+   "id": "d03",
+   "t_video": 0.87,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "pink text at W, L hand W press posture"
+  },
+  {
+   "id": "d04",
+   "t_video": 1.0,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "pink ring center-left, R hand top press"
+  },
+  {
+   "id": "d05",
+   "t_video": 1.2,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "R hand press N, posture change"
+  },
+  {
+   "id": "d06",
+   "t_video": 1.37,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "yellow text at W edge"
+  },
+  {
+   "id": "d07",
+   "t_video": 1.54,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "low",
+   "evidence": "press posture shift at N, no fresh text (audio gap-check add)"
+  },
+  {
+   "id": "d08",
+   "t_video": 1.7,
+   "status": "ok",
+   "type": "press",
+   "area": "SW",
+   "confidence": "med",
+   "evidence": "pink ring SW, L press SW"
+  },
+  {
+   "id": "d09",
+   "t_video": 1.9,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "orange sparkle bursts at S"
+  },
+  {
+   "id": "d10",
+   "t_video": 2.2,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "chevrons brighten, both hands N"
+  },
+  {
+   "id": "d11",
+   "t_video": 2.44,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "med",
+   "evidence": "R hand lands SE, fresh yellow star + ring (audio gap-check add)"
+  },
+  {
+   "id": "d12",
+   "t_video": 2.53,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "med",
+   "evidence": "R hand SE press posture"
+  },
+  {
+   "id": "d13",
+   "t_video": 2.7,
+   "status": "ok",
+   "type": "press",
+   "area": "W-SW",
+   "confidence": "med",
+   "evidence": "L press W, R press SE"
+  },
+  {
+   "id": "d14",
+   "t_video": 2.87,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "yellow text at W"
+  },
+  {
+   "id": "d15",
+   "t_video": 2.97,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "high",
+   "evidence": "fresh yellow text at N, both hands top"
+  },
+  {
+   "id": "d16",
+   "t_video": 3.2,
+   "status": "ok",
+   "type": "press",
+   "area": "NW-N",
+   "confidence": "med",
+   "evidence": "fresh starburst + R press top (strip: text fresh 3.20-3.23)"
+  },
+  {
+   "id": "d17",
+   "t_video": 3.5,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "L press W on yellow slide bar, pink ring left"
+  },
+  {
+   "id": "d18",
+   "t_video": 3.7,
+   "status": "ok",
+   "type": "slide",
+   "area": "SW",
+   "confidence": "med",
+   "evidence": "cyan chevron fan center, pink ring SW"
+  },
+  {
+   "id": "d19",
+   "t_video": 3.88,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "med",
+   "evidence": "R press NE, text NE"
+  },
+  {
+   "id": "d20",
+   "t_video": 3.97,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "high",
+   "evidence": "L press W, fresh PERFECT text + star (audio gap-check add)"
+  },
+  {
+   "id": "d21",
+   "t_video": 4.27,
+   "status": "ok",
+   "type": "press",
+   "area": "NW",
+   "confidence": "med",
+   "evidence": "occluded press NW: ring at 4.20 + fresh text 4.30 (merged)"
+  },
+  {
+   "id": "d22",
+   "t_video": 4.53,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "high",
+   "evidence": "fresh yellow text under hand at N, L press (strip)"
+  },
+  {
+   "id": "d23",
+   "t_video": 4.7,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "R hand N press posture"
+  },
+  {
+   "id": "d24",
+   "t_video": 4.9,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "yellow text at N, chevrons"
+  },
+  {
+   "id": "d25",
+   "t_video": 5.01,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "high",
+   "evidence": "double PERFECT text at N, R press (audio gap-check add)"
+  },
+  {
+   "id": "d26",
+   "t_video": 5.2,
+   "status": "ok",
+   "type": "press",
+   "area": "N-NW",
+   "confidence": "med",
+   "evidence": "R hand down at N"
+  },
+  {
+   "id": "d27",
+   "t_video": 5.53,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "R hand N press posture, chevron trail"
+  },
+  {
+   "id": "d28",
+   "t_video": 5.73,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "med",
+   "evidence": "pink ring SE, press burst"
+  },
+  {
+   "id": "d29",
+   "t_video": 5.87,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "orange sparkle burst center"
+  },
+  {
+   "id": "d30",
+   "t_video": 8.03,
+   "status": "ok",
+   "type": "press",
+   "area": "E",
+   "confidence": "med",
+   "evidence": "fresh yellow ring at E under R hand (strip; rest ends)"
+  },
+  {
+   "id": "d31",
+   "t_video": 8.21,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "high",
+   "evidence": "R press SE, fresh PERFECT text at SE (audio gap-check add)"
+  },
+  {
+   "id": "d32",
+   "t_video": 8.37,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "L hand up W press"
+  },
+  {
+   "id": "d33",
+   "t_video": 8.53,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "press on yellow slide bar W, R hand up N"
+  },
+  {
+   "id": "d34",
+   "t_video": 8.7,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "yellow text at W"
+  },
+  {
+   "id": "d35",
+   "t_video": 8.9,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "cyan chevron trail N appears, presses continue"
+  },
+  {
+   "id": "d36",
+   "t_video": 9.0,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "high",
+   "evidence": "fresh yellow text at N, both hands top"
+  },
+  {
+   "id": "d37",
+   "t_video": 9.2,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "L arm crossing, press continues"
+  },
+  {
+   "id": "d38",
+   "t_video": 9.37,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "low",
+   "evidence": "pink ring under occluding arm (strip)"
+  },
+  {
+   "id": "d39",
+   "t_video": 9.57,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "med",
+   "evidence": "R hand SE press, chevron fan trail"
+  },
+  {
+   "id": "d40",
+   "t_video": 9.7,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "high",
+   "evidence": "fresh yellow text at W, L press W"
+  },
+  {
+   "id": "d41",
+   "t_video": 9.87,
+   "status": "ok",
+   "type": "press",
+   "area": "SW",
+   "confidence": "med",
+   "evidence": "yellow slide loop + gear SW"
+  },
+  {
+   "id": "d42",
+   "t_video": 10.0,
+   "status": "ok",
+   "type": "press",
+   "area": "NW",
+   "confidence": "high",
+   "evidence": "fresh yellow text at NW, both hands top"
+  },
+  {
+   "id": "d43",
+   "t_video": 10.2,
+   "status": "ok",
+   "type": "press",
+   "area": "E",
+   "confidence": "high",
+   "evidence": "fresh yellow text, R press E (strip)"
+  },
+  {
+   "id": "d44",
+   "t_video": 10.33,
+   "status": "ok",
+   "type": "press",
+   "area": "NW",
+   "confidence": "high",
+   "evidence": "L press NW, fresh text (audio gap-check add)"
+  },
+  {
+   "id": "d45",
+   "t_video": 10.5,
+   "status": "ok",
+   "type": "slide",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "yellow chevron band W, L press-traverse"
+  },
+  {
+   "id": "d46",
+   "t_video": 10.7,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "R press top, yellow band center"
+  },
+  {
+   "id": "d47",
+   "t_video": 10.88,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "yellow text at N"
+  },
+  {
+   "id": "d48",
+   "t_video": 11.0,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "high",
+   "evidence": "fresh CRITICAL-style text at N, R press"
+  },
+  {
+   "id": "d49",
+   "t_video": 11.2,
+   "status": "ok",
+   "type": "press",
+   "area": "NW",
+   "confidence": "med",
+   "evidence": "yellow bar slide left, L hand NW"
+  },
+  {
+   "id": "d50",
+   "t_video": 11.4,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "pink text N"
+  },
+  {
+   "id": "d51",
+   "t_video": 11.5,
+   "status": "ok",
+   "type": "press",
+   "area": "E",
+   "confidence": "med",
+   "evidence": "R press E, yellow ring + text NE (strip)"
+  },
+  {
+   "id": "d52",
+   "t_video": 11.65,
+   "status": "ok",
+   "type": "press",
+   "area": "E",
+   "confidence": "med",
+   "evidence": "R press E, fresh text + gear (audio gap-check add)"
+  },
+  {
+   "id": "d53",
+   "t_video": 11.87,
+   "status": "ok",
+   "type": "press",
+   "area": "SW",
+   "confidence": "med",
+   "evidence": "cyan chevron fan bottom, L press SW"
+  },
+  {
+   "id": "d54",
+   "t_video": 12.03,
+   "status": "ok",
+   "type": "press",
+   "area": "E",
+   "confidence": "med",
+   "evidence": "R hand E press posture"
+  },
+  {
+   "id": "d55",
+   "t_video": 12.2,
+   "status": "ok",
+   "type": "slide",
+   "area": "SW",
+   "confidence": "med",
+   "evidence": "yellow chevron band diagonal, L press-traverse SW"
+  },
+  {
+   "id": "d56",
+   "t_video": 12.34,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "high",
+   "evidence": "double top press, fresh text burst + stars (audio gap-check add)"
+  },
+  {
+   "id": "d57",
+   "t_video": 12.53,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "yellow slide bar W + press"
+  },
+  {
+   "id": "d58",
+   "t_video": 12.73,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "med",
+   "evidence": "R press SE posture, chevrons"
+  },
+  {
+   "id": "d59",
+   "t_video": 12.9,
+   "status": "ok",
+   "type": "press",
+   "area": "SW",
+   "confidence": "med",
+   "evidence": "L press SW, yellow elements bottom"
+  },
+  {
+   "id": "d60",
+   "t_video": 13.2,
+   "status": "ok",
+   "type": "slide",
+   "area": "W-SW",
+   "confidence": "med",
+   "evidence": "yellow chevron band lower-left, L traverse"
+  },
+  {
+   "id": "d61",
+   "t_video": 13.37,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "both hands low pressing, yellow band center"
+  },
+  {
+   "id": "d62",
+   "t_video": 13.53,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "pink ring W, L press"
+  },
+  {
+   "id": "d63",
+   "t_video": 13.9,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "yellow slide loop bottom, R press S"
+  },
+  {
+   "id": "d64",
+   "t_video": 14.2,
+   "status": "ok",
+   "type": "press",
+   "area": "NW",
+   "confidence": "high",
+   "evidence": "fresh yellow text NW, R press N-NW"
+  },
+  {
+   "id": "d65",
+   "t_video": 14.3,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "high",
+   "evidence": "L press W, fresh PERFECT text at W (audio gap-check add)"
+  },
+  {
+   "id": "d66",
+   "t_video": 14.4,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "L press W, yellow cross effect"
+  },
+  {
+   "id": "d67",
+   "t_video": 14.57,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "med",
+   "evidence": "R hand NE press, yellow loop right"
+  },
+  {
+   "id": "d68",
+   "t_video": 14.87,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "med",
+   "evidence": "yellow loop bottom-right, R press SE, gear effects"
+  },
+  {
+   "id": "d69",
+   "t_video": 15.0,
+   "status": "ok",
+   "type": "press",
+   "area": "E",
+   "confidence": "high",
+   "evidence": "fresh orange gear at E, R press"
+  },
+  {
+   "id": "d70",
+   "t_video": 15.2,
+   "status": "ok",
+   "type": "slide",
+   "area": "NW",
+   "confidence": "med",
+   "evidence": "yellow arc trace NW + orange gear"
+  },
+  {
+   "id": "d71",
+   "t_video": 15.3,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "high",
+   "evidence": "R press NE, fresh PERFECT text + gear (audio gap-check add)"
+  },
+  {
+   "id": "d72",
+   "t_video": 15.53,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "med",
+   "evidence": "cyan chevron trail center, R press NE"
+  },
+  {
+   "id": "d73",
+   "t_video": 15.63,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "high",
+   "evidence": "R press SE, fresh yellow text at E-SE (audio gap-check add)"
+  },
+  {
+   "id": "d74",
+   "t_video": 15.87,
+   "status": "ok",
+   "type": "press",
+   "area": "SW",
+   "confidence": "med",
+   "evidence": "cyan chevron fan bottom-left, L press SW"
+  },
+  {
+   "id": "d75",
+   "t_video": 16.0,
+   "status": "ok",
+   "type": "press",
+   "area": "NW",
+   "confidence": "high",
+   "evidence": "fresh yellow text at NW, L press"
+  },
+  {
+   "id": "d76",
+   "t_video": 16.2,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "both hands top, pink star center"
+  },
+  {
+   "id": "d77",
+   "t_video": 16.4,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "pink ring + text, R press N"
+  },
+  {
+   "id": "d78",
+   "t_video": 16.57,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "cyan chevron fan bottom, L press W, pink ring SE"
+  },
+  {
+   "id": "d79",
+   "t_video": 16.87,
+   "status": "ok",
+   "type": "slide",
+   "area": "SW",
+   "confidence": "med",
+   "evidence": "cyan chevron fan expands, L press-traverse SW"
+  },
+  {
+   "id": "d80",
+   "t_video": 17.03,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "cyan fan trail, R hand top press"
+  },
+  {
+   "id": "d81",
+   "t_video": 17.23,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "R press N posture"
+  },
+  {
+   "id": "d82",
+   "t_video": 17.37,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "L press W, effects fading"
+  },
+  {
+   "id": "d83",
+   "t_video": 17.53,
+   "status": "ok",
+   "type": "press",
+   "area": "E",
+   "confidence": "high",
+   "evidence": "fresh yellow text at E, press E"
+  },
+  {
+   "id": "d84",
+   "t_video": 17.7,
+   "status": "ok",
+   "type": "press",
+   "area": "E",
+   "confidence": "med",
+   "evidence": "yellow bar + text E, gear effects"
+  },
+  {
+   "id": "d85",
+   "t_video": 17.9,
+   "status": "ok",
+   "type": "press",
+   "area": "NW",
+   "confidence": "high",
+   "evidence": "fresh yellow text at NW, L press (window ends mid-play)"
+  }
+ ],
+ "regions": [
+  {
+   "id": "R1",
+   "t0": 0.0,
+   "t1": 6.0,
+   "desc": "dense continuous two-hand play: alternating top/side presses, chevron slides, heavy arm-crossing occlusion ~2.0-2.2 and 4.1-4.5",
+   "confidence": "high"
+  },
+  {
+   "id": "G1",
+   "t0": 6.0,
+   "t1": 8.0,
+   "desc": "REST/HOVER: glass nearly empty, both hands parked at the bottom bezel; a yellow slide-ribbon note display advances WITHOUT a tracing hand (strip-verified) - the 13 audio onsets in this span are music leakage, NOT contacts",
+   "confidence": "high"
+  },
+  {
+   "id": "R2",
+   "t0": 8.0,
+   "t1": 18.0,
+   "desc": "dense continuous play: bottom/side presses, yellow slide bands, cyan chevron fan slides (~16.5-17.4), double presses, occlusion ~9.3, 11.5, 13.1; ends mid-play at window end",
+   "confidence": "high"
+  }
+ ],
+ "notes": [
+  "86 contacts, 0 rest events inside R regions; G1 declared from video, not from detector state.",
+  "Judgment text appears 0-2 frames after physical contact; strip center frame = candidate time.",
+  "Known limitation: visually-silent sub-events inside 90-120 ms bursts may still be missing (video-first cannot see them either); audio gap-check only added strip-verified events."
+ ]
+}

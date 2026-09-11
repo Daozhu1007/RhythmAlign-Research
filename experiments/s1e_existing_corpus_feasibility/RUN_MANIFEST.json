@@ -1,0 +1,1574 @@
+{
+  "stage": "S1E - Existing-Corpus AI Extraction Feasibility (product-feasibility, not paper-grade)",
+  "date": "2026-09-10",
+  "sources": {
+    "共感怪物AP.mp4": {
+      "path": "D:\\Daozh\\Videos\\舞萌手元\\13.2\\共感觉\\AP\\共感怪物AP.mp4",
+      "bytes": 413372548,
+      "mtime": "2026-09-06T17:10:56",
+      "note": "hashed sha256 in clips manifest/working copies; original media read-only"
+    },
+    "共感觉.mp3": {
+      "path": "D:\\Daozh\\Videos\\舞萌手元\\13.2\\共感觉\\共感觉.mp3",
+      "bytes": 4474174,
+      "mtime": "2026-06-09T11:07:38",
+      "note": "hashed sha256 in clips manifest/working copies; original media read-only"
+    }
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "torch": "2.14.0+cu126",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "transformers": "4.57.6",
+    "diffusers": "0.30.0",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "librosa": "0.11.0",
+    "soundfile": "0.14.0",
+    "note": "All S1E model runs used experiments/r2_target_separation/.venv (Python 3.12.13), which r2 created for R2/R3; S1E added laion_clap, silero-vad, diffusers==0.30.0, einops, alias-free-torch, descript-audio-codec, vector-quantize-pytorch, loralib, imageio-ffmpeg, resampy to that venv. The RhythmAlign production .venv was not touched."
+  },
+  "checkpoints": {
+    "clapsep_best_model_ckpt": {
+      "path": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\checkpoints\\best_model.ckpt",
+      "bytes": 177818986,
+      "sha256": "6fcc8dbcd7174af86266cf16b4105eced0802352762f81dbfefdce29af3dba04"
+    },
+    "clapsep_clap_ckpt": {
+      "path": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\checkpoints\\music_audioset_epoch_15_esc_90.14.pt",
+      "bytes": 2352471003,
+      "sha256": "fae3e9c087f2909c28a09dc31c8dfcdacbc42ba44c70e972b58c1bd1caf6dedd"
+    },
+    "audiosep_base_ckpt": {
+      "path": "D:\\Code\\RhythmAlign\\experiments\\r2_target_separation\\checkpoints\\audiosep_base_4M_steps.ckpt",
+      "bytes": 1264844076,
+      "sha256": "f8cda01bfd0ebd141eef45d41db7a3ada23a56568465840d3cff04b8010ce82c"
+    },
+    "audiosep_clap_ckpt": {
+      "path": "D:\\Code\\RhythmAlign\\experiments\\r2_target_separation\\checkpoints\\music_speech_audioset_epoch_15_esc_89.98.pt",
+      "bytes": 2352471003,
+      "sha256": "51c68f12f9d7ea25fdaaccf741ec7f81e93ee594455410f3bca4f47f88d8e006"
+    },
+    "soloaudio_v2_pt": {
+      "path": "third_party/SoloAudio/pretrained_models/soloaudio_v2.pt",
+      "bytes": 591736757,
+      "sha256": "8e068c8d211b4efe0a31b74ea94243b435e480a451c2062c752b7ed7e7239ca1"
+    },
+    "audio_vae_pt": {
+      "path": "third_party/SoloAudio/pretrained_models/audio-vae.pt",
+      "bytes": 549068173,
+      "sha256": "d4e13ac8bae019d7170bb5fe51e27d9b428bedd5c4c27586eff9f7462961dcbf"
+    }
+  },
+  "clips": {
+    "source": "D:\\Daozh\\Videos\\舞萌手元\\13.2\\共感觉\\AP\\共感怪物AP.mp4",
+    "source_sha256_note": "413,372,548 bytes; not hashed (large); see RUN_MANIFEST",
+    "sr": 48000,
+    "clips": [
+      {
+        "id": "c1_speech_npc_a",
+        "t_start_video_s": 86.0,
+        "t_end_video_s": 94.0,
+        "t_start_mmss": "1:26.0",
+        "t_end_mmss": "1:34.0",
+        "duration_s": 8.0,
+        "reference_covered": true,
+        "challenge_tags": "npc_announcer_speech+interaction",
+        "file_48k": "audio\\c1_speech_npc_a_48k_stereo.wav",
+        "sha256_48k": "cdea9ce5d3a1133f06dd93f7a85bd753ebea29b53c1be32ccdfdaa531771556c",
+        "file_32k": "audio\\c1_speech_npc_a_32k_mono.wav",
+        "sha256_32k": "a739861647e7fa0e20a731932efbb1f3340f3065535e0c664d465edefa01a2bd",
+        "rms_dbfs_48k": -17.492129912121193,
+        "peak_dbfs_48k": 0.5621910297239445
+      },
+      {
+        "id": "c2_speech_npc_b",
+        "t_start_video_s": 96.0,
+        "t_end_video_s": 104.0,
+        "t_start_mmss": "1:36.0",
+        "t_end_mmss": "1:44.0",
+        "duration_s": 8.0,
+        "reference_covered": true,
+        "challenge_tags": "npc_announcer_speech+interaction",
+        "file_48k": "audio\\c2_speech_npc_b_48k_stereo.wav",
+        "sha256_48k": "1ccb90985898d8f684e4aacb39f8b6c6e21a9a1d932a217c29854d1006688aac",
+        "file_32k": "audio\\c2_speech_npc_b_32k_mono.wav",
+        "sha256_32k": "bc8393c5a16249d8214dad7fccdc7e891b597d6cfbac21f6adb9d2089b30037a",
+        "rms_dbfs_48k": -19.1287999861793,
+        "peak_dbfs_48k": 0.7736067048943742
+      },
+      {
+        "id": "c3_taiko_prompt",
+        "t_start_video_s": 126.5,
+        "t_end_video_s": 131.5,
+        "t_start_mmss": "2:06.5",
+        "t_end_mmss": "2:11.5",
+        "duration_s": 5.0,
+        "reference_covered": true,
+        "challenge_tags": "loud_taiko_system_prompt(2:08-2:09)+interaction",
+        "file_48k": "audio\\c3_taiko_prompt_48k_stereo.wav",
+        "sha256_48k": "507b070b16a2464eac7dd3ba61446d1396388483c6fed772c7aa8bb1ac6b973d",
+        "file_32k": "audio\\c3_taiko_prompt_32k_mono.wav",
+        "sha256_32k": "aa591b509003033a6ad033a6f0985f623f8ecc728e26d7dc2e0dababa072c45f",
+        "rms_dbfs_48k": -19.982643073178398,
+        "peak_dbfs_48k": 0.43064142980765746
+      },
+      {
+        "id": "c4_ambience_start",
+        "t_start_video_s": 2.5,
+        "t_end_video_s": 8.5,
+        "t_start_mmss": "0:02.5",
+        "t_end_mmss": "0:08.5",
+        "duration_s": 6.0,
+        "reference_covered": false,
+        "challenge_tags": "pre_track_ambience_only",
+        "file_48k": "audio\\c4_ambience_start_48k_stereo.wav",
+        "sha256_48k": "7f2f676ace49f528f064390e1de757e81e7f12187bb2f00f9b0490f81090a514",
+        "file_32k": "audio\\c4_ambience_start_32k_mono.wav",
+        "sha256_32k": "88991a3a72f0cc59cd69e65284e05a060e630d217a08ce032d3cab0037873717",
+        "rms_dbfs_48k": -19.752944654242913,
+        "peak_dbfs_48k": -0.13719662740210575
+      },
+      {
+        "id": "c5_announcer_end",
+        "t_start_video_s": 152.0,
+        "t_end_video_s": 159.0,
+        "t_start_mmss": "2:32.0",
+        "t_end_mmss": "2:39.0",
+        "duration_s": 7.0,
+        "reference_covered": false,
+        "challenge_tags": "post_song_announcer_speech_no_interaction",
+        "file_48k": "audio\\c5_announcer_end_48k_stereo.wav",
+        "sha256_48k": "6929f4c5c9ac60ca765c92f5c49b585b78de8f0578636607dd117c49014ad532",
+        "file_32k": "audio\\c5_announcer_end_32k_mono.wav",
+        "sha256_32k": "6a17928992bf7b0fbc139f0bf8e63b884140fb824164f5a55014bc36f8a4fd80",
+        "rms_dbfs_48k": -16.881233626660475,
+        "peak_dbfs_48k": 0.11229530836932783
+      },
+      {
+        "id": "c6_dense_golden",
+        "t_start_video_s": 22.5,
+        "t_end_video_s": 37.5,
+        "t_start_mmss": "0:22.5",
+        "t_end_mmss": "0:37.5",
+        "duration_s": 15.0,
+        "reference_covered": true,
+        "challenge_tags": "dense_interaction+music (r1/r2/r3 golden window)",
+        "file_48k": "audio\\c6_dense_golden_48k_stereo.wav",
+        "sha256_48k": "a42f67736ea75528a859306238dcf9635579b301fd431936952bed618aba5cd1",
+        "file_32k": "audio\\c6_dense_golden_32k_mono.wav",
+        "sha256_32k": "65a19a8a71d09795aa184f2acb717df610c1d1e96d6ca9dfbcef6ba49ef931a9",
+        "rms_dbfs_48k": -19.9958826262071,
+        "peak_dbfs_48k": 1.2581401295019585
+      },
+      {
+        "id": "c7_weak_taps",
+        "t_start_video_s": 38.0,
+        "t_end_video_s": 44.0,
+        "t_start_mmss": "0:38.0",
+        "t_end_mmss": "0:44.0",
+        "duration_s": 6.0,
+        "reference_covered": true,
+        "challenge_tags": "weak_button_taps+music",
+        "file_48k": "audio\\c7_weak_taps_48k_stereo.wav",
+        "sha256_48k": "983fa62ed19b5da0f09aaea1a52c532f2337c7409b6a76688de5038914186520",
+        "file_32k": "audio\\c7_weak_taps_32k_mono.wav",
+        "sha256_32k": "7d8d31220b37869ed818132563c0a66cd3afb75d63d421917f257bd99e11c887",
+        "rms_dbfs_48k": -17.871731971957264,
+        "peak_dbfs_48k": 0.04613239299935104
+      },
+      {
+        "id": "c8_slide_friction",
+        "t_start_video_s": 51.5,
+        "t_end_video_s": 57.5,
+        "t_start_mmss": "0:51.5",
+        "t_end_mmss": "0:57.5",
+        "duration_s": 6.0,
+        "reference_covered": true,
+        "challenge_tags": "slide_friction+ordinary_interaction",
+        "file_48k": "audio\\c8_slide_friction_48k_stereo.wav",
+        "sha256_48k": "e8c1ec32cf2aaaab3d862659a465f867ec088097955b11830bf36edee7d67d8a",
+        "file_32k": "audio\\c8_slide_friction_32k_mono.wav",
+        "sha256_32k": "8aba708890b7c338112705ec53bd599c48e841fda4c7138b7f6ee050292582e1",
+        "rms_dbfs_48k": -16.657331815238663,
+        "peak_dbfs_48k": 0.501802087852103
+      }
+    ]
+  },
+  "run_logs": {
+    "05_clapsep_runs.json": {
+      "protocol": "official Space app.py via r3 clapsep_lib (32k mono, 10s chunks, peak-0.9 rescale undone), negative=zeros",
+      "q1_query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+      "text_prompt": "finger taps and button presses on a rhythm game cabinet",
+      "runs": [
+        {
+          "run": "clapsep_aq_c1_speech_npc_a",
+          "clip": "c1_speech_npc_a",
+          "condition": "aq",
+          "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+          "negative": "zeros",
+          "sr": 32000,
+          "mix_rms_db": -17.672550012375662,
+          "target_rms_db": -21.93472029760332,
+          "target_energy_ratio_db": -4.262170285227658,
+          "runtime_s": 0.15616202354431152
+        },
+        {
+          "run": "clapsep_tx_c1_speech_npc_a",
+          "clip": "c1_speech_npc_a",
+          "condition": "tx",
+          "query": "finger taps and button presses on a rhythm game cabinet",
+          "negative": "zeros",
+          "sr": 32000,
+          "mix_rms_db": -17.672550012375662,
+          "target_rms_db": -21.460438405527892,
+          "target_energy_ratio_db": -3.7878883931522296,
+          "runtime_s": 0.10115551948547363
+        },
+        {
+          "run": "clapsep_aq_c2_speech_npc_b",
+          "clip": "c2_speech_npc_b",
+          "condition": "aq",
+          "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+          "negative": "zeros",
+          "sr": 32000,
+          "mix_rms_db": -19.440051457001527,
+          "target_rms_db": -23.386409813926512,
+          "target_energy_ratio_db": -3.9463583569249856,
+          "runtime_s": 0.10668659210205078
+        },
+        {
+          "run": "clapsep_tx_c2_speech_npc_b",
+          "clip": "c2_speech_npc_b",
+          "condition": "tx",
+          "query": "finger taps and button presses on a rhythm game cabinet",
+          "negative": "zeros",
+          "sr": 32000,
+          "mix_rms_db": -19.440051457001527,
+          "target_rms_db": -24.076884586664704,
+          "target_energy_ratio_db": -4.636833129663177,
+          "runtime_s": 0.10858511924743652
+        },
+        {
+          "run": "clapsep_aq_c3_taiko_prompt",
+          "clip": "c3_taiko_prompt",
+          "condition": "aq",
+          "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+          "negative": "zeros",
+          "sr": 32000,
+          "mix_rms_db": -20.367178195535143,
+          "target_rms_db": -24.324613607095745,
+          "target_energy_ratio_db": -3.9574354115606027,
+          "runtime_s": 0.11682391166687012
+        },
+        {
+          "run": "clapsep_tx_c3_taiko_prompt",
+          "clip": "c3_taiko_prompt",
+          "condition": "tx",
+          "query": "finger taps and button presses on a rhythm game cabinet",
+          "negative": "zeros",
+          "sr": 32000,
+          "mix_rms_db": -20.367178195535143,
+          "target_rms_db": -24.40599215585579,
+          "target_energy_ratio_db": -4.038813960320649,
+          "runtime_s": 0.0922844409942627
+        },
+        {
+          "run": "clapsep_aq_c4_ambience_start",
+          "clip": "c4_ambience_start",
+          "condition": "aq",
+          "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+          "negative": "zeros",
+          "sr": 32000,
+          "mix_rms_db": -19.99909908550947,
+          "target_rms_db": -25.028104523168405,
+          "target_energy_ratio_db": -5.029005437658935,
+          "runtime_s": 0.09288716316223145
+        },
+        {
+          "run": "clapsep_aq_c5_announcer_end",
+          "clip": "c5_announcer_end",
+          "condition": "aq",
+          "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+          "negative": "zeros",
+          "sr": 32000,
+          "mix_rms_db": -17.085058611959962,
+          "target_rms_db": -20.17372234291717,
+          "target_energy_ratio_db": -3.088663730957208,
+          "runtime_s": 0.065673828125
+        },
+        {
+          "run": "clapsep_aq_c6_dense_golden",
+          "clip": "c6_dense_golden",
+          "condition": "aq",
+          "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+          "negative": "zeros",
+          "sr": 32000,
+          "mix_rms_db": -20.35219529404781,
+          "target_rms_db": -24.00078684583146,
+          "target_energy_ratio_db": -3.6485915517836496,
+          "runtime_s": 0.12590694427490234
+        },
+        {
+          "run": "clapsep_aq_c7_weak_taps",
+          "clip": "c7_weak_taps",
+          "condition": "aq",
+          "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+          "negative": "zeros",
+          "sr": 32000,
+          "mix_rms_db": -17.996469638176443,
+          "target_rms_db": -23.90256712016331,
+          "target_energy_ratio_db": -5.906097481986869,
+          "runtime_s": 0.07579946517944336
+        },
+        {
+          "run": "clapsep_aq_c8_slide_friction",
+          "clip": "c8_slide_friction",
+          "condition": "aq",
+          "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+          "negative": "zeros",
+          "sr": 32000,
+          "mix_rms_db": -16.863009767595646,
+          "target_rms_db": -20.960223670753514,
+          "target_energy_ratio_db": -4.0972139031578685,
+          "runtime_s": 0.06220555305480957
+        }
+      ]
+    },
+    "06_audiosep_runs.json": {
+      "protocol": "official chunk_inference (r2 recipe), 32 kHz mono; upstream short-input boundary bug handled by pad->infer->trim (disclosed)",
+      "checkpoint": "D:\\Code\\RhythmAlign\\experiments\\r2_target_separation\\checkpoints\\audiosep_base_4M_steps.ckpt",
+      "prompt": "finger taps and button presses on a rhythm game cabinet",
+      "runs": [
+        {
+          "run": "audiosep_p2_c1_speech_npc_a",
+          "clip": "c1_speech_npc_a",
+          "prompt": "finger taps and button presses on a rhythm game cabinet",
+          "sr": 32000,
+          "mix_rms_db": -17.672550012375662,
+          "target_rms_db": -22.37954596155007,
+          "target_energy_ratio_db": -4.706995949174406
+        },
+        {
+          "run": "audiosep_p2_c2_speech_npc_b",
+          "clip": "c2_speech_npc_b",
+          "prompt": "finger taps and button presses on a rhythm game cabinet",
+          "sr": 32000,
+          "mix_rms_db": -19.440051457001527,
+          "target_rms_db": -24.263269735640133,
+          "target_energy_ratio_db": -4.823218278638606
+        },
+        {
+          "run": "audiosep_p2_c3_taiko_prompt",
+          "clip": "c3_taiko_prompt",
+          "prompt": "finger taps and button presses on a rhythm game cabinet",
+          "sr": 32000,
+          "mix_rms_db": -20.367178195535143,
+          "target_rms_db": -24.731081106557077,
+          "target_energy_ratio_db": -4.363902911021935
+        },
+        {
+          "run": "audiosep_p2_c6_dense_golden",
+          "clip": "c6_dense_golden",
+          "prompt": "finger taps and button presses on a rhythm game cabinet",
+          "sr": 32000,
+          "mix_rms_db": -20.35219529404781,
+          "target_rms_db": -25.119886595287184,
+          "target_energy_ratio_db": -4.767691301239374
+        }
+      ]
+    },
+    "07_soloaudio_runs.json": {
+      "protocol": "official westbrook/SoloAudio v2; DDIM 50 steps; seed 2024; audio query Q1; output 24 kHz mono; generative (reconstruction)",
+      "checkpoint": "pretrained_models/soloaudio_v2.pt",
+      "runs": [
+        {
+          "run": "soloaudio_aq_c1_speech_npc_a",
+          "clip": "c1_speech_npc_a",
+          "condition": "aq",
+          "seed": 2024,
+          "steps": 50,
+          "sr_out": 24000,
+          "mix_rms_db_24k": -17.68957196710361,
+          "target_rms_db": -47.659681821323645,
+          "target_gain_dev_db": -29.970109854220034,
+          "generative": true,
+          "runtime_s": 1.2077991962432861
+        },
+        {
+          "run": "soloaudio_tx_c1_speech_npc_a",
+          "clip": "c1_speech_npc_a",
+          "condition": "tx",
+          "seed": 2024,
+          "steps": 50,
+          "sr_out": 24000,
+          "mix_rms_db_24k": -17.68957196710361,
+          "target_rms_db": -40.03789323149877,
+          "target_gain_dev_db": -22.34832126439516,
+          "generative": true,
+          "runtime_s": 1.208892822265625
+        },
+        {
+          "run": "soloaudio_aq_c2_speech_npc_b",
+          "clip": "c2_speech_npc_b",
+          "condition": "aq",
+          "seed": 2024,
+          "steps": 50,
+          "sr_out": 24000,
+          "mix_rms_db_24k": -19.47196357186924,
+          "target_rms_db": -48.817722676636095,
+          "target_gain_dev_db": -29.345759104766856,
+          "generative": true,
+          "runtime_s": 1.2885794639587402
+        },
+        {
+          "run": "soloaudio_tx_c2_speech_npc_b",
+          "clip": "c2_speech_npc_b",
+          "condition": "tx",
+          "seed": 2024,
+          "steps": 50,
+          "sr_out": 24000,
+          "mix_rms_db_24k": -19.47196357186924,
+          "target_rms_db": -42.448170485403615,
+          "target_gain_dev_db": -22.976206913534376,
+          "generative": true,
+          "runtime_s": 1.1321125030517578
+        },
+        {
+          "run": "soloaudio_aq_c3_taiko_prompt",
+          "clip": "c3_taiko_prompt",
+          "condition": "aq",
+          "seed": 2024,
+          "steps": 50,
+          "sr_out": 24000,
+          "mix_rms_db_24k": -20.398252192039767,
+          "target_rms_db": -44.221403672057605,
+          "target_gain_dev_db": -23.823151480017838,
+          "generative": true,
+          "runtime_s": 1.268369197845459
+        },
+        {
+          "run": "soloaudio_tx_c3_taiko_prompt",
+          "clip": "c3_taiko_prompt",
+          "condition": "tx",
+          "seed": 2024,
+          "steps": 50,
+          "sr_out": 24000,
+          "mix_rms_db_24k": -20.398252192039767,
+          "target_rms_db": -40.791907247214056,
+          "target_gain_dev_db": -20.39365505517429,
+          "generative": true,
+          "runtime_s": 1.2365524768829346
+        },
+        {
+          "run": "soloaudio_aq_c4_ambience_start",
+          "clip": "c4_ambience_start",
+          "condition": "aq",
+          "seed": 2024,
+          "steps": 50,
+          "sr_out": 24000,
+          "mix_rms_db_24k": -20.040019735200914,
+          "target_rms_db": -38.047627608627494,
+          "target_gain_dev_db": -18.00760787342658,
+          "generative": true,
+          "runtime_s": 1.3251068592071533
+        },
+        {
+          "run": "soloaudio_aq_c5_announcer_end",
+          "clip": "c5_announcer_end",
+          "condition": "aq",
+          "seed": 2024,
+          "steps": 50,
+          "sr_out": 24000,
+          "mix_rms_db_24k": -17.08820245960203,
+          "target_rms_db": -56.455240682500374,
+          "target_gain_dev_db": -39.367038222898344,
+          "generative": true,
+          "runtime_s": 1.4439122676849365
+        },
+        {
+          "run": "soloaudio_aq_c6_dense_golden",
+          "clip": "c6_dense_golden",
+          "condition": "aq",
+          "seed": 2024,
+          "steps": 50,
+          "sr_out": 24000,
+          "mix_rms_db_24k": -20.386731290736005,
+          "target_rms_db": -107.73451645360223,
+          "target_gain_dev_db": -87.34778516286622,
+          "generative": true,
+          "runtime_s": 2.1146864891052246
+        },
+        {
+          "run": "soloaudio_aq_c7_weak_taps",
+          "clip": "c7_weak_taps",
+          "condition": "aq",
+          "seed": 2024,
+          "steps": 50,
+          "sr_out": 24000,
+          "mix_rms_db_24k": -18.01494022975984,
+          "target_rms_db": -107.80183352585072,
+          "target_gain_dev_db": -89.78689329609088,
+          "generative": true,
+          "runtime_s": 1.3238716125488281
+        },
+        {
+          "run": "soloaudio_aq_c8_slide_friction",
+          "clip": "c8_slide_friction",
+          "condition": "aq",
+          "seed": 2024,
+          "steps": 50,
+          "sr_out": 24000,
+          "mix_rms_db_24k": -16.891069767849963,
+          "target_rms_db": -31.08011099804156,
+          "target_gain_dev_db": -14.189041230191599,
+          "generative": true,
+          "runtime_s": 1.5751304626464844
+        }
+      ]
+    },
+    "08_specialist_runs.json": {
+      "params": {
+        "nfft": 2048,
+        "hop": 512,
+        "gain_floor_db": -18.0,
+        "lambda": 1.0,
+        "vad_gate_depth": 0.7,
+        "refine_span_ms": 10.0
+      },
+      "runs": [
+        {
+          "stages": [
+            "A_reference_wiener",
+            "B_vad_soft_gate"
+          ],
+          "mean_gain_A_db": -2.022459337067762,
+          "vad_gate_mean_gain_db": -0.06858539327224618,
+          "vad_max_prob": 0.08245423436164856,
+          "run": "specialist_c1_speech_npc_a",
+          "clip": "c1_speech_npc_a",
+          "mix_rms_db": -17.65728593224198,
+          "out_rms_db": -18.287286215791582,
+          "out_gain_dev_db": -0.6300002835496024,
+          "runtime_s": 8.402971506118774
+        },
+        {
+          "stages": [
+            "A_reference_wiener",
+            "B_vad_soft_gate"
+          ],
+          "mean_gain_A_db": -1.9129332772451433,
+          "vad_gate_mean_gain_db": -0.037974161475715904,
+          "vad_max_prob": 0.07032152265310287,
+          "run": "specialist_c2_speech_npc_b",
+          "clip": "c2_speech_npc_b",
+          "mix_rms_db": -19.407406959098363,
+          "out_rms_db": -20.048627903633264,
+          "out_gain_dev_db": -0.6412209445349006,
+          "runtime_s": 3.6658482551574707
+        },
+        {
+          "stages": [
+            "A_reference_wiener",
+            "B_vad_soft_gate"
+          ],
+          "mean_gain_A_db": -2.139473877484372,
+          "vad_gate_mean_gain_db": -0.07567567312719575,
+          "vad_max_prob": 0.21068598330020905,
+          "run": "specialist_c3_taiko_prompt",
+          "clip": "c3_taiko_prompt",
+          "mix_rms_db": -20.334133983740177,
+          "out_rms_db": -21.103005008725223,
+          "out_gain_dev_db": -0.7688710249850459,
+          "runtime_s": 3.2573742866516113
+        },
+        {
+          "stages": [
+            "A_skipped_no_reference",
+            "B_vad_soft_gate"
+          ],
+          "vad_gate_mean_gain_db": -0.07020678337330807,
+          "vad_max_prob": 0.31914222240448,
+          "run": "specialist_c4_ambience_start",
+          "clip": "c4_ambience_start",
+          "mix_rms_db": -19.96784065555547,
+          "out_rms_db": -20.060399165357616,
+          "out_gain_dev_db": -0.09255850980214575,
+          "runtime_s": 0.5862488746643066
+        },
+        {
+          "stages": [
+            "A_skipped_no_reference",
+            "B_vad_soft_gate"
+          ],
+          "vad_gate_mean_gain_db": -4.77543574267257,
+          "vad_max_prob": 0.9975743889808655,
+          "run": "specialist_c5_announcer_end",
+          "clip": "c5_announcer_end",
+          "mix_rms_db": -17.082287224266345,
+          "out_rms_db": -22.55224614209053,
+          "out_gain_dev_db": -5.4699589178241865,
+          "runtime_s": 0.62203049659729
+        },
+        {
+          "stages": [
+            "A_reference_wiener",
+            "B_vad_soft_gate"
+          ],
+          "mean_gain_A_db": -2.0043237669160727,
+          "vad_gate_mean_gain_db": -0.1302473852232171,
+          "vad_max_prob": 0.7252331376075745,
+          "run": "specialist_c6_dense_golden",
+          "clip": "c6_dense_golden",
+          "mix_rms_db": -20.31855966338838,
+          "out_rms_db": -21.135168457494228,
+          "out_gain_dev_db": -0.8166087941058464,
+          "runtime_s": 5.140368700027466
+        },
+        {
+          "stages": [
+            "A_reference_wiener",
+            "B_vad_soft_gate"
+          ],
+          "mean_gain_A_db": -1.841624730353428,
+          "vad_gate_mean_gain_db": -0.06171594741130537,
+          "vad_max_prob": 0.07824534922838211,
+          "run": "specialist_c7_weak_taps",
+          "clip": "c7_weak_taps",
+          "mix_rms_db": -17.984296664602056,
+          "out_rms_db": -18.690690936259287,
+          "out_gain_dev_db": -0.7063942716572313,
+          "runtime_s": 3.2665133476257324
+        },
+        {
+          "stages": [
+            "A_reference_wiener",
+            "B_vad_soft_gate"
+          ],
+          "mean_gain_A_db": -1.7650019481379777,
+          "vad_gate_mean_gain_db": -0.03269307098227054,
+          "vad_max_prob": 0.15305134654045105,
+          "run": "specialist_c8_slide_friction",
+          "clip": "c8_slide_friction",
+          "mix_rms_db": -16.842628073294264,
+          "out_rms_db": -17.669563870863627,
+          "out_gain_dev_db": -0.8269357975693623,
+          "runtime_s": 3.3441386222839355
+        }
+      ]
+    },
+    "09_diagnostics.json": {
+      "results": [
+        {
+          "clip": "c1_speech_npc_a",
+          "method": "raw",
+          "sr_native": 48000,
+          "out_rms_db": -17.657285932055075,
+          "mix_rms_db": -17.657285932055075,
+          "out_minus_mix_db": 0.0,
+          "ret_low_40_150_db": 0.0,
+          "ret_mid_150_2k_db": 0.0,
+          "ret_click_2k_9k_db": 0.0,
+          "coherence_ref_100_4k": 0.01862961494989521,
+          "musicframe_level_change_db": 0.0,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c1_speech_npc_a",
+          "method": "clapsep",
+          "sr_native": 32000,
+          "out_rms_db": -21.936765236660868,
+          "mix_rms_db": -17.657285932055075,
+          "out_minus_mix_db": -4.279479304605793,
+          "ret_low_40_150_db": -19.564620036676324,
+          "ret_mid_150_2k_db": -2.55049532560351,
+          "ret_click_2k_9k_db": -0.2967129339703476,
+          "coherence_ref_100_4k": 0.016747353174114334,
+          "musicframe_level_change_db": -2.5921985869698325,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c1_speech_npc_a",
+          "method": "audiosep",
+          "sr_native": 32000,
+          "out_rms_db": -22.37954940395323,
+          "mix_rms_db": -17.657285932055075,
+          "out_minus_mix_db": -4.722263471898156,
+          "ret_low_40_150_db": -1.5603349602549343,
+          "ret_mid_150_2k_db": -9.116654843879903,
+          "ret_click_2k_9k_db": -6.04902317372704,
+          "coherence_ref_100_4k": 0.019092993939126467,
+          "musicframe_level_change_db": -6.563302310416411,
+          "vad_speech_sec_gt02": 0.256,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c1_speech_npc_a",
+          "method": "soloaudio",
+          "sr_native": 24000,
+          "out_rms_db": -47.66883150734614,
+          "mix_rms_db": -17.657285932055075,
+          "out_minus_mix_db": -30.011545575291066,
+          "ret_low_40_150_db": -31.90015644044626,
+          "ret_mid_150_2k_db": -30.382000760888953,
+          "ret_click_2k_9k_db": -25.289152085649516,
+          "coherence_ref_100_4k": 0.0032109829955088705,
+          "musicframe_level_change_db": -41.51011707993831,
+          "vad_speech_sec_gt02": 0.352,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c1_speech_npc_a",
+          "method": "specialist",
+          "sr_native": 48000,
+          "out_rms_db": -18.287286214656188,
+          "mix_rms_db": -17.657285932055075,
+          "out_minus_mix_db": -0.6300002826011131,
+          "ret_low_40_150_db": -0.30927063646519315,
+          "ret_mid_150_2k_db": -0.84900765549882,
+          "ret_click_2k_9k_db": -0.46642900170105506,
+          "coherence_ref_100_4k": 0.010354522410978322,
+          "musicframe_level_change_db": -0.6195385121449668,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c2_speech_npc_b",
+          "method": "raw",
+          "sr_native": 48000,
+          "out_rms_db": -19.407406958800596,
+          "mix_rms_db": -19.407406958800596,
+          "out_minus_mix_db": 0.0,
+          "ret_low_40_150_db": 0.0,
+          "ret_mid_150_2k_db": 0.0,
+          "ret_click_2k_9k_db": 0.0,
+          "coherence_ref_100_4k": 0.011138666142929252,
+          "musicframe_level_change_db": 0.0,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c2_speech_npc_b",
+          "method": "clapsep",
+          "sr_native": 32000,
+          "out_rms_db": -23.390141169845123,
+          "mix_rms_db": -19.407406958800596,
+          "out_minus_mix_db": -3.9827342110445265,
+          "ret_low_40_150_db": -25.201711763808113,
+          "ret_mid_150_2k_db": -3.5883374593857127,
+          "ret_click_2k_9k_db": -0.256554113728658,
+          "coherence_ref_100_4k": 0.008389532415633782,
+          "musicframe_level_change_db": -13.238210149447596,
+          "vad_speech_sec_gt02": 0.032,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c2_speech_npc_b",
+          "method": "audiosep",
+          "sr_native": 32000,
+          "out_rms_db": -24.265826663746886,
+          "mix_rms_db": -19.407406958800596,
+          "out_minus_mix_db": -4.858419704946289,
+          "ret_low_40_150_db": -4.758676057259873,
+          "ret_mid_150_2k_db": -6.236684848226819,
+          "ret_click_2k_9k_db": -1.6217073206756147,
+          "coherence_ref_100_4k": 0.008011664115146283,
+          "musicframe_level_change_db": -10.655586642798873,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c2_speech_npc_b",
+          "method": "soloaudio",
+          "sr_native": 24000,
+          "out_rms_db": -48.82047024682082,
+          "mix_rms_db": -19.407406958800596,
+          "out_minus_mix_db": -29.413063288020222,
+          "ret_low_40_150_db": -31.786364016672465,
+          "ret_mid_150_2k_db": -28.465548998457162,
+          "ret_click_2k_9k_db": -30.166072206088582,
+          "coherence_ref_100_4k": 0.0026805985696369875,
+          "musicframe_level_change_db": -92.64003155896125,
+          "vad_speech_sec_gt02": 0.032,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c2_speech_npc_b",
+          "method": "specialist",
+          "sr_native": 48000,
+          "out_rms_db": -20.04862790284252,
+          "mix_rms_db": -19.407406958800596,
+          "out_minus_mix_db": -0.6412209440419225,
+          "ret_low_40_150_db": -0.2422050000400553,
+          "ret_mid_150_2k_db": -0.9186737005184149,
+          "ret_click_2k_9k_db": -0.33810344705431916,
+          "coherence_ref_100_4k": 0.007284667658303318,
+          "musicframe_level_change_db": -1.3266418811227183,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c3_taiko_prompt",
+          "method": "raw",
+          "sr_native": 48000,
+          "out_rms_db": -20.33413398336142,
+          "mix_rms_db": -20.33413398336142,
+          "out_minus_mix_db": 0.0,
+          "ret_low_40_150_db": 0.0,
+          "ret_mid_150_2k_db": 0.0,
+          "ret_click_2k_9k_db": 0.0,
+          "coherence_ref_100_4k": 0.0169547459369667,
+          "musicframe_level_change_db": 0.0,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c3_taiko_prompt",
+          "method": "clapsep",
+          "sr_native": 32000,
+          "out_rms_db": -24.328332514569798,
+          "mix_rms_db": -20.33413398336142,
+          "out_minus_mix_db": -3.9941985312083794,
+          "ret_low_40_150_db": -21.71439154453626,
+          "ret_mid_150_2k_db": -4.294110473787391,
+          "ret_click_2k_9k_db": -1.130869253908081,
+          "coherence_ref_100_4k": 0.014003375384916557,
+          "musicframe_level_change_db": -12.619405277187866,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c3_taiko_prompt",
+          "method": "audiosep",
+          "sr_native": 32000,
+          "out_rms_db": -24.732410521865596,
+          "mix_rms_db": -20.33413398336142,
+          "out_minus_mix_db": -4.398276538504177,
+          "ret_low_40_150_db": -10.919394730064102,
+          "ret_mid_150_2k_db": -4.636349290565665,
+          "ret_click_2k_9k_db": -1.8821787361783393,
+          "coherence_ref_100_4k": 0.014055642955228853,
+          "musicframe_level_change_db": -11.143827765413796,
+          "vad_speech_sec_gt02": 0.032,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c3_taiko_prompt",
+          "method": "soloaudio",
+          "sr_native": 24000,
+          "out_rms_db": -44.22147903474582,
+          "mix_rms_db": -20.33413398336142,
+          "out_minus_mix_db": -23.8873450513844,
+          "ret_low_40_150_db": -21.91506924804015,
+          "ret_mid_150_2k_db": -23.60019013420731,
+          "ret_click_2k_9k_db": -43.5471962689337,
+          "coherence_ref_100_4k": 0.002674275110623315,
+          "musicframe_level_change_db": -92.53164145710147,
+          "vad_speech_sec_gt02": 0.032,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c3_taiko_prompt",
+          "method": "specialist",
+          "sr_native": 48000,
+          "out_rms_db": -21.103005007887287,
+          "mix_rms_db": -20.33413398336142,
+          "out_minus_mix_db": -0.7688710245258683,
+          "ret_low_40_150_db": -1.3409104922052144,
+          "ret_mid_150_2k_db": -0.7698381122571263,
+          "ret_click_2k_9k_db": -0.4000914829554034,
+          "coherence_ref_100_4k": 0.011668507638493534,
+          "musicframe_level_change_db": -3.2722331441303325,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c4_ambience_start",
+          "method": "raw",
+          "sr_native": 48000,
+          "out_rms_db": -19.967840655210917,
+          "mix_rms_db": -19.967840655210917,
+          "out_minus_mix_db": 0.0,
+          "ret_low_40_150_db": 0.0,
+          "ret_mid_150_2k_db": 0.0,
+          "ret_click_2k_9k_db": 0.0,
+          "vad_speech_sec_gt02": 0.064,
+          "vad_speech_sec_gt02_mix": 0.064
+        },
+        {
+          "clip": "c4_ambience_start",
+          "method": "clapsep",
+          "sr_native": 32000,
+          "out_rms_db": -25.033469894196298,
+          "mix_rms_db": -19.967840655210917,
+          "out_minus_mix_db": -5.06562923898538,
+          "ret_low_40_150_db": -9.210079064148147,
+          "ret_mid_150_2k_db": -3.9234368385117264,
+          "ret_click_2k_9k_db": -0.850479553252633,
+          "vad_speech_sec_gt02": 0.032,
+          "vad_speech_sec_gt02_mix": 0.064
+        },
+        {
+          "clip": "c4_ambience_start",
+          "method": "soloaudio",
+          "sr_native": 24000,
+          "out_rms_db": -38.05460216803037,
+          "mix_rms_db": -19.967840655210917,
+          "out_minus_mix_db": -18.086761512819454,
+          "ret_low_40_150_db": -24.648990860658678,
+          "ret_mid_150_2k_db": -17.901051786747402,
+          "ret_click_2k_9k_db": -9.700085178098497,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.064
+        },
+        {
+          "clip": "c4_ambience_start",
+          "method": "specialist",
+          "sr_native": 48000,
+          "out_rms_db": -20.06039916584666,
+          "mix_rms_db": -19.967840655210917,
+          "out_minus_mix_db": -0.09255851063574383,
+          "ret_low_40_150_db": -0.08107632098476358,
+          "ret_mid_150_2k_db": -0.09309821547073938,
+          "ret_click_2k_9k_db": -0.14215020448019544,
+          "vad_speech_sec_gt02": 0.032,
+          "vad_speech_sec_gt02_mix": 0.064
+        },
+        {
+          "clip": "c5_announcer_end",
+          "method": "raw",
+          "sr_native": 48000,
+          "out_rms_db": -17.082287224106597,
+          "mix_rms_db": -17.082287224106597,
+          "out_minus_mix_db": 0.0,
+          "ret_low_40_150_db": 0.0,
+          "ret_mid_150_2k_db": 0.0,
+          "ret_click_2k_9k_db": 0.0,
+          "vad_speech_sec_gt02": 6.496,
+          "vad_speech_sec_gt02_mix": 6.496
+        },
+        {
+          "clip": "c5_announcer_end",
+          "method": "clapsep",
+          "sr_native": 32000,
+          "out_rms_db": -20.173986599346172,
+          "mix_rms_db": -17.082287224106597,
+          "out_minus_mix_db": -3.0916993752395747,
+          "ret_low_40_150_db": -0.10999172189597672,
+          "ret_mid_150_2k_db": -3.3972668482062858,
+          "ret_click_2k_9k_db": -7.456624749813706,
+          "vad_speech_sec_gt02": 1.344,
+          "vad_speech_sec_gt02_mix": 6.496
+        },
+        {
+          "clip": "c5_announcer_end",
+          "method": "soloaudio",
+          "sr_native": 24000,
+          "out_rms_db": -56.45637339900318,
+          "mix_rms_db": -17.082287224106597,
+          "out_minus_mix_db": -39.37408617489659,
+          "ret_low_40_150_db": -36.530038996593404,
+          "ret_mid_150_2k_db": -41.5991487335993,
+          "ret_click_2k_9k_db": -33.236647470602904,
+          "vad_speech_sec_gt02": 0.16,
+          "vad_speech_sec_gt02_mix": 6.496
+        },
+        {
+          "clip": "c5_announcer_end",
+          "method": "specialist",
+          "sr_native": 48000,
+          "out_rms_db": -22.55224614006995,
+          "mix_rms_db": -17.082287224106597,
+          "out_minus_mix_db": -5.469958915963353,
+          "ret_low_40_150_db": -4.229365176356257,
+          "ret_mid_150_2k_db": -5.828183721812394,
+          "ret_click_2k_9k_db": -3.8445778115859994,
+          "vad_speech_sec_gt02": 6.752,
+          "vad_speech_sec_gt02_mix": 6.496
+        },
+        {
+          "clip": "c6_dense_golden",
+          "method": "raw",
+          "sr_native": 48000,
+          "out_rms_db": -20.318559663011136,
+          "mix_rms_db": -20.318559663011136,
+          "out_minus_mix_db": 0.0,
+          "ret_low_40_150_db": 0.0,
+          "ret_mid_150_2k_db": 0.0,
+          "ret_click_2k_9k_db": 0.0,
+          "coherence_ref_100_4k": 0.01292101723588514,
+          "musicframe_level_change_db": 0.0,
+          "vad_speech_sec_gt02": 0.48,
+          "vad_speech_sec_gt02_mix": 0.48
+        },
+        {
+          "clip": "c6_dense_golden",
+          "method": "clapsep",
+          "sr_native": 32000,
+          "out_rms_db": -24.004015773700424,
+          "mix_rms_db": -20.318559663011136,
+          "out_minus_mix_db": -3.6854561106892874,
+          "ret_low_40_150_db": -30.6380297480882,
+          "ret_mid_150_2k_db": -3.2977312002185855,
+          "ret_click_2k_9k_db": -0.29845279150159243,
+          "coherence_ref_100_4k": 0.007877545184923446,
+          "musicframe_level_change_db": -12.589372652613324,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.48
+        },
+        {
+          "clip": "c6_dense_golden",
+          "method": "audiosep",
+          "sr_native": 32000,
+          "out_rms_db": -25.12214294495285,
+          "mix_rms_db": -20.318559663011136,
+          "out_minus_mix_db": -4.803583281941712,
+          "ret_low_40_150_db": -21.55069215105899,
+          "ret_mid_150_2k_db": -4.645523589140222,
+          "ret_click_2k_9k_db": -1.0824540176253379,
+          "coherence_ref_100_4k": 0.005684074429881657,
+          "musicframe_level_change_db": -24.587495572467798,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.48
+        },
+        {
+          "clip": "c6_dense_golden",
+          "method": "soloaudio",
+          "sr_native": 24000,
+          "out_rms_db": -107.5071803483433,
+          "mix_rms_db": -20.318559663011136,
+          "out_minus_mix_db": -87.18862068533215,
+          "ret_low_40_150_db": -93.65930287300908,
+          "ret_mid_150_2k_db": -95.57823451061051,
+          "ret_click_2k_9k_db": -90.19053062562367,
+          "coherence_ref_100_4k": 0.001718135072338942,
+          "musicframe_level_change_db": -94.54962636240951,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.48
+        },
+        {
+          "clip": "c6_dense_golden",
+          "method": "specialist",
+          "sr_native": 48000,
+          "out_rms_db": -21.135168456229465,
+          "mix_rms_db": -20.318559663011136,
+          "out_minus_mix_db": -0.8166087932183288,
+          "ret_low_40_150_db": -0.8086184781127486,
+          "ret_mid_150_2k_db": -0.9399414621775257,
+          "ret_click_2k_9k_db": -0.5195953343945163,
+          "coherence_ref_100_4k": 0.008010895583734204,
+          "musicframe_level_change_db": -1.4922389195080186,
+          "vad_speech_sec_gt02": 0.096,
+          "vad_speech_sec_gt02_mix": 0.48
+        },
+        {
+          "clip": "c7_weak_taps",
+          "method": "raw",
+          "sr_native": 48000,
+          "out_rms_db": -17.984296664397895,
+          "mix_rms_db": -17.984296664397895,
+          "out_minus_mix_db": 0.0,
+          "ret_low_40_150_db": 0.0,
+          "ret_mid_150_2k_db": 0.0,
+          "ret_click_2k_9k_db": 0.0,
+          "coherence_ref_100_4k": 0.015298383168523824,
+          "musicframe_level_change_db": 0.0,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c7_weak_taps",
+          "method": "clapsep",
+          "sr_native": 32000,
+          "out_rms_db": -23.90446479095839,
+          "mix_rms_db": -17.984296664397895,
+          "out_minus_mix_db": -5.920168126560494,
+          "ret_low_40_150_db": -8.870563109955885,
+          "ret_mid_150_2k_db": -4.56662055060357,
+          "ret_click_2k_9k_db": -0.6902406340839917,
+          "coherence_ref_100_4k": 0.013272928487963983,
+          "musicframe_level_change_db": -6.804964381650482,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c7_weak_taps",
+          "method": "soloaudio",
+          "sr_native": 24000,
+          "out_rms_db": -107.5712512353026,
+          "mix_rms_db": -17.984296664397895,
+          "out_minus_mix_db": -89.58695457090471,
+          "ret_low_40_150_db": -99.15100751996508,
+          "ret_mid_150_2k_db": -96.61549332367349,
+          "ret_click_2k_9k_db": -86.4799067745829,
+          "coherence_ref_100_4k": 0.00395030784952571,
+          "musicframe_level_change_db": -98.87860048313786,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c7_weak_taps",
+          "method": "specialist",
+          "sr_native": 48000,
+          "out_rms_db": -18.690690936350528,
+          "mix_rms_db": -17.984296664397895,
+          "out_minus_mix_db": -0.7063942719526324,
+          "ret_low_40_150_db": -0.5333554946650807,
+          "ret_mid_150_2k_db": -0.92018980971595,
+          "ret_click_2k_9k_db": -0.4769993984528256,
+          "coherence_ref_100_4k": 0.008926192485606334,
+          "musicframe_level_change_db": -0.9285638863476748,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c8_slide_friction",
+          "method": "raw",
+          "sr_native": 48000,
+          "out_rms_db": -16.842628073144738,
+          "mix_rms_db": -16.842628073144738,
+          "out_minus_mix_db": 0.0,
+          "ret_low_40_150_db": 0.0,
+          "ret_mid_150_2k_db": 0.0,
+          "ret_click_2k_9k_db": 0.0,
+          "coherence_ref_100_4k": 0.018166122303800235,
+          "musicframe_level_change_db": 0.0,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c8_slide_friction",
+          "method": "clapsep",
+          "sr_native": 32000,
+          "out_rms_db": -20.96274088156486,
+          "mix_rms_db": -16.842628073144738,
+          "out_minus_mix_db": -4.120112808420121,
+          "ret_low_40_150_db": -18.11320958602137,
+          "ret_mid_150_2k_db": -2.308946447298805,
+          "ret_click_2k_9k_db": -0.27166515456620743,
+          "coherence_ref_100_4k": 0.0181040407584313,
+          "musicframe_level_change_db": -1.4676934475419685,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c8_slide_friction",
+          "method": "soloaudio",
+          "sr_native": 24000,
+          "out_rms_db": -31.081520331275854,
+          "mix_rms_db": -16.842628073144738,
+          "out_minus_mix_db": -14.238892258131116,
+          "ret_low_40_150_db": -11.649669891070822,
+          "ret_mid_150_2k_db": -17.475023715524756,
+          "ret_click_2k_9k_db": -22.95721952814471,
+          "coherence_ref_100_4k": 0.004472940046596187,
+          "musicframe_level_change_db": -99.93571942083966,
+          "vad_speech_sec_gt02": 0.064,
+          "vad_speech_sec_gt02_mix": 0.0
+        },
+        {
+          "clip": "c8_slide_friction",
+          "method": "specialist",
+          "sr_native": 48000,
+          "out_rms_db": -17.66956387099291,
+          "mix_rms_db": -16.842628073144738,
+          "out_minus_mix_db": -0.8269357978481722,
+          "ret_low_40_150_db": -0.6412886270948093,
+          "ret_mid_150_2k_db": -1.0262529536442813,
+          "ret_click_2k_9k_db": -0.6455426954938197,
+          "coherence_ref_100_4k": 0.01040917054670469,
+          "musicframe_level_change_db": -1.2893128185317693,
+          "vad_speech_sec_gt02": 0.0,
+          "vad_speech_sec_gt02_mix": 0.0
+        }
+      ]
+    }
+  },
+  "output_inventory": [
+    {
+      "file": "outputs\\audio\\audiosep_p2_c1_speech_npc_a_residual.wav",
+      "bytes": 1024080,
+      "sha256": "db62dffcdf76e798c9039aca609a501eab478df240d43db726c0dd6d0e487ec2"
+    },
+    {
+      "file": "outputs\\audio\\audiosep_p2_c1_speech_npc_a_target.wav",
+      "bytes": 1024080,
+      "sha256": "dd0b861564b1c652187f19ee9dfa9219ba3a9c72c621cb7b7983bf0a2040e493"
+    },
+    {
+      "file": "outputs\\audio\\audiosep_p2_c2_speech_npc_b_residual.wav",
+      "bytes": 1024080,
+      "sha256": "089a839142ccfd33e8d0e20c04161f2ba093c210e745e44232f33734da8d47db"
+    },
+    {
+      "file": "outputs\\audio\\audiosep_p2_c2_speech_npc_b_target.wav",
+      "bytes": 1024080,
+      "sha256": "f4a09b3f30522db89885ed7ed6b88c94e091490b8f86b52d5275f1534d440e4e"
+    },
+    {
+      "file": "outputs\\audio\\audiosep_p2_c3_taiko_prompt_residual.wav",
+      "bytes": 640080,
+      "sha256": "f1fa17a26a297ee69ba20ce8a907c6491427a6be9bbc92ffa87579e7369f9537"
+    },
+    {
+      "file": "outputs\\audio\\audiosep_p2_c3_taiko_prompt_target.wav",
+      "bytes": 640080,
+      "sha256": "6e2847eeda6c3803f7f9e0a41c24ac9d05226b9ae65d35392ebce6122b2b4885"
+    },
+    {
+      "file": "outputs\\audio\\audiosep_p2_c6_dense_golden_residual.wav",
+      "bytes": 1920080,
+      "sha256": "3146f10fe77a361cb1de212d15a54ae106760d9b9dd23a9557d163494a6fa4af"
+    },
+    {
+      "file": "outputs\\audio\\audiosep_p2_c6_dense_golden_target.wav",
+      "bytes": 1920080,
+      "sha256": "f7979fe15319fc3ac73696d229789934ad2568416d1f4433906d59c405487dd7"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c1_speech_npc_a_residual.wav",
+      "bytes": 1024080,
+      "sha256": "492825f4116ebbee16a1b21e36060fd1c8ce2f6b86b864bb3641a0e7f05d8525"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c1_speech_npc_a_target.wav",
+      "bytes": 1024080,
+      "sha256": "d936cf6a83ce2d904a2aea5bf8e15e4d34994f03f7659b44a78edd6ce8d69f66"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c2_speech_npc_b_residual.wav",
+      "bytes": 1024080,
+      "sha256": "12d3dd72e233ef76d71897c7595746d19ea014ba0252d748be0b4abe91849d35"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c2_speech_npc_b_target.wav",
+      "bytes": 1024080,
+      "sha256": "61399d1347bb9cfaa907c65c8fae7a08fe40044a3c02b002e4640d53b1cf7aba"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c3_taiko_prompt_residual.wav",
+      "bytes": 640080,
+      "sha256": "b9590ad5bf4510401d395baeb7f3aa95286d6c950b688c5ceeba8d811cc3c521"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c3_taiko_prompt_target.wav",
+      "bytes": 640080,
+      "sha256": "08c8a674e905eda4ceb563d7afe5a5d8140cbdd368bfa93fbef433a7a4476909"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c4_ambience_start_residual.wav",
+      "bytes": 768080,
+      "sha256": "f8bb65f9ab63d7e627df54de3d6fed1f9da136512dc047ec2803459a5f769e1c"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c4_ambience_start_target.wav",
+      "bytes": 768080,
+      "sha256": "93f747dfa4162bacbde9179eef5da088743800d8fd5312309512a99dbf79d66f"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c5_announcer_end_residual.wav",
+      "bytes": 896080,
+      "sha256": "1272ccb02b6ce028707450d8049ba310a69e04079d950d7b27c606da159fc642"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c5_announcer_end_target.wav",
+      "bytes": 896080,
+      "sha256": "917232f5e9f76c0c497a1ee5367075db69b6fe2c3194f0fce78202838eb975d9"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c6_dense_golden_residual.wav",
+      "bytes": 1920080,
+      "sha256": "cbbe69d93dc87fd50cfee6c38b18dfa9c6a5d8657149282dab60884002340f7f"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c6_dense_golden_target.wav",
+      "bytes": 1920080,
+      "sha256": "16ea5b2a028e247bbef0afc3d01203f4c824203c9c54370cbba985bf711ac900"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c7_weak_taps_residual.wav",
+      "bytes": 768080,
+      "sha256": "c3e7e965a073d4644605b14c001d19a67eff6a66c0bb3db3244775afc39b2889"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c7_weak_taps_target.wav",
+      "bytes": 768080,
+      "sha256": "9b0d99a8683b8bc7e29930d2fe96b2e9eda222b758efb1968001227a6639253a"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c8_slide_friction_residual.wav",
+      "bytes": 768080,
+      "sha256": "4fd143e11aa92dbf077b5f61294e96051b9f2c26782b81cea6bd07150b47baeb"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_aq_c8_slide_friction_target.wav",
+      "bytes": 768080,
+      "sha256": "7c160ada6cb30a6b6e6bfedf951883abd66c8664863984beef6f5b8074219c65"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_tx_c1_speech_npc_a_residual.wav",
+      "bytes": 1024080,
+      "sha256": "9ace8d1e343ab69354e80a6404ad5c5f5e874e5d3e38bde513b77758bbda3841"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_tx_c1_speech_npc_a_target.wav",
+      "bytes": 1024080,
+      "sha256": "ee10f16a389ebc9c9a77b6dc61aa156761eac38ad2195d1127e11af03cec2946"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_tx_c2_speech_npc_b_residual.wav",
+      "bytes": 1024080,
+      "sha256": "87ab1f99cec2821bc72a35c015a9420bad3624793732652af474da979da61328"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_tx_c2_speech_npc_b_target.wav",
+      "bytes": 1024080,
+      "sha256": "bf5cca64bac1e3e1b3dac14d3e22de305663d205cc3a6abf1efe75a3347a77e2"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_tx_c3_taiko_prompt_residual.wav",
+      "bytes": 640080,
+      "sha256": "6df5d048f4e8a3388550327726a6d9411638b07ca486288d146fc09f7a1719c0"
+    },
+    {
+      "file": "outputs\\audio\\clapsep_tx_c3_taiko_prompt_target.wav",
+      "bytes": 640080,
+      "sha256": "a8f1cf86a95b664b9e75f82d2211a315f1cc66d803a1476d9cc04e0d61e969f7"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c1_speech_npc_a_target.wav",
+      "bytes": 768080,
+      "sha256": "da9dd6ae8afa7c82203ec3e001ebc666ac8c19f7927577a957382b9cf692e7d5"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c2_speech_npc_b_target.wav",
+      "bytes": 768080,
+      "sha256": "1819873ad111a5549cb97b67ee3267ea5f816d4affcf1de63a2e363c6902127c"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c3_taiko_prompt_target.wav",
+      "bytes": 480080,
+      "sha256": "2fd5e2b4e105dad79a2610aaabb83ec9b7a52e8cfb96ae7ba4cb172aabf4bb07"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c4_ambience_start_target.wav",
+      "bytes": 576080,
+      "sha256": "32c4f96063f73de4d1f561f52f95b3e891909ceff89bd7ffc1b2b013eab2e0e7"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c5_announcer_end_target.wav",
+      "bytes": 672080,
+      "sha256": "0e525ff5f6bfab73a1543ac52fce6c35e76149d61568f9be0ef5b37b2d277a6d"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c6_dense_golden_target.wav",
+      "bytes": 1440080,
+      "sha256": "122d58f3a62c905d9f69afcd529bee5ca8ba5bb6a1741fc0dbccf0c8702e1d57"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c7_weak_taps_target.wav",
+      "bytes": 576080,
+      "sha256": "091d1192ee466d890fb00718239b9bbef79a5a72fe7ca1ddc8dd1e559209b5aa"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_aq_c8_slide_friction_target.wav",
+      "bytes": 576080,
+      "sha256": "0e78c5b9c82998dcb18e9abc25e67768f47a5a73fcf4cd36774134308f27b16d"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_tx_c1_speech_npc_a_target.wav",
+      "bytes": 768080,
+      "sha256": "2dc2d334987cbab9f5bfa2b06ad947d37417555e8a2e6e529c3866c32c5bd6be"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_tx_c2_speech_npc_b_target.wav",
+      "bytes": 768080,
+      "sha256": "62699ad94fc55029fc4eb9b284d9aedd56230171736739e2c33dcfb808cd41a6"
+    },
+    {
+      "file": "outputs\\audio\\soloaudio_tx_c3_taiko_prompt_target.wav",
+      "bytes": 480080,
+      "sha256": "4c4be94d47cd1ba838c61deceff9a9b836dbd3f0fd3a806f66619e3a9d444587"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c1_speech_npc_a_target.wav",
+      "bytes": 1536080,
+      "sha256": "b7ce164b0421ffeae68c2511d58b4ca05d4f95ca68e485f1552eae5781e80ab7"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c1_speech_npc_a_target_32k.wav",
+      "bytes": 1024080,
+      "sha256": "1bdf51c14a3699e3393ab0a5ced37358c4cafc51e3ee815ebc1a6de2b7199590"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c2_speech_npc_b_target.wav",
+      "bytes": 1536080,
+      "sha256": "55280f690831abcfab98587cc23aa5f8837ebd7d06e05c04281c796e889a9cbd"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c2_speech_npc_b_target_32k.wav",
+      "bytes": 1024080,
+      "sha256": "58e3068faa15cf10095727e38b479d018a6176f7b23ecd1fe8a074ba44f4e94e"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c3_taiko_prompt_target.wav",
+      "bytes": 960080,
+      "sha256": "4514520757ad644af1d0ac6e4092764dd8f64cef2db5238be6a5344d5550f603"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c3_taiko_prompt_target_32k.wav",
+      "bytes": 640080,
+      "sha256": "6309d602816ab13c1b022810db9698cb308be5fd7965e327e632b24fb349db6d"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c4_ambience_start_target.wav",
+      "bytes": 1152080,
+      "sha256": "6d756757edbe2265db08293e32c4b18a7d388e18b1deb12ca675dfa301d426a2"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c4_ambience_start_target_32k.wav",
+      "bytes": 768080,
+      "sha256": "d991ec69860aac1d6182f95c84dc640e52acbf7a2f579d69224a2081ccda0a0b"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c5_announcer_end_target.wav",
+      "bytes": 1344080,
+      "sha256": "dc7a71618aa9aa0818fcfbc0d24bd9615349d319623b276dfa090d86a94164df"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c5_announcer_end_target_32k.wav",
+      "bytes": 896080,
+      "sha256": "8ed5de88b6236042dc298eca714cf09a89d19cf0a287c63e703339bc5528177f"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c6_dense_golden_target.wav",
+      "bytes": 2880080,
+      "sha256": "84930c7ed12f9d226a1537bca5872cc65bbf911cab73739d9ef9d395005f7d4e"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c6_dense_golden_target_32k.wav",
+      "bytes": 1920080,
+      "sha256": "4aec32d469cd46c8e58da81c77fd9896309f0d93b3d6f0aa35a6cafa67fd9760"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c7_weak_taps_target.wav",
+      "bytes": 1152080,
+      "sha256": "c64fe5ed38a3cf9ba267ab0095d57f777d3bc745c1c020240313f2a0c86c09b4"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c7_weak_taps_target_32k.wav",
+      "bytes": 768080,
+      "sha256": "d348ff3ac86fff4d73088e6cce5637f6230eaa7d1fcd7184cb4e114ee411c28e"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c8_slide_friction_target.wav",
+      "bytes": 1152080,
+      "sha256": "b3217baf02a10fa523436adc85d44cdbcda9e7555d0dcf94d95f2aa423e01185"
+    },
+    {
+      "file": "outputs\\audio\\specialist_c8_slide_friction_target_32k.wav",
+      "bytes": 768080,
+      "sha256": "28be3253019d680620932e3b067ac3473d64c73cf9d9590467eb16b567c296c2"
+    },
+    {
+      "file": "clips\\audio\\c1_speech_npc_a_32k_mono.wav",
+      "bytes": 1024080,
+      "sha256": "a739861647e7fa0e20a731932efbb1f3340f3065535e0c664d465edefa01a2bd"
+    },
+    {
+      "file": "clips\\audio\\c1_speech_npc_a_48k_stereo.wav",
+      "bytes": 3072088,
+      "sha256": "cdea9ce5d3a1133f06dd93f7a85bd753ebea29b53c1be32ccdfdaa531771556c"
+    },
+    {
+      "file": "clips\\audio\\c2_speech_npc_b_32k_mono.wav",
+      "bytes": 1024080,
+      "sha256": "bc8393c5a16249d8214dad7fccdc7e891b597d6cfbac21f6adb9d2089b30037a"
+    },
+    {
+      "file": "clips\\audio\\c2_speech_npc_b_48k_stereo.wav",
+      "bytes": 3072088,
+      "sha256": "1ccb90985898d8f684e4aacb39f8b6c6e21a9a1d932a217c29854d1006688aac"
+    },
+    {
+      "file": "clips\\audio\\c3_taiko_prompt_32k_mono.wav",
+      "bytes": 640080,
+      "sha256": "aa591b509003033a6ad033a6f0985f623f8ecc728e26d7dc2e0dababa072c45f"
+    },
+    {
+      "file": "clips\\audio\\c3_taiko_prompt_48k_stereo.wav",
+      "bytes": 1920088,
+      "sha256": "507b070b16a2464eac7dd3ba61446d1396388483c6fed772c7aa8bb1ac6b973d"
+    },
+    {
+      "file": "clips\\audio\\c4_ambience_start_32k_mono.wav",
+      "bytes": 768080,
+      "sha256": "88991a3a72f0cc59cd69e65284e05a060e630d217a08ce032d3cab0037873717"
+    },
+    {
+      "file": "clips\\audio\\c4_ambience_start_48k_stereo.wav",
+      "bytes": 2304088,
+      "sha256": "7f2f676ace49f528f064390e1de757e81e7f12187bb2f00f9b0490f81090a514"
+    },
+    {
+      "file": "clips\\audio\\c5_announcer_end_32k_mono.wav",
+      "bytes": 896080,
+      "sha256": "6a17928992bf7b0fbc139f0bf8e63b884140fb824164f5a55014bc36f8a4fd80"
+    },
+    {
+      "file": "clips\\audio\\c5_announcer_end_48k_stereo.wav",
+      "bytes": 2688088,
+      "sha256": "6929f4c5c9ac60ca765c92f5c49b585b78de8f0578636607dd117c49014ad532"
+    },
+    {
+      "file": "clips\\audio\\c6_dense_golden_32k_mono.wav",
+      "bytes": 1920080,
+      "sha256": "65a19a8a71d09795aa184f2acb717df610c1d1e96d6ca9dfbcef6ba49ef931a9"
+    },
+    {
+      "file": "clips\\audio\\c6_dense_golden_48k_stereo.wav",
+      "bytes": 5760088,
+      "sha256": "a42f67736ea75528a859306238dcf9635579b301fd431936952bed618aba5cd1"
+    },
+    {
+      "file": "clips\\audio\\c7_weak_taps_32k_mono.wav",
+      "bytes": 768080,
+      "sha256": "7d8d31220b37869ed818132563c0a66cd3afb75d63d421917f257bd99e11c887"
+    },
+    {
+      "file": "clips\\audio\\c7_weak_taps_48k_stereo.wav",
+      "bytes": 2304088,
+      "sha256": "983fa62ed19b5da0f09aaea1a52c532f2337c7409b6a76688de5038914186520"
+    },
+    {
+      "file": "clips\\audio\\c8_slide_friction_32k_mono.wav",
+      "bytes": 768080,
+      "sha256": "8aba708890b7c338112705ec53bd599c48e841fda4c7138b7f6ee050292582e1"
+    },
+    {
+      "file": "clips\\audio\\c8_slide_friction_48k_stereo.wav",
+      "bytes": 2304088,
+      "sha256": "e8c1ec32cf2aaaab3d862659a465f867ec088097955b11830bf36edee7d67d8a"
+    }
+  ],
+  "listening_pack": {
+    "items": 36,
+    "seed": 20260910,
+    "key": "listening_pack/listening_key.json",
+    "level_policy": "peak-normalized to -3 dBFS for pack only; gains in key; raw outputs unmodified in outputs/audio"
+  },
+  "access_status": {
+    "SAM-Audio": "BLOCKED - gated(manual) checkpoint, anonymous file resolve HTTP 401 (re-verified 2026-09-10); no HF auth on machine; not bypassed",
+    "FlowSep": "BLOCKED - checkpoint only via Zenodo record 13869712; zenodo.org unreachable from this network (connection failure)",
+    "FlowSep-2": "UNAVAILABLE - demo page only; official README states code not released",
+    "SoloAudio": "RAN - westbrook/SoloAudio v2 public checkpoints",
+    "CLAPSep": "RAN - official checkpoints already local (r3)",
+    "AudioSep": "RAN - official checkpoint already local (r2); historical baseline",
+    "S0-Specialist": "RAN - deterministic DSP pipeline (this stage)"
+  },
+  "gain_policy": "No output normalization in any method output; the only level changes are (a) CLAPSep official 0.9-peak protocol rescale, undone to input domain; (b) AudioSep pad->infer->trim boundary workaround (content unchanged); (c) listening pack peak normalization, documented per item in the key.",
+  "no_training": "Phase 1 is frozen pretrained inference only; no fine-tuning, no training, no new field capture, no vision, no chart gating."
+}

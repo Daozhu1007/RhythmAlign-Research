@@ -1,0 +1,59 @@
+{
+ "experiment": "R5 contact candidate detector",
+ "video_decode": "ffmpeg transpose=2 (upright), scale 960x540, rgb24",
+ "fps": 60.04,
+ "geometry_px_960x540": {
+  "jz_band_upper": [
+   250,
+   165,
+   900,
+   305
+  ],
+  "jz_low": [
+   400,
+   380,
+   700,
+   500
+  ],
+  "glass_ellipse": {
+   "c": [
+    512.0,
+    272.0
+   ],
+   "ab": [
+    330.0,
+    155.0
+   ],
+   "scale": 0.92
+  },
+  "hand_band_y0": 330
+ },
+ "masks": {
+  "warm_text": "r>150 & g>140 & b<0.6*min(r,g) & |r-g|<45  (skin-resistant)",
+  "white_text": "r>200 & g>200 & b>180",
+  "glass_bright": "gray>200 inside glass ellipse"
+ },
+ "features": {
+  "jz_text": "warm_count + white_count in judgment zones (text evidence)",
+  "jz_diff": "mean |gray_t - gray_t-1| in judgment zones",
+  "glass_bright": "count gray>200 in glass ellipse (hit-effect flash)",
+  "hand_diff": "mean |gray diff| in y>=330 band (hand/arm motion)"
+ },
+ "config": {
+  "smooth_frames": 3,
+  "rise_frames": 2,
+  "w_jz_text": 1.8,
+  "w_jz_diff": 1.5,
+  "w_glass_bright": 1.0,
+  "w_hand_diff": 0.3,
+  "threshold": 0.4,
+  "slope_min": 0.15,
+  "min_dist_frames": 3,
+  "norm_pct": 99.5,
+  "novelty_clip": 2.5
+ },
+ "tuning_provenance": "dev only: 5-threshold sweep -> thr x slope sweep -> one weight revision; no holdout used",
+ "frozen": true,
+ "frozen_at": "2026-09-09 02:35:00",
+ "freeze_note": "Detector frozen after dev-only tuning. No parameter may be changed after this point based on holdout results."
+}

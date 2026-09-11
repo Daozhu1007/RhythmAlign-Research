@@ -1,0 +1,70 @@
+{
+  "torch": "2.14.0+cu126",
+  "device": "cuda",
+  "checkpoint": "D:\\Code\\RhythmAlign\\experiments\\r2_target_separation\\checkpoints\\audiosep_base_4M_steps.ckpt",
+  "clap_checkpoint": "D:\\Code\\RhythmAlign\\experiments\\r2_target_separation\\checkpoints\\music_speech_audioset_epoch_15_esc_89.98.pt",
+  "chunk_inference_config": {
+    "NL": 1.0,
+    "NC": 3.0,
+    "NR": 1.0,
+    "RATE": 32000
+  },
+  "runs": [
+    {
+      "name": "audiosep_raw_p1",
+      "input": "D:\\Code\\RhythmAlign\\experiments\\r1_golden_sample\\outputs\\golden_raw.wav",
+      "input_tag": "raw",
+      "prompt": "percussive taps",
+      "prompt_id": "p1",
+      "sr": 32000,
+      "channels": 1,
+      "mixture_rms_db": -20.34699249267578,
+      "target_rms_db": -24.058454513549805,
+      "residual_rms_db": -24.653329849243164,
+      "target_peak": 1.0537312030792236,
+      "cuda_peak_mib": 1598.6
+    },
+    {
+      "name": "audiosep_raw_p2",
+      "input": "D:\\Code\\RhythmAlign\\experiments\\r1_golden_sample\\outputs\\golden_raw.wav",
+      "input_tag": "raw",
+      "prompt": "finger taps and button presses on a rhythm game cabinet",
+      "prompt_id": "p2",
+      "sr": 32000,
+      "channels": 1,
+      "mixture_rms_db": -20.34699249267578,
+      "target_rms_db": -24.75801658630371,
+      "residual_rms_db": -23.860126495361328,
+      "target_peak": 1.0519882440567017,
+      "cuda_peak_mib": 1598.6
+    },
+    {
+      "name": "audiosep_a2_p1",
+      "input": "D:\\Code\\RhythmAlign\\experiments\\r1_golden_sample\\outputs\\A2_residual.wav",
+      "input_tag": "a2",
+      "prompt": "percussive taps",
+      "prompt_id": "p1",
+      "sr": 32000,
+      "channels": 1,
+      "mixture_rms_db": -20.85317611694336,
+      "target_rms_db": -24.33060073852539,
+      "residual_rms_db": -24.966594696044922,
+      "target_peak": 1.060795783996582,
+      "cuda_peak_mib": 1598.6
+    },
+    {
+      "name": "audiosep_a2_p2",
+      "input": "D:\\Code\\RhythmAlign\\experiments\\r1_golden_sample\\outputs\\A2_residual.wav",
+      "input_tag": "a2",
+      "prompt": "finger taps and button presses on a rhythm game cabinet",
+      "prompt_id": "p2",
+      "sr": 32000,
+      "channels": 1,
+      "mixture_rms_db": -20.85317611694336,
+      "target_rms_db": -24.88576889038086,
+      "residual_rms_db": -24.376094818115234,
+      "target_peak": 1.0516711473464966,
+      "cuda_peak_mib": 1598.6
+    }
+  ]
+}

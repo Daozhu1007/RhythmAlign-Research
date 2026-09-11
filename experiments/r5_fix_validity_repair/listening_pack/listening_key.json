@@ -1,0 +1,31 @@
+{
+ "phase": "R5-FIX blind listening pack (Holdout-D, 18 s each)",
+ "seed": 20260909,
+ "warning": "评分完成前不要打开本文件。",
+ "files": {
+  "L01.wav": {
+   "identity": "oracle_C1_old_final",
+   "description": "Holdout-D oracle 时序 + 历史（缺陷）C1，最终混音"
+  },
+  "L02.wav": {
+   "identity": "baseline_raw_final",
+   "description": "当前基线（门控关闭）：0.5 对齐音乐 + 0.5 原始录音"
+  },
+  "L03.wav": {
+   "identity": "oracle_C1_fixed_final",
+   "description": "Holdout-D oracle 时序 + 修正版 C1，最终混音"
+  },
+  "L04.wav": {
+   "identity": "E0_C1_old_final",
+   "description": "R5.5 E0 自动时序 + 历史（缺陷）C1，最终混音"
+  },
+  "L05.wav": {
+   "identity": "music_only",
+   "description": "纯对齐音乐锚点（0.5 增益）"
+  },
+  "L06.wav": {
+   "identity": "E0_C1_fixed_final",
+   "description": "R5.5 E0 自动时序 + 修正版 C1，最终混音"
+  }
+ }
+}

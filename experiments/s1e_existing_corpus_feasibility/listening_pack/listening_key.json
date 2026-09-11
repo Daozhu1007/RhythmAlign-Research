@@ -1,0 +1,294 @@
+{
+  "seed": 20260910,
+  "note": "Do NOT open before rating. Deterministic shuffle; peak-normalized to -3 dBFS for blind comparability only.",
+  "mapping": [
+    {
+      "item": "item_01.wav",
+      "clip": "c8_slide_friction",
+      "method": "specialist",
+      "sr": 48000,
+      "peak_gain_applied": 0.7180889979543885,
+      "orig_peak": 0.9858747124671936
+    },
+    {
+      "item": "item_02.wav",
+      "clip": "c6_dense_golden",
+      "method": "audiosep",
+      "sr": 32000,
+      "peak_gain_applied": 0.6792680609609404,
+      "orig_peak": 1.042218565940857
+    },
+    {
+      "item": "item_03.wav",
+      "clip": "c5_announcer_end",
+      "method": "clapsep",
+      "sr": 32000,
+      "peak_gain_applied": 1.297972760652421,
+      "orig_peak": 0.545424222946167
+    },
+    {
+      "item": "item_04.wav",
+      "clip": "c7_weak_taps",
+      "method": "raw",
+      "sr": 48000,
+      "peak_gain_applied": 0.7072360281881991,
+      "orig_peak": 1.0010035634040833
+    },
+    {
+      "item": "item_05.wav",
+      "clip": "c2_speech_npc_b",
+      "method": "clapsep",
+      "sr": 32000,
+      "peak_gain_applied": 0.6818215882915372,
+      "orig_peak": 1.0383152961730957
+    },
+    {
+      "item": "item_06.wav",
+      "clip": "c3_taiko_prompt",
+      "method": "soloaudio",
+      "sr": 24000,
+      "peak_gain_applied": 4.211030652306072,
+      "orig_peak": 0.1681169867515564
+    },
+    {
+      "item": "item_07.wav",
+      "clip": "c6_dense_golden",
+      "method": "specialist",
+      "sr": 48000,
+      "peak_gain_applied": 0.6900041793400111,
+      "orig_peak": 1.0260021686553955
+    },
+    {
+      "item": "item_08.wav",
+      "clip": "c7_weak_taps",
+      "method": "soloaudio",
+      "sr": 24000,
+      "peak_gain_applied": 27547.081159391917,
+      "orig_peak": 2.5699484467622824e-05
+    },
+    {
+      "item": "item_09.wav",
+      "clip": "c1_speech_npc_a",
+      "method": "soloaudio",
+      "sr": 24000,
+      "peak_gain_applied": 7.876646273566648,
+      "orig_peak": 0.08987908810377121
+    },
+    {
+      "item": "item_10.wav",
+      "clip": "c1_speech_npc_a",
+      "method": "clapsep",
+      "sr": 32000,
+      "peak_gain_applied": 0.7289720804776362,
+      "orig_peak": 0.9711562395095825
+    },
+    {
+      "item": "item_11.wav",
+      "clip": "c3_taiko_prompt",
+      "method": "specialist",
+      "sr": 48000,
+      "peak_gain_applied": 0.6965611400491893,
+      "orig_peak": 1.0163440704345703
+    },
+    {
+      "item": "item_12.wav",
+      "clip": "c8_slide_friction",
+      "method": "raw",
+      "sr": 48000,
+      "peak_gain_applied": 0.694686905007122,
+      "orig_peak": 1.0190861225128174
+    },
+    {
+      "item": "item_13.wav",
+      "clip": "c5_announcer_end",
+      "method": "raw",
+      "sr": 48000,
+      "peak_gain_applied": 0.7163818761955687,
+      "orig_peak": 0.9882240295410156
+    },
+    {
+      "item": "item_14.wav",
+      "clip": "c2_speech_npc_b",
+      "method": "specialist",
+      "sr": 48000,
+      "peak_gain_applied": 0.7260626691597574,
+      "orig_peak": 0.975047767162323
+    },
+    {
+      "item": "item_15.wav",
+      "clip": "c5_announcer_end",
+      "method": "soloaudio",
+      "sr": 24000,
+      "peak_gain_applied": 22.554720169258985,
+      "orig_peak": 0.031387921422719955
+    },
+    {
+      "item": "item_16.wav",
+      "clip": "c4_ambience_start",
+      "method": "raw",
+      "sr": 48000,
+      "peak_gain_applied": 0.7214856031258029,
+      "orig_peak": 0.9812334179878235
+    },
+    {
+      "item": "item_17.wav",
+      "clip": "c6_dense_golden",
+      "method": "clapsep",
+      "sr": 32000,
+      "peak_gain_applied": 0.6524543197410713,
+      "orig_peak": 1.085050344467163
+    },
+    {
+      "item": "item_18.wav",
+      "clip": "c8_slide_friction",
+      "method": "soloaudio",
+      "sr": 24000,
+      "peak_gain_applied": 1.3572043397346496,
+      "orig_peak": 0.5216206312179565
+    },
+    {
+      "item": "item_19.wav",
+      "clip": "c7_weak_taps",
+      "method": "clapsep",
+      "sr": 32000,
+      "peak_gain_applied": 0.7463378485649287,
+      "orig_peak": 0.9485594034194946
+    },
+    {
+      "item": "item_20.wav",
+      "clip": "c4_ambience_start",
+      "method": "soloaudio",
+      "sr": 24000,
+      "peak_gain_applied": 0.8553621374247536,
+      "orig_peak": 0.8276562094688416
+    },
+    {
+      "item": "item_21.wav",
+      "clip": "c3_taiko_prompt",
+      "method": "audiosep",
+      "sr": 32000,
+      "peak_gain_applied": 0.7714531192829781,
+      "orig_peak": 0.9176782965660095
+    },
+    {
+      "item": "item_22.wav",
+      "clip": "c8_slide_friction",
+      "method": "clapsep",
+      "sr": 32000,
+      "peak_gain_applied": 0.6779566991249965,
+      "orig_peak": 1.0442345142364502
+    },
+    {
+      "item": "item_23.wav",
+      "clip": "c7_weak_taps",
+      "method": "specialist",
+      "sr": 48000,
+      "peak_gain_applied": 0.7133176857557469,
+      "orig_peak": 0.9924691319465637
+    },
+    {
+      "item": "item_24.wav",
+      "clip": "c2_speech_npc_b",
+      "method": "raw",
+      "sr": 48000,
+      "peak_gain_applied": 0.693186740819244,
+      "orig_peak": 1.021291583776474
+    },
+    {
+      "item": "item_25.wav",
+      "clip": "c1_speech_npc_a",
+      "method": "audiosep",
+      "sr": 32000,
+      "peak_gain_applied": 0.9814923058357243,
+      "orig_peak": 0.7212952971458435
+    },
+    {
+      "item": "item_26.wav",
+      "clip": "c1_speech_npc_a",
+      "method": "raw",
+      "sr": 48000,
+      "peak_gain_applied": 0.699166455441752,
+      "orig_peak": 1.0125568509101868
+    },
+    {
+      "item": "item_27.wav",
+      "clip": "c6_dense_golden",
+      "method": "soloaudio",
+      "sr": 24000,
+      "peak_gain_applied": 24060.693635437685,
+      "orig_peak": 2.9423332307487726e-05
+    },
+    {
+      "item": "item_28.wav",
+      "clip": "c2_speech_npc_b",
+      "method": "soloaudio",
+      "sr": 24000,
+      "peak_gain_applied": 11.486370469114979,
+      "orig_peak": 0.06163354963064194
+    },
+    {
+      "item": "item_29.wav",
+      "clip": "c4_ambience_start",
+      "method": "specialist",
+      "sr": 48000,
+      "peak_gain_applied": 0.723870912002346,
+      "orig_peak": 0.9780000448226929
+    },
+    {
+      "item": "item_30.wav",
+      "clip": "c3_taiko_prompt",
+      "method": "clapsep",
+      "sr": 32000,
+      "peak_gain_applied": 0.6986057329522366,
+      "orig_peak": 1.0133695602416992
+    },
+    {
+      "item": "item_31.wav",
+      "clip": "c5_announcer_end",
+      "method": "specialist",
+      "sr": 48000,
+      "peak_gain_applied": 0.7340526428372491,
+      "orig_peak": 0.9644346237182617
+    },
+    {
+      "item": "item_32.wav",
+      "clip": "c6_dense_golden",
+      "method": "raw",
+      "sr": 48000,
+      "peak_gain_applied": 0.6765705660720983,
+      "orig_peak": 1.0463739037513733
+    },
+    {
+      "item": "item_33.wav",
+      "clip": "c3_taiko_prompt",
+      "method": "raw",
+      "sr": 48000,
+      "peak_gain_applied": 0.691615427856457,
+      "orig_peak": 1.0236119031906128
+    },
+    {
+      "item": "item_34.wav",
+      "clip": "c1_speech_npc_a",
+      "method": "specialist",
+      "sr": 48000,
+      "peak_gain_applied": 0.721020861130503,
+      "orig_peak": 0.9818658828735352
+    },
+    {
+      "item": "item_35.wav",
+      "clip": "c4_ambience_start",
+      "method": "clapsep",
+      "sr": 32000,
+      "peak_gain_applied": 0.7937028623895132,
+      "orig_peak": 0.89195317029953
+    },
+    {
+      "item": "item_36.wav",
+      "clip": "c2_speech_npc_b",
+      "method": "audiosep",
+      "sr": 32000,
+      "peak_gain_applied": 0.7437368097256134,
+      "orig_peak": 0.9518767595291138
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "torch": "2.14.0+cu126",
+  "device": "cuda",
+  "checkpoint": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\checkpoints\\best_model.ckpt",
+  "clap_checkpoint": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\checkpoints\\music_audioset_epoch_15_esc_90.14.pt",
+  "protocol": "official Space app.py: 32 kHz mono, 10 s chunks, peak rescale 0.9, output rescaled back to mixture domain, trimmed to 15 s",
+  "runs": [
+    {
+      "name": "clapsep_q1",
+      "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+      "negative": "zeros",
+      "mixture_rms_db": -20.34699249267578,
+      "target_rms_db": -24.00792694091797,
+      "residual_rms_db": -23.990449905395508,
+      "energy_ratio_db": -3.6609344482421875,
+      "target_peak": 1.072417974472046
+    },
+    {
+      "name": "clapsep_q2",
+      "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q2.wav",
+      "negative": "zeros",
+      "mixture_rms_db": -20.34699249267578,
+      "target_rms_db": -24.016109466552734,
+      "residual_rms_db": -24.702495574951172,
+      "energy_ratio_db": -3.669116973876953,
+      "target_peak": 1.0529502630233765
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+
+=== D0_interaction ===
+  retention 66/84 (strong 60/60) | peak x1.00 (strong x1.00) | dyn corr 0.89
+  local RMS vs raw -0.5 dB [-1.8,+0.0]
+  music sup heavy -7.8 dB quiet -6.3 dB | taiko 16/39 (out-of-window 4) | coverage 0.740
+  chop vs C1: 0.00% of C1-active | episodes 0 (>=20ms 0, >=50ms 0) | ep dur med 0 ms p95 0 ms
+
+=== D1_interaction ===
+  retention 66/84 (strong 60/60) | peak x1.00 (strong x1.00) | dyn corr 0.89
+  local RMS vs raw +0.0 dB [-1.7,+0.0]
+  music sup heavy -3.1 dB quiet -2.0 dB | taiko 11/39 (out-of-window 1) | coverage 0.855
+  chop vs C1: 0.00% of C1-active | episodes 0 (>=20ms 0, >=50ms 0) | ep dur med 0 ms p95 0 ms
+
+=== D2_interaction ===
+  retention 66/84 (strong 60/60) | peak x1.00 (strong x1.00) | dyn corr 0.89
+  local RMS vs raw +0.0 dB [-1.8,+0.0]
+  music sup heavy -5.9 dB quiet -4.2 dB | taiko 17/39 (out-of-window 4) | coverage 0.799
+  chop vs C1: 8.98% of C1-active | episodes 37 (>=20ms 26, >=50ms 0) | ep dur med 28 ms p95 30 ms
+
+=== D3_interaction ===
+  retention 65/84 (strong 60/60) | peak x1.00 (strong x1.00) | dyn corr 0.92
+  local RMS vs raw +0.0 dB [-1.1,+0.0]
+  music sup heavy -5.9 dB quiet +0.0 dB | taiko 12/39 (out-of-window 2) | coverage 0.866
+  chop vs C1: 3.70% of C1-active | episodes 15 (>=20ms 11, >=50ms 0) | ep dur med 28 ms p95 30 ms
+
+=== C1_interaction ===
+  retention 66/84 (strong 60/60) | peak x1.00 (strong x1.00) | dyn corr 0.89
+  local RMS vs raw -0.5 dB [-1.8,+0.0]
+  music sup heavy -7.8 dB quiet -6.3 dB | taiko 16/39 (out-of-window 4) | coverage 0.740
+  chop vs C1: 0.00% of C1-active | episodes 0 (>=20ms 0, >=50ms 0) | ep dur med 0 ms p95 0 ms
+
+=== C2_interaction ===
+  retention 64/84 (strong 59/60) | peak x0.56 (strong x0.55) | dyn corr -0.72
+  local RMS vs raw -4.3 dB [-5.9,-3.1]
+  music sup heavy -9.9 dB quiet -8.2 dB | taiko 17/39 (out-of-window 4) | coverage 0.739
+  chop vs C1: 84.39% of C1-active | episodes 216 (>=20ms 75, >=50ms 53) | ep dur med 8 ms p95 146 ms
+
+=== C3_interaction ===
+  retention 66/84 (strong 60/60) | peak x1.00 (strong x1.00) | dyn corr -0.17
+  local RMS vs raw -0.3 dB [-3.8,+0.0]
+  music sup heavy -0.6 dB quiet -0.5 dB | taiko 14/39 (out-of-window 0) | coverage 0.820
+  chop vs C1: 14.76% of C1-active | episodes 92 (>=20ms 33, >=50ms 2) | ep dur med 8 ms p95 34 ms
+
+=== D0_final_mix ===
+  retention 54/84 (strong 45/60) | peak x0.61 (strong x0.57) | dyn corr -0.84
+  local RMS vs raw +1.6 dB [-5.4,+5.4]
+  music sup heavy +5.0 dB quiet +1.2 dB | taiko 15/39 (out-of-window 3) | coverage 1.000
+  final mix peak -2.54 dBFS (headroom 2.54 dB)
+
+=== D1_final_mix ===
+  retention 54/84 (strong 45/60) | peak x0.61 (strong x0.57) | dyn corr -0.84
+  local RMS vs raw +1.6 dB [-5.3,+5.6]
+  music sup heavy +5.3 dB quiet +1.4 dB | taiko 15/39 (out-of-window 3) | coverage 1.000
+  final mix peak -2.54 dBFS (headroom 2.54 dB)
+
+=== D2_final_mix ===
+  retention 54/84 (strong 45/60) | peak x0.61 (strong x0.57) | dyn corr -0.84
+  local RMS vs raw +1.6 dB [-5.3,+5.4]
+  music sup heavy +5.0 dB quiet +1.5 dB | taiko 15/39 (out-of-window 3) | coverage 1.000
+  final mix peak -2.54 dBFS (headroom 2.54 dB)
+
+=== D3_final_mix ===
+  retention 55/84 (strong 46/60) | peak x0.61 (strong x0.57) | dyn corr -0.84
+  local RMS vs raw +1.6 dB [-5.1,+5.6]
+  music sup heavy +5.0 dB quiet +1.9 dB | taiko 16/39 (out-of-window 3) | coverage 1.000
+  final mix peak -2.54 dBFS (headroom 2.54 dB)
+
+=== C1_final_mix ===
+  retention 54/84 (strong 45/60) | peak x0.61 (strong x0.57) | dyn corr -0.84
+  local RMS vs raw +1.6 dB [-5.4,+5.4]
+  music sup heavy +5.0 dB quiet +1.2 dB | taiko 15/39 (out-of-window 3) | coverage 1.000
+  final mix peak -2.54 dBFS (headroom 2.54 dB)
+
+=== C2_final_mix ===
+  retention 34/84 (strong 23/60) | peak x0.42 (strong x0.39) | dyn corr -0.83
+  local RMS vs raw -1.7 dB [-8.4,+6.1]
+  music sup heavy +5.0 dB quiet +1.1 dB | taiko 16/39 (out-of-window 3) | coverage 1.000
+  final mix peak -4.71 dBFS (headroom 4.71 dB)
+
+=== C3_final_mix ===
+  retention 50/84 (strong 41/60) | peak x0.58 (strong x0.54) | dyn corr -0.85
+  local RMS vs raw +1.3 dB [-5.8,+5.8]
+  music sup heavy +5.2 dB quiet +1.4 dB | taiko 14/39 (out-of-window 3) | coverage 1.000
+  final mix peak -2.54 dBFS (headroom 2.54 dB)
+
+D0 vs C1 interaction: max abs diff 0.000e+00
+
+D0 vs C1 final_mix: max abs diff 0.000e+00
+
+saved logs/evaluation.json
+saved outputs/r45_gates_and_chop.png

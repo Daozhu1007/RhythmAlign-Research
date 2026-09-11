@@ -1,0 +1,10 @@
+# S1E: keep large binary audio/visual artifacts out of Git staging
+*.wav
+*.mp4
+*.flac
+*.npy
+work/
+clips/audio/
+listening_pack/audio/
+outputs/audio/
+diagnostics/spectrograms/

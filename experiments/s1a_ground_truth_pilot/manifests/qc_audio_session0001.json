@@ -1,0 +1,152 @@
+{
+  "tag": "session0001",
+  "gain_convention": "fixed; no normalization",
+  "files": [
+    {
+      "path": "work/pcm_session0001/32k/aux/closemic.wav",
+      "sr": 32000,
+      "n_samples": 1152000,
+      "channels": 1,
+      "peak": 1.0772018432617188,
+      "clip_fraction": 2.6041666666666666e-06,
+      "codec_fullscale_runs_frac": 0.9999965277747637,
+      "dc_offset": 1.2536624731308193e-05,
+      "rms_dbfs": -32.01497133419885,
+      "rest_floor_dbfs_p5": -53.42407285672436,
+      "band_energy_db": {
+        "0_100Hz": 75.72522580977238,
+        "100_1000Hz": 83.4347895242334,
+        "1000_8000Hz": 82.01714105226284,
+        "8000_16000Hz": 53.23337615102303
+      },
+      "flags": [],
+      "source": "fixtures/session0001/aux/closemic.wav"
+    },
+    {
+      "path": "work/pcm_session0001/32k/aux/contact.wav",
+      "sr": 32000,
+      "n_samples": 1152000,
+      "channels": 1,
+      "peak": 0.8951582312583923,
+      "clip_fraction": 0.0,
+      "codec_fullscale_runs_frac": 1.0,
+      "dc_offset": 1.6153914062662287e-05,
+      "rms_dbfs": -35.81888234551749,
+      "rest_floor_dbfs_p5": -3000.0,
+      "band_energy_db": {
+        "0_100Hz": 56.502438268219954,
+        "100_1000Hz": 80.53910232928628,
+        "1000_8000Hz": 76.3763968052413,
+        "8000_16000Hz": 72.22622206715738
+      },
+      "flags": [],
+      "source": "fixtures/session0001/aux/contact.wav"
+    },
+    {
+      "path": "work/pcm_session0001/32k/phone/phone_audio.wav",
+      "sr": 32000,
+      "n_samples": 1152000,
+      "channels": 1,
+      "peak": 0.8913909196853638,
+      "clip_fraction": 0.0,
+      "codec_fullscale_runs_frac": 1.0,
+      "dc_offset": 1.6097956144383664e-05,
+      "rms_dbfs": -31.5031118104743,
+      "rest_floor_dbfs_p5": -49.031597085286755,
+      "band_energy_db": {
+        "0_100Hz": 69.58035597251683,
+        "100_1000Hz": 82.90186832557119,
+        "1000_8000Hz": 84.23368339121986,
+        "8000_16000Hz": 53.02103948682355
+      },
+      "flags": [],
+      "source": "fixtures/session0001/phone/phone_audio.wav"
+    },
+    {
+      "path": "work/pcm_session0001/32k/phone/phone_noisy_gameplay.wav",
+      "sr": 32000,
+      "n_samples": 960000,
+      "channels": 1,
+      "peak": 0.4073120653629303,
+      "clip_fraction": 0.0,
+      "codec_fullscale_runs_frac": 1.0,
+      "dc_offset": -0.00015848718259241928,
+      "rms_dbfs": -29.399163707253038,
+      "rest_floor_dbfs_p5": -44.03362993196123,
+      "band_energy_db": {
+        "0_100Hz": 82.1870312615175,
+        "100_1000Hz": 82.30799640331085,
+        "1000_8000Hz": 82.80281240138584,
+        "8000_16000Hz": 64.64184785173292
+      },
+      "flags": [
+        "high_floor"
+      ],
+      "source": "fixtures/session0001/phone/phone_noisy_gameplay.wav"
+    },
+    {
+      "path": "work/pcm_session0001/32k/phone/phone_playback_only.wav",
+      "sr": 32000,
+      "n_samples": 960000,
+      "channels": 1,
+      "peak": 0.1258118897676468,
+      "clip_fraction": 0.0,
+      "codec_fullscale_runs_frac": 1.0,
+      "dc_offset": 7.246247680412691e-07,
+      "rms_dbfs": -32.74168667565628,
+      "rest_floor_dbfs_p5": -45.54728294105807,
+      "band_energy_db": {
+        "0_100Hz": 81.98867019199989,
+        "100_1000Hz": 79.20562258376967,
+        "1000_8000Hz": 65.72591763424347,
+        "8000_16000Hz": 33.34904103295549
+      },
+      "flags": [],
+      "source": "fixtures/session0001/phone/phone_playback_only.wav"
+    },
+    {
+      "path": "work/pcm_session0001/32k/pristine/fixture_rir_a.wav",
+      "sr": 32000,
+      "n_samples": 1600,
+      "channels": 1,
+      "peak": 0.6612183451652527,
+      "clip_fraction": 0.0,
+      "codec_fullscale_runs_frac": 1.0,
+      "dc_offset": 0.0004823983798639268,
+      "rms_dbfs": -35.4289160259047,
+      "rest_floor_dbfs_p5": -35.4289160259047,
+      "band_energy_db": {
+        "0_100Hz": 4.956084960593999,
+        "100_1000Hz": 13.027743584066245,
+        "1000_8000Hz": 22.06610572029106,
+        "8000_16000Hz": 22.61644866987305
+      },
+      "flags": [
+        "high_floor"
+      ],
+      "source": "fixtures/session0001/pristine/fixture_rir_a.wav"
+    },
+    {
+      "path": "work/pcm_session0001/32k/pristine/fixture_track_a.wav",
+      "sr": 32000,
+      "n_samples": 1280000,
+      "channels": 1,
+      "peak": 0.5032714009284973,
+      "clip_fraction": 0.0,
+      "codec_fullscale_runs_frac": 1.0,
+      "dc_offset": 3.0058224262295153e-06,
+      "rms_dbfs": -20.699075736599536,
+      "rest_floor_dbfs_p5": -33.50608311449882,
+      "band_energy_db": {
+        "0_100Hz": 96.52877219819416,
+        "100_1000Hz": 93.74942918813944,
+        "1000_8000Hz": 80.26762774271782,
+        "8000_16000Hz": 47.88721059688648
+      },
+      "flags": [
+        "high_floor"
+      ],
+      "source": "fixtures/session0001/pristine/fixture_track_a.wav"
+    }
+  ]
+}

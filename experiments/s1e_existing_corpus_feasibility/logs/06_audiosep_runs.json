@@ -1,0 +1,43 @@
+{
+  "protocol": "official chunk_inference (r2 recipe), 32 kHz mono; upstream short-input boundary bug handled by pad->infer->trim (disclosed)",
+  "checkpoint": "D:\\Code\\RhythmAlign\\experiments\\r2_target_separation\\checkpoints\\audiosep_base_4M_steps.ckpt",
+  "prompt": "finger taps and button presses on a rhythm game cabinet",
+  "runs": [
+    {
+      "run": "audiosep_p2_c1_speech_npc_a",
+      "clip": "c1_speech_npc_a",
+      "prompt": "finger taps and button presses on a rhythm game cabinet",
+      "sr": 32000,
+      "mix_rms_db": -17.672550012375662,
+      "target_rms_db": -22.37954596155007,
+      "target_energy_ratio_db": -4.706995949174406
+    },
+    {
+      "run": "audiosep_p2_c2_speech_npc_b",
+      "clip": "c2_speech_npc_b",
+      "prompt": "finger taps and button presses on a rhythm game cabinet",
+      "sr": 32000,
+      "mix_rms_db": -19.440051457001527,
+      "target_rms_db": -24.263269735640133,
+      "target_energy_ratio_db": -4.823218278638606
+    },
+    {
+      "run": "audiosep_p2_c3_taiko_prompt",
+      "clip": "c3_taiko_prompt",
+      "prompt": "finger taps and button presses on a rhythm game cabinet",
+      "sr": 32000,
+      "mix_rms_db": -20.367178195535143,
+      "target_rms_db": -24.731081106557077,
+      "target_energy_ratio_db": -4.363902911021935
+    },
+    {
+      "run": "audiosep_p2_c6_dense_golden",
+      "clip": "c6_dense_golden",
+      "prompt": "finger taps and button presses on a rhythm game cabinet",
+      "sr": 32000,
+      "mix_rms_db": -20.35219529404781,
+      "target_rms_db": -25.119886595287184,
+      "target_energy_ratio_db": -4.767691301239374
+    }
+  ]
+}

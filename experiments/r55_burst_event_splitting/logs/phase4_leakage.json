@@ -1,0 +1,14 @@
+{
+ "devA": {
+  "n_onsets": 99,
+  "music_onset_matched": 27,
+  "n_ref_onsets": 87,
+  "contact_retention": "69/104"
+ },
+ "devB": {
+  "n_onsets": 61,
+  "music_onset_matched": 17,
+  "n_ref_onsets": 112,
+  "contact_retention": "54/100"
+ }
+}

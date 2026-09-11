@@ -1,0 +1,63 @@
+{
+  "part15_synthetic_validation": [
+    {
+      "case": "y_equals_s",
+      "max_err_bounded": 1.1933681820508468e-10,
+      "max_err_optimized": 1.192196480426233e-10,
+      "max_err_roundtrip": 1.3877787807814457e-16,
+      "pass": true
+    },
+    {
+      "case": "s_zero",
+      "max_abs_out_bounded": 0.0,
+      "max_abs_out_optimized": 0.0,
+      "pass": true
+    },
+    {
+      "case": "separate_tf_regions",
+      "recon_snr_bounded_db": 52.88189873305647,
+      "si_sdr_bounded_db": 52.881878669680816,
+      "pass": true
+    },
+    {
+      "case": "destructive_interference",
+      "bounded_projection_gain_db": -13.97940008237949,
+      "optimized_projection_gain_db": -13.97939791333669,
+      "complex_recon_snr_db": 155.3756628575121,
+      "pass": true
+    },
+    {
+      "case": "continuous_tone_no_chopping",
+      "max_err_bounded_vs_target": 7.026729267889387e-09,
+      "ripple_bounded": 0.6625675258813338,
+      "ripple_roundtrip": 0.6625675256937219,
+      "pass": true
+    },
+    {
+      "case": "impulse_timing_amplitude",
+      "peak_pos_target": 6400,
+      "peak_pos_bounded": 6400,
+      "peak_offset_samples": 0,
+      "peak_amplitude_ratio": 0.999999998992054,
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "stft_config": {
+    "n_fft": 1024,
+    "hop_length": 320,
+    "win_length": 1024,
+    "window": "hann",
+    "center": true,
+    "pad_mode": "reflect"
+  },
+  "mask_config": {
+    "type": "sigmoid_bounded_real_magnitude",
+    "range": [
+      0.0,
+      1.0
+    ],
+    "phase": "mixture",
+    "phase_config": false
+  }
+}

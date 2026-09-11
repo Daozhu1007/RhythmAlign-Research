@@ -1,0 +1,12 @@
+{
+  "name": "clapsep_n1",
+  "positive": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+  "negative": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\neg_music.wav",
+  "negative_window_s": [
+    8.0,
+    10.0
+  ],
+  "mixture_rms_db": -20.34699249267578,
+  "target_rms_db": -24.15714454650879,
+  "energy_ratio_db": -3.810152053833008
+}

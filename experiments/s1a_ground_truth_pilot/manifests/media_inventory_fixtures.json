@@ -1,0 +1,148 @@
+{
+  "root": "fixtures",
+  "n_files": 13,
+  "n_audio": 10,
+  "files": [
+    {
+      "path": "fixtures/fixture_mixtures_recipe.json",
+      "size_bytes": 15083,
+      "sha256": "04b587045e239efc0132e72462af78b42bbe3085a27c1d6e31e790c6a2342717",
+      "kind": "other",
+      "note": "video/other media: inventory only; decode requires ffmpeg (not installed)"
+    },
+    {
+      "path": "fixtures/nuisance_ambience.wav",
+      "size_bytes": 5760080,
+      "sha256": "22d68cc91630b27ce94f6bad47fc07656b96077b81d3089561752207f3f20b79",
+      "kind": "audio",
+      "format": "WAV",
+      "subtype": "FLOAT",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 1440000,
+      "duration_s": 30.0
+    },
+    {
+      "path": "fixtures/nuisance_impacts.wav",
+      "size_bytes": 5760080,
+      "sha256": "546febb41c7dc429909cf46909115239b877f3f62402ba2669bcd412f2cbd400",
+      "kind": "audio",
+      "format": "WAV",
+      "subtype": "FLOAT",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 1440000,
+      "duration_s": 30.0
+    },
+    {
+      "path": "fixtures/nuisance_speech.wav",
+      "size_bytes": 5760080,
+      "sha256": "2db84838636bd8ce141b2c64ea24b5b92a472886da45562a0cab0a6b1ba879eb",
+      "kind": "audio",
+      "format": "WAV",
+      "subtype": "FLOAT",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 1440000,
+      "duration_s": 30.0
+    },
+    {
+      "path": "fixtures/session0001/anchors.csv",
+      "size_bytes": 180,
+      "sha256": "fc14a8369020358039459c3362b055fea626166d79bc53f8114c0bb7ddb20b5a",
+      "kind": "other",
+      "note": "video/other media: inventory only; decode requires ffmpeg (not installed)"
+    },
+    {
+      "path": "fixtures/session0001/session_notes.txt",
+      "size_bytes": 313,
+      "sha256": "7f215ad6105354bb8cf22594b0c7804f703c381aa27f8a1b8737bc0591b26767",
+      "kind": "other",
+      "note": "video/other media: inventory only; decode requires ffmpeg (not installed)"
+    },
+    {
+      "path": "fixtures/session0001/aux/closemic.wav",
+      "size_bytes": 6912080,
+      "sha256": "36cbb1e1f8e3e5e422faba9dab4fcbc05aa3627d988d0d51aaa96103271910a5",
+      "kind": "audio",
+      "format": "WAV",
+      "subtype": "FLOAT",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 1728000,
+      "duration_s": 36.0
+    },
+    {
+      "path": "fixtures/session0001/aux/contact.wav",
+      "size_bytes": 6912080,
+      "sha256": "4b6c155565e8e565e72a471fd378583d0b0004486a1a63685743406674f73f1c",
+      "kind": "audio",
+      "format": "WAV",
+      "subtype": "FLOAT",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 1728000,
+      "duration_s": 36.0
+    },
+    {
+      "path": "fixtures/session0001/phone/phone_audio.wav",
+      "size_bytes": 6912080,
+      "sha256": "0f5d07b0bd50c4a7efddbe454f87fe78c1ecf4e3fdcfc1344f8ac4b901a1bb36",
+      "kind": "audio",
+      "format": "WAV",
+      "subtype": "FLOAT",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 1728000,
+      "duration_s": 36.0
+    },
+    {
+      "path": "fixtures/session0001/phone/phone_noisy_gameplay.wav",
+      "size_bytes": 5760080,
+      "sha256": "e577848a432894b384770814f2f0a5eb51b6f1a88266f895c9125190731c74f2",
+      "kind": "audio",
+      "format": "WAV",
+      "subtype": "FLOAT",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 1440000,
+      "duration_s": 30.0
+    },
+    {
+      "path": "fixtures/session0001/phone/phone_playback_only.wav",
+      "size_bytes": 5760080,
+      "sha256": "1ee7941083f66029ca1144c93ff317fcbd6710ad7ae403219dd1f5270deaf458",
+      "kind": "audio",
+      "format": "WAV",
+      "subtype": "FLOAT",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 1440000,
+      "duration_s": 30.0
+    },
+    {
+      "path": "fixtures/session0001/pristine/fixture_rir_a.wav",
+      "size_bytes": 9680,
+      "sha256": "33db4d82574b4d59d41ceb02f01dd868d9f9a95b20ffa4f17c1b6ac96b8e99fd",
+      "kind": "audio",
+      "format": "WAV",
+      "subtype": "FLOAT",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 2400,
+      "duration_s": 0.05
+    },
+    {
+      "path": "fixtures/session0001/pristine/fixture_track_a.wav",
+      "size_bytes": 7680080,
+      "sha256": "bde3ef664c8508ef64175fb75d8d594608bee3942e78d8c2af7008a24b3c8117",
+      "kind": "audio",
+      "format": "WAV",
+      "subtype": "FLOAT",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 1920000,
+      "duration_s": 40.0
+    }
+  ]
+}

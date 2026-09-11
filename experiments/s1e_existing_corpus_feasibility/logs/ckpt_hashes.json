@@ -1,0 +1,32 @@
+{
+  "clapsep_best_model_ckpt": {
+    "path": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\checkpoints\\best_model.ckpt",
+    "bytes": 177818986,
+    "sha256": "6fcc8dbcd7174af86266cf16b4105eced0802352762f81dbfefdce29af3dba04"
+  },
+  "clapsep_clap_ckpt": {
+    "path": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\checkpoints\\music_audioset_epoch_15_esc_90.14.pt",
+    "bytes": 2352471003,
+    "sha256": "fae3e9c087f2909c28a09dc31c8dfcdacbc42ba44c70e972b58c1bd1caf6dedd"
+  },
+  "audiosep_base_ckpt": {
+    "path": "D:\\Code\\RhythmAlign\\experiments\\r2_target_separation\\checkpoints\\audiosep_base_4M_steps.ckpt",
+    "bytes": 1264844076,
+    "sha256": "f8cda01bfd0ebd141eef45d41db7a3ada23a56568465840d3cff04b8010ce82c"
+  },
+  "audiosep_clap_ckpt": {
+    "path": "D:\\Code\\RhythmAlign\\experiments\\r2_target_separation\\checkpoints\\music_speech_audioset_epoch_15_esc_89.98.pt",
+    "bytes": 2352471003,
+    "sha256": "51c68f12f9d7ea25fdaaccf741ec7f81e93ee594455410f3bca4f47f88d8e006"
+  },
+  "soloaudio_v2_pt": {
+    "path": "third_party/SoloAudio/pretrained_models/soloaudio_v2.pt",
+    "bytes": 591736757,
+    "sha256": "8e068c8d211b4efe0a31b74ea94243b435e480a451c2062c752b7ed7e7239ca1"
+  },
+  "audio_vae_pt": {
+    "path": "third_party/SoloAudio/pretrained_models/audio-vae.pt",
+    "bytes": 549068173,
+    "sha256": "d4e13ac8bae019d7170bb5fe51e27d9b428bedd5c4c27586eff9f7462961dcbf"
+  }
+}

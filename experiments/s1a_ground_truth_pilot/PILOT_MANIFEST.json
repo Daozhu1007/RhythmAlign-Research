@@ -1,0 +1,651 @@
+{
+  "stage": "s1a_ground_truth_pilot",
+  "created": "2026-09-10",
+  "data_status": {
+    "real_capture_files": 0,
+    "real_sessions": [],
+    "synthetic_fixture_class_present": true,
+    "note": "fixture artifacts validate TOOLING ONLY; they carry no real-acoustic feasibility meaning"
+  },
+  "truth_tiers": {
+    "T0": "sensor/event evidence (video, contact channel); never exact waveform truth",
+    "T1": "quiet isolated acoustic target recording at phone position",
+    "T2": "exact constructed additive mixture y = s + n with stored components",
+    "T3": "acoustic/device stress condition",
+    "T4": "simultaneous real-world scene",
+    "SYNTHETIC_FIXTURE": "synthetic tooling-validation media; no real-acoustic meaning"
+  },
+  "representation": {
+    "stft_config": {
+      "n_fft": 1024,
+      "hop_length": 320,
+      "win_length": 1024,
+      "window": "hann",
+      "center": true,
+      "pad_mode": "reflect"
+    },
+    "mask_config": {
+      "type": "sigmoid_bounded_real_magnitude",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "phase": "mixture",
+      "phase_config": false
+    },
+    "inference_protocol": {
+      "chunk_samples": 320000,
+      "peak_rescale": "if max(|x|)>1: x *= 0.9/max(|x|)"
+    },
+    "audited_sources": [
+      {
+        "path": "experiments/r3_audio_query/third_party/CLAPSep/model/CLAPSep.py",
+        "sha256": "f0121287f618ffc9357eb889ee16e408ce1fec633ed7e58d820d7c387d70a210"
+      },
+      {
+        "path": "experiments/r3_audio_query/third_party/CLAPSep/model/CLAPSep_decoder.py",
+        "sha256": "3416fed2371f08707d65c2a394a5a27e73291b1299c08e0acbbb693810ea7d48"
+      },
+      {
+        "path": "experiments/r3_audio_query/scripts/clapsep_lib.py",
+        "sha256": "2e12735bbfa829c3e1e44fe0e62d43560811cc25adc11648208f5f60107ec4e3"
+      }
+    ],
+    "torchlibrosa_equivalence": {}
+  },
+  "stop_conditions_checked": {
+    "mixture_sum_identity": true,
+    "part15_synthetic_oracle_validation": true,
+    "sync": true,
+    "historical_files_modified": false,
+    "post_hoc_gain_tuning": false,
+    "independent_output_normalization": false
+  },
+  "capture_inputs": {
+    "raw_root": "raw",
+    "inventory": null,
+    "required_files_doc": "CAPTURE_REQUIRED.md"
+  },
+  "fixture_run": {
+    "inventory": {
+      "root": "fixtures",
+      "n_files": 13,
+      "n_audio": 10,
+      "files": [
+        {
+          "path": "fixtures/fixture_mixtures_recipe.json",
+          "size_bytes": 15083,
+          "sha256": "04b587045e239efc0132e72462af78b42bbe3085a27c1d6e31e790c6a2342717",
+          "kind": "other",
+          "note": "video/other media: inventory only; decode requires ffmpeg (not installed)"
+        },
+        {
+          "path": "fixtures/nuisance_ambience.wav",
+          "size_bytes": 5760080,
+          "sha256": "22d68cc91630b27ce94f6bad47fc07656b96077b81d3089561752207f3f20b79",
+          "kind": "audio",
+          "format": "WAV",
+          "subtype": "FLOAT",
+          "sample_rate": 48000,
+          "channels": 1,
+          "frames": 1440000,
+          "duration_s": 30.0
+        },
+        {
+          "path": "fixtures/nuisance_impacts.wav",
+          "size_bytes": 5760080,
+          "sha256": "546febb41c7dc429909cf46909115239b877f3f62402ba2669bcd412f2cbd400",
+          "kind": "audio",
+          "format": "WAV",
+          "subtype": "FLOAT",
+          "sample_rate": 48000,
+          "channels": 1,
+          "frames": 1440000,
+          "duration_s": 30.0
+        },
+        {
+          "path": "fixtures/nuisance_speech.wav",
+          "size_bytes": 5760080,
+          "sha256": "2db84838636bd8ce141b2c64ea24b5b92a472886da45562a0cab0a6b1ba879eb",
+          "kind": "audio",
+          "format": "WAV",
+          "subtype": "FLOAT",
+          "sample_rate": 48000,
+          "channels": 1,
+          "frames": 1440000,
+          "duration_s": 30.0
+        },
+        {
+          "path": "fixtures/session0001/anchors.csv",
+          "size_bytes": 180,
+          "sha256": "fc14a8369020358039459c3362b055fea626166d79bc53f8114c0bb7ddb20b5a",
+          "kind": "other",
+          "note": "video/other media: inventory only; decode requires ffmpeg (not installed)"
+        },
+        {
+          "path": "fixtures/session0001/session_notes.txt",
+          "size_bytes": 313,
+          "sha256": "7f215ad6105354bb8cf22594b0c7804f703c381aa27f8a1b8737bc0591b26767",
+          "kind": "other",
+          "note": "video/other media: inventory only; decode requires ffmpeg (not installed)"
+        },
+        {
+          "path": "fixtures/session0001/aux/closemic.wav",
+          "size_bytes": 6912080,
+          "sha256": "36cbb1e1f8e3e5e422faba9dab4fcbc05aa3627d988d0d51aaa96103271910a5",
+          "kind": "audio",
+          "format": "WAV",
+          "subtype": "FLOAT",
+          "sample_rate": 48000,
+          "channels": 1,
+          "frames": 1728000,
+          "duration_s": 36.0
+        },
+        {
+          "path": "fixtures/session0001/aux/contact.wav",
+          "size_bytes": 6912080,
+          "sha256": "4b6c155565e8e565e72a471fd378583d0b0004486a1a63685743406674f73f1c",
+          "kind": "audio",
+          "format": "WAV",
+          "subtype": "FLOAT",
+          "sample_rate": 48000,
+          "channels": 1,
+          "frames": 1728000,
+          "duration_s": 36.0
+        },
+        {
+          "path": "fixtures/session0001/phone/phone_audio.wav",
+          "size_bytes": 6912080,
+          "sha256": "0f5d07b0bd50c4a7efddbe454f87fe78c1ecf4e3fdcfc1344f8ac4b901a1bb36",
+          "kind": "audio",
+          "format": "WAV",
+          "subtype": "FLOAT",
+          "sample_rate": 48000,
+          "channels": 1,
+          "frames": 1728000,
+          "duration_s": 36.0
+        },
+        {
+          "path": "fixtures/session0001/phone/phone_noisy_gameplay.wav",
+          "size_bytes": 5760080,
+          "sha256": "e577848a432894b384770814f2f0a5eb51b6f1a88266f895c9125190731c74f2",
+          "kind": "audio",
+          "format": "WAV",
+          "subtype": "FLOAT",
+          "sample_rate": 48000,
+          "channels": 1,
+          "frames": 1440000,
+          "duration_s": 30.0
+        },
+        {
+          "path": "fixtures/session0001/phone/phone_playback_only.wav",
+          "size_bytes": 5760080,
+          "sha256": "1ee7941083f66029ca1144c93ff317fcbd6710ad7ae403219dd1f5270deaf458",
+          "kind": "audio",
+          "format": "WAV",
+          "subtype": "FLOAT",
+          "sample_rate": 48000,
+          "channels": 1,
+          "frames": 1440000,
+          "duration_s": 30.0
+        },
+        {
+          "path": "fixtures/session0001/pristine/fixture_rir_a.wav",
+          "size_bytes": 9680,
+          "sha256": "33db4d82574b4d59d41ceb02f01dd868d9f9a95b20ffa4f17c1b6ac96b8e99fd",
+          "kind": "audio",
+          "format": "WAV",
+          "subtype": "FLOAT",
+          "sample_rate": 48000,
+          "channels": 1,
+          "frames": 2400,
+          "duration_s": 0.05
+        },
+        {
+          "path": "fixtures/session0001/pristine/fixture_track_a.wav",
+          "size_bytes": 7680080,
+          "sha256": "bde3ef664c8508ef64175fb75d8d594608bee3942e78d8c2af7008a24b3c8117",
+          "kind": "audio",
+          "format": "WAV",
+          "subtype": "FLOAT",
+          "sample_rate": 48000,
+          "channels": 1,
+          "frames": 1920000,
+          "duration_s": 40.0
+        }
+      ]
+    },
+    "qc": {
+      "tag": "session0001",
+      "gain_convention": "fixed; no normalization",
+      "files": [
+        {
+          "path": "work/pcm_session0001/32k/aux/closemic.wav",
+          "sr": 32000,
+          "n_samples": 1152000,
+          "channels": 1,
+          "peak": 1.0772018432617188,
+          "clip_fraction": 2.6041666666666666e-06,
+          "codec_fullscale_runs_frac": 0.9999965277747637,
+          "dc_offset": 1.2536624731308193e-05,
+          "rms_dbfs": -32.01497133419885,
+          "rest_floor_dbfs_p5": -53.42407285672436,
+          "band_energy_db": {
+            "0_100Hz": 75.72522580977238,
+            "100_1000Hz": 83.4347895242334,
+            "1000_8000Hz": 82.01714105226284,
+            "8000_16000Hz": 53.23337615102303
+          },
+          "flags": [],
+          "source": "fixtures/session0001/aux/closemic.wav"
+        },
+        {
+          "path": "work/pcm_session0001/32k/aux/contact.wav",
+          "sr": 32000,
+          "n_samples": 1152000,
+          "channels": 1,
+          "peak": 0.8951582312583923,
+          "clip_fraction": 0.0,
+          "codec_fullscale_runs_frac": 1.0,
+          "dc_offset": 1.6153914062662287e-05,
+          "rms_dbfs": -35.81888234551749,
+          "rest_floor_dbfs_p5": -3000.0,
+          "band_energy_db": {
+            "0_100Hz": 56.502438268219954,
+            "100_1000Hz": 80.53910232928628,
+            "1000_8000Hz": 76.3763968052413,
+            "8000_16000Hz": 72.22622206715738
+          },
+          "flags": [],
+          "source": "fixtures/session0001/aux/contact.wav"
+        },
+        {
+          "path": "work/pcm_session0001/32k/phone/phone_audio.wav",
+          "sr": 32000,
+          "n_samples": 1152000,
+          "channels": 1,
+          "peak": 0.8913909196853638,
+          "clip_fraction": 0.0,
+          "codec_fullscale_runs_frac": 1.0,
+          "dc_offset": 1.6097956144383664e-05,
+          "rms_dbfs": -31.5031118104743,
+          "rest_floor_dbfs_p5": -49.031597085286755,
+          "band_energy_db": {
+            "0_100Hz": 69.58035597251683,
+            "100_1000Hz": 82.90186832557119,
+            "1000_8000Hz": 84.23368339121986,
+            "8000_16000Hz": 53.02103948682355
+          },
+          "flags": [],
+          "source": "fixtures/session0001/phone/phone_audio.wav"
+        },
+        {
+          "path": "work/pcm_session0001/32k/phone/phone_noisy_gameplay.wav",
+          "sr": 32000,
+          "n_samples": 960000,
+          "channels": 1,
+          "peak": 0.4073120653629303,
+          "clip_fraction": 0.0,
+          "codec_fullscale_runs_frac": 1.0,
+          "dc_offset": -0.00015848718259241928,
+          "rms_dbfs": -29.399163707253038,
+          "rest_floor_dbfs_p5": -44.03362993196123,
+          "band_energy_db": {
+            "0_100Hz": 82.1870312615175,
+            "100_1000Hz": 82.30799640331085,
+            "1000_8000Hz": 82.80281240138584,
+            "8000_16000Hz": 64.64184785173292
+          },
+          "flags": [
+            "high_floor"
+          ],
+          "source": "fixtures/session0001/phone/phone_noisy_gameplay.wav"
+        },
+        {
+          "path": "work/pcm_session0001/32k/phone/phone_playback_only.wav",
+          "sr": 32000,
+          "n_samples": 960000,
+          "channels": 1,
+          "peak": 0.1258118897676468,
+          "clip_fraction": 0.0,
+          "codec_fullscale_runs_frac": 1.0,
+          "dc_offset": 7.246247680412691e-07,
+          "rms_dbfs": -32.74168667565628,
+          "rest_floor_dbfs_p5": -45.54728294105807,
+          "band_energy_db": {
+            "0_100Hz": 81.98867019199989,
+            "100_1000Hz": 79.20562258376967,
+            "1000_8000Hz": 65.72591763424347,
+            "8000_16000Hz": 33.34904103295549
+          },
+          "flags": [],
+          "source": "fixtures/session0001/phone/phone_playback_only.wav"
+        },
+        {
+          "path": "work/pcm_session0001/32k/pristine/fixture_rir_a.wav",
+          "sr": 32000,
+          "n_samples": 1600,
+          "channels": 1,
+          "peak": 0.6612183451652527,
+          "clip_fraction": 0.0,
+          "codec_fullscale_runs_frac": 1.0,
+          "dc_offset": 0.0004823983798639268,
+          "rms_dbfs": -35.4289160259047,
+          "rest_floor_dbfs_p5": -35.4289160259047,
+          "band_energy_db": {
+            "0_100Hz": 4.956084960593999,
+            "100_1000Hz": 13.027743584066245,
+            "1000_8000Hz": 22.06610572029106,
+            "8000_16000Hz": 22.61644866987305
+          },
+          "flags": [
+            "high_floor"
+          ],
+          "source": "fixtures/session0001/pristine/fixture_rir_a.wav"
+        },
+        {
+          "path": "work/pcm_session0001/32k/pristine/fixture_track_a.wav",
+          "sr": 32000,
+          "n_samples": 1280000,
+          "channels": 1,
+          "peak": 0.5032714009284973,
+          "clip_fraction": 0.0,
+          "codec_fullscale_runs_frac": 1.0,
+          "dc_offset": 3.0058224262295153e-06,
+          "rms_dbfs": -20.699075736599536,
+          "rest_floor_dbfs_p5": -33.50608311449882,
+          "band_energy_db": {
+            "0_100Hz": 96.52877219819416,
+            "100_1000Hz": 93.74942918813944,
+            "1000_8000Hz": 80.26762774271782,
+            "8000_16000Hz": 47.88721059688648
+          },
+          "flags": [
+            "high_floor"
+          ],
+          "source": "fixtures/session0001/pristine/fixture_track_a.wav"
+        }
+      ]
+    },
+    "sync_map": {
+      "session": "session0001",
+      "target_channel": "phone",
+      "map_convention": "t_phone = a + b * t_aux",
+      "tolerance_s": 0.002,
+      "channels": {
+        "closemic": {
+          "status": "fitted",
+          "map": {
+            "a_s": 1.5382998862220619e-15,
+            "b_drift_ratio": 1.0000000000000002,
+            "drift_ppm": 2.220446049250313e-10,
+            "anchors_used": 2,
+            "residuals_s": [
+              -7.105427357601002e-15,
+              -1.6653345369377348e-15
+            ],
+            "residual_rms_s": 5.160447512283328e-15,
+            "max_abs_residual_s": 7.105427357601002e-15
+          },
+          "verdict": {
+            "validation_err_s": 7.105427357601002e-15,
+            "tolerance_s": 0.002,
+            "sync_ok": true
+          },
+          "anchor_details": {
+            "end_clap": {
+              "aux": {
+                "t": 35.2,
+                "peakiness": 87.43346123241176,
+                "peak_frame_rms": 0.38858841809269506
+              },
+              "target": {
+                "t": 35.2,
+                "peakiness": 92.96349484121042,
+                "peak_frame_rms": 0.3229374108614138
+              }
+            },
+            "start_clap": {
+              "aux": {
+                "t": 0.5,
+                "peakiness": 96.29848391690957,
+                "peak_frame_rms": 0.3801046976790531
+              },
+              "target": {
+                "t": 0.5,
+                "peakiness": 92.05876348133575,
+                "peak_frame_rms": 0.3193293178988824
+              }
+            }
+          }
+        },
+        "contact": {
+          "status": "fitted",
+          "map": {
+            "a_s": 1.5382998862220619e-15,
+            "b_drift_ratio": 1.0000000000000002,
+            "drift_ppm": 2.220446049250313e-10,
+            "anchors_used": 2,
+            "residuals_s": [
+              -7.105427357601002e-15,
+              -1.6653345369377348e-15
+            ],
+            "residual_rms_s": 5.160447512283328e-15,
+            "max_abs_residual_s": 7.105427357601002e-15
+          },
+          "verdict": {
+            "validation_err_s": 7.105427357601002e-15,
+            "tolerance_s": 0.002,
+            "sync_ok": true
+          },
+          "anchor_details": {
+            "end_clap": {
+              "aux": {
+                "t": 35.2,
+                "peakiness": 323180335057.2591,
+                "peak_frame_rms": 0.32318033505725907
+              },
+              "target": {
+                "t": 35.2,
+                "peakiness": 92.96349484121042,
+                "peak_frame_rms": 0.3229374108614138
+              }
+            },
+            "start_clap": {
+              "aux": {
+                "t": 0.5,
+                "peakiness": 319391581100.6426,
+                "peak_frame_rms": 0.3193915811008992
+              },
+              "target": {
+                "t": 0.5,
+                "peakiness": 92.05876348133575,
+                "peak_frame_rms": 0.3193293178988824
+              }
+            }
+          }
+        }
+      },
+      "session_sync_ok": true
+    },
+    "mixture_cases": 12,
+    "data_class": "SYNTHETIC_FIXTURE"
+  },
+  "representation_results_summary": {
+    "by_variant": {
+      "BOUNDED_REAL_MASK_ORACLE": {
+        "n": 12,
+        "recon_snr_db_median": 15.16738648295022,
+        "si_sdr_db_median": 15.047751789858172,
+        "projection_gain_db_median": -0.3533853814684207,
+        "log_mag_l1_median": 0.4139464952311124,
+        "hf_ratio_median": 0.942532044542721,
+        "nuisance_attenuation_db_median": 28.91545612245107,
+        "nuisance_proj_coeff_median": 0.01061738256571522
+      },
+      "COMPLEX_RATIO_ORACLE": {
+        "n": 12,
+        "recon_snr_db_median": 107.04413444723886,
+        "si_sdr_db_median": 107.04426456373461,
+        "projection_gain_db_median": -7.364288245973466e-09,
+        "log_mag_l1_median": 2.8780879642682003e-05,
+        "hf_ratio_median": 0.9999980373335877,
+        "nuisance_attenuation_db_median": null,
+        "nuisance_proj_coeff_median": 4.604184575746724e-11
+      },
+      "OPTIMIZED_BOUNDED_MASK_ORACLE": {
+        "n": 12,
+        "recon_snr_db_median": 15.882246951332121,
+        "si_sdr_db_median": 15.791728763959814,
+        "projection_gain_db_median": -0.3278058629501941,
+        "log_mag_l1_median": 0.4025880220031103,
+        "hf_ratio_median": 0.941951133442571,
+        "nuisance_attenuation_db_median": 28.768224184386693,
+        "nuisance_proj_coeff_median": 0.012095511422616553
+      },
+      "RAW_MIXTURE": {
+        "n": 12,
+        "recon_snr_db_median": -10.445503165376923,
+        "si_sdr_db_median": -10.641074622611546,
+        "projection_gain_db_median": 0.005664784061939489,
+        "log_mag_l1_median": 0.7229103513434028,
+        "hf_ratio_median": 1.6093394178163707,
+        "nuisance_attenuation_db_median": null,
+        "nuisance_proj_coeff_median": 0.9999999998892682
+      },
+      "TRUE_TARGET": {
+        "n": 12,
+        "recon_snr_db_median": 3000.0,
+        "si_sdr_db_median": 177.07517469218806,
+        "projection_gain_db_median": 8.685890356304473e-10,
+        "log_mag_l1_median": 0.0,
+        "hf_ratio_median": 1.0,
+        "nuisance_attenuation_db_median": null,
+        "nuisance_proj_coeff_median": null
+      },
+      "TRUE_TARGET_STFT_ROUNDTRIP": {
+        "n": 12,
+        "recon_snr_db_median": 3000.0,
+        "si_sdr_db_median": 177.07517469218806,
+        "projection_gain_db_median": 8.685890356304473e-10,
+        "log_mag_l1_median": 0.0,
+        "hf_ratio_median": 1.0,
+        "nuisance_attenuation_db_median": null,
+        "nuisance_proj_coeff_median": null
+      }
+    },
+    "by_level": {
+      "-20.0": {
+        "BOUNDED_REAL_MASK_ORACLE": {
+          "recon_snr_db_median": 6.293906184078089,
+          "projection_gain_db_median": -2.6494500268870453
+        },
+        "COMPLEX_RATIO_ORACLE": {
+          "recon_snr_db_median": 100.97757129090249,
+          "projection_gain_db_median": -1.005977431401887e-07
+        },
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": {
+          "recon_snr_db_median": 6.941226619320096,
+          "projection_gain_db_median": -2.2725768737452805
+        },
+        "RAW_MIXTURE": {
+          "recon_snr_db_median": -25.076684085652175,
+          "projection_gain_db_median": 0.04759127103481218
+        },
+        "TRUE_TARGET": {
+          "recon_snr_db_median": 3000.0,
+          "projection_gain_db_median": 8.685890356304473e-10
+        },
+        "TRUE_TARGET_STFT_ROUNDTRIP": {
+          "recon_snr_db_median": 3000.0,
+          "projection_gain_db_median": 8.685890356304473e-10
+        }
+      },
+      "-10.0": {
+        "BOUNDED_REAL_MASK_ORACLE": {
+          "recon_snr_db_median": 12.920780726684065,
+          "projection_gain_db_median": -0.6639537979256438
+        },
+        "COMPLEX_RATIO_ORACLE": {
+          "recon_snr_db_median": 113.90395926333218,
+          "projection_gain_db_median": -4.081889680299553e-09
+        },
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": {
+          "recon_snr_db_median": 13.66224752944348,
+          "projection_gain_db_median": -0.5626125616930764
+        },
+        "RAW_MIXTURE": {
+          "recon_snr_db_median": -15.67996435325275,
+          "projection_gain_db_median": -0.16930665978527776
+        },
+        "TRUE_TARGET": {
+          "recon_snr_db_median": 3000.0,
+          "projection_gain_db_median": 8.685890356304473e-10
+        },
+        "TRUE_TARGET_STFT_ROUNDTRIP": {
+          "recon_snr_db_median": 3000.0,
+          "projection_gain_db_median": 8.685890356304473e-10
+        }
+      },
+      "0.0": {
+        "BOUNDED_REAL_MASK_ORACLE": {
+          "recon_snr_db_median": 14.83401477429525,
+          "projection_gain_db_median": -0.4309423414950406
+        },
+        "COMPLEX_RATIO_ORACLE": {
+          "recon_snr_db_median": 113.4472481401234,
+          "projection_gain_db_median": -6.870034739115919e-09
+        },
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": {
+          "recon_snr_db_median": 15.700589678028205,
+          "projection_gain_db_median": -0.4006621112576513
+        },
+        "RAW_MIXTURE": {
+          "recon_snr_db_median": -9.321799647831238,
+          "projection_gain_db_median": 0.008230099559083331
+        },
+        "TRUE_TARGET": {
+          "recon_snr_db_median": 3000.0,
+          "projection_gain_db_median": 8.685890356304473e-10
+        },
+        "TRUE_TARGET_STFT_ROUNDTRIP": {
+          "recon_snr_db_median": 3000.0,
+          "projection_gain_db_median": 8.685890356304473e-10
+        }
+      },
+      "10.0": {
+        "BOUNDED_REAL_MASK_ORACLE": {
+          "recon_snr_db_median": 19.53422884673686,
+          "projection_gain_db_median": -0.12482350960686443
+        },
+        "COMPLEX_RATIO_ORACLE": {
+          "recon_snr_db_median": 110.30059089663004,
+          "projection_gain_db_median": -6.905564902286405e-09
+        },
+        "OPTIMIZED_BOUNDED_MASK_ORACLE": {
+          "recon_snr_db_median": 20.135760844659202,
+          "projection_gain_db_median": -0.12391768077472456
+        },
+        "RAW_MIXTURE": {
+          "recon_snr_db_median": 3.5822073769628435,
+          "projection_gain_db_median": 0.0016458261299317314
+        },
+        "TRUE_TARGET": {
+          "recon_snr_db_median": 3000.0,
+          "projection_gain_db_median": 8.685890356304473e-10
+        },
+        "TRUE_TARGET_STFT_ROUNDTRIP": {
+          "recon_snr_db_median": 3000.0,
+          "projection_gain_db_median": 8.685890356304473e-10
+        }
+      }
+    }
+  },
+  "deliverables": {
+    "MIXTURE_RECIPES.json": "e35e12b6ece14a42aebd073b0fe82d40f5a18cd24f8fe17b846d8d7c1f35648e",
+    "REPRESENTATION_RESULTS.json": "32a50330bcd34959f95619f2a906eb48d14a47e589dc77146dbcdc286d26497e",
+    "listening_key.json": "88f6b71a8335cedf175307da6adc032b489a79d2907b6d90702dbbac988c0cbf",
+    "LISTENING_INSTRUCTIONS.md": "559810de2a7a3064892876ba16f76ab77b6ef5ba7f6a7b323237633cadc0d97f"
+  },
+  "decision": "PENDING"
+}

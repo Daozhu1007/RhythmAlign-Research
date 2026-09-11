@@ -1,0 +1,148 @@
+{
+ "phase": "R5-FIX historical freeze",
+ "created": "2026-09-09",
+ "purpose": "Immutable evidence record. Historical R4-R5.6 outputs are NOT modified by this phase; hashes must still match at any later audit.",
+ "hash_algorithm": "sha256",
+ "artifacts": {
+  "D:\\Code\\RhythmAlign\\experiments\\r4_contact_reconstruction\\outputs\\C0_clean_music.wav": {
+   "sha256": "a70fedd3c16807e0a88af217e18679d0ecde0131739bc9a2505839f94b63cc74",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r4_contact_reconstruction\\outputs\\C1_interaction.wav": {
+   "sha256": "1df1241a1dc5ee3018291051dab35536d3490461bbf81b33b27831684486126e",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r4_contact_reconstruction\\outputs\\C1_final_mix.wav": {
+   "sha256": "a5620cee97149ddf3f0cf4562fe7e4069c7048894b738e73e6b46bb8b7d1bf4b",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r4_contact_reconstruction\\outputs\\C2_interaction.wav": {
+   "sha256": "86cfb1435b9099d078bab694358b2d82511f63de754db45c49fc331a89381e40",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r4_contact_reconstruction\\outputs\\C2_final_mix.wav": {
+   "sha256": "0c876d47d1c814b11df78ef5a1d9efe7a262f409563811b732ee98b6bff08d39",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r4_contact_reconstruction\\outputs\\C3_interaction.wav": {
+   "sha256": "64cc2d8d44a3b4a6bec77df347b821fd613928e93b7b4f6a82ecb640cb29cd06",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r4_contact_reconstruction\\outputs\\C3_final_mix.wav": {
+   "sha256": "d4c3ab77576b0e1546422ba32bfe906e18ebde64154d1def941bf457b5866921",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r4_contact_reconstruction\\outputs\\contacts_oracle.json": {
+   "sha256": "2bcd8a15a1825f98b96f3c079ae89107340fe3dcf009fd36808559efcf965c72",
+   "bytes": 18698
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r4_contact_reconstruction\\outputs\\contacts_refined.json": {
+   "sha256": "304c7d6fde4dd505d9bc227f0faeb9819316cc736d50d0bcb848c5e8f2e87983",
+   "bytes": 37150
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r45_conservative_windows\\outputs\\D0_final_mix.wav": {
+   "sha256": "4fb76938e31711b51c3cd0f7c68b8f82de7308c5ba0dab4e104196cfb74cb49c",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r45_conservative_windows\\outputs\\D0_interaction.wav": {
+   "sha256": "ba082fb3b251e5fe17cdc4000a383977577fe640cf78bb90a24685aef07bdc67",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r45_conservative_windows\\outputs\\D1_final_mix.wav": {
+   "sha256": "640bb92a2d03ecf82ac1b603f4d06ad2d7c3516791e1138dcb2d762faecf8810",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r45_conservative_windows\\outputs\\D1_interaction.wav": {
+   "sha256": "83517329116633397b1e47c11e19b54445e0ed9cbfa0e21708b7b8fab41bb583",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r45_conservative_windows\\outputs\\D2_final_mix.wav": {
+   "sha256": "031a9e5587f5acf0392b8e5ed4af895e75e79a9cb596836140a95b89411d34c0",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r45_conservative_windows\\outputs\\D2_interaction.wav": {
+   "sha256": "09a0305cc005124096def2a17ebeaf83967da94b947bd69b198f4a350346ba20",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r45_conservative_windows\\outputs\\D3_final_mix.wav": {
+   "sha256": "cae05100a14257dfd139c86420bcc0fda73d0d2cb51f029993f3744f3ee767e1",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r45_conservative_windows\\outputs\\D3_interaction.wav": {
+   "sha256": "9b45df686423aa86d09c70b3388e8a79ff192e30e318f5eeb58555e76df8e7d0",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r55_burst_event_splitting\\outputs\\detector_config_r55_frozen.json": {
+   "sha256": "18e8874afead301c73809dd1680d0d0078d63c324eccc228b620a50148969a25",
+   "bytes": 2656
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\outputs\\detector_config_r56_frozen.json": {
+   "sha256": "9e7dff58765969db5ef5d45dab2678dd19f859f47834e7fcea51894b27270b57",
+   "bytes": 4940
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\outputs\\holdoutD_contacts_auto_refined.json": {
+   "sha256": "1591397be8b6f9e65d83240dd0a6c80f50a3adf83f09832c96de5b900513e31f",
+   "bytes": 41547
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\outputs\\holdoutD_contacts_auto_visual.json": {
+   "sha256": "15ffa7e3399bdcf02a07a9be6385e3355fedd2531701319a109e4ad6d2695fe0",
+   "bytes": 26016
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\outputs\\holdoutD_e0_C1_interaction.wav": {
+   "sha256": "325654da4b8a6c7ca287208e6bde589656bac2360965a897364a309f45b31926",
+   "bytes": 6912088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\outputs\\holdoutD_e0_C1_final_mix.wav": {
+   "sha256": "3e9b8d1abb39af769202701be86953ba18efea058e444b926618cfc8e1c82260",
+   "bytes": 6912088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\outputs\\holdoutD_oracle_blind.json": {
+   "sha256": "e16f4f1257b2c9593783935821262b5cc7d57c3418638770495f992f744d2c70",
+   "bytes": 18732
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\outputs\\holdoutD_oracle_refined.json": {
+   "sha256": "f02d09d9182fe56df20358200dcd68449ef84ed9925d7e514bf88bb8379e0467",
+   "bytes": 26232
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\outputs\\holdoutD_oracle_C1_interaction.wav": {
+   "sha256": "260c874098164c73802e3564e2c4b149ef012a33f395ff26b72f6777ed5477a8",
+   "bytes": 6912088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\outputs\\holdoutD_oracle_C1_final_mix.wav": {
+   "sha256": "3449a3461fddce30abd045d69581fe5fee4f36cf631d8ab8a0db8c48246894f9",
+   "bytes": 6912088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\outputs\\holdoutD_auto_C1_interaction.wav": {
+   "sha256": "bf11b6000330ff4364249816b57f1d0da750225cc683cd80b5aa1c835222a352",
+   "bytes": 6912088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\outputs\\holdoutD_auto_C1_final_mix.wav": {
+   "sha256": "39964411c4a96faff7544c6c24bf244595a1a9edebdc9a572708435a7926cdb7",
+   "bytes": 6912088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\outputs\\holdoutD_raw.wav": {
+   "sha256": "e41fa2a8ff7e9f575f545e8db67c1a2f4a83e617a2f5cca1e170899ed6c8544d",
+   "bytes": 3456044
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\work\\holdoutD_ref_warp.wav": {
+   "sha256": "a91ddac28075cbc032d0b114dd9ba763953db002bc1f0c0504d750f1b939f7eb",
+   "bytes": 4608044
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\work\\holdoutD_comb.npy": {
+   "sha256": "2176785c1680659ae0da77a0327103816994b1618248cb7d9447ee92e023bba3",
+   "bytes": 3456128
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r56_precision_cleanup\\logs\\holdoutD_metrics.json": {
+   "sha256": "29aec36135801b7d64e08c76b513ba93e51b4262d14e773bf739d21a17023ff5",
+   "bytes": 2027
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r1_golden_sample\\outputs\\golden_raw.wav": {
+   "sha256": "6f50efa847af14a912866f047ba2bf69895fdb33d5977fc271c09d9dcdd5be0b",
+   "bytes": 5760088
+  },
+  "D:\\Code\\RhythmAlign\\experiments\\r1_golden_sample\\work\\ref_warp_fixed.wav": {
+   "sha256": "bc3a1b71d764d288e292360fa7472a2a1c0ff185a4f298ba3988b0031f9769e0",
+   "bytes": 8064088
+  }
+ }
+}

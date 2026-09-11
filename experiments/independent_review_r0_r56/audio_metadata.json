@@ -1,0 +1,730 @@
+[
+  {
+    "path": "experiments/r1_golden_sample/outputs/A0_current_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r1_golden_sample/outputs/A1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r1_golden_sample/outputs/A1_removed.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r1_golden_sample/outputs/A1_residual.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r1_golden_sample/outputs/A2_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r1_golden_sample/outputs/A2_removed.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r1_golden_sample/outputs/A2_residual.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r1_golden_sample/outputs/A3_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r1_golden_sample/outputs/A3_removed.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r1_golden_sample/outputs/A3_residual.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r1_golden_sample/outputs/golden_raw.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r2_target_separation/outputs/audiosep_a2_p1_residual.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r2_target_separation/outputs/audiosep_a2_p1_target.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r2_target_separation/outputs/audiosep_a2_p2_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r2_target_separation/outputs/audiosep_a2_p2_residual.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r2_target_separation/outputs/audiosep_a2_p2_target.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r2_target_separation/outputs/audiosep_raw_p1_residual.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r2_target_separation/outputs/audiosep_raw_p1_target.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r2_target_separation/outputs/audiosep_raw_p2_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r2_target_separation/outputs/audiosep_raw_p2_residual.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r2_target_separation/outputs/audiosep_raw_p2_target.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r3_audio_query/outputs/audiosep_aq_q1_residual.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r3_audio_query/outputs/audiosep_aq_q1_target.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r3_audio_query/outputs/audiosep_aq_q2_residual.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r3_audio_query/outputs/audiosep_aq_q2_target.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r3_audio_query/outputs/clapsep_n1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r3_audio_query/outputs/clapsep_n1_residual.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r3_audio_query/outputs/clapsep_n1_target.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r3_audio_query/outputs/clapsep_q1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r3_audio_query/outputs/clapsep_q1_residual.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r3_audio_query/outputs/clapsep_q1_target.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r3_audio_query/outputs/clapsep_q2_residual.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r3_audio_query/outputs/clapsep_q2_target.wav",
+    "samplerate": 32000,
+    "channels": 1,
+    "frames": 480000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/outputs/D0_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/outputs/D0_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/outputs/D1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/outputs/D1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/outputs/D2_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/outputs/D2_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/outputs/D3_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r45_conservative_windows/outputs/D3_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/outputs/C0_clean_music.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/outputs/C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/outputs/C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/outputs/C2_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/outputs/C2_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/outputs/C3_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r4_contact_reconstruction/outputs/C3_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/devA_oracle_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/devA_oracle_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/devA_r55auto_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/devA_r55auto_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/devB_oracle_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/devB_oracle_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/devB_r55auto_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/devB_r55auto_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_auto_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_auto_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_oracle_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_oracle_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_r5baseline_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_r5baseline_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r55_burst_event_splitting/outputs/holdoutC_raw.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "PCM_16"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/devA_E1_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/devA_E1_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/devA_E2_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/devA_E2_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/devB_E1_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/devB_E1_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/devB_E2_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/devB_E2_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/devC_E1_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/devC_E1_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/devC_E2_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/devC_E2_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_auto_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_auto_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_e0_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_e0_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_oracle_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_oracle_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r56_precision_cleanup/outputs/holdoutD_raw.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "PCM_16"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/dev_auto_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/dev_auto_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/dev_oracle_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/dev_oracle_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 720000,
+    "duration_s": 15.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/holdout_auto_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/holdout_auto_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/holdout_oracle_C1_final_mix.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/holdout_oracle_C1_interaction.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "FLOAT"
+  },
+  {
+    "path": "experiments/r5_auto_contact_detection/outputs/holdout_raw.wav",
+    "samplerate": 48000,
+    "channels": 2,
+    "frames": 864000,
+    "duration_s": 18.0,
+    "subtype": "PCM_16"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "status": "pass",
+  "scope": "Required files, 18 study parts, final seven sections, JSON choices, local links, encoding and historical hashes; web content was researched separately",
+  "required_files": [
+    "S0_RESEARCH_STUDY.md",
+    "LITERATURE_MAP.md",
+    "ARCHITECTURE_OPTIONS.md",
+    "DATA_AND_GROUND_TRUTH_PLAN.md",
+    "MINIMAL_DECISIVE_EXPERIMENT.md",
+    "PAPER_DIRECTION_MEMO.md",
+    "S0_DECISION.json",
+    "EVIDENCE_AND_SCOPE.md",
+    "WORKSPACE_EVIDENCE_CHECKS.json"
+  ],
+  "documents": {
+    "ARCHITECTURE_OPTIONS.md": {
+      "bytes": 22403,
+      "words_approx": 2939
+    },
+    "DATA_AND_GROUND_TRUTH_PLAN.md": {
+      "bytes": 28643,
+      "words_approx": 3800
+    },
+    "ERRATUM.md": {
+      "bytes": 3023,
+      "words_approx": 424
+    },
+    "EVIDENCE_AND_SCOPE.md": {
+      "bytes": 6241,
+      "words_approx": 704
+    },
+    "LITERATURE_MAP.md": {
+      "bytes": 31519,
+      "words_approx": 3679
+    },
+    "MINIMAL_DECISIVE_EXPERIMENT.md": {
+      "bytes": 25811,
+      "words_approx": 3559
+    },
+    "PAPER_DIRECTION_MEMO.md": {
+      "bytes": 14495,
+      "words_approx": 1779
+    },
+    "S0_RESEARCH_STUDY.md": {
+      "bytes": 44632,
+      "words_approx": 5727
+    }
+  },
+  "unique_local_links_checked": 14,
+  "unique_primary_web_urls_in_deliverables": 75,
+  "historical_hashes_unchanged": {
+    "experiments/independent_review_r0_r56/INDEPENDENT_REVIEW.md": true,
+    "experiments/r5_fix_validity_repair/REPORT.md": true,
+    "experiments/r5_fix_validity_repair/corrected_comparison_matrix.json": true,
+    "experiments/r5_fix_validity_repair/logs/evaluation_corrected.json": true,
+    "experiments/r5_fix_validity_repair/scripts/fixenv.py": true,
+    "experiments/r1_golden_sample/scripts/06_cancel.py": true,
+    "experiments/r1_golden_sample/work/audit_metrics.json": true,
+    "experiments/r3_audio_query/logs/00_env_audit.md": true,
+    "experiments/r3_audio_query/third_party/CLAPSep/model/CLAPSep.py": true,
+    "experiments/r3_audio_query/third_party/CLAPSep/model/CLAPSep_decoder.py": true,
+    "experiments/r2_target_separation/third_party/AudioSep/config/audiosep_base.yaml": true
+  },
+  "errors": []
+}

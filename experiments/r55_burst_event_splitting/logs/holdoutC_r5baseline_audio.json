@@ -1,0 +1,7 @@
+{
+ "n_used": 91,
+ "gate_coverage_of_oracle": 0.735,
+ "gate_coverage_strong": 0.765,
+ "final_mix_rms_db_vs_oracle": -9.3,
+ "music_onset_matched": 19
+}

@@ -1,0 +1,508 @@
+{
+  "sr": 32000,
+  "data_class": "SYNTHETIC_FIXTURE",
+  "cases": [
+    {
+      "id": "case01_tap_music",
+      "target": {
+        "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\phone\\phone_audio.wav",
+        "offset_s": 2.6,
+        "duration_s": 5.0,
+        "events": [
+          {
+            "t0": 0.3999999999999999,
+            "t1": 0.52,
+            "label": "tap"
+          },
+          {
+            "t0": 1.9,
+            "t1": 2.02,
+            "label": "tap"
+          },
+          {
+            "t0": 3.4,
+            "t1": 3.5500000000000003,
+            "label": "button"
+          },
+          {
+            "t0": 4.9,
+            "t1": 5.0,
+            "label": "palm"
+          }
+        ],
+        "friction_intervals": []
+      },
+      "nuisances": [
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_track_a.wav",
+          "offset_s": 2.0,
+          "level_db": -10,
+          "family": "music",
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "case02_tap_music",
+      "target": {
+        "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\phone\\phone_audio.wav",
+        "offset_s": 2.6,
+        "duration_s": 5.0,
+        "events": [
+          {
+            "t0": 0.3999999999999999,
+            "t1": 0.52,
+            "label": "tap"
+          },
+          {
+            "t0": 1.9,
+            "t1": 2.02,
+            "label": "tap"
+          },
+          {
+            "t0": 3.4,
+            "t1": 3.5500000000000003,
+            "label": "button"
+          },
+          {
+            "t0": 4.9,
+            "t1": 5.0,
+            "label": "palm"
+          }
+        ],
+        "friction_intervals": []
+      },
+      "nuisances": [
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_track_a.wav",
+          "offset_s": 2.0,
+          "level_db": 0,
+          "family": "music",
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "case03_tap_music",
+      "target": {
+        "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\phone\\phone_audio.wav",
+        "offset_s": 2.6,
+        "duration_s": 5.0,
+        "events": [
+          {
+            "t0": 0.3999999999999999,
+            "t1": 0.52,
+            "label": "tap"
+          },
+          {
+            "t0": 1.9,
+            "t1": 2.02,
+            "label": "tap"
+          },
+          {
+            "t0": 3.4,
+            "t1": 3.5500000000000003,
+            "label": "button"
+          },
+          {
+            "t0": 4.9,
+            "t1": 5.0,
+            "label": "palm"
+          }
+        ],
+        "friction_intervals": []
+      },
+      "nuisances": [
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_track_a.wav",
+          "offset_s": 2.0,
+          "level_db": 10,
+          "family": "music",
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "case04_weak_music",
+      "target": {
+        "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\phone\\phone_audio.wav",
+        "offset_s": 1.0,
+        "duration_s": 5.0,
+        "events": [
+          {
+            "t0": 0.5,
+            "t1": 0.56,
+            "label": "tap_weak"
+          },
+          {
+            "t0": 2.0,
+            "t1": 2.12,
+            "label": "tap"
+          },
+          {
+            "t0": 3.5,
+            "t1": 3.62,
+            "label": "tap"
+          }
+        ],
+        "friction_intervals": []
+      },
+      "nuisances": [
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_track_a.wav",
+          "offset_s": 2.0,
+          "level_db": -20,
+          "family": "music",
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "case05_palm_speech",
+      "target": {
+        "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\phone\\phone_audio.wav",
+        "offset_s": 7.0,
+        "duration_s": 5.0,
+        "events": [
+          {
+            "t0": 0.5,
+            "t1": 0.75,
+            "label": "palm"
+          },
+          {
+            "t0": 2.0,
+            "t1": 4.5,
+            "label": "friction_slow"
+          }
+        ],
+        "friction_intervals": [
+          {
+            "t0": 2.0,
+            "t1": 4.5
+          }
+        ]
+      },
+      "nuisances": [
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\nuisance_speech.wav",
+          "offset_s": 1.0,
+          "level_db": -10,
+          "family": "speech",
+          "path_transform": null
+        }
+      ]
+    },
+    {
+      "id": "case06_friction_music",
+      "target": {
+        "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\phone\\phone_audio.wav",
+        "offset_s": 8.6,
+        "duration_s": 5.0,
+        "events": [
+          {
+            "t0": 0.40000000000000036,
+            "t1": 2.9000000000000004,
+            "label": "friction_slow"
+          },
+          {
+            "t0": 3.4000000000000004,
+            "t1": 4.6,
+            "label": "friction_fast"
+          }
+        ],
+        "friction_intervals": [
+          {
+            "t0": 0.40000000000000036,
+            "t1": 2.9000000000000004
+          },
+          {
+            "t0": 3.4000000000000004,
+            "t1": 4.6
+          }
+        ]
+      },
+      "nuisances": [
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_track_a.wav",
+          "offset_s": 2.0,
+          "level_db": 0,
+          "family": "music",
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "case07_friction_music",
+      "target": {
+        "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\phone\\phone_audio.wav",
+        "offset_s": 25.6,
+        "duration_s": 5.0,
+        "events": [
+          {
+            "t0": 0.3999999999999986,
+            "t1": 3.8999999999999986,
+            "label": "friction_slow"
+          },
+          {
+            "t0": 4.899999999999999,
+            "t1": 4.959999999999997,
+            "label": "tap_weak"
+          }
+        ],
+        "friction_intervals": [
+          {
+            "t0": 0.3999999999999986,
+            "t1": 3.8999999999999986
+          }
+        ]
+      },
+      "nuisances": [
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_track_a.wav",
+          "offset_s": 2.0,
+          "level_db": -10,
+          "family": "music",
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "case08_dense_music",
+      "target": {
+        "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\phone\\phone_audio.wav",
+        "offset_s": 22.6,
+        "duration_s": 5.0,
+        "events": [
+          {
+            "t0": 0.3999999999999986,
+            "t1": 0.5199999999999996,
+            "label": "tap"
+          },
+          {
+            "t0": 1.0,
+            "t1": 1.1499999999999986,
+            "label": "button"
+          },
+          {
+            "t0": 1.5999999999999979,
+            "t1": 1.7199999999999989,
+            "label": "tap"
+          },
+          {
+            "t0": 2.1999999999999993,
+            "t1": 2.349999999999998,
+            "label": "button"
+          },
+          {
+            "t0": 3.3999999999999986,
+            "t1": 5.0,
+            "label": "friction_slow"
+          }
+        ],
+        "friction_intervals": [
+          {
+            "t0": 3.3999999999999986,
+            "t1": 5.0
+          }
+        ]
+      },
+      "nuisances": [
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_track_a.wav",
+          "offset_s": 2.0,
+          "level_db": 10,
+          "family": "music",
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "case09_weak_speech",
+      "target": {
+        "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\phone\\phone_audio.wav",
+        "offset_s": 15.8,
+        "duration_s": 5.0,
+        "events": [
+          {
+            "t0": 0.3999999999999986,
+            "t1": 0.4599999999999973,
+            "label": "tap_weak"
+          },
+          {
+            "t0": 1.6999999999999993,
+            "t1": 1.9499999999999993,
+            "label": "palm"
+          }
+        ],
+        "friction_intervals": []
+      },
+      "nuisances": [
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\nuisance_speech.wav",
+          "offset_s": 1.0,
+          "level_db": 0,
+          "family": "speech",
+          "path_transform": null
+        }
+      ]
+    },
+    {
+      "id": "case10_button_impact",
+      "target": {
+        "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\phone\\phone_audio.wav",
+        "offset_s": 5.6,
+        "duration_s": 5.0,
+        "events": [
+          {
+            "t0": 0.40000000000000036,
+            "t1": 0.5500000000000007,
+            "label": "button"
+          },
+          {
+            "t0": 1.9000000000000004,
+            "t1": 2.1500000000000004,
+            "label": "palm"
+          },
+          {
+            "t0": 3.4000000000000004,
+            "t1": 5.0,
+            "label": "friction_slow"
+          }
+        ],
+        "friction_intervals": [
+          {
+            "t0": 3.4000000000000004,
+            "t1": 5.0
+          }
+        ]
+      },
+      "nuisances": [
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\nuisance_impacts.wav",
+          "offset_s": 1.5,
+          "level_db": 0,
+          "family": "impact",
+          "path_transform": null
+        }
+      ]
+    },
+    {
+      "id": "case11_composite",
+      "target": {
+        "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\phone\\phone_audio.wav",
+        "offset_s": 2.6,
+        "duration_s": 5.0,
+        "events": [
+          {
+            "t0": 0.3999999999999999,
+            "t1": 0.52,
+            "label": "tap"
+          },
+          {
+            "t0": 1.9,
+            "t1": 2.02,
+            "label": "tap"
+          },
+          {
+            "t0": 3.4,
+            "t1": 3.5500000000000003,
+            "label": "button"
+          },
+          {
+            "t0": 4.9,
+            "t1": 5.0,
+            "label": "palm"
+          }
+        ],
+        "friction_intervals": []
+      },
+      "nuisances": [
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_track_a.wav",
+          "offset_s": 2.0,
+          "level_db": 0,
+          "family": "music",
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          }
+        },
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\nuisance_ambience.wav",
+          "offset_s": 0.5,
+          "level_db": 0,
+          "family": "ambience",
+          "path_transform": null
+        }
+      ]
+    },
+    {
+      "id": "case12_composite_weak",
+      "target": {
+        "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\phone\\phone_audio.wav",
+        "offset_s": 15.8,
+        "duration_s": 5.0,
+        "events": [
+          {
+            "t0": 0.3999999999999986,
+            "t1": 0.4599999999999973,
+            "label": "tap_weak"
+          },
+          {
+            "t0": 1.6999999999999993,
+            "t1": 1.9499999999999993,
+            "label": "palm"
+          }
+        ],
+        "friction_intervals": []
+      },
+      "nuisances": [
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_track_a.wav",
+          "offset_s": 2.0,
+          "level_db": -10,
+          "family": "music",
+          "path_transform": {
+            "rir_wav": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\session0001\\pristine\\fixture_rir_a.wav",
+            "rir_norm_peak": true
+          }
+        },
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\nuisance_speech.wav",
+          "offset_s": 1.0,
+          "level_db": 0,
+          "family": "speech",
+          "path_transform": null
+        },
+        {
+          "path": "D:\\Code\\RhythmAlign\\experiments\\s1a_ground_truth_pilot\\fixtures\\nuisance_impacts.wav",
+          "offset_s": 1.5,
+          "level_db": 0,
+          "family": "impact",
+          "path_transform": null
+        }
+      ]
+    }
+  ]
+}

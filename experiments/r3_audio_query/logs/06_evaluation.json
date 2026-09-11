@@ -1,0 +1,267 @@
+{
+  "sr": 32000,
+  "n_clicks": 53,
+  "n_taiko": 39,
+  "n_ref_onsets": 44,
+  "n_music_heavy_windows": 276,
+  "n_music_quiet_windows": 337,
+  "runs": {
+    "audiosep_aq_q1_target.wav": {
+      "n_target_onsets": 78,
+      "click_retention": {
+        "matched": 49,
+        "rate": 0.9245283018867925
+      },
+      "click_level_ratio_db": {
+        "median": -2.191141128540039,
+        "p25": -2.5780258178710938,
+        "p75": -1.4939651489257812
+      },
+      "taiko_leakage": {
+        "matched": 10,
+        "rate": 0.2564102564102564
+      },
+      "music_onsets_in_target": 5,
+      "hallucinated_onsets": {
+        "count": 0,
+        "times": []
+      },
+      "selectivity": {
+        "R_op_db": -2.234455108642578,
+        "R_music_heavy_db": -5.625300407409668,
+        "R_music_quiet_db": -3.9563064575195312,
+        "selectivity_score_db": 3.39084529876709,
+        "op_vs_quiet_db": 1.7218513488769531,
+        "op_vs_taiko_note": "see taiko_leakage"
+      },
+      "frame_energy_regression": {
+        "slope": 1.211191526859376,
+        "intercept_db": -0.6131697584944408,
+        "r2": 0.7943612091827906
+      },
+      "spec_sim_vs_mixture_logmag": 0.9817975217885411,
+      "corr_target_vs_ref": 0.028821950688855957,
+      "corr_target_vs_ref_music_heavy": 0.06892201154709975,
+      "energy_db": {
+        "mixture": -20.34699249267578,
+        "target": -23.367252349853516,
+        "residual": -26.309764862060547
+      }
+    },
+    "audiosep_aq_q2_target.wav": {
+      "n_target_onsets": 78,
+      "click_retention": {
+        "matched": 49,
+        "rate": 0.9245283018867925
+      },
+      "click_level_ratio_db": {
+        "median": -1.309915542602539,
+        "p25": -2.1830902099609375,
+        "p75": -0.9243984222412109
+      },
+      "taiko_leakage": {
+        "matched": 10,
+        "rate": 0.2564102564102564
+      },
+      "music_onsets_in_target": 5,
+      "hallucinated_onsets": {
+        "count": 0,
+        "times": []
+      },
+      "selectivity": {
+        "R_op_db": -1.309915542602539,
+        "R_music_heavy_db": -2.7483787536621094,
+        "R_music_quiet_db": -2.435633659362793,
+        "selectivity_score_db": 1.4384632110595703,
+        "op_vs_quiet_db": 1.125718116760254,
+        "op_vs_taiko_note": "see taiko_leakage"
+      },
+      "frame_energy_regression": {
+        "slope": 1.078541749374731,
+        "intercept_db": -0.8447455165495232,
+        "r2": 0.8823064436127421
+      },
+      "spec_sim_vs_mixture_logmag": 0.9909717317519352,
+      "corr_target_vs_ref": 0.0940841875919078,
+      "corr_target_vs_ref_music_heavy": 0.18289906905731476,
+      "energy_db": {
+        "mixture": -20.34699249267578,
+        "target": -22.217750549316406,
+        "residual": -31.369285583496094
+      }
+    },
+    "audiosep_raw_p2_target.wav": {
+      "n_target_onsets": 77,
+      "click_retention": {
+        "matched": 49,
+        "rate": 0.9245283018867925
+      },
+      "click_level_ratio_db": {
+        "median": -2.853025436401367,
+        "p25": -3.796194076538086,
+        "p75": -2.107433319091797
+      },
+      "taiko_leakage": {
+        "matched": 10,
+        "rate": 0.2564102564102564
+      },
+      "music_onsets_in_target": 5,
+      "hallucinated_onsets": {
+        "count": 0,
+        "times": []
+      },
+      "selectivity": {
+        "R_op_db": -2.8997230529785156,
+        "R_music_heavy_db": -9.84158706665039,
+        "R_music_quiet_db": -13.555850982666016,
+        "selectivity_score_db": 6.941864013671875,
+        "op_vs_quiet_db": 10.6561279296875,
+        "op_vs_taiko_note": "see taiko_leakage"
+      },
+      "frame_energy_regression": {
+        "slope": 1.784454774517279,
+        "intercept_db": 6.1131899818993585,
+        "r2": 0.7585490241987162
+      },
+      "spec_sim_vs_mixture_logmag": 0.8930769217293664,
+      "corr_target_vs_ref": 0.013016489960629029,
+      "corr_target_vs_ref_music_heavy": 0.05331122640332912,
+      "energy_db": {
+        "mixture": -20.34699249267578,
+        "target": -24.75801658630371,
+        "residual": -23.860126495361328
+      }
+    },
+    "clapsep_n1_target.wav": {
+      "n_target_onsets": 77,
+      "click_retention": {
+        "matched": 47,
+        "rate": 0.8867924528301887
+      },
+      "click_level_ratio_db": {
+        "median": -2.3938560485839844,
+        "p25": -3.18637752532959,
+        "p75": -1.797865867614746
+      },
+      "taiko_leakage": {
+        "matched": 10,
+        "rate": 0.2564102564102564
+      },
+      "music_onsets_in_target": 4,
+      "hallucinated_onsets": {
+        "count": 2,
+        "times": [
+          13.408,
+          14.464
+        ]
+      },
+      "selectivity": {
+        "R_op_db": -2.478738784790039,
+        "R_music_heavy_db": -8.8788423538208,
+        "R_music_quiet_db": -7.8453216552734375,
+        "selectivity_score_db": 6.400103569030762,
+        "op_vs_quiet_db": 5.366582870483398,
+        "op_vs_taiko_note": "see taiko_leakage"
+      },
+      "frame_energy_regression": {
+        "slope": 1.518642356480656,
+        "intercept_db": 2.5139422795155184,
+        "r2": 0.7317314965113213
+      },
+      "spec_sim_vs_mixture_logmag": 0.934954865512421,
+      "corr_target_vs_ref": 0.014468057831204896,
+      "corr_target_vs_ref_music_heavy": 0.0320275112748017,
+      "energy_db": {
+        "mixture": -20.34699249267578,
+        "target": -24.15714454650879,
+        "residual": -24.288562774658203
+      }
+    },
+    "clapsep_q1_target.wav": {
+      "n_target_onsets": 78,
+      "click_retention": {
+        "matched": 48,
+        "rate": 0.9056603773584906
+      },
+      "click_level_ratio_db": {
+        "median": -2.2476682662963867,
+        "p25": -3.0021467208862305,
+        "p75": -1.6756420135498047
+      },
+      "taiko_leakage": {
+        "matched": 10,
+        "rate": 0.2564102564102564
+      },
+      "music_onsets_in_target": 5,
+      "hallucinated_onsets": {
+        "count": 1,
+        "times": [
+          13.408
+        ]
+      },
+      "selectivity": {
+        "R_op_db": -2.496295928955078,
+        "R_music_heavy_db": -7.648476600646973,
+        "R_music_quiet_db": -5.964315414428711,
+        "selectivity_score_db": 5.1521806716918945,
+        "op_vs_quiet_db": 3.468019485473633,
+        "op_vs_taiko_note": "see taiko_leakage"
+      },
+      "frame_energy_regression": {
+        "slope": 1.255140892158131,
+        "intercept_db": -2.1086068045034434,
+        "r2": 0.7225130999288121
+      },
+      "spec_sim_vs_mixture_logmag": 0.9468968729849313,
+      "corr_target_vs_ref": 0.007245244762877122,
+      "corr_target_vs_ref_music_heavy": 0.019690718654661828,
+      "energy_db": {
+        "mixture": -20.34699249267578,
+        "target": -24.00792694091797,
+        "residual": -23.990449905395508
+      }
+    },
+    "clapsep_q2_target.wav": {
+      "n_target_onsets": 76,
+      "click_retention": {
+        "matched": 48,
+        "rate": 0.9056603773584906
+      },
+      "click_level_ratio_db": {
+        "median": -2.37679386138916,
+        "p25": -3.167753219604492,
+        "p75": -1.6236233711242676
+      },
+      "taiko_leakage": {
+        "matched": 10,
+        "rate": 0.2564102564102564
+      },
+      "music_onsets_in_target": 4,
+      "hallucinated_onsets": {
+        "count": 0,
+        "times": []
+      },
+      "selectivity": {
+        "R_op_db": -2.5053024291992188,
+        "R_music_heavy_db": -6.707836151123047,
+        "R_music_quiet_db": -5.396257400512695,
+        "selectivity_score_db": 4.202533721923828,
+        "op_vs_quiet_db": 2.8909549713134766,
+        "op_vs_taiko_note": "see taiko_leakage"
+      },
+      "frame_energy_regression": {
+        "slope": 1.0508485370702343,
+        "intercept_db": -5.527840892205459,
+        "r2": 0.7446130622314078
+      },
+      "spec_sim_vs_mixture_logmag": 0.9457317182307766,
+      "corr_target_vs_ref": 0.017907754819496476,
+      "corr_target_vs_ref_music_heavy": 0.053017026377904015,
+      "energy_db": {
+        "mixture": -20.34699249267578,
+        "target": -24.016109466552734,
+        "residual": -24.702495574951172
+      }
+    }
+  }
+}

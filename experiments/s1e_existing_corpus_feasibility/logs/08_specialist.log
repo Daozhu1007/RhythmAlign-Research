@@ -1,0 +1,9 @@
+c1_speech_npc_a: stages=['A_reference_wiener', 'B_vad_soft_gate'] gain_dev -0.6 dB (8s)
+c2_speech_npc_b: stages=['A_reference_wiener', 'B_vad_soft_gate'] gain_dev -0.6 dB (4s)
+c3_taiko_prompt: stages=['A_reference_wiener', 'B_vad_soft_gate'] gain_dev -0.8 dB (3s)
+c4_ambience_start: stages=['A_skipped_no_reference', 'B_vad_soft_gate'] gain_dev -0.1 dB (1s)
+c5_announcer_end: stages=['A_skipped_no_reference', 'B_vad_soft_gate'] gain_dev -5.5 dB (1s)
+c6_dense_golden: stages=['A_reference_wiener', 'B_vad_soft_gate'] gain_dev -0.8 dB (5s)
+c7_weak_taps: stages=['A_reference_wiener', 'B_vad_soft_gate'] gain_dev -0.7 dB (3s)
+c8_slide_friction: stages=['A_reference_wiener', 'B_vad_soft_gate'] gain_dev -0.8 dB (3s)
+done in 28s

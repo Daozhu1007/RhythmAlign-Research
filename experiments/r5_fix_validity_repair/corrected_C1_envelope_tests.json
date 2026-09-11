@@ -1,0 +1,138 @@
+{
+ "phase": "R5-FIX PART 1 corrected C1 envelope tests",
+ "envelope_definition": {
+  "outside": "gain = 0",
+  "entry": "raised-cosine rise 0 -> 1 over attack = 10 ms",
+  "interior": "gain = 1",
+  "exit": "raised-cosine fall 1 -> 0 over release = 60 ms",
+  "overlap_merge": "pointwise max across spans",
+  "window_policy_unchanged": "pre 15 ms / post 150 ms (frozen C1 policy)",
+  "max_abs_gain_step_bound": 0.004166666666666667
+ },
+ "tests": {
+  "1_single_isolated_span": {
+   "name": "single_isolated_span",
+   "n_samples": 90000,
+   "n_spans": 1,
+   "gain_in_unit_range": true,
+   "outside_support_zero": true,
+   "max_abs_gain_step": 0.0032793183954368255,
+   "no_discontinuity": true,
+   "interior_zero_notches": 0,
+   "no_interior_zero_notch": true,
+   "attack_monotonic_nondecreasing": true,
+   "release_monotonic_nonincreasing": true,
+   "attack_starts_at_zero": true,
+   "attack_reaches_interior_continuously": true,
+   "release_leaves_interior_continuously": true,
+   "release_ends_at_zero": true,
+   "pass": true
+  },
+  "2_two_overlapping_spans": {
+   "name": "two_overlapping_spans",
+   "n_samples": 96000,
+   "n_spans": 1,
+   "gain_in_unit_range": true,
+   "outside_support_zero": true,
+   "max_abs_gain_step": 0.0032793183954368255,
+   "no_discontinuity": true,
+   "interior_zero_notches": 0,
+   "no_interior_zero_notch": true,
+   "overlap_never_reduces_gain": true,
+   "shared_region_full_gain": true,
+   "pass": true
+  },
+  "3_two_nearly_touching_spans": {
+   "name": "two_nearly_touching_spans",
+   "n_samples": 96000,
+   "n_spans": 2,
+   "gain_in_unit_range": true,
+   "outside_support_zero": true,
+   "max_abs_gain_step": 0.0032793183954368255,
+   "no_discontinuity": true,
+   "interior_zero_notches": 0,
+   "no_interior_zero_notch": true,
+   "gap_stays_open_low": false,
+   "gap_max_gain": 0.0,
+   "no_0_to_1_jump_in_gap": true,
+   "pass": true
+  },
+  "4_dense_merged_spans": {
+   "name": "dense_merged_spans",
+   "n_samples": 240000,
+   "n_spans": 1,
+   "gain_in_unit_range": true,
+   "outside_support_zero": true,
+   "max_abs_gain_step": 0.0032793183954368255,
+   "no_discontinuity": true,
+   "interior_zero_notches": 0,
+   "no_interior_zero_notch": true,
+   "overlap_never_reduces_gain": true,
+   "pass": true
+  },
+  "5_exact_boundary_samples": {
+   "name": "exact_boundary_samples",
+   "env_at_span_start": 0.0,
+   "env_at_span_start_plus_1": 1.0753929138629381e-05,
+   "env_at_attack_end_minus_1": 1.0,
+   "env_at_attack_end": 1.0,
+   "env_at_release_start_minus_1": 1.0,
+   "env_at_release_start": 1.0,
+   "env_at_span_end_minus_1": 0.0,
+   "env_at_span_end": 0.0,
+   "env_before_span": 0.0,
+   "env_after_span": 0.0,
+   "pass": true
+  },
+  "6_derivative_discontinuity_sanity_real_spans": {
+   "real_golden_oracle_corrected": {
+    "name": "real_golden_oracle_corrected",
+    "n_samples": 720000,
+    "n_spans": 40,
+    "gain_in_unit_range": true,
+    "outside_support_zero": true,
+    "max_abs_gain_step": 0.0032793183954368255,
+    "no_discontinuity": true,
+    "interior_zero_notches": 0,
+    "no_interior_zero_notch": true,
+    "mean_gain": 0.6470291666666667
+   },
+   "real_holdoutD_E0_corrected": {
+    "name": "real_holdoutD_E0_corrected",
+    "n_samples": 864000,
+    "n_spans": 41,
+    "gain_in_unit_range": true,
+    "outside_support_zero": true,
+    "max_abs_gain_step": 0.0032793183954368255,
+    "no_discontinuity": true,
+    "interior_zero_notches": 0,
+    "no_interior_zero_notch": true,
+    "mean_gain": 0.750966435185185
+   },
+   "real_golden_oracle_OLD_contrast": {
+    "name": "real_golden_oracle_OLD_contrast",
+    "max_abs_gain_step": 1.0,
+    "interior_zero_notches": 80,
+    "mean_gain": 0.6470291666666667
+   },
+   "real_holdoutD_E0_OLD_contrast": {
+    "name": "real_holdoutD_E0_OLD_contrast",
+    "max_abs_gain_step": 1.0,
+    "mean_gain": 0.7509664351851854
+   },
+   "real_spans_pass": true
+  },
+  "OLD_implementation_contrast": {
+   "name": "OLD_single_span_contrast",
+   "max_abs_gain_step": 1.0,
+   "env_at_span_start": 1.0,
+   "env_at_attack_end_minus_1": 0.0,
+   "env_at_attack_end": 1.0,
+   "env_at_release_start_minus_1": 1.0,
+   "env_at_release_start": 0.0,
+   "env_at_span_end_minus_1": 1.0,
+   "documented_defect": "entry starts at 1 after a 0->1 jump; gain falls to 0 at attack end then jumps back to 1; gain drops 1->0 at release start, rises 0->1, then drops to 0 at span end"
+  }
+ },
+ "all_corrected_tests_pass": true
+}

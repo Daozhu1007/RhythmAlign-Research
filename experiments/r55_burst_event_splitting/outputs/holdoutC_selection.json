@@ -1,0 +1,46 @@
+{
+ "holdout": "C",
+ "holdout_start_s": 40.0,
+ "holdout_end_s": 58.0,
+ "duration_s": 18.0,
+ "forbidden_windows": [
+  [
+   22.5,
+   37.5
+  ],
+  [
+   84.0,
+   102.0
+  ]
+ ],
+ "overlap_check": "window [40,58] does not overlap forbidden windows (margin 2.5 s after dev-A end; ctx 37-40 used only for audio alignment, never for detection)",
+ "selection_reason": "Chosen from the full-take audio onset-density profile plus 10 fps contact-sheet inspection of candidate zones [134,158] and [38,60]. [134,158] was REJECTED because the take's result screen starts ~143 s. [40,58] is fully mid-song and contains: dense two-hand press bursts (~48-51, ~56-58), a large fan slide + yellow slide ribbons (~44-45, ~50.0), chevron-trace slides (~53.3), bottom and side presses throughout, medium-density stretches between bursts (46-48, 52-54, onset bins 73-80), strong CRITICAL PERFECT text events as well as faint ones, and heavy arm-occlusion of the judgment zone (elbow crossings ~48-49) acting as arcade-style interference. Density profile bins (onsets/2s): 40:77 42:89 44:96 46:80 48:73 50:93 52:77 54:69 56:96 58:88 - a mixed sparse/dense profile resembling the forbidden dev-B structure, not an easy pick.",
+ "anchors": [
+  {
+   "t": 41.0,
+   "d": -11.366755,
+   "ncc": 0.061
+  },
+  {
+   "t": 49.0,
+   "d": -11.366844,
+   "ncc": 0.115
+  },
+  {
+   "t": 57.0,
+   "d": -11.366582,
+   "ncc": 0.136
+  }
+ ],
+ "anchor_spread_ms": 0.0002620000000010947,
+ "warp_mode": "fixed_anchor_consensus",
+ "warp_note": "12s windows: -11366.954 / -11374.262 ms; second window disagrees by 7.3 ms but covers [56,68] s which extends 10 s beyond the holdout end; anchors inside [40,58] agree to 0.00 ms",
+ "warp": {
+  "a": 1.0,
+  "b": -11.366727,
+  "convention": "t_ref = a*t_hand + b; ctx file starts at handcam t=37.0s"
+ },
+ "av_offset_ms": -12.291666666666666,
+ "av_ncc": 0.9963378270492863,
+ "extracted_at": "2026-09-09 03:55:58"
+}

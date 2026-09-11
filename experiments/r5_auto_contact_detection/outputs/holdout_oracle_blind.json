@@ -1,0 +1,909 @@
+{
+ "experiment": "R5 Phase 8 - BLIND holdout oracle",
+ "source_video": "outputs/holdout_video.mp4 (handcam-native 84.0-102.0 s)",
+ "video_timeline": {
+  "fps": 60.04,
+  "duration_s": 18.0,
+  "t_video": "seconds from holdout start (= handcam-native minus 84.0)"
+ },
+ "annotation_method": {
+  "pass1": "10 fps contact sheets (7 sheets, whole 18 s seen)",
+  "pass2": "30 fps contact sheets (19 sheets)",
+  "pass3": "95 audio-onset candidates (R4-family comb envelope of music-removed residual, med+4MAD, 55 ms merge), each verified on a 3-frame 60 fps zoom strip; contact presence/type/area judged visually",
+  "blind": "annotation completed BEFORE the frozen detector was run on this window; no detector prediction was viewed prior to writing this file"
+ },
+ "annotation_completed_utc": "2026-09-09 03:08:44",
+ "detector_frozen_at": "2026-09-09 02:35:00",
+ "events": [
+  {
+   "id": "h00",
+   "t_video": 0.053,
+   "status": "ok",
+   "type": "slide",
+   "area": "N-NE",
+   "confidence": "med",
+   "evidence": "slide in progress + judgment text top"
+  },
+  {
+   "id": "h01",
+   "t_video": 0.169,
+   "status": "ok",
+   "type": "slide",
+   "area": "NE-E",
+   "confidence": "med",
+   "evidence": "palm traverse on glass"
+  },
+  {
+   "id": "h02",
+   "t_video": 0.271,
+   "status": "ok",
+   "type": "slide",
+   "area": "E-S",
+   "confidence": "med",
+   "evidence": "palm traverse on glass"
+  },
+  {
+   "id": "h03",
+   "t_video": 0.37,
+   "status": "ok",
+   "type": "press",
+   "area": "SW",
+   "confidence": "med",
+   "evidence": "palm lands lower-left glass"
+  },
+  {
+   "id": "h04",
+   "t_video": 0.437,
+   "status": "ok",
+   "type": "slide",
+   "area": "N-E",
+   "confidence": "med",
+   "evidence": "arm traverse + star effects + PERFECT text"
+  },
+  {
+   "id": "h05",
+   "t_video": 0.552,
+   "status": "ok",
+   "type": "slide",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "palm traverse + PERFECT text bottom"
+  },
+  {
+   "id": "h06",
+   "t_video": 0.617,
+   "status": "ok",
+   "type": "press",
+   "area": "SW-S",
+   "confidence": "med",
+   "evidence": "palm press bottom-left + stars"
+  },
+  {
+   "id": "h07",
+   "t_video": 0.705,
+   "status": "ok",
+   "type": "slide",
+   "area": "W-S",
+   "confidence": "med",
+   "evidence": "palm sweep bottom + PERFECT text"
+  },
+  {
+   "id": "h08",
+   "t_video": 0.843,
+   "status": "ok",
+   "type": "press",
+   "area": "NW",
+   "confidence": "med",
+   "evidence": "palm press + star effect"
+  },
+  {
+   "id": "h09",
+   "t_video": 1.007,
+   "status": "ok",
+   "type": "slide",
+   "area": "E",
+   "confidence": "med",
+   "evidence": "3-way fan slide, palm at E end"
+  },
+  {
+   "id": "h10",
+   "t_video": 1.068,
+   "status": "ok",
+   "type": "press",
+   "area": "E-SE",
+   "confidence": "med",
+   "evidence": "palm pressing at fan end"
+  },
+  {
+   "id": "h11",
+   "t_video": 1.288,
+   "status": "ok",
+   "type": "slide",
+   "area": "SE-S",
+   "confidence": "med",
+   "evidence": "palm sliding bottom-right"
+  },
+  {
+   "id": "h12",
+   "t_video": 1.675,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "palm flat press bottom + text"
+  },
+  {
+   "id": "h13",
+   "t_video": 1.75,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "palm press continues"
+  },
+  {
+   "id": "h14",
+   "t_video": 1.941,
+   "status": "ok",
+   "type": "slide",
+   "area": "S-SE",
+   "confidence": "med",
+   "evidence": "sweep across bottom-right"
+  },
+  {
+   "id": "h15",
+   "t_video": 2.416,
+   "status": "ok",
+   "type": "press",
+   "area": "E-SE",
+   "confidence": "med",
+   "evidence": "palm press right side"
+  },
+  {
+   "id": "h16",
+   "t_video": 2.617,
+   "status": "ok",
+   "type": "touch",
+   "area": "N",
+   "confidence": "high",
+   "evidence": "gear break effect at N under hand"
+  },
+  {
+   "id": "h17",
+   "t_video": 2.976,
+   "status": "ok",
+   "type": "press",
+   "area": "NW-N",
+   "confidence": "med",
+   "evidence": "press + orange element"
+  },
+  {
+   "id": "h18",
+   "t_video": 3.166,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "press + gear/ring at N"
+  },
+  {
+   "id": "h19",
+   "t_video": 3.343,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "med",
+   "evidence": "tap NE + pink ring"
+  },
+  {
+   "id": "h20",
+   "t_video": 3.736,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "bezel tap N + pink ring on glass"
+  },
+  {
+   "id": "h21",
+   "t_video": 3.963,
+   "status": "rejected_noncontact",
+   "type": "rest",
+   "area": "NE-E",
+   "confidence": "low",
+   "evidence": "hand on bezel between wedges, no new judgment"
+  },
+  {
+   "id": "h22",
+   "t_video": 4.139,
+   "status": "ok",
+   "type": "press",
+   "area": "E",
+   "confidence": "med",
+   "evidence": "bezel tap E"
+  },
+  {
+   "id": "h23",
+   "t_video": 4.2,
+   "status": "ok",
+   "type": "press",
+   "area": "E",
+   "confidence": "high",
+   "evidence": "fresh pink tap ring at E"
+  },
+  {
+   "id": "h24",
+   "t_video": 4.288,
+   "status": "ok",
+   "type": "press",
+   "area": "E",
+   "confidence": "med",
+   "evidence": "press E continuing"
+  },
+  {
+   "id": "h25",
+   "t_video": 4.506,
+   "status": "ok",
+   "type": "slide",
+   "area": "SE-S",
+   "confidence": "med",
+   "evidence": "palm sweep + slide text"
+  },
+  {
+   "id": "h26",
+   "t_video": 4.617,
+   "status": "ok",
+   "type": "slide",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "palm sweep bottom"
+  },
+  {
+   "id": "h27",
+   "t_video": 4.939,
+   "status": "ok",
+   "type": "press",
+   "area": "S-SW",
+   "confidence": "med",
+   "evidence": "palm press + PERFECT text"
+  },
+  {
+   "id": "h28",
+   "t_video": 5.259,
+   "status": "ok",
+   "type": "press",
+   "area": "W-SW",
+   "confidence": "med",
+   "evidence": "palm press + star effect"
+  },
+  {
+   "id": "h29",
+   "t_video": 5.465,
+   "status": "ok",
+   "type": "slide",
+   "area": "W",
+   "confidence": "high",
+   "evidence": "palm sliding W along chevron trace"
+  },
+  {
+   "id": "h30",
+   "t_video": 6.019,
+   "status": "ok",
+   "type": "press",
+   "area": "N-NW",
+   "confidence": "med",
+   "evidence": "press + pink ring"
+  },
+  {
+   "id": "h31",
+   "t_video": 6.305,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "med",
+   "evidence": "press + rings near hand"
+  },
+  {
+   "id": "h32",
+   "t_video": 6.616,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "orange tap ring at N"
+  },
+  {
+   "id": "h33",
+   "t_video": 6.687,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "high",
+   "evidence": "ring expanding at press point"
+  },
+  {
+   "id": "h34",
+   "t_video": 6.822,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "med",
+   "evidence": "press at slide element"
+  },
+  {
+   "id": "h35",
+   "t_video": 6.913,
+   "status": "ok",
+   "type": "slide",
+   "area": "NE",
+   "confidence": "high",
+   "evidence": "yellow flash arriving at NE slide end"
+  },
+  {
+   "id": "h36",
+   "t_video": 6.978,
+   "status": "ok",
+   "type": "press",
+   "area": "NE-E",
+   "confidence": "med",
+   "evidence": "press glass at element"
+  },
+  {
+   "id": "h37",
+   "t_video": 7.064,
+   "status": "ok",
+   "type": "press",
+   "area": "N-NE",
+   "confidence": "med",
+   "evidence": "press + chevrons"
+  },
+  {
+   "id": "h38",
+   "t_video": 7.161,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "med",
+   "evidence": "press NE"
+  },
+  {
+   "id": "h39",
+   "t_video": 7.575,
+   "status": "ok",
+   "type": "slide",
+   "area": "SE",
+   "confidence": "med",
+   "evidence": "arm sweep to SE + judgment text"
+  },
+  {
+   "id": "h40",
+   "t_video": 7.648,
+   "status": "ok",
+   "type": "slide",
+   "area": "SW-S",
+   "confidence": "med",
+   "evidence": "palm slide + slide text"
+  },
+  {
+   "id": "h41",
+   "t_video": 7.845,
+   "status": "ok",
+   "type": "press",
+   "area": "S-SW",
+   "confidence": "med",
+   "evidence": "palm press + pink ring"
+  },
+  {
+   "id": "h42",
+   "t_video": 7.905,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "press + orange text"
+  },
+  {
+   "id": "h43",
+   "t_video": 8.061,
+   "status": "ok",
+   "type": "slide",
+   "area": "W-S",
+   "confidence": "med",
+   "evidence": "sweep bottom blurred"
+  },
+  {
+   "id": "h44",
+   "t_video": 8.178,
+   "status": "ok",
+   "type": "press",
+   "area": "S-SW",
+   "confidence": "med",
+   "evidence": "press + chevrons"
+  },
+  {
+   "id": "h45",
+   "t_video": 8.483,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "med",
+   "evidence": "press + star sparks"
+  },
+  {
+   "id": "h46",
+   "t_video": 8.545,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "high",
+   "evidence": "gear effect at press point"
+  },
+  {
+   "id": "h47",
+   "t_video": 8.857,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "high",
+   "evidence": "press + CRITICAL PERFECT text"
+  },
+  {
+   "id": "h48",
+   "t_video": 8.934,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "high",
+   "evidence": "press + text visible"
+  },
+  {
+   "id": "h49",
+   "t_video": 9.015,
+   "status": "ok",
+   "type": "press",
+   "area": "S-SW",
+   "confidence": "med",
+   "evidence": "press continuing"
+  },
+  {
+   "id": "h50",
+   "t_video": 9.078,
+   "status": "ok",
+   "type": "press",
+   "area": "S-SW",
+   "confidence": "med",
+   "evidence": "fingers pressing edge"
+  },
+  {
+   "id": "h51",
+   "t_video": 9.174,
+   "status": "ok",
+   "type": "press",
+   "area": "S-SW",
+   "confidence": "med",
+   "evidence": "press + wedge LED lit"
+  },
+  {
+   "id": "h52",
+   "t_video": 9.498,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "high",
+   "evidence": "gear effect + PERFECT at press"
+  },
+  {
+   "id": "h53",
+   "t_video": 9.561,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "med",
+   "evidence": "press + gear effect"
+  },
+  {
+   "id": "h54",
+   "t_video": 9.746,
+   "status": "ok",
+   "type": "slide",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "sweep + yellow sparkles"
+  },
+  {
+   "id": "h55",
+   "t_video": 9.826,
+   "status": "ok",
+   "type": "slide",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "palm slide along chevron trace"
+  },
+  {
+   "id": "h56",
+   "t_video": 9.896,
+   "status": "ok",
+   "type": "slide",
+   "area": "NE",
+   "confidence": "med",
+   "evidence": "fan slide in progress, hand at NE"
+  },
+  {
+   "id": "h57",
+   "t_video": 9.976,
+   "status": "ok",
+   "type": "slide",
+   "area": "NE",
+   "confidence": "med",
+   "evidence": "fan slide continuing"
+  },
+  {
+   "id": "h58",
+   "t_video": 10.539,
+   "status": "ok",
+   "type": "press",
+   "area": "S-SW",
+   "confidence": "high",
+   "evidence": "gear/star effects at press"
+  },
+  {
+   "id": "h59",
+   "t_video": 10.599,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "press + stars + trace"
+  },
+  {
+   "id": "h60",
+   "t_video": 11.037,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "high",
+   "evidence": "gear effect at press point"
+  },
+  {
+   "id": "h61",
+   "t_video": 11.107,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "press continuing, effect fading"
+  },
+  {
+   "id": "h62",
+   "t_video": 11.421,
+   "status": "rejected_noncontact",
+   "type": "rest",
+   "area": "transition",
+   "confidence": "low",
+   "evidence": "hand moving between positions, no judgment evidence"
+  },
+  {
+   "id": "h63",
+   "t_video": 12.116,
+   "status": "ok",
+   "type": "press",
+   "area": "S-SE",
+   "confidence": "med",
+   "evidence": "press + pink rings"
+  },
+  {
+   "id": "h64",
+   "t_video": 12.273,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "med",
+   "evidence": "press + text"
+  },
+  {
+   "id": "h65",
+   "t_video": 12.452,
+   "status": "ok",
+   "type": "slide",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "sweep + ring appearing"
+  },
+  {
+   "id": "h66",
+   "t_video": 12.517,
+   "status": "ok",
+   "type": "slide",
+   "area": "S-SE",
+   "confidence": "med",
+   "evidence": "sweep continuing"
+  },
+  {
+   "id": "h67",
+   "t_video": 12.634,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "press + ring"
+  },
+  {
+   "id": "h68",
+   "t_video": 12.767,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "med",
+   "evidence": "press + rings"
+  },
+  {
+   "id": "h69",
+   "t_video": 12.89,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "high",
+   "evidence": "PERFECT text at press"
+  },
+  {
+   "id": "h70",
+   "t_video": 12.969,
+   "status": "ok",
+   "type": "press",
+   "area": "SE-E",
+   "confidence": "med",
+   "evidence": "press + rings"
+  },
+  {
+   "id": "h71",
+   "t_video": 13.085,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "high",
+   "evidence": "PERFECT text at press"
+  },
+  {
+   "id": "h72",
+   "t_video": 13.206,
+   "status": "ok",
+   "type": "press",
+   "area": "NE-E",
+   "confidence": "med",
+   "evidence": "press + yellow element"
+  },
+  {
+   "id": "h73",
+   "t_video": 13.433,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "press + orange rings"
+  },
+  {
+   "id": "h74",
+   "t_video": 13.574,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "med",
+   "evidence": "press + yellow effects"
+  },
+  {
+   "id": "h75",
+   "t_video": 13.751,
+   "status": "ok",
+   "type": "slide",
+   "area": "NE",
+   "confidence": "high",
+   "evidence": "flash at slide arrival"
+  },
+  {
+   "id": "h76",
+   "t_video": 13.848,
+   "status": "ok",
+   "type": "slide",
+   "area": "E",
+   "confidence": "high",
+   "evidence": "flash at slide arrival"
+  },
+  {
+   "id": "h77",
+   "t_video": 14.065,
+   "status": "ok",
+   "type": "slide",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "sweep + PERFECT text"
+  },
+  {
+   "id": "h78",
+   "t_video": 14.218,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "high",
+   "evidence": "press + PERFECT text"
+  },
+  {
+   "id": "h79",
+   "t_video": 14.393,
+   "status": "ok",
+   "type": "press",
+   "area": "E-NE",
+   "confidence": "high",
+   "evidence": "rings + PERFECT text"
+  },
+  {
+   "id": "h80",
+   "t_video": 14.455,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "med",
+   "evidence": "press + element"
+  },
+  {
+   "id": "h81",
+   "t_video": 14.716,
+   "status": "ok",
+   "type": "press",
+   "area": "NW-N",
+   "confidence": "med",
+   "evidence": "L-hand tap at top / slide start"
+  },
+  {
+   "id": "h82",
+   "t_video": 15.049,
+   "status": "ok",
+   "type": "press",
+   "area": "NW",
+   "confidence": "med",
+   "evidence": "fresh pink rings at NW"
+  },
+  {
+   "id": "h83",
+   "t_video": 15.399,
+   "status": "ok",
+   "type": "press",
+   "area": "NW",
+   "confidence": "low",
+   "evidence": "possible tap, effects faint"
+  },
+  {
+   "id": "h84",
+   "t_video": 15.723,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "low",
+   "evidence": "wedge LED lit, press likely"
+  },
+  {
+   "id": "h85",
+   "t_video": 16.04,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "high",
+   "evidence": "CRITICAL PERFECT text fresh"
+  },
+  {
+   "id": "h86",
+   "t_video": 16.183,
+   "status": "ok",
+   "type": "press",
+   "area": "E",
+   "confidence": "high",
+   "evidence": "yellow flash at press point"
+  },
+  {
+   "id": "h87",
+   "t_video": 16.356,
+   "status": "ok",
+   "type": "slide",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "chevron slide + judgment text"
+  },
+  {
+   "id": "h88",
+   "t_video": 16.604,
+   "status": "ok",
+   "type": "slide",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "L palm traverse across N"
+  },
+  {
+   "id": "h89",
+   "t_video": 16.679,
+   "status": "ok",
+   "type": "slide",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "L palm traverse continuing"
+  },
+  {
+   "id": "h90",
+   "t_video": 16.954,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "high",
+   "evidence": "gear effects at press"
+  },
+  {
+   "id": "h91",
+   "t_video": 17.338,
+   "status": "ok",
+   "type": "press",
+   "area": "N-NE",
+   "confidence": "high",
+   "evidence": "rings + orange judgment text"
+  },
+  {
+   "id": "h92",
+   "t_video": 17.399,
+   "status": "ok",
+   "type": "press",
+   "area": "NW-N",
+   "confidence": "high",
+   "evidence": "press + CRITICAL PERFECT text"
+  },
+  {
+   "id": "h93",
+   "t_video": 17.66,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "med",
+   "evidence": "yellow glow at wedge, tap likely"
+  },
+  {
+   "id": "h94",
+   "t_video": 17.849,
+   "status": "rejected_noncontact",
+   "type": "rest",
+   "area": "NE",
+   "confidence": "low",
+   "evidence": "no fresh effect; transient unexplained"
+  }
+ ],
+ "regions": [
+  {
+   "id": "R1",
+   "t0": 0.0,
+   "t1": 3.9,
+   "desc": "continuous: intro palm traverses + N/NE presses, dense",
+   "confidence": "med"
+  },
+  {
+   "id": "R2",
+   "t0": 4.1,
+   "t1": 10.7,
+   "desc": "continuous: E/S/SE presses + slides, 3-way fan slide, near-continuous",
+   "confidence": "med"
+  },
+  {
+   "id": "G1",
+   "t0": 10.75,
+   "t1": 11.95,
+   "desc": "sparse transition: hand repositions E->top, brief hover/rest",
+   "confidence": "med"
+  },
+  {
+   "id": "R3",
+   "t0": 11.95,
+   "t1": 18.0,
+   "desc": "continuous: S/SE presses, N/NE slides + L-hand traverses, finale",
+   "confidence": "med"
+  }
+ ],
+ "notes": [
+  "Vision determines identity; audio refines exact timing (Phase 9/10).",
+  "status=rejected_noncontact marks audio transients judged NOT to be new player contacts.",
+  "Judgment text appears 0-2 frames after physical contact; strip center frame = candidate time."
+ ]
+}

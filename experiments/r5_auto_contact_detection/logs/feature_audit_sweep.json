@@ -1,0 +1,222 @@
+{
+ "jz_warm": [
+  {
+   "thr": 50,
+   "contact_recall": 0.8658536585365854,
+   "strong_recall": 0.7894736842105263,
+   "noncontact_fp": 4
+  },
+  {
+   "thr": 100,
+   "contact_recall": 0.7317073170731707,
+   "strong_recall": 0.7368421052631579,
+   "noncontact_fp": 4
+  },
+  {
+   "thr": 200,
+   "contact_recall": 0.524390243902439,
+   "strong_recall": 0.631578947368421,
+   "noncontact_fp": 4
+  },
+  {
+   "thr": 400,
+   "contact_recall": 0.5,
+   "strong_recall": 0.631578947368421,
+   "noncontact_fp": 3
+  },
+  {
+   "thr": 800,
+   "contact_recall": 0.1951219512195122,
+   "strong_recall": 0.2631578947368421,
+   "noncontact_fp": 0
+  },
+  {
+   "thr": 1600,
+   "contact_recall": 0.04878048780487805,
+   "strong_recall": 0.0,
+   "noncontact_fp": 0
+  },
+  {
+   "thr": 3200,
+   "contact_recall": 0.012195121951219513,
+   "strong_recall": 0.0,
+   "noncontact_fp": 0
+  }
+ ],
+ "jz_white": [
+  {
+   "thr": 50,
+   "contact_recall": 0.5487804878048781,
+   "strong_recall": 0.5263157894736842,
+   "noncontact_fp": 1
+  },
+  {
+   "thr": 100,
+   "contact_recall": 0.2804878048780488,
+   "strong_recall": 0.15789473684210525,
+   "noncontact_fp": 1
+  },
+  {
+   "thr": 200,
+   "contact_recall": 0.17073170731707318,
+   "strong_recall": 0.05263157894736842,
+   "noncontact_fp": 1
+  },
+  {
+   "thr": 400,
+   "contact_recall": 0.10975609756097561,
+   "strong_recall": 0.05263157894736842,
+   "noncontact_fp": 1
+  },
+  {
+   "thr": 800,
+   "contact_recall": 0.07317073170731707,
+   "strong_recall": 0.05263157894736842,
+   "noncontact_fp": 1
+  },
+  {
+   "thr": 1600,
+   "contact_recall": 0.0,
+   "strong_recall": 0.0,
+   "noncontact_fp": 0
+  },
+  {
+   "thr": 3200,
+   "contact_recall": 0.0,
+   "strong_recall": 0.0,
+   "noncontact_fp": 0
+  }
+ ],
+ "jz_diff": [
+  {
+   "thr": 0.5,
+   "contact_recall": 0.9390243902439024,
+   "strong_recall": 1.0,
+   "noncontact_fp": 7
+  },
+  {
+   "thr": 1,
+   "contact_recall": 0.8414634146341463,
+   "strong_recall": 0.8421052631578947,
+   "noncontact_fp": 4
+  },
+  {
+   "thr": 2,
+   "contact_recall": 0.5609756097560976,
+   "strong_recall": 0.5263157894736842,
+   "noncontact_fp": 1
+  },
+  {
+   "thr": 4,
+   "contact_recall": 0.14634146341463414,
+   "strong_recall": 0.10526315789473684,
+   "noncontact_fp": 1
+  },
+  {
+   "thr": 8,
+   "contact_recall": 0.036585365853658534,
+   "strong_recall": 0.05263157894736842,
+   "noncontact_fp": 1
+  },
+  {
+   "thr": 16,
+   "contact_recall": 0.0,
+   "strong_recall": 0.0,
+   "noncontact_fp": 0
+  },
+  {
+   "thr": 32,
+   "contact_recall": 0.0,
+   "strong_recall": 0.0,
+   "noncontact_fp": 0
+  }
+ ],
+ "glass_bright": [
+  {
+   "thr": 50,
+   "contact_recall": 0.8170731707317073,
+   "strong_recall": 0.8421052631578947,
+   "noncontact_fp": 5
+  },
+  {
+   "thr": 100,
+   "contact_recall": 0.6219512195121951,
+   "strong_recall": 0.7368421052631579,
+   "noncontact_fp": 3
+  },
+  {
+   "thr": 200,
+   "contact_recall": 0.4146341463414634,
+   "strong_recall": 0.5789473684210527,
+   "noncontact_fp": 2
+  },
+  {
+   "thr": 400,
+   "contact_recall": 0.13414634146341464,
+   "strong_recall": 0.10526315789473684,
+   "noncontact_fp": 1
+  },
+  {
+   "thr": 800,
+   "contact_recall": 0.024390243902439025,
+   "strong_recall": 0.0,
+   "noncontact_fp": 0
+  },
+  {
+   "thr": 1600,
+   "contact_recall": 0.0,
+   "strong_recall": 0.0,
+   "noncontact_fp": 0
+  },
+  {
+   "thr": 3200,
+   "contact_recall": 0.0,
+   "strong_recall": 0.0,
+   "noncontact_fp": 0
+  }
+ ],
+ "hand_diff": [
+  {
+   "thr": 0.5,
+   "contact_recall": 0.6341463414634146,
+   "strong_recall": 0.8421052631578947,
+   "noncontact_fp": 4
+  },
+  {
+   "thr": 1,
+   "contact_recall": 0.32926829268292684,
+   "strong_recall": 0.21052631578947367,
+   "noncontact_fp": 4
+  },
+  {
+   "thr": 2,
+   "contact_recall": 0.2073170731707317,
+   "strong_recall": 0.10526315789473684,
+   "noncontact_fp": 1
+  },
+  {
+   "thr": 4,
+   "contact_recall": 0.08536585365853659,
+   "strong_recall": 0.05263157894736842,
+   "noncontact_fp": 1
+  },
+  {
+   "thr": 8,
+   "contact_recall": 0.0,
+   "strong_recall": 0.0,
+   "noncontact_fp": 0
+  },
+  {
+   "thr": 16,
+   "contact_recall": 0.0,
+   "strong_recall": 0.0,
+   "noncontact_fp": 0
+  },
+  {
+   "thr": 32,
+   "contact_recall": 0.0,
+   "strong_recall": 0.0,
+   "noncontact_fp": 0
+  }
+ ]
+}

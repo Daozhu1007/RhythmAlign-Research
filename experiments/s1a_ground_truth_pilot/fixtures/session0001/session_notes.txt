@@ -1,0 +1,6 @@
+session_id      : session0001
+date / time     : 2026-09-10 (SYNTHETIC FIXTURE)
+phone device    : synthetic 48 kHz generator
+aux devices     : synthetic closemic + contact
+sync truth      : aux channels share phone clock in fixtures; the sync
+                  channel entries exercise the onset picker only

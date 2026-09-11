@@ -1,0 +1,31 @@
+{
+ "matched": 66,
+ "n_oracle": 84,
+ "err_ms_median": 0.0,
+ "abs_err_ms_median": 0.0,
+ "abs_err_ms_p95": 53.499999999999766,
+ "outliers_gt30ms": 13,
+ "missed_oracle_ids": [
+  "e01",
+  "e02",
+  "e16",
+  "e18",
+  "e23",
+  "e30",
+  "e48",
+  "e56",
+  "e57",
+  "e60",
+  "e61",
+  "e64",
+  "e66",
+  "e67",
+  "e68b",
+  "e72",
+  "e82",
+  "e87"
+ ],
+ "n_extra_auto": 28,
+ "gate_coverage_of_oracle": 0.8095238095238095,
+ "gate_coverage_strong": 0.7666666666666667
+}

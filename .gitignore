@@ -1,0 +1,73 @@
+# RhythmAlign-Research — publication ignore rules
+#
+# This repository publishes research RECORDS: code, methodology, reports,
+# metrics, decisions, provenance. Raw media, model weights, caches and bulk
+# generated artifacts stay local-only. See PUBLIC_REPO_AUDIT.md.
+
+# ===== Environments / caches =====
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.ipynb_checkpoints/
+
+# ===== OS junk =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Secrets / credentials =====
+.env
+.env.*
+*.key
+*.pem
+
+# ===== Media: never publish recordings or copyrighted audio/video =====
+*.wav
+*.mp3
+*.flac
+*.aac
+*.m4a
+*.ogg
+*.opus
+*.webm
+*.mp4
+*.mov
+*.mkv
+*.avi
+
+# ===== Video frame dumps =====
+*.jpg
+*.jpeg
+
+# ===== Model checkpoints / pretrained weights =====
+# (redistribution not cleared; see LICENSE_STATUS.md)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+
+# ===== Bulk numeric artifacts =====
+*.npy
+*.npz
+
+# ===== Bulk working / generated directories =====
+work/
+checkpoints/
+cache/
+tmp/
+temp/
+
+# ===== Vendored third-party trees =====
+# Documented by reference (README / THIRD_PARTY.md); not committed.
+**/third_party/
+
+# ===== Local-only migration inventories =====
+# Full manifests contain absolute local paths / product-repo inventories.
+migration/MIGRATION_MANIFEST.json
+migration/.git_ignored_list.txt

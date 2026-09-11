@@ -1,0 +1,88 @@
+contacts 84 {'present': 11, 'strong': 60, 'weak': 13} | taiko 39 (31 within 80 ms of contact) | ref onsets 87 | frames heavy 40 quiet 31
+
+=== raw_input ===
+  retention 65/84 (77%) {'present': 3, 'strong': 60, 'weak': 2}
+  contact level vs raw +0.0 dB [+0.0,+0.0] | peak x1.00 | dyn corr 0.92
+  music sup heavy +0.0 dB quiet +0.0 dB | music share in C3 windows -20.2 dB
+  taiko 10/39 | false onsets 14 [0.24, 0.5680000000000001, 3.168, 5.8, 6.672, 8.68, 9.52, 9.704]
+  corr(ref) 0.115 | delayed corr 0.22 @+0.2 ms | coverage 1.000
+
+=== C0_music_only ===
+  retention 19/84 (23%) {'present': 7, 'strong': 6, 'weak': 6}
+  contact level vs raw +1.3 dB [-8.9,+6.2] | peak x1.00 | dyn corr -0.69
+  music sup heavy +4.8 dB quiet +1.0 dB | music share in C3 windows +0.0 dB
+  taiko 15/39 | false onsets 0 []
+  corr(ref) 1.000 | delayed corr 0.73 @+0.2 ms | coverage 1.000
+
+=== C1_interaction ===
+  retention 66/84 (79%) {'present': 3, 'strong': 60, 'weak': 3}
+  contact level vs raw -0.5 dB [-1.8,+0.0] | peak x1.00 | dyn corr 0.89
+  music sup heavy -7.8 dB quiet -6.3 dB | music share in C3 windows -21.3 dB
+  taiko 16/39 | false onsets 16 [0.24, 0.5680000000000001, 3.16, 6.112, 8.016, 8.688, 9.04, 10.48]
+  corr(ref) 0.085 | delayed corr 0.16 @+0.0 ms | coverage 0.740
+
+=== C2_interaction ===
+  retention 64/84 (76%) {'present': 3, 'strong': 59, 'weak': 2}
+  contact level vs raw -4.3 dB [-5.9,-3.1] | peak x0.56 | dyn corr -0.72
+  music sup heavy -9.9 dB quiet -8.2 dB | music share in C3 windows -20.1 dB
+  taiko 17/39 | false onsets 15 [0.24, 0.5680000000000001, 1.36, 5.8, 8.248, 9.04, 9.36, 10.48]
+  corr(ref) 0.100 | delayed corr 0.18 @+0.0 ms | coverage 0.739
+
+=== C3_interaction ===
+  retention 66/84 (79%) {'present': 4, 'strong': 60, 'weak': 2}
+  contact level vs raw -0.3 dB [-3.8,+0.0] | peak x1.00 | dyn corr -0.17
+  music sup heavy -0.6 dB quiet -0.5 dB | music share in C3 windows -20.2 dB
+  taiko 14/39 | false onsets 9 [0.24, 0.5680000000000001, 4.816, 5.576, 8.184, 10.36, 10.672, 11.976]
+  corr(ref) 0.096 | delayed corr 0.22 @+0.4 ms | coverage 0.820
+
+=== R2_target ===
+  retention 64/84 (76%) {'present': 2, 'strong': 60, 'weak': 2}
+  contact level vs raw -2.6 dB [-8.8,-1.4] | peak x0.90 | dyn corr 0.58
+  music sup heavy -12.1 dB quiet -19.9 dB | music share in C3 windows -39.1 dB
+  taiko 10/39 | false onsets 13 [0.23199999999999998, 0.5680000000000001, 3.368, 4.808, 6.112, 6.784, 8.888, 11.0]
+  corr(ref) 0.013 | delayed corr 0.09 @-0.4 ms | coverage 1.000
+
+=== R3_target ===
+  retention 65/84 (77%) {'present': 2, 'strong': 60, 'weak': 3}
+  contact level vs raw -2.2 dB [-7.2,-0.9] | peak x0.94 | dyn corr 0.52
+  music sup heavy -11.0 dB quiet -10.6 dB | music share in C3 windows -36.7 dB
+  taiko 10/39 | false onsets 12 [0.23199999999999998, 0.5680000000000001, 3.16, 4.808, 6.112, 6.784, 8.888, 9.704]
+  corr(ref) 0.014 | delayed corr 0.09 @+1.7 ms | coverage 1.000
+
+=== C1_final_mix ===
+  retention 54/84 (64%) {'present': 4, 'strong': 45, 'weak': 5}
+  contact level vs raw +1.6 dB [-5.4,+5.4] | peak x0.61 | dyn corr -0.84
+  music sup heavy +5.0 dB quiet +1.2 dB | music share in C3 windows -0.5 dB
+  taiko 15/39 | false onsets 8 [0.392, 5.136, 5.28, 6.12, 6.448, 6.784, 7.432, 8.704]
+  corr(ref) 0.949 | delayed corr 0.16 @+0.0 ms | coverage 1.000
+  peak -2.54 dBFS | vs C0 on music-heavy +0.2 dB | comb ripple med 15.4 p95 26.9 dB
+
+=== C2_final_mix ===
+  retention 34/84 (40%) {'present': 6, 'strong': 23, 'weak': 5}
+  contact level vs raw -1.7 dB [-8.4,+6.1] | peak x0.42 | dyn corr -0.83
+  music sup heavy +5.0 dB quiet +1.1 dB | music share in C3 windows -0.3 dB
+  taiko 16/39 | false onsets 4 [0.392, 3.48, 10.84, 12.968]
+  corr(ref) 0.974 | delayed corr 0.18 @+0.0 ms | coverage 1.000
+  peak -4.71 dBFS | vs C0 on music-heavy +0.1 dB | comb ripple med 11.9 p95 24.1 dB
+
+=== C3_final_mix ===
+  retention 50/84 (60%) {'present': 4, 'strong': 41, 'weak': 5}
+  contact level vs raw +1.3 dB [-5.8,+5.8] | peak x0.58 | dyn corr -0.85
+  music sup heavy +5.2 dB quiet +1.4 dB | music share in C3 windows -0.6 dB
+  taiko 14/39 | false onsets 12 [0.392, 2.216, 4.5120000000000005, 4.816, 7.432, 8.888, 10.672, 10.832]
+  corr(ref) 0.946 | delayed corr 0.22 @+0.4 ms | coverage 1.000
+  peak -2.54 dBFS | vs C0 on music-heavy +0.3 dB | comb ripple med 15.4 p95 26.9 dB
+
+=== R2_final_mix ===
+  retention 53/84 (63%) {'present': 5, 'strong': 41, 'weak': 7}
+  contact level vs raw +0.7 dB [-6.7,+5.2] | peak x0.53 | dyn corr -0.74
+  music sup heavy +4.9 dB quiet +1.0 dB | music share in C3 windows -0.3 dB
+  taiko 14/39 | false onsets 11 [0.5680000000000001, 1.44, 5.136, 6.12, 6.784, 7.432, 10.368, 10.672]
+  corr(ref) 0.973 | delayed corr 0.09 @-0.4 ms | coverage 1.000
+  peak -2.30 dBFS | vs C0 on music-heavy +0.0 dB | comb ripple med 13.5 p95 27.1 dB
+
+=== R3_final_mix ===
+  retention 52/84 (62%) {'present': 4, 'strong': 43, 'weak': 5}
+  contact level vs raw +1.1 dB [-6.0,+5.0] | peak x0.55 | dyn corr -0.79
+  music sup heavy +4.8 dB quiet +1.2 dB | music share in C3 windows -0.3 dB
+  taiko 14/39 | false o

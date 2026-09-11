@@ -1,0 +1,49 @@
+{
+ "holdout": "D",
+ "holdout_start_s": 60.0,
+ "holdout_end_s": 78.0,
+ "duration_s": 18.0,
+ "forbidden_windows": [
+  [
+   22.5,
+   37.5
+  ],
+  [
+   40.0,
+   58.0
+  ],
+  [
+   84.0,
+   102.0
+  ]
+ ],
+ "overlap_check": "window [60,78] does not overlap any dev window (margin 2.0 s after holdout-C end; margin 6.0 s before dev-B start; ctx 57-60 s touches holdout-C's final second for AUDIO ALIGNMENT ONLY, never for detection)",
+ "selection_reason": "Chosen from the full-take onset-density profile (all three dev windows masked) plus 10 fps contact-sheet inspection of the two allowed mid-song zones [58,84] and [102,136]. [60,78] contains: a dense two-hand burst section (~60-65.5: alternating top/side presses with chevron slides), a genuine SPARSE rest (~66-67.8: glass nearly empty, hands drop to the bottom bezel, one slow yellow slide ribbon traced - the only near-rest stretch in the zone), a second dense section (~68-78: bottom/side presses, yellow slide bands, cyan fan-slide circles, double presses), and heavy arm-crossing occlusion + cabinet LED/screen glare as environment interference throughout. Not an easy window: it mixes burst, rest, slide and occlusion like dev-B but was never used for any tuning.",
+ "anchors": [
+  {
+   "t": 61.0,
+   "d": -11.374776,
+   "ncc": 0.112
+  },
+  {
+   "t": 69.0,
+   "d": -11.384677,
+   "ncc": 0.123
+  },
+  {
+   "t": 77.0,
+   "d": -11.374593,
+   "ncc": 0.188
+  }
+ ],
+ "anchor_spread_ms": 10.083999999999094,
+ "warp_mode": "anchor_median_outlier_documented",
+ "warp": {
+  "a": 1.0,
+  "b": -11.374776,
+  "convention": "t_ref = a*t_hand + b; ctx file starts at handcam t=57.0s"
+ },
+ "av_offset_ms": -13.625,
+ "av_ncc": 0.9962037259221558,
+ "extracted_at": "2026-09-09 13:20:36"
+}

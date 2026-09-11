@@ -1,0 +1,7 @@
+channel,event,approx_time_s,notes
+phone,start_clap,0.5,
+phone,end_clap,35.2,
+closemic,start_clap,0.5,
+closemic,end_clap,35.2,
+contact,start_clap,0.5,
+contact,end_clap,35.2,

@@ -1,0 +1,32 @@
+{
+ "holdout_start_s": 84.0,
+ "holdout_end_s": 102.0,
+ "duration_s": 18.0,
+ "selection_reason": "audio onset-density profile over the full take: 84-85 dense burst, 86-95 sparse passage, 96-102 denser with yellow slide traces; mid-song (no menu/result), no overlap with golden [22.5, 37.5]; contact sheets verify press/touch/slide mix with both hands",
+ "anchors": [
+  {
+   "t": 85.0,
+   "d": -11.366791,
+   "ncc": 0.095
+  },
+  {
+   "t": 93.0,
+   "d": -11.395697,
+   "ncc": 0.103
+  },
+  {
+   "t": 101.0,
+   "d": -11.395643,
+   "ncc": 0.046
+  }
+ ],
+ "anchor_spread_ms": 0.0010420248042208868,
+ "warp_mode": "fixed",
+ "warp": {
+  "a": 1.0,
+  "b": -11.367037783343331,
+  "convention": "t_ref = a*t_hand + b; ctx file starts at handcam t=81.0s"
+ },
+ "av_offset_ms": -13.625,
+ "av_ncc": 0.9971188209029499
+}

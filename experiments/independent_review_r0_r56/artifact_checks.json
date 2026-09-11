@@ -1,0 +1,176 @@
+{
+  "scope": "Read-only numerical checks of existing artifacts. No experiments rerun; no research source changed.",
+  "r4_C1": {
+    "max_abs_error_existing_wav_vs_stored_implementation": 0.0,
+    "first_merged_span_samples": [
+      2663,
+      25449
+    ],
+    "envelope_samples": [
+      {
+        "sample": 2662,
+        "time_s": 0.05545833333333333,
+        "gain": 0.0,
+        "wav_left": 0.0
+      },
+      {
+        "sample": 2663,
+        "time_s": 0.05547916666666667,
+        "gain": 1.0,
+        "wav_left": -0.0055090803653001785
+      },
+      {
+        "sample": 3142,
+        "time_s": 0.06545833333333333,
+        "gain": 0.0,
+        "wav_left": 0.0
+      },
+      {
+        "sample": 3143,
+        "time_s": 0.06547916666666667,
+        "gain": 1.0,
+        "wav_left": 0.049748487770557404
+      },
+      {
+        "sample": 22568,
+        "time_s": 0.4701666666666667,
+        "gain": 1.0,
+        "wav_left": -0.020507337525486946
+      },
+      {
+        "sample": 22569,
+        "time_s": 0.4701875,
+        "gain": 0.0,
+        "wav_left": -0.0
+      },
+      {
+        "sample": 25448,
+        "time_s": 0.5301666666666667,
+        "gain": 1.0,
+        "wav_left": 0.11882239580154419
+      },
+      {
+        "sample": 25449,
+        "time_s": 0.5301875,
+        "gain": 0.0,
+        "wav_left": 0.0
+      }
+    ],
+    "mean_env": 0.6470291666666667,
+    "nonzero_env_fraction": 0.7402513888888889
+  },
+  "r45_D1_superset": {
+    "n_samples_D1_less_than_D0": 0,
+    "max_gain_reduction": 0.0,
+    "D0_matches_reconstructed": true
+  },
+  "holdoutD_report_missed_ids": [
+    {
+      "id": "d42",
+      "t_video": 10.0,
+      "status": "ok",
+      "type": "press",
+      "area": "NW",
+      "confidence": "high",
+      "evidence": "fresh yellow text at NW, both hands top"
+    },
+    {
+      "id": "d56",
+      "t_video": 12.34,
+      "status": "ok",
+      "type": "press",
+      "area": "N",
+      "confidence": "high",
+      "evidence": "double top press, fresh text burst + stars (audio gap-check add)"
+    },
+    {
+      "id": "d71",
+      "t_video": 15.3,
+      "status": "ok",
+      "type": "press",
+      "area": "NE",
+      "confidence": "high",
+      "evidence": "R press NE, fresh PERFECT text + gear (audio gap-check add)"
+    }
+  ],
+  "holdoutD": {
+    "E0": {
+      "mean_env_reconstructed": 0.7509664351851854,
+      "nonzero_wave_mono_fraction": 0.8300983796296296,
+      "max_error_using_JSON_rounded_times": 0.0,
+      "rest_6_8_nonzero_s": 1.4236041666666666,
+      "gain_min": 0.0,
+      "gain_max": 1.0
+    },
+    "E2": {
+      "mean_env_reconstructed": 0.7257372685185185,
+      "nonzero_wave_mono_fraction": 0.8086875,
+      "max_error_using_JSON_rounded_times": 0.313140869140625,
+      "rest_6_8_nonzero_s": 1.7456041666666666,
+      "gain_min": 0.0,
+      "gain_max": 1.0,
+      "max_error_with_completion_peaks_resolved_from_stored_comb": 0.0,
+      "exact_completion_times_s": [
+        0.23947916666666666,
+        6.102666666666667,
+        6.4318333333333335,
+        11.64775
+      ]
+    }
+  },
+  "holdoutD_mix_arithmetic": {
+    "e0": 2.9802322387695312e-08,
+    "auto": 2.9802322387695312e-08,
+    "oracle": 2.9802322387695312e-08
+  },
+  "r1_coherence_reconstruction": {
+    "share": 0.07090536690409689,
+    "ceiling_db": 0.31940048613214056
+  },
+  "r1_residual_total_energy_reduction_db": {
+    "A1": 0.05349643684364409,
+    "A2": 0.47349024453117305,
+    "A3": 0.29333920662770135
+  },
+  "r4_C2": {
+    "max_abs_error_existing_vs_stored_implementation": 2.7755575615628914e-17,
+    "axis_audit": "Zc dimensions frequency,time; numerator Zp is median(size=(1,31)), enhancing sustained horizontal harmonics, not percussion."
+  },
+  "holdoutD_rest": {
+    "E0": {
+      "nonzero_mono_seconds": 1.4236041666666666,
+      "energy_change_vs_raw_db": -1.767111223130668
+    },
+    "E2": {
+      "nonzero_mono_seconds": 1.7456041666666666,
+      "energy_change_vs_raw_db": -0.8537228746067299
+    },
+    "oracle": {
+      "nonzero_mono_seconds": 0.0,
+      "energy_change_vs_raw_db": null,
+      "note": "Digital zero: log-energy is negative infinity; represented as null for strict JSON."
+    }
+  },
+  "r4_refined_noncontact_types": [
+    {
+      "id": "e61",
+      "type": "release",
+      "refined_confidence": "strong"
+    },
+    {
+      "id": "e80",
+      "type": "rest",
+      "refined_confidence": "strong"
+    },
+    {
+      "id": "e81",
+      "type": "rest",
+      "refined_confidence": "present"
+    },
+    {
+      "id": "e82",
+      "type": "release",
+      "refined_confidence": "weak"
+    }
+  ]
+}

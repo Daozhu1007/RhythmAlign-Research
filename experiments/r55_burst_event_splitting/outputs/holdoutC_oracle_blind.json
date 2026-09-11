@@ -1,0 +1,645 @@
+{
+ "experiment": "R5.5 Phase 7 - BLIND Holdout-C oracle",
+ "source_video": "outputs/holdoutC_video.mp4 (handcam-native 40.0-58.0 s)",
+ "video_timeline": {
+  "fps": 60.04,
+  "duration_s": 18.0,
+  "t_video": "seconds from holdout start (= handcam-native minus 40.0)"
+ },
+ "annotation_method": {
+  "pass1": "10 fps contact sheets (7 sheets, whole 18 s seen)",
+  "pass2": "30 fps contact sheets (19 sheets; spot re-check of marginal candidates #34/#35 at 10.0-11.0 s and #55/#57 at 15-16 s)",
+  "pass3": "68 audio-onset candidates (R4-family comb envelope of music-removed residual, med+4MAD, 55 ms merge), each verified on a 3-frame 60 fps zoom strip; contact presence/type/area judged visually",
+  "blind": "annotation completed BEFORE the frozen R5.5 detector was run on this window; no detector prediction was viewed prior to writing this file"
+ },
+ "annotation_completed_utc": "2026-09-09 04:06:48",
+ "detector_frozen_at": "2026-09-09 03:51:51",
+ "events": [
+  {
+   "id": "c00",
+   "t_video": 0.0,
+   "status": "ok",
+   "type": "press",
+   "area": "NW-N",
+   "confidence": "med",
+   "evidence": "L hand pressing top-left, chevron trace near"
+  },
+  {
+   "id": "c01",
+   "t_video": 1.111,
+   "status": "ok",
+   "type": "press",
+   "area": "NW-N",
+   "confidence": "med",
+   "evidence": "L press top-left, fresh orange tap cubes at hand"
+  },
+  {
+   "id": "c02",
+   "t_video": 1.329,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "both hands top, pink judgment text center"
+  },
+  {
+   "id": "c03",
+   "t_video": 1.554,
+   "status": "ok",
+   "type": "slide",
+   "area": "W-S",
+   "confidence": "med",
+   "evidence": "L palm traversing bottom-left along chevrons"
+  },
+  {
+   "id": "c04",
+   "t_video": 2.582,
+   "status": "ok",
+   "type": "slide",
+   "area": "SE-S",
+   "confidence": "med",
+   "evidence": "R palm on glass bottom-right, chevron fan NE"
+  },
+  {
+   "id": "c05",
+   "t_video": 3.936,
+   "status": "ok",
+   "type": "press",
+   "area": "E",
+   "confidence": "med",
+   "evidence": "R hand at right bezel, pink ring fresh left-center"
+  },
+  {
+   "id": "c06",
+   "t_video": 4.276,
+   "status": "ok",
+   "type": "press",
+   "area": "SE-S",
+   "confidence": "high",
+   "evidence": "yellow gear burst at press point"
+  },
+  {
+   "id": "c07",
+   "t_video": 4.502,
+   "status": "ok",
+   "type": "press",
+   "area": "S-SE",
+   "confidence": "med",
+   "evidence": "press continues, yellow effect at press"
+  },
+  {
+   "id": "c08",
+   "t_video": 4.598,
+   "status": "ok",
+   "type": "press",
+   "area": "S-SE",
+   "confidence": "high",
+   "evidence": "fresh warm PERFECT text at press"
+  },
+  {
+   "id": "c09",
+   "t_video": 4.919,
+   "status": "ok",
+   "type": "press",
+   "area": "S-SE",
+   "confidence": "high",
+   "evidence": "orange hexagon gear + PERFECT text"
+  },
+  {
+   "id": "c10",
+   "t_video": 5.22,
+   "status": "ok",
+   "type": "slide",
+   "area": "S-SW",
+   "confidence": "med",
+   "evidence": "R palm flat, slight traverse bottom"
+  },
+  {
+   "id": "c11",
+   "t_video": 5.432,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "R press bottom, chevrons mid"
+  },
+  {
+   "id": "c12",
+   "t_video": 5.671,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "high",
+   "evidence": "fresh warm text at press point"
+  },
+  {
+   "id": "c13",
+   "t_video": 5.874,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "both hands top, fresh star effect center"
+  },
+  {
+   "id": "c14",
+   "t_video": 5.999,
+   "status": "ok",
+   "type": "slide",
+   "area": "E",
+   "confidence": "med",
+   "evidence": "R hand traverse at E, long chevron trail"
+  },
+  {
+   "id": "c15",
+   "t_video": 6.33,
+   "status": "ok",
+   "type": "press",
+   "area": "S-SW",
+   "confidence": "high",
+   "evidence": "CRITICAL-style warm text fresh at S-SW"
+  },
+  {
+   "id": "c16",
+   "t_video": 6.469,
+   "status": "ok",
+   "type": "press",
+   "area": "NE-E",
+   "confidence": "med",
+   "evidence": "R hand pressing NE, yellow loop element"
+  },
+  {
+   "id": "c17",
+   "t_video": 6.541,
+   "status": "ok",
+   "type": "press",
+   "area": "E-NE",
+   "confidence": "med",
+   "evidence": "finger tap posture NE, pink ring center"
+  },
+  {
+   "id": "c18",
+   "t_video": 6.71,
+   "status": "ok",
+   "type": "press",
+   "area": "E",
+   "confidence": "med",
+   "evidence": "re-press E, fresh small orange ring"
+  },
+  {
+   "id": "c19",
+   "t_video": 6.886,
+   "status": "ok",
+   "type": "press",
+   "area": "E-SE",
+   "confidence": "high",
+   "evidence": "fresh pink tap ring at E under hand"
+  },
+  {
+   "id": "c20",
+   "t_video": 7.201,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "med",
+   "evidence": "R press SE, pink ring nearby"
+  },
+  {
+   "id": "c21",
+   "t_video": 7.515,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "high",
+   "evidence": "fresh warm PERFECT text center at press"
+  },
+  {
+   "id": "c22",
+   "t_video": 7.839,
+   "status": "ok",
+   "type": "press",
+   "area": "SW-W",
+   "confidence": "med",
+   "evidence": "L palm lands SW across body"
+  },
+  {
+   "id": "c23",
+   "t_video": 8.178,
+   "status": "ok",
+   "type": "press",
+   "area": "SE-S",
+   "confidence": "high",
+   "evidence": "fresh orange gear at press point"
+  },
+  {
+   "id": "c24",
+   "t_video": 8.48,
+   "status": "ok",
+   "type": "slide",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "L hand on yellow slide band across top"
+  },
+  {
+   "id": "c25",
+   "t_video": 8.69,
+   "status": "ok",
+   "type": "slide",
+   "area": "NW-N",
+   "confidence": "med",
+   "evidence": "L traverse top, pink text at W"
+  },
+  {
+   "id": "c26",
+   "t_video": 8.891,
+   "status": "ok",
+   "type": "slide",
+   "area": "S-W",
+   "confidence": "med",
+   "evidence": "R arm sweep bottom, cyan ring center"
+  },
+  {
+   "id": "c27",
+   "t_video": 9.136,
+   "status": "ok",
+   "type": "press",
+   "area": "SW",
+   "confidence": "high",
+   "evidence": "fresh CRITICAL yellow text at SW"
+  },
+  {
+   "id": "c28",
+   "t_video": 9.277,
+   "status": "ok",
+   "type": "slide",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "L palm sliding W along chevron trace"
+  },
+  {
+   "id": "c29",
+   "t_video": 9.527,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "yellow slide loop element arrives at W hand"
+  },
+  {
+   "id": "c30",
+   "t_video": 9.804,
+   "status": "ok",
+   "type": "slide",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "arm sweep W with chevron trail"
+  },
+  {
+   "id": "c31",
+   "t_video": 9.99,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "med",
+   "evidence": "R press SE, fresh star sparkles center-right"
+  },
+  {
+   "id": "c32",
+   "t_video": 10.067,
+   "status": "ok",
+   "type": "press",
+   "area": "SE-E",
+   "confidence": "med",
+   "evidence": "press SE, pink star cluster fresh"
+  },
+  {
+   "id": "c33",
+   "t_video": 10.225,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "high",
+   "evidence": "warm PERFECT text fresh at W during hit"
+  },
+  {
+   "id": "c34",
+   "t_video": 10.427,
+   "status": "ok",
+   "type": "press",
+   "area": "SW",
+   "confidence": "low",
+   "evidence": "fan-slide tick posture, chevron circle expanding"
+  },
+  {
+   "id": "c35",
+   "t_video": 10.667,
+   "status": "ok",
+   "type": "press",
+   "area": "SW",
+   "confidence": "low",
+   "evidence": "fan-slide tick posture, circle continues"
+  },
+  {
+   "id": "c36",
+   "t_video": 11.038,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "high",
+   "evidence": "fresh pink star at center-right at press"
+  },
+  {
+   "id": "c37",
+   "t_video": 11.141,
+   "status": "ok",
+   "type": "slide",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "traverse W with pink starburst cluster"
+  },
+  {
+   "id": "c38",
+   "t_video": 11.396,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "L press top-center, pink star center"
+  },
+  {
+   "id": "c39",
+   "t_video": 11.479,
+   "status": "ok",
+   "type": "press",
+   "area": "N-NW",
+   "confidence": "high",
+   "evidence": "fresh orange hexagon gear + rings"
+  },
+  {
+   "id": "c40",
+   "t_video": 11.599,
+   "status": "ok",
+   "type": "slide",
+   "area": "NW",
+   "confidence": "med",
+   "evidence": "fast L traverse to NW (motion blur)"
+  },
+  {
+   "id": "c41",
+   "t_video": 11.759,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "R tap N, both hands top"
+  },
+  {
+   "id": "c42",
+   "t_video": 12.094,
+   "status": "ok",
+   "type": "press",
+   "area": "E-NE",
+   "confidence": "high",
+   "evidence": "fresh pink star + orange sparkle at press"
+  },
+  {
+   "id": "c43",
+   "t_video": 12.191,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "med",
+   "evidence": "press NE, pink star persists"
+  },
+  {
+   "id": "c44",
+   "t_video": 12.279,
+   "status": "ok",
+   "type": "press",
+   "area": "NE",
+   "confidence": "med",
+   "evidence": "finger press NE, chevron trail mid"
+  },
+  {
+   "id": "c45",
+   "t_video": 12.696,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "med",
+   "evidence": "L press W, star sparkles center-left"
+  },
+  {
+   "id": "c46",
+   "t_video": 12.852,
+   "status": "ok",
+   "type": "press",
+   "area": "W",
+   "confidence": "high",
+   "evidence": "fresh PERFECT text at W edge"
+  },
+  {
+   "id": "c47",
+   "t_video": 13.232,
+   "status": "ok",
+   "type": "press",
+   "area": "W-SW",
+   "confidence": "med",
+   "evidence": "L press W-SW, fresh pink elements"
+  },
+  {
+   "id": "c48",
+   "t_video": 13.398,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "L press N on big chevron fan circle"
+  },
+  {
+   "id": "c49",
+   "t_video": 13.702,
+   "status": "ok",
+   "type": "slide",
+   "area": "S-SE",
+   "confidence": "med",
+   "evidence": "R arm sweep bottom, star sparkles SE"
+  },
+  {
+   "id": "c50",
+   "t_video": 13.935,
+   "status": "ok",
+   "type": "press",
+   "area": "SW-W",
+   "confidence": "high",
+   "evidence": "fresh pink star at SW under hand"
+  },
+  {
+   "id": "c51",
+   "t_video": 15.012,
+   "status": "ok",
+   "type": "press",
+   "area": "S+W",
+   "confidence": "med",
+   "evidence": "double flat-palm press bottom"
+  },
+  {
+   "id": "c52",
+   "t_video": 15.258,
+   "status": "ok",
+   "type": "slide",
+   "area": "S-W",
+   "confidence": "med",
+   "evidence": "R arm traverse center-bottom (blur)"
+  },
+  {
+   "id": "c53",
+   "t_video": 15.357,
+   "status": "ok",
+   "type": "slide",
+   "area": "SW",
+   "confidence": "med",
+   "evidence": "traverse continues, fresh pink star SW"
+  },
+  {
+   "id": "c54",
+   "t_video": 15.639,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "high",
+   "evidence": "double press, fresh pink ring at S center"
+  },
+  {
+   "id": "c55",
+   "t_video": 15.816,
+   "status": "ok",
+   "type": "press",
+   "area": "S",
+   "confidence": "low",
+   "evidence": "press posture continues, ring persists"
+  },
+  {
+   "id": "c56",
+   "t_video": 15.979,
+   "status": "ok",
+   "type": "slide",
+   "area": "S-SW",
+   "confidence": "high",
+   "evidence": "fresh warm text at SW during sweep"
+  },
+  {
+   "id": "c57",
+   "t_video": 16.129,
+   "status": "ok",
+   "type": "slide",
+   "area": "S",
+   "confidence": "med",
+   "evidence": "traverse center, pink ring at S persists"
+  },
+  {
+   "id": "c58",
+   "t_video": 16.3,
+   "status": "ok",
+   "type": "press",
+   "area": "N-NE",
+   "confidence": "med",
+   "evidence": "L finger press top, chevron trail"
+  },
+  {
+   "id": "c59",
+   "t_video": 16.499,
+   "status": "ok",
+   "type": "slide",
+   "area": "S-W",
+   "confidence": "med",
+   "evidence": "R arm sweep bottom, yellow chevrons SW"
+  },
+  {
+   "id": "c60",
+   "t_video": 16.653,
+   "status": "ok",
+   "type": "press",
+   "area": "N",
+   "confidence": "med",
+   "evidence": "L arm traverse top, pink star center-top"
+  },
+  {
+   "id": "c61",
+   "t_video": 16.956,
+   "status": "ok",
+   "type": "press",
+   "area": "W-SW",
+   "confidence": "med",
+   "evidence": "L press SW, pink rings at S, warm text SW"
+  },
+  {
+   "id": "c62",
+   "t_video": 17.122,
+   "status": "ok",
+   "type": "press",
+   "area": "SE",
+   "confidence": "high",
+   "evidence": "fresh pink ring + circle at SE press"
+  },
+  {
+   "id": "c63",
+   "t_video": 17.261,
+   "status": "ok",
+   "type": "press",
+   "area": "NW-N",
+   "confidence": "med",
+   "evidence": "L press top-left, pink rings center"
+  },
+  {
+   "id": "c64",
+   "t_video": 17.452,
+   "status": "ok",
+   "type": "press",
+   "area": "NE-E",
+   "confidence": "high",
+   "evidence": "double top posture, fresh PERFECT text W"
+  },
+  {
+   "id": "c65",
+   "t_video": 17.624,
+   "status": "ok",
+   "type": "press",
+   "area": "E-NE",
+   "confidence": "high",
+   "evidence": "fresh pink ring at E under R hand"
+  },
+  {
+   "id": "c66",
+   "t_video": 17.788,
+   "status": "ok",
+   "type": "slide",
+   "area": "SE-W",
+   "confidence": "med",
+   "evidence": "R arm sweep bottom (blur), yellow stars"
+  },
+  {
+   "id": "c67",
+   "t_video": 17.951,
+   "status": "ok",
+   "type": "press",
+   "area": "SW",
+   "confidence": "high",
+   "evidence": "fresh pink ring at SW under L hand"
+  }
+ ],
+ "regions": [
+  {
+   "id": "R1",
+   "t0": 0.0,
+   "t1": 18.0,
+   "desc": "continuous two-hand play throughout: top/side/bottom presses, yellow slide band N, cyan chevron fan circles, arm-sweep slides, relative lulls ~7.6-8.1 and ~14.9-15.1 (hand never leaves glass)",
+   "confidence": "med"
+  }
+ ],
+ "notes": [
+  "Vision determines identity; audio refines exact timing (frozen pipeline).",
+  "All 68 audio candidates judged as new player contacts (0 rejected): the window is dense-dominant by selection (mixed sparse/dense PROFILE was relative event spacing, not hand-off rests).",
+  "Judgment text appears 0-2 frames after physical contact; strip center frame = candidate time."
+ ]
+}

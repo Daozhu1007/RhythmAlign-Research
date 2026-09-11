@@ -1,0 +1,934 @@
+{
+ "sr": 48000,
+ "detector": "STFT N=1536 HOP=384, flux 2-12kHz, med+4MAD, 60ms",
+ "chop_def": "5ms RMS frames/2ms hop, cand < 0.8*C1 while C1 active (env_D0>=0.5) and C1 frame > -80 dBFS",
+ "frames": {
+  "n": 703,
+  "heavy_excl_contacts": 40,
+  "quiet_excl_contacts": 31
+ },
+ "ref_music_onsets": 87,
+ "versions": {
+  "D0_interaction": {
+   "contact_retention": {
+    "matched": 66,
+    "rate": 0.7857142857142857,
+    "strong_matched": 60,
+    "strong_rate": 1.0
+   },
+   "local_rms_vs_raw_db": {
+    "median": -0.4566874898470079,
+    "p5": -1.8406223958334689,
+    "p95": 0.0
+   },
+   "peak_ratio_vs_raw": {
+    "median": 0.9999999999988118,
+    "strong_median": 0.9999999999988467,
+    "dynamics_corr": 0.8865217086600943
+   },
+   "music_suppression_db": {
+    "heavy": -7.8367209098343515,
+    "quiet": -6.261100549981403
+   },
+   "taiko_leakage": {
+    "matched": 16,
+    "out_of_window": 4,
+    "out_of_window_times": [
+     2.032,
+     5.397333333333333,
+     5.616,
+     6.351999999999999
+    ]
+   },
+   "gate_coverage": 0.7395458333333333,
+   "missed_contacts": [
+    0.1625,
+    0.2985,
+    3.2879,
+    5.9292,
+    6.4946,
+    8.7307,
+    9.7371,
+    9.9237,
+    11.0756,
+    11.3803,
+    11.6912,
+    12.5852,
+    13.0085,
+    14.0533,
+    14.1052,
+    14.3487,
+    14.4135,
+    14.6339
+   ],
+   "chop_vs_C1": {
+    "active_time_s": 9.688,
+    "attenuated_fraction": 0.0,
+    "episodes": 0,
+    "episodes_ge_20ms": 0,
+    "episodes_ge_50ms": 0,
+    "episode_time_total_s": 0.0,
+    "episode_dur_ms_median": 0.0,
+    "episode_dur_ms_p95": 0.0
+   }
+  },
+  "D1_interaction": {
+   "contact_retention": {
+    "matched": 66,
+    "rate": 0.7857142857142857,
+    "strong_matched": 60,
+    "strong_rate": 1.0
+   },
+   "local_rms_vs_raw_db": {
+    "median": 0.0,
+    "p5": -1.6712729677636853,
+    "p95": 0.0
+   },
+   "peak_ratio_vs_raw": {
+    "median": 0.9999999999988118,
+    "strong_median": 0.9999999999988467,
+    "dynamics_corr": 0.8865217086600943
+   },
+   "music_suppression_db": {
+    "heavy": -3.0755768506884653,
+    "quiet": -2.0059172989094485
+   },
+   "taiko_leakage": {
+    "matched": 11,
+    "out_of_window": 1,
+    "out_of_window_times": [
+     3.648
+    ]
+   },
+   "gate_coverage": 0.855325,
+   "missed_contacts": [
+    0.1625,
+    0.2985,
+    3.2879,
+    5.9292,
+    6.4946,
+    8.7307,
+    9.7371,
+    9.9237,
+    11.0756,
+    11.3803,
+    11.6912,
+    12.5852,
+    13.0085,
+    14.0533,
+    14.1052,
+    14.3487,
+    14.4135,
+    14.6339
+   ],
+   "chop_vs_C1": {
+    "active_time_s": 9.688,
+    "attenuated_fraction": 0.0,
+    "episodes": 0,
+    "episodes_ge_20ms": 0,
+    "episodes_ge_50ms": 0,
+    "episode_time_total_s": 0.0,
+    "episode_dur_ms_median": 0.0,
+    "episode_dur_ms_p95": 0.0
+   }
+  },
+  "D2_interaction": {
+   "contact_retention": {
+    "matched": 66,
+    "rate": 0.7857142857142857,
+    "strong_matched": 60,
+    "strong_rate": 1.0
+   },
+   "local_rms_vs_raw_db": {
+    "median": 0.0,
+    "p5": -1.8406223958334689,
+    "p95": 0.0
+   },
+   "peak_ratio_vs_raw": {
+    "median": 0.9999999999988118,
+    "strong_median": 0.9999999999988467,
+    "dynamics_corr": 0.8865217086600943
+   },
+   "music_suppression_db": {
+    "heavy": -5.894416636480154,
+    "quiet": -4.1858559935197945
+   },
+   "taiko_leakage": {
+    "matched": 17,
+    "out_of_window": 4,
+    "out_of_window_times": [
+     3.648,
+     4.981333333333333,
+     5.616,
+     6.351999999999999
+    ]
+   },
+   "gate_coverage": 0.7990027777777777,
+   "missed_contacts": [
+    0.1625,
+    0.2985,
+    3.2879,
+    5.9292,
+    6.4946,
+    8.7307,
+    9.7371,
+    9.9237,
+    11.0756,
+    11.3803,
+    11.6912,
+    12.5852,
+    13.0085,
+    14.0533,
+    14.1052,
+    14.3487,
+    14.4135,
+    14.6339
+   ],
+   "chop_vs_C1": {
+    "active_time_s": 9.688,
+    "attenuated_fraction": 0.0898018166804294,
+    "episodes": 37,
+    "episodes_ge_20ms": 26,
+    "episodes_ge_50ms": 0,
+    "episode_time_total_s": 0.8700000000000001,
+    "episode_dur_ms_median": 28.0,
+    "episode_dur_ms_p95": 30.0
+   }
+  },
+  "D3_interaction": {
+   "contact_retention": {
+    "matched": 65,
+    "rate": 0.7738095238095238,
+    "strong_matched": 60,
+    "strong_rate": 1.0
+   },
+   "local_rms_vs_raw_db": {
+    "median": 0.0,
+    "p5": -1.1083010511027047,
+    "p95": 0.0
+   },
+   "peak_ratio_vs_raw": {
+    "median": 0.9999999999988143,
+    "strong_median": 0.9999999999988467,
+    "dynamics_corr": 0.9194120144680334
+   },
+   "music_suppression_db": {
+    "heavy": -5.894416636480154,
+    "quiet": 0.0
+   },
+   "taiko_leakage": {
+    "matched": 12,
+    "out_of_window": 2,
+    "out_of_window_times": [
+     4.981333333333333,
+     5.616
+    ]
+   },
+   "gate_coverage": 0.8662666666666666,
+   "missed_contacts": [
+    0.1625,
+    0.2985,
+    3.2879,
+    5.9292,
+    6.4946,
+    8.7307,
+    9.7371,
+    9.9237,
+    11.0756,
+    11.3803,
+    11.6912,
+    12.5852,
+    13.0085,
+    13.4153,
+    14.0533,
+    14.1052,
+    14.3487,
+    14.4135,
+    14.6339
+   ],
+   "chop_vs_C1": {
+    "active_time_s": 9.688,
+    "attenuated_fraction": 0.03695293146160198,
+    "episodes": 15,
+    "episodes_ge_20ms": 11,
+    "episodes_ge_50ms": 0,
+    "episode_time_total_s": 0.3580000000000001,
+    "episode_dur_ms_median": 28.0,
+    "episode_dur_ms_p95": 30.0
+   }
+  },
+  "C1_interaction": {
+   "contact_retention": {
+    "matched": 66,
+    "rate": 0.7857142857142857,
+    "strong_matched": 60,
+    "strong_rate": 1.0
+   },
+   "local_rms_vs_raw_db": {
+    "median": -0.4566874898470079,
+    "p5": -1.8406223958334689,
+    "p95": 0.0
+   },
+   "peak_ratio_vs_raw": {
+    "median": 0.9999999999988118,
+    "strong_median": 0.9999999999988467,
+    "dynamics_corr": 0.8865217086600943
+   },
+   "music_suppression_db": {
+    "heavy": -7.8367209098343515,
+    "quiet": -6.261100549981403
+   },
+   "taiko_leakage": {
+    "matched": 16,
+    "out_of_window": 4,
+    "out_of_window_times": [
+     2.032,
+     5.397333333333333,
+     5.616,
+     6.351999999999999
+    ]
+   },
+   "gate_coverage": 0.7395458333333333,
+   "missed_contacts": [
+    0.1625,
+    0.2985,
+    3.2879,
+    5.9292,
+    6.4946,
+    8.7307,
+    9.7371,
+    9.9237,
+    11.0756,
+    11.3803,
+    11.6912,
+    12.5852,
+    13.0085,
+    14.0533,
+    14.1052,
+    14.3487,
+    14.4135,
+    14.6339
+   ],
+   "chop_vs_C1": {
+    "active_time_s": 9.688,
+    "attenuated_fraction": 0.0,
+    "episodes": 0,
+    "episodes_ge_20ms": 0,
+    "episodes_ge_50ms": 0,
+    "episode_time_total_s": 0.0,
+    "episode_dur_ms_median": 0.0,
+    "episode_dur_ms_p95": 0.0
+   }
+  },
+  "C2_interaction": {
+   "contact_retention": {
+    "matched": 64,
+    "rate": 0.7619047619047619,
+    "strong_matched": 59,
+    "strong_rate": 0.9833333333333333
+   },
+   "local_rms_vs_raw_db": {
+    "median": -4.337740277187985,
+    "p5": -5.851608675654944,
+    "p95": -3.1398992308339575
+   },
+   "peak_ratio_vs_raw": {
+    "median": 0.558412836477869,
+    "strong_median": 0.5545315932114724,
+    "dynamics_corr": -0.7171965118216383
+   },
+   "music_suppression_db": {
+    "heavy": -9.895564846805447,
+    "quiet": -8.160591688275467
+   },
+   "taiko_leakage": {
+    "matched": 17,
+    "out_of_window": 4,
+    "out_of_window_times": [
+     2.032,
+     5.397333333333333,
+     5.616,
+     6.351999999999999
+    ]
+   },
+   "gate_coverage": 0.7394208333333333,
+   "missed_contacts": [
+    0.1625,
+    0.2985,
+    1.0395,
+    3.2879,
+    4.0914,
+    5.9292,
+    6.4946,
+    8.7307,
+    9.7371,
+    9.9237,
+    11.0756,
+    11.3803,
+    11.6912,
+    12.5852,
+    13.0085,
+    14.0533,
+    14.1052,
+    14.3487,
+    14.4135,
+    14.6339
+   ],
+   "chop_vs_C1": {
+    "active_time_s": 9.688,
+    "attenuated_fraction": 0.8439306358381503,
+    "episodes": 216,
+    "episodes_ge_20ms": 75,
+    "episodes_ge_50ms": 53,
+    "episode_time_total_s": 8.176,
+    "episode_dur_ms_median": 8.0,
+    "episode_dur_ms_p95": 145.50000000000003
+   }
+  },
+  "C3_interaction": {
+   "contact_retention": {
+    "matched": 66,
+    "rate": 0.7857142857142857,
+    "strong_matched": 60,
+    "strong_rate": 1.0
+   },
+   "local_rms_vs_raw_db": {
+    "median": -0.2921769119905484,
+    "p5": -3.815610157573028,
+    "p95": 0.0
+   },
+   "peak_ratio_vs_raw": {
+    "median": 0.9999999999981191,
+    "strong_median": 0.9999999999984661,
+    "dynamics_corr": -0.16730219461260099
+   },
+   "music_suppression_db": {
+    "heavy": -0.5705897813454293,
+    "quiet": -0.5198462873094947
+   },
+   "taiko_leakage": {
+    "matched": 14,
+    "out_of_window": 0,
+    "out_of_window_times": []
+   },
+   "gate_coverage": 0.8201694444444444,
+   "missed_contacts": [
+    0.1625,
+    0.2985,
+    3.2879,
+    4.6992,
+    5.9292,
+    6.4946,
+    8.7307,
+    9.7371,
+    9.9237,
+    11.0756,
+    11.3803,
+    11.6912,
+    12.5852,
+    13.0085,
+    14.1052,
+    14.3487,
+    14.4135,
+    14.6339
+   ],
+   "chop_vs_C1": {
+    "active_time_s": 9.688,
+    "attenuated_fraction": 0.14760528488852187,
+    "episodes": 92,
+    "episodes_ge_20ms": 33,
+    "episodes_ge_50ms": 2,
+    "episode_time_total_s": 1.4300000000000004,
+    "episode_dur_ms_median": 8.0,
+    "episode_dur_ms_p95": 34.0
+   }
+  },
+  "D0_final_mix": {
+   "contact_retention": {
+    "matched": 54,
+    "rate": 0.6428571428571429,
+    "strong_matched": 45,
+    "strong_rate": 0.75
+   },
+   "local_rms_vs_raw_db": {
+    "median": 1.567581686705335,
+    "p5": -5.357657618380506,
+    "p95": 5.421784710909344
+   },
+   "peak_ratio_vs_raw": {
+    "median": 0.6135900026697048,
+    "strong_median": 0.5687467175348752,
+    "dynamics_corr": -0.8422003304777381
+   },
+   "music_suppression_db": {
+    "heavy": 5.035641910718171,
+    "quiet": 1.201700665330538
+   },
+   "taiko_leakage": {
+    "matched": 15,
+    "out_of_window": 3,
+    "out_of_window_times": [
+     3.056,
+     6.351999999999999,
+     8.938666666666668
+    ]
+   },
+   "gate_coverage": null,
+   "missed_contacts": [
+    0.2985,
+    0.8794,
+    1.0395,
+    1.7101,
+    3.2879,
+    5.9292,
+    6.2499,
+    6.4946,
+    6.6568,
+    6.9199,
+    7.0944,
+    7.7285,
+    7.8893,
+    8.2319,
+    8.3694,
+    9.0416,
+    9.5125,
+    9.6933,
+    9.7371,
+    9.8603,
+    11.0756,
+    11.3803,
+    11.6912,
+    12.288,
+    12.5852,
+    13.0085,
+    13.4153,
+    14.0533,
+    14.1052,
+    14.4135
+   ],
+   "peak_dbfs": -2.5374466630092525,
+   "peak_dbfs_headroom": 2.5374466630092525
+  },
+  "D1_final_mix": {
+   "contact_retention": {
+    "matched": 54,
+    "rate": 0.6428571428571429,
+    "strong_matched": 45,
+    "strong_rate": 0.75
+   },
+   "local_rms_vs_raw_db": {
+    "median": 1.612569372612806,
+    "p5": -5.272099878389304,
+    "p95": 5.567076037706476
+   },
+   "peak_ratio_vs_raw": {
+    "median": 0.6135900026697048,
+    "strong_median": 0.5687467175348752,
+    "dynamics_corr": -0.8420669265737778
+   },
+   "music_suppression_db": {
+    "heavy": 5.268238028242589,
+    "quiet": 1.4484290523242116
+   },
+   "taiko_leakage": {
+    "matched": 15,
+    "out_of_window": 3,
+    "out_of_window_times": [
+     3.056,
+     6.351999999999999,
+     8.938666666666668
+    ]
+   },
+   "gate_coverage": null,
+   "missed_contacts": [
+    0.2985,
+    0.8794,
+    1.0395,
+    1.7101,
+    3.2879,
+    5.9292,
+    6.2499,
+    6.4946,
+    6.6568,
+    6.9199,
+    7.0944,
+    7.7285,
+    7.8893,
+    8.2319,
+    8.3694,
+    9.0416,
+    9.5125,
+    9.6933,
+    9.7371,
+    9.8603,
+    11.0756,
+    11.3803,
+    11.6912,
+    12.288,
+    12.5852,
+    13.0085,
+    13.4153,
+    14.0533,
+    14.1052,
+    14.4135
+   ],
+   "peak_dbfs": -2.5374466630092525,
+   "peak_dbfs_headroom": 2.5374466630092525
+  },
+  "D2_final_mix": {
+   "contact_retention": {
+    "matched": 54,
+    "rate": 0.6428571428571429,
+    "strong_matched": 45,
+    "strong_rate": 0.75
+   },
+   "local_rms_vs_raw_db": {
+    "median": 1.567581686705335,
+    "p5": -5.272099878389304,
+    "p95": 5.362446948279805
+   },
+   "peak_ratio_vs_raw": {
+    "median": 0.6135900026697048,
+    "strong_median": 0.5687467175348752,
+    "dynamics_corr": -0.8422003304777381
+   },
+   "music_suppression_db": {
+    "heavy": 5.030497610034271,
+    "quiet": 1.546774317858663
+   },
+   "taiko_leakage": {
+    "matched": 15,
+    "out_of_window": 3,
+    "out_of_window_times": [
+     3.056,
+     6.351999999999999,
+     8.938666666666668
+    ]
+   },
+   "gate_coverage": null,
+   "missed_contacts": [
+    0.2985,
+    0.8794,
+    1.0395,
+    1.7101,
+    3.2879,
+    5.9292,
+    6.2499,
+    6.4946,
+    6.6568,
+    6.9199,
+    7.0944,
+    7.7285,
+    7.8893,
+    8.2319,
+    8.3694,
+    9.0416,
+    9.5125,
+    9.6933,
+    9.7371,
+    9.8603,
+    11.0756,
+    11.3803,
+    11.6912,
+    12.288,
+    12.5852,
+    13.0085,
+    13.4153,
+    14.0533,
+    14.1052,
+    14.4135
+   ],
+   "peak_dbfs": -2.5374466630092525,
+   "peak_dbfs_headroom": 2.5374466630092525
+  },
+  "D3_final_mix": {
+   "contact_retention": {
+    "matched": 55,
+    "rate": 0.6547619047619048,
+    "strong_matched": 46,
+    "strong_rate": 0.7666666666666667
+   },
+   "local_rms_vs_raw_db": {
+    "median": 1.6159370737736367,
+    "p5": -5.104282928548484,
+    "p95": 5.566425510227191
+   },
+   "peak_ratio_vs_raw": {
+    "median": 0.6069421630545494,
+    "strong_median": 0.5658527508332011,
+    "dynamics_corr": -0.8434645690310362
+   },
+   "music_suppression_db": {
+    "heavy": 5.030497610034271,
+    "quiet": 1.9156243113084948
+   },
+   "taiko_leakage": {
+    "matched": 16,
+    "out_of_window": 3,
+    "out_of_window_times": [
+     3.056,
+     6.351999999999999,
+     8.938666666666668
+    ]
+   },
+   "gate_coverage": null,
+   "missed_contacts": [
+    0.2985,
+    0.8794,
+    1.0395,
+    1.7101,
+    3.2879,
+    5.9292,
+    6.2499,
+    6.4946,
+    6.6568,
+    6.9199,
+    7.0944,
+    7.7285,
+    8.2319,
+    8.3694,
+    9.0416,
+    9.5125,
+    9.6933,
+    9.7371,
+    9.8603,
+    11.0756,
+    11.3803,
+    11.6912,
+    12.288,
+    12.5852,
+    13.0085,
+    13.4153,
+    14.0533,
+    14.1052,
+    14.4135
+   ],
+   "peak_dbfs": -2.5374466630092525,
+   "peak_dbfs_headroom": 2.5374466630092525
+  },
+  "C1_final_mix": {
+   "contact_retention": {
+    "matched": 54,
+    "rate": 0.6428571428571429,
+    "strong_matched": 45,
+    "strong_rate": 0.75
+   },
+   "local_rms_vs_raw_db": {
+    "median": 1.567581686705335,
+    "p5": -5.357657618380506,
+    "p95": 5.421784710909344
+   },
+   "peak_ratio_vs_raw": {
+    "median": 0.6135900026697048,
+    "strong_median": 0.5687467175348752,
+    "dynamics_corr": -0.8422003304777381
+   },
+   "music_suppression_db": {
+    "heavy": 5.035641910718171,
+    "quiet": 1.201700665330538
+   },
+   "taiko_leakage": {
+    "matched": 15,
+    "out_of_window": 3,
+    "out_of_window_times": [
+     3.056,
+     6.351999999999999,
+     8.938666666666668
+    ]
+   },
+   "gate_coverage": null,
+   "missed_contacts": [
+    0.2985,
+    0.8794,
+    1.0395,
+    1.7101,
+    3.2879,
+    5.9292,
+    6.2499,
+    6.4946,
+    6.6568,
+    6.9199,
+    7.0944,
+    7.7285,
+    7.8893,
+    8.2319,
+    8.3694,
+    9.0416,
+    9.5125,
+    9.6933,
+    9.7371,
+    9.8603,
+    11.0756,
+    11.3803,
+    11.6912,
+    12.288,
+    12.5852,
+    13.0085,
+    13.4153,
+    14.0533,
+    14.1052,
+    14.4135
+   ],
+   "peak_dbfs": -2.5374466630092525,
+   "peak_dbfs_headroom": 2.5374466630092525
+  },
+  "C2_final_mix": {
+   "contact_retention": {
+    "matched": 34,
+    "rate": 0.40476190476190477,
+    "strong_matched": 23,
+    "strong_rate": 0.38333333333333336
+   },
+   "local_rms_vs_raw_db": {
+    "median": -1.7440758331934259,
+    "p5": -8.432060012817367,
+    "p95": 6.078421979112396
+   },
+   "peak_ratio_vs_raw": {
+    "median": 0.41679490056294155,
+    "strong_median": 0.3865946796482822,
+    "dynamics_corr": -0.8303746103305917
+   },
+   "music_suppression_db": {
+    "heavy": 5.003217021136857,
+    "quiet": 1.0768242941180723
+   },
+   "taiko_leakage": {
+    "matched": 16,
+    "out_of_window": 3,
+    "out_of_window_times": [
+     3.056,
+     6.351999999999999,
+     8.938666666666668
+    ]
+   },
+   "gate_coverage": null,
+   "missed_contacts": [
+    0.2985,
+    0.8794,
+    1.0395,
+    1.2298,
+    1.5401,
+    1.7101,
+    1.9093,
+    2.2028,
+    3.1539,
+    3.2879,
+    3.8274,
+    4.0914,
+    4.4997,
+    4.8035,
+    5.1264,
+    5.2702,
+    5.7926,
+    5.9292,
+    6.102,
+    6.2499,
+    6.4356,
+    6.6568,
+    6.7738,
+    6.9199,
+    7.0944,
+    7.418,
+    7.7285,
+    7.8893,
+    8.0902,
+    8.2319,
+    8.3694,
+    9.0416,
+    9.5125,
+    9.6933,
+    9.7371,
+    9.8603,
+    10.0176,
+    10.1807,
+    10.3541,
+    10.3541,
+    11.3259,
+    11.6912,
+    12.288,
+    12.5852,
+    13.0085,
+    13.1348,
+    13.4153,
+    14.0533,
+    14.1052,
+    14.4135
+   ],
+   "peak_dbfs": -4.713491396413313,
+   "peak_dbfs_headroom": 4.713491396413313
+  },
+  "C3_final_mix": {
+   "contact_retention": {
+    "matched": 50,
+    "rate": 0.5952380952380952,
+    "strong_matched": 41,
+    "strong_rate": 0.6833333333333333
+   },
+   "local_rms_vs_raw_db": {
+    "median": 1.3189616197021579,
+    "p5": -5.785885009558797,
+    "p95": 5.776047872924667
+   },
+   "peak_ratio_vs_raw": {
+    "median": 0.5756468702571642,
+    "strong_median": 0.5428922317713792,
+    "dynamics_corr": -0.8526903230631916
+   },
+   "music_suppression_db": {
+    "heavy": 5.223032047450102,
+    "quiet": 1.3952333677966493
+   },
+   "taiko_leakage": {
+    "matched": 14,
+    "out_of_window": 3,
+    "out_of_window_times": [
+     3.056,
+     6.351999999999999,
+     8.938666666666668
+    ]
+   },
+   "gate_coverage": null,
+   "missed_contacts": [
+    0.2985,
+    0.8794,
+    1.0395,
+    1.7101,
+    3.1539,
+    3.2879,
+    5.9292,
+    6.102,
+    6.2499,
+    6.4356,
+    6.6568,
+    6.9199,
+    7.0944,
+    7.7285,
+    8.2319,
+    8.3694,
+    8.6908,
+    8.7307,
+    9.0416,
+    9.5125,
+    9.6933,
+    9.7371,
+    9.8603,
+    10.1807,
+    11.0756,
+    11.3803,
+    11.6912,
+    12.288,
+    12.5852,
+    13.0085,
+    13.4153,
+    14.0533,
+    14.1052,
+    14.4135
+   ],
+   "peak_dbfs": -2.5374466630092525,
+   "peak_dbfs_headroom": 2.5374466630092525
+  },
+  "D0_equals_C1_interaction_max_abs_diff": 0.0,
+  "D0_equals_C1_final_mix_max_abs_diff": 0.0
+ }
+}

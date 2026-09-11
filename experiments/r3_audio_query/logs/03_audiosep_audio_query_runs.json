@@ -1,0 +1,26 @@
+{
+  "torch": "2.14.0+cu126",
+  "device": "cuda",
+  "checkpoint": "D:\\Code\\RhythmAlign\\experiments\\r2_target_separation\\checkpoints\\audiosep_base_4M_steps.ckpt",
+  "note": "zero-shot cross-modal probe; released base model is text-conditioned (use_text_ratio=1.0)",
+  "runs": [
+    {
+      "name": "audiosep_aq_q1",
+      "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q1.wav",
+      "mixture_rms_db": -20.34699249267578,
+      "target_rms_db": -23.367252349853516,
+      "residual_rms_db": -26.309764862060547,
+      "target_peak": 1.0439141988754272,
+      "energy_ratio_db": -3.0202598571777344
+    },
+    {
+      "name": "audiosep_aq_q2",
+      "query": "D:\\Code\\RhythmAlign\\experiments\\r3_audio_query\\queries\\query_q2.wav",
+      "mixture_rms_db": -20.34699249267578,
+      "target_rms_db": -22.217750549316406,
+      "residual_rms_db": -31.369285583496094,
+      "target_peak": 0.9963453412055969,
+      "energy_ratio_db": -1.870758056640625
+    }
+  ]
+}

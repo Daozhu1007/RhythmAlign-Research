@@ -1,0 +1,96 @@
+{
+  "seed": 20260910,
+  "note": "DO NOT OPEN before rating. Mapping of anonymous files to variants.",
+  "key": [
+    {
+      "file": "X01.wav",
+      "case_id": "case02_tap_music",
+      "variant": "BOUNDED_REAL_MASK_ORACLE"
+    },
+    {
+      "file": "X02.wav",
+      "case_id": "case04_weak_music",
+      "variant": "BOUNDED_REAL_MASK_ORACLE"
+    },
+    {
+      "file": "X03.wav",
+      "case_id": "case04_weak_music",
+      "variant": "COMPLEX_RATIO_ORACLE"
+    },
+    {
+      "file": "X04.wav",
+      "case_id": "case04_weak_music",
+      "variant": "TRUE_TARGET"
+    },
+    {
+      "file": "X05.wav",
+      "case_id": "case04_weak_music",
+      "variant": "RAW_MIXTURE"
+    },
+    {
+      "file": "X06.wav",
+      "case_id": "case01_tap_music",
+      "variant": "BOUNDED_REAL_MASK_ORACLE"
+    },
+    {
+      "file": "X07.wav",
+      "case_id": "case02_tap_music",
+      "variant": "OPTIMIZED_BOUNDED_MASK_ORACLE"
+    },
+    {
+      "file": "X08.wav",
+      "case_id": "case01_tap_music",
+      "variant": "RAW_MIXTURE"
+    },
+    {
+      "file": "X09.wav",
+      "case_id": "case01_tap_music",
+      "variant": "COMPLEX_RATIO_ORACLE"
+    },
+    {
+      "file": "X10.wav",
+      "case_id": "case03_tap_music",
+      "variant": "RAW_MIXTURE"
+    },
+    {
+      "file": "X11.wav",
+      "case_id": "case03_tap_music",
+      "variant": "TRUE_TARGET"
+    },
+    {
+      "file": "X12.wav",
+      "case_id": "case03_tap_music",
+      "variant": "OPTIMIZED_BOUNDED_MASK_ORACLE"
+    },
+    {
+      "file": "X13.wav",
+      "case_id": "case02_tap_music",
+      "variant": "RAW_MIXTURE"
+    },
+    {
+      "file": "X14.wav",
+      "case_id": "case03_tap_music",
+      "variant": "BOUNDED_REAL_MASK_ORACLE"
+    },
+    {
+      "file": "X15.wav",
+      "case_id": "case04_weak_music",
+      "variant": "OPTIMIZED_BOUNDED_MASK_ORACLE"
+    },
+    {
+      "file": "X16.wav",
+      "case_id": "case01_tap_music",
+      "variant": "OPTIMIZED_BOUNDED_MASK_ORACLE"
+    },
+    {
+      "file": "X17.wav",
+      "case_id": "case02_tap_music",
+      "variant": "TRUE_TARGET"
+    },
+    {
+      "file": "X18.wav",
+      "case_id": "case01_tap_music",
+      "variant": "TRUE_TARGET"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+ "matched": 48,
+ "n_oracle": 92,
+ "err_ms_median": 0.0,
+ "abs_err_ms_p95": 55.62499999999895,
+ "gate_coverage_of_oracle": 0.6630434782608695,
+ "gate_coverage_strong": 0.723404255319149
+}

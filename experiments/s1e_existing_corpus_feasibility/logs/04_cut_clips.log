@@ -1,0 +1,9 @@
+c1_speech_npc_a: 8.0s [1:26.0-1:34.0] rms -17.5 dBFS
+c2_speech_npc_b: 8.0s [1:36.0-1:44.0] rms -19.1 dBFS
+c3_taiko_prompt: 5.0s [2:06.5-2:11.5] rms -20.0 dBFS
+c4_ambience_start: 6.0s [0:02.5-0:08.5] rms -19.8 dBFS
+c5_announcer_end: 7.0s [2:32.0-2:39.0] rms -16.9 dBFS
+c6_dense_golden: 15.0s [0:22.5-0:37.5] rms -20.0 dBFS
+c7_weak_taps: 6.0s [0:38.0-0:44.0] rms -17.9 dBFS
+c8_slide_friction: 6.0s [0:51.5-0:57.5] rms -16.7 dBFS
+saved clip_manifest.json
