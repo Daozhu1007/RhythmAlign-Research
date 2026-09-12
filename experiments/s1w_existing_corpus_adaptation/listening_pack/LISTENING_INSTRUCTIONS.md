@@ -38,12 +38,29 @@ Groups (same sealed recording as S1E):
 ## The rules (fixed, disclosed)
 
 - One listening pass; no repeated scoring rounds required.
-- Level: every item is peak-normalized to −3 dBFS **for this pack only** — the exact
-  gain of every item is recorded in a sealed key. Loudness differences you hear
-  between methods under the same gain are therefore meaningful content differences,
-  not mastering.
+- Gain: **no per-item normalization of any kind** — no peak, RMS, or loudness
+  normalization, and no method-specific gain. Within each group exactly one common
+  gain was derived from the raw source only (raw peak brought to −1 dBFS headroom)
+  and applied identically to all three items, so every item keeps its frozen
+  inference scale relative to the same raw source. Loudness differences you hear
+  between items of the same group are therefore REAL content differences: large
+  loudness loss is itself meaningful evidence (suppression/deletion magnitude).
+  Expect some items to be near-silent — that is a result, not a packaging artifact.
+  Numeric validation: `LISTENING_PACK_GAIN_AUDIT.md`.
 - A method that removes nuisance but noticeably deletes authentic interaction
   DOES NOT WIN.
+
+## Pack history (the v1 mistake is recorded, not hidden)
+
+- v1 (2026-09-12): **INVALID — superseded.** Every item was independently
+  peak-normalized to −3 dBFS, violating the preregistered rule of no per-item
+  normalization (independent normalization can amplify near-silent residue and hide
+  the actual magnitude of target deletion). The v1 audio was overwritten in place;
+  the mistake is kept on record here and in `LISTENING_PACK_GAIN_AUDIT.md`.
+- v2 (2026-09-12, current): the 18 items were regenerated from the same frozen
+  inference outputs under the single-common-gain rule above; anonymous method
+  assignment and playback order are unchanged; relative loudness between methods is
+  validated to be preserved (`LISTENING_PACK_GAIN_AUDIT.md`).
 
 Please do not open or ask about the unblinding key before rating — it stays sealed
 until your pass is complete. Rating sheet: any free format you like; the follow-up

@@ -38,7 +38,8 @@
   "items": 18,
   "groups": 6,
   "methods": "RAW vs ZERO-SHOT vs ADAPTED (identities sealed)",
-  "fixed_gain_pack_normalization": "peak -3 dBFS, per-item gains in sealed key"
+  "pack_revision": "v2_gain_corrected",
+  "fixed_gain_pack_normalization": "one common gain per group derived from the RAW source peak only (-1 dBFS headroom target), applied identically to all 3 items; NO per-item normalization; relative RMS preservation validated in listening_pack/LISTENING_PACK_GAIN_AUDIT.md (v1 used invalid per-item -3 dBFS peak norm and was regenerated; assignment/order unchanged)"
  },
  "next_required_step": "owner blind listening pass; then unblind, record S1W_DECISION.json + S1W_REPORT.md"
 }

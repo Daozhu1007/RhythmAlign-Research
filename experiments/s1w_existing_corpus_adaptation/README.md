@@ -53,7 +53,7 @@ the decision itself waits for the owner's listening pass.
 | [REAL_TEST_RESULTS.md](REAL_TEST_RESULTS.md) | Frozen sealed 6-group × 3-method results |
 | [GENERALIZATION_RESULTS.md](GENERALIZATION_RESULTS.md) | Post-freeze generalization diagnostics |
 | [FAILURE_CASES.md](FAILURE_CASES.md) | Honest negative observations |
-| [listening_pack/](listening_pack/) | 18 anonymous items + instructions + public order |
+| [listening_pack/](listening_pack/) | 18 anonymous items + instructions + gain audit + public order |
 | [S1W_PRELISTENING_REPORT.md](S1W_PRELISTENING_REPORT.md) | Answers the 22 pre-listening questions |
 | [S1W_STATUS.json](S1W_STATUS.json) | Machine-readable stage status |
 | `scripts/` | Full pipeline (00–14) |
@@ -79,7 +79,7 @@ $PY scripts/09_train.py                  # primary training run (max 2000 update
 $PY scripts/14_write_reports.py          # DEV_RESULTS + checkpoint manifest
 $PY scripts/11_real_test.py              # frozen sealed test (post-freeze only!)
 $PY scripts/12_generalization.py         # post-freeze generalization diagnostics
-$PY scripts/13_build_listening_pack.py   # 18-item blind pack (key sealed)
+$PY scripts/13b_rebuild_listening_pack_fixed_gain.py  # 18-item blind pack v2 (one common per-group gain; key sealed)
 ```
 
 ## Rules respected
@@ -89,7 +89,11 @@ $PY scripts/13_build_listening_pack.py   # 18-item blind pack (key sealed)
   from every role; sealed S1E source contributed nothing to any mining/decision.
 - Split frozen before mining; leakage checked programmatically (`logs/10_sanity.json`).
 - No synthetic Foley; no vision/chart signals; separator outputs never used as targets.
-- Fixed gain everywhere: no per-output/per-method normalization; the listening pack is
-  peak-normalized for comparability with per-item gains recorded in the sealed key.
+- Fixed gain everywhere: no per-output/per-method/per-item normalization; the listening
+  pack applies exactly one common gain per group derived from the raw source only
+  (raw peak to −1 dBFS headroom), so each item keeps its frozen inference scale and
+  large loudness loss between items stays visible as decision evidence (validated in
+  `listening_pack/LISTENING_PACK_GAIN_AUDIT.md`; v1 used invalid per-item −3 dBFS peak
+  normalization and was regenerated — assignment/order unchanged).
 - CLAPSep vendor code and checkpoints stay LOCAL (license position unchanged).
 - Nothing private committed: no media, no paths, no device/GPS metadata, no key.
