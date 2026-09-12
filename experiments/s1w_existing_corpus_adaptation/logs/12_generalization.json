@@ -1,0 +1,677 @@
+{
+ "note": "descriptive post-freeze generalization diagnostics; no ground truth",
+ "rows": [
+  {
+   "recording_id": "recording_0033",
+   "window": [
+    30.0,
+    40.0
+   ],
+   "raw": {
+    "click_band_db": 1.33,
+    "flat_frac": 0.116,
+    "rms_db": -12.94
+   },
+   "zeroshot": {
+    "click_band_db": 0.95,
+    "flat_frac": 0.131,
+    "rms_db": -17.64
+   },
+   "adapted": {
+    "click_band_db": -29.96,
+    "flat_frac": 0.448,
+    "rms_db": -47.96
+   },
+   "zeroshot_ret_vs_raw_db": -0.37,
+   "adapted_ret_vs_raw_db": -31.29
+  },
+  {
+   "recording_id": "recording_0033",
+   "window": [
+    90.0,
+    100.0
+   ],
+   "raw": {
+    "click_band_db": 0.85,
+    "flat_frac": 0.111,
+    "rms_db": -12.76
+   },
+   "zeroshot": {
+    "click_band_db": 0.09,
+    "flat_frac": 0.161,
+    "rms_db": -17.05
+   },
+   "adapted": {
+    "click_band_db": -27.91,
+    "flat_frac": 0.378,
+    "rms_db": -46.88
+   },
+   "zeroshot_ret_vs_raw_db": -0.76,
+   "adapted_ret_vs_raw_db": -28.76
+  },
+  {
+   "recording_id": "recording_0043",
+   "window": [
+    30.0,
+    40.0
+   ],
+   "raw": {
+    "click_band_db": 5.83,
+    "flat_frac": 0.657,
+    "rms_db": -11.84
+   },
+   "zeroshot": {
+    "click_band_db": 5.58,
+    "flat_frac": 0.763,
+    "rms_db": -16.92
+   },
+   "adapted": {
+    "click_band_db": -22.38,
+    "flat_frac": 0.438,
+    "rms_db": -42.9
+   },
+   "zeroshot_ret_vs_raw_db": -0.25,
+   "adapted_ret_vs_raw_db": -28.21
+  },
+  {
+   "recording_id": "recording_0043",
+   "window": [
+    90.0,
+    100.0
+   ],
+   "raw": {
+    "click_band_db": 7.08,
+    "flat_frac": 0.751,
+    "rms_db": -14.67
+   },
+   "zeroshot": {
+    "click_band_db": 6.7,
+    "flat_frac": 0.822,
+    "rms_db": -18.52
+   },
+   "adapted": {
+    "click_band_db": -10.49,
+    "flat_frac": 0.648,
+    "rms_db": -31.72
+   },
+   "zeroshot_ret_vs_raw_db": -0.38,
+   "adapted_ret_vs_raw_db": -17.57
+  },
+  {
+   "recording_id": "recording_0018",
+   "window": [
+    30.0,
+    40.0
+   ],
+   "raw": {
+    "click_band_db": 4.92,
+    "flat_frac": 0.291,
+    "rms_db": -17.02
+   },
+   "zeroshot": {
+    "click_band_db": 4.44,
+    "flat_frac": 0.821,
+    "rms_db": -21.12
+   },
+   "adapted": {
+    "click_band_db": -28.95,
+    "flat_frac": 0.277,
+    "rms_db": -47.87
+   },
+   "zeroshot_ret_vs_raw_db": -0.48,
+   "adapted_ret_vs_raw_db": -33.87
+  },
+  {
+   "recording_id": "recording_0018",
+   "window": [
+    90.0,
+    100.0
+   ],
+   "raw": {
+    "click_band_db": 3.3,
+    "flat_frac": 0.197,
+    "rms_db": -17.29
+   },
+   "zeroshot": {
+    "click_band_db": 2.83,
+    "flat_frac": 0.484,
+    "rms_db": -21.55
+   },
+   "adapted": {
+    "click_band_db": -31.57,
+    "flat_frac": 0.449,
+    "rms_db": -51.14
+   },
+   "zeroshot_ret_vs_raw_db": -0.47,
+   "adapted_ret_vs_raw_db": -34.87
+  },
+  {
+   "recording_id": "recording_0003",
+   "window": [
+    30.0,
+    40.0
+   ],
+   "raw": {
+    "click_band_db": 3.99,
+    "flat_frac": 0.492,
+    "rms_db": -19.17
+   },
+   "zeroshot": {
+    "click_band_db": -3.61,
+    "flat_frac": 0.577,
+    "rms_db": -27.44
+   },
+   "adapted": {
+    "click_band_db": -26.82,
+    "flat_frac": 0.5,
+    "rms_db": -46.45
+   },
+   "zeroshot_ret_vs_raw_db": -7.6,
+   "adapted_ret_vs_raw_db": -30.81
+  },
+  {
+   "recording_id": "recording_0003",
+   "window": [
+    90.0,
+    100.0
+   ],
+   "raw": {
+    "click_band_db": 2.98,
+    "flat_frac": 0.321,
+    "rms_db": -20.49
+   },
+   "zeroshot": {
+    "click_band_db": -4.21,
+    "flat_frac": 0.326,
+    "rms_db": -27.67
+   },
+   "adapted": {
+    "click_band_db": 0.93,
+    "flat_frac": 0.687,
+    "rms_db": -23.14
+   },
+   "zeroshot_ret_vs_raw_db": -7.19,
+   "adapted_ret_vs_raw_db": -2.05
+  },
+  {
+   "recording_id": "recording_0037",
+   "window": [
+    30.0,
+    40.0
+   ],
+   "raw": {
+    "click_band_db": 6.25,
+    "flat_frac": 0.287,
+    "rms_db": -9.31
+   },
+   "zeroshot": {
+    "click_band_db": 3.65,
+    "flat_frac": 0.323,
+    "rms_db": -14.55
+   },
+   "adapted": {
+    "click_band_db": -20.55,
+    "flat_frac": 0.321,
+    "rms_db": -40.94
+   },
+   "zeroshot_ret_vs_raw_db": -2.6,
+   "adapted_ret_vs_raw_db": -26.8
+  },
+  {
+   "recording_id": "recording_0037",
+   "window": [
+    90.0,
+    100.0
+   ],
+   "raw": {
+    "click_band_db": 4.56,
+    "flat_frac": 0.27,
+    "rms_db": -9.12
+   },
+   "zeroshot": {
+    "click_band_db": 3.28,
+    "flat_frac": 0.378,
+    "rms_db": -13.72
+   },
+   "adapted": {
+    "click_band_db": -21.52,
+    "flat_frac": 0.196,
+    "rms_db": -38.77
+   },
+   "zeroshot_ret_vs_raw_db": -1.28,
+   "adapted_ret_vs_raw_db": -26.09
+  },
+  {
+   "recording_id": "recording_0016",
+   "window": [
+    30.0,
+    40.0
+   ],
+   "raw": {
+    "click_band_db": 3.18,
+    "flat_frac": 0.358,
+    "rms_db": -12.03
+   },
+   "zeroshot": {
+    "click_band_db": 2.08,
+    "flat_frac": 0.433,
+    "rms_db": -16.28
+   },
+   "adapted": {
+    "click_band_db": -22.47,
+    "flat_frac": 0.526,
+    "rms_db": -41.27
+   },
+   "zeroshot_ret_vs_raw_db": -1.1,
+   "adapted_ret_vs_raw_db": -25.66
+  },
+  {
+   "recording_id": "recording_0016",
+   "window": [
+    90.0,
+    100.0
+   ],
+   "raw": {
+    "click_band_db": 6.4,
+    "flat_frac": 0.317,
+    "rms_db": -12.37
+   },
+   "zeroshot": {
+    "click_band_db": 4.3,
+    "flat_frac": 0.416,
+    "rms_db": -18.31
+   },
+   "adapted": {
+    "click_band_db": -10.72,
+    "flat_frac": 0.275,
+    "rms_db": -30.55
+   },
+   "zeroshot_ret_vs_raw_db": -2.1,
+   "adapted_ret_vs_raw_db": -17.12
+  },
+  {
+   "recording_id": "recording_0058",
+   "window": [
+    30.0,
+    40.0
+   ],
+   "raw": {
+    "click_band_db": 4.3,
+    "flat_frac": 0.506,
+    "rms_db": -9.12
+   },
+   "zeroshot": {
+    "click_band_db": 3.64,
+    "flat_frac": 0.53,
+    "rms_db": -13.6
+   },
+   "adapted": {
+    "click_band_db": -24.32,
+    "flat_frac": 0.397,
+    "rms_db": -44.78
+   },
+   "zeroshot_ret_vs_raw_db": -0.65,
+   "adapted_ret_vs_raw_db": -28.62
+  },
+  {
+   "recording_id": "recording_0058",
+   "window": [
+    90.0,
+    100.0
+   ],
+   "raw": {
+    "click_band_db": 4.4,
+    "flat_frac": 0.467,
+    "rms_db": -8.95
+   },
+   "zeroshot": {
+    "click_band_db": 3.67,
+    "flat_frac": 0.458,
+    "rms_db": -13.85
+   },
+   "adapted": {
+    "click_band_db": -20.92,
+    "flat_frac": 0.251,
+    "rms_db": -38.86
+   },
+   "zeroshot_ret_vs_raw_db": -0.73,
+   "adapted_ret_vs_raw_db": -25.32
+  },
+  {
+   "recording_id": "recording_0005",
+   "window": [
+    30.0,
+    40.0
+   ],
+   "raw": {
+    "click_band_db": 5.37,
+    "flat_frac": 0.31,
+    "rms_db": -12.89
+   },
+   "zeroshot": {
+    "click_band_db": 5.15,
+    "flat_frac": 0.337,
+    "rms_db": -17.2
+   },
+   "adapted": {
+    "click_band_db": -28.57,
+    "flat_frac": 0.199,
+    "rms_db": -47.86
+   },
+   "zeroshot_ret_vs_raw_db": -0.22,
+   "adapted_ret_vs_raw_db": -33.94
+  },
+  {
+   "recording_id": "recording_0005",
+   "window": [
+    90.0,
+    100.0
+   ],
+   "raw": {
+    "click_band_db": 5.75,
+    "flat_frac": 0.383,
+    "rms_db": -13.22
+   },
+   "zeroshot": {
+    "click_band_db": 5.38,
+    "flat_frac": 0.455,
+    "rms_db": -17.9
+   },
+   "adapted": {
+    "click_band_db": -23.84,
+    "flat_frac": 0.255,
+    "rms_db": -43.12
+   },
+   "zeroshot_ret_vs_raw_db": -0.37,
+   "adapted_ret_vs_raw_db": -29.59
+  },
+  {
+   "recording_id": "recording_0054",
+   "window": [
+    30.0,
+    40.0
+   ],
+   "raw": {
+    "click_band_db": 2.74,
+    "flat_frac": 0.152,
+    "rms_db": -11.47
+   },
+   "zeroshot": {
+    "click_band_db": 1.25,
+    "flat_frac": 0.386,
+    "rms_db": -16.46
+   },
+   "adapted": {
+    "click_band_db": -28.65,
+    "flat_frac": 0.225,
+    "rms_db": -48.35
+   },
+   "zeroshot_ret_vs_raw_db": -1.48,
+   "adapted_ret_vs_raw_db": -31.39
+  },
+  {
+   "recording_id": "recording_0054",
+   "window": [
+    90.0,
+    100.0
+   ],
+   "raw": {
+    "click_band_db": 5.97,
+    "flat_frac": 0.414,
+    "rms_db": -14.14
+   },
+   "zeroshot": {
+    "click_band_db": 5.76,
+    "flat_frac": 0.421,
+    "rms_db": -17.73
+   },
+   "adapted": {
+    "click_band_db": -18.61,
+    "flat_frac": 0.237,
+    "rms_db": -39.57
+   },
+   "zeroshot_ret_vs_raw_db": -0.21,
+   "adapted_ret_vs_raw_db": -24.58
+  },
+  {
+   "recording_id": "recording_0053",
+   "window": [
+    30.0,
+    40.0
+   ],
+   "raw": {
+    "click_band_db": 1.68,
+    "flat_frac": 0.179,
+    "rms_db": -12.77
+   },
+   "zeroshot": {
+    "click_band_db": 1.0,
+    "flat_frac": 0.23,
+    "rms_db": -17.65
+   },
+   "adapted": {
+    "click_band_db": -29.2,
+    "flat_frac": 0.336,
+    "rms_db": -46.41
+   },
+   "zeroshot_ret_vs_raw_db": -0.67,
+   "adapted_ret_vs_raw_db": -30.88
+  },
+  {
+   "recording_id": "recording_0053",
+   "window": [
+    90.0,
+    100.0
+   ],
+   "raw": {
+    "click_band_db": 4.01,
+    "flat_frac": 0.337,
+    "rms_db": -12.19
+   },
+   "zeroshot": {
+    "click_band_db": 3.42,
+    "flat_frac": 0.451,
+    "rms_db": -17.02
+   },
+   "adapted": {
+    "click_band_db": -25.65,
+    "flat_frac": 0.274,
+    "rms_db": -43.24
+   },
+   "zeroshot_ret_vs_raw_db": -0.59,
+   "adapted_ret_vs_raw_db": -29.66
+  },
+  {
+   "recording_id": "recording_0007",
+   "window": [
+    30.0,
+    40.0
+   ],
+   "raw": {
+    "click_band_db": 2.59,
+    "flat_frac": 0.088,
+    "rms_db": -15.26
+   },
+   "zeroshot": {
+    "click_band_db": 1.91,
+    "flat_frac": 0.153,
+    "rms_db": -19.44
+   },
+   "adapted": {
+    "click_band_db": -27.89,
+    "flat_frac": 0.359,
+    "rms_db": -44.0
+   },
+   "zeroshot_ret_vs_raw_db": -0.68,
+   "adapted_ret_vs_raw_db": -30.47
+  },
+  {
+   "recording_id": "recording_0007",
+   "window": [
+    90.0,
+    100.0
+   ],
+   "raw": {
+    "click_band_db": 1.49,
+    "flat_frac": 0.057,
+    "rms_db": -14.71
+   },
+   "zeroshot": {
+    "click_band_db": 0.72,
+    "flat_frac": 0.062,
+    "rms_db": -19.81
+   },
+   "adapted": {
+    "click_band_db": -31.08,
+    "flat_frac": 0.202,
+    "rms_db": -48.93
+   },
+   "zeroshot_ret_vs_raw_db": -0.77,
+   "adapted_ret_vs_raw_db": -32.57
+  },
+  {
+   "recording_id": "recording_0022",
+   "window": [
+    30.0,
+    40.0
+   ],
+   "raw": {
+    "click_band_db": 2.77,
+    "flat_frac": 0.102,
+    "rms_db": -15.61
+   },
+   "zeroshot": {
+    "click_band_db": 1.72,
+    "flat_frac": 0.169,
+    "rms_db": -21.18
+   },
+   "adapted": {
+    "click_band_db": -30.29,
+    "flat_frac": 0.264,
+    "rms_db": -45.46
+   },
+   "zeroshot_ret_vs_raw_db": -1.05,
+   "adapted_ret_vs_raw_db": -33.06
+  },
+  {
+   "recording_id": "recording_0022",
+   "window": [
+    90.0,
+    100.0
+   ],
+   "raw": {
+    "click_band_db": 1.84,
+    "flat_frac": 0.071,
+    "rms_db": -15.41
+   },
+   "zeroshot": {
+    "click_band_db": 0.96,
+    "flat_frac": 0.149,
+    "rms_db": -20.7
+   },
+   "adapted": {
+    "click_band_db": -32.09,
+    "flat_frac": 0.403,
+    "rms_db": -49.57
+   },
+   "zeroshot_ret_vs_raw_db": -0.87,
+   "adapted_ret_vs_raw_db": -33.93
+  },
+  {
+   "recording_id": "recording_0049",
+   "window": [
+    30.0,
+    40.0
+   ],
+   "raw": {
+    "click_band_db": 3.65,
+    "flat_frac": 0.2,
+    "rms_db": -11.72
+   },
+   "zeroshot": {
+    "click_band_db": 3.02,
+    "flat_frac": 0.368,
+    "rms_db": -17.29
+   },
+   "adapted": {
+    "click_band_db": -30.19,
+    "flat_frac": 0.412,
+    "rms_db": -48.55
+   },
+   "zeroshot_ret_vs_raw_db": -0.63,
+   "adapted_ret_vs_raw_db": -33.83
+  },
+  {
+   "recording_id": "recording_0049",
+   "window": [
+    90.0,
+    100.0
+   ],
+   "raw": {
+    "click_band_db": 3.87,
+    "flat_frac": 0.155,
+    "rms_db": -12.93
+   },
+   "zeroshot": {
+    "click_band_db": 3.32,
+    "flat_frac": 0.184,
+    "rms_db": -17.35
+   },
+   "adapted": {
+    "click_band_db": -26.63,
+    "flat_frac": 0.282,
+    "rms_db": -42.26
+   },
+   "zeroshot_ret_vs_raw_db": -0.56,
+   "adapted_ret_vs_raw_db": -30.5
+  },
+  {
+   "recording_id": "recording_0024",
+   "window": [
+    30.0,
+    40.0
+   ],
+   "raw": {
+    "click_band_db": 3.01,
+    "flat_frac": 0.535,
+    "rms_db": -10.79
+   },
+   "zeroshot": {
+    "click_band_db": 2.57,
+    "flat_frac": 0.757,
+    "rms_db": -16.73
+   },
+   "adapted": {
+    "click_band_db": -25.84,
+    "flat_frac": 0.378,
+    "rms_db": -45.52
+   },
+   "zeroshot_ret_vs_raw_db": -0.44,
+   "adapted_ret_vs_raw_db": -28.85
+  },
+  {
+   "recording_id": "recording_0024",
+   "window": [
+    90.0,
+    100.0
+   ],
+   "raw": {
+    "click_band_db": 5.01,
+    "flat_frac": 0.475,
+    "rms_db": -15.34
+   },
+   "zeroshot": {
+    "click_band_db": 4.62,
+    "flat_frac": 0.581,
+    "rms_db": -19.77
+   },
+   "adapted": {
+    "click_band_db": -10.91,
+    "flat_frac": 0.842,
+    "rms_db": -37.13
+   },
+   "zeroshot_ret_vs_raw_db": -0.39,
+   "adapted_ret_vs_raw_db": -15.92
+  }
+ ]
+}

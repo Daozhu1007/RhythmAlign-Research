@@ -1,0 +1,608 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+D:\Code\RhythmAlign-Research\experiments\s1w_existing_corpus_adaptation\work\.venv\lib\site-packages\torch\functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\TensorShape.cpp:4383.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:  31%|███▏      | 62/197 [00:00<00:00, 593.76it/s]Loading weights:  62%|██████▏   | 122/197 [00:00<00:00, 405.09it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 607.95it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-base
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Load the specified checkpoint D:\Code\RhythmAlign-Research\experiments\r3_audio_query\checkpoints\music_audioset_epoch_15_esc_90.14.pt from users.
+Load Checkpoint...
+logit_scale_a 	 Loaded
+logit_scale_t 	 Loaded
+audio_branch.spectrogram_extractor.stft.conv_real.weight 	 Loaded
+audio_branch.spectrogram_extractor.stft.conv_imag.weight 	 Loaded
+audio_branch.logmel_extractor.melW 	 Loaded
+audio_branch.bn0.weight 	 Loaded
+audio_branch.bn0.bias 	 Loaded
+audio_branch.patch_embed.proj.weight 	 Loaded
+audio_branch.patch_embed.proj.bias 	 Loaded
+audio_branch.patch_embed.norm.weight 	 Loaded
+audio_branch.patch_embed.norm.bias 	 Loaded
+audio_branch.layers.0.blocks.0.norm1.weight 	 Loaded
+audio_branch.layers.0.blocks.0.norm1.bias 	 Loaded
+audio_branch.layers.0.blocks.0.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.0.blocks.0.attn.qkv.weight 	 Loaded
+audio_branch.layers.0.blocks.0.attn.qkv.bias 	 Loaded
+audio_branch.layers.0.blocks.0.attn.proj.weight 	 Loaded
+audio_branch.layers.0.blocks.0.attn.proj.bias 	 Loaded
+audio_branch.layers.0.blocks.0.norm2.weight 	 Loaded
+audio_branch.layers.0.blocks.0.norm2.bias 	 Loaded
+audio_branch.layers.0.blocks.0.mlp.fc1.weight 	 Loaded
+audio_branch.layers.0.blocks.0.mlp.fc1.bias 	 Loaded
+audio_branch.layers.0.blocks.0.mlp.fc2.weight 	 Loaded
+audio_branch.layers.0.blocks.0.mlp.fc2.bias 	 Loaded
+audio_branch.layers.0.blocks.1.norm1.weight 	 Loaded
+audio_branch.layers.0.blocks.1.norm1.bias 	 Loaded
+audio_branch.layers.0.blocks.1.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.0.blocks.1.attn.qkv.weight 	 Loaded
+audio_branch.layers.0.blocks.1.attn.qkv.bias 	 Loaded
+audio_branch.layers.0.blocks.1.attn.proj.weight 	 Loaded
+audio_branch.layers.0.blocks.1.attn.proj.bias 	 Loaded
+audio_branch.layers.0.blocks.1.norm2.weight 	 Loaded
+audio_branch.layers.0.blocks.1.norm2.bias 	 Loaded
+audio_branch.layers.0.blocks.1.mlp.fc1.weight 	 Loaded
+audio_branch.layers.0.blocks.1.mlp.fc1.bias 	 Loaded
+audio_branch.layers.0.blocks.1.mlp.fc2.weight 	 Loaded
+audio_branch.layers.0.blocks.1.mlp.fc2.bias 	 Loaded
+audio_branch.layers.0.downsample.reduction.weight 	 Loaded
+audio_branch.layers.0.downsample.norm.weight 	 Loaded
+audio_branch.layers.0.downsample.norm.bias 	 Loaded
+audio_branch.layers.1.blocks.0.norm1.weight 	 Loaded
+audio_branch.layers.1.blocks.0.norm1.bias 	 Loaded
+audio_branch.layers.1.blocks.0.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.1.blocks.0.attn.qkv.weight 	 Loaded
+audio_branch.layers.1.blocks.0.attn.qkv.bias 	 Loaded
+audio_branch.layers.1.blocks.0.attn.proj.weight 	 Loaded
+audio_branch.layers.1.blocks.0.attn.proj.bias 	 Loaded
+audio_branch.layers.1.blocks.0.norm2.weight 	 Loaded
+audio_branch.layers.1.blocks.0.norm2.bias 	 Loaded
+audio_branch.layers.1.blocks.0.mlp.fc1.weight 	 Loaded
+audio_branch.layers.1.blocks.0.mlp.fc1.bias 	 Loaded
+audio_branch.layers.1.blocks.0.mlp.fc2.weight 	 Loaded
+audio_branch.layers.1.blocks.0.mlp.fc2.bias 	 Loaded
+audio_branch.layers.1.blocks.1.norm1.weight 	 Loaded
+audio_branch.layers.1.blocks.1.norm1.bias 	 Loaded
+audio_branch.layers.1.blocks.1.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.1.blocks.1.attn.qkv.weight 	 Loaded
+audio_branch.layers.1.blocks.1.attn.qkv.bias 	 Loaded
+audio_branch.layers.1.blocks.1.attn.proj.weight 	 Loaded
+audio_branch.layers.1.blocks.1.attn.proj.bias 	 Loaded
+audio_branch.layers.1.blocks.1.norm2.weight 	 Loaded
+audio_branch.layers.1.blocks.1.norm2.bias 	 Loaded
+audio_branch.layers.1.blocks.1.mlp.fc1.weight 	 Loaded
+audio_branch.layers.1.blocks.1.mlp.fc1.bias 	 Loaded
+audio_branch.layers.1.blocks.1.mlp.fc2.weight 	 Loaded
+audio_branch.layers.1.blocks.1.mlp.fc2.bias 	 Loaded
+audio_branch.layers.1.downsample.reduction.weight 	 Loaded
+audio_branch.layers.1.downsample.norm.weight 	 Loaded
+audio_branch.layers.1.downsample.norm.bias 	 Loaded
+audio_branch.layers.2.blocks.0.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.0.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.0.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.0.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.0.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.0.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.0.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.0.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.0.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.0.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.0.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.0.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.0.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.1.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.1.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.1.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.1.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.1.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.1.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.1.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.1.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.1.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.1.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.1.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.1.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.1.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.2.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.2.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.2.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.2.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.2.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.2.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.2.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.2.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.2.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.2.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.2.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.2.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.2.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.3.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.3.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.3.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.3.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.3.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.3.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.3.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.3.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.3.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.3.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.3.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.3.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.3.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.4.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.4.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.4.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.4.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.4.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.4.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.4.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.4.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.4.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.4.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.4.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.4.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.4.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.5.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.5.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.5.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.5.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.5.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.5.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.5.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.5.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.5.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.5.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.5.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.5.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.5.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.6.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.6.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.6.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.6.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.6.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.6.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.6.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.6.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.6.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.6.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.6.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.6.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.6.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.7.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.7.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.7.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.7.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.7.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.7.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.7.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.7.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.7.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.7.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.7.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.7.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.7.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.8.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.8.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.8.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.8.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.8.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.8.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.8.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.8.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.8.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.8.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.8.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.8.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.8.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.9.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.9.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.9.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.9.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.9.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.9.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.9.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.9.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.9.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.9.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.9.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.9.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.9.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.10.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.10.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.10.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.10.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.10.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.10.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.10.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.10.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.10.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.10.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.10.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.10.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.10.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.11.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.11.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.11.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.11.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.11.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.11.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.11.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.11.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.11.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.11.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.11.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.11.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.11.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.downsample.reduction.weight 	 Loaded
+audio_branch.layers.2.downsample.norm.weight 	 Loaded
+audio_branch.layers.2.downsample.norm.bias 	 Loaded
+audio_branch.layers.3.blocks.0.norm1.weight 	 Loaded
+audio_branch.layers.3.blocks.0.norm1.bias 	 Loaded
+audio_branch.layers.3.blocks.0.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.3.blocks.0.attn.qkv.weight 	 Loaded
+audio_branch.layers.3.blocks.0.attn.qkv.bias 	 Loaded
+audio_branch.layers.3.blocks.0.attn.proj.weight 	 Loaded
+audio_branch.layers.3.blocks.0.attn.proj.bias 	 Loaded
+audio_branch.layers.3.blocks.0.norm2.weight 	 Loaded
+audio_branch.layers.3.blocks.0.norm2.bias 	 Loaded
+audio_branch.layers.3.blocks.0.mlp.fc1.weight 	 Loaded
+audio_branch.layers.3.blocks.0.mlp.fc1.bias 	 Loaded
+audio_branch.layers.3.blocks.0.mlp.fc2.weight 	 Loaded
+audio_branch.layers.3.blocks.0.mlp.fc2.bias 	 Loaded
+audio_branch.layers.3.blocks.1.norm1.weight 	 Loaded
+audio_branch.layers.3.blocks.1.norm1.bias 	 Loaded
+audio_branch.layers.3.blocks.1.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.3.blocks.1.attn.qkv.weight 	 Loaded
+audio_branch.layers.3.blocks.1.attn.qkv.bias 	 Loaded
+audio_branch.layers.3.blocks.1.attn.proj.weight 	 Loaded
+audio_branch.layers.3.blocks.1.attn.proj.bias 	 Loaded
+audio_branch.layers.3.blocks.1.norm2.weight 	 Loaded
+audio_branch.layers.3.blocks.1.norm2.bias 	 Loaded
+audio_branch.layers.3.blocks.1.mlp.fc1.weight 	 Loaded
+audio_branch.layers.3.blocks.1.mlp.fc1.bias 	 Loaded
+audio_branch.layers.3.blocks.1.mlp.fc2.weight 	 Loaded
+audio_branch.layers.3.blocks.1.mlp.fc2.bias 	 Loaded
+audio_branch.norm.weight 	 Loaded
+audio_branch.norm.bias 	 Loaded
+audio_branch.tscam_conv.weight 	 Loaded
+audio_branch.tscam_conv.bias 	 Loaded
+audio_branch.head.weight 	 Loaded
+audio_branch.head.bias 	 Loaded
+text_branch.embeddings.word_embeddings.weight 	 Loaded
+text_branch.embeddings.token_type_embeddings.weight 	 Loaded
+text_branch.embeddings.LayerNorm.weight 	 Loaded
+text_branch.embeddings.LayerNorm.bias 	 Loaded
+text_branch.embeddings.position_embeddings.weight 	 Loaded
+text_branch.encoder.layer.0.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.0.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.0.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.0.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.0.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.0.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.0.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.0.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.0.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.0.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.0.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.0.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.0.output.dense.weight 	 Loaded
+text_branch.encoder.layer.0.output.dense.bias 	 Loaded
+text_branch.encoder.layer.0.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.0.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.1.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.1.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.1.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.1.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.1.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.1.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.1.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.1.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.1.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.1.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.1.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.1.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.1.output.dense.weight 	 Loaded
+text_branch.encoder.layer.1.output.dense.bias 	 Loaded
+text_branch.encoder.layer.1.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.1.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.2.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.2.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.2.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.2.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.2.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.2.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.2.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.2.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.2.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.2.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.2.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.2.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.2.output.dense.weight 	 Loaded
+text_branch.encoder.layer.2.output.dense.bias 	 Loaded
+text_branch.encoder.layer.2.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.2.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.3.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.3.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.3.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.3.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.3.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.3.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.3.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.3.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.3.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.3.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.3.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.3.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.3.output.dense.weight 	 Loaded
+text_branch.encoder.layer.3.output.dense.bias 	 Loaded
+text_branch.encoder.layer.3.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.3.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.4.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.4.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.4.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.4.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.4.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.4.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.4.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.4.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.4.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.4.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.4.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.4.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.4.output.dense.weight 	 Loaded
+text_branch.encoder.layer.4.output.dense.bias 	 Loaded
+text_branch.encoder.layer.4.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.4.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.5.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.5.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.5.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.5.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.5.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.5.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.5.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.5.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.5.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.5.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.5.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.5.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.5.output.dense.weight 	 Loaded
+text_branch.encoder.layer.5.output.dense.bias 	 Loaded
+text_branch.encoder.layer.5.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.5.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.6.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.6.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.6.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.6.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.6.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.6.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.6.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.6.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.6.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.6.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.6.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.6.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.6.output.dense.weight 	 Loaded
+text_branch.encoder.layer.6.output.dense.bias 	 Loaded
+text_branch.encoder.layer.6.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.6.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.7.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.7.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.7.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.7.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.7.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.7.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.7.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.7.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.7.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.7.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.7.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.7.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.7.output.dense.weight 	 Loaded
+text_branch.encoder.layer.7.output.dense.bias 	 Loaded
+text_branch.encoder.layer.7.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.7.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.8.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.8.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.8.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.8.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.8.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.8.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.8.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.8.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.8.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.8.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.8.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.8.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.8.output.dense.weight 	 Loaded
+text_branch.encoder.layer.8.output.dense.bias 	 Loaded
+text_branch.encoder.layer.8.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.8.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.9.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.9.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.9.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.9.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.9.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.9.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.9.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.9.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.9.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.9.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.9.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.9.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.9.output.dense.weight 	 Loaded
+text_branch.encoder.layer.9.output.dense.bias 	 Loaded
+text_branch.encoder.layer.9.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.9.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.10.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.10.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.10.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.10.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.10.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.10.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.10.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.10.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.10.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.10.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.10.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.10.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.10.output.dense.weight 	 Loaded
+text_branch.encoder.layer.10.output.dense.bias 	 Loaded
+text_branch.encoder.layer.10.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.10.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.11.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.11.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.11.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.11.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.11.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.11.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.11.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.11.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.11.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.11.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.11.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.11.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.11.output.dense.weight 	 Loaded
+text_branch.encoder.layer.11.output.dense.bias 	 Loaded
+text_branch.encoder.layer.11.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.11.output.LayerNorm.bias 	 Loaded
+text_branch.pooler.dense.weight 	 Loaded
+text_branch.pooler.dense.bias 	 Loaded
+text_transform.sequential.0.weight 	 Loaded
+text_transform.sequential.0.bias 	 Loaded
+text_transform.sequential.3.weight 	 Loaded
+text_transform.sequential.3.bias 	 Loaded
+text_projection.0.weight 	 Loaded
+text_projection.0.bias 	 Loaded
+text_projection.2.weight 	 Loaded
+text_projection.2.bias 	 Loaded
+audio_transform.sequential.0.weight 	 Loaded
+audio_transform.sequential.0.bias 	 Loaded
+audio_transform.sequential.3.weight 	 Loaded
+audio_transform.sequential.3.bias 	 Loaded
+audio_projection.0.weight 	 Loaded
+audio_projection.0.bias 	 Loaded
+audio_projection.2.weight 	 Loaded
+audio_projection.2.bias 	 Loaded
+D:\Code\RhythmAlign-Research\experiments\s1w_existing_corpus_adaptation\work\.venv\lib\site-packages\torch\nn\modules\module.py:1370: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  return t.to(
+train examples 2400, dev 160, trainable params 43463616
+zero-shot DEV: {
+ "n_eval": 64,
+ "recon_l1_mix": 0.061107722415151645,
+ "target_distortion_db": 3.229002402770628,
+ "leakage_ratio_db": -0.7700973732144764,
+ "hf_retention_db": -2.375192875869092,
+ "recon_l1_t_only": 0.022792337462306023,
+ "n_only_output_rms_db": -18.707992389734933,
+ "n_only_input_rms_db": -14.388766271388597,
+ "weak_recon_l1": 0.03997305507904717,
+ "friction_recon_l1": 0.06771565526723862,
+ "weak_hf_retention_db": 2.0575131924620256,
+ "counts": {
+  "mix": 49,
+  "t_only": 7,
+  "n_only": 8,
+  "weak": 14,
+  "friction": 5
+ }
+} (5s)
+upd   25 loss/sample 0.0509 l_wave/sample 0.0031 l_mr/sample 0.0944 l_hf/sample 0.0005 l_abs1/sample 0.0004 l_abs2/sample 0.0000 gn 1.66 mem 3.42GB (21s)
+upd   50 loss/sample 0.0443 l_wave/sample 0.0025 l_mr/sample 0.0827 l_hf/sample 0.0005 l_abs1/sample 0.0003 l_abs2/sample 0.0000 gn 0.57 mem 3.42GB (43s)
+upd   75 loss/sample 0.0427 l_wave/sample 0.0023 l_mr/sample 0.0800 l_hf/sample 0.0004 l_abs1/sample 0.0003 l_abs2/sample 0.0000 gn 0.27 mem 3.42GB (65s)
+upd  100 loss/sample 0.0420 l_wave/sample 0.0022 l_mr/sample 0.0789 l_hf/sample 0.0004 l_abs1/sample 0.0002 l_abs2/sample 0.0000 gn 1.93 mem 3.42GB (87s)
+upd  125 loss/sample 0.0402 l_wave/sample 0.0021 l_mr/sample 0.0755 l_hf/sample 0.0004 l_abs1/sample 0.0002 l_abs2/sample 0.0000 gn 0.71 mem 3.42GB (109s)
+upd  150 loss/sample 0.0393 l_wave/sample 0.0020 l_mr/sample 0.0738 l_hf/sample 0.0004 l_abs1/sample 0.0002 l_abs2/sample 0.0000 gn 0.24 mem 3.42GB (131s)
+upd  175 loss/sample 0.0377 l_wave/sample 0.0020 l_mr/sample 0.0707 l_hf/sample 0.0004 l_abs1/sample 0.0002 l_abs2/sample 0.0000 gn 0.54 mem 3.42GB (153s)
+upd  200 loss/sample 0.0372 l_wave/sample 0.0020 l_mr/sample 0.0699 l_hf/sample 0.0004 l_abs1/sample 0.0002 l_abs2/sample 0.0000 gn 0.45 mem 3.42GB (176s)
+upd  225 loss/sample 0.0366 l_wave/sample 0.0019 l_mr/sample 0.0689 l_hf/sample 0.0004 l_abs1/sample 0.0002 l_abs2/sample 0.0000 gn 0.45 mem 3.42GB (202s)
+upd  250 loss/sample 0.0361 l_wave/sample 0.0019 l_mr/sample 0.0678 l_hf/sample 0.0004 l_abs1/sample 0.0002 l_abs2/sample 0.0000 gn 0.72 mem 3.42GB (228s)
+DEV @250: {"n_eval": 64, "recon_l1_mix": 0.018610608516907205, "target_distortion_db": -4.863926499921332, "leakage_ratio_db": -10.076148860311019, "hf_retention_db": 5.12315414606937, "recon_l1_t_only": 0.0001340968233957288, "n_only_output_rms_db": -45.23256098454121, "n_only_input_rms_db": -14.388766271388597, "weak_recon_l1": 0.012195786683410656, "friction_recon_l1": 0.01726568330777809, "weak_hf_retention_db": 12.788054672968183, "counts": {"mix": 49, "t_only": 7, "n_only": 8, "weak": 14, "friction": 5}}
+upd  275 loss/sample 0.0029 l_wave/sample 0.0002 l_mr/sample 0.0054 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.85 mem 3.42GB (263s)
+upd  300 loss/sample 0.0055 l_wave/sample 0.0003 l_mr/sample 0.0103 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.57 mem 3.42GB (288s)
+upd  325 loss/sample 0.0075 l_wave/sample 0.0004 l_mr/sample 0.0140 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.75 mem 3.42GB (310s)
+upd  350 loss/sample 0.0086 l_wave/sample 0.0005 l_mr/sample 0.0161 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.58 mem 3.42GB (331s)
+upd  375 loss/sample 0.0101 l_wave/sample 0.0006 l_mr/sample 0.0189 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.76 mem 3.42GB (353s)
+upd  400 loss/sample 0.0114 l_wave/sample 0.0006 l_mr/sample 0.0214 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.35 mem 3.42GB (374s)
+upd  425 loss/sample 0.0124 l_wave/sample 0.0007 l_mr/sample 0.0232 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 1.58 mem 3.42GB (396s)
+upd  450 loss/sample 0.0135 l_wave/sample 0.0008 l_mr/sample 0.0254 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.17 mem 3.42GB (418s)
+upd  475 loss/sample 0.0144 l_wave/sample 0.0008 l_mr/sample 0.0270 l_hf/sample 0.0002 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.33 mem 3.42GB (440s)
+upd  500 loss/sample 0.0151 l_wave/sample 0.0009 l_mr/sample 0.0283 l_hf/sample 0.0002 l_abs1/sample 0.0001 l_abs2/sample 0.0000 gn 0.52 mem 3.42GB (462s)
+DEV @500: {"n_eval": 64, "recon_l1_mix": 0.018340622507301823, "target_distortion_db": -4.920698322536929, "leakage_ratio_db": -10.151005909107642, "hf_retention_db": 5.010341619868324, "recon_l1_t_only": 0.0001985497250903531, "n_only_output_rms_db": -47.21252031552909, "n_only_input_rms_db": -14.388766271388597, "weak_recon_l1": 0.01187139153626049, "friction_recon_l1": 0.016872864216566086, "weak_hf_retention_db": 12.60566013940003, "counts": {"mix": 49, "t_only": 7, "n_only": 8, "weak": 14, "friction": 5}}
+upd  525 loss/sample 0.0015 l_wave/sample 0.0001 l_mr/sample 0.0028 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.53 mem 3.42GB (494s)
+upd  550 loss/sample 0.0030 l_wave/sample 0.0002 l_mr/sample 0.0056 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 1.07 mem 3.42GB (517s)
+upd  575 loss/sample 0.0041 l_wave/sample 0.0002 l_mr/sample 0.0076 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.41 mem 3.42GB (539s)
+upd  600 loss/sample 0.0052 l_wave/sample 0.0003 l_mr/sample 0.0098 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.56 mem 3.42GB (561s)
+upd  625 loss/sample 0.0061 l_wave/sample 0.0003 l_mr/sample 0.0114 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.44 mem 3.42GB (583s)
+upd  650 loss/sample 0.0070 l_wave/sample 0.0004 l_mr/sample 0.0131 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.39 mem 3.42GB (605s)
+upd  675 loss/sample 0.0078 l_wave/sample 0.0004 l_mr/sample 0.0146 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.50 mem 3.42GB (626s)
+upd  700 loss/sample 0.0084 l_wave/sample 0.0005 l_mr/sample 0.0158 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.71 mem 3.42GB (648s)
+upd  725 loss/sample 0.0090 l_wave/sample 0.0005 l_mr/sample 0.0169 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.52 mem 3.42GB (669s)
+upd  750 loss/sample 0.0098 l_wave/sample 0.0006 l_mr/sample 0.0184 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 1.12 mem 3.42GB (691s)
+DEV @750: {"n_eval": 64, "recon_l1_mix": 0.019865238440356085, "target_distortion_db": -4.671738479542085, "leakage_ratio_db": -9.713394488613194, "hf_retention_db": 4.791036682208338, "recon_l1_t_only": 0.00013450735215363757, "n_only_output_rms_db": -38.2637806807315, "n_only_input_rms_db": -14.388766271388597, "weak_recon_l1": 0.014016743755616647, "friction_recon_l1": 0.017161722155287863, "weak_hf_retention_db": 12.65929006389935, "counts": {"mix": 49, "t_only": 7, "n_only": 8, "weak": 14, "friction": 5}}
+upd  775 loss/sample 0.0009 l_wave/sample 0.0001 l_mr/sample 0.0018 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.61 mem 3.42GB (721s)
+upd  800 loss/sample 0.0018 l_wave/sample 0.0001 l_mr/sample 0.0034 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.52 mem 3.42GB (743s)
+upd  825 loss/sample 0.0027 l_wave/sample 0.0002 l_mr/sample 0.0050 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.65 mem 3.42GB (766s)
+upd  850 loss/sample 0.0034 l_wave/sample 0.0002 l_mr/sample 0.0063 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.85 mem 3.42GB (789s)
+upd  875 loss/sample 0.0040 l_wave/sample 0.0002 l_mr/sample 0.0075 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.69 mem 3.42GB (813s)
+upd  900 loss/sample 0.0047 l_wave/sample 0.0003 l_mr/sample 0.0087 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.36 mem 3.42GB (835s)
+upd  925 loss/sample 0.0052 l_wave/sample 0.0003 l_mr/sample 0.0096 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.74 mem 3.42GB (857s)
+upd  950 loss/sample 0.0058 l_wave/sample 0.0004 l_mr/sample 0.0108 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.81 mem 3.42GB (879s)
+upd  975 loss/sample 0.0063 l_wave/sample 0.0004 l_mr/sample 0.0117 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.95 mem 3.42GB (901s)
+upd 1000 loss/sample 0.0068 l_wave/sample 0.0004 l_mr/sample 0.0127 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.36 mem 3.42GB (923s)
+DEV @1000: {"n_eval": 64, "recon_l1_mix": 0.0181727974095895, "target_distortion_db": -5.060728571895072, "leakage_ratio_db": -10.282411174839087, "hf_retention_db": 5.424876845021504, "recon_l1_t_only": 0.0001380945161924631, "n_only_output_rms_db": -45.41968999568978, "n_only_input_rms_db": -14.388766271388597, "weak_recon_l1": 0.012081598361224419, "friction_recon_l1": 0.01682099954923615, "weak_hf_retention_db": 13.269816339572733, "counts": {"mix": 49, "t_only": 7, "n_only": 8, "weak": 14, "friction": 5}}
+upd 1025 loss/sample 0.0007 l_wave/sample 0.0000 l_mr/sample 0.0013 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.37 mem 3.42GB (957s)
+upd 1050 loss/sample 0.0013 l_wave/sample 0.0001 l_mr/sample 0.0024 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.46 mem 3.42GB (984s)
+upd 1075 loss/sample 0.0019 l_wave/sample 0.0001 l_mr/sample 0.0036 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 1.00 mem 3.42GB (1010s)
+upd 1100 loss/sample 0.0025 l_wave/sample 0.0001 l_mr/sample 0.0046 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.46 mem 3.42GB (1035s)
+upd 1125 loss/sample 0.0030 l_wave/sample 0.0002 l_mr/sample 0.0055 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.25 mem 3.42GB (1061s)
+upd 1150 loss/sample 0.0035 l_wave/sample 0.0002 l_mr/sample 0.0065 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.77 mem 3.42GB (1086s)
+upd 1175 loss/sample 0.0040 l_wave/sample 0.0002 l_mr/sample 0.0075 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.35 mem 3.42GB (1113s)
+upd 1200 loss/sample 0.0044 l_wave/sample 0.0003 l_mr/sample 0.0082 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.56 mem 3.42GB (1138s)
+upd 1225 loss/sample 0.0048 l_wave/sample 0.0003 l_mr/sample 0.0090 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 1.57 mem 3.42GB (1161s)
+upd 1250 loss/sample 0.0053 l_wave/sample 0.0003 l_mr/sample 0.0098 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.54 mem 3.42GB (1184s)
+DEV @1250: {"n_eval": 64, "recon_l1_mix": 0.01857659718667974, "target_distortion_db": -4.820103134597121, "leakage_ratio_db": -10.044255516218598, "hf_retention_db": 4.957491351962276, "recon_l1_t_only": 0.0013265522710363647, "n_only_output_rms_db": -48.65791112171393, "n_only_input_rms_db": -14.388766271388597, "weak_recon_l1": 0.012278017751668813, "friction_recon_l1": 0.018839874304831028, "weak_hf_retention_db": 9.245567215301659, "counts": {"mix": 49, "t_only": 7, "n_only": 8, "weak": 14, "friction": 5}}
+upd 1275 loss/sample 0.0005 l_wave/sample 0.0000 l_mr/sample 0.0008 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.98 mem 3.42GB (1215s)
+upd 1300 loss/sample 0.0009 l_wave/sample 0.0001 l_mr/sample 0.0017 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.49 mem 3.42GB (1238s)
+upd 1325 loss/sample 0.0013 l_wave/sample 0.0001 l_mr/sample 0.0024 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.34 mem 3.42GB (1262s)
+upd 1350 loss/sample 0.0018 l_wave/sample 0.0001 l_mr/sample 0.0033 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.66 mem 3.42GB (1285s)
+upd 1375 loss/sample 0.0023 l_wave/sample 0.0002 l_mr/sample 0.0042 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.30 mem 3.42GB (1309s)
+upd 1400 loss/sample 0.0027 l_wave/sample 0.0002 l_mr/sample 0.0050 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.57 mem 3.42GB (1333s)
+upd 1425 loss/sample 0.0031 l_wave/sample 0.0002 l_mr/sample 0.0057 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.83 mem 3.42GB (1357s)
+upd 1450 loss/sample 0.0035 l_wave/sample 0.0002 l_mr/sample 0.0065 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.96 mem 3.42GB (1381s)
+upd 1475 loss/sample 0.0039 l_wave/sample 0.0002 l_mr/sample 0.0072 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.40 mem 3.42GB (1404s)
+upd 1500 loss/sample 0.0042 l_wave/sample 0.0003 l_mr/sample 0.0078 l_hf/sample 0.0001 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.45 mem 3.42GB (1428s)
+DEV @1500: {"n_eval": 64, "recon_l1_mix": 0.018178860215014036, "target_distortion_db": -5.057465219954107, "leakage_ratio_db": -10.258690445557647, "hf_retention_db": 5.318878827294985, "recon_l1_t_only": 0.00013303980137737068, "n_only_output_rms_db": -46.45560941613885, "n_only_input_rms_db": -14.388766271388597, "weak_recon_l1": 0.012119444336349261, "friction_recon_l1": 0.016634280199650676, "weak_hf_retention_db": 12.940718814125534, "counts": {"mix": 49, "t_only": 7, "n_only": 8, "weak": 14, "friction": 5}}
+upd 1525 loss/sample 0.0004 l_wave/sample 0.0000 l_mr/sample 0.0007 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.39 mem 3.42GB (1458s)
+upd 1550 loss/sample 0.0008 l_wave/sample 0.0001 l_mr/sample 0.0015 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.77 mem 3.42GB (1480s)
+upd 1575 loss/sample 0.0012 l_wave/sample 0.0001 l_mr/sample 0.0022 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.57 mem 3.42GB (1502s)
+upd 1600 loss/sample 0.0015 l_wave/sample 0.0001 l_mr/sample 0.0028 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.38 mem 3.42GB (1524s)
+upd 1625 loss/sample 0.0019 l_wave/sample 0.0001 l_mr/sample 0.0035 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.36 mem 3.42GB (1546s)
+upd 1650 loss/sample 0.0022 l_wave/sample 0.0001 l_mr/sample 0.0041 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 1.17 mem 3.42GB (1568s)
+upd 1675 loss/sample 0.0025 l_wave/sample 0.0002 l_mr/sample 0.0047 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.50 mem 3.42GB (1590s)
+upd 1700 loss/sample 0.0028 l_wave/sample 0.0002 l_mr/sample 0.0052 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.89 mem 3.42GB (1612s)
+upd 1725 loss/sample 0.0031 l_wave/sample 0.0002 l_mr/sample 0.0057 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.26 mem 3.42GB (1635s)
+upd 1750 loss/sample 0.0034 l_wave/sample 0.0002 l_mr/sample 0.0063 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.49 mem 3.42GB (1657s)
+DEV @1750: {"n_eval": 64, "recon_l1_mix": 0.018379972188030273, "target_distortion_db": -5.103977805545734, "leakage_ratio_db": -10.271195249076962, "hf_retention_db": 5.384522939342184, "recon_l1_t_only": 0.00013392909282369407, "n_only_output_rms_db": -45.33451735026246, "n_only_input_rms_db": -14.388766271388597, "weak_recon_l1": 0.01229294164633237, "friction_recon_l1": 0.016416995972394943, "weak_hf_retention_db": 13.067865924315798, "counts": {"mix": 49, "t_only": 7, "n_only": 8, "weak": 14, "friction": 5}}
+upd 1775 loss/sample 0.0003 l_wave/sample 0.0000 l_mr/sample 0.0006 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 1.24 mem 3.42GB (1686s)
+upd 1800 loss/sample 0.0008 l_wave/sample 0.0000 l_mr/sample 0.0014 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.72 mem 3.42GB (1709s)
+upd 1825 loss/sample 0.0011 l_wave/sample 0.0001 l_mr/sample 0.0020 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.71 mem 3.42GB (1732s)
+upd 1850 loss/sample 0.0013 l_wave/sample 0.0001 l_mr/sample 0.0025 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.36 mem 3.42GB (1754s)
+upd 1875 loss/sample 0.0016 l_wave/sample 0.0001 l_mr/sample 0.0030 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.53 mem 3.42GB (1776s)
+upd 1900 loss/sample 0.0019 l_wave/sample 0.0001 l_mr/sample 0.0036 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.62 mem 3.42GB (1798s)
+upd 1925 loss/sample 0.0022 l_wave/sample 0.0001 l_mr/sample 0.0041 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.98 mem 3.42GB (1820s)
+upd 1950 loss/sample 0.0025 l_wave/sample 0.0002 l_mr/sample 0.0046 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.13 mem 3.42GB (1842s)
+upd 1975 loss/sample 0.0028 l_wave/sample 0.0002 l_mr/sample 0.0051 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.73 mem 3.42GB (1866s)
+upd 2000 loss/sample 0.0030 l_wave/sample 0.0002 l_mr/sample 0.0055 l_hf/sample 0.0000 l_abs1/sample 0.0000 l_abs2/sample 0.0000 gn 0.38 mem 3.42GB (1888s)
+DEV @2000: {"n_eval": 64, "recon_l1_mix": 0.018340120752513105, "target_distortion_db": -4.981053148947509, "leakage_ratio_db": -10.166339831578602, "hf_retention_db": 5.141114762818385, "recon_l1_t_only": 0.0001328969467847076, "n_only_output_rms_db": -47.3694928175738, "n_only_input_rms_db": -14.388766271388597, "weak_recon_l1": 0.012386895771799442, "friction_recon_l1": 0.016506224498152734, "weak_hf_retention_db": 12.562756679652077, "counts": {"mix": 49, "t_only": 7, "n_only": 8, "weak": 14, "friction": 5}}
+TRAINING DONE. best: {'composite': 5.5332069724778385, 'update': 1000}
+PY_EXIT=0

@@ -1,0 +1,45 @@
+{
+ "zero_shot_parity": {
+  "max_abs_diff": 0.0,
+  "rms_diff": 0.0,
+  "rms_a": 0.063090018928051,
+  "corr": 1.0
+ },
+ "forward_equivalence": {
+  "max_abs_diff": 3.1907111406326294e-06,
+  "rms_diff": 1.0743504930132985e-07,
+  "rms_a": 0.06305987387895584,
+  "corr": 0.9999999999985464
+ },
+ "checkpoint_coverage": {
+  "ckpt_keys": 300,
+  "model_keys": 1025,
+  "ckpt_in_model": 300,
+  "ckpt_not_in_model": [],
+  "n_ckpt_not_in_model": 0,
+  "model_not_in_ckpt": [
+   "audio_branch.bn0.bias",
+   "audio_branch.bn0.num_batches_tracked",
+   "audio_branch.bn0.running_mean",
+   "audio_branch.bn0.running_var",
+   "audio_branch.bn0.weight",
+   "audio_branch.head.bias",
+   "audio_branch.head.weight",
+   "audio_branch.layers.0.blocks.0.attn.proj.weight"
+  ],
+  "n_model_not_in_ckpt": 725,
+  "lora_keys_in_ckpt": 72,
+  "decoder_keys_in_ckpt": 156,
+  "mismatched_shapes": []
+ },
+ "parity_credible": true,
+ "env": {
+  "torch": "2.11.0+cu126",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+ },
+ "checkpoint": {
+  "best_model.ckpt": "experiments/r3_audio_query/checkpoints/best_model.ckpt (research repo, local)",
+  "clap_ckpt": "experiments/r3_audio_query/checkpoints/music_audioset_epoch_15_esc_90.14.pt (research repo, local)"
+ }
+}

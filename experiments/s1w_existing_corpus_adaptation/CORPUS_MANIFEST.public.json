@@ -1,0 +1,894 @@
+{
+ "stage": "S1W existing-corpus adaptation",
+ "corpus": "existing owner-recorded maimai handcam corpus (local; media never published)",
+ "privacy_note": "publication-safe metadata only; stable IDs; no paths, no device/GPS metadata, no song titles, no media files",
+ "totals": {
+  "media_assets_discovered": 162,
+  "original_raw_handcam_files": 59,
+  "rhythmalign_derived_files": 37,
+  "image_or_reference_assets": 66,
+  "unknown": 0,
+  "unique_recording_identities": 58,
+  "usable_raw_duration_s": 9802.7
+ },
+ "split_counts": {
+  "SEALED_TEST_PRIMARY": 1,
+  "TEST_GENERALIZATION": 14,
+  "DEV": 7,
+  "TRAIN": 36
+ },
+ "recordings": [
+  {
+   "recording_id": "recording_0001",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 158.21,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0002",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 157.67,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0003",
+   "split": "TEST_GENERALIZATION",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 149.53,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0004",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 172.5,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0005",
+   "split": "TEST_GENERALIZATION",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 171.22,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0006",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 180.12,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0007",
+   "split": "TEST_GENERALIZATION",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 181.53,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0008",
+   "split": "DEV",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 190.72,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0009",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 150.83,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0010",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 149.74,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0011",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 148.48,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0012",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 175.81,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0013",
+   "split": "DEV",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 177.66,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0014",
+   "split": "DEV",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 181.29,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0015",
+   "split": "DEV",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 168.34,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0016",
+   "split": "TEST_GENERALIZATION",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 188.8,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0017",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 172.63,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0018",
+   "split": "TEST_GENERALIZATION",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 179.9,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0019",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 188.61,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0020",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 189.42,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0021",
+   "split": "SEALED_TEST_PRIMARY",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 163.07,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0022",
+   "split": "TEST_GENERALIZATION",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 166.19,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0023",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 164.27,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0024",
+   "split": "TEST_GENERALIZATION",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 151.02,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0025",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 155.56,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0026",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 147.82,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0027",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 151.3,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0028",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 165.42,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0029",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 188.71,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0030",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 175.74,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0031",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 173.55,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0032",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 128.73,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0033",
+   "split": "TEST_GENERALIZATION",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 172.33,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0034",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 163.29,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0035",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 187.95,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0036",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 170.5,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0037",
+   "split": "TEST_GENERALIZATION",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 160.21,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0038",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 168.62,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0039",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 170.47,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0040",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 164.12,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": [
+    "DATASET\\海底谭DATASET\\海底谭0.mp4"
+   ]
+  },
+  {
+   "recording_id": "recording_0041",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 152.06,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0042",
+   "split": "DEV",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 145.79,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0043",
+   "split": "TEST_GENERALIZATION",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 151.89,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0044",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 158.74,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0045",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 145.92,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0046",
+   "split": "DEV",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 180.69,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0047",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 173.29,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0048",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 170.62,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0049",
+   "split": "TEST_GENERALIZATION",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 146.73,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0050",
+   "split": "DEV",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 167.68,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0051",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 191.17,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0052",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 195.22,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0053",
+   "split": "TEST_GENERALIZATION",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 203.52,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0054",
+   "split": "TEST_GENERALIZATION",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 206.55,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0055",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 163.88,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "hevc",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0056",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 174.51,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0057",
+   "split": "TRAIN",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 172.89,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 0,
+   "byte_identical_duplicate_copies": []
+  },
+  {
+   "recording_id": "recording_0058",
+   "split": "TEST_GENERALIZATION",
+   "provenance_class": "ORIGINAL_RAW_HANDCAM",
+   "duration_s": 179.69,
+   "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+   },
+   "video_codec": "h264",
+   "raw_file_copies": 1,
+   "derived_siblings": 1,
+   "byte_identical_duplicate_copies": []
+  }
+ ]
+}

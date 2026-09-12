@@ -1,0 +1,29 @@
+{
+ "stage": "S1W nuisance bank (publication-safe summary)",
+ "privacy_note": "counts/durations only; audio stays local; no paths, no song titles",
+ "acoustic_classes": {
+  "ambience": {
+   "clips": 81,
+   "seconds": 648.0
+  },
+  "pre_song_attract": {
+   "clips": 41,
+   "seconds": 328.0
+  },
+  "unrelated_impacts": {
+   "clips": 28,
+   "seconds": 224.0
+  }
+ },
+ "pristine_music_clips": 42,
+ "pristine_music_seconds": 420.0,
+ "source_recordings": {
+  "train": 36,
+  "dev": 7
+ },
+ "known_absences": [
+  "speech: no VAD-detectable clear speech exists in TRAIN/DEV recordings (best 8-s window speech fraction ~0.11); faint announcer fragments ride inside ambience/attract cuts",
+  "neighboring-machine and NPC classes: not separable audio-only at useful purity; covered by composite mixtures and ambience"
+ ],
+ "pristine_provenance": "local song reference audio (independent allowed source; copyrighted, LOCAL ONLY, never committed)"
+}

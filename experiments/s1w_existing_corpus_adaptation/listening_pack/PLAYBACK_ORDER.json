@@ -1,0 +1,96 @@
+{
+ "seed": 20260912,
+ "note": "method identities are SEALED in a private local key; this public file lists playback order, groups and durations only",
+ "items": [
+  {
+   "item_id": "item_03",
+   "challenge_group": "c1_speech_npc_a",
+   "duration_s": 8.0
+  },
+  {
+   "item_id": "item_05",
+   "challenge_group": "c2_speech_npc_b",
+   "duration_s": 8.0
+  },
+  {
+   "item_id": "item_16",
+   "challenge_group": "c8_slide_friction",
+   "duration_s": 6.0
+  },
+  {
+   "item_id": "item_04",
+   "challenge_group": "c2_speech_npc_b",
+   "duration_s": 8.0
+  },
+  {
+   "item_id": "item_17",
+   "challenge_group": "c8_slide_friction",
+   "duration_s": 6.0
+  },
+  {
+   "item_id": "item_06",
+   "challenge_group": "c2_speech_npc_b",
+   "duration_s": 8.0
+  },
+  {
+   "item_id": "item_09",
+   "challenge_group": "c3_taiko_prompt",
+   "duration_s": 5.0
+  },
+  {
+   "item_id": "item_15",
+   "challenge_group": "c7_weak_taps",
+   "duration_s": 6.0
+  },
+  {
+   "item_id": "item_08",
+   "challenge_group": "c3_taiko_prompt",
+   "duration_s": 5.0
+  },
+  {
+   "item_id": "item_11",
+   "challenge_group": "c6_dense_golden",
+   "duration_s": 15.0
+  },
+  {
+   "item_id": "item_13",
+   "challenge_group": "c7_weak_taps",
+   "duration_s": 6.0
+  },
+  {
+   "item_id": "item_12",
+   "challenge_group": "c6_dense_golden",
+   "duration_s": 15.0
+  },
+  {
+   "item_id": "item_10",
+   "challenge_group": "c6_dense_golden",
+   "duration_s": 15.0
+  },
+  {
+   "item_id": "item_01",
+   "challenge_group": "c1_speech_npc_a",
+   "duration_s": 8.0
+  },
+  {
+   "item_id": "item_18",
+   "challenge_group": "c8_slide_friction",
+   "duration_s": 6.0
+  },
+  {
+   "item_id": "item_07",
+   "challenge_group": "c3_taiko_prompt",
+   "duration_s": 5.0
+  },
+  {
+   "item_id": "item_14",
+   "challenge_group": "c7_weak_taps",
+   "duration_s": 6.0
+  },
+  {
+   "item_id": "item_02",
+   "challenge_group": "c1_speech_npc_a",
+   "duration_s": 8.0
+  }
+ ]
+}

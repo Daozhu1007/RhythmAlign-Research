@@ -1,0 +1,68 @@
+# S1W step 13 - blind listening pack: 18 items (6 groups x 3 methods), randomized
+# order within each group; peak-normalized to -3 dBFS FOR THE PACK ONLY (documented;
+# per-item gains in the SEALED private key). Public PLAYBACK_ORDER.json carries item
+# IDs + durations only (no method identity, no paths). Key stays LOCAL until the
+# owner completes listening.
+import os
+import json
+import random
+import numpy as np
+import soundfile as sf
+import librosa
+
+S1W = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+OUT = os.path.join(S1W, "outputs", "audio")
+PACK = os.path.join(S1W, "listening_pack")
+PRIVATE = os.path.join(S1W, "work", "private")
+
+GROUPS = ["c1_speech_npc_a", "c2_speech_npc_b", "c3_taiko_prompt",
+          "c6_dense_golden", "c7_weak_taps", "c8_slide_friction"]
+METHODS = ["raw", "zeroshot", "adapted"]
+SEED = 20260912
+
+
+def peak_norm_dbfs(x, target_dbfs=-3.0):
+    peak = float(np.max(np.abs(x)))
+    if peak < 1e-9:
+        return x, 0.0
+    g = (10 ** (target_dbfs / 20)) / peak
+    return x * g, float(20 * np.log10(g))
+
+
+def main():
+    os.makedirs(PACK, exist_ok=True)
+    rng = random.Random(SEED)
+    items, key = [], {}
+    n = 0
+    for gid in GROUPS:
+        order = METHODS[:]
+        rng.shuffle(order)
+        for method in order:
+            n += 1
+            item_id = f"item_{n:02d}"
+            if method == "raw":
+                x, sr = sf.read(os.path.join(OUT, f"raw_{gid}_48k.wav"), dtype="float32")
+                x = librosa.resample(x.mean(axis=1), orig_sr=48000, target_sr=32000)
+                sr = 32000
+            else:
+                x, sr = sf.read(os.path.join(OUT, f"clapsep_{method}_{gid}_32k.wav"), dtype="float32")
+            xn, gain = peak_norm_dbfs(x.astype(np.float32))
+            f = os.path.join(PACK, f"{item_id}.wav")
+            sf.write(f, xn, sr, subtype="PCM_16")
+            key[item_id] = {"group": gid, "method": method, "pack_gain_db": round(gain, 2)}
+            items.append({"item_id": item_id, "challenge_group": gid,
+                          "duration_s": round(len(xn) / sr, 2)})
+    random.Random(SEED).shuffle(items)  # interleave groups in the playback sheet
+    json.dump(key, open(os.path.join(PRIVATE, "listening_key.private.json"), "w",
+                        encoding="utf-8"), indent=1)
+    json.dump({"seed": SEED,
+               "note": "method identities are SEALED in a private local key; "
+                       "this public file lists playback order, groups and durations only",
+               "items": items},
+              open(os.path.join(PACK, "PLAYBACK_ORDER.json"), "w", encoding="utf-8"),
+              indent=1)
+    print("pack built:", len(items), "items; key sealed")
+
+
+if __name__ == "__main__":
+    main()

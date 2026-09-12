@@ -1,0 +1,44 @@
+{
+ "stage": "S1W existing-corpus weakly supervised CLAPSep domain adaptation",
+ "date": "2026-09-12",
+ "status": "AWAITING_HUMAN_LISTENING",
+ "pre_listening_verdict_issued": false,
+ "corpus": {
+  "media_assets_discovered": 162,
+  "original_raw_handcam_files": 59,
+  "rhythmalign_derived_files": 37,
+  "image_or_reference_assets": 66,
+  "unknown": 0,
+  "unique_recording_identities": 58,
+  "usable_raw_duration_s": 9802.7
+ },
+ "splits": {
+  "SEALED_TEST_PRIMARY": 1,
+  "TEST_GENERALIZATION": 14,
+  "DEV": 7,
+  "TRAIN": 36
+ },
+ "proxy_gate": "PASS (preferred level)",
+ "training": {
+  "primary_seed": 20260912,
+  "updates": 2000,
+  "best_update": 1000,
+  "replication": "seed 20260913: selected update 1250, composite 5.431 (primary composite 5.533) — stable",
+  "gpu_hours_total": 1.05
+ },
+ "dev_best": {
+  "recon_l1_mix": 0.0181727974095895,
+  "leakage_ratio_db": -10.282411174839087,
+  "hf_retention_db": 5.424876845021504,
+  "weak_recon_l1": 0.012081598361224419,
+  "friction_recon_l1": 0.01682099954923615,
+  "n_only_output_rms_db": -45.41968999568978
+ },
+ "listening_pack": {
+  "items": 18,
+  "groups": 6,
+  "methods": "RAW vs ZERO-SHOT vs ADAPTED (identities sealed)",
+  "fixed_gain_pack_normalization": "peak -3 dBFS, per-item gains in sealed key"
+ },
+ "next_required_step": "owner blind listening pass; then unblind, record S1W_DECISION.json + S1W_REPORT.md"
+}

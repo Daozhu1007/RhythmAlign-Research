@@ -1,0 +1,51 @@
+{
+ "01_checkpoint_loading_verified": {
+  "pass": true,
+  "detail": "parity_exact=True"
+ },
+ "06_split_isolation": {
+  "pass": true,
+  "detail": "no leakage paths found"
+ },
+ "02_differentiable_forward": {
+  "pass": true,
+  "detail": "pred.requires_grad=True"
+ },
+ "03_finite_loss": {
+  "pass": true,
+  "detail": "loss=3.39624"
+ },
+ "04_nonzero_finite_grads": {
+  "pass": true,
+  "detail": "149/149 trainable tensors"
+ },
+ "05_tiny_batch_overfit": {
+  "pass": true,
+  "detail": "loss 3.6076 -> 0.2513 over 40 steps"
+ },
+ "10_target_absent_suppression": {
+  "pass": true,
+  "detail": "absent rms 0.1019 -> 0.0004"
+ },
+ "11_target_only_identity": {
+  "pass": true,
+  "detail": "T-only/MIX recon_l1 0.0055 after overfit"
+ },
+ "07_seed_recorded": {
+  "pass": true,
+  "detail": "seed 20260912 recorded in TRAINING_CONFIG.json"
+ },
+ "08_09_fixed_gain_no_norm": {
+  "pass": true,
+  "detail": "no per-output normalization in objectives/data path"
+ },
+ "12_checkpoint_save_reload": {
+  "pass": true,
+  "detail": "max diff 0.00e+00"
+ },
+ "vram_profile_gb": {
+  "value": 5.140451431274414,
+  "pass": true,
+  "detail": "peak 5.14 GB on 8 GB class GPU"
+ }
+}

@@ -1,0 +1,64 @@
+{
+  "stage": "S1W existing-corpus weakly supervised CLAPSep domain adaptation",
+  "date": "2026-09-12",
+  "seed": 20260912,
+  "replication_seed": 20260913,
+  "model": {
+    "family": "CLAPSep (official multimodal-query checkpoint, S1E-identical)",
+    "checkpoint_sha256": {
+      "best_model.ckpt": "6fcc8dbcd7174af86266cf16b4105eced0802352762f81dbfefdce29af3dba04",
+      "music_audioset_epoch_15_esc_90.14.pt": "fae3e9c087f2909c28a09dc31c8dfcdacbc42ba44c70e972b58c1bd1caf6dedd"
+    },
+    "representation": "bounded real magnitude mask (sigmoid) + mixture phase; STFT 1024/320 hann periodic, 32 kHz mono; phase=False (unchanged, per S1a audit)",
+    "trainable_scope": "decoder_model only (HTSAT decoder + mask head), 149 trainable tensors",
+    "frozen": [
+      "CLAP text/query encoder (clap_model)",
+      "audio_branch pretrained HTSAT feature encoder including its LoRA adapters (eval mode, no_grad feature extraction)",
+      "decoder spec_norm BatchNorm running state (eval mode = normalization state frozen)"
+    ]
+  },
+  "query_policy": {
+    "condition": "FIXED S1E primary: audio query Q1 (R3 single visually-confirmed contact event), zero negative embedding",
+    "sweep": "none; frozen from S1E prior work; no prompt tuned against sealed or any test data"
+  },
+  "optimization": {
+    "optimizer": "AdamW(lr=1e-4, weight_decay=0.01)",
+    "grad_clip": 5.0,
+    "microbatch": 1,
+    "grad_accum": 8,
+    "effective_batch": 8,
+    "max_optimizer_updates": 2000,
+    "dev_eval_every": 250,
+    "amp": "bfloat16 autocast around decoder+loss; STFT/ISTFT float paths as dispatched by torch",
+    "pause_rule": "if no meaningful DEV learning by ~1000 updates, pause and diagnose"
+  },
+  "loss": {
+    "formula": "L = 1.00*waveform_L1 + 0.50*MR-STFT(256/1024/2048, log10-magnitude L1, floor 1e-5) + 0.25*preemphasis_HF_L1(x[n]-0.95x[n-1])",
+    "mrstft_log_note": "log magnitude is required: linear ratio normalization explodes on near-silent hard-negative targets (|s| rms ~0.01 at -30 dB TNR) and derails optimization; found in the first launch, fixed before any DEV/eval use",
+    "target_absent": "L = L1(out,0) + mean(out^2) (strong output-energy penalty)",
+    "target_only": "same recon terms vs s_proxy (identity F(s)~s)",
+    "not_optimized": ["visual-onset recall", "chart metrics", "taiko leakage proxies", "text-semantic reward", "generative completion"]
+  },
+  "mixture_distribution": {
+    "mix_target_plus_nuisance": 0.5,
+    "target_only": 0.2,
+    "nuisance_only": 0.2,
+    "hard_negatives": 0.1,
+    "tnr_grid_db": [-20, -10, 0, 10],
+    "hard_tnr_db": [-30, -25, -20],
+    "bookkeeping": "y = guard*(s + gain*n); requested and measured TNR, gains, placements and files stored per example (exact)"
+  },
+  "checkpoint_selection": {
+    "rule": "DEV-only; maximize composite = (zero_shot preservation_sum / current preservation_sum) + (leakage_reduction_db/10); components always reported; guardrail: weak-stratum DEV recon_l1 must not exceed zero-shot by >10%",
+    "preservation_sum": "recon_l1_mix + recon_l1_t_only",
+    "sealed_test_use": "none until model+checkpoint fully frozen"
+  },
+  "budget": {
+    "hardware": "RTX 4060 Laptop 8 GB",
+    "profiled_peak_vram_gb": 5.14,
+    "hard_limit_gpu_hours": 24,
+    "max_runs": 2,
+    "seeds": 1,
+    "replication": "one replication seed only if primary run clearly stable and promising"
+  }
+}

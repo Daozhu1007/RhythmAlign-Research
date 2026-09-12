@@ -1,0 +1,38 @@
+{
+ "stage": "S1W constructed weakly supervised mixtures (publication-safe summary)",
+ "privacy_note": "counts only; audio and recipes stay local",
+ "train": {
+  "n": 2400,
+  "types": {
+   "MIX": 1228,
+   "HARD": 243,
+   "T_ONLY": 445,
+   "N_ONLY": 484
+  },
+  "duration_hours": 6.67
+ },
+ "dev": {
+  "n": 160,
+  "types": {
+   "MIX": 91,
+   "HARD": 13,
+   "N_ONLY": 29,
+   "T_ONLY": 27
+  }
+ },
+ "example_length_s": 10,
+ "sample_rate": 32000,
+ "target_strata": [
+  "dense",
+  "sparse",
+  "weak",
+  "friction"
+ ],
+ "nuisance_sources": [
+  "pristine_music",
+  "pre_song_attract",
+  "ambience",
+  "unrelated_impacts"
+ ],
+ "isolation": "TRAIN examples: TRAIN-recording proxies+nuisance+TRAIN-paired pristine only; DEV examples: DEV-recording proxies+nuisance; sealed/test excluded everywhere; verified programmatically (logs/10_sanity.json)"
+}

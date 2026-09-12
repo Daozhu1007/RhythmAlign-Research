@@ -1,0 +1,21 @@
+{
+ "stage": "S1W checkpoint manifest (public record; binaries stay LOCAL)",
+ "note": "checkpoints are local-only artifacts and are never committed or published",
+ "primary_run": {
+  "seed": 20260912,
+  "optimizer_updates_run": 2000,
+  "selected_update": 1000,
+  "selection": "DEV-only composite + weak-preservation guardrail (TRAINING_CONFIG.json)",
+  "selected_checkpoint_local_path": "experiments/s1w_existing_corpus_adaptation/checkpoints/primary_seed20260912_best.ckpt (LOCAL ONLY)",
+  "selected_checkpoint_sha256_local": "f382d32e0481df241c2763f1e85d293828e2968215d6124a52e47e6a6eeabc7b",
+  "selected_checkpoint_bytes": 1282931521
+ },
+ "replication_run": {
+  "seed": 20260913,
+  "role": "stability replication, same configuration, DEV evidence only"
+ },
+ "base_checkpoint_sha256": {
+  "best_model.ckpt": "6fcc8dbcd7174af86266cf16b4105eced0802352762f81dbfefdce29af3dba04",
+  "music_audioset_epoch_15_esc_90.14.pt": "fae3e9c087f2909c28a09dc31c8dfcdacbc42ba44c70e972b58c1bd1caf6dedd"
+ }
+}

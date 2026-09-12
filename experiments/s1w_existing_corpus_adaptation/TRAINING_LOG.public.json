@@ -1,0 +1,294 @@
+{
+ "zero_shot_dev": {
+  "n_eval": 64,
+  "recon_l1_mix": 0.061107722415151645,
+  "target_distortion_db": 3.229002402770628,
+  "leakage_ratio_db": -0.7700973732144764,
+  "hf_retention_db": -2.375192875869092,
+  "recon_l1_t_only": 0.022792337462306023,
+  "n_only_output_rms_db": -18.707992389734933,
+  "n_only_input_rms_db": -14.388766271388597,
+  "weak_recon_l1": 0.03997305507904717,
+  "friction_recon_l1": 0.06771565526723862,
+  "weak_hf_retention_db": 2.0575131924620256,
+  "counts": {
+   "mix": 49,
+   "t_only": 7,
+   "n_only": 8,
+   "weak": 14,
+   "friction": 5
+  }
+ },
+ "updates": [
+  {
+   "update": 250,
+   "train_loss": 72.1147329482119,
+   "train_stats": {
+    "l_wave": 3.7844620537881326,
+    "l_mr": 135.62045225429756,
+    "l_hf": 0.7486521670138586,
+    "l_abs1": 0.3198722053130041,
+    "l_abs2": 0.013009582209022597
+   },
+   "dev": {
+    "n_eval": 64,
+    "recon_l1_mix": 0.018610608516907205,
+    "target_distortion_db": -4.863926499921332,
+    "leakage_ratio_db": -10.076148860311019,
+    "hf_retention_db": 5.12315414606937,
+    "recon_l1_t_only": 0.0001340968233957288,
+    "n_only_output_rms_db": -45.23256098454121,
+    "n_only_input_rms_db": -14.388766271388597,
+    "weak_recon_l1": 0.012195786683410656,
+    "friction_recon_l1": 0.01726568330777809,
+    "weak_hf_retention_db": 12.788054672968183,
+    "counts": {
+     "mix": 49,
+     "t_only": 7,
+     "n_only": 8,
+     "weak": 14,
+     "friction": 5
+    }
+   },
+   "composite": 5.406538931305019,
+   "weak_guard_ok": true
+  },
+  {
+   "update": 500,
+   "train_loss": 60.404809152300004,
+   "train_stats": {
+    "l_wave": 3.438418616068134,
+    "l_mr": 113.17976126793656,
+    "l_hf": 0.6796263187204943,
+    "l_abs1": 0.20361300310469232,
+    "l_abs2": 0.0029904554331778854
+   },
+   "dev": {
+    "n_eval": 64,
+    "recon_l1_mix": 0.018340622507301823,
+    "target_distortion_db": -4.920698322536929,
+    "leakage_ratio_db": -10.151005909107642,
+    "hf_retention_db": 5.010341619868324,
+    "recon_l1_t_only": 0.0001985497250903531,
+    "n_only_output_rms_db": -47.21252031552909,
+    "n_only_input_rms_db": -14.388766271388597,
+    "weak_recon_l1": 0.01187139153626049,
+    "friction_recon_l1": 0.016872864216566086,
+    "weak_hf_retention_db": 12.60566013940003,
+    "counts": {
+     "mix": 49,
+     "t_only": 7,
+     "n_only": 8,
+     "weak": 14,
+     "friction": 5
+    }
+   },
+   "composite": 5.463646732015488,
+   "weak_guard_ok": true
+  },
+  {
+   "update": 750,
+   "train_loss": 58.76504395274242,
+   "train_stats": {
+    "l_wave": 3.32412198247863,
+    "l_mr": 110.18856164783938,
+    "l_hf": 0.6587043412997673,
+    "l_abs1": 0.17988530828006333,
+    "l_abs2": 0.002079708286061077
+   },
+   "dev": {
+    "n_eval": 64,
+    "recon_l1_mix": 0.019865238440356085,
+    "target_distortion_db": -4.671738479542085,
+    "leakage_ratio_db": -9.713394488613194,
+    "hf_retention_db": 4.791036682208338,
+    "recon_l1_t_only": 0.00013450735215363757,
+    "n_only_output_rms_db": -38.2637806807315,
+    "n_only_input_rms_db": -14.388766271388597,
+    "weak_recon_l1": 0.014016743755616647,
+    "friction_recon_l1": 0.017161722155287863,
+    "weak_hf_retention_db": 12.65929006389935,
+    "counts": {
+     "mix": 49,
+     "t_only": 7,
+     "n_only": 8,
+     "weak": 14,
+     "friction": 5
+    }
+   },
+   "composite": 5.0893860261496195,
+   "weak_guard_ok": true
+  },
+  {
+   "update": 1000,
+   "train_loss": 54.35226513222733,
+   "train_stats": {
+    "l_wave": 3.3248053143321386,
+    "l_mr": 101.35691344059887,
+    "l_hf": 0.6553829024661582,
+    "l_abs1": 0.1820675520793884,
+    "l_abs2": 0.0030898311096336784
+   },
+   "dev": {
+    "n_eval": 64,
+    "recon_l1_mix": 0.0181727974095895,
+    "target_distortion_db": -5.060728571895072,
+    "leakage_ratio_db": -10.282411174839087,
+    "hf_retention_db": 5.424876845021504,
+    "recon_l1_t_only": 0.0001380945161924631,
+    "n_only_output_rms_db": -45.41968999568978,
+    "n_only_input_rms_db": -14.388766271388597,
+    "weak_recon_l1": 0.012081598361224419,
+    "friction_recon_l1": 0.01682099954923615,
+    "weak_hf_retention_db": 13.269816339572733,
+    "counts": {
+     "mix": 49,
+     "t_only": 7,
+     "n_only": 8,
+     "weak": 14,
+     "friction": 5
+    }
+   },
+   "composite": 5.5332069724778385,
+   "weak_guard_ok": true
+  },
+  {
+   "update": 1250,
+   "train_loss": 52.69317122510256,
+   "train_stats": {
+    "l_wave": 3.363823353709904,
+    "l_mr": 98.01466385471576,
+    "l_hf": 0.6703560025391369,
+    "l_abs1": 0.15269158626324497,
+    "l_abs2": 0.0017353751778301785
+   },
+   "dev": {
+    "n_eval": 64,
+    "recon_l1_mix": 0.01857659718667974,
+    "target_distortion_db": -4.820103134597121,
+    "leakage_ratio_db": -10.044255516218598,
+    "hf_retention_db": 4.957491351962276,
+    "recon_l1_t_only": 0.0013265522710363647,
+    "n_only_output_rms_db": -48.65791112171393,
+    "n_only_input_rms_db": -14.388766271388597,
+    "weak_recon_l1": 0.012278017751668813,
+    "friction_recon_l1": 0.018839874304831028,
+    "weak_hf_retention_db": 9.245567215301659,
+    "counts": {
+     "mix": 49,
+     "t_only": 7,
+     "n_only": 8,
+     "weak": 14,
+     "friction": 5
+    }
+   },
+   "composite": 5.142832075716821,
+   "weak_guard_ok": true
+  },
+  {
+   "update": 1500,
+   "train_loss": 50.0894138835647,
+   "train_stats": {
+    "l_wave": 3.266334764159211,
+    "l_mr": 93.0213395562605,
+    "l_hf": 0.6436878983823817,
+    "l_abs1": 0.14995602545968723,
+    "l_abs2": 0.001531257934345831
+   },
+   "dev": {
+    "n_eval": 64,
+    "recon_l1_mix": 0.018178860215014036,
+    "target_distortion_db": -5.057465219954107,
+    "leakage_ratio_db": -10.258690445557647,
+    "hf_retention_db": 5.318878827294985,
+    "recon_l1_t_only": 0.00013303980137737068,
+    "n_only_output_rms_db": -46.45560941613885,
+    "n_only_input_rms_db": -14.388766271388597,
+    "weak_recon_l1": 0.012119444336349261,
+    "friction_recon_l1": 0.016634280199650676,
+    "weak_hf_retention_db": 12.940718814125534,
+    "counts": {
+     "mix": 49,
+     "t_only": 7,
+     "n_only": 8,
+     "weak": 14,
+     "friction": 5
+    }
+   },
+   "composite": 5.530582656660469,
+   "weak_guard_ok": true
+  },
+  {
+   "update": 1750,
+   "train_loss": 47.74662900761905,
+   "train_stats": {
+    "l_wave": 3.263081550782374,
+    "l_mr": 88.34074084846361,
+    "l_hf": 0.6451050164094454,
+    "l_abs1": 0.1502422963749268,
+    "l_abs2": 0.0016585161760218625
+   },
+   "dev": {
+    "n_eval": 64,
+    "recon_l1_mix": 0.018379972188030273,
+    "target_distortion_db": -5.103977805545734,
+    "leakage_ratio_db": -10.271195249076962,
+    "hf_retention_db": 5.384522939342184,
+    "recon_l1_t_only": 0.00013392909282369407,
+    "n_only_output_rms_db": -45.33451735026246,
+    "n_only_input_rms_db": -14.388766271388597,
+    "weak_recon_l1": 0.01229294164633237,
+    "friction_recon_l1": 0.016416995972394943,
+    "weak_hf_retention_db": 13.067865924315798,
+    "counts": {
+     "mix": 49,
+     "t_only": 7,
+     "n_only": 8,
+     "weak": 14,
+     "friction": 5
+    }
+   },
+   "composite": 5.481842921770256,
+   "weak_guard_ok": true
+  },
+  {
+   "update": 2000,
+   "train_loss": 47.76269121902442,
+   "train_stats": {
+    "l_wave": 3.2606203673803975,
+    "l_mr": 88.4007642037759,
+    "l_hf": 0.6445464755804551,
+    "l_abs1": 0.1391860375952092,
+    "l_abs2": 0.0013661574894072714
+   },
+   "dev": {
+    "n_eval": 64,
+    "recon_l1_mix": 0.018340120752513105,
+    "target_distortion_db": -4.981053148947509,
+    "leakage_ratio_db": -10.166339831578602,
+    "hf_retention_db": 5.141114762818385,
+    "recon_l1_t_only": 0.0001328969467847076,
+    "n_only_output_rms_db": -47.3694928175738,
+    "n_only_input_rms_db": -14.388766271388597,
+    "weak_recon_l1": 0.012386895771799442,
+    "friction_recon_l1": 0.016506224498152734,
+    "weak_hf_retention_db": 12.562756679652077,
+    "counts": {
+     "mix": 49,
+     "t_only": 7,
+     "n_only": 8,
+     "weak": 14,
+     "friction": 5
+    }
+   },
+   "composite": 5.48138679071,
+   "weak_guard_ok": true
+  }
+ ],
+ "best": {
+  "composite": 5.5332069724778385,
+  "update": 1000
+ },
+ "wall_clock_s": 1895.1,
+ "peak_vram_gb": 3.42
+}

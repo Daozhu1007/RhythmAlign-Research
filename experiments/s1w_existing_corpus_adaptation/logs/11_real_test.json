@@ -1,0 +1,107 @@
+{
+ "methods": [
+  "raw",
+  "zeroshot",
+  "adapted"
+ ],
+ "checkpoint": "D:\\Code\\RhythmAlign-Research\\experiments\\s1w_existing_corpus_adaptation\\checkpoints\\best.ckpt",
+ "fixed_gain": "no normalization; 48k stereo masters + 32k mono model domain",
+ "results": [
+  {
+   "group": "c1_speech_npc_a",
+   "t": [
+    86.0,
+    94.0
+   ],
+   "rms_db": {
+    "raw": -17.657284814117624,
+    "zeroshot": -22.016792861659205,
+    "adapted": -50.38937489016273
+   },
+   "zeroshot_click_db": -0.89,
+   "zeroshot_mid_db": -3.96,
+   "adapted_click_db": -29.43,
+   "adapted_mid_db": -30.63
+  },
+  {
+   "group": "c2_speech_npc_b",
+   "t": [
+    96.0,
+    104.0
+   ],
+   "rms_db": {
+    "raw": -19.40740744133208,
+    "zeroshot": -23.522519794001777,
+    "adapted": -50.16865105530905
+   },
+   "zeroshot_click_db": -0.82,
+   "zeroshot_mid_db": -5.92,
+   "adapted_click_db": -30.62,
+   "adapted_mid_db": -29.87
+  },
+  {
+   "group": "c3_taiko_prompt",
+   "t": [
+    126.5,
+    131.5
+   ],
+   "rms_db": {
+    "raw": -20.334134588917514,
+    "zeroshot": -24.541943539913227,
+    "adapted": -47.724423106075385
+   },
+   "zeroshot_click_db": -1.47,
+   "zeroshot_mid_db": -9.39,
+   "adapted_click_db": -33.4,
+   "adapted_mid_db": -29.63
+  },
+  {
+   "group": "c6_dense_golden",
+   "t": [
+    22.5,
+    37.5
+   ],
+   "rms_db": {
+    "raw": -20.31855799199139,
+    "zeroshot": -23.858494566151357,
+    "adapted": -51.47269946148252
+   },
+   "zeroshot_click_db": -0.9,
+   "zeroshot_mid_db": -5.61,
+   "adapted_click_db": -31.32,
+   "adapted_mid_db": -28.82
+  },
+  {
+   "group": "c7_weak_taps",
+   "t": [
+    38.0,
+    44.0
+   ],
+   "rms_db": {
+    "raw": -17.984296054384817,
+    "zeroshot": -23.48153426858538,
+    "adapted": -50.23805171481017
+   },
+   "zeroshot_click_db": -1.63,
+   "zeroshot_mid_db": -3.67,
+   "adapted_click_db": -26.7,
+   "adapted_mid_db": -29.66
+  },
+  {
+   "group": "c8_slide_friction",
+   "t": [
+    51.5,
+    57.5
+   ],
+   "rms_db": {
+    "raw": -16.842627868224547,
+    "zeroshot": -21.79545309383282,
+    "adapted": -31.14790472912886
+   },
+   "zeroshot_click_db": -1.09,
+   "zeroshot_mid_db": -4.05,
+   "adapted_click_db": -17.69,
+   "adapted_mid_db": -13.54
+  }
+ ]
+}
