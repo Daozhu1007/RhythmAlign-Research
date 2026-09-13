@@ -1,7 +1,9 @@
 # RhythmAlign S1W — Existing-Corpus Weakly Supervised CLAPSep Domain Adaptation
 
-**Stage ID:** S1W · **Date:** 2026-09-12 · **Status:** see `S1W_STATUS.json`
-(pre-listening stopping point: `AWAITING_HUMAN_LISTENING`).
+**Stage ID:** S1W · **Date:** 2026-09-12 (listening + finalization 2026-09-14) ·
+**Status:** see `S1W_STATUS.json` — **FINALIZED: verdict C (weak-supervision
+adaptation fails)**; decision in [S1W_DECISION.json](S1W_DECISION.json), final report
+in [S1W_REPORT.md](S1W_REPORT.md).
 
 S1W is the first actual model-training stage of the reframed RhythmAlign program.
 It keeps the S1E conclusion (CLAPSep is the only pretrained system with real source
@@ -36,6 +38,22 @@ and flipping the zero-shot HF-distortion signature positive. The frozen real tes
 generalization test and the 18-item blind listening pack then complete the stage;
 the decision itself waits for the owner's listening pass.
 
+## Outcome (2026-09-14, after the human blind listening pass)
+
+**Verdict C — weak-supervision adaptation fails.** The constructed weak-supervision
+task was learned successfully (large DEV wins), but the learned behavior does not
+transfer to authentic raw handcams: the adapted model is near-silent on every real
+group (~28–33 dB below RAW; c8 14.3 dB), deleting authentic interaction with the
+nuisance — confirmed by the owner hearing all six ADAPTED items (1/5/7/11/15/17) as
+near-silent/severely suppressed. Zero-shot CLAPSep retains useful source selectivity
+(especially c3, the Taiko prompt) with known fidelity defects (muffling / underwater
+texture / discontinuity). Root cause: proxy/synthetic-distribution overfit plus
+chunk/context sensitivity; the bounded-mask representation is NOT implicated.
+Recommended (not started): a new REAL-MIXTURE adaptation stage — see
+[S1W_REPORT.md](S1W_REPORT.md) §6. The pack's v1 gain-protocol mistake (per-item
+−3 dBFS peak normalization) and its v2 correction remain on record in
+[listening_pack/](listening_pack/).
+
 ## Deliverables map
 
 | File | Purpose |
@@ -55,6 +73,9 @@ the decision itself waits for the owner's listening pass.
 | [FAILURE_CASES.md](FAILURE_CASES.md) | Honest negative observations |
 | [listening_pack/](listening_pack/) | 18 anonymous items + instructions + gain audit + public order |
 | [S1W_PRELISTENING_REPORT.md](S1W_PRELISTENING_REPORT.md) | Answers the 22 pre-listening questions |
+| [S1W_DECISION.json](S1W_DECISION.json) | Final decision record: verdict C |
+| [S1W_REPORT.md](S1W_REPORT.md) | Final stage report (learned vs transferred vs next stage) |
+| [listening_pack/HUMAN_LISTENING_RESULTS.md](listening_pack/HUMAN_LISTENING_RESULTS.md) | Unblinded 18-item mapping + owner observations |
 | [S1W_STATUS.json](S1W_STATUS.json) | Machine-readable stage status |
 | `scripts/` | Full pipeline (00–14) |
 | `work/`, `checkpoints/` | LOCAL ONLY (audio, recipes, private manifests, sealed key, checkpoints) |

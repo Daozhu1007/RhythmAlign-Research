@@ -1,0 +1,63 @@
+{
+  "stage": "S1W — Existing-Corpus Weakly Supervised CLAPSep Domain Adaptation",
+  "date": "2026-09-14",
+  "decision": "C",
+  "decision_label": "WEAK-SUPERVISION ADAPTATION FAILS",
+  "decision_basis": "Primary human blind listening (18 items, unblinded 2026-09-14; see listening_pack/HUMAN_LISTENING_RESULTS.md) confirming the frozen machine-side real test (REAL_TEST_RESULTS.md, FAILURE_CASES.md §1-2).",
+  "constructed_dev_learning": "SUCCESS",
+  "constructed_dev_evidence": "On constructed weak-supervision mixtures the adapted decoder improved nuisance leakage -0.8 -> -10.3 dB (~9.4 dB) while improving target reconstruction 3.3x, weak-hit preservation 3.3x, friction preservation 4x, and flipped the zero-shot HF-muffling signature positive (DEV_RESULTS.md). Checkpoint-reload verified.",
+  "real_domain_transfer": "FAILURE",
+  "real_domain_evidence": "On all six frozen real sealed groups the adapted output is near-silent (RMS -47.7..-51.5 dBFS vs raw -16.9..-20.4; 27.4-32.7 dB below RAW, c8 14.3 dB). The owner perceived all six adapted listening items (1/5/7/11/15/17) as near-silent / severely suppressed.",
+  "catastrophic_target_deletion": true,
+  "catastrophic_target_deletion_evidence": "Adapted click/mid bands 17.7-33.4 dB down on every real group (REAL_TEST_RESULTS.md); human listening confirms authentic interaction deleted together with the nuisance.",
+  "zeroshot_clapsep_retains_useful_source_selectivity": true,
+  "zeroshot_selectivity_evidence": "Owner attested useful source selectivity retained, especially c3 (Taiko system prompt); machine side: transients within ~1-2 dB of raw, music ~4-9 dB relative attenuation (S1E-consistent).",
+  "zeroshot_residual_defects": "muffling / underwater texture / discontinuity (owner stage-summary attestation; consistent with S1E listening record)",
+  "primary_root_cause": "proxy/synthetic-distribution overfit plus chunk/context sensitivity",
+  "primary_root_cause_detail": "The decoder learned the constructed-mixture distribution (canvas-reconstructed proxies vs pristine/ambience nuisance) rather than the product target (FAILURE_CASES.md §1: proxy music bleed, absent speech class, friction proxies the most real-like and the only class partially surviving). Independently, the adapted masker is sensitive to the inference chunk protocol (zero-padded vs exact 10-s chunks flip behavior; FAILURE_CASES.md §2) - a context/robustness failure of the adapted model, not of zero-shot.",
+  "bounded_mask_limitation": "NOT established as the cause of adaptation collapse",
+  "bounded_mask_limitation_detail": "The bounded real-valued mask representation was left unchanged by design (S1a oracle ceiling still applies to any future masker redesign). The observed collapse is explained by training-distribution mismatch and chunk sensitivity; nothing in S1W implicates the mask representation.",
+  "listening_evidence": {
+    "pack": "listening_pack/ v2 gain-corrected (18 items, no per-item normalization)",
+    "protocol_correction": "v1 pack invalid (per-item -3 dBFS peak norm); regenerated as v2 before listening; see listening_pack/LISTENING_PACK_GAIN_AUDIT.md",
+    "adapted_items_near_silent": [1, 5, 7, 11, 15, 17],
+    "results_record": "listening_pack/HUMAN_LISTENING_RESULTS.md"
+  },
+  "why_C_and_not_B": "CLAPSep zero-shot remains a useful substrate, but the stage's own adaptation attempt catastrophically deletes the target on real material; S1W's question ('does weak supervision move CLAPSep toward the physical interaction without deleting it?') is answered NO on real handcams. Continuing the stage would require exactly what is ruled out: more tuning of the same synthetic-proxy recipe.",
+  "stage_should_not_continue_with": "further tuning of the same synthetic-proxy/remixing recipe",
+  "next_stage_recommendation": {
+    "focus": "REAL-MIXTURE adaptation - learning from authentic handcam acoustic distributions rather than better synthetic remixing",
+    "candidate_approaches": [
+      "zero-shot CLAPSep as teacher / anchor",
+      "real-mixture consistency learning",
+      "conservative pseudo-labeling / self-training",
+      "anti-collapse / identity constraints (e.g. penalize wholesale output suppression)",
+      "learning directly from authentic handcam acoustic distributions"
+    ],
+    "status": "RECOMMENDED ONLY - not started",
+    "explicitly_not_started_yet": [
+      "the real-mixture adaptation experiment",
+      "complex-mask redesign",
+      "aligned-reference conditioning"
+    ]
+  },
+  "guardrails_respected_at_finalization": [
+    "no retraining",
+    "no audio regeneration",
+    "no checkpoint or inference change",
+    "no additional model experiment"
+  ],
+  "preserved_records": [
+    "S1W_PRELISTENING_REPORT.md (pre-listening machine-side prediction, unchanged)",
+    "listening_pack/LISTENING_INSTRUCTIONS.md incl. v1 gain-protocol mistake record",
+    "listening_pack/LISTENING_PACK_GAIN_AUDIT.md (v2 gain audit, unchanged)",
+    "FAILURE_CASES.md (negative findings, unchanged)",
+    "REAL_TEST_RESULTS.md / GENERALIZATION_RESULTS.md / DEV_RESULTS.md (unchanged)"
+  ],
+  "explicitly_not_done": [
+    "No additional model experiment after the verdict",
+    "No SI-SDR / recall / source-attenuation claims (no real-capture ground truth exists)",
+    "No rewriting of the pre-listening report, gain-protocol history, or failure analysis",
+    "No product-repository changes"
+  ]
+}

@@ -52,11 +52,14 @@ artifacts are referenced by manifests, not committed.
 | **S0** research reframing | What is the right problem statement? | Major reframing to *target-sound extraction under natural overlap*; literature map, architecture options, minimal decisive experiment |
 | **S1a** ground-truth pilot | Can exactly-matched ground truth be acquired, and is a bounded magnitude-mask representation sufficient? | Tooling + protocols + oracle machinery validated on synthetic fixtures (unit tests pass); real one-session capture **still pending** |
 | **S1E** existing-corpus feasibility | Are current pretrained frontier systems good enough as-is? | **CURRENT PRETRAINED FRONTIER INSUFFICIENT.** AudioSep repeats R2's attenuated-copy failure; SoloAudio fails out-of-distribution (deletes/invents); specialist pipeline transparent but weak. **CLAPSep shows genuine local source selectivity** (~9 dB relative music suppression with transients preserved) and is the **current adaptation substrate** |
+| **S1W** weak-supervision adaptation | Does weak supervision from existing recordings move CLAPSep toward the target without deleting it? | **VERDICT C — WEAK-SUPERVISION ADAPTATION FAILS.** Constructed task learned (DEV wins), but zero transfer to real handcams: adapted output near-silent on every real group (~28–33 dB below RAW; c8 14.3 dB) — authentic interaction deleted with the nuisance (listening-confirmed). Zero-shot CLAPSep keeps useful selectivity (esp. Taiko prompt) with muffling/underwater/discontinuity defects. Root cause: synthetic-proxy distribution overfit + chunk/context sensitivity; bounded mask NOT implicated. Next (recommended, not started): **real-mixture adaptation** |
 
-**Current conclusion.** No tested pretrained system solves the problem out of the box.
-The planned next stage, **S1W**, is weakly supervised domain adaptation: use S1a's
-exactly-matched target+nuisance pair infrastructure to adapt the CLAPSep-class masker
-to this domain with weak/no per-frame labels.
+**Current conclusion.** No tested pretrained system solves the problem out of the box,
+and the first adaptation attempt (S1W) collapsed on real material by learning the
+synthetic proxy distribution instead of the authentic handcam acoustics. The
+recommended next stage — **real-mixture adaptation** (zero-shot CLAPSep as
+teacher/anchor, real-mixture consistency, conservative self-training, anti-collapse
+constraints) — is designed against that failure mode and has **not been started**.
 
 ## Repository layout
 
