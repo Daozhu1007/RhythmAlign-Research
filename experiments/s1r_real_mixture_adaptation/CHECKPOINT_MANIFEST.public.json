@@ -1,0 +1,33 @@
+{
+ "stage": "S1R real-mixture adaptation",
+ "date": "2026-09-14",
+ "selected_checkpoint": {
+  "local_path_note": "weights stay local (ignored); this record publishes identity only",
+  "file": "checkpoints/s1r_selected.ckpt",
+  "copied_from": "checkpoints/full_upd01500.ckpt",
+  "sha256": "e1fade5ebeb84e75527d41bb5aba48dc197243a49aa34cb2fee673897a1cc303",
+  "bytes": 1283006208,
+  "selection": "DEV-only; lowest combined cross-context consistency (0.0455 vs zero-shot 0.0609) among all primary-run checkpoints passing ALL protocol section-32 validity checks",
+  "anti_collapse_gate": "PASS (section 33): collapse_rate_12db 0.0, median student/teacher ratio +0.03 dB, worst anchor -0.48 dB, passthrough margin +0.014",
+  "selection_log": "logs/05_selection.json"
+ },
+ "model_identity": {
+  "family": "CLAPSep (official multimodal-query checkpoint, S1E/S1W-identical)",
+  "base_checkpoint_sha256": {
+   "best_model.ckpt": "6fcc8dbcd7174af86266cf16b4105eced0802352762f81dbfefdce29af3dba04",
+   "music_audioset_epoch_15_esc_90.14.pt": "fae3e9c087f2909c28a09dc31c8dfcdacbc42ba44c70e972b58c1bd1caf6dedd"
+  },
+  "student_init": "exact zero-shot weights (parity max|delta|=0.0 vs S1E stored output)",
+  "trainable_scope": "decoder_model.mask_net + decoder_model.layers.3 + decoder_model.skip.3 + decoder_model.inverse_patch_embed",
+  "trainable_params": 16082566,
+  "trainable_percent": 5.03
+ },
+ "frozen_inference_settings": {
+  "query": "audio query Q1, zero negative (S1E/S1W policy, unchanged)",
+  "protocol": "exact 10-s chunk overlap-add (0.5 hann) at 32 kHz mono; official peak-0.9 rescale per chunk with exact undo",
+  "gain_behavior": "no normalization of outputs; fixed-gain listening protocol downstream",
+  "seed": 20260914,
+  "training_updates": 1500,
+  "lr": 2e-5
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "stage": "S1R Phase 0 - real-mixture teacher viability audit",
+ "date": "2026-09-14",
+ "splits_audited": [
+  "TRAIN",
+  "DEV"
+ ],
+ "n_recordings": 43,
+ "n_windows": 252,
+ "n_windows_errored": 0,
+ "n_accepted": 240,
+ "n_accepted_train": 201,
+ "acceptance_rate": 0.9524,
+ "metric_distributions": {
+  "wf_corr_min": {
+   "p10": 0.9144,
+   "median": 0.9762,
+   "p90": 0.9931
+  },
+  "spec_corr_min": {
+   "p10": 0.9851,
+   "median": 0.9932,
+   "p90": 0.9963
+  },
+  "mrstft_max": {
+   "p10": 0.02,
+   "median": 0.0384,
+   "p90": 0.0738
+  },
+  "rms_spread_db": {
+   "p10": 0.1659,
+   "median": 0.488,
+   "p90": 1.179
+  },
+  "collapse_db": {
+   "p10": -0.724,
+   "median": -0.2034,
+   "p90": 0.0
+  },
+  "amplify_db": {
+   "p10": 0.0,
+   "median": 0.1839,
+   "p90": 0.7292
+  },
+  "out_raw_db": {
+   "p10": -5.5294,
+   "median": -4.6385,
+   "p90": -3.8573
+  },
+  "click_retention_db": {
+   "p10": -1.1524,
+   "median": -0.4826,
+   "p90": -0.2311
+  }
+ },
+ "reject_reason_counts": {
+  "rms_spread": 6,
+  "spectral_corr": 1,
+  "mrstft_distance": 1,
+  "waveform_corr": 7
+ },
+ "gate_preferred": {
+  "gate": "preferred",
+  "seconds": 1206.0,
+  "recordings": 36,
+  "max_recording_share": 0.0299,
+  "interaction_coverage": {
+   "dense": 116,
+   "transient_rich": 172,
+   "weak": 201,
+   "friction": 2
+  },
+  "thresholds": {
+   "min_seconds": 120.0,
+   "min_recordings": 8,
+   "max_recording_share": 0.2
+  }
+ },
+ "gate_preferred_pass": true,
+ "teacher_robustness_clearly_strong": true,
+ "gate_reduced_pilot": {
+  "gate": "reduced_pilot",
+  "seconds": 1206.0,
+  "recordings": 36,
+  "max_recording_share": 0.0299,
+  "interaction_coverage": {
+   "dense": 116,
+   "transient_rich": 172,
+   "weak": 201,
+   "friction": 2
+  },
+  "thresholds": {
+   "min_seconds": 60.0,
+   "min_recordings": 6,
+   "max_recording_share": 0.2
+  }
+ },
+ "gate_reduced_pilot_pass": false,
+ "teacher_gate": "PASS",
+ "gate_mode": "preferred",
+ "wall_clock_s": 179.1
+}

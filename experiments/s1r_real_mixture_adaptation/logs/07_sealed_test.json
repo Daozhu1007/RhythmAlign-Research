@@ -1,0 +1,179 @@
+{
+ "methods": [
+  "RAW",
+  "ZERO-SHOT",
+  "S1R"
+ ],
+ "excluded_by_design": "S1W adapted checkpoint (known failed model, protocol section 36)",
+ "protocol": "exact 10-s chunk overlap-add, identical for zero-shot and S1R",
+ "rows": [
+  {
+   "group": "c1_speech_npc_a",
+   "t": [
+    86.0,
+    94.0
+   ],
+   "raw": {
+    "rms_db": -14.66,
+    "click_2k_9k_db": 25.803,
+    "mid_150_2k_db": 35.893,
+    "flat_frac": 0.0
+   },
+   "zeroshot": {
+    "rms_db": -19.024,
+    "click_2k_9k_db": 25.452,
+    "mid_150_2k_db": 33.108,
+    "flat_frac": 0.01
+   },
+   "s1r": {
+    "rms_db": -19.059,
+    "click_2k_9k_db": 25.477,
+    "mid_150_2k_db": 33.014,
+    "flat_frac": 0.01
+   },
+   "zs_click_ret_vs_raw": -0.351,
+   "s1r_click_ret_vs_raw": -0.326,
+   "s1r_minus_zeroshot_rms_db": -0.035
+  },
+  {
+   "group": "c2_speech_npc_b",
+   "t": [
+    96.0,
+    104.0
+   ],
+   "raw": {
+    "rms_db": -16.426,
+    "click_2k_9k_db": 27.617,
+    "mid_150_2k_db": 34.157,
+    "flat_frac": 0.0
+   },
+   "zeroshot": {
+    "rms_db": -20.447,
+    "click_2k_9k_db": 27.345,
+    "mid_150_2k_db": 30.379,
+    "flat_frac": 0.0319
+   },
+   "s1r": {
+    "rms_db": -20.369,
+    "click_2k_9k_db": 27.391,
+    "mid_150_2k_db": 30.459,
+    "flat_frac": 0.0299
+   },
+   "zs_click_ret_vs_raw": -0.272,
+   "s1r_click_ret_vs_raw": -0.226,
+   "s1r_minus_zeroshot_rms_db": 0.078
+  },
+  {
+   "group": "c3_taiko_prompt",
+   "t": [
+    126.5,
+    131.5
+   ],
+   "raw": {
+    "rms_db": -17.353,
+    "click_2k_9k_db": 28.799,
+    "mid_150_2k_db": 33.541,
+    "flat_frac": 0.0
+   },
+   "zeroshot": {
+    "rms_db": -21.531,
+    "click_2k_9k_db": 27.69,
+    "mid_150_2k_db": 28.765,
+    "flat_frac": 0.1917
+   },
+   "s1r": {
+    "rms_db": -21.428,
+    "click_2k_9k_db": 27.766,
+    "mid_150_2k_db": 28.886,
+    "flat_frac": 0.1534
+   },
+   "zs_click_ret_vs_raw": -1.109,
+   "s1r_click_ret_vs_raw": -1.033,
+   "s1r_minus_zeroshot_rms_db": 0.103
+  },
+  {
+   "group": "c6_dense_golden",
+   "t": [
+    22.5,
+    37.5
+   ],
+   "raw": {
+    "rms_db": -17.339,
+    "click_2k_9k_db": 28.031,
+    "mid_150_2k_db": 33.014,
+    "flat_frac": 0.0
+   },
+   "zeroshot": {
+    "rms_db": -20.832,
+    "click_2k_9k_db": 27.771,
+    "mid_150_2k_db": 29.863,
+    "flat_frac": 0.033
+   },
+   "s1r": {
+    "rms_db": -20.731,
+    "click_2k_9k_db": 27.825,
+    "mid_150_2k_db": 29.966,
+    "flat_frac": 0.032
+   },
+   "zs_click_ret_vs_raw": -0.26,
+   "s1r_click_ret_vs_raw": -0.206,
+   "s1r_minus_zeroshot_rms_db": 0.101
+  },
+  {
+   "group": "c7_weak_taps",
+   "t": [
+    38.0,
+    44.0
+   ],
+   "raw": {
+    "rms_db": -14.985,
+    "click_2k_9k_db": 24.612,
+    "mid_150_2k_db": 34.072,
+    "flat_frac": 0.0
+   },
+   "zeroshot": {
+    "rms_db": -20.531,
+    "click_2k_9k_db": 24.027,
+    "mid_150_2k_db": 30.583,
+    "flat_frac": 0.0
+   },
+   "s1r": {
+    "rms_db": -20.352,
+    "click_2k_9k_db": 24.061,
+    "mid_150_2k_db": 30.572,
+    "flat_frac": 0.0
+   },
+   "zs_click_ret_vs_raw": -0.585,
+   "s1r_click_ret_vs_raw": -0.551,
+   "s1r_minus_zeroshot_rms_db": 0.179
+  },
+  {
+   "group": "c8_slide_friction",
+   "t": [
+    51.5,
+    57.5
+   ],
+   "raw": {
+    "rms_db": -13.85,
+    "click_2k_9k_db": 28.353,
+    "mid_150_2k_db": 36.27,
+    "flat_frac": 0.0
+   },
+   "zeroshot": {
+    "rms_db": -18.937,
+    "click_2k_9k_db": 27.974,
+    "mid_150_2k_db": 32.37,
+    "flat_frac": 0.0106
+   },
+   "s1r": {
+    "rms_db": -18.891,
+    "click_2k_9k_db": 28.012,
+    "mid_150_2k_db": 32.324,
+    "flat_frac": 0.0106
+   },
+   "zs_click_ret_vs_raw": -0.379,
+   "s1r_click_ret_vs_raw": -0.341,
+   "s1r_minus_zeroshot_rms_db": 0.046
+  }
+ ]
+}

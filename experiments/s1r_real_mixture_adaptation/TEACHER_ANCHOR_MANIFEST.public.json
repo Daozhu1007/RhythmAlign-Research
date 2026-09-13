@@ -1,0 +1,5496 @@
+{
+ "stage": "S1R high-confidence teacher anchors (public manifest)",
+ "note": "recording_ids are stable anonymized corpus identifiers; absolute source paths remain local under work/private/ (protocol sections 44/46)",
+ "anchor_definition": {
+  "central_crop_s": 6.0,
+  "context_views": [
+   4,
+   2,
+   0
+  ],
+  "gain_views_db": [
+   -3.0,
+   3.0
+  ],
+  "criteria": {
+   "wf_corr_min": 0.85,
+   "spec_corr_min": 0.9,
+   "mrstft_max": 0.35,
+   "rms_spread_db_max": 2.0,
+   "collapse_db_min": -12.0,
+   "amplify_db_max": 6.0,
+   "onset_lag_max_ms": 20,
+   "onset_corr_min": 0.8,
+   "out_raw_db_range": [
+    -15.0,
+    3.0
+   ]
+  }
+ },
+ "gate": {
+  "gate": "preferred",
+  "seconds": 1206.0,
+  "recordings": 36,
+  "max_recording_share": 0.0299,
+  "interaction_coverage": {
+   "dense": 116,
+   "transient_rich": 172,
+   "weak": 201,
+   "friction": 2
+  },
+  "thresholds": {
+   "min_seconds": 120.0,
+   "min_recordings": 8,
+   "max_recording_share": 0.2
+  }
+ },
+ "gate_pass": "PASS",
+ "gate_mode": "preferred",
+ "n_anchors": 240,
+ "anchors": [
+  {
+   "recording_id": "recording_0050",
+   "split": "DEV",
+   "window_start_s": 44.65,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9794,
+    "spec_corr_min": 0.9932,
+    "mrstft_max": 0.0256,
+    "rms_spread_db": 0.1553,
+    "collapse_db": -0.1553,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9984,
+    "out_raw_db": -3.9498
+   }
+  },
+  {
+   "recording_id": "recording_0050",
+   "split": "DEV",
+   "window_start_s": 60.93,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.8523,
+    "spec_corr_min": 0.9896,
+    "mrstft_max": 0.0591,
+    "rms_spread_db": 0.9478,
+    "collapse_db": -0.9478,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9973,
+    "out_raw_db": -4.2312
+   }
+  },
+  {
+   "recording_id": "recording_0050",
+   "split": "DEV",
+   "window_start_s": 93.36,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.973,
+    "spec_corr_min": 0.9948,
+    "mrstft_max": 0.061,
+    "rms_spread_db": 0.6538,
+    "collapse_db": -0.0,
+    "amplify_db": 0.6538,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9974,
+    "out_raw_db": -5.1916
+   }
+  },
+  {
+   "recording_id": "recording_0050",
+   "split": "DEV",
+   "window_start_s": 123.44,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9761,
+    "spec_corr_min": 0.9896,
+    "mrstft_max": 0.0716,
+    "rms_spread_db": 0.3238,
+    "collapse_db": -0.052,
+    "amplify_db": 0.2718,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9977,
+    "out_raw_db": -4.8749
+   }
+  },
+  {
+   "recording_id": "recording_0042",
+   "split": "DEV",
+   "window_start_s": 42.9,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9712,
+    "spec_corr_min": 0.9958,
+    "mrstft_max": 0.0224,
+    "rms_spread_db": 0.7723,
+    "collapse_db": -0.0906,
+    "amplify_db": 0.6817,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9991,
+    "out_raw_db": -6.1095
+   }
+  },
+  {
+   "recording_id": "recording_0042",
+   "split": "DEV",
+   "window_start_s": 54.3,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9687,
+    "spec_corr_min": 0.9931,
+    "mrstft_max": 0.0468,
+    "rms_spread_db": 1.034,
+    "collapse_db": -0.6123,
+    "amplify_db": 0.4217,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9983,
+    "out_raw_db": -5.7707
+   }
+  },
+  {
+   "recording_id": "recording_0042",
+   "split": "DEV",
+   "window_start_s": 66.4,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9854,
+    "spec_corr_min": 0.9973,
+    "mrstft_max": 0.0209,
+    "rms_spread_db": 0.3934,
+    "collapse_db": -0.0,
+    "amplify_db": 0.3934,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9993,
+    "out_raw_db": -5.3974
+   }
+  },
+  {
+   "recording_id": "recording_0042",
+   "split": "DEV",
+   "window_start_s": 78.97,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9918,
+    "spec_corr_min": 0.9962,
+    "mrstft_max": 0.0156,
+    "rms_spread_db": 0.1126,
+    "collapse_db": -0.0485,
+    "amplify_db": 0.0641,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.999,
+    "out_raw_db": -5.5494
+   }
+  },
+  {
+   "recording_id": "recording_0042",
+   "split": "DEV",
+   "window_start_s": 92.7,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.957,
+    "spec_corr_min": 0.996,
+    "mrstft_max": 0.0193,
+    "rms_spread_db": 0.4783,
+    "collapse_db": 0.0,
+    "amplify_db": 0.4783,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9992,
+    "out_raw_db": -5.7744
+   }
+  },
+  {
+   "recording_id": "recording_0042",
+   "split": "DEV",
+   "window_start_s": 104.32,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9794,
+    "spec_corr_min": 0.996,
+    "mrstft_max": 0.0223,
+    "rms_spread_db": 0.2798,
+    "collapse_db": -0.016,
+    "amplify_db": 0.2638,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9975,
+    "out_raw_db": -6.1509
+   }
+  },
+  {
+   "recording_id": "recording_0015",
+   "split": "DEV",
+   "window_start_s": 47.07,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9865,
+    "spec_corr_min": 0.9952,
+    "mrstft_max": 0.0241,
+    "rms_spread_db": 0.2574,
+    "collapse_db": -0.2574,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9982,
+    "out_raw_db": -4.3927
+   }
+  },
+  {
+   "recording_id": "recording_0015",
+   "split": "DEV",
+   "window_start_s": 61.81,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9878,
+    "spec_corr_min": 0.9949,
+    "mrstft_max": 0.0257,
+    "rms_spread_db": 0.6892,
+    "collapse_db": -0.2387,
+    "amplify_db": 0.4505,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9991,
+    "out_raw_db": -4.5797
+   }
+  },
+  {
+   "recording_id": "recording_0015",
+   "split": "DEV",
+   "window_start_s": 77.31,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9891,
+    "spec_corr_min": 0.9942,
+    "mrstft_max": 0.0212,
+    "rms_spread_db": 0.6887,
+    "collapse_db": -0.6887,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9989,
+    "out_raw_db": -3.7364
+   }
+  },
+  {
+   "recording_id": "recording_0015",
+   "split": "DEV",
+   "window_start_s": 92.73,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.97,
+    "spec_corr_min": 0.995,
+    "mrstft_max": 0.0204,
+    "rms_spread_db": 0.6648,
+    "collapse_db": -0.6648,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.998,
+    "out_raw_db": -3.9081
+   }
+  },
+  {
+   "recording_id": "recording_0015",
+   "split": "DEV",
+   "window_start_s": 108.16,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9443,
+    "spec_corr_min": 0.9919,
+    "mrstft_max": 0.0402,
+    "rms_spread_db": 0.3557,
+    "collapse_db": -0.3557,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9966,
+    "out_raw_db": -3.9617
+   }
+  },
+  {
+   "recording_id": "recording_0015",
+   "split": "DEV",
+   "window_start_s": 124.49,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9855,
+    "spec_corr_min": 0.9922,
+    "mrstft_max": 0.0294,
+    "rms_spread_db": 0.5615,
+    "collapse_db": -0.2452,
+    "amplify_db": 0.3163,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9977,
+    "out_raw_db": -4.2043
+   }
+  },
+  {
+   "recording_id": "recording_0014",
+   "split": "DEV",
+   "window_start_s": 47.82,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9987,
+    "spec_corr_min": 0.9948,
+    "mrstft_max": 0.0308,
+    "rms_spread_db": 0.0688,
+    "collapse_db": 0.0,
+    "amplify_db": 0.0688,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9982,
+    "out_raw_db": -3.4285
+   }
+  },
+  {
+   "recording_id": "recording_0014",
+   "split": "DEV",
+   "window_start_s": 65.05,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9937,
+    "spec_corr_min": 0.9861,
+    "mrstft_max": 0.0698,
+    "rms_spread_db": 0.1747,
+    "collapse_db": -0.0784,
+    "amplify_db": 0.0963,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9972,
+    "out_raw_db": -3.5216
+   }
+  },
+  {
+   "recording_id": "recording_0014",
+   "split": "DEV",
+   "window_start_s": 82.87,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9863,
+    "spec_corr_min": 0.9949,
+    "mrstft_max": 0.0572,
+    "rms_spread_db": 0.5088,
+    "collapse_db": -0.36,
+    "amplify_db": 0.1488,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9971,
+    "out_raw_db": -4.629
+   }
+  },
+  {
+   "recording_id": "recording_0014",
+   "split": "DEV",
+   "window_start_s": 100.64,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9813,
+    "spec_corr_min": 0.991,
+    "mrstft_max": 0.0824,
+    "rms_spread_db": 0.4254,
+    "collapse_db": 0.0,
+    "amplify_db": 0.4254,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9978,
+    "out_raw_db": -3.7946
+   }
+  },
+  {
+   "recording_id": "recording_0014",
+   "split": "DEV",
+   "window_start_s": 118.79,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9983,
+    "spec_corr_min": 0.9912,
+    "mrstft_max": 0.0724,
+    "rms_spread_db": 0.1527,
+    "collapse_db": -0.0039,
+    "amplify_db": 0.1488,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9958,
+    "out_raw_db": -3.5679
+   }
+  },
+  {
+   "recording_id": "recording_0014",
+   "split": "DEV",
+   "window_start_s": 135.76,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9926,
+    "spec_corr_min": 0.9928,
+    "mrstft_max": 0.0698,
+    "rms_spread_db": 0.3657,
+    "collapse_db": -0.1763,
+    "amplify_db": 0.1894,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9956,
+    "out_raw_db": -3.4405
+   }
+  },
+  {
+   "recording_id": "recording_0046",
+   "split": "DEV",
+   "window_start_s": 48.62,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9691,
+    "spec_corr_min": 0.9771,
+    "mrstft_max": 0.044,
+    "rms_spread_db": 1.9593,
+    "collapse_db": -0.0,
+    "amplify_db": 1.9593,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9927,
+    "out_raw_db": -3.3045
+   }
+  },
+  {
+   "recording_id": "recording_0046",
+   "split": "DEV",
+   "window_start_s": 65.05,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9194,
+    "spec_corr_min": 0.9878,
+    "mrstft_max": 0.0627,
+    "rms_spread_db": 0.8294,
+    "collapse_db": -0.8294,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9944,
+    "out_raw_db": -4.6706
+   }
+  },
+  {
+   "recording_id": "recording_0046",
+   "split": "DEV",
+   "window_start_s": 81.19,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9762,
+    "spec_corr_min": 0.9935,
+    "mrstft_max": 0.0272,
+    "rms_spread_db": 0.3862,
+    "collapse_db": -0.2027,
+    "amplify_db": 0.1835,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9978,
+    "out_raw_db": -4.6686
+   }
+  },
+  {
+   "recording_id": "recording_0046",
+   "split": "DEV",
+   "window_start_s": 99.6,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9925,
+    "spec_corr_min": 0.9961,
+    "mrstft_max": 0.0293,
+    "rms_spread_db": 0.0357,
+    "collapse_db": -0.0,
+    "amplify_db": 0.0357,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9981,
+    "out_raw_db": -4.6863
+   }
+  },
+  {
+   "recording_id": "recording_0046",
+   "split": "DEV",
+   "window_start_s": 116.49,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9783,
+    "spec_corr_min": 0.9918,
+    "mrstft_max": 0.0436,
+    "rms_spread_db": 1.0495,
+    "collapse_db": -0.8767,
+    "amplify_db": 0.1728,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9965,
+    "out_raw_db": -4.2358
+   }
+  },
+  {
+   "recording_id": "recording_0046",
+   "split": "DEV",
+   "window_start_s": 134.99,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9916,
+    "spec_corr_min": 0.9968,
+    "mrstft_max": 0.0261,
+    "rms_spread_db": 0.1974,
+    "collapse_db": -0.1974,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9989,
+    "out_raw_db": -5.2007
+   }
+  },
+  {
+   "recording_id": "recording_0013",
+   "split": "DEV",
+   "window_start_s": 47.9,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9879,
+    "spec_corr_min": 0.9972,
+    "mrstft_max": 0.0311,
+    "rms_spread_db": 0.1039,
+    "collapse_db": -0.0459,
+    "amplify_db": 0.058,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9922,
+    "out_raw_db": -5.1745
+   }
+  },
+  {
+   "recording_id": "recording_0013",
+   "split": "DEV",
+   "window_start_s": 63.23,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9768,
+    "spec_corr_min": 0.9946,
+    "mrstft_max": 0.0531,
+    "rms_spread_db": 1.7098,
+    "collapse_db": -1.6951,
+    "amplify_db": 0.0146,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.99,
+    "out_raw_db": -4.4761
+   }
+  },
+  {
+   "recording_id": "recording_0013",
+   "split": "DEV",
+   "window_start_s": 80.28,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9894,
+    "spec_corr_min": 0.9952,
+    "mrstft_max": 0.0744,
+    "rms_spread_db": 0.3718,
+    "collapse_db": -0.0429,
+    "amplify_db": 0.3289,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9863,
+    "out_raw_db": -5.8131
+   }
+  },
+  {
+   "recording_id": "recording_0013",
+   "split": "DEV",
+   "window_start_s": 97.72,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9651,
+    "spec_corr_min": 0.9882,
+    "mrstft_max": 0.0757,
+    "rms_spread_db": 1.2308,
+    "collapse_db": -1.2148,
+    "amplify_db": 0.016,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9733,
+    "out_raw_db": -5.2026
+   }
+  },
+  {
+   "recording_id": "recording_0013",
+   "split": "DEV",
+   "window_start_s": 131.71,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9583,
+    "spec_corr_min": 0.9951,
+    "mrstft_max": 0.0341,
+    "rms_spread_db": 0.2547,
+    "collapse_db": -0.2547,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9902,
+    "out_raw_db": -4.4506
+   }
+  },
+  {
+   "recording_id": "recording_0008",
+   "split": "DEV",
+   "window_start_s": 48.63,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9881,
+    "spec_corr_min": 0.9897,
+    "mrstft_max": 0.0562,
+    "rms_spread_db": 0.5198,
+    "collapse_db": 0.0,
+    "amplify_db": 0.5198,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9957,
+    "out_raw_db": -4.6325
+   }
+  },
+  {
+   "recording_id": "recording_0008",
+   "split": "DEV",
+   "window_start_s": 67.46,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9454,
+    "spec_corr_min": 0.989,
+    "mrstft_max": 0.0679,
+    "rms_spread_db": 0.5408,
+    "collapse_db": -0.4689,
+    "amplify_db": 0.0718,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9955,
+    "out_raw_db": -4.4468
+   }
+  },
+  {
+   "recording_id": "recording_0008",
+   "split": "DEV",
+   "window_start_s": 87.92,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9891,
+    "spec_corr_min": 0.99,
+    "mrstft_max": 0.0584,
+    "rms_spread_db": 0.7652,
+    "collapse_db": -0.6581,
+    "amplify_db": 0.1072,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9963,
+    "out_raw_db": -4.0693
+   }
+  },
+  {
+   "recording_id": "recording_0008",
+   "split": "DEV",
+   "window_start_s": 103.85,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9898,
+    "spec_corr_min": 0.9913,
+    "mrstft_max": 0.0397,
+    "rms_spread_db": 0.3694,
+    "collapse_db": -0.3694,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9973,
+    "out_raw_db": -4.3576
+   }
+  },
+  {
+   "recording_id": "recording_0008",
+   "split": "DEV",
+   "window_start_s": 123.57,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9963,
+    "spec_corr_min": 0.9959,
+    "mrstft_max": 0.0334,
+    "rms_spread_db": 0.3493,
+    "collapse_db": -0.2624,
+    "amplify_db": 0.0869,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9985,
+    "out_raw_db": -3.9151
+   }
+  },
+  {
+   "recording_id": "recording_0008",
+   "split": "DEV",
+   "window_start_s": 141.56,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9657,
+    "spec_corr_min": 0.9755,
+    "mrstft_max": 0.0911,
+    "rms_spread_db": 0.7219,
+    "collapse_db": -0.5174,
+    "amplify_db": 0.2045,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9938,
+    "out_raw_db": -4.6717
+   }
+  },
+  {
+   "recording_id": "recording_0001",
+   "split": "TRAIN",
+   "window_start_s": 45.2,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9888,
+    "spec_corr_min": 0.9879,
+    "mrstft_max": 0.0737,
+    "rms_spread_db": 0.5914,
+    "collapse_db": -0.3374,
+    "amplify_db": 0.2539,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9968,
+    "out_raw_db": -4.4895
+   }
+  },
+  {
+   "recording_id": "recording_0001",
+   "split": "TRAIN",
+   "window_start_s": 63.57,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9494,
+    "spec_corr_min": 0.9848,
+    "mrstft_max": 0.0722,
+    "rms_spread_db": 0.8001,
+    "collapse_db": -0.1956,
+    "amplify_db": 0.6045,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9976,
+    "out_raw_db": -4.0204
+   }
+  },
+  {
+   "recording_id": "recording_0001",
+   "split": "TRAIN",
+   "window_start_s": 80.69,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9766,
+    "spec_corr_min": 0.9826,
+    "mrstft_max": 0.088,
+    "rms_spread_db": 0.8173,
+    "collapse_db": -0.3576,
+    "amplify_db": 0.4597,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9952,
+    "out_raw_db": -5.3135
+   }
+  },
+  {
+   "recording_id": "recording_0001",
+   "split": "TRAIN",
+   "window_start_s": 97.38,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.994,
+    "spec_corr_min": 0.9855,
+    "mrstft_max": 0.068,
+    "rms_spread_db": 0.1855,
+    "collapse_db": -0.0695,
+    "amplify_db": 0.116,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9982,
+    "out_raw_db": -4.2901
+   }
+  },
+  {
+   "recording_id": "recording_0001",
+   "split": "TRAIN",
+   "window_start_s": 111.59,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9955,
+    "spec_corr_min": 0.9914,
+    "mrstft_max": 0.0411,
+    "rms_spread_db": 0.2105,
+    "collapse_db": -0.2105,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.998,
+    "out_raw_db": -3.532
+   }
+  },
+  {
+   "recording_id": "recording_0002",
+   "split": "TRAIN",
+   "window_start_s": 43.86,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9944,
+    "spec_corr_min": 0.9969,
+    "mrstft_max": 0.02,
+    "rms_spread_db": 0.3702,
+    "collapse_db": -0.3702,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9992,
+    "out_raw_db": -4.078
+   }
+  },
+  {
+   "recording_id": "recording_0002",
+   "split": "TRAIN",
+   "window_start_s": 72.15,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9733,
+    "spec_corr_min": 0.9951,
+    "mrstft_max": 0.027,
+    "rms_spread_db": 0.7455,
+    "collapse_db": -0.4875,
+    "amplify_db": 0.2579,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9993,
+    "out_raw_db": -4.2009
+   }
+  },
+  {
+   "recording_id": "recording_0002",
+   "split": "TRAIN",
+   "window_start_s": 87.84,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9972,
+    "spec_corr_min": 0.9978,
+    "mrstft_max": 0.011,
+    "rms_spread_db": 0.1566,
+    "collapse_db": -0.1566,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9997,
+    "out_raw_db": -4.0729
+   }
+  },
+  {
+   "recording_id": "recording_0002",
+   "split": "TRAIN",
+   "window_start_s": 101.11,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9442,
+    "spec_corr_min": 0.9906,
+    "mrstft_max": 0.0582,
+    "rms_spread_db": 1.6304,
+    "collapse_db": -1.2749,
+    "amplify_db": 0.3555,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9962,
+    "out_raw_db": -4.4718
+   }
+  },
+  {
+   "recording_id": "recording_0002",
+   "split": "TRAIN",
+   "window_start_s": 115.48,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9906,
+    "spec_corr_min": 0.9966,
+    "mrstft_max": 0.0191,
+    "rms_spread_db": 0.7487,
+    "collapse_db": -0.6713,
+    "amplify_db": 0.0774,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9988,
+    "out_raw_db": -4.4806
+   }
+  },
+  {
+   "recording_id": "recording_0004",
+   "split": "TRAIN",
+   "window_start_s": 57.37,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "friction",
+    "impact"
+   ],
+   "interaction_labels": [
+    "friction",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.905,
+    "spec_corr_min": 0.9494,
+    "mrstft_max": 0.2276,
+    "rms_spread_db": 0.5548,
+    "collapse_db": -0.0,
+    "amplify_db": 0.5548,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9759,
+    "out_raw_db": -5.612
+   }
+  },
+  {
+   "recording_id": "recording_0004",
+   "split": "TRAIN",
+   "window_start_s": 52.53,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "friction",
+    "impact"
+   ],
+   "interaction_labels": [
+    "dense",
+    "friction",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9549,
+    "spec_corr_min": 0.9845,
+    "mrstft_max": 0.0695,
+    "rms_spread_db": 1.1729,
+    "collapse_db": -0.0448,
+    "amplify_db": 1.128,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9965,
+    "out_raw_db": -5.3168
+   }
+  },
+  {
+   "recording_id": "recording_0004",
+   "split": "TRAIN",
+   "window_start_s": 74.93,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9915,
+    "spec_corr_min": 0.9922,
+    "mrstft_max": 0.0472,
+    "rms_spread_db": 0.68,
+    "collapse_db": -0.3966,
+    "amplify_db": 0.2834,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9982,
+    "out_raw_db": -3.0441
+   }
+  },
+  {
+   "recording_id": "recording_0004",
+   "split": "TRAIN",
+   "window_start_s": 99.49,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9911,
+    "spec_corr_min": 0.9908,
+    "mrstft_max": 0.0738,
+    "rms_spread_db": 0.2064,
+    "collapse_db": -0.1841,
+    "amplify_db": 0.0223,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9969,
+    "out_raw_db": -4.5934
+   }
+  },
+  {
+   "recording_id": "recording_0004",
+   "split": "TRAIN",
+   "window_start_s": 120.77,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9844,
+    "spec_corr_min": 0.9852,
+    "mrstft_max": 0.0742,
+    "rms_spread_db": 1.1796,
+    "collapse_db": -0.1083,
+    "amplify_db": 1.0713,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9961,
+    "out_raw_db": -4.0161
+   }
+  },
+  {
+   "recording_id": "recording_0006",
+   "split": "TRAIN",
+   "window_start_s": 47.2,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.8872,
+    "spec_corr_min": 0.9912,
+    "mrstft_max": 0.0403,
+    "rms_spread_db": 0.8543,
+    "collapse_db": -0.8543,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9977,
+    "out_raw_db": -4.0002
+   }
+  },
+  {
+   "recording_id": "recording_0006",
+   "split": "TRAIN",
+   "window_start_s": 64.58,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.8769,
+    "spec_corr_min": 0.9813,
+    "mrstft_max": 0.0989,
+    "rms_spread_db": 1.0325,
+    "collapse_db": -0.546,
+    "amplify_db": 0.4865,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.995,
+    "out_raw_db": -5.5468
+   }
+  },
+  {
+   "recording_id": "recording_0006",
+   "split": "TRAIN",
+   "window_start_s": 81.85,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9416,
+    "spec_corr_min": 0.9891,
+    "mrstft_max": 0.0674,
+    "rms_spread_db": 0.5151,
+    "collapse_db": -0.5151,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9971,
+    "out_raw_db": -4.5471
+   }
+  },
+  {
+   "recording_id": "recording_0006",
+   "split": "TRAIN",
+   "window_start_s": 99.27,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9801,
+    "spec_corr_min": 0.9932,
+    "mrstft_max": 0.0495,
+    "rms_spread_db": 1.0851,
+    "collapse_db": -1.0851,
+    "amplify_db": -0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9981,
+    "out_raw_db": -4.3887
+   }
+  },
+  {
+   "recording_id": "recording_0006",
+   "split": "TRAIN",
+   "window_start_s": 115.06,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9516,
+    "spec_corr_min": 0.9912,
+    "mrstft_max": 0.0587,
+    "rms_spread_db": 0.5009,
+    "collapse_db": -0.0,
+    "amplify_db": 0.5009,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9974,
+    "out_raw_db": -5.2064
+   }
+  },
+  {
+   "recording_id": "recording_0006",
+   "split": "TRAIN",
+   "window_start_s": 135.2,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9799,
+    "spec_corr_min": 0.9857,
+    "mrstft_max": 0.0886,
+    "rms_spread_db": 0.0334,
+    "collapse_db": -0.0334,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9969,
+    "out_raw_db": -4.6474
+   }
+  },
+  {
+   "recording_id": "recording_0009",
+   "split": "TRAIN",
+   "window_start_s": 43.1,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9713,
+    "spec_corr_min": 0.9939,
+    "mrstft_max": 0.0412,
+    "rms_spread_db": 0.3732,
+    "collapse_db": -0.0031,
+    "amplify_db": 0.3702,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9969,
+    "out_raw_db": -5.0805
+   }
+  },
+  {
+   "recording_id": "recording_0009",
+   "split": "TRAIN",
+   "window_start_s": 57.32,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9861,
+    "spec_corr_min": 0.9949,
+    "mrstft_max": 0.0221,
+    "rms_spread_db": 0.3422,
+    "collapse_db": -0.2907,
+    "amplify_db": 0.0514,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9985,
+    "out_raw_db": -4.3479
+   }
+  },
+  {
+   "recording_id": "recording_0009",
+   "split": "TRAIN",
+   "window_start_s": 69.22,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9834,
+    "spec_corr_min": 0.9958,
+    "mrstft_max": 0.0165,
+    "rms_spread_db": 0.1107,
+    "collapse_db": -0.09,
+    "amplify_db": 0.0208,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.999,
+    "out_raw_db": -4.6803
+   }
+  },
+  {
+   "recording_id": "recording_0009",
+   "split": "TRAIN",
+   "window_start_s": 83.46,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9897,
+    "spec_corr_min": 0.9972,
+    "mrstft_max": 0.0157,
+    "rms_spread_db": 0.5307,
+    "collapse_db": -0.5307,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9993,
+    "out_raw_db": -4.2737
+   }
+  },
+  {
+   "recording_id": "recording_0009",
+   "split": "TRAIN",
+   "window_start_s": 109.0,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9367,
+    "spec_corr_min": 0.9951,
+    "mrstft_max": 0.0239,
+    "rms_spread_db": 0.4312,
+    "collapse_db": -0.4312,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9988,
+    "out_raw_db": -5.1186
+   }
+  },
+  {
+   "recording_id": "recording_0010",
+   "split": "TRAIN",
+   "window_start_s": 92.82,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact"
+   ],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9602,
+    "spec_corr_min": 0.9952,
+    "mrstft_max": 0.0267,
+    "rms_spread_db": 0.3312,
+    "collapse_db": 0.0,
+    "amplify_db": 0.3312,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.999,
+    "out_raw_db": -5.3188
+   }
+  },
+  {
+   "recording_id": "recording_0010",
+   "split": "TRAIN",
+   "window_start_s": 43.87,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9573,
+    "spec_corr_min": 0.9951,
+    "mrstft_max": 0.0308,
+    "rms_spread_db": 0.1922,
+    "collapse_db": -0.1718,
+    "amplify_db": 0.0204,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9993,
+    "out_raw_db": -5.1247
+   }
+  },
+  {
+   "recording_id": "recording_0010",
+   "split": "TRAIN",
+   "window_start_s": 61.6,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9253,
+    "spec_corr_min": 0.9935,
+    "mrstft_max": 0.0306,
+    "rms_spread_db": 0.7148,
+    "collapse_db": -0.7148,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9987,
+    "out_raw_db": -4.4194
+   }
+  },
+  {
+   "recording_id": "recording_0010",
+   "split": "TRAIN",
+   "window_start_s": 75.16,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.911,
+    "spec_corr_min": 0.9889,
+    "mrstft_max": 0.0345,
+    "rms_spread_db": 0.8034,
+    "collapse_db": -0.7246,
+    "amplify_db": 0.0789,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9987,
+    "out_raw_db": -4.6319
+   }
+  },
+  {
+   "recording_id": "recording_0010",
+   "split": "TRAIN",
+   "window_start_s": 89.74,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact"
+   ],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9622,
+    "spec_corr_min": 0.9942,
+    "mrstft_max": 0.0324,
+    "rms_spread_db": 0.3494,
+    "collapse_db": -0.3494,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.997,
+    "out_raw_db": -3.8668
+   }
+  },
+  {
+   "recording_id": "recording_0010",
+   "split": "TRAIN",
+   "window_start_s": 104.34,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9189,
+    "spec_corr_min": 0.9859,
+    "mrstft_max": 0.0716,
+    "rms_spread_db": 0.5097,
+    "collapse_db": -0.4481,
+    "amplify_db": 0.0616,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9933,
+    "out_raw_db": -5.6862
+   }
+  },
+  {
+   "recording_id": "recording_0011",
+   "split": "TRAIN",
+   "window_start_s": 57.29,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact"
+   ],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9332,
+    "spec_corr_min": 0.9889,
+    "mrstft_max": 0.0687,
+    "rms_spread_db": 1.8332,
+    "collapse_db": -0.6742,
+    "amplify_db": 1.159,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9954,
+    "out_raw_db": -4.3368
+   }
+  },
+  {
+   "recording_id": "recording_0011",
+   "split": "TRAIN",
+   "window_start_s": 44.52,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9934,
+    "spec_corr_min": 0.9954,
+    "mrstft_max": 0.0281,
+    "rms_spread_db": 0.0922,
+    "collapse_db": -0.0922,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.999,
+    "out_raw_db": -4.4306
+   }
+  },
+  {
+   "recording_id": "recording_0011",
+   "split": "TRAIN",
+   "window_start_s": 73.65,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9951,
+    "spec_corr_min": 0.9958,
+    "mrstft_max": 0.0166,
+    "rms_spread_db": 0.1259,
+    "collapse_db": -0.1259,
+    "amplify_db": -0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9993,
+    "out_raw_db": -3.3817
+   }
+  },
+  {
+   "recording_id": "recording_0011",
+   "split": "TRAIN",
+   "window_start_s": 88.65,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9948,
+    "spec_corr_min": 0.9934,
+    "mrstft_max": 0.0449,
+    "rms_spread_db": 0.434,
+    "collapse_db": 0.0,
+    "amplify_db": 0.434,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9984,
+    "out_raw_db": -4.4193
+   }
+  },
+  {
+   "recording_id": "recording_0011",
+   "split": "TRAIN",
+   "window_start_s": 105.42,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9855,
+    "spec_corr_min": 0.9912,
+    "mrstft_max": 0.0707,
+    "rms_spread_db": 0.1213,
+    "collapse_db": 0.0,
+    "amplify_db": 0.1213,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.996,
+    "out_raw_db": -4.6432
+   }
+  },
+  {
+   "recording_id": "recording_0012",
+   "split": "TRAIN",
+   "window_start_s": 46.59,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9561,
+    "spec_corr_min": 0.9918,
+    "mrstft_max": 0.0525,
+    "rms_spread_db": 0.3674,
+    "collapse_db": 0.0,
+    "amplify_db": 0.3674,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9966,
+    "out_raw_db": -5.4414
+   }
+  },
+  {
+   "recording_id": "recording_0012",
+   "split": "TRAIN",
+   "window_start_s": 64.86,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9867,
+    "spec_corr_min": 0.9972,
+    "mrstft_max": 0.016,
+    "rms_spread_db": 0.4107,
+    "collapse_db": -0.4107,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9994,
+    "out_raw_db": -5.1697
+   }
+  },
+  {
+   "recording_id": "recording_0012",
+   "split": "TRAIN",
+   "window_start_s": 80.13,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9603,
+    "spec_corr_min": 0.9958,
+    "mrstft_max": 0.0347,
+    "rms_spread_db": 1.1101,
+    "collapse_db": 0.0,
+    "amplify_db": 1.1101,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9987,
+    "out_raw_db": -5.4056
+   }
+  },
+  {
+   "recording_id": "recording_0012",
+   "split": "TRAIN",
+   "window_start_s": 98.06,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9904,
+    "spec_corr_min": 0.9967,
+    "mrstft_max": 0.0265,
+    "rms_spread_db": 0.5164,
+    "collapse_db": -0.4275,
+    "amplify_db": 0.0889,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9981,
+    "out_raw_db": -5.1288
+   }
+  },
+  {
+   "recording_id": "recording_0012",
+   "split": "TRAIN",
+   "window_start_s": 112.48,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9664,
+    "spec_corr_min": 0.995,
+    "mrstft_max": 0.0346,
+    "rms_spread_db": 0.5472,
+    "collapse_db": -0.0121,
+    "amplify_db": 0.5351,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9983,
+    "out_raw_db": -5.3995
+   }
+  },
+  {
+   "recording_id": "recording_0012",
+   "split": "TRAIN",
+   "window_start_s": 129.5,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9852,
+    "spec_corr_min": 0.9964,
+    "mrstft_max": 0.026,
+    "rms_spread_db": 0.6545,
+    "collapse_db": -0.3658,
+    "amplify_db": 0.2887,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.999,
+    "out_raw_db": -5.6231
+   }
+  },
+  {
+   "recording_id": "recording_0017",
+   "split": "TRAIN",
+   "window_start_s": 47.2,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9382,
+    "spec_corr_min": 0.9939,
+    "mrstft_max": 0.0287,
+    "rms_spread_db": 1.0433,
+    "collapse_db": -0.9355,
+    "amplify_db": 0.1078,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9979,
+    "out_raw_db": -4.0669
+   }
+  },
+  {
+   "recording_id": "recording_0017",
+   "split": "TRAIN",
+   "window_start_s": 63.67,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9858,
+    "spec_corr_min": 0.995,
+    "mrstft_max": 0.0328,
+    "rms_spread_db": 0.2287,
+    "collapse_db": -0.0,
+    "amplify_db": 0.2287,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9985,
+    "out_raw_db": -5.1638
+   }
+  },
+  {
+   "recording_id": "recording_0017",
+   "split": "TRAIN",
+   "window_start_s": 77.97,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.8764,
+    "spec_corr_min": 0.9938,
+    "mrstft_max": 0.0194,
+    "rms_spread_db": 0.4676,
+    "collapse_db": 0.0,
+    "amplify_db": 0.4676,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9984,
+    "out_raw_db": -5.1463
+   }
+  },
+  {
+   "recording_id": "recording_0017",
+   "split": "TRAIN",
+   "window_start_s": 95.2,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9326,
+    "spec_corr_min": 0.995,
+    "mrstft_max": 0.022,
+    "rms_spread_db": 0.1655,
+    "collapse_db": -0.1655,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9985,
+    "out_raw_db": -4.6631
+   }
+  },
+  {
+   "recording_id": "recording_0017",
+   "split": "TRAIN",
+   "window_start_s": 111.29,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9586,
+    "spec_corr_min": 0.9926,
+    "mrstft_max": 0.0312,
+    "rms_spread_db": 0.2293,
+    "collapse_db": 0.0,
+    "amplify_db": 0.2293,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.999,
+    "out_raw_db": -5.1272
+   }
+  },
+  {
+   "recording_id": "recording_0017",
+   "split": "TRAIN",
+   "window_start_s": 128.48,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9704,
+    "spec_corr_min": 0.9934,
+    "mrstft_max": 0.0281,
+    "rms_spread_db": 0.2101,
+    "collapse_db": 0.0,
+    "amplify_db": 0.2101,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9979,
+    "out_raw_db": -4.8206
+   }
+  },
+  {
+   "recording_id": "recording_0019",
+   "split": "TRAIN",
+   "window_start_s": 65.13,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "strong_impact"
+   ],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9835,
+    "spec_corr_min": 0.994,
+    "mrstft_max": 0.0397,
+    "rms_spread_db": 0.4822,
+    "collapse_db": -0.0162,
+    "amplify_db": 0.466,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9975,
+    "out_raw_db": -5.3313
+   }
+  },
+  {
+   "recording_id": "recording_0019",
+   "split": "TRAIN",
+   "window_start_s": 52.39,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9585,
+    "spec_corr_min": 0.9881,
+    "mrstft_max": 0.0581,
+    "rms_spread_db": 0.922,
+    "collapse_db": -0.1262,
+    "amplify_db": 0.7958,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.997,
+    "out_raw_db": -4.757
+   }
+  },
+  {
+   "recording_id": "recording_0019",
+   "split": "TRAIN",
+   "window_start_s": 73.61,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.988,
+    "spec_corr_min": 0.994,
+    "mrstft_max": 0.0301,
+    "rms_spread_db": 0.2688,
+    "collapse_db": 0.0,
+    "amplify_db": 0.2688,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9987,
+    "out_raw_db": -4.5753
+   }
+  },
+  {
+   "recording_id": "recording_0019",
+   "split": "TRAIN",
+   "window_start_s": 94.11,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9931,
+    "spec_corr_min": 0.9932,
+    "mrstft_max": 0.0386,
+    "rms_spread_db": 0.3909,
+    "collapse_db": -0.3909,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9952,
+    "out_raw_db": -3.8568
+   }
+  },
+  {
+   "recording_id": "recording_0019",
+   "split": "TRAIN",
+   "window_start_s": 116.59,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9906,
+    "spec_corr_min": 0.9805,
+    "mrstft_max": 0.0924,
+    "rms_spread_db": 0.2976,
+    "collapse_db": -0.292,
+    "amplify_db": 0.0055,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9867,
+    "out_raw_db": -4.0746
+   }
+  },
+  {
+   "recording_id": "recording_0019",
+   "split": "TRAIN",
+   "window_start_s": 137.9,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9902,
+    "spec_corr_min": 0.9893,
+    "mrstft_max": 0.0482,
+    "rms_spread_db": 0.3841,
+    "collapse_db": -0.3333,
+    "amplify_db": 0.0508,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9965,
+    "out_raw_db": -4.3153
+   }
+  },
+  {
+   "recording_id": "recording_0020",
+   "split": "TRAIN",
+   "window_start_s": 95.77,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact"
+   ],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9773,
+    "spec_corr_min": 0.9831,
+    "mrstft_max": 0.0937,
+    "rms_spread_db": 0.8583,
+    "collapse_db": -0.7532,
+    "amplify_db": 0.105,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9942,
+    "out_raw_db": -4.0924
+   }
+  },
+  {
+   "recording_id": "recording_0020",
+   "split": "TRAIN",
+   "window_start_s": 52.36,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9954,
+    "spec_corr_min": 0.9901,
+    "mrstft_max": 0.0683,
+    "rms_spread_db": 0.451,
+    "collapse_db": -0.0791,
+    "amplify_db": 0.3719,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.997,
+    "out_raw_db": -3.5372
+   }
+  },
+  {
+   "recording_id": "recording_0020",
+   "split": "TRAIN",
+   "window_start_s": 73.82,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9935,
+    "spec_corr_min": 0.9947,
+    "mrstft_max": 0.0241,
+    "rms_spread_db": 0.3068,
+    "collapse_db": 0.0,
+    "amplify_db": 0.3068,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9989,
+    "out_raw_db": -4.3386
+   }
+  },
+  {
+   "recording_id": "recording_0020",
+   "split": "TRAIN",
+   "window_start_s": 118.23,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9916,
+    "spec_corr_min": 0.9906,
+    "mrstft_max": 0.0579,
+    "rms_spread_db": 0.8003,
+    "collapse_db": -0.2814,
+    "amplify_db": 0.5189,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.998,
+    "out_raw_db": -4.1913
+   }
+  },
+  {
+   "recording_id": "recording_0020",
+   "split": "TRAIN",
+   "window_start_s": 138.88,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9933,
+    "spec_corr_min": 0.9916,
+    "mrstft_max": 0.0487,
+    "rms_spread_db": 0.1742,
+    "collapse_db": -0.0,
+    "amplify_db": 0.1742,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9983,
+    "out_raw_db": -3.8133
+   }
+  },
+  {
+   "recording_id": "recording_0023",
+   "split": "TRAIN",
+   "window_start_s": 82.86,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact"
+   ],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9518,
+    "spec_corr_min": 0.9929,
+    "mrstft_max": 0.0449,
+    "rms_spread_db": 0.9185,
+    "collapse_db": -0.6099,
+    "amplify_db": 0.3086,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9939,
+    "out_raw_db": -5.0497
+   }
+  },
+  {
+   "recording_id": "recording_0023",
+   "split": "TRAIN",
+   "window_start_s": 47.61,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9706,
+    "spec_corr_min": 0.9913,
+    "mrstft_max": 0.0371,
+    "rms_spread_db": 0.4569,
+    "collapse_db": -0.0,
+    "amplify_db": 0.4569,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9981,
+    "out_raw_db": -5.1672
+   }
+  },
+  {
+   "recording_id": "recording_0023",
+   "split": "TRAIN",
+   "window_start_s": 100.17,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9921,
+    "spec_corr_min": 0.9952,
+    "mrstft_max": 0.0309,
+    "rms_spread_db": 0.1795,
+    "collapse_db": -0.1795,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9983,
+    "out_raw_db": -5.0609
+   }
+  },
+  {
+   "recording_id": "recording_0023",
+   "split": "TRAIN",
+   "window_start_s": 117.85,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9592,
+    "spec_corr_min": 0.9904,
+    "mrstft_max": 0.0507,
+    "rms_spread_db": 1.0691,
+    "collapse_db": -0.3538,
+    "amplify_db": 0.7153,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9987,
+    "out_raw_db": -4.9297
+   }
+  },
+  {
+   "recording_id": "recording_0025",
+   "split": "TRAIN",
+   "window_start_s": 42.36,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9867,
+    "spec_corr_min": 0.9961,
+    "mrstft_max": 0.0237,
+    "rms_spread_db": 0.3653,
+    "collapse_db": -0.2567,
+    "amplify_db": 0.1086,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9988,
+    "out_raw_db": -4.5886
+   }
+  },
+  {
+   "recording_id": "recording_0025",
+   "split": "TRAIN",
+   "window_start_s": 56.82,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9756,
+    "spec_corr_min": 0.9946,
+    "mrstft_max": 0.0213,
+    "rms_spread_db": 0.8018,
+    "collapse_db": -0.5369,
+    "amplify_db": 0.2649,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9993,
+    "out_raw_db": -3.9418
+   }
+  },
+  {
+   "recording_id": "recording_0025",
+   "split": "TRAIN",
+   "window_start_s": 71.79,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9929,
+    "spec_corr_min": 0.9951,
+    "mrstft_max": 0.0329,
+    "rms_spread_db": 0.7115,
+    "collapse_db": -0.7115,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9987,
+    "out_raw_db": -4.0269
+   }
+  },
+  {
+   "recording_id": "recording_0025",
+   "split": "TRAIN",
+   "window_start_s": 84.7,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9816,
+    "spec_corr_min": 0.9956,
+    "mrstft_max": 0.0204,
+    "rms_spread_db": 0.7527,
+    "collapse_db": 0.0,
+    "amplify_db": 0.7527,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9987,
+    "out_raw_db": -5.3975
+   }
+  },
+  {
+   "recording_id": "recording_0025",
+   "split": "TRAIN",
+   "window_start_s": 98.1,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9504,
+    "spec_corr_min": 0.9845,
+    "mrstft_max": 0.0754,
+    "rms_spread_db": 1.0371,
+    "collapse_db": -0.7194,
+    "amplify_db": 0.3178,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9971,
+    "out_raw_db": -5.4621
+   }
+  },
+  {
+   "recording_id": "recording_0025",
+   "split": "TRAIN",
+   "window_start_s": 111.4,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9125,
+    "spec_corr_min": 0.9888,
+    "mrstft_max": 0.0759,
+    "rms_spread_db": 0.4043,
+    "collapse_db": -0.3015,
+    "amplify_db": 0.1029,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9965,
+    "out_raw_db": -5.5867
+   }
+  },
+  {
+   "recording_id": "recording_0026",
+   "split": "TRAIN",
+   "window_start_s": 41.75,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9606,
+    "spec_corr_min": 0.9924,
+    "mrstft_max": 0.0424,
+    "rms_spread_db": 1.3234,
+    "collapse_db": -0.9744,
+    "amplify_db": 0.349,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9976,
+    "out_raw_db": -5.2153
+   }
+  },
+  {
+   "recording_id": "recording_0026",
+   "split": "TRAIN",
+   "window_start_s": 54.77,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9455,
+    "spec_corr_min": 0.992,
+    "mrstft_max": 0.0372,
+    "rms_spread_db": 0.6071,
+    "collapse_db": -0.6071,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9991,
+    "out_raw_db": -4.8456
+   }
+  },
+  {
+   "recording_id": "recording_0026",
+   "split": "TRAIN",
+   "window_start_s": 67.15,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9688,
+    "spec_corr_min": 0.9939,
+    "mrstft_max": 0.0507,
+    "rms_spread_db": 0.3179,
+    "collapse_db": 0.0,
+    "amplify_db": 0.3179,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9965,
+    "out_raw_db": -5.0976
+   }
+  },
+  {
+   "recording_id": "recording_0026",
+   "split": "TRAIN",
+   "window_start_s": 79.26,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9873,
+    "spec_corr_min": 0.9957,
+    "mrstft_max": 0.0218,
+    "rms_spread_db": 0.1908,
+    "collapse_db": -0.1908,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9989,
+    "out_raw_db": -5.0987
+   }
+  },
+  {
+   "recording_id": "recording_0026",
+   "split": "TRAIN",
+   "window_start_s": 94.18,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9783,
+    "spec_corr_min": 0.9944,
+    "mrstft_max": 0.0305,
+    "rms_spread_db": 0.1908,
+    "collapse_db": -0.0,
+    "amplify_db": 0.1908,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9973,
+    "out_raw_db": -4.9869
+   }
+  },
+  {
+   "recording_id": "recording_0026",
+   "split": "TRAIN",
+   "window_start_s": 107.06,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9935,
+    "spec_corr_min": 0.995,
+    "mrstft_max": 0.0376,
+    "rms_spread_db": 0.8166,
+    "collapse_db": -0.0189,
+    "amplify_db": 0.7977,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9973,
+    "out_raw_db": -5.0684
+   }
+  },
+  {
+   "recording_id": "recording_0027",
+   "split": "TRAIN",
+   "window_start_s": 43.48,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9197,
+    "spec_corr_min": 0.99,
+    "mrstft_max": 0.0515,
+    "rms_spread_db": 0.9641,
+    "collapse_db": -0.7708,
+    "amplify_db": 0.1933,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9984,
+    "out_raw_db": -5.4565
+   }
+  },
+  {
+   "recording_id": "recording_0027",
+   "split": "TRAIN",
+   "window_start_s": 56.71,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9814,
+    "spec_corr_min": 0.9962,
+    "mrstft_max": 0.0258,
+    "rms_spread_db": 0.4511,
+    "collapse_db": -0.4158,
+    "amplify_db": 0.0353,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9992,
+    "out_raw_db": -5.5315
+   }
+  },
+  {
+   "recording_id": "recording_0027",
+   "split": "TRAIN",
+   "window_start_s": 83.6,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9693,
+    "spec_corr_min": 0.9962,
+    "mrstft_max": 0.028,
+    "rms_spread_db": 0.535,
+    "collapse_db": -0.0,
+    "amplify_db": 0.535,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9985,
+    "out_raw_db": -6.2558
+   }
+  },
+  {
+   "recording_id": "recording_0027",
+   "split": "TRAIN",
+   "window_start_s": 94.71,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9876,
+    "spec_corr_min": 0.9966,
+    "mrstft_max": 0.0246,
+    "rms_spread_db": 0.2283,
+    "collapse_db": -0.0053,
+    "amplify_db": 0.2231,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9988,
+    "out_raw_db": -5.5735
+   }
+  },
+  {
+   "recording_id": "recording_0027",
+   "split": "TRAIN",
+   "window_start_s": 110.08,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9734,
+    "spec_corr_min": 0.994,
+    "mrstft_max": 0.0543,
+    "rms_spread_db": 0.58,
+    "collapse_db": -0.4686,
+    "amplify_db": 0.1114,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9969,
+    "out_raw_db": -5.8802
+   }
+  },
+  {
+   "recording_id": "recording_0028",
+   "split": "TRAIN",
+   "window_start_s": 74.11,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "strong_impact"
+   ],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9257,
+    "spec_corr_min": 0.9816,
+    "mrstft_max": 0.0973,
+    "rms_spread_db": 0.3956,
+    "collapse_db": -0.3956,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9843,
+    "out_raw_db": -5.0528
+   }
+  },
+  {
+   "recording_id": "recording_0028",
+   "split": "TRAIN",
+   "window_start_s": 49.03,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9233,
+    "spec_corr_min": 0.9922,
+    "mrstft_max": 0.0349,
+    "rms_spread_db": 0.6635,
+    "collapse_db": -0.6635,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9982,
+    "out_raw_db": -4.5691
+   }
+  },
+  {
+   "recording_id": "recording_0028",
+   "split": "TRAIN",
+   "window_start_s": 66.24,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "strong_impact"
+   ],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9033,
+    "spec_corr_min": 0.9917,
+    "mrstft_max": 0.0322,
+    "rms_spread_db": 1.5541,
+    "collapse_db": -0.4818,
+    "amplify_db": 1.0723,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9952,
+    "out_raw_db": -5.5357
+   }
+  },
+  {
+   "recording_id": "recording_0028",
+   "split": "TRAIN",
+   "window_start_s": 83.89,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9745,
+    "spec_corr_min": 0.9964,
+    "mrstft_max": 0.0264,
+    "rms_spread_db": 0.2413,
+    "collapse_db": -0.2024,
+    "amplify_db": 0.039,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9984,
+    "out_raw_db": -5.4388
+   }
+  },
+  {
+   "recording_id": "recording_0028",
+   "split": "TRAIN",
+   "window_start_s": 100.73,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9906,
+    "spec_corr_min": 0.9951,
+    "mrstft_max": 0.0331,
+    "rms_spread_db": 0.4662,
+    "collapse_db": -0.4662,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9974,
+    "out_raw_db": -4.9149
+   }
+  },
+  {
+   "recording_id": "recording_0028",
+   "split": "TRAIN",
+   "window_start_s": 120.03,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9701,
+    "spec_corr_min": 0.9962,
+    "mrstft_max": 0.016,
+    "rms_spread_db": 0.3811,
+    "collapse_db": -0.0805,
+    "amplify_db": 0.3007,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9986,
+    "out_raw_db": -5.2681
+   }
+  },
+  {
+   "recording_id": "recording_0029",
+   "split": "TRAIN",
+   "window_start_s": 48.53,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.962,
+    "spec_corr_min": 0.9943,
+    "mrstft_max": 0.0254,
+    "rms_spread_db": 0.4322,
+    "collapse_db": -0.3094,
+    "amplify_db": 0.1227,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9982,
+    "out_raw_db": -5.8741
+   }
+  },
+  {
+   "recording_id": "recording_0029",
+   "split": "TRAIN",
+   "window_start_s": 67.31,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9717,
+    "spec_corr_min": 0.9866,
+    "mrstft_max": 0.0634,
+    "rms_spread_db": 0.4786,
+    "collapse_db": 0.0,
+    "amplify_db": 0.4786,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9982,
+    "out_raw_db": -5.2306
+   }
+  },
+  {
+   "recording_id": "recording_0029",
+   "split": "TRAIN",
+   "window_start_s": 84.68,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9839,
+    "spec_corr_min": 0.9959,
+    "mrstft_max": 0.0308,
+    "rms_spread_db": 0.4938,
+    "collapse_db": -0.3492,
+    "amplify_db": 0.1447,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9987,
+    "out_raw_db": -4.3941
+   }
+  },
+  {
+   "recording_id": "recording_0029",
+   "split": "TRAIN",
+   "window_start_s": 104.67,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.8823,
+    "spec_corr_min": 0.9895,
+    "mrstft_max": 0.0265,
+    "rms_spread_db": 1.0151,
+    "collapse_db": -0.1748,
+    "amplify_db": 0.8403,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9966,
+    "out_raw_db": -5.3608
+   }
+  },
+  {
+   "recording_id": "recording_0029",
+   "split": "TRAIN",
+   "window_start_s": 123.59,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9868,
+    "spec_corr_min": 0.993,
+    "mrstft_max": 0.053,
+    "rms_spread_db": 0.6123,
+    "collapse_db": -0.4124,
+    "amplify_db": 0.1999,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9979,
+    "out_raw_db": -5.4212
+   }
+  },
+  {
+   "recording_id": "recording_0029",
+   "split": "TRAIN",
+   "window_start_s": 142.65,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9889,
+    "spec_corr_min": 0.994,
+    "mrstft_max": 0.0294,
+    "rms_spread_db": 0.2292,
+    "collapse_db": -0.0479,
+    "amplify_db": 0.1813,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9989,
+    "out_raw_db": -4.4348
+   }
+  },
+  {
+   "recording_id": "recording_0030",
+   "split": "TRAIN",
+   "window_start_s": 77.07,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact"
+   ],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9627,
+    "spec_corr_min": 0.9914,
+    "mrstft_max": 0.0388,
+    "rms_spread_db": 0.6196,
+    "collapse_db": -0.617,
+    "amplify_db": 0.0026,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9849,
+    "out_raw_db": -4.1755
+   }
+  },
+  {
+   "recording_id": "recording_0030",
+   "split": "TRAIN",
+   "window_start_s": 50.33,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9765,
+    "spec_corr_min": 0.9974,
+    "mrstft_max": 0.0223,
+    "rms_spread_db": 0.8594,
+    "collapse_db": -0.5757,
+    "amplify_db": 0.2836,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9947,
+    "out_raw_db": -5.0819
+   }
+  },
+  {
+   "recording_id": "recording_0030",
+   "split": "TRAIN",
+   "window_start_s": 69.79,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact"
+   ],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9681,
+    "spec_corr_min": 0.991,
+    "mrstft_max": 0.0677,
+    "rms_spread_db": 1.6527,
+    "collapse_db": -1.0047,
+    "amplify_db": 0.6479,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9865,
+    "out_raw_db": -3.8128
+   }
+  },
+  {
+   "recording_id": "recording_0030",
+   "split": "TRAIN",
+   "window_start_s": 89.57,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9568,
+    "spec_corr_min": 0.9946,
+    "mrstft_max": 0.0392,
+    "rms_spread_db": 0.4179,
+    "collapse_db": -0.4179,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9941,
+    "out_raw_db": -5.1765
+   }
+  },
+  {
+   "recording_id": "recording_0030",
+   "split": "TRAIN",
+   "window_start_s": 107.73,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9918,
+    "spec_corr_min": 0.9978,
+    "mrstft_max": 0.0166,
+    "rms_spread_db": 0.3365,
+    "collapse_db": 0.0,
+    "amplify_db": 0.3365,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9973,
+    "out_raw_db": -4.7866
+   }
+  },
+  {
+   "recording_id": "recording_0030",
+   "split": "TRAIN",
+   "window_start_s": 128.22,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9856,
+    "spec_corr_min": 0.9972,
+    "mrstft_max": 0.0324,
+    "rms_spread_db": 1.3526,
+    "collapse_db": -0.0017,
+    "amplify_db": 1.3509,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9939,
+    "out_raw_db": -5.6081
+   }
+  },
+  {
+   "recording_id": "recording_0031",
+   "split": "TRAIN",
+   "window_start_s": 50.84,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact",
+    "strong_impact",
+    "weak_contact"
+   ],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9858,
+    "spec_corr_min": 0.9916,
+    "mrstft_max": 0.0445,
+    "rms_spread_db": 0.4657,
+    "collapse_db": -0.0,
+    "amplify_db": 0.4657,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9978,
+    "out_raw_db": -5.3316
+   }
+  },
+  {
+   "recording_id": "recording_0031",
+   "split": "TRAIN",
+   "window_start_s": 54.95,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact",
+    "strong_impact",
+    "weak_contact"
+   ],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9796,
+    "spec_corr_min": 0.9896,
+    "mrstft_max": 0.0584,
+    "rms_spread_db": 0.727,
+    "collapse_db": -0.3585,
+    "amplify_db": 0.3685,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.997,
+    "out_raw_db": -5.7124
+   }
+  },
+  {
+   "recording_id": "recording_0031",
+   "split": "TRAIN",
+   "window_start_s": 57.5,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact",
+    "weak_contact"
+   ],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9851,
+    "spec_corr_min": 0.9919,
+    "mrstft_max": 0.0479,
+    "rms_spread_db": 0.6586,
+    "collapse_db": -0.6586,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9971,
+    "out_raw_db": -5.2523
+   }
+  },
+  {
+   "recording_id": "recording_0031",
+   "split": "TRAIN",
+   "window_start_s": 88.39,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9872,
+    "spec_corr_min": 0.9923,
+    "mrstft_max": 0.0438,
+    "rms_spread_db": 0.1756,
+    "collapse_db": -0.0012,
+    "amplify_db": 0.1743,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9988,
+    "out_raw_db": -4.6194
+   }
+  },
+  {
+   "recording_id": "recording_0031",
+   "split": "TRAIN",
+   "window_start_s": 116.14,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9502,
+    "spec_corr_min": 0.9928,
+    "mrstft_max": 0.0327,
+    "rms_spread_db": 0.5819,
+    "collapse_db": 0.0,
+    "amplify_db": 0.5819,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9979,
+    "out_raw_db": -5.191
+   }
+  },
+  {
+   "recording_id": "recording_0032",
+   "split": "TRAIN",
+   "window_start_s": 39.33,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9765,
+    "spec_corr_min": 0.994,
+    "mrstft_max": 0.0367,
+    "rms_spread_db": 0.3634,
+    "collapse_db": -0.1173,
+    "amplify_db": 0.2461,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9992,
+    "out_raw_db": -3.8624
+   }
+  },
+  {
+   "recording_id": "recording_0032",
+   "split": "TRAIN",
+   "window_start_s": 48.81,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9749,
+    "spec_corr_min": 0.996,
+    "mrstft_max": 0.0203,
+    "rms_spread_db": 0.3454,
+    "collapse_db": -0.0266,
+    "amplify_db": 0.3187,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9992,
+    "out_raw_db": -4.6875
+   }
+  },
+  {
+   "recording_id": "recording_0032",
+   "split": "TRAIN",
+   "window_start_s": 60.61,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9885,
+    "spec_corr_min": 0.9926,
+    "mrstft_max": 0.057,
+    "rms_spread_db": 0.6304,
+    "collapse_db": -0.236,
+    "amplify_db": 0.3944,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9978,
+    "out_raw_db": -4.2341
+   }
+  },
+  {
+   "recording_id": "recording_0032",
+   "split": "TRAIN",
+   "window_start_s": 69.38,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9955,
+    "spec_corr_min": 0.9922,
+    "mrstft_max": 0.0511,
+    "rms_spread_db": 0.1702,
+    "collapse_db": -0.1144,
+    "amplify_db": 0.0558,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9979,
+    "out_raw_db": -4.4076
+   }
+  },
+  {
+   "recording_id": "recording_0032",
+   "split": "TRAIN",
+   "window_start_s": 79.94,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9921,
+    "spec_corr_min": 0.9969,
+    "mrstft_max": 0.0314,
+    "rms_spread_db": 0.6609,
+    "collapse_db": -0.4219,
+    "amplify_db": 0.239,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9991,
+    "out_raw_db": -4.3412
+   }
+  },
+  {
+   "recording_id": "recording_0032",
+   "split": "TRAIN",
+   "window_start_s": 88.5,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9806,
+    "spec_corr_min": 0.9938,
+    "mrstft_max": 0.0355,
+    "rms_spread_db": 0.538,
+    "collapse_db": -0.4292,
+    "amplify_db": 0.1089,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9987,
+    "out_raw_db": -4.1787
+   }
+  },
+  {
+   "recording_id": "recording_0034",
+   "split": "TRAIN",
+   "window_start_s": 48.42,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9601,
+    "spec_corr_min": 0.9945,
+    "mrstft_max": 0.0404,
+    "rms_spread_db": 1.153,
+    "collapse_db": -0.0,
+    "amplify_db": 1.153,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9985,
+    "out_raw_db": -5.1888
+   }
+  },
+  {
+   "recording_id": "recording_0034",
+   "split": "TRAIN",
+   "window_start_s": 66.19,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9141,
+    "spec_corr_min": 0.9851,
+    "mrstft_max": 0.0501,
+    "rms_spread_db": 1.9154,
+    "collapse_db": -0.0,
+    "amplify_db": 1.9154,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9968,
+    "out_raw_db": -5.4789
+   }
+  },
+  {
+   "recording_id": "recording_0034",
+   "split": "TRAIN",
+   "window_start_s": 82.13,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact"
+   ],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9744,
+    "spec_corr_min": 0.9896,
+    "mrstft_max": 0.0566,
+    "rms_spread_db": 0.2467,
+    "collapse_db": -0.159,
+    "amplify_db": 0.0877,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9951,
+    "out_raw_db": -4.8883
+   }
+  },
+  {
+   "recording_id": "recording_0034",
+   "split": "TRAIN",
+   "window_start_s": 98.17,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9695,
+    "spec_corr_min": 0.9939,
+    "mrstft_max": 0.0391,
+    "rms_spread_db": 0.8304,
+    "collapse_db": -0.2102,
+    "amplify_db": 0.6202,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9977,
+    "out_raw_db": -5.1963
+   }
+  },
+  {
+   "recording_id": "recording_0034",
+   "split": "TRAIN",
+   "window_start_s": 116.59,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9701,
+    "spec_corr_min": 0.9939,
+    "mrstft_max": 0.0434,
+    "rms_spread_db": 0.2678,
+    "collapse_db": 0.0,
+    "amplify_db": 0.2678,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9989,
+    "out_raw_db": -4.6468
+   }
+  },
+  {
+   "recording_id": "recording_0035",
+   "split": "TRAIN",
+   "window_start_s": 49.31,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.988,
+    "spec_corr_min": 0.9896,
+    "mrstft_max": 0.0524,
+    "rms_spread_db": 0.1831,
+    "collapse_db": -0.0397,
+    "amplify_db": 0.1434,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9972,
+    "out_raw_db": -4.9689
+   }
+  },
+  {
+   "recording_id": "recording_0035",
+   "split": "TRAIN",
+   "window_start_s": 68.07,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9903,
+    "spec_corr_min": 0.9741,
+    "mrstft_max": 0.1471,
+    "rms_spread_db": 0.2887,
+    "collapse_db": -0.2625,
+    "amplify_db": 0.0261,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9918,
+    "out_raw_db": -4.3876
+   }
+  },
+  {
+   "recording_id": "recording_0035",
+   "split": "TRAIN",
+   "window_start_s": 85.88,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9834,
+    "spec_corr_min": 0.9847,
+    "mrstft_max": 0.0671,
+    "rms_spread_db": 0.2391,
+    "collapse_db": -0.0,
+    "amplify_db": 0.2391,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9954,
+    "out_raw_db": -4.8092
+   }
+  },
+  {
+   "recording_id": "recording_0035",
+   "split": "TRAIN",
+   "window_start_s": 122.29,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9854,
+    "spec_corr_min": 0.9933,
+    "mrstft_max": 0.0386,
+    "rms_spread_db": 0.4086,
+    "collapse_db": -0.2199,
+    "amplify_db": 0.1887,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9989,
+    "out_raw_db": -4.6383
+   }
+  },
+  {
+   "recording_id": "recording_0035",
+   "split": "TRAIN",
+   "window_start_s": 140.19,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9623,
+    "spec_corr_min": 0.9617,
+    "mrstft_max": 0.223,
+    "rms_spread_db": 0.335,
+    "collapse_db": 0.0,
+    "amplify_db": 0.3351,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9959,
+    "out_raw_db": -4.7692
+   }
+  },
+  {
+   "recording_id": "recording_0036",
+   "split": "TRAIN",
+   "window_start_s": 45.11,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.8934,
+    "spec_corr_min": 0.9928,
+    "mrstft_max": 0.0313,
+    "rms_spread_db": 0.6683,
+    "collapse_db": -0.0,
+    "amplify_db": 0.6683,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.999,
+    "out_raw_db": -5.9238
+   }
+  },
+  {
+   "recording_id": "recording_0036",
+   "split": "TRAIN",
+   "window_start_s": 63.25,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9706,
+    "spec_corr_min": 0.9955,
+    "mrstft_max": 0.0257,
+    "rms_spread_db": 1.0896,
+    "collapse_db": -0.6549,
+    "amplify_db": 0.4347,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9985,
+    "out_raw_db": -5.1398
+   }
+  },
+  {
+   "recording_id": "recording_0036",
+   "split": "TRAIN",
+   "window_start_s": 78.23,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9762,
+    "spec_corr_min": 0.9966,
+    "mrstft_max": 0.0126,
+    "rms_spread_db": 0.3444,
+    "collapse_db": -0.3444,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9995,
+    "out_raw_db": -4.1319
+   }
+  },
+  {
+   "recording_id": "recording_0036",
+   "split": "TRAIN",
+   "window_start_s": 92.57,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9662,
+    "spec_corr_min": 0.9963,
+    "mrstft_max": 0.0272,
+    "rms_spread_db": 0.1765,
+    "collapse_db": 0.0,
+    "amplify_db": 0.1765,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9981,
+    "out_raw_db": -5.0657
+   }
+  },
+  {
+   "recording_id": "recording_0036",
+   "split": "TRAIN",
+   "window_start_s": 124.68,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9864,
+    "spec_corr_min": 0.9946,
+    "mrstft_max": 0.0327,
+    "rms_spread_db": 0.3005,
+    "collapse_db": -0.3005,
+    "amplify_db": -0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9982,
+    "out_raw_db": -5.4692
+   }
+  },
+  {
+   "recording_id": "recording_0038",
+   "split": "TRAIN",
+   "window_start_s": 46.36,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.8933,
+    "spec_corr_min": 0.9819,
+    "mrstft_max": 0.0432,
+    "rms_spread_db": 0.2225,
+    "collapse_db": -0.0383,
+    "amplify_db": 0.1842,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9968,
+    "out_raw_db": -4.7378
+   }
+  },
+  {
+   "recording_id": "recording_0038",
+   "split": "TRAIN",
+   "window_start_s": 60.79,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9477,
+    "spec_corr_min": 0.9873,
+    "mrstft_max": 0.071,
+    "rms_spread_db": 0.7389,
+    "collapse_db": -0.0815,
+    "amplify_db": 0.6573,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.995,
+    "out_raw_db": -5.2859
+   }
+  },
+  {
+   "recording_id": "recording_0038",
+   "split": "TRAIN",
+   "window_start_s": 76.05,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9819,
+    "spec_corr_min": 0.9943,
+    "mrstft_max": 0.0223,
+    "rms_spread_db": 0.1522,
+    "collapse_db": -0.0996,
+    "amplify_db": 0.0526,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9989,
+    "out_raw_db": -4.0278
+   }
+  },
+  {
+   "recording_id": "recording_0038",
+   "split": "TRAIN",
+   "window_start_s": 91.47,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.8758,
+    "spec_corr_min": 0.9912,
+    "mrstft_max": 0.0431,
+    "rms_spread_db": 0.0494,
+    "collapse_db": 0.0,
+    "amplify_db": 0.0494,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9966,
+    "out_raw_db": -5.3299
+   }
+  },
+  {
+   "recording_id": "recording_0038",
+   "split": "TRAIN",
+   "window_start_s": 107.55,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9748,
+    "spec_corr_min": 0.9952,
+    "mrstft_max": 0.0329,
+    "rms_spread_db": 0.845,
+    "collapse_db": -0.845,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9971,
+    "out_raw_db": -4.7959
+   }
+  },
+  {
+   "recording_id": "recording_0038",
+   "split": "TRAIN",
+   "window_start_s": 123.96,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9161,
+    "spec_corr_min": 0.9935,
+    "mrstft_max": 0.0232,
+    "rms_spread_db": 1.4866,
+    "collapse_db": -1.4866,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9982,
+    "out_raw_db": -4.0461
+   }
+  },
+  {
+   "recording_id": "recording_0039",
+   "split": "TRAIN",
+   "window_start_s": 44.56,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.8517,
+    "spec_corr_min": 0.9823,
+    "mrstft_max": 0.1207,
+    "rms_spread_db": 0.8018,
+    "collapse_db": 0.0,
+    "amplify_db": 0.8018,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9935,
+    "out_raw_db": -5.5106
+   }
+  },
+  {
+   "recording_id": "recording_0039",
+   "split": "TRAIN",
+   "window_start_s": 60.75,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9143,
+    "spec_corr_min": 0.977,
+    "mrstft_max": 0.1007,
+    "rms_spread_db": 1.5142,
+    "collapse_db": -0.7732,
+    "amplify_db": 0.7409,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9932,
+    "out_raw_db": -5.1215
+   }
+  },
+  {
+   "recording_id": "recording_0039",
+   "split": "TRAIN",
+   "window_start_s": 76.29,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9373,
+    "spec_corr_min": 0.9902,
+    "mrstft_max": 0.0429,
+    "rms_spread_db": 0.2954,
+    "collapse_db": -0.0652,
+    "amplify_db": 0.2301,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9984,
+    "out_raw_db": -4.8435
+   }
+  },
+  {
+   "recording_id": "recording_0039",
+   "split": "TRAIN",
+   "window_start_s": 109.7,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9754,
+    "spec_corr_min": 0.9744,
+    "mrstft_max": 0.1488,
+    "rms_spread_db": 0.6255,
+    "collapse_db": -0.0,
+    "amplify_db": 0.6255,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9925,
+    "out_raw_db": -4.4546
+   }
+  },
+  {
+   "recording_id": "recording_0039",
+   "split": "TRAIN",
+   "window_start_s": 126.03,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9869,
+    "spec_corr_min": 0.9946,
+    "mrstft_max": 0.0431,
+    "rms_spread_db": 0.5839,
+    "collapse_db": -0.5314,
+    "amplify_db": 0.0525,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9986,
+    "out_raw_db": -4.396
+   }
+  },
+  {
+   "recording_id": "recording_0040",
+   "split": "TRAIN",
+   "window_start_s": 46.28,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9837,
+    "spec_corr_min": 0.9954,
+    "mrstft_max": 0.024,
+    "rms_spread_db": 0.4048,
+    "collapse_db": -0.2005,
+    "amplify_db": 0.2043,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9979,
+    "out_raw_db": -4.636
+   }
+  },
+  {
+   "recording_id": "recording_0040",
+   "split": "TRAIN",
+   "window_start_s": 61.46,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9638,
+    "spec_corr_min": 0.9927,
+    "mrstft_max": 0.0306,
+    "rms_spread_db": 0.4289,
+    "collapse_db": -0.0,
+    "amplify_db": 0.4289,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9986,
+    "out_raw_db": -4.9925
+   }
+  },
+  {
+   "recording_id": "recording_0040",
+   "split": "TRAIN",
+   "window_start_s": 73.67,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9566,
+    "spec_corr_min": 0.9929,
+    "mrstft_max": 0.0301,
+    "rms_spread_db": 0.1552,
+    "collapse_db": -0.0228,
+    "amplify_db": 0.1324,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9986,
+    "out_raw_db": -5.2699
+   }
+  },
+  {
+   "recording_id": "recording_0040",
+   "split": "TRAIN",
+   "window_start_s": 89.25,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9271,
+    "spec_corr_min": 0.9921,
+    "mrstft_max": 0.0243,
+    "rms_spread_db": 0.9486,
+    "collapse_db": -0.9428,
+    "amplify_db": 0.0058,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9984,
+    "out_raw_db": -4.5415
+   }
+  },
+  {
+   "recording_id": "recording_0040",
+   "split": "TRAIN",
+   "window_start_s": 103.62,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9603,
+    "spec_corr_min": 0.9917,
+    "mrstft_max": 0.0397,
+    "rms_spread_db": 0.7239,
+    "collapse_db": -0.0,
+    "amplify_db": 0.7239,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9967,
+    "out_raw_db": -5.32
+   }
+  },
+  {
+   "recording_id": "recording_0040",
+   "split": "TRAIN",
+   "window_start_s": 118.62,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9264,
+    "spec_corr_min": 0.991,
+    "mrstft_max": 0.036,
+    "rms_spread_db": 0.978,
+    "collapse_db": -0.9729,
+    "amplify_db": 0.0052,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9968,
+    "out_raw_db": -4.5383
+   }
+  },
+  {
+   "recording_id": "recording_0041",
+   "split": "TRAIN",
+   "window_start_s": 43.04,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9854,
+    "spec_corr_min": 0.992,
+    "mrstft_max": 0.0268,
+    "rms_spread_db": 0.2169,
+    "collapse_db": -0.0761,
+    "amplify_db": 0.1408,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9987,
+    "out_raw_db": -5.117
+   }
+  },
+  {
+   "recording_id": "recording_0041",
+   "split": "TRAIN",
+   "window_start_s": 56.03,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9893,
+    "spec_corr_min": 0.9948,
+    "mrstft_max": 0.0184,
+    "rms_spread_db": 0.1883,
+    "collapse_db": -0.1082,
+    "amplify_db": 0.0801,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9993,
+    "out_raw_db": -3.9839
+   }
+  },
+  {
+   "recording_id": "recording_0041",
+   "split": "TRAIN",
+   "window_start_s": 69.19,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9567,
+    "spec_corr_min": 0.9896,
+    "mrstft_max": 0.0245,
+    "rms_spread_db": 1.3866,
+    "collapse_db": -0.5309,
+    "amplify_db": 0.8557,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.999,
+    "out_raw_db": -3.9209
+   }
+  },
+  {
+   "recording_id": "recording_0041",
+   "split": "TRAIN",
+   "window_start_s": 83.53,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.993,
+    "spec_corr_min": 0.9948,
+    "mrstft_max": 0.0137,
+    "rms_spread_db": 0.1351,
+    "collapse_db": -0.0849,
+    "amplify_db": 0.0502,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9994,
+    "out_raw_db": -4.0987
+   }
+  },
+  {
+   "recording_id": "recording_0041",
+   "split": "TRAIN",
+   "window_start_s": 96.64,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9829,
+    "spec_corr_min": 0.9937,
+    "mrstft_max": 0.0183,
+    "rms_spread_db": 0.4593,
+    "collapse_db": -0.2792,
+    "amplify_db": 0.1801,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9994,
+    "out_raw_db": -3.9076
+   }
+  },
+  {
+   "recording_id": "recording_0041",
+   "split": "TRAIN",
+   "window_start_s": 109.65,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9931,
+    "spec_corr_min": 0.9961,
+    "mrstft_max": 0.0195,
+    "rms_spread_db": 0.1571,
+    "collapse_db": -0.066,
+    "amplify_db": 0.0911,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.999,
+    "out_raw_db": -4.7979
+   }
+  },
+  {
+   "recording_id": "recording_0044",
+   "split": "TRAIN",
+   "window_start_s": 45.68,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9637,
+    "spec_corr_min": 0.9893,
+    "mrstft_max": 0.0461,
+    "rms_spread_db": 0.3663,
+    "collapse_db": -0.0466,
+    "amplify_db": 0.3197,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9978,
+    "out_raw_db": -5.2996
+   }
+  },
+  {
+   "recording_id": "recording_0044",
+   "split": "TRAIN",
+   "window_start_s": 58.21,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9834,
+    "spec_corr_min": 0.9955,
+    "mrstft_max": 0.0299,
+    "rms_spread_db": 0.5355,
+    "collapse_db": -0.2987,
+    "amplify_db": 0.2368,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.999,
+    "out_raw_db": -4.0496
+   }
+  },
+  {
+   "recording_id": "recording_0044",
+   "split": "TRAIN",
+   "window_start_s": 73.4,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9939,
+    "spec_corr_min": 0.9963,
+    "mrstft_max": 0.0097,
+    "rms_spread_db": 0.1921,
+    "collapse_db": 0.0,
+    "amplify_db": 0.1921,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9996,
+    "out_raw_db": -3.8974
+   }
+  },
+  {
+   "recording_id": "recording_0044",
+   "split": "TRAIN",
+   "window_start_s": 87.71,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9941,
+    "spec_corr_min": 0.9958,
+    "mrstft_max": 0.009,
+    "rms_spread_db": 0.1536,
+    "collapse_db": -0.0,
+    "amplify_db": 0.1536,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9993,
+    "out_raw_db": -3.93
+   }
+  },
+  {
+   "recording_id": "recording_0044",
+   "split": "TRAIN",
+   "window_start_s": 102.46,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9908,
+    "spec_corr_min": 0.9955,
+    "mrstft_max": 0.0273,
+    "rms_spread_db": 0.425,
+    "collapse_db": 0.0,
+    "amplify_db": 0.425,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9982,
+    "out_raw_db": -4.1002
+   }
+  },
+  {
+   "recording_id": "recording_0044",
+   "split": "TRAIN",
+   "window_start_s": 114.83,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9814,
+    "spec_corr_min": 0.9955,
+    "mrstft_max": 0.0176,
+    "rms_spread_db": 0.6231,
+    "collapse_db": -0.4463,
+    "amplify_db": 0.1768,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9987,
+    "out_raw_db": -4.1358
+   }
+  },
+  {
+   "recording_id": "recording_0045",
+   "split": "TRAIN",
+   "window_start_s": 41.21,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9703,
+    "spec_corr_min": 0.9938,
+    "mrstft_max": 0.0288,
+    "rms_spread_db": 0.952,
+    "collapse_db": -0.2252,
+    "amplify_db": 0.7268,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9982,
+    "out_raw_db": -5.5597
+   }
+  },
+  {
+   "recording_id": "recording_0045",
+   "split": "TRAIN",
+   "window_start_s": 54.21,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.994,
+    "spec_corr_min": 0.9963,
+    "mrstft_max": 0.0201,
+    "rms_spread_db": 0.4075,
+    "collapse_db": -0.0277,
+    "amplify_db": 0.3798,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9991,
+    "out_raw_db": -4.6212
+   }
+  },
+  {
+   "recording_id": "recording_0045",
+   "split": "TRAIN",
+   "window_start_s": 68.73,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9816,
+    "spec_corr_min": 0.9951,
+    "mrstft_max": 0.0137,
+    "rms_spread_db": 0.4616,
+    "collapse_db": -0.1758,
+    "amplify_db": 0.2858,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9994,
+    "out_raw_db": -4.7143
+   }
+  },
+  {
+   "recording_id": "recording_0045",
+   "split": "TRAIN",
+   "window_start_s": 78.6,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9941,
+    "spec_corr_min": 0.9962,
+    "mrstft_max": 0.0116,
+    "rms_spread_db": 0.0974,
+    "collapse_db": -0.0974,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9995,
+    "out_raw_db": -3.7876
+   }
+  },
+  {
+   "recording_id": "recording_0045",
+   "split": "TRAIN",
+   "window_start_s": 92.84,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9733,
+    "spec_corr_min": 0.9961,
+    "mrstft_max": 0.0154,
+    "rms_spread_db": 0.7296,
+    "collapse_db": -0.3962,
+    "amplify_db": 0.3333,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9997,
+    "out_raw_db": -3.531
+   }
+  },
+  {
+   "recording_id": "recording_0045",
+   "split": "TRAIN",
+   "window_start_s": 105.72,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9887,
+    "spec_corr_min": 0.9969,
+    "mrstft_max": 0.0183,
+    "rms_spread_db": 0.6191,
+    "collapse_db": 0.0,
+    "amplify_db": 0.6191,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.999,
+    "out_raw_db": -4.4852
+   }
+  },
+  {
+   "recording_id": "recording_0047",
+   "split": "TRAIN",
+   "window_start_s": 49.91,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact",
+    "strong_impact"
+   ],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.977,
+    "spec_corr_min": 0.9885,
+    "mrstft_max": 0.0655,
+    "rms_spread_db": 0.1733,
+    "collapse_db": -0.0,
+    "amplify_db": 0.1733,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9969,
+    "out_raw_db": -6.3433
+   }
+  },
+  {
+   "recording_id": "recording_0047",
+   "split": "TRAIN",
+   "window_start_s": 69.37,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9811,
+    "spec_corr_min": 0.9822,
+    "mrstft_max": 0.0712,
+    "rms_spread_db": 0.1213,
+    "collapse_db": 0.0,
+    "amplify_db": 0.1213,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9973,
+    "out_raw_db": -4.1747
+   }
+  },
+  {
+   "recording_id": "recording_0047",
+   "split": "TRAIN",
+   "window_start_s": 87.78,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9286,
+    "spec_corr_min": 0.9699,
+    "mrstft_max": 0.1808,
+    "rms_spread_db": 1.1902,
+    "collapse_db": -0.6059,
+    "amplify_db": 0.5843,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9956,
+    "out_raw_db": -4.6387
+   }
+  },
+  {
+   "recording_id": "recording_0047",
+   "split": "TRAIN",
+   "window_start_s": 105.95,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9896,
+    "spec_corr_min": 0.9913,
+    "mrstft_max": 0.0523,
+    "rms_spread_db": 0.6186,
+    "collapse_db": -0.1659,
+    "amplify_db": 0.4527,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9982,
+    "out_raw_db": -4.8304
+   }
+  },
+  {
+   "recording_id": "recording_0047",
+   "split": "TRAIN",
+   "window_start_s": 123.75,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9288,
+    "spec_corr_min": 0.9787,
+    "mrstft_max": 0.0815,
+    "rms_spread_db": 0.9615,
+    "collapse_db": -0.2321,
+    "amplify_db": 0.7294,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9962,
+    "out_raw_db": -4.3672
+   }
+  },
+  {
+   "recording_id": "recording_0048",
+   "split": "TRAIN",
+   "window_start_s": 46.27,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9856,
+    "spec_corr_min": 0.9932,
+    "mrstft_max": 0.025,
+    "rms_spread_db": 0.2222,
+    "collapse_db": -0.0271,
+    "amplify_db": 0.1951,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9985,
+    "out_raw_db": -3.9624
+   }
+  },
+  {
+   "recording_id": "recording_0048",
+   "split": "TRAIN",
+   "window_start_s": 61.72,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9827,
+    "spec_corr_min": 0.9915,
+    "mrstft_max": 0.0435,
+    "rms_spread_db": 0.1353,
+    "collapse_db": -0.1353,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9975,
+    "out_raw_db": -3.8511
+   }
+  },
+  {
+   "recording_id": "recording_0048",
+   "split": "TRAIN",
+   "window_start_s": 76.53,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9876,
+    "spec_corr_min": 0.9895,
+    "mrstft_max": 0.0397,
+    "rms_spread_db": 0.2004,
+    "collapse_db": -0.022,
+    "amplify_db": 0.1784,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9965,
+    "out_raw_db": -4.3287
+   }
+  },
+  {
+   "recording_id": "recording_0048",
+   "split": "TRAIN",
+   "window_start_s": 93.21,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9903,
+    "spec_corr_min": 0.9935,
+    "mrstft_max": 0.0308,
+    "rms_spread_db": 0.408,
+    "collapse_db": -0.2864,
+    "amplify_db": 0.1216,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9982,
+    "out_raw_db": -3.6579
+   }
+  },
+  {
+   "recording_id": "recording_0048",
+   "split": "TRAIN",
+   "window_start_s": 109.46,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9539,
+    "spec_corr_min": 0.9888,
+    "mrstft_max": 0.0499,
+    "rms_spread_db": 0.3726,
+    "collapse_db": -0.2971,
+    "amplify_db": 0.0755,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9972,
+    "out_raw_db": -4.8734
+   }
+  },
+  {
+   "recording_id": "recording_0048",
+   "split": "TRAIN",
+   "window_start_s": 126.28,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9958,
+    "spec_corr_min": 0.981,
+    "mrstft_max": 0.1118,
+    "rms_spread_db": 0.2042,
+    "collapse_db": -0.2042,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9923,
+    "out_raw_db": -3.63
+   }
+  },
+  {
+   "recording_id": "recording_0051",
+   "split": "TRAIN",
+   "window_start_s": 54.56,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact"
+   ],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9673,
+    "spec_corr_min": 0.989,
+    "mrstft_max": 0.073,
+    "rms_spread_db": 0.969,
+    "collapse_db": -0.6088,
+    "amplify_db": 0.3602,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9971,
+    "out_raw_db": -4.2839
+   }
+  },
+  {
+   "recording_id": "recording_0051",
+   "split": "TRAIN",
+   "window_start_s": 52.65,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact"
+   ],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.969,
+    "spec_corr_min": 0.9933,
+    "mrstft_max": 0.0541,
+    "rms_spread_db": 1.1619,
+    "collapse_db": -0.6353,
+    "amplify_db": 0.5266,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9977,
+    "out_raw_db": -4.5937
+   }
+  },
+  {
+   "recording_id": "recording_0051",
+   "split": "TRAIN",
+   "window_start_s": 73.9,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9476,
+    "spec_corr_min": 0.9852,
+    "mrstft_max": 0.0513,
+    "rms_spread_db": 0.5351,
+    "collapse_db": -0.5351,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.997,
+    "out_raw_db": -3.8152
+   }
+  },
+  {
+   "recording_id": "recording_0051",
+   "split": "TRAIN",
+   "window_start_s": 96.63,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9219,
+    "spec_corr_min": 0.9884,
+    "mrstft_max": 0.0448,
+    "rms_spread_db": 0.714,
+    "collapse_db": -0.0,
+    "amplify_db": 0.714,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9981,
+    "out_raw_db": -5.4755
+   }
+  },
+  {
+   "recording_id": "recording_0051",
+   "split": "TRAIN",
+   "window_start_s": 119.37,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9889,
+    "spec_corr_min": 0.9943,
+    "mrstft_max": 0.0326,
+    "rms_spread_db": 0.0905,
+    "collapse_db": -0.0529,
+    "amplify_db": 0.0377,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9979,
+    "out_raw_db": -4.3704
+   }
+  },
+  {
+   "recording_id": "recording_0051",
+   "split": "TRAIN",
+   "window_start_s": 139.99,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9964,
+    "spec_corr_min": 0.9954,
+    "mrstft_max": 0.023,
+    "rms_spread_db": 0.3376,
+    "collapse_db": -0.0956,
+    "amplify_db": 0.242,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9989,
+    "out_raw_db": -4.1389
+   }
+  },
+  {
+   "recording_id": "recording_0052",
+   "split": "TRAIN",
+   "window_start_s": 168.41,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact"
+   ],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.984,
+    "spec_corr_min": 0.997,
+    "mrstft_max": 0.024,
+    "rms_spread_db": 0.5707,
+    "collapse_db": -0.5707,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9985,
+    "out_raw_db": -5.719
+   }
+  },
+  {
+   "recording_id": "recording_0052",
+   "split": "TRAIN",
+   "window_start_s": 97.81,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact"
+   ],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9711,
+    "spec_corr_min": 0.9931,
+    "mrstft_max": 0.0334,
+    "rms_spread_db": 0.6551,
+    "collapse_db": -0.121,
+    "amplify_db": 0.5341,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9974,
+    "out_raw_db": -4.9683
+   }
+  },
+  {
+   "recording_id": "recording_0052",
+   "split": "TRAIN",
+   "window_start_s": 57.29,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9654,
+    "spec_corr_min": 0.9967,
+    "mrstft_max": 0.0235,
+    "rms_spread_db": 0.7903,
+    "collapse_db": -0.2514,
+    "amplify_db": 0.5389,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9983,
+    "out_raw_db": -6.1627
+   }
+  },
+  {
+   "recording_id": "recording_0052",
+   "split": "TRAIN",
+   "window_start_s": 84.65,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.8512,
+    "spec_corr_min": 0.9907,
+    "mrstft_max": 0.0298,
+    "rms_spread_db": 0.3945,
+    "collapse_db": -0.3945,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9986,
+    "out_raw_db": -4.5497
+   }
+  },
+  {
+   "recording_id": "recording_0052",
+   "split": "TRAIN",
+   "window_start_s": 110.61,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9406,
+    "spec_corr_min": 0.9952,
+    "mrstft_max": 0.0171,
+    "rms_spread_db": 0.7819,
+    "collapse_db": -0.4362,
+    "amplify_db": 0.3457,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9987,
+    "out_raw_db": -4.9499
+   }
+  },
+  {
+   "recording_id": "recording_0052",
+   "split": "TRAIN",
+   "window_start_s": 140.0,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9783,
+    "spec_corr_min": 0.9984,
+    "mrstft_max": 0.013,
+    "rms_spread_db": 0.8365,
+    "collapse_db": -0.8365,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9997,
+    "out_raw_db": -3.4379
+   }
+  },
+  {
+   "recording_id": "recording_0055",
+   "split": "TRAIN",
+   "window_start_s": 45.14,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9776,
+    "spec_corr_min": 0.9887,
+    "mrstft_max": 0.0683,
+    "rms_spread_db": 0.1949,
+    "collapse_db": -0.1614,
+    "amplify_db": 0.0335,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9972,
+    "out_raw_db": -4.4834
+   }
+  },
+  {
+   "recording_id": "recording_0055",
+   "split": "TRAIN",
+   "window_start_s": 59.9,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9841,
+    "spec_corr_min": 0.9945,
+    "mrstft_max": 0.0376,
+    "rms_spread_db": 0.135,
+    "collapse_db": -0.135,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9981,
+    "out_raw_db": -4.0147
+   }
+  },
+  {
+   "recording_id": "recording_0055",
+   "split": "TRAIN",
+   "window_start_s": 75.45,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9913,
+    "spec_corr_min": 0.9923,
+    "mrstft_max": 0.0607,
+    "rms_spread_db": 0.2071,
+    "collapse_db": 0.0,
+    "amplify_db": 0.2071,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9969,
+    "out_raw_db": -4.5352
+   }
+  },
+  {
+   "recording_id": "recording_0055",
+   "split": "TRAIN",
+   "window_start_s": 90.35,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "impact"
+   ],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9907,
+    "spec_corr_min": 0.9915,
+    "mrstft_max": 0.0573,
+    "rms_spread_db": 0.425,
+    "collapse_db": -0.2515,
+    "amplify_db": 0.1734,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9978,
+    "out_raw_db": -4.5656
+   }
+  },
+  {
+   "recording_id": "recording_0055",
+   "split": "TRAIN",
+   "window_start_s": 105.26,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.997,
+    "spec_corr_min": 0.9938,
+    "mrstft_max": 0.0381,
+    "rms_spread_db": 0.1362,
+    "collapse_db": -0.1362,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9978,
+    "out_raw_db": -4.0689
+   }
+  },
+  {
+   "recording_id": "recording_0055",
+   "split": "TRAIN",
+   "window_start_s": 120.33,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9858,
+    "spec_corr_min": 0.9866,
+    "mrstft_max": 0.0719,
+    "rms_spread_db": 0.5079,
+    "collapse_db": -0.2212,
+    "amplify_db": 0.2867,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9932,
+    "out_raw_db": -4.1852
+   }
+  },
+  {
+   "recording_id": "recording_0056",
+   "split": "TRAIN",
+   "window_start_s": 46.33,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.8727,
+    "spec_corr_min": 0.9894,
+    "mrstft_max": 0.0412,
+    "rms_spread_db": 1.4974,
+    "collapse_db": -1.4974,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9767,
+    "out_raw_db": -4.1415
+   }
+  },
+  {
+   "recording_id": "recording_0056",
+   "split": "TRAIN",
+   "window_start_s": 62.28,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9487,
+    "spec_corr_min": 0.993,
+    "mrstft_max": 0.0403,
+    "rms_spread_db": 1.1184,
+    "collapse_db": -0.2015,
+    "amplify_db": 0.9169,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9882,
+    "out_raw_db": -4.8318
+   }
+  },
+  {
+   "recording_id": "recording_0056",
+   "split": "TRAIN",
+   "window_start_s": 80.83,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9689,
+    "spec_corr_min": 0.9931,
+    "mrstft_max": 0.0419,
+    "rms_spread_db": 1.4557,
+    "collapse_db": -1.4503,
+    "amplify_db": 0.0054,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.989,
+    "out_raw_db": -3.5741
+   }
+  },
+  {
+   "recording_id": "recording_0056",
+   "split": "TRAIN",
+   "window_start_s": 95.56,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9566,
+    "spec_corr_min": 0.9966,
+    "mrstft_max": 0.0247,
+    "rms_spread_db": 1.2225,
+    "collapse_db": 0.0,
+    "amplify_db": 1.2225,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9951,
+    "out_raw_db": -4.5628
+   }
+  },
+  {
+   "recording_id": "recording_0056",
+   "split": "TRAIN",
+   "window_start_s": 111.77,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.884,
+    "spec_corr_min": 0.9868,
+    "mrstft_max": 0.0408,
+    "rms_spread_db": 0.8273,
+    "collapse_db": -0.6328,
+    "amplify_db": 0.1945,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9931,
+    "out_raw_db": -4.7497
+   }
+  },
+  {
+   "recording_id": "recording_0056",
+   "split": "TRAIN",
+   "window_start_s": 128.53,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9319,
+    "spec_corr_min": 0.992,
+    "mrstft_max": 0.0422,
+    "rms_spread_db": 0.5784,
+    "collapse_db": -0.5784,
+    "amplify_db": -0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9919,
+    "out_raw_db": -4.3094
+   }
+  },
+  {
+   "recording_id": "recording_0057",
+   "split": "TRAIN",
+   "window_start_s": 134.2,
+   "anchor_seconds": 6.0,
+   "tags": [
+    "strong_impact"
+   ],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.994,
+    "spec_corr_min": 0.9976,
+    "mrstft_max": 0.0209,
+    "rms_spread_db": 0.2609,
+    "collapse_db": -0.2609,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9994,
+    "out_raw_db": -4.7146
+   }
+  },
+  {
+   "recording_id": "recording_0057",
+   "split": "TRAIN",
+   "window_start_s": 47.59,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9884,
+    "spec_corr_min": 0.9963,
+    "mrstft_max": 0.0222,
+    "rms_spread_db": 0.1591,
+    "collapse_db": -0.1591,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9989,
+    "out_raw_db": -5.7236
+   }
+  },
+  {
+   "recording_id": "recording_0057",
+   "split": "TRAIN",
+   "window_start_s": 68.96,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9507,
+    "spec_corr_min": 0.9964,
+    "mrstft_max": 0.0347,
+    "rms_spread_db": 0.3864,
+    "collapse_db": -0.3864,
+    "amplify_db": 0.0,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9985,
+    "out_raw_db": -4.4745
+   }
+  },
+  {
+   "recording_id": "recording_0057",
+   "split": "TRAIN",
+   "window_start_s": 88.44,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9764,
+    "spec_corr_min": 0.9877,
+    "mrstft_max": 0.0701,
+    "rms_spread_db": 0.2928,
+    "collapse_db": -0.2352,
+    "amplify_db": 0.0576,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9972,
+    "out_raw_db": -5.4471
+   }
+  },
+  {
+   "recording_id": "recording_0057",
+   "split": "TRAIN",
+   "window_start_s": 107.09,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9468,
+    "spec_corr_min": 0.9946,
+    "mrstft_max": 0.025,
+    "rms_spread_db": 0.5273,
+    "collapse_db": -0.5225,
+    "amplify_db": 0.0048,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9976,
+    "out_raw_db": -5.3219
+   }
+  },
+  {
+   "recording_id": "recording_0057",
+   "split": "TRAIN",
+   "window_start_s": 124.15,
+   "anchor_seconds": 6.0,
+   "tags": [],
+   "interaction_labels": [
+    "dense",
+    "transient_rich",
+    "weak"
+   ],
+   "consistency": {
+    "wf_corr_min": 0.9744,
+    "spec_corr_min": 0.9894,
+    "mrstft_max": 0.0626,
+    "rms_spread_db": 0.2763,
+    "collapse_db": 0.0,
+    "amplify_db": 0.2763,
+    "onset_lag_max_ms": 0.0,
+    "onset_corr_min": 0.9939,
+    "out_raw_db": -5.1189
+   }
+  }
+ ]
+}

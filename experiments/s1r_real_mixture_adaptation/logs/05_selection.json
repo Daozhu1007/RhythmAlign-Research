@@ -1,0 +1,667 @@
+{
+ "zero_shot_dev": {
+  "n_dev_anchors": 39,
+  "anchor_divergence_l1": {
+   "median": 0.0008,
+   "mean": 0.0008,
+   "min": 0.0002,
+   "max": 0.0014
+  },
+  "anchor_divergence_mrstft": {
+   "median": 0.0185,
+   "mean": 0.0219,
+   "min": 0.0069,
+   "max": 0.058
+  },
+  "student_teacher_ratio_db": {
+   "median": 0.002,
+   "mean": 0.0034,
+   "min": -0.0881,
+   "max": 0.0623
+  },
+  "collapse_rate_6db": 0.0,
+  "collapse_rate_12db": 0.0,
+  "consistency_l1": {
+   "median": 0.0153,
+   "mean": 0.0165,
+   "min": 0.0024,
+   "max": 0.0356
+  },
+  "consistency_mrstft": {
+   "median": 0.0456,
+   "mean": 0.048,
+   "min": 0.0247,
+   "max": 0.1035
+  },
+  "teacher_consistency_l1": {
+   "median": 0.0155,
+   "mean": 0.0165,
+   "min": 0.0024,
+   "max": 0.0352
+  },
+  "teacher_consistency_mrstft": {
+   "median": 0.0361,
+   "mean": 0.0372,
+   "min": 0.0131,
+   "max": 0.1015
+  },
+  "gain_equiv_l1": {
+   "median": 0.0321,
+   "mean": 0.0317,
+   "min": 0.0115,
+   "max": 0.0569
+  },
+  "gain_equiv_mrstft": {
+   "median": 0.1516,
+   "mean": 0.1526,
+   "min": 0.1494,
+   "max": 0.1643
+  },
+  "passthrough_margin_corr": {
+   "median": 0.0004,
+   "max": 0.0043
+  },
+  "click_retention_db": {
+   "median": -0.0009,
+   "mean": -0.0003,
+   "min": -0.0261,
+   "max": 0.0283
+  },
+  "friction_flat_delta": {
+   "median": 0.0,
+   "mean": 0.0001,
+   "min": 0.0,
+   "max": 0.0027
+  },
+  "out_raw_db": {
+   "median_student_minus_raw_db": -4.4367,
+   "median_teacher_minus_raw_db": -4.4298
+  },
+  "n_collapse12": 0,
+  "n_dev_windows": 39
+ },
+ "passthrough_div_l1": 0.08879857510328293,
+ "checkpoints": [
+  {
+   "ckpt": "full_upd00250.ckpt",
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "anchor_selectivity_preserved": true,
+    "consistency_improves": true,
+    "fidelity_no_major_regression": true,
+    "all": true
+   },
+   "consistency_combined": 0.0493,
+   "summary": {
+    "n_dev_anchors": 39,
+    "anchor_divergence_l1": {
+     "median": 0.0069,
+     "mean": 0.0076,
+     "min": 0.0016,
+     "max": 0.0198
+    },
+    "anchor_divergence_mrstft": {
+     "median": 0.0278,
+     "mean": 0.0319,
+     "min": 0.0142,
+     "max": 0.0698
+    },
+    "student_teacher_ratio_db": {
+     "median": 0.0703,
+     "mean": 0.1241,
+     "min": -0.2333,
+     "max": 0.6803
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "consistency_l1": {
+     "median": 0.0117,
+     "mean": 0.0124,
+     "min": 0.0022,
+     "max": 0.0258
+    },
+    "consistency_mrstft": {
+     "median": 0.0376,
+     "mean": 0.0394,
+     "min": 0.0232,
+     "max": 0.071
+    },
+    "teacher_consistency_l1": {
+     "median": 0.0155,
+     "mean": 0.0165,
+     "min": 0.0024,
+     "max": 0.0352
+    },
+    "teacher_consistency_mrstft": {
+     "median": 0.0361,
+     "mean": 0.0372,
+     "min": 0.0131,
+     "max": 0.1015
+    },
+    "gain_equiv_l1": {
+     "median": 0.0326,
+     "mean": 0.0323,
+     "min": 0.0118,
+     "max": 0.0562
+    },
+    "gain_equiv_mrstft": {
+     "median": 0.1517,
+     "mean": 0.1525,
+     "min": 0.1498,
+     "max": 0.1637
+    },
+    "passthrough_margin_corr": {
+     "median": 0.0184,
+     "max": 0.0439
+    },
+    "click_retention_db": {
+     "median": 0.0156,
+     "mean": 0.0454,
+     "min": -0.0883,
+     "max": 0.4054
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": -0.0008,
+     "min": -0.0106,
+     "max": 0.0027
+    },
+    "out_raw_db": {
+     "median_student_minus_raw_db": -4.4145,
+     "median_teacher_minus_raw_db": -4.4298
+    },
+    "n_collapse12": 0,
+    "n_dev_windows": 39,
+    "consistency_combined": 0.0493,
+    "zeroshot_consistency_combined": 0.0609
+   }
+  },
+  {
+   "ckpt": "full_upd00500.ckpt",
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "anchor_selectivity_preserved": true,
+    "consistency_improves": true,
+    "fidelity_no_major_regression": true,
+    "all": true
+   },
+   "consistency_combined": 0.0458,
+   "summary": {
+    "n_dev_anchors": 39,
+    "anchor_divergence_l1": {
+     "median": 0.0081,
+     "mean": 0.0096,
+     "min": 0.0032,
+     "max": 0.0302
+    },
+    "anchor_divergence_mrstft": {
+     "median": 0.0315,
+     "mean": 0.0343,
+     "min": 0.0167,
+     "max": 0.0686
+    },
+    "student_teacher_ratio_db": {
+     "median": -0.0708,
+     "mean": -0.1195,
+     "min": -0.9418,
+     "max": 0.3446
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "consistency_l1": {
+     "median": 0.0106,
+     "mean": 0.0112,
+     "min": 0.0023,
+     "max": 0.0231
+    },
+    "consistency_mrstft": {
+     "median": 0.0352,
+     "mean": 0.0378,
+     "min": 0.0198,
+     "max": 0.0647
+    },
+    "teacher_consistency_l1": {
+     "median": 0.0155,
+     "mean": 0.0165,
+     "min": 0.0024,
+     "max": 0.0352
+    },
+    "teacher_consistency_mrstft": {
+     "median": 0.0361,
+     "mean": 0.0372,
+     "min": 0.0131,
+     "max": 0.1015
+    },
+    "gain_equiv_l1": {
+     "median": 0.032,
+     "mean": 0.0311,
+     "min": 0.0124,
+     "max": 0.0525
+    },
+    "gain_equiv_mrstft": {
+     "median": 0.1515,
+     "mean": 0.1524,
+     "min": 0.1498,
+     "max": 0.1635
+    },
+    "passthrough_margin_corr": {
+     "median": 0.0103,
+     "max": 0.0463
+    },
+    "click_retention_db": {
+     "median": 0.0357,
+     "mean": 0.0555,
+     "min": -0.2165,
+     "max": 0.3527
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": -0.0018,
+     "min": -0.0319,
+     "max": 0.0027
+    },
+    "out_raw_db": {
+     "median_student_minus_raw_db": -4.5958,
+     "median_teacher_minus_raw_db": -4.4298
+    },
+    "n_collapse12": 0,
+    "n_dev_windows": 39,
+    "consistency_combined": 0.0458,
+    "zeroshot_consistency_combined": 0.0609
+   }
+  },
+  {
+   "ckpt": "full_upd00750.ckpt",
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "anchor_selectivity_preserved": true,
+    "consistency_improves": true,
+    "fidelity_no_major_regression": true,
+    "all": true
+   },
+   "consistency_combined": 0.0485,
+   "summary": {
+    "n_dev_anchors": 39,
+    "anchor_divergence_l1": {
+     "median": 0.0059,
+     "mean": 0.0079,
+     "min": 0.0013,
+     "max": 0.0279
+    },
+    "anchor_divergence_mrstft": {
+     "median": 0.0268,
+     "mean": 0.0306,
+     "min": 0.0121,
+     "max": 0.0727
+    },
+    "student_teacher_ratio_db": {
+     "median": -0.2195,
+     "mean": -0.262,
+     "min": -0.9987,
+     "max": 0.1098
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "consistency_l1": {
+     "median": 0.0117,
+     "mean": 0.0122,
+     "min": 0.0022,
+     "max": 0.0256
+    },
+    "consistency_mrstft": {
+     "median": 0.0368,
+     "mean": 0.0391,
+     "min": 0.0204,
+     "max": 0.0729
+    },
+    "teacher_consistency_l1": {
+     "median": 0.0155,
+     "mean": 0.0165,
+     "min": 0.0024,
+     "max": 0.0352
+    },
+    "teacher_consistency_mrstft": {
+     "median": 0.0361,
+     "mean": 0.0372,
+     "min": 0.0131,
+     "max": 0.1015
+    },
+    "gain_equiv_l1": {
+     "median": 0.0315,
+     "mean": 0.0305,
+     "min": 0.0117,
+     "max": 0.052
+    },
+    "gain_equiv_mrstft": {
+     "median": 0.1515,
+     "mean": 0.1524,
+     "min": 0.1498,
+     "max": 0.163
+    },
+    "passthrough_margin_corr": {
+     "median": 0.0027,
+     "max": 0.0237
+    },
+    "click_retention_db": {
+     "median": 0.012,
+     "mean": 0.0371,
+     "min": -0.1588,
+     "max": 0.3995
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": -0.0006,
+     "min": -0.0133,
+     "max": 0.0027
+    },
+    "out_raw_db": {
+     "median_student_minus_raw_db": -4.7286,
+     "median_teacher_minus_raw_db": -4.4298
+    },
+    "n_collapse12": 0,
+    "n_dev_windows": 39,
+    "consistency_combined": 0.0485,
+    "zeroshot_consistency_combined": 0.0609
+   }
+  },
+  {
+   "ckpt": "full_upd01000.ckpt",
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "anchor_selectivity_preserved": true,
+    "consistency_improves": true,
+    "fidelity_no_major_regression": true,
+    "all": true
+   },
+   "consistency_combined": 0.0495,
+   "summary": {
+    "n_dev_anchors": 39,
+    "anchor_divergence_l1": {
+     "median": 0.0081,
+     "mean": 0.0088,
+     "min": 0.0018,
+     "max": 0.0172
+    },
+    "anchor_divergence_mrstft": {
+     "median": 0.0298,
+     "mean": 0.0328,
+     "min": 0.0165,
+     "max": 0.0707
+    },
+    "student_teacher_ratio_db": {
+     "median": 0.1084,
+     "mean": 0.1632,
+     "min": -0.2481,
+     "max": 0.6371
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "consistency_l1": {
+     "median": 0.0115,
+     "mean": 0.0122,
+     "min": 0.0022,
+     "max": 0.026
+    },
+    "consistency_mrstft": {
+     "median": 0.038,
+     "mean": 0.0386,
+     "min": 0.0221,
+     "max": 0.0655
+    },
+    "teacher_consistency_l1": {
+     "median": 0.0155,
+     "mean": 0.0165,
+     "min": 0.0024,
+     "max": 0.0352
+    },
+    "teacher_consistency_mrstft": {
+     "median": 0.0361,
+     "mean": 0.0372,
+     "min": 0.0131,
+     "max": 0.1015
+    },
+    "gain_equiv_l1": {
+     "median": 0.0325,
+     "mean": 0.0325,
+     "min": 0.0119,
+     "max": 0.0573
+    },
+    "gain_equiv_mrstft": {
+     "median": 0.1517,
+     "mean": 0.1525,
+     "min": 0.1499,
+     "max": 0.1634
+    },
+    "passthrough_margin_corr": {
+     "median": 0.0238,
+     "max": 0.0508
+    },
+    "click_retention_db": {
+     "median": -0.0016,
+     "mean": 0.0269,
+     "min": -0.1137,
+     "max": 0.4156
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": -0.001,
+     "min": -0.016,
+     "max": 0.0027
+    },
+    "out_raw_db": {
+     "median_student_minus_raw_db": -4.3921,
+     "median_teacher_minus_raw_db": -4.4298
+    },
+    "n_collapse12": 0,
+    "n_dev_windows": 39,
+    "consistency_combined": 0.0495,
+    "zeroshot_consistency_combined": 0.0609
+   }
+  },
+  {
+   "ckpt": "full_upd01250.ckpt",
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "anchor_selectivity_preserved": true,
+    "consistency_improves": true,
+    "fidelity_no_major_regression": true,
+    "all": true
+   },
+   "consistency_combined": 0.0483,
+   "summary": {
+    "n_dev_anchors": 39,
+    "anchor_divergence_l1": {
+     "median": 0.0074,
+     "mean": 0.0079,
+     "min": 0.0021,
+     "max": 0.0191
+    },
+    "anchor_divergence_mrstft": {
+     "median": 0.0281,
+     "mean": 0.0322,
+     "min": 0.0161,
+     "max": 0.0676
+    },
+    "student_teacher_ratio_db": {
+     "median": -0.0703,
+     "mean": -0.0395,
+     "min": -0.4316,
+     "max": 0.3163
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "consistency_l1": {
+     "median": 0.0109,
+     "mean": 0.012,
+     "min": 0.0024,
+     "max": 0.0256
+    },
+    "consistency_mrstft": {
+     "median": 0.0374,
+     "mean": 0.0389,
+     "min": 0.0222,
+     "max": 0.069
+    },
+    "teacher_consistency_l1": {
+     "median": 0.0155,
+     "mean": 0.0165,
+     "min": 0.0024,
+     "max": 0.0352
+    },
+    "teacher_consistency_mrstft": {
+     "median": 0.0361,
+     "mean": 0.0372,
+     "min": 0.0131,
+     "max": 0.1015
+    },
+    "gain_equiv_l1": {
+     "median": 0.0318,
+     "mean": 0.0316,
+     "min": 0.012,
+     "max": 0.0553
+    },
+    "gain_equiv_mrstft": {
+     "median": 0.1516,
+     "mean": 0.1525,
+     "min": 0.15,
+     "max": 0.1637
+    },
+    "passthrough_margin_corr": {
+     "median": 0.0225,
+     "max": 0.0418
+    },
+    "click_retention_db": {
+     "median": -0.008,
+     "mean": 0.0045,
+     "min": -0.2595,
+     "max": 0.3074
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": -0.0017,
+     "min": -0.0346,
+     "max": 0.0027
+    },
+    "out_raw_db": {
+     "median_student_minus_raw_db": -4.5044,
+     "median_teacher_minus_raw_db": -4.4298
+    },
+    "n_collapse12": 0,
+    "n_dev_windows": 39,
+    "consistency_combined": 0.0483,
+    "zeroshot_consistency_combined": 0.0609
+   }
+  },
+  {
+   "ckpt": "full_upd01500.ckpt",
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "anchor_selectivity_preserved": true,
+    "consistency_improves": true,
+    "fidelity_no_major_regression": true,
+    "all": true
+   },
+   "consistency_combined": 0.0455,
+   "summary": {
+    "n_dev_anchors": 39,
+    "anchor_divergence_l1": {
+     "median": 0.0068,
+     "mean": 0.0077,
+     "min": 0.0021,
+     "max": 0.0192
+    },
+    "anchor_divergence_mrstft": {
+     "median": 0.0368,
+     "mean": 0.0412,
+     "min": 0.0178,
+     "max": 0.0949
+    },
+    "student_teacher_ratio_db": {
+     "median": 0.0265,
+     "mean": 0.0025,
+     "min": -0.4846,
+     "max": 0.3562
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "consistency_l1": {
+     "median": 0.0112,
+     "mean": 0.0122,
+     "min": 0.0021,
+     "max": 0.0246
+    },
+    "consistency_mrstft": {
+     "median": 0.0343,
+     "mean": 0.0352,
+     "min": 0.0188,
+     "max": 0.0552
+    },
+    "teacher_consistency_l1": {
+     "median": 0.0155,
+     "mean": 0.0165,
+     "min": 0.0024,
+     "max": 0.0352
+    },
+    "teacher_consistency_mrstft": {
+     "median": 0.0361,
+     "mean": 0.0372,
+     "min": 0.0131,
+     "max": 0.1015
+    },
+    "gain_equiv_l1": {
+     "median": 0.0323,
+     "mean": 0.0317,
+     "min": 0.012,
+     "max": 0.0556
+    },
+    "gain_equiv_mrstft": {
+     "median": 0.1516,
+     "mean": 0.1524,
+     "min": 0.1499,
+     "max": 0.1632
+    },
+    "passthrough_margin_corr": {
+     "median": 0.0136,
+     "max": 0.0305
+    },
+    "click_retention_db": {
+     "median": 0.1034,
+     "mean": 0.1411,
+     "min": -0.0085,
+     "max": 0.5225
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": -0.0007,
+     "min": -0.008,
+     "max": 0.0027
+    },
+    "out_raw_db": {
+     "median_student_minus_raw_db": -4.4737,
+     "median_teacher_minus_raw_db": -4.4298
+    },
+    "n_collapse12": 0,
+    "n_dev_windows": 39,
+    "consistency_combined": 0.0455,
+    "zeroshot_consistency_combined": 0.0609
+   }
+  }
+ ],
+ "selected": "full_upd01500.ckpt",
+ "selection_rule": "lowest DEV consistency_combined among checkpoints passing ALL section-32 validity checks (never quiet-output-consistency)",
+ "anti_collapse_gate": {
+  "collapse_rate_12db": 0.0,
+  "median_ratio_db": 0.0265,
+  "max_suppression_db_on_anchors": -0.4846,
+  "passthrough_margin_median": 0.0136,
+  "pass": true
+ },
+ "frozen_checkpoint": "checkpoints/s1r_selected.ckpt",
+ "frozen_sha256": "e1fade5ebeb84e75527d41bb5aba48dc197243a49aa34cb2fee673897a1cc303"
+}

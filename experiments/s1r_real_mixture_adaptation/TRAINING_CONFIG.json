@@ -1,0 +1,69 @@
+{
+ "stage": "S1R real-mixture adaptation",
+ "date": "2026-09-14",
+ "seed": 20260914,
+ "model": {
+  "family": "CLAPSep (official multimodal-query checkpoint, S1E/S1W-identical, zero-shot init)",
+  "checkpoint_sha256": {
+   "best_model.ckpt": "6fcc8dbcd7174af86266cf16b4105eced0802352762f81dbfefdce29af3dba04",
+   "music_audioset_epoch_15_esc_90.14.pt": "fae3e9c087f2909c28a09dc31c8dfcdacbc42ba44c70e972b58c1bd1caf6dedd"
+  },
+  "representation": "bounded real magnitude mask (sigmoid) + mixture phase; STFT 1024/320 hann periodic, 32 kHz mono; phase=False (unchanged, per S1a audit; section 41 reserves mask redesign for a future stage)",
+  "trainable_scope": "decoder_model.mask_net + decoder_model.layers.3 + decoder_model.skip.3 + decoder_model.inverse_patch_embed (final separation/mask head + upper decoder layers)",
+  "frozen": [
+   "CLAP text/query encoder (clap_model)",
+   "audio_branch pretrained HTSAT feature encoder including its LoRA adapters (eval, no_grad)",
+   "decoder film and skip.0..2 and layers.0..2",
+   "decoder spec_norm BatchNorm running state (eval mode = normalization state frozen)"
+  ],
+  "student_init": "exact frozen zero-shot weights; the S1W adapted checkpoint is a negative artifact and is never loaded"
+ },
+ "query_policy": {
+  "condition": "FIXED S1E primary: audio query Q1, zero negative embedding",
+  "sweep": "none"
+ },
+ "data": {
+  "domain": "AUTHENTIC REAL RAW HANDCAM MIXTURES only (frozen S1W TRAIN identities)",
+  "train_anchors": "201 high-confidence teacher-anchor windows = 1206 s central region across all 36 TRAIN recordings",
+  "dev": "39 anchor windows on the 7 frozen DEV identities (evaluation only)",
+  "views_per_example": "canonical context + one of {early, late} context + one known-gain (+-3 dB) canonical view; shared central ~6 s comparison region",
+  "forbidden": "no synthetic target+nuisance remixing, no S1W mixtures, no proxy targets, no generated audio, no test identities"
+ },
+ "optimization": {
+  "optimizer": "AdamW(lr=2e-5, weight_decay=0.01)",
+  "lr_rationale": "protocol section 30: 1e-5..3e-5 band; smaller trainable surface than S1W and catastrophic forgetting is the primary risk; S1W's 1e-4 not defaulted to",
+  "grad_clip": 5.0,
+  "microbatch": 1,
+  "grad_accum": 8,
+  "pilot": {"max_optimizer_updates": 200, "dev_eval_every": 50},
+  "primary": {"max_optimizer_updates": 1500, "dev_eval_every": 250, "early_stop": "if DEV saturates earlier"},
+  "amp": "bfloat16 autocast around decoder+loss; STFT/ISTFT float paths as dispatched",
+  "max_full_runs": 2,
+  "max_gpu_hours": 24
+ },
+ "loss": {
+  "formula": "L = 1.00*teacher_anchor + 0.75*real_context_consistency + 0.25*scale_equivariance + 1.00*anti_collapse + 0.10*pretrained_weight_anchor",
+  "teacher_anchor": "waveform L1 + 0.5*MR-STFT(256/1024/2048, log10-magnitude L1, floor 1e-5) per view vs frozen teacher central crop; averaged over canonical/context/gain views",
+  "consistency_and_scale": "waveform L1 + 0.5*MR-STFT between student central crops after known-gain correction",
+  "anti_collapse": "6 dB hinge: quadratic penalty when student RMS < teacher RMS - 6 dB on anchors; transient-band floor 4.5 dB on top-20% energy teacher frames (guard only, never rewards loudness)",
+  "weight_anchor": "L2-SP: ||theta - theta_zero_shot||^2 over trainable weights",
+  "not_optimized": ["synthetic SI-SDR", "visual onset labels", "chart timing", "R5 detector", "Taiko leakage proxy", "S1W proxy labels", "sealed-test preferences", "test recordings", "generated foley", "source hallucination"]
+ },
+ "inference_protocol": {
+  "training_and_dev_view_chunks": "exact 10-s chunks at 32 kHz (trained distribution), official peak-0.9 rescale protocol applied and undone identically to teacher",
+  "full_clip_eval": "exact 10-s chunk overlap-add (0.5 hann), applied IDENTICALLY to zero-shot and student (S1W FAILURE_CASES section 2)"
+ },
+ "checkpoint_selection": {
+  "rule": "DEV-only; section 32 validity: no collapse; no raw passthrough; anchor selectivity preserved; cross-context consistency improves vs zero-shot; no click/friction proxy regression. Components always reported separately.",
+  "anti_collapse_gate": "section 33 DEV gate before any TEST/SEALED evaluation: collapse_rate_12db == 0, median student/teacher ratio in a defensible band, no widespread >12 dB suppression, no widespread passthrough",
+  "sealed_test_use": "none until weights+protocol fully frozen (section 34)"
+ },
+ "environment": {
+  "hardware": "RTX 4060 Laptop 8 GB",
+  "python": "3.12",
+  "torch": "2.14.0+cu126",
+  "torchaudio": "2.11.0+cu126 (Resample transform only)",
+  "torchvision": "0.29.0+cu126",
+  "parity": "bitwise (max|delta| = 0.0) vs S1E stored zero-shot output, logs/00_parity_check.json"
+ }
+}

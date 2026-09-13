@@ -1,0 +1,60 @@
+{
+ "stage": "S1R - Real-Mixture Adaptation",
+ "date": "2026-09-14",
+ "status": "AWAITING_HUMAN_LISTENING",
+ "teacher_gate": {
+  "result": "PASS",
+  "mode": "preferred",
+  "anchors_seconds": 1206,
+  "anchors_train_windows": 201,
+  "anchors_dev_windows": 39,
+  "train_recordings_covered": 36,
+  "max_recording_share": 0.03,
+  "parity": "bitwise (max|delta| = 0.0 vs S1E stored output)"
+ },
+ "training": {
+  "completed": true,
+  "mode": "real-mixture only (no synthetic target+nuisance anywhere)",
+  "student_init": "exact frozen zero-shot weights",
+  "trainable_scope": "mask_net + layers.3 + skip.3 + inverse_patch_embed",
+  "trainable_params": 16082566,
+  "trainable_percent": 5.03,
+  "optimizer_updates": 1500,
+  "lr": 2e-05,
+  "gpu_hours": 0.91,
+  "peak_vram_gb": 3.42,
+  "micro_pilot": "PASS (200 updates; all section-29 conditions)",
+  "collapse": false,
+  "raw_passthrough": false,
+  "dev_consistency_improvement": "0.0609 -> 0.0455 combined (-25%)"
+ },
+ "checkpoint": {
+  "selected": "full_upd01500 (DEV-only; all section-32 validity checks true at every eval)",
+  "frozen_as": "checkpoints/s1r_selected.ckpt (local)",
+  "sha256": "e1fade5ebeb84e75527d41bb5aba48dc197243a49aa34cb2fee673897a1cc303",
+  "anti_collapse_gate": "PASS (section 33)"
+ },
+ "machine_side": {
+  "test_generalization": "28 S1W-identical windows, 14 unseen recordings: zero collapse, click retention -0.96 dB vs zero-shot -1.20 dB, no passthrough drift",
+  "sealed_primary": "6 groups: S1R within +-0.2 dB RMS of zero-shot, transient retention slightly better on all six, zero collapse",
+  "interpretation": "stable real-domain adaptation without catastrophic forgetting; no large machine-side separation win - human listening decides A vs B"
+ },
+ "listening_pack": {
+  "location_local": "listening_pack/wavs/ (18 items, gitignored)",
+  "items": 18,
+  "methods": "RAW vs ZERO-SHOT vs S1R",
+  "fixed_common_gain": true,
+  "gain_audit_max_abs_error_db": 1e-05,
+  "blind_key_sealed": true,
+  "instructions": "listening_pack/LISTENING_INSTRUCTIONS.md"
+ },
+ "research": {
+  "commit": "stage-final commit on main (sha reported in the stage handoff; verifiable via git log -- experiments/s1r_real_mixture_adaptation)",
+  "push": "pushed to origin/main at stage finalization",
+  "head_equals_origin_main": "verified true at finalization"
+ },
+ "product": {
+  "touched": false,
+  "clean": true
+ }
+}

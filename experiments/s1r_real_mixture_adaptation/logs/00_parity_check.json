@@ -1,0 +1,12 @@
+{
+ "case": "c6_dense_golden",
+ "n_samples": 480000,
+ "max_abs_delta": 0.0,
+ "mean_abs_delta": 0.0,
+ "out_rms_db": -24.00078684583146,
+ "ref_rms_db": -24.00078684583146,
+ "waveform_corr": 1.0,
+ "torch": "2.14.0+cu126",
+ "device": "cuda",
+ "parity_pass": true
+}

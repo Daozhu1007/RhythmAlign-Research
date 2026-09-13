@@ -1,0 +1,487 @@
+{
+ "mode": "pilot",
+ "seed": 20260914,
+ "lr": 2e-05,
+ "acc": 8,
+ "max_updates": 200,
+ "trainable_params": 16082566,
+ "passthrough_div_l1": 0.08879857510328293,
+ "zero_shot_dev": {
+  "n_dev_anchors": 39,
+  "anchor_divergence_l1": {
+   "median": 0.0008,
+   "mean": 0.0008,
+   "min": 0.0002,
+   "max": 0.0014
+  },
+  "anchor_divergence_mrstft": {
+   "median": 0.0184,
+   "mean": 0.0218,
+   "min": 0.0069,
+   "max": 0.0578
+  },
+  "student_teacher_ratio_db": {
+   "median": 0.0021,
+   "mean": 0.0035,
+   "min": -0.088,
+   "max": 0.0624
+  },
+  "collapse_rate_6db": 0.0,
+  "collapse_rate_12db": 0.0,
+  "consistency_l1": {
+   "median": 0.0153,
+   "mean": 0.0165,
+   "min": 0.0024,
+   "max": 0.0356
+  },
+  "consistency_mrstft": {
+   "median": 0.0456,
+   "mean": 0.0479,
+   "min": 0.0247,
+   "max": 0.1034
+  },
+  "teacher_consistency_l1": {
+   "median": 0.0155,
+   "mean": 0.0165,
+   "min": 0.0024,
+   "max": 0.0352
+  },
+  "teacher_consistency_mrstft": {
+   "median": 0.0361,
+   "mean": 0.0372,
+   "min": 0.0131,
+   "max": 0.1015
+  },
+  "gain_equiv_l1": {
+   "median": 0.0321,
+   "mean": 0.0317,
+   "min": 0.0115,
+   "max": 0.0569
+  },
+  "gain_equiv_mrstft": {
+   "median": 0.1516,
+   "mean": 0.1526,
+   "min": 0.1494,
+   "max": 0.1643
+  },
+  "passthrough_margin_corr": {
+   "median": 0.0004,
+   "max": 0.0043
+  },
+  "click_retention_db": {
+   "median": -0.0009,
+   "mean": -0.0002,
+   "min": -0.026,
+   "max": 0.0286
+  },
+  "friction_flat_delta": {
+   "median": 0.0,
+   "mean": 0.0,
+   "min": 0.0,
+   "max": 0.0
+  },
+  "out_raw_db": {
+   "median_student_minus_raw_db": -4.4365,
+   "median_teacher_minus_raw_db": -4.4298
+  },
+  "n_collapse12": 0,
+  "n_dev_windows": 39
+ },
+ "evals": [
+  {
+   "update": 50,
+   "train": {
+    "train_consistency_l1": 0.01002,
+    "train_median_ratio_db": -0.052
+   },
+   "dev": {
+    "n_dev_anchors": 39,
+    "anchor_divergence_l1": {
+     "median": 0.0064,
+     "mean": 0.0075,
+     "min": 0.0008,
+     "max": 0.0214
+    },
+    "anchor_divergence_mrstft": {
+     "median": 0.0279,
+     "mean": 0.0314,
+     "min": 0.0109,
+     "max": 0.0685
+    },
+    "student_teacher_ratio_db": {
+     "median": -0.092,
+     "mean": -0.1472,
+     "min": -0.5728,
+     "max": 0.1357
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "consistency_l1": {
+     "median": 0.0118,
+     "mean": 0.0125,
+     "min": 0.0022,
+     "max": 0.0282
+    },
+    "consistency_mrstft": {
+     "median": 0.0376,
+     "mean": 0.0395,
+     "min": 0.02,
+     "max": 0.0661
+    },
+    "teacher_consistency_l1": {
+     "median": 0.0155,
+     "mean": 0.0165,
+     "min": 0.0024,
+     "max": 0.0352
+    },
+    "teacher_consistency_mrstft": {
+     "median": 0.0361,
+     "mean": 0.0372,
+     "min": 0.0131,
+     "max": 0.1015
+    },
+    "gain_equiv_l1": {
+     "median": 0.0321,
+     "mean": 0.031,
+     "min": 0.0116,
+     "max": 0.0538
+    },
+    "gain_equiv_mrstft": {
+     "median": 0.1514,
+     "mean": 0.1523,
+     "min": 0.1498,
+     "max": 0.1631
+    },
+    "passthrough_margin_corr": {
+     "median": 0.0055,
+     "max": 0.0277
+    },
+    "click_retention_db": {
+     "median": 0.025,
+     "mean": 0.0583,
+     "min": -0.0701,
+     "max": 0.3431
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": -0.0004,
+     "min": -0.0133,
+     "max": 0.008
+    },
+    "out_raw_db": {
+     "median_student_minus_raw_db": -4.6798,
+     "median_teacher_minus_raw_db": -4.4298
+    },
+    "n_collapse12": 0,
+    "n_dev_windows": 39,
+    "consistency_combined": 0.0494,
+    "zeroshot_consistency_combined": 0.0609
+   },
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "anchor_selectivity_preserved": true,
+    "consistency_improves": true,
+    "fidelity_no_major_regression": true,
+    "all": true
+   }
+  },
+  {
+   "update": 100,
+   "train": {
+    "train_consistency_l1": 0.00971,
+    "train_median_ratio_db": -0.122
+   },
+   "dev": {
+    "n_dev_anchors": 39,
+    "anchor_divergence_l1": {
+     "median": 0.0064,
+     "mean": 0.0086,
+     "min": 0.0014,
+     "max": 0.0317
+    },
+    "anchor_divergence_mrstft": {
+     "median": 0.0281,
+     "mean": 0.0307,
+     "min": 0.0136,
+     "max": 0.0665
+    },
+    "student_teacher_ratio_db": {
+     "median": -0.2099,
+     "mean": -0.2622,
+     "min": -1.1005,
+     "max": 0.0791
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "consistency_l1": {
+     "median": 0.0115,
+     "mean": 0.0119,
+     "min": 0.0023,
+     "max": 0.0247
+    },
+    "consistency_mrstft": {
+     "median": 0.0395,
+     "mean": 0.0404,
+     "min": 0.0212,
+     "max": 0.0738
+    },
+    "teacher_consistency_l1": {
+     "median": 0.0155,
+     "mean": 0.0165,
+     "min": 0.0024,
+     "max": 0.0352
+    },
+    "teacher_consistency_mrstft": {
+     "median": 0.0361,
+     "mean": 0.0372,
+     "min": 0.0131,
+     "max": 0.1015
+    },
+    "gain_equiv_l1": {
+     "median": 0.0316,
+     "mean": 0.0305,
+     "min": 0.0117,
+     "max": 0.052
+    },
+    "gain_equiv_mrstft": {
+     "median": 0.1516,
+     "mean": 0.1524,
+     "min": 0.1498,
+     "max": 0.1634
+    },
+    "passthrough_margin_corr": {
+     "median": 0.0025,
+     "max": 0.0233
+    },
+    "click_retention_db": {
+     "median": -0.0196,
+     "mean": -0.0226,
+     "min": -0.2887,
+     "max": 0.1784
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": -0.001,
+     "min": -0.016,
+     "max": 0.0027
+    },
+    "out_raw_db": {
+     "median_student_minus_raw_db": -4.6949,
+     "median_teacher_minus_raw_db": -4.4298
+    },
+    "n_collapse12": 0,
+    "n_dev_windows": 39,
+    "consistency_combined": 0.051,
+    "zeroshot_consistency_combined": 0.0609
+   },
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "anchor_selectivity_preserved": true,
+    "consistency_improves": true,
+    "fidelity_no_major_regression": true,
+    "all": true
+   }
+  },
+  {
+   "update": 150,
+   "train": {
+    "train_consistency_l1": 0.00962,
+    "train_median_ratio_db": 0.011
+   },
+   "dev": {
+    "n_dev_anchors": 39,
+    "anchor_divergence_l1": {
+     "median": 0.0079,
+     "mean": 0.0098,
+     "min": 0.0015,
+     "max": 0.0318
+    },
+    "anchor_divergence_mrstft": {
+     "median": 0.0283,
+     "mean": 0.0312,
+     "min": 0.0111,
+     "max": 0.0662
+    },
+    "student_teacher_ratio_db": {
+     "median": -0.2418,
+     "mean": -0.3146,
+     "min": -1.0507,
+     "max": 0.1884
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "consistency_l1": {
+     "median": 0.0116,
+     "mean": 0.0121,
+     "min": 0.0022,
+     "max": 0.0277
+    },
+    "consistency_mrstft": {
+     "median": 0.038,
+     "mean": 0.0391,
+     "min": 0.021,
+     "max": 0.0693
+    },
+    "teacher_consistency_l1": {
+     "median": 0.0155,
+     "mean": 0.0165,
+     "min": 0.0024,
+     "max": 0.0352
+    },
+    "teacher_consistency_mrstft": {
+     "median": 0.0361,
+     "mean": 0.0372,
+     "min": 0.0131,
+     "max": 0.1015
+    },
+    "gain_equiv_l1": {
+     "median": 0.0309,
+     "mean": 0.0303,
+     "min": 0.0118,
+     "max": 0.0513
+    },
+    "gain_equiv_mrstft": {
+     "median": 0.1514,
+     "mean": 0.1523,
+     "min": 0.15,
+     "max": 0.1631
+    },
+    "passthrough_margin_corr": {
+     "median": 0.0019,
+     "max": 0.0248
+    },
+    "click_retention_db": {
+     "median": -0.0093,
+     "mean": -0.0047,
+     "min": -0.3203,
+     "max": 0.2668
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": -0.0007,
+     "min": -0.0106,
+     "max": 0.0027
+    },
+    "out_raw_db": {
+     "median_student_minus_raw_db": -4.7576,
+     "median_teacher_minus_raw_db": -4.4298
+    },
+    "n_collapse12": 0,
+    "n_dev_windows": 39,
+    "consistency_combined": 0.0496,
+    "zeroshot_consistency_combined": 0.0609
+   },
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "anchor_selectivity_preserved": true,
+    "consistency_improves": true,
+    "fidelity_no_major_regression": true,
+    "all": true
+   }
+  },
+  {
+   "update": 200,
+   "train": {
+    "train_consistency_l1": 0.01012,
+    "train_median_ratio_db": -0.114
+   },
+   "dev": {
+    "n_dev_anchors": 39,
+    "anchor_divergence_l1": {
+     "median": 0.0061,
+     "mean": 0.0069,
+     "min": 0.0014,
+     "max": 0.0226
+    },
+    "anchor_divergence_mrstft": {
+     "median": 0.0263,
+     "mean": 0.0305,
+     "min": 0.0113,
+     "max": 0.0683
+    },
+    "student_teacher_ratio_db": {
+     "median": -0.1153,
+     "mean": -0.1268,
+     "min": -0.628,
+     "max": 0.2352
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "consistency_l1": {
+     "median": 0.0118,
+     "mean": 0.0124,
+     "min": 0.0022,
+     "max": 0.0249
+    },
+    "consistency_mrstft": {
+     "median": 0.0375,
+     "mean": 0.039,
+     "min": 0.0225,
+     "max": 0.0699
+    },
+    "teacher_consistency_l1": {
+     "median": 0.0155,
+     "mean": 0.0165,
+     "min": 0.0024,
+     "max": 0.0352
+    },
+    "teacher_consistency_mrstft": {
+     "median": 0.0361,
+     "mean": 0.0372,
+     "min": 0.0131,
+     "max": 0.1015
+    },
+    "gain_equiv_l1": {
+     "median": 0.0317,
+     "mean": 0.0312,
+     "min": 0.0118,
+     "max": 0.0546
+    },
+    "gain_equiv_mrstft": {
+     "median": 0.1515,
+     "mean": 0.1524,
+     "min": 0.1497,
+     "max": 0.1631
+    },
+    "passthrough_margin_corr": {
+     "median": 0.0105,
+     "max": 0.028
+    },
+    "click_retention_db": {
+     "median": -0.014,
+     "mean": 0.003,
+     "min": -0.193,
+     "max": 0.2767
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": -0.0005,
+     "min": -0.0106,
+     "max": 0.0027
+    },
+    "out_raw_db": {
+     "median_student_minus_raw_db": -4.6146,
+     "median_teacher_minus_raw_db": -4.4298
+    },
+    "n_collapse12": 0,
+    "n_dev_windows": 39,
+    "consistency_combined": 0.0493,
+    "zeroshot_consistency_combined": 0.0609
+   },
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "anchor_selectivity_preserved": true,
+    "consistency_improves": true,
+    "fidelity_no_major_regression": true,
+    "all": true
+   }
+  }
+ ],
+ "stop": "COMPLETED",
+ "wall_clock_s": 621.5,
+ "peak_vram_gb": 3.423
+}
