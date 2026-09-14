@@ -1,0 +1,535 @@
+{
+ "mode": "full",
+ "seed": 20260915,
+ "lr": 2e-05,
+ "max_updates": 1500,
+ "trainable_params": 15490674,
+ "passthrough_div_l1": 0.10087200999259949,
+ "adapter_lr": 2e-05,
+ "alpha_range": [
+  0.12,
+  0.45
+ ],
+ "declared_adjustments": false,
+ "evals": [
+  {
+   "update": 250,
+   "train": {
+    "train_zero_vs_correct_db": 0.001
+   },
+   "dev": {
+    "n_dev_windows": 17,
+    "student_s1r_ratio_db": {
+     "median": -0.1866,
+     "mean": -0.2084,
+     "min": -0.5962,
+     "max": 0.0069
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "anchor_divergence_l1": {
+     "median": 0.0062,
+     "mean": 0.0069,
+     "min": 0.0049,
+     "max": 0.0118
+    },
+    "passthrough_margin_corr": {
+     "median": -0.0025,
+     "max": 0.0149
+    },
+    "click_retention_db": {
+     "median": -0.0161,
+     "mean": -0.0129,
+     "min": -0.0632,
+     "max": 0.0367
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": 0.0002,
+     "min": 0.0,
+     "max": 0.0027
+    },
+    "consistency_l1": {
+     "median": 0.0113,
+     "mean": 0.0144,
+     "min": 0.0091,
+     "max": 0.0275
+    },
+    "consistency_mrstft": {
+     "median": 0.0267,
+     "mean": 0.0291,
+     "min": 0.0173,
+     "max": 0.0463
+    },
+    "suppression_adv_vs_s1r_db": {
+     "median": -0.0003,
+     "mean": -0.0008,
+     "min": -0.0177,
+     "max": 0.008
+    },
+    "causal_gap_zero_db": {
+     "median": 0.0002,
+     "mean": -0.0005,
+     "min": -0.0087,
+     "max": 0.0034
+    },
+    "causal_gap_wrong_db": {
+     "median": 0.0001,
+     "mean": 0.0,
+     "min": -0.0012,
+     "max": 0.0007
+    },
+    "wrong_clean_ratio_db": {
+     "median": -0.1862,
+     "mean": -0.2083,
+     "min": -0.5963,
+     "max": 0.0071
+    },
+    "consistency_combined": 0.038,
+    "passthrough_div_l1": 0.1009
+   },
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "s1r_anchor_preserved": true,
+    "correct_ref_causally_used": false,
+    "wrong_ref_safe": true,
+    "beats_s1r_on_injection": false,
+    "all": false
+   }
+  },
+  {
+   "update": 500,
+   "train": {
+    "train_zero_vs_correct_db": 0.001
+   },
+   "dev": {
+    "n_dev_windows": 17,
+    "student_s1r_ratio_db": {
+     "median": -0.138,
+     "mean": -0.1491,
+     "min": -0.4339,
+     "max": 0.0975
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "anchor_divergence_l1": {
+     "median": 0.0064,
+     "mean": 0.007,
+     "min": 0.0051,
+     "max": 0.0099
+    },
+    "passthrough_margin_corr": {
+     "median": 0.002,
+     "max": 0.0185
+    },
+    "click_retention_db": {
+     "median": -0.0293,
+     "mean": -0.0246,
+     "min": -0.0469,
+     "max": 0.0158
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "consistency_l1": {
+     "median": 0.0107,
+     "mean": 0.0139,
+     "min": 0.0087,
+     "max": 0.0265
+    },
+    "consistency_mrstft": {
+     "median": 0.0266,
+     "mean": 0.0293,
+     "min": 0.0175,
+     "max": 0.0458
+    },
+    "suppression_adv_vs_s1r_db": {
+     "median": 0.0016,
+     "mean": 0.0014,
+     "min": -0.0392,
+     "max": 0.0198
+    },
+    "causal_gap_zero_db": {
+     "median": 0.0007,
+     "mean": 0.0003,
+     "min": -0.0074,
+     "max": 0.006
+    },
+    "causal_gap_wrong_db": {
+     "median": 0.0001,
+     "mean": 0.0001,
+     "min": -0.0003,
+     "max": 0.0011
+    },
+    "wrong_clean_ratio_db": {
+     "median": -0.1382,
+     "mean": -0.1492,
+     "min": -0.4343,
+     "max": 0.0969
+    },
+    "consistency_combined": 0.0373,
+    "passthrough_div_l1": 0.1009
+   },
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "s1r_anchor_preserved": true,
+    "correct_ref_causally_used": false,
+    "wrong_ref_safe": true,
+    "beats_s1r_on_injection": true,
+    "all": false
+   }
+  },
+  {
+   "update": 750,
+   "train": {
+    "train_zero_vs_correct_db": -0.0
+   },
+   "dev": {
+    "n_dev_windows": 17,
+    "student_s1r_ratio_db": {
+     "median": -0.2722,
+     "mean": -0.2537,
+     "min": -0.5429,
+     "max": -0.0775
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "anchor_divergence_l1": {
+     "median": 0.0062,
+     "mean": 0.0071,
+     "min": 0.0047,
+     "max": 0.0108
+    },
+    "passthrough_margin_corr": {
+     "median": -0.0053,
+     "max": 0.0088
+    },
+    "click_retention_db": {
+     "median": -0.0076,
+     "mean": -0.0066,
+     "min": -0.0302,
+     "max": 0.026
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": 0.0002,
+     "min": 0.0,
+     "max": 0.0027
+    },
+    "consistency_l1": {
+     "median": 0.011,
+     "mean": 0.0142,
+     "min": 0.0087,
+     "max": 0.0268
+    },
+    "consistency_mrstft": {
+     "median": 0.0263,
+     "mean": 0.0287,
+     "min": 0.0175,
+     "max": 0.0443
+    },
+    "suppression_adv_vs_s1r_db": {
+     "median": -0.0014,
+     "mean": -0.0053,
+     "min": -0.0502,
+     "max": 0.0105
+    },
+    "causal_gap_zero_db": {
+     "median": -0.0003,
+     "mean": -0.0014,
+     "min": -0.0106,
+     "max": 0.0033
+    },
+    "causal_gap_wrong_db": {
+     "median": 0.0001,
+     "mean": 0.0001,
+     "min": -0.0014,
+     "max": 0.0012
+    },
+    "wrong_clean_ratio_db": {
+     "median": -0.2726,
+     "mean": -0.2537,
+     "min": -0.5434,
+     "max": -0.0781
+    },
+    "consistency_combined": 0.0373,
+    "passthrough_div_l1": 0.1009
+   },
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "s1r_anchor_preserved": true,
+    "correct_ref_causally_used": false,
+    "wrong_ref_safe": true,
+    "beats_s1r_on_injection": false,
+    "all": false
+   }
+  },
+  {
+   "update": 1000,
+   "train": {
+    "train_zero_vs_correct_db": 0.001
+   },
+   "dev": {
+    "n_dev_windows": 17,
+    "student_s1r_ratio_db": {
+     "median": -0.1147,
+     "mean": -0.1309,
+     "min": -0.4382,
+     "max": 0.0607
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "anchor_divergence_l1": {
+     "median": 0.0065,
+     "mean": 0.0066,
+     "min": 0.0042,
+     "max": 0.0098
+    },
+    "passthrough_margin_corr": {
+     "median": 0.0027,
+     "max": 0.0224
+    },
+    "click_retention_db": {
+     "median": 0.0012,
+     "mean": 0.0024,
+     "min": -0.0244,
+     "max": 0.0306
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "consistency_l1": {
+     "median": 0.0111,
+     "mean": 0.014,
+     "min": 0.0089,
+     "max": 0.0268
+    },
+    "consistency_mrstft": {
+     "median": 0.0263,
+     "mean": 0.0287,
+     "min": 0.0171,
+     "max": 0.0451
+    },
+    "suppression_adv_vs_s1r_db": {
+     "median": 0.0074,
+     "mean": 0.0055,
+     "min": -0.0216,
+     "max": 0.0292
+    },
+    "causal_gap_zero_db": {
+     "median": 0.0012,
+     "mean": 0.001,
+     "min": -0.0056,
+     "max": 0.0063
+    },
+    "causal_gap_wrong_db": {
+     "median": 0.0002,
+     "mean": 0.0002,
+     "min": -0.0005,
+     "max": 0.0009
+    },
+    "wrong_clean_ratio_db": {
+     "median": -0.1144,
+     "mean": -0.1309,
+     "min": -0.4384,
+     "max": 0.0611
+    },
+    "consistency_combined": 0.0374,
+    "passthrough_div_l1": 0.1009
+   },
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "s1r_anchor_preserved": true,
+    "correct_ref_causally_used": false,
+    "wrong_ref_safe": true,
+    "beats_s1r_on_injection": true,
+    "all": false
+   }
+  },
+  {
+   "update": 1250,
+   "train": {
+    "train_zero_vs_correct_db": 0.001
+   },
+   "dev": {
+    "n_dev_windows": 17,
+    "student_s1r_ratio_db": {
+     "median": -0.2701,
+     "mean": -0.2666,
+     "min": -0.6001,
+     "max": -0.1062
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "anchor_divergence_l1": {
+     "median": 0.0067,
+     "mean": 0.0068,
+     "min": 0.0048,
+     "max": 0.0103
+    },
+    "passthrough_margin_corr": {
+     "median": 0.0011,
+     "max": 0.0164
+    },
+    "click_retention_db": {
+     "median": -0.0189,
+     "mean": -0.0159,
+     "min": -0.0411,
+     "max": 0.0204
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": 0.0002,
+     "min": 0.0,
+     "max": 0.0027
+    },
+    "consistency_l1": {
+     "median": 0.0108,
+     "mean": 0.0138,
+     "min": 0.0089,
+     "max": 0.0266
+    },
+    "consistency_mrstft": {
+     "median": 0.0266,
+     "mean": 0.029,
+     "min": 0.0173,
+     "max": 0.0461
+    },
+    "suppression_adv_vs_s1r_db": {
+     "median": 0.0007,
+     "mean": -0.0014,
+     "min": -0.0405,
+     "max": 0.0129
+    },
+    "causal_gap_zero_db": {
+     "median": -0.0002,
+     "mean": -0.0008,
+     "min": -0.0084,
+     "max": 0.003
+    },
+    "causal_gap_wrong_db": {
+     "median": 0.0,
+     "mean": 0.0002,
+     "min": -0.0001,
+     "max": 0.0008
+    },
+    "wrong_clean_ratio_db": {
+     "median": -0.2697,
+     "mean": -0.2666,
+     "min": -0.6007,
+     "max": -0.1055
+    },
+    "consistency_combined": 0.0374,
+    "passthrough_div_l1": 0.1009
+   },
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "s1r_anchor_preserved": true,
+    "correct_ref_causally_used": false,
+    "wrong_ref_safe": true,
+    "beats_s1r_on_injection": true,
+    "all": false
+   }
+  },
+  {
+   "update": 1500,
+   "train": {
+    "train_zero_vs_correct_db": -0.0
+   },
+   "dev": {
+    "n_dev_windows": 17,
+    "student_s1r_ratio_db": {
+     "median": -0.2663,
+     "mean": -0.2824,
+     "min": -0.5607,
+     "max": -0.0497
+    },
+    "collapse_rate_6db": 0.0,
+    "collapse_rate_12db": 0.0,
+    "anchor_divergence_l1": {
+     "median": 0.0061,
+     "mean": 0.0066,
+     "min": 0.0042,
+     "max": 0.0114
+    },
+    "passthrough_margin_corr": {
+     "median": 0.0012,
+     "max": 0.0105
+    },
+    "click_retention_db": {
+     "median": -0.0371,
+     "mean": -0.0325,
+     "min": -0.0634,
+     "max": -0.0057
+    },
+    "friction_flat_delta": {
+     "median": 0.0,
+     "mean": 0.0002,
+     "min": 0.0,
+     "max": 0.0027
+    },
+    "consistency_l1": {
+     "median": 0.0111,
+     "mean": 0.0141,
+     "min": 0.0088,
+     "max": 0.0263
+    },
+    "consistency_mrstft": {
+     "median": 0.0268,
+     "mean": 0.0293,
+     "min": 0.0177,
+     "max": 0.0458
+    },
+    "suppression_adv_vs_s1r_db": {
+     "median": -0.0004,
+     "mean": -0.0045,
+     "min": -0.05,
+     "max": 0.0139
+    },
+    "causal_gap_zero_db": {
+     "median": 0.0003,
+     "mean": -0.0011,
+     "min": -0.0091,
+     "max": 0.0027
+    },
+    "causal_gap_wrong_db": {
+     "median": -0.0,
+     "mean": -0.0,
+     "min": -0.0008,
+     "max": 0.0016
+    },
+    "wrong_clean_ratio_db": {
+     "median": -0.2659,
+     "mean": -0.2824,
+     "min": -0.561,
+     "max": -0.0497
+    },
+    "consistency_combined": 0.0379,
+    "passthrough_div_l1": 0.1009
+   },
+   "checks": {
+    "no_collapse": true,
+    "no_raw_passthrough": true,
+    "s1r_anchor_preserved": true,
+    "correct_ref_causally_used": false,
+    "wrong_ref_safe": true,
+    "beats_s1r_on_injection": false,
+    "all": false
+   }
+  }
+ ],
+ "stop": "COMPLETED",
+ "wall_clock_s": 4049.5,
+ "peak_vram_gb": 4.955
+}

@@ -1,0 +1,80 @@
+{
+ "s1r_ckpt_sha256": "e1fade5ebeb84e75527d41bb5aba48dc197243a49aa34cb2fee673897a1cc303",
+ "sealed_parity": {
+  "pass": true,
+  "rows": [
+   {
+    "group": "c1_speech_npc_a",
+    "rms_ref_db": -19.081,
+    "rms_new_db": -19.059,
+    "rms_abs_diff_db": 0.0216,
+    "waveform_corr": 0.999723,
+    "pass": true
+   },
+   {
+    "group": "c2_speech_npc_b",
+    "rms_ref_db": -20.429,
+    "rms_new_db": -20.369,
+    "rms_abs_diff_db": 0.0596,
+    "waveform_corr": 0.999333,
+    "pass": true
+   },
+   {
+    "group": "c3_taiko_prompt",
+    "rms_ref_db": -21.504,
+    "rms_new_db": -21.428,
+    "rms_abs_diff_db": 0.0762,
+    "waveform_corr": 0.999129,
+    "pass": true
+   },
+   {
+    "group": "c6_dense_golden",
+    "rms_ref_db": -20.798,
+    "rms_new_db": -20.731,
+    "rms_abs_diff_db": 0.0664,
+    "waveform_corr": 0.999193,
+    "pass": true
+   },
+   {
+    "group": "c7_weak_taps",
+    "rms_ref_db": -20.376,
+    "rms_new_db": -20.352,
+    "rms_abs_diff_db": 0.0243,
+    "waveform_corr": 0.999781,
+    "pass": true
+   },
+   {
+    "group": "c8_slide_friction",
+    "rms_ref_db": -18.938,
+    "rms_new_db": -18.891,
+    "rms_abs_diff_db": 0.0465,
+    "waveform_corr": 0.999488,
+    "pass": true
+   }
+  ]
+ },
+ "init_parity_vs_s1r": {
+  "correct": {
+   "max_abs_diff_vs_s1r": 0.0,
+   "pass": true
+  },
+  "zero": {
+   "max_abs_diff_vs_s1r": 0.0,
+   "pass": true
+  },
+  "wrong": {
+   "max_abs_diff_vs_s1r": 0.0,
+   "pass": true
+  }
+ },
+ "adapter_gradient": {
+  "out_head_abs_sum": 0.11031180620193481,
+  "conv1_abs_sum": 0.0,
+  "mask_head_abs_sum": 35.98202133178711,
+  "frozen_clean": true
+ },
+ "trainable_params": 15490674,
+ "total_params": 319480801,
+ "trainable_percent": 4.85,
+ "all_pass": true
+}

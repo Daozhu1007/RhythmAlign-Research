@@ -1,0 +1,40 @@
+{
+ "stage": "S2A reference-conditioned real-mixture extraction",
+ "privacy_note": "hashes and sizes only; weights stay local",
+ "base_checkpoint": {
+  "file": "experiments/s1r_real_mixture_adaptation/checkpoints/s1r_selected.ckpt",
+  "sha256": "e1fade5ebeb84e75527d41bb5aba48dc197243a49aa34cb2fee673897a1cc303"
+ },
+ "checkpoints": [
+  {
+   "file": "full_upd00250.ckpt",
+   "sha256": "c0efe8d835075c98aff5b1d74f619c5ea83a7ff87c906e187e4bc0b25b0a66d3",
+   "bytes": 1283111400
+  },
+  {
+   "file": "full_upd00500.ckpt",
+   "sha256": "1f509fab4fc0a64834fb8181c44d450a41a8a44b04f3664476b7b374e1149d39",
+   "bytes": 1283111400
+  },
+  {
+   "file": "full_upd00750.ckpt",
+   "sha256": "c4cb3f8c2602afb6b42a31d64183d63a67fe9b9ec5b53a1e866645be3fd6bff3",
+   "bytes": 1283111400
+  },
+  {
+   "file": "full_upd01000.ckpt",
+   "sha256": "7d1fb7725ba863a34f93fac44a70458f4d1cf3003623cb7ea583aedd58028150",
+   "bytes": 1283111400
+  },
+  {
+   "file": "full_upd01250.ckpt",
+   "sha256": "d79f75dd028765d0ff2a13b4da5d393fb34cbfbe0362f1fef5532f38a1acb75b",
+   "bytes": 1283111400
+  },
+  {
+   "file": "full_upd01500.ckpt",
+   "sha256": "f40bfc9baebe22b3f11c8c7786a1aa7c504939eaad3a738613c87651972ef03f",
+   "bytes": 1283111400
+  }
+ ]
+}

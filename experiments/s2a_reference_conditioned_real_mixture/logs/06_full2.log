@@ -1,0 +1,549 @@
+D:\Code\RhythmAlign-Research\experiments\s1r_real_mixture_adaptation\.venv\Lib\site-packages\torch\functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\native\TensorShape.cpp:4223.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Load the specified checkpoint D:\Code\RhythmAlign-Research\experiments\r3_audio_query\checkpoints\music_audioset_epoch_15_esc_90.14.pt from users.
+Load Checkpoint...
+logit_scale_a 	 Loaded
+logit_scale_t 	 Loaded
+audio_branch.spectrogram_extractor.stft.conv_real.weight 	 Loaded
+audio_branch.spectrogram_extractor.stft.conv_imag.weight 	 Loaded
+audio_branch.logmel_extractor.melW 	 Loaded
+audio_branch.bn0.weight 	 Loaded
+audio_branch.bn0.bias 	 Loaded
+audio_branch.patch_embed.proj.weight 	 Loaded
+audio_branch.patch_embed.proj.bias 	 Loaded
+audio_branch.patch_embed.norm.weight 	 Loaded
+audio_branch.patch_embed.norm.bias 	 Loaded
+audio_branch.layers.0.blocks.0.norm1.weight 	 Loaded
+audio_branch.layers.0.blocks.0.norm1.bias 	 Loaded
+audio_branch.layers.0.blocks.0.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.0.blocks.0.attn.qkv.weight 	 Loaded
+audio_branch.layers.0.blocks.0.attn.qkv.bias 	 Loaded
+audio_branch.layers.0.blocks.0.attn.proj.weight 	 Loaded
+audio_branch.layers.0.blocks.0.attn.proj.bias 	 Loaded
+audio_branch.layers.0.blocks.0.norm2.weight 	 Loaded
+audio_branch.layers.0.blocks.0.norm2.bias 	 Loaded
+audio_branch.layers.0.blocks.0.mlp.fc1.weight 	 Loaded
+audio_branch.layers.0.blocks.0.mlp.fc1.bias 	 Loaded
+audio_branch.layers.0.blocks.0.mlp.fc2.weight 	 Loaded
+audio_branch.layers.0.blocks.0.mlp.fc2.bias 	 Loaded
+audio_branch.layers.0.blocks.1.norm1.weight 	 Loaded
+audio_branch.layers.0.blocks.1.norm1.bias 	 Loaded
+audio_branch.layers.0.blocks.1.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.0.blocks.1.attn.qkv.weight 	 Loaded
+audio_branch.layers.0.blocks.1.attn.qkv.bias 	 Loaded
+audio_branch.layers.0.blocks.1.attn.proj.weight 	 Loaded
+audio_branch.layers.0.blocks.1.attn.proj.bias 	 Loaded
+audio_branch.layers.0.blocks.1.norm2.weight 	 Loaded
+audio_branch.layers.0.blocks.1.norm2.bias 	 Loaded
+audio_branch.layers.0.blocks.1.mlp.fc1.weight 	 Loaded
+audio_branch.layers.0.blocks.1.mlp.fc1.bias 	 Loaded
+audio_branch.layers.0.blocks.1.mlp.fc2.weight 	 Loaded
+audio_branch.layers.0.blocks.1.mlp.fc2.bias 	 Loaded
+audio_branch.layers.0.downsample.reduction.weight 	 Loaded
+audio_branch.layers.0.downsample.norm.weight 	 Loaded
+audio_branch.layers.0.downsample.norm.bias 	 Loaded
+audio_branch.layers.1.blocks.0.norm1.weight 	 Loaded
+audio_branch.layers.1.blocks.0.norm1.bias 	 Loaded
+audio_branch.layers.1.blocks.0.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.1.blocks.0.attn.qkv.weight 	 Loaded
+audio_branch.layers.1.blocks.0.attn.qkv.bias 	 Loaded
+audio_branch.layers.1.blocks.0.attn.proj.weight 	 Loaded
+audio_branch.layers.1.blocks.0.attn.proj.bias 	 Loaded
+audio_branch.layers.1.blocks.0.norm2.weight 	 Loaded
+audio_branch.layers.1.blocks.0.norm2.bias 	 Loaded
+audio_branch.layers.1.blocks.0.mlp.fc1.weight 	 Loaded
+audio_branch.layers.1.blocks.0.mlp.fc1.bias 	 Loaded
+audio_branch.layers.1.blocks.0.mlp.fc2.weight 	 Loaded
+audio_branch.layers.1.blocks.0.mlp.fc2.bias 	 Loaded
+audio_branch.layers.1.blocks.1.norm1.weight 	 Loaded
+audio_branch.layers.1.blocks.1.norm1.bias 	 Loaded
+audio_branch.layers.1.blocks.1.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.1.blocks.1.attn.qkv.weight 	 Loaded
+audio_branch.layers.1.blocks.1.attn.qkv.bias 	 Loaded
+audio_branch.layers.1.blocks.1.attn.proj.weight 	 Loaded
+audio_branch.layers.1.blocks.1.attn.proj.bias 	 Loaded
+audio_branch.layers.1.blocks.1.norm2.weight 	 Loaded
+audio_branch.layers.1.blocks.1.norm2.bias 	 Loaded
+audio_branch.layers.1.blocks.1.mlp.fc1.weight 	 Loaded
+audio_branch.layers.1.blocks.1.mlp.fc1.bias 	 Loaded
+audio_branch.layers.1.blocks.1.mlp.fc2.weight 	 Loaded
+audio_branch.layers.1.blocks.1.mlp.fc2.bias 	 Loaded
+audio_branch.layers.1.downsample.reduction.weight 	 Loaded
+audio_branch.layers.1.downsample.norm.weight 	 Loaded
+audio_branch.layers.1.downsample.norm.bias 	 Loaded
+audio_branch.layers.2.blocks.0.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.0.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.0.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.0.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.0.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.0.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.0.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.0.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.0.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.0.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.0.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.0.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.0.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.1.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.1.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.1.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.1.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.1.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.1.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.1.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.1.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.1.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.1.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.1.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.1.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.1.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.2.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.2.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.2.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.2.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.2.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.2.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.2.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.2.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.2.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.2.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.2.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.2.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.2.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.3.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.3.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.3.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.3.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.3.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.3.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.3.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.3.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.3.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.3.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.3.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.3.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.3.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.4.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.4.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.4.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.4.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.4.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.4.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.4.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.4.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.4.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.4.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.4.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.4.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.4.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.5.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.5.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.5.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.5.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.5.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.5.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.5.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.5.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.5.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.5.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.5.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.5.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.5.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.6.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.6.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.6.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.6.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.6.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.6.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.6.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.6.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.6.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.6.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.6.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.6.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.6.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.7.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.7.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.7.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.7.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.7.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.7.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.7.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.7.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.7.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.7.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.7.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.7.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.7.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.8.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.8.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.8.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.8.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.8.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.8.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.8.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.8.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.8.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.8.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.8.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.8.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.8.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.9.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.9.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.9.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.9.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.9.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.9.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.9.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.9.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.9.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.9.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.9.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.9.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.9.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.10.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.10.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.10.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.10.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.10.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.10.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.10.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.10.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.10.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.10.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.10.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.10.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.10.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.blocks.11.norm1.weight 	 Loaded
+audio_branch.layers.2.blocks.11.norm1.bias 	 Loaded
+audio_branch.layers.2.blocks.11.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.2.blocks.11.attn.qkv.weight 	 Loaded
+audio_branch.layers.2.blocks.11.attn.qkv.bias 	 Loaded
+audio_branch.layers.2.blocks.11.attn.proj.weight 	 Loaded
+audio_branch.layers.2.blocks.11.attn.proj.bias 	 Loaded
+audio_branch.layers.2.blocks.11.norm2.weight 	 Loaded
+audio_branch.layers.2.blocks.11.norm2.bias 	 Loaded
+audio_branch.layers.2.blocks.11.mlp.fc1.weight 	 Loaded
+audio_branch.layers.2.blocks.11.mlp.fc1.bias 	 Loaded
+audio_branch.layers.2.blocks.11.mlp.fc2.weight 	 Loaded
+audio_branch.layers.2.blocks.11.mlp.fc2.bias 	 Loaded
+audio_branch.layers.2.downsample.reduction.weight 	 Loaded
+audio_branch.layers.2.downsample.norm.weight 	 Loaded
+audio_branch.layers.2.downsample.norm.bias 	 Loaded
+audio_branch.layers.3.blocks.0.norm1.weight 	 Loaded
+audio_branch.layers.3.blocks.0.norm1.bias 	 Loaded
+audio_branch.layers.3.blocks.0.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.3.blocks.0.attn.qkv.weight 	 Loaded
+audio_branch.layers.3.blocks.0.attn.qkv.bias 	 Loaded
+audio_branch.layers.3.blocks.0.attn.proj.weight 	 Loaded
+audio_branch.layers.3.blocks.0.attn.proj.bias 	 Loaded
+audio_branch.layers.3.blocks.0.norm2.weight 	 Loaded
+audio_branch.layers.3.blocks.0.norm2.bias 	 Loaded
+audio_branch.layers.3.blocks.0.mlp.fc1.weight 	 Loaded
+audio_branch.layers.3.blocks.0.mlp.fc1.bias 	 Loaded
+audio_branch.layers.3.blocks.0.mlp.fc2.weight 	 Loaded
+audio_branch.layers.3.blocks.0.mlp.fc2.bias 	 Loaded
+audio_branch.layers.3.blocks.1.norm1.weight 	 Loaded
+audio_branch.layers.3.blocks.1.norm1.bias 	 Loaded
+audio_branch.layers.3.blocks.1.attn.relative_position_bias_table 	 Loaded
+audio_branch.layers.3.blocks.1.attn.qkv.weight 	 Loaded
+audio_branch.layers.3.blocks.1.attn.qkv.bias 	 Loaded
+audio_branch.layers.3.blocks.1.attn.proj.weight 	 Loaded
+audio_branch.layers.3.blocks.1.attn.proj.bias 	 Loaded
+audio_branch.layers.3.blocks.1.norm2.weight 	 Loaded
+audio_branch.layers.3.blocks.1.norm2.bias 	 Loaded
+audio_branch.layers.3.blocks.1.mlp.fc1.weight 	 Loaded
+audio_branch.layers.3.blocks.1.mlp.fc1.bias 	 Loaded
+audio_branch.layers.3.blocks.1.mlp.fc2.weight 	 Loaded
+audio_branch.layers.3.blocks.1.mlp.fc2.bias 	 Loaded
+audio_branch.norm.weight 	 Loaded
+audio_branch.norm.bias 	 Loaded
+audio_branch.tscam_conv.weight 	 Loaded
+audio_branch.tscam_conv.bias 	 Loaded
+audio_branch.head.weight 	 Loaded
+audio_branch.head.bias 	 Loaded
+text_branch.embeddings.word_embeddings.weight 	 Loaded
+text_branch.embeddings.position_embeddings.weight 	 Loaded
+text_branch.embeddings.token_type_embeddings.weight 	 Loaded
+text_branch.embeddings.LayerNorm.weight 	 Loaded
+text_branch.embeddings.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.0.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.0.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.0.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.0.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.0.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.0.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.0.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.0.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.0.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.0.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.0.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.0.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.0.output.dense.weight 	 Loaded
+text_branch.encoder.layer.0.output.dense.bias 	 Loaded
+text_branch.encoder.layer.0.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.0.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.1.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.1.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.1.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.1.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.1.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.1.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.1.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.1.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.1.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.1.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.1.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.1.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.1.output.dense.weight 	 Loaded
+text_branch.encoder.layer.1.output.dense.bias 	 Loaded
+text_branch.encoder.layer.1.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.1.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.2.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.2.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.2.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.2.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.2.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.2.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.2.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.2.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.2.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.2.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.2.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.2.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.2.output.dense.weight 	 Loaded
+text_branch.encoder.layer.2.output.dense.bias 	 Loaded
+text_branch.encoder.layer.2.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.2.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.3.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.3.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.3.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.3.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.3.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.3.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.3.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.3.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.3.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.3.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.3.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.3.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.3.output.dense.weight 	 Loaded
+text_branch.encoder.layer.3.output.dense.bias 	 Loaded
+text_branch.encoder.layer.3.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.3.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.4.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.4.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.4.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.4.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.4.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.4.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.4.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.4.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.4.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.4.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.4.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.4.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.4.output.dense.weight 	 Loaded
+text_branch.encoder.layer.4.output.dense.bias 	 Loaded
+text_branch.encoder.layer.4.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.4.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.5.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.5.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.5.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.5.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.5.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.5.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.5.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.5.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.5.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.5.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.5.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.5.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.5.output.dense.weight 	 Loaded
+text_branch.encoder.layer.5.output.dense.bias 	 Loaded
+text_branch.encoder.layer.5.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.5.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.6.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.6.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.6.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.6.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.6.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.6.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.6.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.6.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.6.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.6.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.6.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.6.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.6.output.dense.weight 	 Loaded
+text_branch.encoder.layer.6.output.dense.bias 	 Loaded
+text_branch.encoder.layer.6.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.6.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.7.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.7.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.7.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.7.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.7.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.7.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.7.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.7.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.7.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.7.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.7.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.7.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.7.output.dense.weight 	 Loaded
+text_branch.encoder.layer.7.output.dense.bias 	 Loaded
+text_branch.encoder.layer.7.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.7.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.8.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.8.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.8.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.8.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.8.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.8.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.8.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.8.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.8.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.8.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.8.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.8.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.8.output.dense.weight 	 Loaded
+text_branch.encoder.layer.8.output.dense.bias 	 Loaded
+text_branch.encoder.layer.8.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.8.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.9.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.9.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.9.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.9.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.9.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.9.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.9.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.9.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.9.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.9.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.9.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.9.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.9.output.dense.weight 	 Loaded
+text_branch.encoder.layer.9.output.dense.bias 	 Loaded
+text_branch.encoder.layer.9.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.9.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.10.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.10.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.10.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.10.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.10.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.10.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.10.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.10.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.10.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.10.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.10.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.10.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.10.output.dense.weight 	 Loaded
+text_branch.encoder.layer.10.output.dense.bias 	 Loaded
+text_branch.encoder.layer.10.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.10.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.11.attention.self.query.weight 	 Loaded
+text_branch.encoder.layer.11.attention.self.query.bias 	 Loaded
+text_branch.encoder.layer.11.attention.self.key.weight 	 Loaded
+text_branch.encoder.layer.11.attention.self.key.bias 	 Loaded
+text_branch.encoder.layer.11.attention.self.value.weight 	 Loaded
+text_branch.encoder.layer.11.attention.self.value.bias 	 Loaded
+text_branch.encoder.layer.11.attention.output.dense.weight 	 Loaded
+text_branch.encoder.layer.11.attention.output.dense.bias 	 Loaded
+text_branch.encoder.layer.11.attention.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.11.attention.output.LayerNorm.bias 	 Loaded
+text_branch.encoder.layer.11.intermediate.dense.weight 	 Loaded
+text_branch.encoder.layer.11.intermediate.dense.bias 	 Loaded
+text_branch.encoder.layer.11.output.dense.weight 	 Loaded
+text_branch.encoder.layer.11.output.dense.bias 	 Loaded
+text_branch.encoder.layer.11.output.LayerNorm.weight 	 Loaded
+text_branch.encoder.layer.11.output.LayerNorm.bias 	 Loaded
+text_branch.pooler.dense.weight 	 Loaded
+text_branch.pooler.dense.bias 	 Loaded
+text_transform.sequential.0.weight 	 Loaded
+text_transform.sequential.0.bias 	 Loaded
+text_transform.sequential.3.weight 	 Loaded
+text_transform.sequential.3.bias 	 Loaded
+text_projection.0.weight 	 Loaded
+text_projection.0.bias 	 Loaded
+text_projection.2.weight 	 Loaded
+text_projection.2.bias 	 Loaded
+audio_transform.sequential.0.weight 	 Loaded
+audio_transform.sequential.0.bias 	 Loaded
+audio_transform.sequential.3.weight 	 Loaded
+audio_transform.sequential.3.bias 	 Loaded
+audio_projection.0.weight 	 Loaded
+audio_projection.0.bias 	 Loaded
+audio_projection.2.weight 	 Loaded
+audio_projection.2.bias 	 Loaded
+TRAIN windows 94 | trainable 15490674 params (4.849%) | passthrough_div_l1 0.1009
+upd   25 loss/ex 0.0223 anchor/ex 0.00268 invar/ex 0.01147 cons/ex 0.01416 collapse_db/ex -0.02211 l_trans/ex 0.00022 weight/ex 0.00331 alpha/ex 0.03743 gn 0.433 mem 4.96GB (97s)
+upd   50 loss/ex 0.0223 anchor/ex 0.00252 invar/ex 0.01151 cons/ex 0.01429 collapse_db/ex -0.02144 l_trans/ex 0.00014 weight/ex 0.00319 alpha/ex 0.03797 gn 0.279 mem 4.96GB (161s)
+upd   75 loss/ex 0.0218 anchor/ex 0.00240 invar/ex 0.01131 cons/ex 0.01416 collapse_db/ex -0.01972 l_trans/ex 0.00010 weight/ex 0.00282 alpha/ex 0.03724 gn 0.381 mem 4.96GB (225s)
+upd  100 loss/ex 0.0217 anchor/ex 0.00237 invar/ex 0.01128 cons/ex 0.01414 collapse_db/ex -0.01961 l_trans/ex 0.00007 weight/ex 0.00259 alpha/ex 0.03730 gn 0.553 mem 4.96GB (288s)
+upd  125 loss/ex 0.0217 anchor/ex 0.00233 invar/ex 0.01132 cons/ex 0.01412 collapse_db/ex -0.01876 l_trans/ex 0.00007 weight/ex 0.00245 alpha/ex 0.03750 gn 0.441 mem 4.96GB (351s)
+upd  150 loss/ex 0.0216 anchor/ex 0.00230 invar/ex 0.01127 cons/ex 0.01405 collapse_db/ex -0.01894 l_trans/ex 0.00006 weight/ex 0.00238 alpha/ex 0.03743 gn 0.458 mem 4.96GB (419s)
+upd  175 loss/ex 0.0216 anchor/ex 0.00233 invar/ex 0.01131 cons/ex 0.01403 collapse_db/ex -0.01942 l_trans/ex 0.00007 weight/ex 0.00249 alpha/ex 0.03750 gn 0.287 mem 4.96GB (482s)
+upd  200 loss/ex 0.0217 anchor/ex 0.00232 invar/ex 0.01139 cons/ex 0.01410 collapse_db/ex -0.01940 l_trans/ex 0.00007 weight/ex 0.00255 alpha/ex 0.03787 gn 0.314 mem 4.96GB (548s)
+upd  225 loss/ex 0.0217 anchor/ex 0.00232 invar/ex 0.01142 cons/ex 0.01409 collapse_db/ex -0.01940 l_trans/ex 0.00007 weight/ex 0.00257 alpha/ex 0.03803 gn 0.477 mem 4.96GB (613s)
+upd  250 loss/ex 0.0217 anchor/ex 0.00231 invar/ex 0.01141 cons/ex 0.01408 collapse_db/ex -0.01942 l_trans/ex 0.00007 weight/ex 0.00266 alpha/ex 0.03806 gn 0.290 mem 4.96GB (675s)
+EVAL @250: train {"train_zero_vs_correct_db": 0.001} dev {"collapse_rate_12db": 0.0, "student_s1r_ratio_db": {"median": -0.1866, "mean": -0.2084, "min": -0.5962, "max": 0.0069}, "consistency_combined": 0.038, "anchor_divergence_l1": {"median": 0.0062, "mean": 0.0069, "min": 0.0049, "max": 0.0118}, "passthrough_margin_corr": {"median": -0.0025, "max": 0.0149}, "click_retention_db": {"median": -0.0161, "mean": -0.0129, "min": -0.0632, "max": 0.0367}, "suppression_adv_vs_s1r_db": {"median": -0.0003, "mean": -0.0008, "min": -0.0177, "max": 0.008}, "causal_gap_zero_db": {"median": 0.0002, "mean": -0.0005, "min": -0.0087, "max": 0.0034}, "causal_gap_wrong_db": {"median": 0.0001, "mean": 0.0, "min": -0.0012, "max": 0.0007}, "wrong_clean_ratio_db": {"median": -0.1862, "mean": -0.2083, "min": -0.5963, "max": 0.0071}} checks {"no_collapse": true, "no_raw_passthrough": true, "s1r_anchor_preserved": true, "correct_ref_causally_used": false, "wrong_ref_safe": true, "beats_s1r_on_injection": false, "all": false}
+upd  275 loss/ex 0.0217 anchor/ex 0.00230 invar/ex 0.01137 cons/ex 0.01405 collapse_db/ex -0.01933 l_trans/ex 0.00006 weight/ex 0.00264 alpha/ex 0.03795 gn 0.265 mem 4.96GB (755s)
+upd  300 loss/ex 0.0217 anchor/ex 0.00230 invar/ex 0.01137 cons/ex 0.01407 collapse_db/ex -0.01932 l_trans/ex 0.00006 weight/ex 0.00262 alpha/ex 0.03795 gn 0.269 mem 4.96GB (820s)
+upd  325 loss/ex 0.0217 anchor/ex 0.00231 invar/ex 0.01137 cons/ex 0.01404 collapse_db/ex -0.01934 l_trans/ex 0.00007 weight/ex 0.00267 alpha/ex 0.03796 gn 0.408 mem 4.96GB (883s)
+upd  350 loss/ex 0.0216 anchor/ex 0.00231 invar/ex 0.01135 cons/ex 0.01400 collapse_db/ex -0.01941 l_trans/ex 0.00006 weight/ex 0.00272 alpha/ex 0.03784 gn 0.329 mem 4.96GB (949s)
+upd  375 loss/ex 0.0217 anchor/ex 0.00230 invar/ex 0.01137 cons/ex 0.01404 collapse_db/ex -0.01951 l_trans/ex 0.00006 weight/ex 0.00270 alpha/ex 0.03798 gn 0.358 mem 4.96GB (1014s)
+upd  400 loss/ex 0.0216 anchor/ex 0.00230 invar/ex 0.01136 cons/ex 0.01402 collapse_db/ex -0.01945 l_trans/ex 0.00005 weight/ex 0.00267 alpha/ex 0.03793 gn 0.365 mem 4.96GB (1078s)
+upd  425 loss/ex 0.0216 anchor/ex 0.00229 invar/ex 0.01134 cons/ex 0.01401 collapse_db/ex -0.01934 l_trans/ex 0.00005 weight/ex 0.00265 alpha/ex 0.03790 gn 0.459 mem 4.96GB (1143s)
+upd  450 loss/ex 0.0216 anchor/ex 0.00230 invar/ex 0.01132 cons/ex 0.01398 collapse_db/ex -0.01914 l_trans/ex 0.00007 weight/ex 0.00266 alpha/ex 0.03783 gn 0.671 mem 4.96GB (1206s)
+upd  475 loss/ex 0.0216 anchor/ex 0.00232 invar/ex 0.01134 cons/ex 0.01399 collapse_db/ex -0.01960 l_trans/ex 0.00007 weight/ex 0.00289 alpha/ex 0.03789 gn 0.299 mem 4.96GB (1275s)
+upd  500 loss/ex 0.0216 anchor/ex 0.00232 invar/ex 0.01133 cons/ex 0.01398 collapse_db/ex -0.01961 l_trans/ex 0.00008 weight/ex 0.00292 alpha/ex 0.03791 gn 4.317 mem 4.96GB (1344s)
+EVAL @500: train {"train_zero_vs_correct_db": 0.001} dev {"collapse_rate_12db": 0.0, "student_s1r_ratio_db": {"median": -0.138, "mean": -0.1491, "min": -0.4339, "max": 0.0975}, "consistency_combined": 0.0373, "anchor_divergence_l1": {"median": 0.0064, "mean": 0.007, "min": 0.0051, "max": 0.0099}, "passthrough_margin_corr": {"median": 0.002, "max": 0.0185}, "click_retention_db": {"median": -0.0293, "mean": -0.0246, "min": -0.0469, "max": 0.0158}, "suppression_adv_vs_s1r_db": {"median": 0.0016, "mean": 0.0014, "min": -0.0392, "max": 0.0198}, "causal_gap_zero_db": {"median": 0.0007, "mean": 0.0003, "min": -0.0074, "max": 0.006}, "causal_gap_wrong_db": {"median": 0.0001, "mean": 0.0001, "min": -0.0003, "max": 0.0011}, "wrong_clean_ratio_db": {"median": -0.1382, "mean": -0.1492, "min": -0.4343, "max": 0.0969}} checks {"no_collapse": true, "no_raw_passthrough": true, "s1r_anchor_preserved": true, "correct_ref_causally_used": false, "wrong_ref_safe": true, "beats_s1r_on_injection": true, "all": false}
+upd  525 loss/ex 0.0217 anchor/ex 0.00233 invar/ex 0.01134 cons/ex 0.01397 collapse_db/ex -0.01967 l_trans/ex 0.00007 weight/ex 0.00311 alpha/ex 0.03791 gn 0.337 mem 4.96GB (1429s)
+upd  550 loss/ex 0.0217 anchor/ex 0.00233 invar/ex 0.01133 cons/ex 0.01397 collapse_db/ex -0.01984 l_trans/ex 0.00007 weight/ex 0.00316 alpha/ex 0.03788 gn 0.238 mem 4.96GB (1501s)
+upd  575 loss/ex 0.0217 anchor/ex 0.00232 invar/ex 0.01134 cons/ex 0.01398 collapse_db/ex -0.01983 l_trans/ex 0.00007 weight/ex 0.00314 alpha/ex 0.03791 gn 0.278 mem 4.96GB (1572s)
+upd  600 loss/ex 0.0216 anchor/ex 0.00231 invar/ex 0.01132 cons/ex 0.01398 collapse_db/ex -0.01977 l_trans/ex 0.00007 weight/ex 0.00311 alpha/ex 0.03789 gn 0.298 mem 4.96GB (1641s)
+upd  625 loss/ex 0.0216 anchor/ex 0.00231 invar/ex 0.01132 cons/ex 0.01397 collapse_db/ex -0.01975 l_trans/ex 0.00006 weight/ex 0.00308 alpha/ex 0.03789 gn 0.358 mem 4.96GB (1711s)
+upd  650 loss/ex 0.0216 anchor/ex 0.00231 invar/ex 0.01132 cons/ex 0.01399 collapse_db/ex -0.01959 l_trans/ex 0.00006 weight/ex 0.00305 alpha/ex 0.03789 gn 0.497 mem 4.96GB (1781s)
+upd  675 loss/ex 0.0216 anchor/ex 0.00230 invar/ex 0.01131 cons/ex 0.01399 collapse_db/ex -0.01956 l_trans/ex 0.00006 weight/ex 0.00302 alpha/ex 0.03785 gn 0.373 mem 4.96GB (1853s)
+upd  700 loss/ex 0.0216 anchor/ex 0.00230 invar/ex 0.01131 cons/ex 0.01398 collapse_db/ex -0.01937 l_trans/ex 0.00006 weight/ex 0.00301 alpha/ex 0.03785 gn 0.485 mem 4.96GB (1921s)
+upd  725 loss/ex 0.0216 anchor/ex 0.00230 invar/ex 0.01131 cons/ex 0.01398 collapse_db/ex -0.01950 l_trans/ex 0.00006 weight/ex 0.00301 alpha/ex 0.03786 gn 0.471 mem 4.96GB (1984s)
+upd  750 loss/ex 0.0216 anchor/ex 0.00230 invar/ex 0.01132 cons/ex 0.01398 collapse_db/ex -0.01955 l_trans/ex 0.00006 weight/ex 0.00300 alpha/ex 0.03794 gn 0.276 mem 4.96GB (2051s)
+EVAL @750: train {"train_zero_vs_correct_db": -0.0} dev {"collapse_rate_12db": 0.0, "student_s1r_ratio_db": {"median": -0.2722, "mean": -0.2537, "min": -0.5429, "max": -0.0775}, "consistency_combined": 0.0373, "anchor_divergence_l1": {"median": 0.0062, "mean": 0.0071, "min": 0.0047, "max": 0.0108}, "passthrough_margin_corr": {"median": -0.0053, "max": 0.0088}, "click_retention_db": {"median": -0.0076, "mean": -0.0066, "min": -0.0302, "max": 0.026}, "suppression_adv_vs_s1r_db": {"median": -0.0014, "mean": -0.0053, "min": -0.0502, "max": 0.0105}, "causal_gap_zero_db": {"median": -0.0003, "mean": -0.0014, "min": -0.0106, "max": 0.0033}, "causal_gap_wrong_db": {"median": 0.0001, "mean": 0.0001, "min": -0.0014, "max": 0.0012}, "wrong_clean_ratio_db": {"median": -0.2726, "mean": -0.2537, "min": -0.5434, "max": -0.0781}} checks {"no_collapse": true, "no_raw_passthrough": true, "s1r_anchor_preserved": true, "correct_ref_causally_used": false, "wrong_ref_safe": true, "beats_s1r_on_injection": false, "all": false}
+upd  775 loss/ex 0.0216 anchor/ex 0.00229 invar/ex 0.01132 cons/ex 0.01397 collapse_db/ex -0.01949 l_trans/ex 0.00006 weight/ex 0.00297 alpha/ex 0.03795 gn 0.624 mem 4.96GB (2129s)
+upd  800 loss/ex 0.0216 anchor/ex 0.00229 invar/ex 0.01132 cons/ex 0.01397 collapse_db/ex -0.01946 l_trans/ex 0.00006 weight/ex 0.00297 alpha/ex 0.03793 gn 0.778 mem 4.96GB (2193s)
+upd  825 loss/ex 0.0216 anchor/ex 0.00230 invar/ex 0.01132 cons/ex 0.01397 collapse_db/ex -0.01956 l_trans/ex 0.00005 weight/ex 0.00299 alpha/ex 0.03791 gn 0.448 mem 4.96GB (2256s)
+upd  850 loss/ex 0.0216 anchor/ex 0.00230 invar/ex 0.01133 cons/ex 0.01398 collapse_db/ex -0.01959 l_trans/ex 0.00005 weight/ex 0.00298 alpha/ex 0.03796 gn 0.437 mem 4.96GB (2321s)
+upd  875 loss/ex 0.0216 anchor/ex 0.00229 invar/ex 0.01132 cons/ex 0.01397 collapse_db/ex -0.01952 l_trans/ex 0.00005 weight/ex 0.00296 alpha/ex 0.03793 gn 0.291 mem 4.96GB (2387s)
+upd  900 loss/ex 0.0216 anchor/ex 0.00229 invar/ex 0.01131 cons/ex 0.01396 collapse_db/ex -0.01949 l_trans/ex 0.00005 weight/ex 0.00294 alpha/ex 0.03790 gn 0.293 mem 4.96GB (2450s)
+upd  925 loss/ex 0.0216 anchor/ex 0.00229 invar/ex 0.01132 cons/ex 0.01397 collapse_db/ex -0.01927 l_trans/ex 0.00005 weight/ex 0.00293 alpha/ex 0.03791 gn 1.172 mem 4.96GB (2517s)
+upd  950 loss/ex 0.0216 anchor/ex 0.00229 invar/ex 0.01131 cons/ex 0.01397 collapse_db/ex -0.01953 l_trans/ex 0.00005 weight/ex 0.00300 alpha/ex 0.03790 gn 0.209 mem 4.96GB (2580s)
+upd  975 loss/ex 0.0216 anchor/ex 0.00229 invar/ex 0.01131 cons/ex 0.01396 collapse_db/ex -0.01954 l_trans/ex 0.00005 weight/ex 0.00300 alpha/ex 0.03790 gn 0.303 mem 4.96GB (2643s)
+upd 1000 loss/ex 0.0216 anchor/ex 0.00229 invar/ex 0.01131 cons/ex 0.01396 collapse_db/ex -0.01958 l_trans/ex 0.00005 weight/ex 0.00299 alpha/ex 0.03790 gn 0.223 mem 4.96GB (2707s)
+EVAL @1000: train {"train_zero_vs_correct_db": 0.001} dev {"collapse_rate_12db": 0.0, "student_s1r_ratio_db": {"median": -0.1147, "mean": -0.1309, "min": -0.4382, "max": 0.0607}, "consistency_combined": 0.0374, "anchor_divergence_l1": {"median": 0.0065, "mean": 0.0066, "min": 0.0042, "max": 0.0098}, "passthrough_margin_corr": {"median": 0.0027, "max": 0.0224}, "click_retention_db": {"median": 0.0012, "mean": 0.0024, "min": -0.0244, "max": 0.0306}, "suppression_adv_vs_s1r_db": {"median": 0.0074, "mean": 0.0055, "min": -0.0216, "max": 0.0292}, "causal_gap_zero_db": {"median": 0.0012, "mean": 0.001, "min": -0.0056, "max": 0.0063}, "causal_gap_wrong_db": {"median": 0.0002, "mean": 0.0002, "min": -0.0005, "max": 0.0009}, "wrong_clean_ratio_db": {"median": -0.1144, "mean": -0.1309, "min": -0.4384, "max": 0.0611}} checks {"no_collapse": true, "no_raw_passthrough": true, "s1r_anchor_preserved": true, "correct_ref_causally_used": false, "wrong_ref_safe": true, "beats_s1r_on_injection": true, "all": false}
+upd 1025 loss/ex 0.0216 anchor/ex 0.00229 invar/ex 0.01131 cons/ex 0.01397 collapse_db/ex -0.01951 l_trans/ex 0.00005 weight/ex 0.00299 alpha/ex 0.03790 gn 0.243 mem 4.96GB (2788s)
+upd 1050 loss/ex 0.0216 anchor/ex 0.00229 invar/ex 0.01131 cons/ex 0.01396 collapse_db/ex -0.01947 l_trans/ex 0.00005 weight/ex 0.00297 alpha/ex 0.03790 gn 0.260 mem 4.96GB (2853s)
+upd 1075 loss/ex 0.0215 anchor/ex 0.00228 invar/ex 0.01130 cons/ex 0.01396 collapse_db/ex -0.01944 l_trans/ex 0.00005 weight/ex 0.00296 alpha/ex 0.03787 gn 0.284 mem 4.96GB (2917s)
+upd 1100 loss/ex 0.0215 anchor/ex 0.00228 invar/ex 0.01129 cons/ex 0.01395 collapse_db/ex -0.01942 l_trans/ex 0.00005 weight/ex 0.00297 alpha/ex 0.03784 gn 0.770 mem 4.96GB (2982s)
+upd 1125 loss/ex 0.0215 anchor/ex 0.00228 invar/ex 0.01129 cons/ex 0.01395 collapse_db/ex -0.01939 l_trans/ex 0.00005 weight/ex 0.00297 alpha/ex 0.03786 gn 0.249 mem 4.96GB (3047s)
+upd 1150 loss/ex 0.0215 anchor/ex 0.00228 invar/ex 0.01129 cons/ex 0.01395 collapse_db/ex -0.01936 l_trans/ex 0.00005 weight/ex 0.00296 alpha/ex 0.03785 gn 0.409 mem 4.96GB (3111s)
+upd 1175 loss/ex 0.0215 anchor/ex 0.00228 invar/ex 0.01129 cons/ex 0.01395 collapse_db/ex -0.01937 l_trans/ex 0.00004 weight/ex 0.00295 alpha/ex 0.03787 gn 0.309 mem 4.96GB (3174s)
+upd 1200 loss/ex 0.0215 anchor/ex 0.00228 invar/ex 0.01130 cons/ex 0.01396 collapse_db/ex -0.01937 l_trans/ex 0.00004 weight/ex 0.00294 alpha/ex 0.03791 gn 0.655 mem 4.96GB (3240s)
+upd 1225 loss/ex 0.0215 anchor/ex 0.00227 invar/ex 0.01129 cons/ex 0.01396 collapse_db/ex -0.01934 l_trans/ex 0.00004 weight/ex 0.00293 alpha/ex 0.03790 gn 0.384 mem 4.96GB (3304s)
+upd 1250 loss/ex 0.0215 anchor/ex 0.00227 invar/ex 0.01129 cons/ex 0.01396 collapse_db/ex -0.01932 l_trans/ex 0.00004 weight/ex 0.00293 alpha/ex 0.03789 gn 0.407 mem 4.96GB (3367s)
+EVAL @1250: train {"train_zero_vs_correct_db": 0.001} dev {"collapse_rate_12db": 0.0, "student_s1r_ratio_db": {"median": -0.2701, "mean": -0.2666, "min": -0.6001, "max": -0.1062}, "consistency_combined": 0.0374, "anchor_divergence_l1": {"median": 0.0067, "mean": 0.0068, "min": 0.0048, "max": 0.0103}, "passthrough_margin_corr": {"median": 0.0011, "max": 0.0164}, "click_retention_db": {"median": -0.0189, "mean": -0.0159, "min": -0.0411, "max": 0.0204}, "suppression_adv_vs_s1r_db": {"median": 0.0007, "mean": -0.0014, "min": -0.0405, "max": 0.0129}, "causal_gap_zero_db": {"median": -0.0002, "mean": -0.0008, "min": -0.0084, "max": 0.003}, "causal_gap_wrong_db": {"median": 0.0, "mean": 0.0002, "min": -0.0001, "max": 0.0008}, "wrong_clean_ratio_db": {"median": -0.2697, "mean": -0.2666, "min": -0.6007, "max": -0.1055}} checks {"no_collapse": true, "no_raw_passthrough": true, "s1r_anchor_preserved": true, "correct_ref_causally_used": false, "wrong_ref_safe": true, "beats_s1r_on_injection": true, "all": false}
+upd 1275 loss/ex 0.0215 anchor/ex 0.00227 invar/ex 0.01130 cons/ex 0.01396 collapse_db/ex -0.01933 l_trans/ex 0.00004 weight/ex 0.00293 alpha/ex 0.03792 gn 0.273 mem 4.96GB (3447s)
+upd 1300 loss/ex 0.0215 anchor/ex 0.00227 invar/ex 0.01130 cons/ex 0.01396 collapse_db/ex -0.01940 l_trans/ex 0.00004 weight/ex 0.00293 alpha/ex 0.03794 gn 0.507 mem 4.96GB (3513s)
+upd 1325 loss/ex 0.0215 anchor/ex 0.00227 invar/ex 0.01130 cons/ex 0.01396 collapse_db/ex -0.01941 l_trans/ex 0.00004 weight/ex 0.00293 alpha/ex 0.03794 gn 0.325 mem 4.96GB (3578s)
+upd 1350 loss/ex 0.0215 anchor/ex 0.00227 invar/ex 0.01130 cons/ex 0.01396 collapse_db/ex -0.01941 l_trans/ex 0.00004 weight/ex 0.00293 alpha/ex 0.03794 gn 0.543 mem 4.96GB (3644s)
+upd 1375 loss/ex 0.0215 anchor/ex 0.00227 invar/ex 0.01130 cons/ex 0.01395 collapse_db/ex -0.01938 l_trans/ex 0.00004 weight/ex 0.00292 alpha/ex 0.03795 gn 0.262 mem 4.96GB (3709s)
+upd 1400 loss/ex 0.0215 anchor/ex 0.00227 invar/ex 0.01131 cons/ex 0.01396 collapse_db/ex -0.01937 l_trans/ex 0.00005 weight/ex 0.00294 alpha/ex 0.03798 gn 0.865 mem 4.96GB (3776s)
+upd 1425 loss/ex 0.0216 anchor/ex 0.00229 invar/ex 0.01131 cons/ex 0.01396 collapse_db/ex -0.01922 l_trans/ex 0.00005 weight/ex 0.00304 alpha/ex 0.03799 gn 0.548 mem 4.96GB (3841s)
+upd 1450 loss/ex 0.0216 anchor/ex 0.00230 invar/ex 0.01131 cons/ex 0.01395 collapse_db/ex -0.01946 l_trans/ex 0.00005 weight/ex 0.00316 alpha/ex 0.03798 gn 0.577 mem 4.96GB (3903s)
+upd 1475 loss/ex 0.0216 anchor/ex 0.00230 invar/ex 0.01132 cons/ex 0.01396 collapse_db/ex -0.01958 l_trans/ex 0.00005 weight/ex 0.00317 alpha/ex 0.03802 gn 0.453 mem 4.96GB (3970s)
+upd 1500 loss/ex 0.0216 anchor/ex 0.00230 invar/ex 0.01132 cons/ex 0.01395 collapse_db/ex -0.01955 l_trans/ex 0.00005 weight/ex 0.00316 alpha/ex 0.03801 gn 0.380 mem 4.96GB (4035s)
+EVAL @1500: train {"train_zero_vs_correct_db": -0.0} dev {"collapse_rate_12db": 0.0, "student_s1r_ratio_db": {"median": -0.2663, "mean": -0.2824, "min": -0.5607, "max": -0.0497}, "consistency_combined": 0.0379, "anchor_divergence_l1": {"median": 0.0061, "mean": 0.0066, "min": 0.0042, "max": 0.0114}, "passthrough_margin_corr": {"median": 0.0012, "max": 0.0105}, "click_retention_db": {"median": -0.0371, "mean": -0.0325, "min": -0.0634, "max": -0.0057}, "suppression_adv_vs_s1r_db": {"median": -0.0004, "mean": -0.0045, "min": -0.05, "max": 0.0139}, "causal_gap_zero_db": {"median": 0.0003, "mean": -0.0011, "min": -0.0091, "max": 0.0027}, "causal_gap_wrong_db": {"median": -0.0, "mean": -0.0, "min": -0.0008, "max": 0.0016}, "wrong_clean_ratio_db": {"median": -0.2659, "mean": -0.2824, "min": -0.561, "max": -0.0497}} checks {"no_collapse": true, "no_raw_passthrough": true, "s1r_anchor_preserved": true, "correct_ref_causally_used": false, "wrong_ref_safe": true, "beats_s1r_on_injection": false, "all": false}
+TRAINING COMPLETED after 1500 updates (4050s)

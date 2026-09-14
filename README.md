@@ -54,16 +54,19 @@ artifacts are referenced by manifests, not committed.
 | **S1E** existing-corpus feasibility | Are current pretrained frontier systems good enough as-is? | **CURRENT PRETRAINED FRONTIER INSUFFICIENT.** AudioSep repeats R2's attenuated-copy failure; SoloAudio fails out-of-distribution (deletes/invents); specialist pipeline transparent but weak. **CLAPSep shows genuine local source selectivity** (~9 dB relative music suppression with transients preserved) and is the **current adaptation substrate** |
 | **S1W** weak-supervision adaptation | Does weak supervision from existing recordings move CLAPSep toward the target without deleting it? | **VERDICT C — WEAK-SUPERVISION ADAPTATION FAILS.** Constructed task learned (DEV wins), but zero transfer to real handcams: adapted output near-silent on every real group (~28–33 dB below RAW; c8 14.3 dB) — authentic interaction deleted with the nuisance (listening-confirmed). Zero-shot CLAPSep keeps useful selectivity (esp. Taiko prompt) with muffling/underwater/discontinuity defects. Root cause: synthetic-proxy distribution overfit + chunk/context sensitivity; bounded mask NOT implicated. Next (recommended, not started): **real-mixture adaptation** |
 | **S1R** real-mixture adaptation | Can CLAPSep be adapted on authentic real mixtures WITHOUT destroying zero-shot selectivity? | **VERDICT B — VIABLE BUT NO CLEAR PRODUCT GAIN.** Yes to the stage question: trained on real mixtures only (teacher-anchored, 5% trainable), zero collapse/passthrough at every eval, DEV context inconsistency −25%, 14-recording generalization safe (S1W was −27.7 dB), sealed groups within ±0.2 dB RMS of zero-shot with slightly better transients. Blinded headphone listening: no deletion heard, c3 selectivity audibly survives — but **S1R ≈ zero-shot to the ear (0/6 clear preferences)**. Teacher-only distillation adds no new information; S1R is frozen as the stable real-mixture baseline. Next: **S2A reference-conditioned extraction** (aligned pristine song reference = product-native new information source) |
+| **S2A** reference-conditioned extraction | Does the product-native aligned pristine song reference provide enough NEW information to beat the S1R teacher? | **VERDICT C — REFERENCE CONDITIONING DOES NOT HELP.** Data gate passed at preferred minimums (24/31 conservatively aligned in-tree references; TRAIN 16/14, DEV 3/3, TEST 5/5 song-disjoint); minimal near-no-op adapter (12k params, exact S1R parity at init) + mask head trained with anchor/injection-invariance/consistency/anti-collapse signals, two runs (run 1 invalidated by a sign bug, recorded). Causal reference effect **absent**: correct/wrong/zero references behaviorally identical on DEV and 20 held-out windows (median correct-vs-wrong gap 0.000 dB; best advantage over S1R 0.027 dB vs 1.5 dB bar) → §26 stop **REFERENCE_ADAPTER_IGNORED**; machine listening gate failed → no human listening. Program consequence: with S1W (synthetic), S1R (teacher-only), S2A (aligned reference) all answered, further learned gains need content-contrastive objectives or bigger surfaces — recorded as hypotheses, not next steps |
 
 **Current conclusion.** No tested pretrained system solves the problem out of the box.
-S1W showed synthetic-proxy adaptation collapses on real material; **S1R showed
-real-mixture adaptation can be made stable — and that a student distilled only from
-its teacher gains no product-level advantage over the teacher** (verdict B: viable,
-no clear gain). The stable S1R checkpoint is the adaptation substrate going forward.
-The recommended next stage — **S2A reference-conditioned real-mixture extraction**
-(aligned pristine song reference as a genuinely new, product-native information
-source, added as a near-no-op adapter on the frozen S1R base) — is the next decisive
-question and **has not been started**.
+The adaptation line is now answered at all three planned information levels:
+S1W (synthetic weak supervision) collapsed; **S1R (real-mixture, teacher-only)
+is stable but gains nothing over its teacher** (verdict B); **S2A (aligned
+pristine reference, the product's native extra input) extracts no reference
+content at all through the minimal-adapter route** (verdict C:
+REFERENCE_ADAPTER_IGNORED). The stable S1R checkpoint remains the best learned
+model. Further learned gains would require content-contrastive objectives or
+larger trainable surfaces with stronger anchoring — recorded as hypotheses in
+S2A_DECISION.json, not started. No further adaptation stage is currently
+planned; the next decision belongs to the owner.
 
 ## Repository layout
 

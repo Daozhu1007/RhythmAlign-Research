@@ -1,0 +1,64 @@
+{
+  "stage": "S2A — Reference-Conditioned Real-Mixture Extraction",
+  "date": "2026-09-15",
+  "decision": "C",
+  "decision_label": "REFERENCE CONDITIONING DOES NOT HELP",
+  "decision_basis": "Section-26 causal reference-use gate FAIL (REFERENCE_ADAPTER_IGNORED) on DEV, confirmed by held-out song-disjoint documentation test on 5 recordings / 20 windows. Human listening NOT warranted (section 30 gate condition 3 fails: 'correct reference demonstrably matters' is false).",
+  "reference_corpus": {
+    "gate": "PASS at preferred minimums",
+    "train": "16 recordings / 14 songs",
+    "dev": "3 recordings / 3 songs (2 promoted from TRAIN, documented)",
+    "test": "5 recordings / 5 songs, all song-disjoint from TRAIN",
+    "alignment": "production hybrid path; 24/31 candidate pairs accepted; residuals <= 0.05 s; 7 rejected conservatively (incl. the sealed recording's only candidate reference)"
+  },
+  "adapter": {
+    "architecture": "minimal TF-domain CNN (12k params) on standardized mix+ref log-magnitude, zero-init output head as section-15 residual gate, fused at S1R mask logits; trainable = adapter + final mask head = 15.49M params (4.85%)",
+    "initialization_parity": "EXACT (max|delta| = 0.0 vs S1R for correct/zero/wrong refs)",
+    "base_checkpoint": "s1r_selected.ckpt sha256 e1fade5e... (verified)"
+  },
+  "training": {
+    "runs": 2,
+    "run_1": "INVALIDATED by reference-position sign bug (t_ref = t_hand + offset); internally consistent but ~20s misaligned conditioning; recorded in FAILURE_CASES section 2",
+    "run_2": "corrected pipeline, identical declared hyperparameters: 1500 updates, AdamW lr 2e-5, alpha U[0.12,0.45], seed 20260915, 4049 s wall, 4.96 GB peak VRAM, no guards tripped",
+    "signals": "S1R anchor + injection invariance + cross-context consistency + anti-collapse + L2-SP (section 20 A-D)"
+  },
+  "causal_reference_evidence": {
+    "dev_best": "suppression advantage vs S1R +0.0074 dB; correct-vs-zero gap 0.0012 dB; correct-vs-wrong gap 0.0002 dB (section-25 gate requires >= 1.0 dB: FAIL at every checkpoint)",
+    "heldout": "median suppression advantage vs S1R +0.013 dB (max +0.027; 0/20 windows >= 1.5 dB); correct-vs-wrong median gap 0.000 dB",
+    "conclusion": "correct, wrong, and zero references are effectively identical - the adapter does not use reference content"
+  },
+  "safety": {
+    "collapse": "zero at every DEV eval and every held-out window",
+    "raw_passthrough": "none",
+    "wrong_reference": "safe (median ratio -0.27 dB vs S1R target; no suppression triggered)",
+    "transient_retention": "identical to S1R (median -0.386 dB vs -0.386 dB on held-out)"
+  },
+  "why_C_and_not_B": "B requires the adapter to demonstrably USE the correct reference with real but unclear product gain. Here the adapter uses NO reference content at all: correct/wrong/zero are indistinguishable. This is the section-26 stop condition REFERENCE_ADAPTER_IGNORED, classified C under section 36 ('correct reference is no better than wrong reference').",
+  "why_C_and_not_D": "The experiment is scientifically valid: data gate PASS (preferred minimums), production alignment with conservative acceptance, exact initialization parity, both training runs completed without guards, all safety metrics clean, held-out documentation test executed under a frozen protocol. The negative is trustworthy.",
+  "stage_should_not_continue_with": [
+    "more training of the same adapter/objective (structural: the section-20 anchor pins clean behavior to the teacher, leaving ~0.01 L1 of learnable margin, whose cheapest explanation is reference presence, not content)",
+    "human listening for this stage (machine gate failed; nothing audible to compare)"
+  ],
+  "what_would_be_needed_for_a_future_attempt": [
+    "an objective that directly rewards reference-CONTENT-specific suppression (e.g., paired correct-vs-wrong contrastive terms), not merely invariance to injected nuisance",
+    "accepting a larger trainable surface with correspondingly stronger anchor machinery",
+    "these are recorded as hypotheses, NOT recommendations to start"
+  ],
+  "listening": {
+    "occurred": false,
+    "reason": "section-30 promotion gate failed: correct reference does not demonstrably matter machine-side"
+  },
+  "preserved_records": [
+    "REFERENCE_CORPUS_AUDIT.md / ALIGNMENT_AUDIT.md / REFERENCE_MANIFEST.public.json",
+    "ARCHITECTURE.md / TRAINING_PLAN.md / TRAINING_CONFIG.json",
+    "DEV_RESULTS.md / REFERENCE_ABLATION_RESULTS.md / GENERALIZATION_RESULTS.md / REAL_TEST_RESULTS.md",
+    "TRAINING_LOG.public.md / CHECKPOINT_MANIFEST.public.json / FAILURE_CASES.md"
+  ],
+  "explicitly_not_done": [
+    "No human listening pack (gate failed)",
+    "No SI-SDR / recall / suppression claims (no ground truth exists)",
+    "No product-repository changes",
+    "No third training run (section-24 maximum reached)",
+    "No sealed-recording material used anywhere (its reference failed song identity)"
+  ]
+}

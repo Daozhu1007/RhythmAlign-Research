@@ -1,0 +1,58 @@
+{
+ "stage": "S2A reference-conditioned real-mixture extraction",
+ "declared_date": "2026-09-15",
+ "base_checkpoint": {
+  "path": "experiments/s1r_real_mixture_adaptation/checkpoints/s1r_selected.ckpt",
+  "sha256": "e1fade5ebeb84e75527d41bb5aba48dc197243a49aa34cb2fee673897a1cc303",
+  "parity_check": "logs/04_parity_check.json"
+ },
+ "trainable_scope": [
+  "adapter.* (reference CNN, ~12k params, zero-init output head)",
+  "base_model.decoder_model.mask_net.* (final mask head, frozen S1R init)"
+ ],
+ "trainable_params": 15490674,
+ "trainable_percent": 4.849,
+ "optimizer": {
+  "name": "AdamW",
+  "lr": 2e-05,
+  "weight_decay": 0.01,
+  "grad_clip": 5.0,
+  "accumulation": 8,
+  "seed": 20260915
+ },
+ "losses": {
+  "anchor": {"weight": 1.0, "kernel": "s1r_losses.distill (L1 + MR-STFT log-mag)"},
+  "injection_invariance": {"weight": 0.75, "kernel": "s1r_losses.distill",
+                            "alpha_range": [0.12, 0.45],
+                            "perturbations": ["delay 0-20 ms", "gain +-4 dB",
+                                              "spectral tilt", "short room IR 0.12-0.30 s"]},
+  "cross_context_consistency": {"weight": 0.75, "kernel": "s1r_losses.consistency"},
+  "anti_collapse": {"weight": 1.0, "kernel": "s1r_losses.anti_collapse",
+                     "hinge_db": -6.0, "transient_guard_db": -4.5},
+  "weight_anchor": {"weight": 0.10, "kernel": "s1r_losses.weight_anchor (L2-SP)"}
+ },
+ "schedule": {
+  "micro_pilot_updates": 200,
+  "micro_pilot_eval_every": 50,
+  "primary_updates": 1500,
+  "primary_eval_every": 250,
+  "hard_cap_updates": 2000,
+  "max_full_runs": 2,
+  "max_aggregate_gpu_hours": 24
+ },
+ "data": {
+  "train_windows": 82,
+  "train_recordings": 16,
+  "dev_windows": 15,
+  "dev_recordings": 3,
+  "window_source": "S1R phase-0 candidate bank, reference-coverage >= 0.9",
+  "forbidden": ["sealed recording", "TEST recordings", "synthetic target stems"]
+ },
+ "hardware": "RTX 4060 Laptop 8 GB, torch 2.14.0+cu126, bf16 autocast",
+ "inference_protocol_frozen": {
+  "chunk": "exact 10 s @ 32 kHz overlap-add (hann 0.5)",
+  "reference": "aligned per chunk via accepted offset (t_ref = t_hand - offset)",
+  "reference_preprocessing": "frozen model STFT magnitude, per-chunk standardization",
+  "query": "r3 query_q1.wav audio embedding, zero negative"
+ }
+}

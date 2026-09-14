@@ -1,0 +1,55 @@
+{
+ "stage": "S2A - Reference-Conditioned Real-Mixture Extraction",
+ "date": "2026-09-15",
+ "status": "FINALIZED",
+ "decision": {
+  "verdict": "C",
+  "label": "REFERENCE CONDITIONING DOES NOT HELP",
+  "decision_record": "S2A_DECISION.json",
+  "section26_stop": "REFERENCE_ADAPTER_IGNORED",
+  "human_listening": "NOT WARRANTED (section-30 promotion gate failed; section-44 path)",
+  "key_numbers": {
+   "heldout_median_suppression_advantage_vs_s1r_db": 0.013,
+   "heldout_max_db": 0.027,
+   "heldout_windows_ge_1p5db": "0/20",
+   "median_correct_vs_wrong_gap_db": 0.0,
+   "median_correct_vs_zero_gap_db": 0.004
+  }
+ },
+ "reference_corpus": {
+  "gate": "PASS (preferred minimums)",
+  "train_recordings_songs": "16 / 14",
+  "dev_recordings_songs": "3 / 3",
+  "test_recordings_songs": "5 / 5 (song-disjoint)",
+  "alignment_accepted": "24/31 candidate pairs, residuals <= 0.05 s",
+  "sealed_recording": "no valid reference (identity check failed) - fully excluded"
+ },
+ "model": {
+  "base": "s1r_selected.ckpt (sha256 e1fade5e..., verified; parity reproduced)",
+  "adapter": "12k-param TF CNN, zero-init output head = residual gate, fused at S1R mask logits; init parity EXACT (max|delta| = 0.0)",
+  "trainable": "15490674 params = 4.85% (adapter + final mask head)"
+ },
+ "training": {
+  "runs": "2 of 2 allowed",
+  "run_1": "invalidated by reference-position sign bug (documented; FAILURE_CASES section 2)",
+  "run_2": "corrected, identical hyperparameters, 1500 updates, 4049 s, 4.96 GB peak, no guards tripped",
+  "gpu_total_hours": 2.8,
+  "budget_hours": 24
+ },
+ "gates": {
+  "section23_micro_pilot": "PASS (safety; causal separation growing but negligible)",
+  "section25_dev_selection": "FAIL (correct_ref_causally_used; every other check true at best checkpoint)",
+  "section26_causal_reference_use": "FAIL -> REFERENCE_ADAPTER_IGNORED",
+  "section30_promotion_to_listening": "FAIL (no human listening)",
+  "safety_all_checkpoints": "zero collapse, zero passthrough, wrong-ref safe, transients identical to S1R"
+ },
+ "checkpoints": {
+  "documentation_only": "checkpoints/full_upd01000.ckpt (best advantage + best causal gap among failing candidates; NOT a product checkpoint)",
+  "manifest": "CHECKPOINT_MANIFEST.public.json"
+ },
+ "research": {
+  "commit": "research(s2a): evaluate aligned-reference conditioning (sha in git log)",
+  "push": "origin/main",
+  "product_touched": false
+ }
+}
