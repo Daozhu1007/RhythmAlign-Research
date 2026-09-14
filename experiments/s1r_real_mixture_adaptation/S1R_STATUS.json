@@ -1,7 +1,16 @@
 {
  "stage": "S1R - Real-Mixture Adaptation",
  "date": "2026-09-14",
- "status": "AWAITING_HUMAN_LISTENING",
+ "finalized_date": "2026-09-15",
+ "status": "FINALIZED",
+ "decision": {
+  "verdict": "B",
+  "label": "REAL-MIXTURE ADAPTATION IS VIABLE BUT NO CLEAR PRODUCT GAIN",
+  "decision_record": "S1R_DECISION.json",
+  "listening_results": "listening_pack/HUMAN_LISTENING_RESULTS.md",
+  "blinded_comparison": "S1R clearly preferred 0/6 groups vs zero-shot (bar >=3/6); explicit ties in c2/c3, inconclusive c7, tie c8, faint c6 edge for S1R, ambiguous c1; no deletion, no passthrough, no instability heard; c3 selectivity pattern audibly preserved",
+  "protocol_caveats": "headphone session (S1W was speakers) -> no cross-stage timbre claims; one pass only; substantial owner fatigue recorded"
+  },
  "teacher_gate": {
   "result": "PASS",
   "mode": "preferred",
@@ -37,7 +46,7 @@
  "machine_side": {
   "test_generalization": "28 S1W-identical windows, 14 unseen recordings: zero collapse, click retention -0.96 dB vs zero-shot -1.20 dB, no passthrough drift",
   "sealed_primary": "6 groups: S1R within +-0.2 dB RMS of zero-shot, transient retention slightly better on all six, zero collapse",
-  "interpretation": "stable real-domain adaptation without catastrophic forgetting; no large machine-side separation win - human listening decides A vs B"
+  "interpretation": "stable real-domain adaptation without catastrophic forgetting; no large machine-side separation win - confirmed by human listening (verdict B)"
  },
  "listening_pack": {
   "location_local": "listening_pack/wavs/ (18 items, gitignored)",
@@ -46,7 +55,10 @@
   "fixed_common_gain": true,
   "gain_audit_max_abs_error_db": 1e-05,
   "blind_key_sealed": true,
-  "instructions": "listening_pack/LISTENING_INSTRUCTIONS.md"
+  "blind_key_unblinded_after_pass": true,
+  "mapping_verified": "owner-relayed mapping matches work/private/listening_key.private.json 18/18",
+  "instructions": "listening_pack/LISTENING_INSTRUCTIONS.md",
+  "results": "listening_pack/HUMAN_LISTENING_RESULTS.md"
  },
  "research": {
   "commit": "stage-final commit on main (sha reported in the stage handoff; verifiable via git log -- experiments/s1r_real_mixture_adaptation)",

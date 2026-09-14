@@ -4,6 +4,16 @@
 WITHOUT destroying the useful source selectivity already present in the zero-shot
 model?
 
+**FINAL VERDICT: B — REAL-MIXTURE ADAPTATION IS VIABLE BUT NO CLEAR PRODUCT GAIN.**
+The adaptation repaired S1W's catastrophic failure (zero collapse, zero passthrough,
+teacher selectivity audibly preserved, DEV consistency −25%, generalization safe on
+14 unseen recordings), but blinded listening found S1R indistinguishable from
+zero-shot: 0/6 clear group preferences (bar ≥3/6), no group worse. Interpretation:
+teacher-only / consistency-dominated distillation preserves the teacher but adds no
+new information. See [S1R_REPORT.md](S1R_REPORT.md),
+[S1R_DECISION.json](S1R_DECISION.json),
+[listening_pack/HUMAN_LISTENING_RESULTS.md](listening_pack/HUMAN_LISTENING_RESULTS.md).
+
 S1R follows S1W's clean negative result (constructed weak-supervision task learned
 successfully; catastrophic collapse on real handcams). It attacks that failure mode
 directly: the training domain IS the authentic raw handcam distribution, the frozen
@@ -46,8 +56,9 @@ experiment, NOT aligned-reference conditioning, NOT another model zoo.
 | `REAL_TEST_RESULTS.md` | sealed primary groups machine-side |
 | `FAILURE_CASES.md` | honest negatives of this stage |
 | `S1R_PRELISTENING_REPORT.md` | answers protocol §52 questions before listening |
+| `S1R_REPORT.md` / `S1R_DECISION.json` | final stage report + verdict B record |
 | `S1R_STATUS.json` | machine-readable stage status |
-| `listening_pack/` | 18-item blind pack instructions + gain audit (if reached) |
+| `listening_pack/` | 18-item blind pack instructions, gain audit, unblinded listening results |
 
 ## Privacy / scope guards
 

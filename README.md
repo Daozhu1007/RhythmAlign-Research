@@ -53,13 +53,17 @@ artifacts are referenced by manifests, not committed.
 | **S1a** ground-truth pilot | Can exactly-matched ground truth be acquired, and is a bounded magnitude-mask representation sufficient? | Tooling + protocols + oracle machinery validated on synthetic fixtures (unit tests pass); real one-session capture **still pending** |
 | **S1E** existing-corpus feasibility | Are current pretrained frontier systems good enough as-is? | **CURRENT PRETRAINED FRONTIER INSUFFICIENT.** AudioSep repeats R2's attenuated-copy failure; SoloAudio fails out-of-distribution (deletes/invents); specialist pipeline transparent but weak. **CLAPSep shows genuine local source selectivity** (~9 dB relative music suppression with transients preserved) and is the **current adaptation substrate** |
 | **S1W** weak-supervision adaptation | Does weak supervision from existing recordings move CLAPSep toward the target without deleting it? | **VERDICT C — WEAK-SUPERVISION ADAPTATION FAILS.** Constructed task learned (DEV wins), but zero transfer to real handcams: adapted output near-silent on every real group (~28–33 dB below RAW; c8 14.3 dB) — authentic interaction deleted with the nuisance (listening-confirmed). Zero-shot CLAPSep keeps useful selectivity (esp. Taiko prompt) with muffling/underwater/discontinuity defects. Root cause: synthetic-proxy distribution overfit + chunk/context sensitivity; bounded mask NOT implicated. Next (recommended, not started): **real-mixture adaptation** |
+| **S1R** real-mixture adaptation | Can CLAPSep be adapted on authentic real mixtures WITHOUT destroying zero-shot selectivity? | **VERDICT B — VIABLE BUT NO CLEAR PRODUCT GAIN.** Yes to the stage question: trained on real mixtures only (teacher-anchored, 5% trainable), zero collapse/passthrough at every eval, DEV context inconsistency −25%, 14-recording generalization safe (S1W was −27.7 dB), sealed groups within ±0.2 dB RMS of zero-shot with slightly better transients. Blinded headphone listening: no deletion heard, c3 selectivity audibly survives — but **S1R ≈ zero-shot to the ear (0/6 clear preferences)**. Teacher-only distillation adds no new information; S1R is frozen as the stable real-mixture baseline. Next: **S2A reference-conditioned extraction** (aligned pristine song reference = product-native new information source) |
 
-**Current conclusion.** No tested pretrained system solves the problem out of the box,
-and the first adaptation attempt (S1W) collapsed on real material by learning the
-synthetic proxy distribution instead of the authentic handcam acoustics. The
-recommended next stage — **real-mixture adaptation** (zero-shot CLAPSep as
-teacher/anchor, real-mixture consistency, conservative self-training, anti-collapse
-constraints) — is designed against that failure mode and has **not been started**.
+**Current conclusion.** No tested pretrained system solves the problem out of the box.
+S1W showed synthetic-proxy adaptation collapses on real material; **S1R showed
+real-mixture adaptation can be made stable — and that a student distilled only from
+its teacher gains no product-level advantage over the teacher** (verdict B: viable,
+no clear gain). The stable S1R checkpoint is the adaptation substrate going forward.
+The recommended next stage — **S2A reference-conditioned real-mixture extraction**
+(aligned pristine song reference as a genuinely new, product-native information
+source, added as a near-no-op adapter on the frozen S1R base) — is the next decisive
+question and **has not been started**.
 
 ## Repository layout
 

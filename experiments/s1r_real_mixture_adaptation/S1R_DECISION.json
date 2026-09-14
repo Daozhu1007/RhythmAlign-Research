@@ -1,0 +1,54 @@
+{
+  "stage": "S1R — Real-Mixture Adaptation",
+  "date": "2026-09-15",
+  "decision": "B",
+  "decision_label": "REAL-MIXTURE ADAPTATION IS VIABLE BUT NO CLEAR PRODUCT GAIN",
+  "decision_basis": "Primary human blind listening (18 items, one headphone pass, unblinded 2026-09-15; see listening_pack/HUMAN_LISTENING_RESULTS.md) combined with the frozen machine-side record (REAL_TEST_RESULTS.md, GENERALIZATION_RESULTS.md, DEV_RESULTS.md).",
+  "adaptation_viability": "SUCCESS",
+  "adaptation_viability_evidence": "Trained on authentic raw mixtures only (no synthetic target+nuisance anywhere): zero collapse and zero raw-passthrough at every DEV eval (REAL_TEST/FAILURE_CASES); DEV cross-context consistency 0.0609 -> 0.0455 (-25%); TEST_GENERALIZATION on 14 unseen recordings: zero collapse (S1W was -27.7 dB), click retention -0.96 dB vs zero-shot -1.20 dB; sealed groups within +-0.2 dB RMS of zero-shot with slightly better transient retention on all six. Human listening heard no deletion, no passthrough, no instability.",
+  "catastrophic_target_deletion": false,
+  "catastrophic_target_deletion_evidence": "None observed machine-side (worst anchor -1.0 dB vs teacher on a -6 dB guard; click retention better than zero-shot on all sealed groups) and none heard (interaction described as 'very obvious', 'excellent and appears complete', 'slightly better/more natural').",
+  "raw_passthrough": false,
+  "zeroshot_selectivity_preserved": true,
+  "selectivity_evidence": "c3 Taiko-prompt positive pattern audibly survives adaptation (item_17 'almost no NPC audible ... similar positive behavior to item_08'); machine-side: equal suppression, transient retention marginally closer to raw on all six sealed groups.",
+  "product_gain": "NOT ESTABLISHED",
+  "product_gain_evidence": "Blinded comparison ZERO-SHOT vs S1R: S1R clearly preferred in 0 of 6 groups (bar was >=3/6); explicit ties in c2 ('same conclusion'), mirror-positive tie in c3, inconclusive tie in c7, tie in c8, at most a faint c6 edge for S1R (interaction naturalness, matching RAW) and an ambiguous c1. No group where S1R is clearly worse.",
+  "primary_interpretation": "Teacher-only / consistency-dominated adaptation preserves the teacher but adds no audible new information. The student inherited zero-shot's selectivity AND zero-shot's remaining nuisances (neighboring Taiko machines, NPC speech, minor underwater/discontinuity on strong-suppression items). A stable real-domain training substrate now exists; new information is required to move beyond it.",
+  "listening_evidence": {
+    "pack": "listening_pack/ frozen fixed-gain pack (18 items, one common per-group gain from RAW, relative levels preserved to 1e-05 dB)",
+    "playback_device": "headphones (S1W was speakers) - NO cross-stage timbre claims made; internal S1R comparison valid",
+    "passes": 1,
+    "owner_fatigue": "substantial; no second pass permitted",
+    "s1r_preferred_groups": [],
+    "tie_or_ambiguous_groups": ["c1_speech_npc_a", "c2_speech_npc_b", "c3_taiko_prompt", "c6_dense_golden", "c7_weak_taps", "c8_slide_friction"],
+    "results_record": "listening_pack/HUMAN_LISTENING_RESULTS.md"
+  },
+  "why_B_and_not_A": "A required audible preference for S1R on >=3/6 groups. The owner could not reliably distinguish S1R from zero-shot in the blinded pack; observed edges are single-group and faint. The machine-side record agrees: +-0.2 dB RMS, equal suppression, small transient-retention refinement only.",
+  "why_B_and_not_C": "C-class failure modes are all ruled out by ear and by measurement: no deletion of authentic interaction, no raw passthrough, no instability, teacher selectivity preserved. S1R's question ('can CLAPSep be adapted on real mixtures WITHOUT destroying zero-shot selectivity?') is answered YES - it just does not improve the product.",
+  "stage_should_not_continue_with": "further teacher-only / consistency-dominated distillation of the same frozen teacher",
+  "next_stage_recommendation": {
+    "focus": "S2A - reference-conditioned real-mixture extraction: add ALIGNED PRISTINE MUSIC REFERENCE as a genuinely new information source (a native product input), via a minimal near-no-op adapter on the frozen S1R base",
+    "explicitly_not_started_yet": [
+      "the S2A reference-conditioning experiment",
+      "complex-mask / phase-capable reconstruction (reserved for a future stage if underwater remains dominant)"
+    ]
+  },
+  "guardrails_respected_at_finalization": [
+    "no retraining",
+    "no audio regeneration",
+    "no checkpoint or inference change",
+    "no additional model experiment",
+    "no second listening pass"
+  ],
+  "preserved_records": [
+    "S1R_PRELISTENING_REPORT.md (pre-listening machine-side answers, unchanged)",
+    "listening_pack/LISTENING_INSTRUCTIONS.md, LISTENING_PACK_GAIN_AUDIT.md, PLAYBACK_ORDER.json (unchanged)",
+    "DEV_RESULTS.md / GENERALIZATION_RESULTS.md / REAL_TEST_RESULTS.md / FAILURE_CASES.md (unchanged)"
+  ],
+  "explicitly_not_done": [
+    "No additional model experiment after the verdict",
+    "No SI-SDR / recall / suppression claims from listening (no ground truth exists)",
+    "No cross-stage S1W<->S1R timbre comparison (different playback devices)",
+    "No product-repository changes"
+  ]
+}
