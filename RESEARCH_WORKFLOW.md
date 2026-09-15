@@ -3,6 +3,27 @@
 This document defines the default Git workflow for RhythmAlign-Research. It applies to
 human researchers and to AI agents operating in this workspace.
 
+## CURRENT AUTHORIZED SEQUENCE (2026-09-15, RTA-0)
+
+Until the real-target gate resolves, the ONLY authorized research sequence is:
+
+```
+1. acquire trustworthy real target        (RTA1 capture — owner's one physical job)
+2. pass truth QC                          (03_truth_qc.py gates; TRUTH_QUALITY_INSUFFICIENT is a legal outcome)
+3. run frozen baselines                   (zero-shot CLAPSep + ORIGINAL S1R checkpoint,
+                                           each loaded as an immutable independent instance,
+                                           checkpoint hashes recorded)
+4. run the mask-oracle headroom diagnostic (bounded real-mask oracles, no training)
+5. decide whether future learning is justified (pre-registered DECISION_RULES.md)
+```
+
+**NO NEW MODEL TRAINING BEFORE THIS GATE.**
+
+No stage may begin another learner, fine-tune, or adaptation run until step 5
+concludes with a decision that justifies learning. Rationale and evidence:
+`docs/reviews/RTA0_INTEGRITY_AUDIT.md`,
+`docs/reviews/SENIOR_REVIEW_2026-09-15.md`.
+
 ## The default rule
 
 A completed research stage follows:

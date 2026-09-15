@@ -3,6 +3,17 @@
   "date": "2026-09-15",
   "decision": "C",
   "decision_label": "REFERENCE CONDITIONING DOES NOT HELP",
+  "posthoc_integrity_amendment_2026_09_15": {
+    "note": "Added by the RTA-0 audit; all original fields above are preserved as written.",
+    "superseding_label": "NO USEFUL REFERENCE-CONTENT EFFECT WAS DEMONSTRATED BY THE RECORDED S2A IMPLEMENTATION",
+    "adapter_geometry": "CONFIRMED DEFECT: stride-2 transposed conv doubles both STFT axes and the output is cropped back (s2a_model.py), so learned one-to-one TF alignment is not structurally guaranteed; initialization parity remains a valid no-op check only; causal contribution to the null result was not measured.",
+    "s1r_comparator": "CONFIRMED DEFECT: base_model.decoder_model.mask_net was trainable during S2A and all post-training 'S1R baseline' rows (s2a_deveval.py, 09_real_test.py) reused the post-training base model instead of an immutable original S1R instance; the reported 'advantage over S1R' numbers are NOT a valid frozen-original-S1R comparison.",
+    "still_valid": "Within-model CORRECT/ZERO/WRONG ablations (same weights) remain valid descriptive evidence of reference-condition insensitivity for this implementation.",
+    "transient_loss": "The anti-collapse transient-band term (imported from s1r_losses) indexed the wrong STFT axis; the total-RMS hinge was valid. Training-only; published evaluation metrics used a correct implementation.",
+    "split_exposure": "DEV wrong-reference pool used TEST songs' references during model selection (test-side reference-content exposure, not gradient leakage); DEV contained two ex-S1R-TRAIN recording identities and shared song identities with TRAIN (documented in-stage).",
+    "not_decided": "This experiment does NOT decide whether a correctly implemented reference-conditioned architecture can help; no equivalence test or human listening established literal perceptual identity.",
+    "evidence": "docs/reviews/RTA0_INTEGRITY_AUDIT.md"
+  },
   "decision_basis": "Section-26 causal reference-use gate FAIL (REFERENCE_ADAPTER_IGNORED) on DEV, confirmed by held-out song-disjoint documentation test on 5 recordings / 20 windows. Human listening NOT warranted (section 30 gate condition 3 fails: 'correct reference demonstrably matters' is false).",
   "reference_corpus": {
     "gate": "PASS at preferred minimums",
@@ -34,7 +45,7 @@
     "transient_retention": "identical to S1R (median -0.386 dB vs -0.386 dB on held-out)"
   },
   "why_C_and_not_B": "B requires the adapter to demonstrably USE the correct reference with real but unclear product gain. Here the adapter uses NO reference content at all: correct/wrong/zero are indistinguishable. This is the section-26 stop condition REFERENCE_ADAPTER_IGNORED, classified C under section 36 ('correct reference is no better than wrong reference').",
-  "why_C_and_not_D": "The experiment is scientifically valid: data gate PASS (preferred minimums), production alignment with conservative acceptance, exact initialization parity, both training runs completed without guards, all safety metrics clean, held-out documentation test executed under a frozen protocol. The negative is trustworthy.",
+  "why_C_and_not_D": "The experiment is scientifically valid: data gate PASS (preferred minimums), production alignment with conservative acceptance, exact initialization parity, both training runs completed without guards, all safety metrics clean, held-out documentation test executed under a frozen protocol. The negative is trustworthy. [AMENDED 2026-09-15: the RTA-0 audit confirmed an adapter-geometry defect and a non-isolated S1R comparator; this validity statement is superseded by posthoc_integrity_amendment_2026_09_15 above. The within-model null effect stands as descriptive evidence only.]",
   "stage_should_not_continue_with": [
     "more training of the same adapter/objective (structural: the section-20 anchor pins clean behavior to the teacher, leaving ~0.01 L1 of learnable margin, whose cheapest explanation is reference presence, not content)",
     "human listening for this stage (machine gate failed; nothing audible to compare)"

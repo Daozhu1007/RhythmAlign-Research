@@ -1,5 +1,11 @@
 # S2A — GENERALIZATION_RESULTS (held-out, song-disjoint; protocol sections 12/28)
 
+> **POST-HOC INTEGRITY NOTE (2026-09-15, RTA-0 audit).** "vs S1R" quantities
+> below used the post-training S2A base model (its mask head trained with the
+> adapter), not an immutable original-S1R instance; they are not a valid
+> frozen-original-S1R comparison. The within-model CORRECT/WRONG null effect
+> stands. Evidence: `docs/reviews/RTA0_INTEGRITY_AUDIT.md` §3.2.
+
 **Date:** 2026-09-15 · Documentation checkpoint `full_upd01000.ckpt` (see
 DEV_RESULTS for the section-25 failure). Held-out set: 5 recordings, each with an
 accepted pristine reference, every song identity ABSENT from TRAIN (4 windows per

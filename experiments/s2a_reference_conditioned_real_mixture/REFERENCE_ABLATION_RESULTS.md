@@ -1,5 +1,13 @@
 # S2A — REFERENCE_ABLATION_RESULTS (protocol sections 16/21/26)
 
+> **POST-HOC INTEGRITY NOTE (2026-09-15, RTA-0 audit).** The within-model
+> CORRECT/ZERO/WRONG comparisons below remain **valid descriptive evidence**
+> (all three modes run identical weights). However, every "vs S1R" quantity in
+> the tables used the **post-training S2A base model** as the S1R side (its
+> mask head trained with the adapter) — NOT an immutable original-S1R
+> instance — so those deltas are not a valid frozen-original-S1R comparison.
+> Evidence: `docs/reviews/RTA0_INTEGRITY_AUDIT.md` §3.2.
+
 **Date:** 2026-09-15 · Evaluation checkpoint: `full_upd01000.ckpt` (documentation
 of a null effect; see DEV_RESULTS for the selection failure record). The causal
 ablation triad is mandatory: a model that behaves identically for CORRECT and

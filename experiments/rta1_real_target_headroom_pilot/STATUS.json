@@ -1,0 +1,7 @@
+{
+  "stage": "RTA1",
+  "status": "READY_FOR_REAL_TARGET_CAPTURE",
+  "training_authorized": false,
+  "human_listening_required_now": false,
+  "next_external_dependency": "controlled physical capture"
+}

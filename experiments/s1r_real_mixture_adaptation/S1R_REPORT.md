@@ -1,5 +1,27 @@
 # S1R — REPORT: Real-Mixture Adaptation (final)
 
+> **POST-HOC INTEGRITY NOTE (2026-09-15, RTA-0 audit).** Three scope
+> corrections; the stage's core result is unchanged.
+>
+> 1. **Transient guard:** the anti-collapse term's documented "2–9 kHz
+>    transient-band floor" indexed the wrong STFT axis for its 1-D inputs
+>    (`s1r_losses.py:52-58`; it degenerated into a per-bin spectral floor over
+>    a middle time block). The total-RMS anti-collapse hinge was separate and
+>    valid, and ALL published evaluation metrics (click retention, RMS,
+>    consistency) used a different, correct implementation — so the stage's
+>    measurements and verdict stand, but the training signal did not include
+>    the documented 2–9 kHz transient protection.
+> 2. **Interpretation scope:** §3's "a student cannot outlearn a teacher it
+>    only copies" is supported for THIS strongly anchored distillation recipe
+>    only, not as a general scientific claim. The recipe improved context
+>    consistency without demonstrating a clear product gain over the teacher.
+> 3. **Listening wording:** "perceptually indistinguishable" overstates the
+>    evidence. Supported form: one owner listening pass found no clear overall
+>    preference over zero-shot (0/6 clear preferences; no equivalence test was
+>    run).
+>
+> Evidence: `docs/reviews/RTA0_INTEGRITY_AUDIT.md` §3.3.
+
 **Verdict: B — REAL-MIXTURE ADAPTATION IS VIABLE BUT NO CLEAR PRODUCT GAIN**
 (decision record: [S1R_DECISION.json](S1R_DECISION.json); primary listening evidence:
 [listening_pack/HUMAN_LISTENING_RESULTS.md](listening_pack/HUMAN_LISTENING_RESULTS.md))

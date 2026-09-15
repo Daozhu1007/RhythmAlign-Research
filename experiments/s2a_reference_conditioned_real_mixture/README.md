@@ -1,11 +1,37 @@
 # S2A — Reference-Conditioned Real-Mixture Extraction
 
+> ## POST-HOC INTEGRITY NOTE (2026-09-15, RTA-0 audit)
+>
+> A post-hoc integrity audit (`docs/reviews/RTA0_INTEGRITY_AUDIT.md`) confirmed
+> two implementation/comparator findings that **compromise the interpretation**
+> of this stage's headline. The original text below is preserved unchanged.
+>
+> 1. **Adapter geometry:** the adapter's stride-2 transposed convolution doubles
+>    both STFT axes before the output is cropped back to T×F
+>    (`scripts/s2a_model.py`), so learned one-to-one TF alignment is NOT
+>    structurally guaranteed. Initialization parity remains a valid no-op check
+>    only; it does not validate learned TF alignment.
+> 2. **S1R comparator not isolated:** the base model's final mask head was
+>    trainable during S2A, and every post-training "S1R baseline" row was
+>    computed from that same, updated base model — not from an immutable
+>    original-S1R instance. The reported "advantage over S1R" numbers are
+>    therefore not a valid frozen-original-S1R comparison. The within-model
+>    CORRECT/ZERO/WRONG ablations remain valid descriptive evidence.
+>
+> **Current-status label (supersedes the headline below):**
+> **NO USEFUL REFERENCE-CONTENT EFFECT WAS DEMONSTRATED BY THE RECORDED S2A
+> IMPLEMENTATION.** Reference-condition metric differences were very small; no
+> equivalence test or human listening established literal perceptual identity;
+> and this experiment does NOT decide whether a correctly implemented
+> reference-conditioned architecture can help.
+
 **Stage question:** RhythmAlign natively operates with the time-aligned pristine
 song the user provides — does that genuinely NEW information source let a model
 move beyond the stable S1R baseline WITHOUT deleting authentic interaction,
 collapsing, passing the mixture through, or memorizing songs?
 
-**FINAL VERDICT: C — REFERENCE CONDITIONING DOES NOT HELP.** The data gate
+**FINAL VERDICT (original 2026-09-15 wording): C — REFERENCE CONDITIONING DOES
+NOT HELP.** The data gate
 passed at preferred minimums (TRAIN 16 recs/14 songs, DEV 3/3, TEST 5/5
 song-disjoint; 24/31 alignment pairs accepted conservatively), the adapter
 was built and initialized exactly as designed (S1R parity exact, max|Δ| = 0.0),

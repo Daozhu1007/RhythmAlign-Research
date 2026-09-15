@@ -1,5 +1,18 @@
 # S2A — ARCHITECTURE: minimal aligned-reference adapter (protocol sections 13-16)
 
+> **POST-HOC INTEGRITY NOTE (2026-09-15, RTA-0 audit).** The `ConvTranspose2d
+> (/2)` stage below expands BOTH axes (T,F) → (2T,2F) and the head's output is
+> cropped back to (T,F) (`s2a_model.py:52-57`). The adapter therefore does NOT
+> preserve one-to-one aligned time–frequency geometry between its input and the
+> mask-logit grid it modifies: the design compromises the interpretation of
+> "aligned local reference fusion". The initialization parity evidence below
+> remains valid **as a no-op check only** (the zero-init head forces
+> delta ≡ 0 regardless of geometry); it does NOT validate learned TF
+> alignment. Also note the trainable surface: adapter + `decoder_model.mask_net`
+> of the base (as stated below) — meaning post-training, the base model itself
+> is no longer the original S1R weights. Evidence:
+> `docs/reviews/RTA0_INTEGRITY_AUDIT.md` §3.1–3.2.
+
 ## Base (frozen)
 
 - **Checkpoint:** `experiments/s1r_real_mixture_adaptation/checkpoints/s1r_selected.ckpt`

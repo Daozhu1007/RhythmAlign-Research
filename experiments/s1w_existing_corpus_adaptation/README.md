@@ -40,6 +40,12 @@ the decision itself waits for the owner's listening pass.
 
 ## Outcome (2026-09-14, after the human blind listening pass)
 
+> **POST-HOC INTEGRITY NOTE (2026-09-15, RTA-0 audit).** The transfer failure
+> itself is unchanged. The "Root cause:" sentence below should be read in
+> narrower scope: distribution mismatch and context sensitivity are
+> **supported explanations**; their individual causal contributions were not
+> isolated by the stage, so a uniquely proven root cause is not claimed.
+
 **Verdict C — weak-supervision adaptation fails.** The constructed weak-supervision
 task was learned successfully (large DEV wins), but the learned behavior does not
 transfer to authentic raw handcams: the adapted model is near-silent on every real

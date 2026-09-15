@@ -1,0 +1,62 @@
+{
+  "_readme": "One file per session. Copy to work/capture_inbox/session_XX/CAPTURE_SESSION.json and fill. Short answers are fine. Nothing personally identifying is required. Fields marked (auto) can be left blank - ingest measures them from the files.",
+  "session_id": "session_01",
+  "device_id": "phoneA",
+  "player_id_anonymized": "P1",
+  "date": "2026-XX-XX",
+  "room_type": "arcade hall / corner / etc",
+  "phone_position_description": "chest mount ~40 cm below screen, lens toward hands",
+  "orientation": "landscape / portrait",
+  "native_channels": 2,
+  "sample_rate": null,
+  "codec": "",
+  "recording_app": "",
+  "post_processing_disabled": true,
+  "agc_or_gain_notes": "any auto-gain behavior you noticed, or 'unknown'",
+  "secondary_sensors": [
+    {
+      "kind": "none / contact_mic / second_phone / video",
+      "device": "",
+      "files": [],
+      "sync_method": "clap at start / same clock / none"
+    }
+  ],
+  "takes": [
+    {
+      "take_id": "take_A",
+      "type": "A_quiet_interaction",
+      "target_strata": [
+        "weak_taps", "normal_hits", "strong_impacts", "releases_tails",
+        "screen_contacts", "slide_friction", "dense", "sparse", "rests"
+      ],
+      "playback_state": "muted / quiet / normal",
+      "nuisance_state": "describe what else was audible (neighbors, people...)",
+      "original_filename": "REC_0001.M4A",
+      "start_time": "HH:MM",
+      "duration": null,
+      "notes": ""
+    },
+    {
+      "take_id": "take_B",
+      "type": "B_playback_only",
+      "target_strata": [],
+      "playback_state": "normal",
+      "nuisance_state": "",
+      "original_filename": "REC_0002.M4A",
+      "start_time": "HH:MM",
+      "duration": null,
+      "notes": "nobody touched the machine during this take"
+    },
+    {
+      "take_id": "take_C",
+      "type": "C_normal_gameplay",
+      "target_strata": ["ordinary simultaneous gameplay"],
+      "playback_state": "normal",
+      "nuisance_state": "",
+      "original_filename": "REC_0003.M4A",
+      "start_time": "HH:MM",
+      "duration": null,
+      "notes": ""
+    }
+  ]
+}

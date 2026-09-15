@@ -1,5 +1,15 @@
 # S1R — Real-Mixture Adaptation
 
+> **POST-HOC INTEGRITY NOTE (2026-09-15, RTA-0 audit).** Scope corrections
+> (stage result unchanged): the training signal's documented 2–9 kHz
+> transient-band guard was not implemented as intended (wrong STFT axis;
+> the total-RMS hinge and all published evaluation metrics are unaffected —
+> they use a different, correct implementation); "indistinguishable" below
+> means one owner listening pass found no clear overall preference over
+> zero-shot (0/6 clear preferences), not an equivalence result; and the
+> teacher-copying interpretation applies to this strongly anchored recipe,
+> not as a general law. Evidence: `docs/reviews/RTA0_INTEGRITY_AUDIT.md` §3.3.
+
 **Stage question:** can CLAPSep be adapted using authentic real handcam mixtures
 WITHOUT destroying the useful source selectivity already present in the zero-shot
 model?

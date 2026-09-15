@@ -1,6 +1,19 @@
 # S2A — REPORT: Reference-Conditioned Real-Mixture Extraction (final)
 
-**Verdict: C — REFERENCE CONDITIONING DOES NOT HELP**
+> **POST-HOC INTEGRITY NOTE (2026-09-15, RTA-0 audit).** The verdict headline
+> below predates the audit. Confirmed post-hoc: (1) the adapter's stride-2
+> transposed conv + crop does not preserve one-to-one TF geometry, so this is
+> not a clean test of aligned local reference fusion (init parity stays a valid
+> no-op check only); (2) the "S1R" comparator in §2 was the post-training S2A
+> base model (its mask head trained with the adapter), not an immutable
+> original S1R — those deltas are not a valid frozen-original-S1R comparison.
+> Current-status label: **NO USEFUL REFERENCE-CONTENT EFFECT WAS DEMONSTRATED
+> BY THE RECORDED S2A IMPLEMENTATION.** The within-model CORRECT/ZERO/WRONG
+> null effect stands as descriptive evidence. Evidence:
+> `docs/reviews/RTA0_INTEGRITY_AUDIT.md` §3.1–3.2.
+
+**Verdict (original 2026-09-15 wording): C — REFERENCE CONDITIONING DOES NOT
+HELP**
 (decision record: [S2A_DECISION.json](S2A_DECISION.json); causal evidence:
 [REFERENCE_ABLATION_RESULTS.md](REFERENCE_ABLATION_RESULTS.md); held-out:
 [GENERALIZATION_RESULTS.md](GENERALIZATION_RESULTS.md),

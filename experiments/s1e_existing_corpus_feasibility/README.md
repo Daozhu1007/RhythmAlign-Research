@@ -4,6 +4,16 @@
 blind listening pack ready; decision **provisional** pending the owner's listening pass
 (see `S1E_DECISION.json`).
 
+> **POST-HOC INTEGRITY NOTE (2026-09-15, RTA-0 audit).** Two scope
+> corrections. (1) "Proven dead on this phone recording": the supported claim
+> is that the tested waveform-cancellation configurations produced weak
+> total-mixture reduction (+0.4–0.8 dB) **on the selected recording**; this
+> does not establish a universal cancellation ceiling. (2) Later summaries
+> generalized this stage to "the pretrained frontier is insufficient /
+> exhausted": the supported form is "the pretrained configurations
+> successfully evaluated in this study did not meet the product requirement" —
+> gated/unavailable systems were recorded BLOCKED, not judged.
+
 S1E answers exactly one product question and nothing more:
 
 > Given existing real handcam recordings only, can any currently available modern

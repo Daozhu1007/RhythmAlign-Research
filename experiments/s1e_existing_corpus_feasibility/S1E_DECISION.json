@@ -3,6 +3,12 @@
   "date": "2026-09-10",
   "decision": "B",
   "decision_label": "LEARNED EXTRACTION PROMISING, BUT ADAPTATION NEEDED (provisional — primary listening evidence pending)",
+  "posthoc_integrity_amendment_2026_09_15": {
+    "note": "Added by the RTA-0 audit; all original fields are preserved as written.",
+    "scope_correction_cancellation": "The key reference_cancellation_dead below states a recording-scoped measurement (+0.41..+0.82 dB on the selected recording). It does NOT establish a universal cancellation ceiling; downstream summaries must use the scoped form.",
+    "scope_correction_frontier": "Later summaries generalized this stage to 'the pretrained frontier is insufficient'. Supported form: the pretrained configurations successfully evaluated in this study did not meet the product requirement; BLOCKED/UNAVAILABLE systems were not judged.",
+    "evidence": "docs/reviews/RTA0_INTEGRITY_AUDIT.md"
+  },
   "provisionality": {
     "status": "PROVISIONAL",
     "reason": "The brief makes human blind listening the primary decision evidence. The 36-item anonymized pack is built and ready (listening_pack/), but no listening pass exists yet. All conclusions above are from fixed-gain waveform diagnostics, pristine-reference coherence proxies, VAD nuisance proxies, and spectrogram inspection.",

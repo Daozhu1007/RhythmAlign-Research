@@ -108,6 +108,13 @@ SoloAudio's outputs are instead wholesale reconstructions (silence + invented bl
 
 ## 4. Reference-informed processing facts (bounds what any method can do here)
 
+> **POST-HOC INTEGRITY NOTE (2026-09-15, RTA-0 audit).** The bolded sentence
+> below ("no subtraction-style use of the reference can work") is broader than
+> the evidence: what was measured is that the TESTED waveform-cancellation
+> configurations yield weak total-mixture reduction on THIS phone recording.
+> That does not establish that no subtraction-style use of the reference can
+> work in general.
+
 - Waveform cancellation of the aligned pristine music yields only **+0.4–0.8 dB**
   reduction on this phone recording (verified on three windows; R1 measured 5.9 %
   coherent share). Music reaching the phone mic is phase/magnitude-incoherent with the

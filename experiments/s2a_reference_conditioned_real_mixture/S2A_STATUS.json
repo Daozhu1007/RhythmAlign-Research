@@ -2,6 +2,13 @@
  "stage": "S2A - Reference-Conditioned Real-Mixture Extraction",
  "date": "2026-09-15",
  "status": "FINALIZED",
+ "posthoc_integrity_amendment_2026_09_15": {
+  "superseding_label": "NO USEFUL REFERENCE-CONTENT EFFECT WAS DEMONSTRATED BY THE RECORDED S2A IMPLEMENTATION",
+  "adapter_geometry": "compromised (stride-2 upsample + crop; no one-to-one TF alignment guarantee)",
+  "s1r_comparator": "not isolated (post-training base model reused; not an immutable original S1R)",
+  "within_model_ablations": "still valid descriptive evidence",
+  "evidence": "docs/reviews/RTA0_INTEGRITY_AUDIT.md"
+ },
  "decision": {
   "verdict": "C",
   "label": "REFERENCE CONDITIONING DOES NOT HELP",

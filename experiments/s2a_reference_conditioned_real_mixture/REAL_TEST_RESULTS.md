@@ -1,5 +1,14 @@
 # S2A — REAL_TEST_RESULTS (held-out machine-side; protocol sections 28-29)
 
+> **POST-HOC INTEGRITY NOTE (2026-09-15, RTA-0 audit).** The "S1R (frozen
+> base)" rows below were computed from `s2a.base_model` — the SAME model whose
+> final mask head trained alongside the adapter — not from an immutable
+> original-S1R instance (`09_real_test.py` uses `si.ola_separate(s2a.base_model, …)`).
+> The S2A-vs-S1R deltas reported here are therefore NOT a valid frozen
+> original-S1R comparison. The within-model CORRECT/ZERO/WRONG reference
+> ablations remain valid descriptive evidence. Evidence:
+> `docs/reviews/RTA0_INTEGRITY_AUDIT.md` §3.2.
+
 **Date:** 2026-09-15 · Frozen checkpoint `full_upd01000.ckpt`
 (sha256 in `CHECKPOINT_MANIFEST.public.json`); protocol frozen before the run
 (`logs/09_real_test.json` → `freeze`). Five song-disjoint held-out recordings
